@@ -1,0 +1,40 @@
+Scripting should allow a site to edit the content of an IDed element, ie:
+
+To simulate a dynamic navigation menu, one should be able to reassign the value on the fly, in reaction to something like a click.
+ 
+Javascript eg:  document.getElementById("navigation").innerHTML = "whatever";
+  
+This should require “collapsible” symbols which are essentially links.
+                    These symbols should change to represent whether clicking it will collapse (-) or expand (+)
+  
+This can be used on all the sections of a page to simulate navigating to a new page without actually leaving the page.
+                    This means it has to be done on all pages, with a unique default value for each page.
+                    This means when simulated navigation occurs, it has to occur on all relevant sections.
+  
+ 
+ 
+This can go on the to do list for each scripting language.
+Redefining the table layout to a div structure should be on the do list site wide.
+
+
+
+Site wide: add Python links
+Python: Add function calls in Layout
+		common_globals = {'getHeader': Universal.getHeader,
+						  'getCSS': Universal.getCSS,
+						  'getHead': Universal.getHead,
+						  'getNavBar': Universal.getNavBar}
+		Main = web.template.render('templates/')
+		Section1 = web.template.render('templates/Section1/', globals=common_globals)
+		Section2 = web.template.render('templates/Section2/', globals=common_globals)
+		Section3 = web.template.render('templates/Section3/', globals=common_globals)
+	 
+HTML: Fix embedding 
+CSS: Fix spacing
+Layout: Switch to DIVs
+
+To add languages:
+Ruby on Rails
+NodeJS
+JQuery
+AngularJS

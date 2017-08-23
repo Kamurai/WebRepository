@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <!-- import .css -->
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+</head>
+
+<body>
+    <!-- General Layout -->
+    <div id="idInnerCenterContent">
+        <div id="idCenterContent">
+            <form>
+                <fieldset>
+                    <legend>
+                        Please fill out this feedback form.
+                    </legend>
+                    <table>
+                        <tr>
+                            <td>
+                                First Name:
+                            </td>
+                            <td>
+                                <input type="text" value="" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Last Name:
+                            </td>
+                            <td>
+                                <input type="text" value="" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Age:
+                            </td>
+                            <td>
+                                <input type="number" min="13" max="30" value="" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email:
+                            </td>
+                            <td>
+                                <input type="email" value="" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Website:
+                            </td>
+                            <td>
+                                <input type="url" value="" required/>
+                            </td>
+                        <tr>
+                            <td>
+                                Rate this site: 0 to 5
+                            </td>
+                            <td>
+                                <input type="range" min="1" max="5" value="" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                How do you feel today?
+                            </td>
+                            <td>
+                                <input list="idFeelings" required/>
+                                <datalist id="idFeelings">
+                                    <option value="Happy">
+                                    <option value="Sad">
+                                    <option value="Angry">
+                                </datalist>
+                                <input type="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
