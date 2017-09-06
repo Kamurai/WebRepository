@@ -91,7 +91,7 @@ function FillLayout(vPage, vLevel, vSection)
 
 function FillHead(vLevel, vSection)
 {
-    WriteHeader(vLevel, vSection);
+    WriteHeader(vLevel-1, vSection);
 }
 
 function FillBody(vPage, vLevel)

@@ -1,6 +1,6 @@
 function Navigation(vLevel)
 {
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
     $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media.html\">Media</a><br/><br/>"); //move to Custom
     $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>"); //move to Custom
 }
@@ -11,23 +11,23 @@ function Title(vPage)
     var vResult = "";
     if(vPage == 0)
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     else if(vPage == 1)
     {
-        vResult = "About Us";
+        vResult += "About Us";
     }
     else if(vPage == 2)
     {
-        vResult = "Media";
+        vResult += "Media";
     }
     else if(vPage == 3)
     {
-        vResult = "Minecraft!";
+        vResult += "Minecraft!";
     }
     else
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     $(document).prop("title", vResult);
 }
@@ -41,23 +41,23 @@ function Header(vPage)
     
     if(vPage == 0)
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     else if(vPage == 1)
     {
-        vResult = "About Us";
+        vResult += "About Us";
     }
     else if(vPage == 2)
     {
-        vResult = "Media";
+        vResult += "Media";
     }
     else if(vPage == 3)
     {
-        vResult = "Minecraft!";
+        vResult += "Minecraft!";
     }
     else
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     tableRowCenterMainHeader.textContent = vResult;
     $( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
@@ -73,17 +73,17 @@ function Content(vPage, tableRowCenterMain)
     
     if(vPage == 0)
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     else if(vPage == 1)
     {
-        vResult = "We are working to build this into a better place.</br>";
+        vResult += "We are working to build this into a better place.</br>";
         vResult += "If you found this, then you must be at least (Awesome/2).</br>";
         vResult += "Stay tuned, right now it\"s all about laying foundation for the future.</br>";
     }
     else if(vPage == 2)
     {
-        vResult = "You can find us at all these different places:</br>";
+        vResult += "You can find us at all these different places:</br>";
         vResult +=  "<br/>";
         vResult +=  "<br/>";
             vResult +=  "#WeAreMovieClub:";
@@ -127,7 +127,7 @@ function Content(vPage, tableRowCenterMain)
     }
     else if(vPage == 3)
     {
-        vResult = "If you would like to play Minecraft with us, we have several different servers:</br>";
+        vResult += "If you would like to play Minecraft with us, we have several different servers:</br>";
             vResult +=  "Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>";
             vResult +=  "Creative Server:     (1.7.10) htkb.dyndns.org:25567</br>";
                 vResult +=  "This is a list of mods that we are using on the server, compatible with 1.7.10.</br>";
@@ -170,14 +170,14 @@ function Content(vPage, tableRowCenterMain)
     }
     else
     {
-        vResult = vDefault;
+        vResult += vDefault;
     } 
     
     $( "#idCenterRowMain" ).append( tableRowCenterMainContent );
 	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage, tableRowCenterRight)
+function Versions(vPage)
 {
     var vDefault = "<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>";
@@ -197,7 +197,7 @@ function Versions(vPage, tableRowCenterRight)
     
 	if(vPage == 0)
 	{
-		vResult = vDefault;
+		vResult += vDefault;
 	}
 	else if(vPage == 1)
 	{
@@ -218,7 +218,7 @@ function Versions(vPage, tableRowCenterRight)
     }
 	else if(vPage == 2)
 	{
-		var vResult = "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>";
@@ -235,7 +235,7 @@ function Versions(vPage, tableRowCenterRight)
     }
 	else if(vPage == 3)
 	{
-		var vResult = "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>";
@@ -252,8 +252,7 @@ function Versions(vPage, tableRowCenterRight)
 	}
     else
     {
-		vResult = vDefault;
+		vResult += vDefault;
 	}
-	
-    $( "#idCenterRowRight" ).append( vResult );
+	$( "#idCenterRowRight" ).append( vResult );
 }
