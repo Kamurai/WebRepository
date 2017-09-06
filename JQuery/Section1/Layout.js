@@ -59,7 +59,7 @@ function BuildLayout(vPage, vLevel)
     $( "#idCenterRow" ).append( tableRowCenterRight );
 
     //InformationHeader(tableRowCenterRight);
-    //Versions(vPage);
+    //Versions(vPage, tableRowCenterRight);
 
     var tableRowFooter = document.createElement("tr");
     tableRowFooter.setAttribute("id", "idFooterRow");
@@ -91,7 +91,7 @@ function FillLayout(vPage, vLevel, vSection)
 
 function FillHead(vLevel, vSection)
 {
-    WriteHeader(vLevel, vSection);
+    WriteHeader(vLevel-1, vSection);
 }
 
 function FillBody(vPage, vLevel)
@@ -100,7 +100,7 @@ function FillBody(vPage, vLevel)
     NavBar(vLevel);
     
     NavigationHeader();
-    Navigation(vLevel);
+    Navigation(vLevel)
     
     Title(vPage);
     Header(vPage);
