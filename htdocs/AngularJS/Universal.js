@@ -9,7 +9,7 @@ var UniversalController = function ($scope)
 
 	$scope.TitlePicture = function(vLevel)
 	{
-		return "<img src='"+Path(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg'" >
+		return "<img src='"+Path(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' >"
 	};
 	
 	$scope.NavBar = function(vLevel)
