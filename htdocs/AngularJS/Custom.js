@@ -1,4 +1,4 @@
-var CustomController = function ($scope)
+angular.module('myApp', []).controller('CustomController', function ($scope)
 {
 	$scope.Navigation = function(vLevel)
 	{
@@ -14,7 +14,7 @@ var CustomController = function ($scope)
 			document.write("<a href='"+GetPath(vLevel)+"Minecraft.html'>Minecraft!</a>");
 		document.write("</span>");
 		document.write("<br>");
-	}
+	};
 	
 	$scope.Title = function(vPage)
 	{
@@ -36,7 +36,7 @@ var CustomController = function ($scope)
 				document.write("Minecraft!");
 			}
 		document.write("</title>");
-	}
+	};
 	
 	$scope.Header = function(vPage)
 	{
@@ -72,7 +72,7 @@ var CustomController = function ($scope)
 					document.write("</u>");
 				document.write("</h2>");
 			}
-	}
+	};
 	
 	$scope.Content = function(vPage)
 	{
@@ -182,9 +182,9 @@ var CustomController = function ($scope)
 				document.write("</p>");
 			}
 		document.write("</p>");
-	}
+	};
 
-}
+});
 
 
 

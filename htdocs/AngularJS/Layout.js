@@ -1,4 +1,4 @@
-var LayoutController = function ($scope)
+angular.module('myApp', []).controller('LayoutController', function ($scope)
 {
 	$scope.WriteWebpage = function(vPage, vLevel)
 	{
@@ -85,5 +85,5 @@ var LayoutController = function ($scope)
 				document.write("</tbody>");
 			document.write("</table>");
 		document.write("</div>");
-	}
-}
+	};
+});

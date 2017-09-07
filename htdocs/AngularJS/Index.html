@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-		<script language="JavaScript" src="Universal.js" runat="server"></script>
-		<script language="JavaScript" src="Layout.js" runat="server"></script>
-		<script language="JavaScript" src="Custom.js" runat="server"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script language="JavaScript" src="./Universal.js" runat="server"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link href="./Main.css" rel="stylesheet" type="text/css">
 	</head>
-	<body id="idBody" ng-app="TestApp" ng-controller="TestController">
+	<body id="idBody" ng-app="Universal">
 		<table id="idTableMain">
 			<tr id="idHeaderRow">
-				<td id="idHeaderRowCenter" colspan="3">
-					<img src='./logo_HouseThatKamuraiBuilt_blueonblack.jpg' >
+				<td id="idHeaderRowCenter" colspan="3" ng-controller="UniversalController" ng-bind-html="TitlePicture(0)">
 				</td>
 			</tr>
-			<tr id="idNavigationRow>
-				<td id="idNavigationBar" colspan="3">
-					<a href='./Index.html'>Home</a>
-					<a href='./Section1/Index.html'>Web Programming</a>
-					<a href='./Section2/Index.html'>Private Projects</a>
-					<a href='./Section3/Index.html'>Downloadable Projects</a>
+			<tr id="idNavigationRow">
+				<td id="idNavigationBar" colspan="3" ng-controller="UniversalController" ng-bind-html="NavBar()">
 				</td>
 			</tr>
 			<tr id="idCenterRow">
-				<td id="idCenterRowLeft">
-					<h4>
-						Navigation
-					</h4>
+				<td id="idCenterRowLeft" ng-controller="UniversalController" ng-bind-html="GetNavigationHeader()">
 				</td>
 				<td id="idCenterRowMain">
 				</td>
-				<td id="idCenterRowRight">
-					<h4>
-						Information
-					</h4>
-					This was written in AngularJS.<br><br>
-					Other versions of this page are here:<br>
-				
+				<td id="idCenterRowRight" ng-controller="UniversalController" ng-bind-html="GetInformationHeader()">
 				</td>
 			</tr>
 			<tr id="idFooterRow">
 				<td id="idFooterMain" colspan="3">
-					<p id="idFooterContent">
-					    © Copyright 2012 All rights reserved<br>
-						House That Kamurai Built<br>
+					<p id="idFooterContent" ng-controller="UniversalController" ng-bind-html="Footer()">
 					</p>
-					<p id="idFooterManagement">
-						Website managed by Kamurai.
+					<p id="idFooterManagement" ng-controller="UniversalController" ng-bind-html="WebMaster()">
 					</p>
 				</td>
 			</tr>
 		</table>
+		
+		
+		
 	</body>
 </html>
