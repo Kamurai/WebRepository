@@ -1,0 +1,236 @@
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+--> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+ 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <link href="cssCCHSFS.css" rel="stylesheet" type="text/css" /> 
+		<script src="cchsfs.js" type="text/javascript"> 
+        </script> 
+        
+		<SCRIPT type="text/javascript" SRC="jxt1.js"></SCRIPT>
+		
+        <title>CCHSFS Reporting Project</title> 
+    </head> 
+ 
+    <body> 
+		
+		
+        <!--TOP "Banner" that has a row and three columns where log is in center and Login/Register on right--> 
+ 
+        <div id="top" > 
+			CCHSFS Reporting Project
+        </div> 
+ 
+		<!--NAVBAR/Menu: change selections based certain page...can change links--> 
+		<div id="menu">
+			<ul class="menu">
+				<li>
+				<!--Header 1-->
+				<a href="#" class="parent">
+					<span>Home</span>
+				</a>
+				</li>
+				<li>
+				<!--Header 2-->
+				<a href="#">
+					<span>Sort Data</span>
+				</a>
+					<div>
+					<ul>
+						<li>
+						<!--Sub 1 Header 1-->
+						<a href="#" class="parent">
+							<span>Calls by Skill</span>
+						</a>
+							<div>
+							<ul>
+								<li>
+								<!--Sub 2 Header 1-->
+								<a href="callbyskilli.html" onclick="setsearchfilter(1)">
+									<span>Individual</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 2-->
+								<a href="callbyskilld.html">
+									<span>Daily</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 3-->
+								<a href="callbyskillw.html">
+									<span>Weekly</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 4-->
+								<a href="callbyskillm.html">
+									<span>Monthly</span>
+								</a>
+								</li>
+							</ul>
+							</div>
+						</li>
+						<li>
+						<!--Sub 1 Header 2-->
+						<a href="#">
+							<span>Calls by Rep</span>
+						</a>
+							<div>
+							<ul>
+								<li>
+								<!--Sub 2 Header 1-->
+								<a href="callbyrepi.html">
+									<span>Individual</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 2-->
+								<a href="callbyrepd.html">
+									<span>Daily</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 3-->
+								<a href="callbyrepw.html">
+									<span>Weekly</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 4-->
+								<a href="callbyrepm.html">
+									<span>Monthly</span>
+								</a>
+								</li>
+							</ul>
+							</div>
+						</li>
+						<li>
+						<!--Sub 1 Header 3-->
+						<a href="#">
+							<span>Incidents by Rep</span>
+						</a>
+							<div>
+							<ul>
+								<li>
+								<!--Sub 2 Header 1-->
+								<a href="incidentbyrepi.html">
+									<span>Individual</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 2-->
+								<a href="incidentbyrepd.html">
+									<span>Daily</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 3-->
+								<a href="incidentbyrepw.html">
+									<span>Weekly</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 4-->
+								<a href="incidentbyrepm.html">
+									<span>Monthly</span>
+								</a>
+								</li>
+							</ul>
+							</div>
+						</li>
+						<li>
+						<!--Sub 1 Header 4-->
+						<a href="#">
+							<span>Incidents by Type.</span>
+						</a>
+							<div>
+							<ul>
+								<li>
+								<!--Sub 2 Header 1-->
+								<a href="incidentbytypei.html">
+									<span>Individual</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 2-->
+								<a href="incidentbytyped.html">
+									<span>Daily</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 3-->
+								<a href="incidentbytypew.html">
+									<span>Weekly</span>
+								</a>
+								</li>
+								<li>
+								<!--Sub 1 Header 4-->
+								<a href="incidentbytypem.html">
+									<span>Monthly</span>
+								</a>
+								</li>
+							</ul>
+							</div>
+						</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+				<!--Header 3-->
+				<a href="#" onclick="displaypoo()">
+					<span>Help</span>
+				</a>
+				</li>
+				<li class="last">
+				<!--Header Last-->
+				<a href="#" onclick = "displaysortfilter()" >
+					<span>Contacts</span>
+				</a>
+				</li>
+			</ul>
+		</div>
+	
+
+	
+<!--MAIN content WILL BE CHANGED PER SITE page--> 
+        <div id="home-content">
+			Please select an option to sort data by the option in the navigation bar.
+					<table id="home-table"  class="inventory-table">
+                        
+                    </table>
+			<script type="text/javascript" src="cchsfs.js">
+				displaypoo();
+				date();
+			</script>
+										
+						
+					
+					
+					
+					
+			<p id="frontpage-header">Welcome to Chris Kemerait's CCHSFS Reporting Project!</p> 
+			<p id="frontpage-text"> 
+				<span style=" font-weight: bold; color: #285D3E; font-size: 105%"> 
+					This CCHSFS Reporting Project</span> 
+					is a webpage utilizing jQuery which has a nice interface for reporting including accordion menus which are well organized and multi-tiered.
+					<br/><br/> 
+					Thanks for visiting,<br/> 
+					<b>Chris Kemerait</b> 
+			</p> 
+        </div> 
+ 
+<!--FOOTER wil NOT change from page to page--> 
+        <div id="bottom"> 
+            <div>
+				CCHSFS Reporting Project: Chris Kemerait
+			</div> 
+        </div> 
+    </body> 
+ 
+</html> 
