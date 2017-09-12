@@ -3,6 +3,7 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<script language="JavaScript" src="./Universal.js" runat="server"></script>
+		<script language="JavaScript" src="./Custom.js" runat="server"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link href="./Main.css" rel="stylesheet" type="text/css">
 	</head>
@@ -18,14 +19,16 @@
 					{{NavBar()}}
 				</td>
 			</tr>
-			<tr id="idCenterRow">
-				<td id="idCenterRowLeft" ng-controller="UniversalController">
+			<tr id="idCenterRow" ng-controller="UniversalController">
+				<td id="idCenterRowLeft">
 					{{GetNavigationHeader()}}
-					
+					<any ng-controller="CustomController">
+						{{GetNavigation(0)}}
+					</any>
 				</td>
 				<td id="idCenterRowMain">
 				</td>
-				<td id="idCenterRowRight" ng-controller="UniversalController">
+				<td id="idCenterRowRight">
 					{{GetInformationHeader()}}
 					{{GetInformation()}}
 					

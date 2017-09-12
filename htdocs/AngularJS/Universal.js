@@ -1,13 +1,12 @@
-var TestApp = angular.module("TestApp", []);
+var Universal = angular.module("Universal", []);
 
-TestApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce)
+Universal.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce)
 	{
 		
-		$scope.WriteHeader = function(vLevel)
+		$scope.WriteHeader = function()
 		{
-			$scope.vResult = "";
-			$scope.vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-			$scope.vResult += "<link href='"+$scope.GetPath(vLevel-1)+"Main.css' rel='stylesheet' type='text/css'>";
+			$scope.vResult = "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
+			$scope.vResult += "<link href='"+GetPath(vLevel-1)+"moo.css' rel='stylesheet' type='text/css'>";
 			return $sce.trustAsHtml($scope.vResult);
 		};
 		
@@ -17,12 +16,12 @@ TestApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $
 			return $sce.trustAsHtml($scope.vResult);
 		};
 		
-		$scope.NavBar = function(vLevel)
+		$scope.NavBar = function()
 		{
-			$scope.vResult = "<a href='"+$scope.GetPath(vLevel)+"Index.html'>Home</a>";
-			$scope.vResult += "<a href='"+$scope.GetPath(vLevel)+"Section1/Index.html'>Web Programming</a>";
-			$scope.vResult += "<a href='"+$scope.GetPath(vLevel)+"Section2/Index.html'>Private Projects</a>";
-			$scope.vResult += "<a href='"+$scope.GetPath(vLevel)+"Section3/Index.html'>Downloadable Projects</a>";
+			$scope.vResult = "<a href='"+GetPath(vLevel)+"Index.html'>Home</a>";
+			$scope.vResult += "<a href='"+GetPath(vLevel)+"Section1/Index.html'>Web Programming</a>";
+			$scope.vResult += "<a href='"+GetPath(vLevel)+"Section2/Index.html'>Private Projects</a>";
+			$scope.vResult += "<a href='"+GetPath(vLevel)+"Section3/Index.html'>Downloadable Projects</a>";
 			return $sce.trustAsHtml($scope.vResult);
 		};
 		
