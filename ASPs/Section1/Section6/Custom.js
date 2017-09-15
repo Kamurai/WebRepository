@@ -1,97 +1,97 @@
-function Navigation(level, extension)
+function Navigation(vLevel, vExtension)
 {
 		Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Project1.html\">Basic HTML</a><br><br>");
 		Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Project1.php\">PHP</a><br><br>");
-		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section1/Section2/Index"+GetExtension(extension)+"\">Javascript</a><br><br>");
+		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index"+GetExtension(vExtension)+"\">Javascript</a><br><br>");
 		Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Project3.shtml\">Perl</a><br><br>");
-		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section1/Section4/Index"+GetExtension(extension)+"\">Java</a><br><br>");
-		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section1/Section5/Index"+GetExtension(extension)+"\">ASP.Net</a><br><br>");
-		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section1/Section6/Index"+GetExtension(extension)+"\">Databases</a><br><br>");
-			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section1/Section6/Project1"+GetExtension(extension)+"\">Oracle</a><br><br>");
-			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section1/Section6/Project2"+GetExtension(extension)+"\">Derby</a><br><br>");
-			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section1/Section6/Project3"+GetExtension(extension)+"\">MySQL</a><br><br>");
-			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section1/Section6/Project4"+GetExtension(extension)+"\">SQL Server</a><br><br>");
-			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section1/Section6/Project5"+GetExtension(extension)+"\">Postgres</a><br><br>");
+		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index"+GetExtension(vExtension)+"\">Java</a><br><br>");
+		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index"+GetExtension(vExtension)+"\">ASP.Net</a><br><br>");
+		Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index"+GetExtension(vExtension)+"\">Databases</a><br><br>");
+			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project1"+GetExtension(vExtension)+"\">Oracle</a><br><br>");
+			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project2"+GetExtension(vExtension)+"\">Derby</a><br><br>");
+			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project3"+GetExtension(vExtension)+"\">MySQL</a><br><br>");
+			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project4"+GetExtension(vExtension)+"\">SQL Server</a><br><br>");
+			Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project5"+GetExtension(vExtension)+"\">Postgres</a><br><br>");
 		Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/index.html\">Apache SSI</a><br><br>");
 	
 }
 
-function Title(input)
+function Title(vPage)
 {
 	Response.Write("<title>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Database Programming");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Oracle Programming");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Derby Programming");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("MySQL Programming");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			Response.Write("SQL Server Programming");
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("Postgres Programming");
 		}
-		else if(input == 6)
+		else if(vPage == 6)
 		{
 			Response.Write("XML Programming");
 		}
 	Response.Write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
 	Response.Write("<h2>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Database Programming");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Oracle Programming");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Derby Programming");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("MySQL Programming");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			Response.Write("SQL Server Programming");
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("Postgres Programming");
 		}
-		else if(input == 6)
+		else if(vPage == 6)
 		{
 			Response.Write("XML Programming");
 		}
 	Response.Write("</h2>");
 }
 
-function Content(input)
+function Content(vPage)
 {
 	Response.Write("<p id=\"idCenterContent\">");
-    	if(input == 0)
+    	if(vPage == 0)
 		{
 			Response.Write("This section is dedicated to database based programming.");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("This section is dedicated to Oracle based programming.");
 			Response.Write("<table>");
@@ -114,15 +114,15 @@ function Content(input)
 			Response.Write("</table>");
 			
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("This section is dedicated to Derby based programming.");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("This section is dedicated to MySQL based programming.");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			//SQLServerDataList();
 		
@@ -147,21 +147,21 @@ function Content(input)
 			Response.Write("</table>");
 			
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("This section is dedicated to Postgres based programming.");
 		}
-		else if(input == 6)
+		else if(vPage == 6)
 		{
 			Response.Write("This section is dedicated to XML based programming.");
 		}
 	Response.Write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/index.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/index.php\">PHP</a><br>");
@@ -175,7 +175,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Section1/Section6/index\">ASP.NET MVC App</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 1)
+	else if(vPage == 1)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project1.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project1.php\">PHP</a><br>");
@@ -190,7 +190,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project1.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 2)
+	else if(vPage == 2)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project2.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project2.php\">PHP</a><br>");
@@ -205,7 +205,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project2.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 3)
+	else if(vPage == 3)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project3.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section6/Project3.php\">PHP</a><br>");

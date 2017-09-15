@@ -1,80 +1,80 @@
-function Navigation(level, extension)
+function Navigation(vLevel, vExtension)
 {
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project1"+GetExtension(extension)+"\">Online Experience Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project2"+GetExtension(extension)+"\">Game Maker Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project3"+GetExtension(extension)+"\">Java Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project4"+GetExtension(extension)+"\">C# Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project5"+GetExtension(extension)+"\">C++ Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project1"+GetExtension(vExtension)+"\">Online Experience Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project2"+GetExtension(vExtension)+"\">Game Maker Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project3"+GetExtension(vExtension)+"\">Java Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project4"+GetExtension(vExtension)+"\">C# Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project5"+GetExtension(vExtension)+"\">C++ Downloads</a><br><br>");
 }
 
-function Title(input)
+function Title(vPage)
 {
 	Response.Write("<title>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Downloadable Projects");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Online Experience Downloads");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Game Maker Downloads");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("Java Downloads");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			Response.Write("C# Downloads");
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("C++ Downloads");
 		}
 	Response.Write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
 	Response.Write("<h2>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Downloadable Projects");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Online Experience Downloads");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Game Maker Downloads");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("Java Downloads");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			Response.Write("C# Downloads");
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("C++ Downloads");
 		}
 	Response.Write("</h2>");
 }
 
-function Content(input)
+function Content(vPage)
 {
 	Response.Write("<p id=\"idCenterContent\">");
-    	if(input == 0)
+    	if(vPage == 0)
 		{
 			Response.Write("This section is dedicated to downloadable projects.");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Here are downloads to play Cube World with us:</br>");
 			Response.Write("</br>");
@@ -84,7 +84,7 @@ function Content(input)
 			Response.Write("DirectX \"Web\":<t><a href=\"http://htkb.dyndns.org/Downloads/dxwebsetup.exe\">Direct X Redistrutable</a></br>");
 			Response.Write("</br>");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Here are Game Maker Projects to play:</br>");
 			Response.Write("</br>");
@@ -100,19 +100,19 @@ function Content(input)
 			Response.Write("\"Twisted Tactics: Version 0.1\" (buggy Alpha):<t><a href=\"http://htkb.dyndns.org/Downloads/Tactical.exe\">Scrapped two player tactical system.</a></br>");
 			Response.Write("\"Skitzo Burrito (Alpha)\": <t><a href=\"http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe\">An emotional platform survival game.</a></br>");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("Here are Java Programs to download:</br>");
 			Response.Write("</br>");
 			Response.Write("\"Blood Bowl Manager\":<t><a href=\"http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a></br>");
 		}
-		else if(input == 4)
+		else if(vPage == 4)
 		{
 			Response.Write("Here are C# Programs to download:</br>");
 			Response.Write("</br>");
 			Response.Write("\"Chess Program\":<t><a href=\"http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a></br>");
 		}
-		else if(input == 5)
+		else if(vPage == 5)
 		{
 			Response.Write("Here are C++ Programs to download:</br>");
 			Response.Write("</br>");
@@ -121,10 +121,10 @@ function Content(input)
 	Response.Write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/index.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/index.php\">PHP</a><br>");
@@ -138,7 +138,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/index\">ASP.NET MVC App</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section3/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 1)
+	else if(vPage == 1)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project1.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project1.php\">PHP</a><br>");
@@ -153,7 +153,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project1.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 2)
+	else if(vPage == 2)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project2.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project2.php\">PHP</a><br>");
@@ -168,7 +168,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project2.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 3)
+	else if(vPage == 3)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project3.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section3/Project3.php\">PHP</a><br>");

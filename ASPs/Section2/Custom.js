@@ -1,125 +1,125 @@
-function Navigation(level, extension)
+function Navigation(vLevel, vExtension)
 {
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section1/Index"+GetExtension(extension)+"\">Gynowars</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project2"+GetExtension(extension)+"\">Assault</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project3"+GetExtension(extension)+"\">Mars</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section4/Index"+GetExtension(extension)+"\">Renley</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section5/Index"+GetExtension(extension)+"\">Antarrea</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Index"+GetExtension(extension)+"\">Editations</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project7"+GetExtension(extension)+"\">Truth</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project8"+GetExtension(extension)+"\">Kingdoms</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project9"+GetExtension(extension)+"\">Terminal World</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project10"+GetExtension(extension)+"\">Monster Office Workplace</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project11"+GetExtension(extension)+"\">Battle Princesses</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project12"+GetExtension(extension)+"\">Sacred Offerings</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project13"+GetExtension(extension)+"\">The Way</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"\">Conspiratorium</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"\">Conversion</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index"+GetExtension(vExtension)+"\">Gynowars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2"+GetExtension(vExtension)+"\">Assault</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3"+GetExtension(vExtension)+"\">Mars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index"+GetExtension(vExtension)+"\">Renley</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index"+GetExtension(vExtension)+"\">Antarrea</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Index"+GetExtension(vExtension)+"\">Editations</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7"+GetExtension(vExtension)+"\">Truth</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8"+GetExtension(vExtension)+"\">Kingdoms</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9"+GetExtension(vExtension)+"\">Terminal World</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10"+GetExtension(vExtension)+"\">Monster Office Workplace</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11"+GetExtension(vExtension)+"\">Battle Princesses</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12"+GetExtension(vExtension)+"\">Sacred Offerings</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13"+GetExtension(vExtension)+"\">The Way</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14"+GetExtension(vExtension)+"\">Conspiratorium</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project15"+GetExtension(vExtension)+"\">Conversion</a><br><br>");
 
 }
 
-function Title(input)
+function Title(vPage)
 {
 	Response.Write("<title>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Private Projects");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Assault CCG");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("Mars Projects");
 		}
-		else if(input == 7)
+		else if(vPage == 7)
 		{
 			Response.Write("Truth");
 		}
-		else if(input == 8)
+		else if(vPage == 8)
 		{
 			Response.Write("Kingdoms");
 		}
-		else if(input == 9)
+		else if(vPage == 9)
 		{
 			Response.Write("Terminal World");
 		}
-		else if(input == 10)
+		else if(vPage == 10)
 		{
 			Response.Write("Monster Office Workplace");
 		}
-		else if(input == 11)
+		else if(vPage == 11)
 		{
 			Response.Write("Battle Princesses");
 		}
-		else if(input == 12)
+		else if(vPage == 12)
 		{
 			Response.Write("Sacred Offerings");
 		}
-		else if(input == 13)
+		else if(vPage == 13)
 		{
 			Response.Write("The Way");
 		}
-		else if(input == 14)
+		else if(vPage == 14)
 		{
 			Response.Write("Conspiratorium");
 		}
-		else if(input == 15)
+		else if(vPage == 15)
 		{
 			Response.Write("Conversion");
 		}
 	Response.Write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
 	Response.Write("<h2>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Private Projects");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Assault CCG");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("Mars Projects");
 		}
-		else if(input == 7)
+		else if(vPage == 7)
 		{
 			Response.Write("Truth");
 		}
-		else if(input == 8)
+		else if(vPage == 8)
 		{
 			Response.Write("Kingdoms");
 		}
-		else if(input == 9)
+		else if(vPage == 9)
 		{
 			Response.Write("Terminal World");
 		}
-		else if(input == 10)
+		else if(vPage == 10)
 		{
 			Response.Write("Monster Office Workplace");
 		}
-		else if(input == 11)
+		else if(vPage == 11)
 		{
 			Response.Write("Battle Princesses");
 		}
-		else if(input == 12)
+		else if(vPage == 12)
 		{
 			Response.Write("Sacred Offerings");
 		}
-		else if(input == 13)
+		else if(vPage == 13)
 		{
 			Response.Write("The Way");
 		}
-		else if(input == 14)
+		else if(vPage == 14)
 		{
 			Response.Write("Conspiratorium");
 		}
-		else if(input == 15)
+		else if(vPage == 15)
 		{
 			Response.Write("Conversion");
 		}
@@ -127,61 +127,61 @@ function Header(input)
 
 }
 
-function Content(input)
+function Content(vPage)
 {
 	Response.Write("<p id=\"idCenterContent\">");
-    	if(input == 0)
+    	if(vPage == 0)
 		{
 			Response.Write("This section is dedicated to HTKB projects");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("This section is dedicated CCG project \"Assault\".");
 		}
-		else if(input == 3)
+		else if(vPage == 3)
 		{
 			Response.Write("This section is dedicated to the Mars centered project \"Opposition\".");
 		}
-		else if(input == 7)
+		else if(vPage == 7)
 		{
 			Response.Write("This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.");
 		}
-		else if(input == 8)
+		else if(vPage == 8)
 		{
 			Response.Write("This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.");
 		}
-		else if(input == 9)
+		else if(vPage == 9)
 		{
 			Response.Write("This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat");
 			Response.Write("the zombies?  Can you survive?");
 		}
-		else if(input == 10)
+		else if(vPage == 10)
 		{
 			Response.Write("This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.");
 			Response.Write("Can you earn the most credit and smooze your way into a promotion?");
 		}
-		else if(input == 11)
+		else if(vPage == 11)
 		{
 			Response.Write("This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?");
 			Response.Write("These princess aren\"t your helpless maidens, but valiant warriors themselves.");
 		}
-		else if(input == 12)
+		else if(vPage == 12)
 		{
 			Response.Write("This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but");
 			Response.Write("don\"t want to fall out favor with the people more than the other deities.");
 			Response.Write("Draw people to worship you, but be discerning about who is sacrificed.");
 		}
-		else if(input == 13)
+		else if(vPage == 13)
 		{
 			Response.Write("This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.");
 			Response.Write("Escape the binds of the world and the board to reach enlightment and win.");
 		}
-		else if(input == 14)
+		else if(vPage == 14)
 		{
 			Response.Write("This section is dedicated to the board game project \"Conspiratorium\".");
 			Response.Write("A game of assassins and CIA, you must remember who is friend and who is not.");
 		}
-		else if(input == 15)
+		else if(vPage == 15)
 		{
 			Response.Write("This section is dedicated to the board game project \"Conversion\".");
 			Response.Write("Compete on the elemental market by processing elements and becoming the elemental kingpin.");
@@ -189,10 +189,10 @@ function Content(input)
 	Response.Write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.php\">PHP</a><br>");
@@ -206,7 +206,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/index\">ASP.NET MVC App</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 2)
+	else if(vPage == 2)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.php\">PHP</a><br>");
@@ -221,7 +221,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project2.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 3)
+	else if(vPage == 3)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.php\">PHP</a><br>");
@@ -236,7 +236,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project3.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 7)
+	else if(vPage == 7)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.php\">PHP</a><br>");
@@ -251,7 +251,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project7.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 8)
+	else if(vPage == 8)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.php\">PHP</a><br>");
@@ -266,7 +266,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project8.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 9)
+	else if(vPage == 9)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.php\">PHP</a><br>");
@@ -281,7 +281,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project9.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 10)
+	else if(vPage == 10)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.php\">PHP</a><br>");
@@ -296,7 +296,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project10.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 11)
+	else if(vPage == 11)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.php\">PHP</a><br>");
@@ -311,7 +311,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project11.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 12)
+	else if(vPage == 12)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.php\">PHP</a><br>");
@@ -326,7 +326,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project12.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 13)
+	else if(vPage == 13)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.php\">PHP</a><br>");
@@ -341,7 +341,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project13.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 14)
+	else if(vPage == 14)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.php\">PHP</a><br>");
@@ -356,7 +356,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project14.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 15)
+	else if(vPage == 15)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>");

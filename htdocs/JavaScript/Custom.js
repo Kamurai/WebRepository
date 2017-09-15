@@ -1,72 +1,72 @@
-function Navigation(level, extension)
+function Navigation(vLevel, vExtension)
 {
-    document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"AboutUs"+GetExtension(extension)+"\">About Us</a><br/><br/>");
-    document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Media"+GetExtension(extension)+"\">Media</a><br/><br/>");
-    document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Minecraft"+GetExtension(extension)+"\">Minecraft!</a><br/><br/>");
+    document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs"+GetvExtension(vExtension)+"\">About Us</a><br/><br/>");
+    document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media"+GetvExtension(vExtension)+"\">Media</a><br/><br/>");
+    document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft"+GetvExtension(vExtension)+"\">Minecraft!</a><br/><br/>");
 
 }
 
-function Title(input)
+function Title(vPage)
 {
     document.write("<title>");
-        if(input <= 0)
+        if(vPage <= 0)
         {
             document.write("HTKB Home Page");
         }
-        else if(input == 1)
+        else if(vPage == 1)
         {
             document.write("About Us");
         }
-        else if(input == 2)
+        else if(vPage == 2)
         {
             document.write("Media");
         }
-        else if(input == 3)
+        else if(vPage == 3)
         {
             document.write("Minecraft!");
         }
     document.write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
     document.write("<h2>");
-        if(input == 0)
+        if(vPage == 0)
         {
             document.write("Welcome to the House That Kamurai Built!");
         }
-        else if(input == 1)
+        else if(vPage == 1)
         {
             document.write("About Us");
         }
-        else if(input == 2)
+        else if(vPage == 2)
         {
             document.write("Media");
         }
-        else if(input == 3)
+        else if(vPage == 3)
         {
             document.write("Minecraft!");
         }
 	document.write("</h2>");
 }
 
-function Content(input)
+function Content(vPage)
 {
     document.write("<p id=\"idCenterContent\">");
-        if(input == 0)
+        if(vPage == 0)
         {
             document.write("The House That Kamurai Built is an entertainment company with the primary focus ");
             document.write("of increasing awesome by stimulating intelligent conversation and entertainment via discussion and ");
             document.write("game design.<br>");
             document.write("Increase the Awesome with us!<br>");
         }
-        else if(input == 1)
+        else if(vPage == 1)
         {
             document.write("We are working to build this into a better place.</br>");
             document.write("If you found this, then you must be at least (Awesome/2).</br>");
             document.write("Stay tuned, right now it\"s all about laying foundation for the future.</br>");
         }
-        else if(input == 2)
+        else if(vPage == 2)
         {
             	document.write("You can find us at all these different places:</br>");
 			document.write("<br/>");
@@ -110,7 +110,7 @@ function Content(input)
 				document.write("<a href=\"https://www.gplus.com/Members/Cris-Kamurai\">Kamurai\"s Google Plus.</a></br>");
 				document.write("<a href=\"http://www.yoyogames.com/users/Kamurai\">Kamurai\"s YoYo Games page:  See some of the games he\"s posted.</a></br>");
 		}
-        else if(input == 3)
+        else if(vPage == 3)
         {
             	document.write("If you would like to play Minecraft with us, we have several different servers:</br>");
 				document.write("Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>");
@@ -156,10 +156,10 @@ function Content(input)
     document.write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	document.write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>");
@@ -173,7 +173,7 @@ function Versions(input)
 		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 1)
+	else if(vPage == 1)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>");
@@ -188,7 +188,7 @@ function Versions(input)
 		document.write("<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 2)
+	else if(vPage == 2)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>");
@@ -203,7 +203,7 @@ function Versions(input)
 		document.write("<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 3)
+	else if(vPage == 3)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>");

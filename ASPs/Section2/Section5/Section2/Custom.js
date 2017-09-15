@@ -1,69 +1,69 @@
-function Navigation(level, extension)
+function Navigation(vLevel, vExtension)
 {
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section1/Index"+GetExtension(extension)+"\">Gynowars</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project2"+GetExtension(extension)+"\">Assault</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project3"+GetExtension(extension)+"\">Mars</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section4/Index"+GetExtension(extension)+"\">Renley</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section5/Index"+GetExtension(extension)+"\">Antarrea</a><br><br>");
-		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section2/Section5/Section1/Index"+GetExtension(extension)+"\">Global</a><br><br>");
-		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section2/Section5/Section2/Index"+GetExtension(extension)+"\">Grendol</a><br><br>");
-			Response.Write("<a class=\"navlinkC\" href=\""+GetPath(level)+"Section2/Section5/Section2/Project1"+GetExtension(extension)+"\">Land of the Orcish Empire: Age of Magic</a><br><br>");
-			Response.Write("<a class=\"navlinkC\" href=\""+GetPath(level)+"Section2/Section5/Section2/Project2"+GetExtension(extension)+"\">Coliseum: Arena</a><br><br>");
-		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section2/Section5/Section3/Index"+GetExtension(extension)+"\">Utopia</a><br><br>");
-		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(level)+"Section2/Section5/Section4/Index"+GetExtension(extension)+"\">Elvia</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Index"+GetExtension(extension)+"\">Editations</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project7"+GetExtension(extension)+"\">Truth</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project8"+GetExtension(extension)+"\">Kingdoms</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project9"+GetExtension(extension)+"\">Terminal World</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project10"+GetExtension(extension)+"\">Monster Office Workplace</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project11"+GetExtension(extension)+"\">Battle Princesses</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project12"+GetExtension(extension)+"\">Sacred Offerings</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project13"+GetExtension(extension)+"\">The Way</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"\">Conspiratorium</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"\">Conversion</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index"+GetExtension(vExtension)+"\">Gynowars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2"+GetExtension(vExtension)+"\">Assault</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3"+GetExtension(vExtension)+"\">Mars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index"+GetExtension(vExtension)+"\">Renley</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index"+GetExtension(vExtension)+"\">Antarrea</a><br><br>");
+		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section5/Section1/Index"+GetExtension(vExtension)+"\">Global</a><br><br>");
+		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section5/Section2/Index"+GetExtension(vExtension)+"\">Grendol</a><br><br>");
+			Response.Write("<a class=\"navlinkC\" href=\""+GetPath(vLevel)+"Section2/Section5/Section2/Project1"+GetExtension(vExtension)+"\">Land of the Orcish Empire: Age of Magic</a><br><br>");
+			Response.Write("<a class=\"navlinkC\" href=\""+GetPath(vLevel)+"Section2/Section5/Section2/Project2"+GetExtension(vExtension)+"\">Coliseum: Arena</a><br><br>");
+		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section5/Section3/Index"+GetExtension(vExtension)+"\">Utopia</a><br><br>");
+		Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section5/Section4/Index"+GetExtension(vExtension)+"\">Elvia</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Index"+GetExtension(vExtension)+"\">Editations</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7"+GetExtension(vExtension)+"\">Truth</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8"+GetExtension(vExtension)+"\">Kingdoms</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9"+GetExtension(vExtension)+"\">Terminal World</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10"+GetExtension(vExtension)+"\">Monster Office Workplace</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11"+GetExtension(vExtension)+"\">Battle Princesses</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12"+GetExtension(vExtension)+"\">Sacred Offerings</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13"+GetExtension(vExtension)+"\">The Way</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14"+GetExtension(vExtension)+"\">Conspiratorium</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project15"+GetExtension(vExtension)+"\">Conversion</a><br><br>");
 
 }
 
-function Title(input)
+function Title(vPage)
 {
 	Response.Write("<title>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Grendol");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Land of the Orcish Empire: Age of Magic");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Coliseum: Arena");
 		}
 	Response.Write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
 	Response.Write("<h2>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			Response.Write("Grendol");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Land of the Orcish Empire: Age of Magic");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Coliseum: Arena");
 		}
 	Response.Write("</h2>");
 }
 
-function Content(input)
+function Content(vPage)
 {
 	Response.Write("<p id=\"idCenterContent\">");
-    	if(input == 0)
+    	if(vPage == 0)
 		{
 			Response.Write("Here are projects based in the Grendol Empire:</br>");
 			Response.Write("</br>");
@@ -71,22 +71,22 @@ function Content(input)
 			Response.Write("comprise the Grendol Empire.</br>");
 			Response.Write("Coliseum: Arena: a CCG representing the gladitorial arenas of Grendol.</br>");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			Response.Write("Land of the Orcish Empire: Age of Magic: is a CCG based on the different factions that ");
 			Response.Write("comprise the Grendol Empire.");
 		}
-		else if(input == 2)
+		else if(vPage == 2)
 		{
 			Response.Write("Coliseum: Arena is a CCG representing the gladitorial arenas of Grendol.");
 		}
 	Response.Write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/index.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/index.php\">PHP</a><br>");
@@ -100,7 +100,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section2/index\">ASP.NET MVC App</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/Section2/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 1)
+	else if(vPage == 1)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/Project1.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/Project1.php\">PHP</a><br>");
@@ -115,7 +115,7 @@ function Versions(input)
 		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/Section2/Project1.html\">Apache SSI</a><br>");
 	
 	}
-	else if(input == 2)
+	else if(vPage == 2)
 	{
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/Project2.html\">HTML</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/Project2.php\">PHP</a><br>");

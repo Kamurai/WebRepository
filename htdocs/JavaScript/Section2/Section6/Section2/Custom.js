@@ -1,73 +1,73 @@
-function Navigation(level)
+function Navigation(vLevel)
 {
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section1/Index.html\">Gynowars</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project2.html\">Assault</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project3.html\">Mars</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section4/Index.html\">Renley</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section5/Index.html\">Antarrea</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Index.html\">Editations</a><br><br>");
-		document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Project1.html\">Magic: The Tactical</a><br><br>");
-		document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Section2/Index.html\">Warhammer 40K</a><br><br>");
-			document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Section2/Project1.html\">Mission!</a><br><br>");
-			document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Section2/Section2/Index.html\">HTKB Armies</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project7.html\">Truth</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project8.html\">Kingdoms</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project9.html\">Terminal World</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project10.html\">Monster Office Workplace</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project11.html\">Battle Princesses</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project12.html\">Sacred Offerings</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project13.html\">The Way</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project14.html\">Conspiratorium</a><br><br>");
-	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project15.html\">Conversion</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index.html\">Gynowars</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2.html\">Assault</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3.html\">Mars</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index.html\">Renley</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index.html\">Antarrea</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Index.html\">Editations</a><br><br>");
+		document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Project1.html\">Magic: The Tactical</a><br><br>");
+		document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Section2/Index.html\">Warhammer 40K</a><br><br>");
+			document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Section2/Project1.html\">Mission!</a><br><br>");
+			document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Section2/Section2/Index.html\">HTKB Armies</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7.html\">Truth</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8.html\">Kingdoms</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9.html\">Terminal World</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10.html\">Monster Office Workplace</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11.html\">Battle Princesses</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12.html\">Sacred Offerings</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13.html\">The Way</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14.html\">Conspiratorium</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project15.html\">Conversion</a><br><br>");
 
 }
 
-function Title(input)
+function Title(vPage)
 {
 	document.write("<title>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			document.write("Warhammer 40K");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			document.write("Mission!");
 		}
 	document.write("</title>");
 }
 
-function Header(input)
+function Header(vPage)
 {
 	document.write("<h2>");
-		if(input == 0)
+		if(vPage == 0)
 		{
 			document.write("Warhammer 40K");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			document.write("Mission!");
 		}
 	document.write("</h2>");
 }
 
-function Content(input)
+function Content(vPage)
 {
 	document.write("<p id=\"idCenterContent\">");
-    	if(input == 0)
+    	if(vPage == 0)
 		{
 			document.write("This section is dedicated to projects that edit the Warhammer 40K universe.");
 		}
-		else if(input == 1)
+		else if(vPage == 1)
 		{
 			document.write("This section is dedicated to an adventure RPG project in the Warhammer 40K universe.");
 		}
 	document.write("</p>");
 }
 
-function Versions(input)
+function Versions(vPage)
 {
 	document.write("Other versions of this page are here:<br>");
-	if(input == 0)
+	if(vPage == 0)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/Section2/Section6/Section2/index.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/Section2/Section6/Section2/index.php\">PHP</a><br>");
@@ -81,7 +81,7 @@ function Versions(input)
 		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/index\">ASP.NET MVC App</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Section6/Section2/index.html\">Apache SSI</a><br>");
 	}
-	else if(input == 1)
+	else if(vPage == 1)
 	{
 		document.write("<a href=\"http://htkb.dyndns.org/Section2/Section6/Section2/Project1.html\">HTML</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/Section2/Section6/Section2/Project1.php\">PHP</a><br>");

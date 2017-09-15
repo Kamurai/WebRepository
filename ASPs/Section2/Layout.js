@@ -1,14 +1,14 @@
-function WriteWebpage(input, level, extension)
+function WriteWebpage(vPage, vLevel, vExtension)
 {
     Response.Write("<table id=\"idTableMain\">");
 		Response.Write("<tr id=\"idHeaderRow\">");
             Response.Write("<td id=\"idHeaderRowCenter\" colspan=\"3\">");
-                TitlePicture(level);
+                TitlePicture(vLevel);
 			Response.Write("</td>");
         Response.Write("</tr>");
         Response.Write("<tr id=\"idNavigationRow\">");
             Response.Write("<td id=\"idNavigationBar\" colspan=\"3\">");
-                NavBar(level, extension);
+                NavBar(vLevel, vExtension);
             Response.Write("</td>");
         Response.Write("</tr>");    
         Response.Write("<tr id=\"idCenterRow\">");
@@ -16,19 +16,19 @@ function WriteWebpage(input, level, extension)
 				Response.Write("<h4>");
 					Response.Write("Navigation");
 				Response.Write("</h4>");
-				Navigation(level, extension);
+				Navigation(vLevel, vExtension);
 			Response.Write("</td>");
 			Response.Write("<td id=\"idCenterRowMain\">");
-				Title(input);
-				Header(input);
-				Content(input);
+				Title(vPage);
+				Header(vPage);
+				Content(vPage);
 			Response.Write("</td>");
 			Response.Write("<td id=\"idCenterRowRight\">");
 				Response.Write("<h4>");
 					Response.Write("Information");
 				Response.Write("</h4>");
-				GetInformation(extension);
-				Versions(input);
+				GetInformation(vExtension);
+				Versions(vPage);
 			Response.Write("</td>");
 		Response.Write("</tr>");
         Response.Write("<tr id=\"idFooterRow\">");
