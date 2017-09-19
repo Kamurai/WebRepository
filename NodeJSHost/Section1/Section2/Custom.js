@@ -3,7 +3,8 @@ exports.Navigation = function (vLevel)
 	var result = "<a class=\"navlinkA\"href=\"http://hktb.dyndns.org/Section1/Project1\">Basic HTML</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\"href=\"http://hktb.dyndns.org/Section3/Project1.php\">PHP</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/index\">Javascript</a><br><br>";
-		result += "<a class=\"navlinkB\" href=\"href=\"http://hktb.dyndns.org/Section1/Section2/Project1.html\">HTML Javascript</a><br><br>";
+		result += "<a class=\"navlinkB\" href=\"href=\"http://hktb.dyndns.org/Javascript/Section1/Section2/Project1.html\">HTML Javascript</a><br><br>";
+		result += "<a class=\"navlinkB\" href=\"href=\"http://hktb.dyndns.org/JQuery/Section1/Section2/Project1.html\">JQuery</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project2.asp\">ASP Javascript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project3.aspx\">ASP.NET Javascript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:84/Section1/Section2/Project4\">Node JS</a><br><br>";
@@ -70,6 +71,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Section2/index.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Section2/index.php\">PHP</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/index.html\">HTML Javascript</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/index.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/index.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/index.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Section2/index.shtml\">Perl</a><br>";
@@ -86,6 +88,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Project1.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Project1.php\">PHP</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/index.html\">HTML Javascript</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/index.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project2.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project3.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Project3.shtml\">Perl</a><br>";

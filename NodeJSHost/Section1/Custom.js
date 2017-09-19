@@ -53,6 +53,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/Section1/index.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/index.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section1/index.php\">HTML Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/JQuery/Section1/index.php\">JQuery</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/index.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/index.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/index.shtml\">Perl</a><br>";

@@ -170,6 +170,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/index.php\">HTML Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/JQuery/index.php\">JQuery</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/index.shtml\">Perl</a><br>";
@@ -186,6 +188,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.php\">HTML Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/JQuery/AboutUs.php\">JQuery</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>";
@@ -202,6 +206,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Media.php\">HTML Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/JQuery/Media.php\">JQuery</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>";
@@ -218,6 +224,8 @@ exports.Versions = function (vPage)
 	{
 		result += "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.php\">HTML Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/JQuery/Minecraft.php\">JQuery</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>";
