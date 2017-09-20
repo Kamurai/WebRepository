@@ -28,7 +28,7 @@ function WriteWebpage(vPage, vLevel, vExtension)
 					Response.Write("Information");
 				Response.Write("</h4>");
 				GetInformation(vExtension);
-				Versions(vPage);
+				Versions(vPage, vExtension);
 			Response.Write("</td>");
 		Response.Write("</tr>");
         Response.Write("<tr id=\"idFooterRow\">");
