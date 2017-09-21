@@ -114,17 +114,20 @@ sub Versions
 	if($Page <= 0)
 	{
 		print "<a href=\"http://htkb.dyndns.org/Section2/Section5/index.html\">HTML</a><br>";
-		print "<a href=\"http://htkb.dyndns.org/Section2/Section5/index.php\">PHP</a><br>";
-		print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/index.html\">HTML Javascript</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/index.asp\">ASP Javascript</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/index.aspx\">ASP.NET Javascript</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/index.jsp\">JSP</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/index.xhtml\">JSF</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/index.cshtml\">ASP.NET Web App</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/index.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/index\">ASP.NET MVC App</a><br>";
-		print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/index.html\">Apache SSI</a><br>";
-		
+        print "<a href=\"http://htkb.dyndns.org/Section2/Section5/index.php\">PHP</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/index.html\">HTML Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section5/index.html\">JQuery</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/index.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/index.aspx\">ASP.NET Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:84/Section2/Section5/index\">Node JS</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/index.jsp\">JSP</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/index.xhtml\">JSF</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/index.cshtml\">ASP.NET Web App</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/index.aspx\">ASP.NET Webform</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/index\">ASP.NET MVC App</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/index.html\">Apache SSI</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:82/Section2/Section5/index\">Python Web.py</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:83/Section2/Section5/index\">Ruby On Rails</a><br>";
 	}
 
 }
