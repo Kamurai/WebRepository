@@ -179,8 +179,10 @@ function Content(vPage, tableRowCenterMain)
 
 function Versions(vPage)
 {
-    var vDefault = "<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>";
+    var vDefault = "";
+    vDefault += "<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:84/index\">Node JS</a><br>";
@@ -201,8 +203,9 @@ function Versions(vPage)
 	}
 	else if(vPage == 1)
 	{
-		var vResult = "<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a><br>";
@@ -214,12 +217,13 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:83/AboutUs.html\">Ruby on Rails</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby on Rails</a><br>";
     }
 	else if(vPage == 2)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a><br>";
@@ -231,12 +235,13 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:83/Media.html\">Ruby on Rails</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby on Rails</a><br>";
     }
 	else if(vPage == 3)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/Minecraft\">Node JS</a><br>";
@@ -248,7 +253,7 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:83/Minecraft.html\">Ruby on Rails</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby on Rails</a><br>";
 	}
     else
     {
