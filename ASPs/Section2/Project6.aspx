@@ -6,7 +6,7 @@
 <script language="javascript" src="Layout.js" runat="server"></script>
 <script language="javascript" src="Custom.js" runat="server"></script>
 <%	
-	var vPage  = 8;
+	var vPage  = 6;
 	var vLevel = 1;
 	var vExtension = 2;
 	var vCSS = "Section2.css";

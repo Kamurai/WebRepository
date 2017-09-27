@@ -5,7 +5,7 @@
 	<script language="JavaScript" src="Custom.js" runat="server"></script>
 	<%
 		dim vPage, vLevel, vExtension
-		vPage = 8
+		vPage = 6
 		vLevel = 1
 		vExtension = 1
 		vCSS = "Section2.css"

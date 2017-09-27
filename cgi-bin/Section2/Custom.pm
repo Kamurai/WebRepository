@@ -10,7 +10,6 @@ sub Navigation
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Project3.shtml'>Mars</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Section4/Index.shtml'>Renley</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section6/Index.shtml'>Editations</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Project7.shtml'>Truth</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Project8.shtml'>Kingdoms</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section2/Project9.shtml'>Terminal World</a><br><br>";
@@ -42,39 +41,39 @@ sub Title
 		{
 			print "Mars Projects";
 		}
-		elsif($Page == 7)
+		elsif($Page == 6)
 		{
 			print "Truth";
 		}
-		elsif($Page == 8)
+		elsif($Page == 7)
 		{
 			print "Kingdoms";
 		}
-		elsif($Page == 9)
+		elsif($Page == 8)
 		{
 			print "Terminal World";
 		}
-		elsif($Page == 10)
+		elsif($Page == 9)
 		{
 			print "Monster Office Workplace";
 		}
-		elsif($Page == 11)
+		elsif($Page == 10)
 		{
 			print "Battle Princesses";
 		}
-		elsif($Page == 12)
+		elsif($Page == 11)
 		{
 			print "Sacred Offerings";
 		}
-		elsif($Page == 13)
+		elsif($Page == 12)
 		{
 			print "The Way";
 		}
-		elsif($Page == 14)
+		elsif($Page == 13)
 		{
 			print "Conspiratorium";
 		}
-		elsif($Page == 15)
+		elsif($Page == 14)
 		{
 			print "Conversion";
 		}
@@ -105,55 +104,55 @@ sub Header
 			print "Mars Projects";
 		print "</h2>";
 	}
-	elsif($Page == 7)
+	elsif($Page == 6)
 	{
 		print "<h2>";
 			print "Truth";
 		print "</h2>";
 	}
-	elsif($Page == 8)
+	elsif($Page == 7)
 	{
 		print "<h2>";
 			print "Kingdoms";
 		print "</h2>";
 	}
-	elsif($Page == 9)
+	elsif($Page == 8)
 	{
 		print "<h2>";
 			print "Terminal World";
 		print "</h2>";
 	}
-	elsif($Page == 10)
+	elsif($Page == 9)
 	{
 		print "<h2>";
 			print "Monster Office Workplace";
 		print "</h2>";
 	}
-	elsif($Page == 11)
+	elsif($Page == 10)
 	{
 		print "<h2>";
 			print "Battle Princesses";
 		print "</h2>";
 	}
-	elsif($Page == 12)
+	elsif($Page == 11)
 	{
 		print "<h2>";
 			print "Sacred Offerings";
 		print "</h2>";
 	}
-	elsif($Page == 13)
+	elsif($Page == 12)
 	{
 		print "<h2>";
 			print "The Way";
 		print "</h2>";
 	}
-	elsif($Page == 14)
+	elsif($Page == 13)
 	{
 		print "<h2>";
 			print "Conspiratorium";
 		print "</h2>";
 	}
-	elsif($Page == 15)
+	elsif($Page == 14)
 	{
 		print "<h2>";
 			print "Conversion";
@@ -179,52 +178,52 @@ sub Content
 		{
 			print "This section is dedicated to the Mars centered project \"Opposition\".";
 		}
-		elsif($Page == 7)
+		elsif($Page == 6)
 		{
 			print "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
 		}
-		elsif($Page == 8)
+		elsif($Page == 7)
 		{
 			print "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world's Kingdoms, get rich, get strong and conquer.";
 		}
-		elsif($Page == 9)
+		elsif($Page == 8)
 		{
 			print "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
 			print "the zombies?  Can you survive?";
 			
 		}
-		elsif($Page == 10)
+		elsif($Page == 9)
 		{
 			print "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
 			print "Can you earn the most credit and smooze your way into a promotion?";
 			
 		}
-		elsif($Page == 11)
+		elsif($Page == 10)
 		{
 			print "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
 			print "These princess aren't your helpless maidens, but valiant warriors themselves.";
 			
 		}
-		elsif($Page == 12)
+		elsif($Page == 11)
 		{
 			print "This section is dedicated to the board game project \"Sacred Offerings\".";
 			print "Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.";
 			print "Draw people to worship you, but be discerning about who is sacrificed.";
 			
 		}
-		elsif($Page == 13)
+		elsif($Page == 12)
 		{
 			print "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
 			print "Escape the binds of the world and the board to reach enlightment and win.";
 			
 		}
-		elsif($Page == 14)
+		elsif($Page == 13)
 		{
 			print "This section is dedicated to the board game project \"Conspiratorium\".";
 			print "A game of assassins and CIA, you must remember who is friend and who is not.";
 			
 		}
-		elsif($Page == 15)
+		elsif($Page == 14)
 		{
 			print "This section is dedicated to the board game project \"Conversion\".";
 			print "Compete on the elemental market by processing elements and becoming the elemental kingpin.";
@@ -293,6 +292,24 @@ sub Versions
         print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project3.html\">Apache SSI</a><br>";
         print "<a href=\"http://htkb.dyndns.org:82/Section2/Project3\">Python Web.py</a><br>";
         print "<a href=\"http://htkb.dyndns.org:83/Section2/Project3\">Ruby On Rails</a><br>";
+	}
+	elsif($Page == 6)
+	{
+		print "<a href=\"http://htkb.dyndns.org/Section2/Project6.html\">HTML</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/Section2/Project6.php\">PHP</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project6.html\">HTML Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project6.html\">JQuery</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project6.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project6.aspx\">ASP.NET Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:84/Section2/Project6\">Node JS</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project6.jsp\">JSP</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project6.xhtml\">JSF</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project6.cshtml\">ASP.NET Web App</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project6.aspx\">ASP.NET Webform</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project6\">ASP.NET MVC App</a><br>";
+        print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project6.html\">Apache SSI</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:82/Section2/Project6\">Python Web.py</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:83/Section2/Project6\">Ruby On Rails</a><br>";
 	}
 	elsif($Page == 7)
 	{
@@ -438,25 +455,7 @@ sub Versions
         print "<a href=\"http://htkb.dyndns.org:82/Section2/Project14\">Python Web.py</a><br>";
         print "<a href=\"http://htkb.dyndns.org:83/Section2/Project14\">Ruby On Rails</a><br>";
 	}
-	elsif($Page == 15)
-	{
-		print "<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project15.html\">HTML Javascript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project15.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\">ASP Javascript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\">ASP.NET Javascript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:84/Section2/Project15\">Node JS</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project15.jsp\">JSP</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project15.xhtml\">JSF</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project15.cshtml\">ASP.NET Web App</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project15.aspx\">ASP.NET Webform</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project15\">ASP.NET MVC App</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project15.html\">Apache SSI</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:82/Section2/Project15\">Python Web.py</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:83/Section2/Project15\">Ruby On Rails</a><br>";
-	}
-
+	
 }
 
 1;
