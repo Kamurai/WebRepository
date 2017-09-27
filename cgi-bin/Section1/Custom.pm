@@ -12,9 +12,9 @@ sub Navigation
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section4/index.shtml'>Java</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section5/index.shtml'>ASP.Net</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section6/index.shtml'>Databases</a><br><br>";
-	print "<a class=\"navlinkA\" href='http://htkb.dyndns.org/SSI/Section1/index.html'>Apache SSI</a><br><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby On Rails</a><br>";
+	print "<a class=\"navlinkA\" href='http://htkb.dyndns.org/SSI/Section1/Project7.html'>Apache SSI</a><br><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Project8\">Python Web.py</a><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Project9\">Ruby On Rails</a><br>";
 }
 
 sub Title

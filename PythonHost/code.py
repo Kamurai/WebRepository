@@ -13,7 +13,7 @@ urls = (
     '/Media', 'Media',
     '/Minecraft', 'Minecraft',
     '/Section1/index', 'Section1',
-    '/Section1/Project7', 'Section1P7',
+    '/Section1/Project8', 'Section1P8',
     '/Section1/Section2/index', 'Section1_2',
     '/Section1/Section4/index', 'Section1_4',
     '/Section1/Section5/index', 'Section1_5',
@@ -159,9 +159,9 @@ class Section1:
         vSection = '1'
         return Main.Layout(vPage, vLevel, vSection)
         
-class Section1P7:
+class Section1P8:
     def GET(self):
-        vPage = '7'
+        vPage = '8'
         vLevel = '1'
         vSection = '1'
         return Main.Layout(vPage, vLevel, vSection)
