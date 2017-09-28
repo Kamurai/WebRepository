@@ -5,21 +5,21 @@ sub Navigation
 	my $Path = $_[0];
 	my $DownPath = $_[1];
 	
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project1.html'>Basic HTML</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project1.php'>PHP</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.html'>Basic HTML</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.php'>PHP</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section2/Index.shtml'>Javascript</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project3.shtml'>Perl</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Section4/Index.shtml'>Java</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Section5/Index.shtml'>ASP.NET</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Section6/Index.shtml'>Databases</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.shtml'>Perl</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/Section4/index.shtml'>Java</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/Section5/index.shtml'>ASP.NET</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/Section6/index.shtml'>Databases</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Section1/Section6/Project1.shtml'>Oracle</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Section1/Section6/Project2.shtml'>Derby</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Section1/Section6/Project3.shtml'>MySQL</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Section1/Section6/Project4.shtml'>SQL Server</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Section1/Section6/Project5.shtml'>Postgres</a><br><br>";
 	print "<a class=\"navlinkA\" href='http://htkb.dyndns.org/SSI/Section1/index.html'>Apache SSI</a><br><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby On Rails</a><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/index\">Python Web.py</a><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/index\">Ruby On Rails</a><br>";
 }
 
 sub Title

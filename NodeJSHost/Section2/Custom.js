@@ -5,16 +5,15 @@ exports.Navigation = function (vLevel)
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3\">Mars</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/index\">Renley</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/index\">Antarrea</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/index\">Editations</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7\">Truth</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8\">Kingdoms</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9\">Terminal World</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10\">Monster Office Workplace</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11\">Battle Princesses</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12\">Sacred Offerings</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13\">The Way</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14\">Conspiratorium</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project15\">Conversion</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project6\">Truth</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7\">Kingdoms</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8\">Terminal World</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9\">Monster Office Workplace</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10\">Battle Princesses</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11\">Sacred Offerings</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12\">The Way</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13\">Conspiratorium</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14\">Conversion</a><br><br>";
     return result;
 }
 
@@ -33,39 +32,39 @@ exports.Title = function (vPage)
 		{
 			result += "Mars Projects";
 		}
-		else if(vPage == 7)
+		else if(vPage == 6)
 		{
 			result += "Truth";
 		}
-		else if(vPage == 8)
+		else if(vPage == 7)
 		{
 			result += "Kingdoms";
 		}
-		else if(vPage == 9)
+		else if(vPage == 8)
 		{
 			result += "Terminal World";
 		}
-		else if(vPage == 10)
+		else if(vPage == 9)
 		{
 			result += "Monster Office Workplace";
 		}
-		else if(vPage == 11)
+		else if(vPage == 10)
 		{
 			result += "Battle Princesses";
 		}
-		else if(vPage == 12)
+		else if(vPage == 11)
 		{
 			result += "Sacred Offerings";
 		}
-		else if(vPage == 13)
+		else if(vPage == 12)
 		{
 			result += "The Way";
 		}
-		else if(vPage == 14)
+		else if(vPage == 13)
 		{
 			result += "Conspiratorium";
 		}
-		else if(vPage == 15)
+		else if(vPage == 14)
 		{
 			result += "Conversion";
 		}
@@ -88,39 +87,39 @@ exports.Header = function (vPage)
 		{
 			result += "Mars Projects";
 		}
-		else if(vPage == 7)
+		else if(vPage == 6)
 		{
 			result += "Truth";
 		}
-		else if(vPage == 8)
+		else if(vPage == 7)
 		{
 			result += "Kingdoms";
 		}
-		else if(vPage == 9)
+		else if(vPage == 8)
 		{
 			result += "Terminal World";
 		}
-		else if(vPage == 10)
+		else if(vPage == 9)
 		{
 			result += "Monster Office Workplace";
 		}
-		else if(vPage == 11)
+		else if(vPage == 10)
 		{
 			result += "Battle Princesses";
 		}
-		else if(vPage == 12)
+		else if(vPage == 11)
 		{
 			result += "Sacred Offerings";
 		}
-		else if(vPage == 13)
+		else if(vPage == 12)
 		{
 			result += "The Way";
 		}
-		else if(vPage == 14)
+		else if(vPage == 13)
 		{
 			result += "Conspiratorium";
 		}		
-		else if(vPage == 15)
+		else if(vPage == 14)
 		{
 			result += "Conversion";
 		}
@@ -143,46 +142,46 @@ exports.Content = function (vPage)
 		{
 			result += "This section is dedicated to the Mars centered project \"Opposition\".";
 		}
-		else if(vPage == 7)
+		else if(vPage == 6)
 		{
 			result += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
 		}
-		else if(vPage == 8)
+		else if(vPage == 7)
 		{
 			result += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.";
 		}
-		else if(vPage == 9)
+		else if(vPage == 8)
 		{
 			result += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
 			result += "the zombies?  Can you survive?";
 		}
-		else if(vPage == 10)
+		else if(vPage == 9)
 		{
 			result += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
 			result += "Can you earn the most credit and smooze your way into a promotion?";
 		}
-		else if(vPage == 11)
+		else if(vPage == 10)
 		{
 			result += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
 			result += "These princess aren\"t your helpless maidens, but valiant warriors themselves.";
 		}
-		else if(vPage == 12)
+		else if(vPage == 11)
 		{
 			result += "This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but";
 			result += "don\"t want to fall out favor with the people more than the other deities.";
 			result += "Draw people to worship you, but be discerning about who is sacrificed.";
 		}
-		else if(vPage == 13)
+		else if(vPage == 12)
 		{
 			result += "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
 			result += "Escape the binds of the world and the board to reach enlightment and win.";
 		}
-		else if(vPage == 14)
+		else if(vPage == 13)
 		{
 			result += "This section is dedicated to the board game project \"Conspiratorium\".";
 			result += "A game of assassins and CIA, you must remember who is friend and who is not.";
 		}
-		else if(vPage == 15)
+		else if(vPage == 14)
 		{
 			result += "This section is dedicated to the board game project \"Conversion\".";
 			result += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";
@@ -247,6 +246,24 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project3.html\">Apache SSI</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Project3\">Python Web.py</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Project3\">Ruby On Rails</a><br>";
+	}
+	else if(vPage == 6)
+	{
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Project6.html\">HTML</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Project6.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project6.html\">HTML Javascript</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project6.html\">JQuery</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project6.aspx\">ASP.NET Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project6.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Project6.shtml\">Perl</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project6.jsp\">JSP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project6.xhtml\">JSF</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project6.cshtml\">ASP.NET Web App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project6.aspx\">ASP.NET Webform</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project6\">ASP.NET MVC App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project6.html\">Apache SSI</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Project6\">Python Web.py</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Project6\">Ruby On Rails</a><br>";
 	}
 	else if(vPage == 7)
 	{
@@ -392,23 +409,5 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Project14\">Python Web.py</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Project14\">Ruby On Rails</a><br>";
 	}
-	else if(vPage == 15)
-	{
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project15.html\">HTML Javascript</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project15.html\">JQuery</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\">ASP Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Project15.shtml\">Perl</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project15.jsp\">JSP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project15.xhtml\">JSF</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project15.cshtml\">ASP.NET Web App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project15.aspx\">ASP.NET Webform</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project15\">ASP.NET MVC App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project15.html\">Apache SSI</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Project15\">Python Web.py</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Project15\">Ruby On Rails</a><br>";
-	}
-    return result;
+	return result;
 }

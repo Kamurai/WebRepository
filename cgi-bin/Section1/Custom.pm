@@ -5,16 +5,16 @@ sub Navigation
 	my $Path = $_[0];
 	my $DownPath = $_[1];
 	
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project1.html'>Basic HTML</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project1.php'>PHP</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.html'>Basic HTML</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.php'>PHP</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section2/index.shtml'>Javascript</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section1/Project3.shtml'>Perl</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path."Section1/index.shtml'>Perl</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section4/index.shtml'>Java</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section5/index.shtml'>ASP.Net</a><br><br>";
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section6/index.shtml'>Databases</a><br><br>";
-	print "<a class=\"navlinkA\" href='http://htkb.dyndns.org/SSI/Section1/Project7.html'>Apache SSI</a><br><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Project8\">Python Web.py</a><br>";
-    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Project9\">Ruby On Rails</a><br>";
+	print "<a class=\"navlinkA\" href='http://htkb.dyndns.org/SSI/Section1/index.html'>Apache SSI</a><br><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/index\">Python Web.py</a><br>";
+    print "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/index\">Ruby On Rails</a><br>";
 }
 
 sub Title

@@ -18,39 +18,39 @@
         {
             $Result = $Result.'Mars Projects';
         }
-        else if($Page==7)
+        else if($Page==6)
         {
             $Result = $Result.'Truth';
         }
-        else if($Page==8)
+        else if($Page==7)
         {
             $Result = $Result.'Kingdoms';
         }
-        else if($Page==9)
+        else if($Page==8)
         {
             $Result = $Result.'Terminal World';
         }
-        else if($Page==10)
+        else if($Page==9)
         {
             $Result = $Result.'Monster Office Workplace';
         }
-        else if($Page==11)
+        else if($Page==10)
         {
             $Result = $Result.'Battle Princesses';
         }
-        else if($Page==12)
+        else if($Page==11)
         {
             $Result = $Result.'Sacred Offerings';
         }
-        else if($Page==13)
+        else if($Page==12)
         {
             $Result = $Result.'The Way';
         }
-        else if($Page==14)
+        else if($Page==13)
         {
             $Result = $Result.'Conspiratorium';
         }
-        else if($Page==15)
+        else if($Page==14)
         {
             $Result = $Result.'Conversion';
         }
@@ -72,16 +72,15 @@
             <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project3.php\'>Mars</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Section4/index.php\'>Renley</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Section5/index.php\'>Antarrea</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Section6/index.php\'>Editations</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project7.php\'>Truth</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project8.php\'>Kingdoms</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project9.php\'>Terminal World</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project10.php\'>Monster Office Workplace</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project11.php\'>Battle Princesses</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project12.php\'>Sacred Offerings</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project13.php\'>The Way</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project14.php\'>Conspiratorium</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project15.php\'>Conversion</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project6.php\'>Truth</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project7.php\'>Kingdoms</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project8.php\'>Terminal World</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project9.php\'>Monster Office Workplace</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project10.php\'>Battle Princesses</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project11.php\'>Sacred Offerings</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project12.php\'>The Way</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project13.php\'>Conspiratorium</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section2/Project14.php\'>Conversion</a></br></br>
         ';
         return $Result;
     }
@@ -103,39 +102,39 @@
         {
             $Result = $Result.'Mars Projects';
         }
-        else if($Page==7)
+        else if($Page==6)
         {
             $Result = $Result.'Truth';
         }
-        else if($Page==8)
+        else if($Page==7)
         {
             $Result = $Result.'Kingdoms';
         }
-        else if($Page==9)
+        else if($Page==8)
         {
             $Result = $Result.'Terminal World';
         }
-        else if($Page==10)
+        else if($Page==9)
         {
             $Result = $Result.'Monster Office Workplace';
         }
-        else if($Page==11)
+        else if($Page==10)
         {
             $Result = $Result.'Battle Princesses';
         }
-        else if($Page==12)
+        else if($Page==11)
         {
             $Result = $Result.'Sacred Offerings';
         }
-        else if($Page==13)
+        else if($Page==12)
         {
             $Result = $Result.'The Way';
         }
-        else if($Page==14)
+        else if($Page==13)
         {
             $Result = $Result.'Conspiratorium';
         }
-        else if($Page==15)
+        else if($Page==14)
         {
             $Result = $Result.'Conversion';
         }
@@ -170,26 +169,26 @@
                 This section is dedicated to the Mars centered project Opposition.
             ';
         }
-        else if($Page==7)
+        else if($Page==6)
         {
             $Result = $Result.'
                 This section is dedicated to the MMO RTS project Truth.  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
             ';
         }
-        else if($Page==8)
+        else if($Page==7)
         {
             $Result = $Result.'
                 This section is dedicated to the digital board game project Kingdoms.  Explore the world\'s Kingdoms, get rich, get strong and conquer.
             ';
         }
-        else if($Page==9)
+        else if($Page==8)
         {
             $Result = $Result.'
                 This section is dedicated to the simulation MMO centered project Terminal World.  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
 						the zombies?  Can you survive?
             ';
         }
-        else if($Page==10)
+        else if($Page==9)
         {
             $Result = $Result.'
                 This section is dedicated to the card and board game project \'Monster Office Workplace\'.  These monsters mean serious business.<br/>
@@ -253,14 +252,14 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;2) Player with the most \'credit\' wins.<br/>	
             ';
         }
-        else if($Page==11)
+        else if($Page==10)
         {
             $Result = $Result.'
                 This section is dedicated to the card game project \'Battle Princesses\'.  Ever wanted to see your favorite princess battle for the kingdom?
                 These princess aren\'t your helpless maidens, but valiant warriors themselves.
             ';
         }
-        else if($Page==12)
+        else if($Page==11)
         {
             $Result = $Result.'
                 	This section is dedicated to the board game project \'Sacred Offerings\'.<br/>
@@ -374,7 +373,7 @@
 								The player with the lower points wins!<br/>
             ';
         }
-        else if($Page==13)
+        else if($Page==12)
         {
             $Result = $Result.'
                 	This section is dedicated to the card game project \'The Way\'.<br/>
@@ -458,7 +457,7 @@
 								The player moved off the board is the winner.<br/>
             ';
         }
-        else if($Page==14)
+        else if($Page==13)
         {
             $Result = $Result.'
                 	This section is dedicated to the board game project \'Conspiratorium\'.<br/>
@@ -513,7 +512,7 @@
 								The player matching the affiliation of the last remaining token on the board wins.<br/>
             ';
         }
-        else if($Page==15)
+        else if($Page==14)
         {
             $Result = $Result.'
                 	This section is dedicated to the board game project \'Conversion\'.<br/>
@@ -681,6 +680,22 @@
         else if($Page==7)
         {
             $Result = $Result.'
+                <a href=\'http://htkb.dyndns.org/Section2/Project6.html\'>HTML</a><br>
+                <a href=\'http://htkb.dyndns.org/Javascript/Section2/Project6.html\'>HTML Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:81/ASP/Section2/Project6.asp\'>ASP Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section2/Project6.aspx\'>ASP.NET Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org/Section2/Project6.shtml\'>Perl</a><br>
+                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section2/Project6.jsp\'>JSP</a><br>
+                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section2/Project6.xhtml\'>JSF</a><br>
+                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section2/Project6.cshtml\'>ASP.NET Web App</a><br>
+                <a href=\'http://htkb.dyndns.org:81/WebForm/Section2/Project6.aspx\'>ASP.NET Webform</a><br>
+                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section2/Project6\'>ASP.NET MVC App</a><br>
+                <a href=\'http://htkb.dyndns.org/SSI/Section2/Project6.html\'>Apache SSI</a><br>
+            ';
+        }
+        else if($Page==7)
+        {
+            $Result = $Result.'
                 <a href=\'http://htkb.dyndns.org/Section2/Project7.html\'>HTML</a><br>
                 <a href=\'http://htkb.dyndns.org/Javascript/Section2/Project7.html\'>HTML Javascript</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASP/Section2/Project7.asp\'>ASP Javascript</a><br>
@@ -804,22 +819,6 @@
                 <a href=\'http://htkb.dyndns.org:81/WebForm/Section2/Project14.aspx\'>ASP.NET Webform</a><br>
                 <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section2/Project14\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/Section2/Project14.html\'>Apache SSI</a><br>
-            ';
-        }
-        else if($Page==15)
-        {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section2/Project15.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section2/Project15.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/Section2/Project15.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section2/Project15.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section2/Project15.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section2/Project15.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section2/Project15.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section2/Project15\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section2/Project15.html\'>Apache SSI</a><br>
             ';
         }
         else

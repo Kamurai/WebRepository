@@ -6,11 +6,13 @@ class Section2Controller < ApplicationController
     end
     def Project3
     end
+    def Project6
+    end
     def Project7
     end
     def Project8
     end
-    def Project9
+    def Project8
     end
     def Project10
     end
@@ -21,7 +23,5 @@ class Section2Controller < ApplicationController
     def Project13
     end
     def Project14
-    end
-    def Project15
     end
 end
