@@ -1,12 +1,12 @@
 exports.Navigation = function (vLevel)
 {
-	var result = "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/index\">Gynowars</a><br><br>";
+	var result = "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index\">Gynowars</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2\">Assault</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3\">Mars</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/index\">Renley</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index\">Renley</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section4/Project1\">Warring Nations</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section2/Section4/Project2\">Psychodom: The One Empire</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/index\">Antarrea</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index\">Antarrea</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project6\">Truth</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7\">Kingdoms</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8\">Terminal World</a><br><br>";
@@ -84,21 +84,21 @@ exports.Versions = function (vPage)
 	var result = "";
 	if(vPage == 0)
 	{
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/index.html\">HTML</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/index.php\">PHP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section4/index.html\">HTML Javascript</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section4/index.html\">JQuery</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section4/index.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section4/index.asp\">ASP Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/index.shtml\">Perl</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section4/index.jsp\">JSP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section4/index.xhtml\">JSF</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section4/index.cshtml\">ASP.NET Web App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section4/index.aspx\">ASP.NET Webform</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section4/index\">ASP.NET MVC App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section4/index.html\">Apache SSI</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Section4/index\">Python Web.py</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Section4/index\">Ruby On Rails</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/Index.html\">HTML</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/Index.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section4/Index.html\">HTML Javascript</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section4/Index.html\">JQuery</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section4/Index.aspx\">ASP.NET Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section4/Index.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Section4/Index.shtml\">Perl</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section4/Index.jsp\">JSP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section4/Index.xhtml\">JSF</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section4/Index.cshtml\">ASP.NET Web App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section4/Index.aspx\">ASP.NET Webform</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section4/Index\">ASP.NET MVC App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section4/Index.html\">Apache SSI</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Section4/Index\">Python Web.py</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Section4/Index\">Ruby On Rails</a><br>";
 	}
 	else if(vPage == 1)
 	{

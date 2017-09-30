@@ -163,28 +163,28 @@ function Versions(vPage, vExtension)
 	Response.Write("Other versions of this page are here:<br>");
 	if(vPage == 0)
 	{
-		Response.Write("<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/index.html\">JQuery</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Index.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Index.html\">HTML Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/Index.html\">JQuery</a><br>");
 		if(vExtension == 1)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>");
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>");
 		}
 		else if(vExtension == 2)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>");
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP Javascript</a><br>");
 		}
-		Response.Write("<a href=\"http://htkb.dyndns.org:84/index\">Node JS</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/index.shtml\">Perl</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/index.jsp\">JSP</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\">JSF</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/index.cshtml\">ASP.NET Web App</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/index.aspx\">ASP.NET Webform</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>");
-	    Response.Write("<a href=\"http://htkb.dyndns.org:82/index\">Python Web.py</a><br>");
-        Response.Write("<a href=\"http://htkb.dyndns.org:83/index\">Ruby On Rails</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Index.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Index.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Index\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Index.html\">Apache SSI</a><br>");
+	    Response.Write("<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>");
+        Response.Write("<a href=\"http://htkb.dyndns.org:83/Index\">Ruby On Rails</a><br>");
     }
 	else if(vPage == 1)
 	{

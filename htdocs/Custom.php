@@ -193,17 +193,21 @@
     {
         $Result = '';
         $Default = '
-            <a href=\'http://htkb.dyndns.org/index.html\'>HTML</a><br>
-            <a href=\'http://htkb.dyndns.org/Javascript/index.html\'>HTML Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASP/index.asp\'>ASP Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASPNET/index.aspx\'>ASP.NET Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org/index.shtml\'>Perl</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/index.jsp\'>JSP</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\'>JSF</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebApplication/index.cshtml\'>ASP.NET Web App</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebForm/index.aspx\'>ASP.NET Webform</a><br>
-            <a href=\'http://htkb.dyndns.org:81/MVC/Main/index\'>ASP.NET MVC App</a><br>
-            <a href=\'http://htkb.dyndns.org/SSI/index.html\'>Apache SSI</a><br>
+            <a href=\'http://htkb.dyndns.org/Index.html\'>HTML</a><br>
+            <a href=\'http://htkb.dyndns.org/Javascript/Index.html\'>HTML Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\'>JQuery</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASP/Index.asp\'>ASP Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASPNET/Index.aspx\'>ASP.NET Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:84/Section1/Section2/Index\'>Node JS</a><br>
+            <a href=\'http://htkb.dyndns.org/Index.shtml\'>Perl</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\'>JSP</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\'>JSF</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebApplication/Index.cshtml\'>ASP.NET Web App</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebForm/Index.aspx\'>ASP.NET Webform</a><br>
+            <a href=\'http://htkb.dyndns.org:81/MVC/Main/Index\'>ASP.NET MVC App</a><br>
+            <a href=\'http://htkb.dyndns.org/SSI/Index.html\'>Apache SSI</a><br>
+            <a href=\'http://htkb.dyndns.org:82/Section1/Section2/Index\'>Python Web.py</a><br>
+            <a href=\'http://htkb.dyndns.org:83/Section1/Section2/Index\'>Ruby on Rails</a><br>
         ';
         
         if($Page==0)
@@ -215,8 +219,10 @@
             $Result = $Result.'
                 <a href=\'http://htkb.dyndns.org/AboutUs.html\'>HTML</a><br>
                 <a href=\'http://htkb.dyndns.org/Javascript/AboutUs.html\'>HTML Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/AboutUs.html\'>JQuery</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASP/AboutUs.asp\'>ASP Javascript</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\'>ASP.NET Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:84/Section1/Section2/AboutUs\'>Node JS</a><br>
                 <a href=\'http://htkb.dyndns.org/AboutUs.shtml\'>Perl</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\'>JSP</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>
@@ -224,6 +230,8 @@
                 <a href=\'http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\'>ASP.NET Webform</a><br>
                 <a href=\'http://htkb.dyndns.org:81/MVC/Main/AboutUs\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/AboutUs.html\'>Apache SSI</a><br>
+                <a href=\'http://htkb.dyndns.org:82/Section1/Section2/AboutUs\'>Python Web.py</a><br>
+                <a href=\'http://htkb.dyndns.org:83/Section1/Section2/AboutUs\'>Ruby on Rails</a><br>
             ';
         }
         else if($Page==2)
@@ -231,8 +239,10 @@
             $Result = $Result.'
                 <a href=\'http://htkb.dyndns.org/Media.html\'>HTML</a><br>
                 <a href=\'http://htkb.dyndns.org/Javascript/Media.html\'>HTML Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/Media.html\'>JQuery</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASP/Media.asp\'>ASP Javascript</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASPNET/Media.aspx\'>ASP.NET Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:84/Section1/Section2/Media\'>Node JS</a><br>
                 <a href=\'http://htkb.dyndns.org/Media.shtml\'>Perl</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\'>JSP</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>
@@ -240,6 +250,8 @@
                 <a href=\'http://htkb.dyndns.org:81/WebForm/Media.aspx\'>ASP.NET Webform</a><br>
                 <a href=\'http://htkb.dyndns.org:81/MVC/Main/Media\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/Media.html\'>Apache SSI</a><br>
+                <a href=\'http://htkb.dyndns.org:82/Section1/Section2/Media\'>Python Web.py</a><br>
+                <a href=\'http://htkb.dyndns.org:83/Section1/Section2/Media\'>Ruby on Rails</a><br>
             ';
         }
         else if($Page==3)
@@ -247,8 +259,10 @@
             $Result = $Result.'
                 <a href=\'http://htkb.dyndns.org/Minecraft.html\'>HTML</a><br>
                 <a href=\'http://htkb.dyndns.org/Javascript/Minecraft.html\'>HTML Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/Minecraft.html\'>JQuery</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASP/Minecraft.asp\'>ASP Javascript</a><br>
                 <a href=\'http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\'>ASP.NET Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:84/Section1/Section2/Minecraft\'>Node JS</a><br>
                 <a href=\'http://htkb.dyndns.org/Minecraft.shtml\'>Perl</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\'>JSP</a><br>
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>
@@ -256,6 +270,8 @@
                 <a href=\'http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\'>ASP.NET Webform</a><br>
                 <a href=\'http://htkb.dyndns.org:81/MVC/Main/Minecraft\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>
+                <a href=\'http://htkb.dyndns.org:82/Section1/Section2/Minecraft\'>Python Web.py</a><br>
+                <a href=\'http://htkb.dyndns.org:83/Section1/Section2/Minecraft\'>Ruby on Rails</a><br>
             ';
         }
         else

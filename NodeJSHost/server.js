@@ -10,7 +10,7 @@ http.createServer
     {
         res.writeHead(200, {'Content-Type': 'text/html'});
         
-        if(req.url == '/' || req.url == '/index')
+        if(req.url == '/' || req.url == '/Index')
         {
             var layout = require('./Layout');
             var custom = require('./Custom');
@@ -54,7 +54,7 @@ http.createServer
             var vCSS = "Main.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }        
-        else if(req.url == '/Section1/index')
+        else if(req.url == '/Section1/Index')
         {
             var layout = require('./Section1/Layout');
             var custom = require('./Section1/Custom');
@@ -65,7 +65,7 @@ http.createServer
             var vCSS = "Section1.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section1/Section2/index')
+        else if(req.url == '/Section1/Section2/Index')
         {
             var layout = require('./Section1/Section2/Layout');
             var custom = require('./Section1/Section2/Custom');
@@ -87,7 +87,7 @@ http.createServer
             var vCSS = "Section1.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section1/Section4/index')
+        else if(req.url == '/Section1/Section4/Index')
         {
             var layout = require('./Section1/Section4/Layout');
             var custom = require('./Section1/Section4/Custom');
@@ -98,7 +98,7 @@ http.createServer
             var vCSS = "Section1.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section1/Section5/index')
+        else if(req.url == '/Section1/Section5/Index')
         {
             var layout = require('./Section1/Section5/Layout');
             var custom = require('./Section1/Section5/Custom');
@@ -109,7 +109,7 @@ http.createServer
             var vCSS = "Section1.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section1/Section6/index')
+        else if(req.url == '/Section1/Section6/Index')
         {
             var layout = require('./Section1/Section6/Layout');
             var custom = require('./Section1/Section6/Custom');
@@ -175,7 +175,7 @@ http.createServer
             var vCSS = "Section1.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/index')
+        else if(req.url == '/Section2/Index')
         {
             var layout = require('./Section2/Layout');
             var custom = require('./Section2/Custom');
@@ -307,7 +307,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section1/index')
+        else if(req.url == '/Section2/Section1/Index')
         {
             var layout = require('./Section2/Section1/Layout');
             var custom = require('./Section2/Section1/Custom');
@@ -351,7 +351,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section4/index')
+        else if(req.url == '/Section2/Section4/Index')
         {
             var layout = require('./Section2/Section4/Layout');
             var custom = require('./Section2/Section4/Custom');
@@ -384,7 +384,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/index')
+        else if(req.url == '/Section2/Section5/Index')
         {
             var layout = require('./Section2/Section5/Layout');
             var custom = require('./Section2/Section5/Custom');
@@ -395,7 +395,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/Section1/index')
+        else if(req.url == '/Section2/Section5/Section1/Index')
         {
             var layout = require('./Section2/Section5/Section1/Layout');
             var custom = require('./Section2/Section5/Section1/Custom');
@@ -472,7 +472,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/Section2/index')
+        else if(req.url == '/Section2/Section5/Section2/Index')
         {
             var layout = require('./Section2/Section5/Section2/Layout');
             var custom = require('./Section2/Section5/Section2/Custom');
@@ -505,7 +505,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/Section3/index')
+        else if(req.url == '/Section2/Section5/Section3/Index')
         {
             var layout = require('./Section2/Section5/Section3/Layout');
             var custom = require('./Section2/Section5/Section3/Custom');
@@ -527,7 +527,7 @@ http.createServer
             var vCSS = "Section2.css";
             res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/Section4/index')
+        else if(req.url == '/Section2/Section5/Section4/Index')
         {
             var layout = require('./Section2/Section5/Section4/Layout');
             var custom = require('./Section2/Section5/Section4/Custom');
@@ -656,7 +656,7 @@ http.createServer
         
         
         /*
-        fs.readFile('index.html', 
+        fs.readFile('Index.html', 
         function(err, data) 
         {
             res.writeHead(200, {'Content-Type': 'text/html'});

@@ -1,10 +1,10 @@
 exports.Navigation = function (vLevel)
 {
-	var result = "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/index\">Gynowars</a><br><br>";
+	var result = "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index\">Gynowars</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2\">Assault</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3\">Mars</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/index\">Renley</a><br><br>";
-	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/index\">Antarrea</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index\">Renley</a><br><br>";
+	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index\">Antarrea</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project6\">Truth</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7\">Kingdoms</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8\">Terminal World</a><br><br>";
@@ -195,21 +195,21 @@ exports.Versions = function (vPage)
 	var result = "";
 	if(vPage == 0)
 	{
-		result += "<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/index.php\">PHP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/index.html\">HTML Javascript</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/index.html\">JQuery</a><br>";
-        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/index.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/index.asp\">ASP Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/Section2/index.shtml\">Perl</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/index.jsp\">JSP</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/index.xhtml\">JSF</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/index.cshtml\">ASP.NET Web App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/index.aspx\">ASP.NET Webform</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/index\">ASP.NET MVC App</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/index.html\">Apache SSI</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:82/Section2/index\">Python Web.py</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:83/Section2/index\">Ruby On Rails</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Index.html\">HTML</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Index.php\">PHP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Index.html\">HTML Javascript</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Index.html\">JQuery</a><br>";
+        result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Index.aspx\">ASP.NET Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Index.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/Section2/Index.shtml\">Perl</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Index.jsp\">JSP</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Index.xhtml\">JSF</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Index.cshtml\">ASP.NET Web App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Index.aspx\">ASP.NET Webform</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Index\">ASP.NET MVC App</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Index.html\">Apache SSI</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:82/Section2/Index\">Python Web.py</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:83/Section2/Index\">Ruby On Rails</a><br>";
 	}
 	else if(vPage == 2)
 	{
