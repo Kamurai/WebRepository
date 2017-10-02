@@ -22,10 +22,10 @@ def getLogo():
 	return "/static/logo_HouseThatKamuraiBuilt_blueonblack.jpg"
 
 def getNavBar():
-	vResult = '<a class=\'navBar\' href=\'/index\'>Home</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section1/index\'>Web Programming</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section2/index\'>Private Projects</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section3/index\'>Downloadable Projects</a>'
+	vResult = '<a class=\'navBar\' href=\'/Index\'>Home</a>'
+	vResult += '<a class=\'navBar\' href=\'/Section1/Index\'>Web Programming</a>'
+	vResult += '<a class=\'navBar\' href=\'/Section2/Index\'>Private Projects</a>'
+	vResult += '<a class=\'navBar\' href=\'/Section3/Index\'>Downloadable Projects</a>'
 	return vResult
 
 def getFooter():
