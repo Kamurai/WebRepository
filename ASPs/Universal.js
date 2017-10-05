@@ -3,7 +3,7 @@ function WriteHeader(vLevel, vCSS)
 	Response.Write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
 	Response.Write("<link runat='server' rel='shortcut icon' href='"+GetPath(vLevel)+"favicon.ico')' type='image/x-icon' />");
 	Response.Write("<link runat='server' rel='icon' href='"+GetPath(vLevel)+"favicon.ico' type='image/ico' />");
-	Response.Write("<link href='"+GetPath(vLevel-1)+vCSS+"' rel='stylesheet' type='text/vCSS'>");
+	Response.Write("<link href='"+GetPath(vLevel-1)+vCSS+"' rel='stylesheet' type='text/CSS'>");
 	Response.Write("<font color='white'>");
 }
 

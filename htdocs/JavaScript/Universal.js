@@ -1,8 +1,7 @@
 function WriteHeader(vLevel, vCSS)
 {
 	document.write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-	document.write("<link href='"+GetPath(vLevel-1)+vCSS+"' rel='stylesheet' type='text/vCSS'>");
-	document.write("<font color='white'>");
+	document.write("<link href='"+GetPath(vLevel)+vCSS+"' rel='stylesheet' type='text/CSS'>");
 }
 
 function TitlePicture(vLevel)

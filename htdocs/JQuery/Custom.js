@@ -63,7 +63,7 @@ function Header(vPage)
     $( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
  }
 
-function Content(vPage, tableRowCenterMain)
+function Content(vPage)
 {
     var vDefault = "The House That Kamurai Built is an entertainment company with the primary focus of increasing awesome by stimulating intelligent conversation and entertainment via discussion and game design.<br>Increase the Awesome with us!<br>";
     var vResult = "";
