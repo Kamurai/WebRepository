@@ -1,0 +1,2 @@
+module Section2622Helper
+end

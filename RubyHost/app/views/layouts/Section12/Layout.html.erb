@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<html>
+<%= render "/section1/Header" %>
+<body id="idBody">
+    <table id="idTableMain">
+        <tr id="idHeaderRow">
+            <td id="idHeaderRowCenter" colspan="3">
+                <%= image_tag("logo_HouseThatKamuraiBuilt_blueonblack.jpg", :alt => "Logo") %>
+            </td>
+        </tr>
+        <tr id="idNavigationRow">
+            <td id="idNavigationBar" colspan="3">
+                <%= render "/Universal/NavBar" %>
+            </td>
+        </tr>				
+        <tr id="idCenterRow">
+            <td id="idCenterRowLeft">
+                <%= render "/Universal/NavigationHeader" %>
+                <%= render "/section12/Navigation" %>
+            </td>
+            <td id="idCenterRowMain">
+                <%= yield %>
+            </td>
+            <td id="idCenterRowRight">
+                <%= render "/Universal/InfoHeader" %>
+                <%= render "/Universal/InfoLanguage" %>
+                <%= yield :versions %>
+            </td>
+        </tr>
+        <tr id="idFooterRow">
+            <td id="idFooterMain" colspan="3">
+                <%= render "/Universal/Footer" %>
+                <%= render "/Universal/Management" %>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
