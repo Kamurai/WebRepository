@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    get '/Index', to: 'main#Index'
+  get '/Index', to: 'main#Index'
     get '/AboutUs', to: 'main#AboutUs'
     get '/Media', to: 'main#Media'
     get '/Minecraft', to: 'main#Minecraft'
@@ -47,22 +47,6 @@ Rails.application.routes.draw do
                 get '/Section2/Section5/Section3/Project1', to: 'section253#Project1'
             get '/Section2/Section5/Section4/Index', to: 'section254#Index'
                 get '/Section2/Section5/Section4/Project1', to: 'section254#Project1'
-        get '/Section2/Section6/Index', to: 'section26#Index'
-            get '/Section2/Section6/Project1', to: 'section26#Project1'
-            get '/Section2/Section6/Section2/Index', to: 'section262#Index'
-                get '/Section2/Section6/Section2/Project1', to: 'section262#Project1'
-            get '/Section2/Section6/Section2/Section2/Index', to: 'section2622#Index'
-                get '/Section2/Section6/Section2/Section2/Project1', to: 'section2622#Project1'
-                get '/Section2/Section6/Section2/Section2/Project2', to: 'section2622#Project2'
-                get '/Section2/Section6/Section2/Section2/Project3', to: 'section2622#Project3'
-                get '/Section2/Section6/Section2/Section2/Project4', to: 'section2622#Project4'
-                get '/Section2/Section6/Section2/Section2/Project5', to: 'section2622#Project5'
-                get '/Section2/Section6/Section2/Section2/Project6', to: 'section2622#Project6'
-                get '/Section2/Section6/Section2/Section2/Project7', to: 'section2622#Project7'
-                get '/Section2/Section6/Section2/Section2/Project8', to: 'section2622#Project8'
-                get '/Section2/Section6/Section2/Section2/Project9', to: 'section2622#Project9'
-                get '/Section2/Section6/Section2/Section2/Project10', to: 'section2622#Project10'
-                get '/Section2/Section6/Section2/Section2/Project11', to: 'section2622#Project11'
         get '/Section3/Index', to: 'section3#Index'
             get '/Section3/Project1', to: 'section3#Project1'
             get '/Section3/Project2', to: 'section3#Project2'
@@ -70,5 +54,5 @@ Rails.application.routes.draw do
             get '/Section3/Project4', to: 'section3#Project4'
             get '/Section3/Project5', to: 'section3#Project5'
     root 'main#Index'
-    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
