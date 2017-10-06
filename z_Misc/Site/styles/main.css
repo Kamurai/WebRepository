@@ -44,7 +44,7 @@ p::first-line
     overflow:hidden;
     
     background-color: #bbbbbd;
-    display: table-row;
+    
 }
 
 #idHeaderObject
@@ -79,7 +79,7 @@ p::first-line
     border: 0px solid red;
     
     background-color: #bbbbbd;
-    display: table-row;
+    
 }
 
 #idNavBarObject
@@ -108,7 +108,7 @@ p::first-line
     height:100%; 
     
     text-align:left;
-    display:table-cell;
+    
 }
 
 #idContentRow
@@ -116,7 +116,7 @@ p::first-line
     border: 0px solid red;
     
     background-color: #bbbbbd;
-    display:table-row;
+    
 }
 
 #idLeftCenter

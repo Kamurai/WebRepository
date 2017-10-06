@@ -1,3 +1,16 @@
+ /* 
+    Document   : moo
+    Created on : Nov 24, 2010, 2:32:30 PM
+    Author     : Kamurai
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
 root { 
     display: block;
 }
@@ -5,7 +18,7 @@ root {
 /* Elements */
 a {
 	font-family: Verdana, Geneva, sans-serif;
-	color: #0000ff;
+	color: #ffffff;
 }
 
 a:hover {
@@ -16,14 +29,14 @@ a:hover {
 h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 175%;
-	color: #0000ff;
+	color: #ffffff;
     
 }
 
 h2 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 150%;
-	color: #0000ff;
+	color: #ffffff;
     text-align: center;
     text-decoration: underline;
 }
@@ -31,7 +44,7 @@ h2 {
 h3 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 130%;
-	color: #0000ff;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -44,7 +57,7 @@ h4 {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-    background-color: #0000ff;
+    background-color: #ffffff;
     width: 100%;
 	max-width: 100%;
 }
@@ -52,7 +65,7 @@ h4 {
 h5{
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 80%;
-	color: #0000ff;
+	color: #ffffff;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -60,9 +73,16 @@ h5{
 h6{
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 70%;
-	color: #0000ff;
+	color: #ffffff;
 	text-align: left;
 	padding-left: 20px;
+}
+
+body
+{
+    background-color: #aaaaaa;
+    padding: 0px;
+    margin: 0px;
 }
 
 navlink
@@ -81,7 +101,7 @@ navlink a
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -225,53 +245,24 @@ navlink a:hover
     color: #00aa00;
 }
 
-.classObject
-{
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	border: 0px solid #FE0101;
-	
-}
-
 /* IDs */
 #idBody
 {
-    width: 100%;
-	max-width: 100%;
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
 	line-height: 25px;
-	background-color: #aaaaaa;
-	padding: 0;
-	margin: 0;
-}
-
-#idInnerBody
-{
-    width: 100%;
+	width: 100%;
 	max-width: 100%;
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	line-height: 25px;
-	background-color: #000000;
-	padding: 0;
-	margin: 0;
-	color: #aaaaaa;
 }
 
 #idTableMain
 {
-    width: 100%;
-	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-	background-color: #000000;
+    background-color: #000000;
     border: 0px solid #FE0101;
     vertical-align: top;
-	
+	width: 100%;
+	max-width: 100%;
 }
 
 #idHeaderRow
@@ -287,34 +278,16 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	border: 0px solid #FE0101;
+    border: 0px solid #FE0101;
     vertical-align: top;
 }
 
 #idLogo
 {
-    height: 50%;
-	width: 100%;
+    height: 25%;
+    width: 100%;
 	max-width: 100%;
-	border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idOuterLogo
-{
-    height: 50%;
-	width: 100%;
-	max-width: 100%;
-	border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idInnerLogo
-{
-    height: 100%;
-	width: 100%;
-	max-width: 100%;
-	border: 0px solid #FE0101;
+    border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -322,9 +295,7 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 10%;
-	max-height: 10%;
-	border: 0px solid #FE0101;
+    border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -332,9 +303,7 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 10%;
-	max-height: 10%;
-	border: 0px solid #FE0101;
+    border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -342,8 +311,7 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
-	border: 0px solid #FE0101;
+    border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -351,7 +319,6 @@ navlink a:hover
 {
 	width: 15%;
 	max-width: 15%;
-	height: 100%;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -359,31 +326,28 @@ navlink a:hover
 
 #idCenterRowMain
 {
+	vertical-align:text-top;
 	width: 70%;
 	max-width: 70%;
-	height: 100%;
 	padding: 0px;
     border: 0px solid #FE0101;
-    vertical-align:text-top;
-	vertical-align: top;
-	overflow: visible;
+    vertical-align: top;
 }
 
 #idCenterContent
 {
-    width: 100%;
+	width: 100%;
 	max-width: 100%;
-	color: #aaaaaa;
+    color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
 }
 
 #idCenterRowRight
 {
-	width: 15%;
-	max-width: 15%;
-	height: 100%;
 	color: #aaaaaa;
+    width: 15%;
+    max-width: 15%;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -393,7 +357,6 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
 	color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -403,7 +366,6 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
 	text-align: center;
 }
 
