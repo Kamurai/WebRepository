@@ -1,4 +1,4 @@
-function WriteWebpage(vPage, vLevel, vExtension)
+function WriteWebpage(vPage, vLevel)
 {
     Response.Write("<table id=\"idTableMain\">");
 		Response.Write("<tr id=\"idHeaderRow\">");
@@ -8,7 +8,7 @@ function WriteWebpage(vPage, vLevel, vExtension)
         Response.Write("</tr>");
         Response.Write("<tr id=\"idNavigationRow\">");
             Response.Write("<td id=\"idNavigationBar\" colspan=\"3\">");
-                NavBar(vLevel, vExtension);
+                NavBar(vLevel);
             Response.Write("</td>");
         Response.Write("</tr>");    
         Response.Write("<tr id=\"idCenterRow\">");
@@ -16,7 +16,7 @@ function WriteWebpage(vPage, vLevel, vExtension)
 				Response.Write("<h4>");
 					Response.Write("Navigation");
 				Response.Write("</h4>");
-				Navigation(vLevel, vExtension);
+				Navigation(vLevel);
 			Response.Write("</td>");
 			Response.Write("<td id=\"idCenterRowMain\">");
 				Title(vPage);
@@ -27,8 +27,8 @@ function WriteWebpage(vPage, vLevel, vExtension)
 				Response.Write("<h4>");
 					Response.Write("Information");
 				Response.Write("</h4>");
-				GetInformation(vExtension);
-				Versions(vPage, vExtension);
+				GetInformation();
+				Versions(vPage);
 			Response.Write("</td>");
 		Response.Write("</tr>");
         Response.Write("<tr id=\"idFooterRow\">");

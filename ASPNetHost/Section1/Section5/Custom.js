@@ -1,15 +1,15 @@
-function Navigation(vLevel, vExtension)
+function Navigation(vLevel)
 {
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.html\">Basic HTML</a><br><br>");
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index"+GetExtension(vExtension)+"\">Javascript</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.aspx\">Javascript</a><br><br>");
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.shtml\">Perl</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index"+GetExtension(vExtension)+"\">Java</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index"+GetExtension(vExtension)+"\">ASP.Net</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index.aspx\">Java</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index.aspx\">ASP.Net</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section5/Index.cshtml\">Webpage Application</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section5/Index.aspx\">Webform Application</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/MVC/Section1_5/Index\">MVC Application</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index"+GetExtension(vExtension)+"\">Databases</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index.aspx\">Databases</a><br><br>");
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Section1/Index\">Python Web.py</a><br>");
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Section1/Index\">Ruby On Rails</a><br>");

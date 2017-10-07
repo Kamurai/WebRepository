@@ -214,21 +214,21 @@ function Content(vPage)
 function Versions(vPage)
 {
 	var vDefault = "";
-    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/index.php\">PHP</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/index.html\">HTML Javascript</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/index.aspx\">ASP.NET Javascript</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/index.asp\">ASP Javascript</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:84/Section2/index\">Node JS</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/index.shtml\">Perl</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/index.jsp\">JSP</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/index.xhtml\">JSF</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/index.cshtml\">ASP.NET Web App</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/index.aspx\">ASP.NET Webform</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/index\">ASP.NET MVC App</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section2/index.html\">Apache SSI</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:82/Section2/index\">Python Web.py</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:83/Section2/index\">Ruby on Rails</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Index.html\">HTML</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Index.php\">PHP</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Index.html\">HTML Javascript</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Index.aspx\">ASP.NET Javascript</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Index.asp\">ASP Javascript</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:84/Section2/Index\">Node JS</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Index.shtml\">Perl</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Index.jsp\">JSP</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Index.xhtml\">JSF</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Index.cshtml\">ASP.NET Web App</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Index.aspx\">ASP.NET Webform</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Index\">ASP.NET MVC App</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Index.html\">Apache SSI</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:82/Section2/Index\">Python Web.py</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:83/Section2/Index\">Ruby on Rails</a><br>";
     var vResult = "";
 	
 	if(vPage == 0)

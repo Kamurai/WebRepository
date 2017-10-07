@@ -1,17 +1,17 @@
-function Navigation(vLevel, vExtension)
+function Navigation(vLevel)
 {
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.html\">Basic HTML</a><br><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index"+GetExtension(vExtension)+"\">Javascript</a><br><br>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.aspx\">Javascript</a><br><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.shtml\">Perl</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index"+GetExtension(vExtension)+"\">Java</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index"+GetExtension(vExtension)+"\">ASP.Net</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index"+GetExtension(vExtension)+"\">Databases</a><br><br>");
-        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project1"+GetExtension(vExtension)+"\">Oracle</a><br><br>");
-        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project2"+GetExtension(vExtension)+"\">Derby</a><br><br>");
-        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project3"+GetExtension(vExtension)+"\">MySQL</a><br><br>");
-        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project4"+GetExtension(vExtension)+"\">SQL Server</a><br><br>");
-        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project5"+GetExtension(vExtension)+"\">Postgres</a><br><br>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index.aspx\">Java</a><br><br>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index.aspx\">ASP.Net</a><br><br>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index.aspx\">Databases</a><br><br>");
+        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project1.aspx\">Oracle</a><br><br>");
+        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project2.aspx\">Derby</a><br><br>");
+        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project3.aspx\">MySQL</a><br><br>");
+        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project4.aspx\">SQL Server</a><br><br>");
+        Response.Write("<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project5.aspx\">Postgres</a><br><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Section1/Index\">Python Web.py</a><br>");
 	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Section1/Index\">Ruby On Rails</a><br>");

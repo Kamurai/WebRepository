@@ -1,10 +1,10 @@
-function Navigation(vLevel, vExtension)
+function Navigation(vLevel)
 {
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project1"+GetExtension(vExtension)+"\">Online Experience Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project2"+GetExtension(vExtension)+"\">Game Maker Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project3"+GetExtension(vExtension)+"\">Java Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project4"+GetExtension(vExtension)+"\">C# Downloads</a><br><br>");
-	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project5"+GetExtension(vExtension)+"\">C++ Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project1.aspx\">Online Experience Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project2.aspx\">Game Maker Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project3.aspx\">Java Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project4.aspx\">C# Downloads</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project5.aspx\">C++ Downloads</a><br><br>");
 }
 
 function Title(vPage)

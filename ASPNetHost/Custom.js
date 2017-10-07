@@ -1,8 +1,8 @@
-function Navigation(vLevel, vExtension)
+function Navigation(vLevel)
 {
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs"+GetExtension(vExtension)+"\">About Us</a><br/><br/>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media"+GetExtension(vExtension)+"\">Media</a><br/><br/>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft"+GetExtension(vExtension)+"\">Minecraft!</a><br/><br/>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.aspx\">About Us</a><br/><br/>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media.aspx\">Media</a><br/><br/>");
+    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft.aspx\">Minecraft!</a><br/><br/>");
 }
 
 function Title(vPage)

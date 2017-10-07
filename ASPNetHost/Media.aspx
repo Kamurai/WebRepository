@@ -8,13 +8,12 @@
 <%	
 	var vPage  = 2;
 	var vLevel = 0;
-	var vExtension = 2;
 	var vCSS = "Main.css";
 		Response.Write("<head>");
         WriteHeader(vLevel, vCSS);
     Response.Write("</head>");
     Response.Write("<body id=\"idBody\">");
-    	WriteWebpage(vPage, vLevel, vExtension);
+    	WriteWebpage(vPage, vLevel);
 	Response.Write("</body>");
 %>
 </html>

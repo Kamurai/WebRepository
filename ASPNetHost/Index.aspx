@@ -14,7 +14,7 @@
         WriteHeader(vLevel, vCSS);
     Response.Write("</head>");
     Response.Write("<body id=\"idBody\">");
-        WriteWebpage(vPage, vLevel, vExtension);
+        WriteWebpage(vPage, vLevel);
     Response.Write("</body>");
 %>
 </html>

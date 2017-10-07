@@ -14,22 +14,22 @@ function WebMaster()
     document.write("Website managed by Kamurai.");    
 }
 
-function NavBar(vLevel, vExtension)
+function NavBar(vLevel)
 {
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Index"+GetvExtension(vExtension)+"'>Home</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index"+GetvExtension(vExtension)+"'>Web Programming</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index"+GetvExtension(vExtension)+"'>Private Projects</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index"+GetvExtension(vExtension)+"'>Downloadable Projects</a>");
+    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Index.html'>Home</a>");
+    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index.html'>Web Programming</a>");
+    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index.html'>Private Projects</a>");
+    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index.html'>Downloadable Projects</a>");
 }
 
 function GDR()
 {
-	document.write("<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+	document.write("<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
 }
 
 function WinRAR()
 {
-	document.write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+	document.write("<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
 }
 
 function Footer()
@@ -74,42 +74,10 @@ function GetPath(vLevel)
     }
 }
 
-function GetvExtension(vExtension)
+function GetInformation()
 {
-    if(vExtension == 0)
-    {
-        //Basic HTML
-        return ".html";
-    }
-    else if(vExtension == 1)
-    {
-        //ASP
-        return ".asp";
-    }
-    else if(vExtension == 2)
-    {
-        //ASP.NET
-        return ".aspx";
-    }
-}
-
-function GetInformation(vExtension)
-{
-    if(vExtension == 0)
-    {
-        //Basic HTML
-        document.write("This is written with basic HTML and javascript.");
-    }
-    else if(vExtension == 1)
-    {
-        //ASP
-        document.write("This is written with classic ASP and javascript.");
-    }
-    else if(vExtension == 2)
-    {
-        //ASP.NET
-        document.write("This is written with generic ASP.NET and javascript.");
-    }
+    document.write("This is written with basic HTML and javascript.");
+	document.write("Other versions of this page are here:<br>");
 }
 
 

@@ -15,7 +15,7 @@ h4 {margin-bottom:20px;font-family: 'Lucida Grande', Tahoma, Arial, Helvetica, s
 
 #header { height:96px;width:100%;/* background-image: url(img/header_bg.png);background-repeat: repeat-x; */ text-align:left }
 
-#bitnami { padding-left:15px;width:281px;height:90px;z-index:2; }
+#bitnami { padding-left:15px;width:281px;height:90px;z-Index:2; }
 
 #menu_launch_page {background-image: url(img/tabs_bg.png);background-repeat: repeat-x;width:100%;height:48px}
 #menu_launch_page table {margin: 0 auto;}

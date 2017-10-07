@@ -9,7 +9,7 @@ function WriteHeader(vLevel, vCSS)
 
 function TitlePicture(vLevel)
 {
-    Response.Write("<img id=\"idLogo\" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
+    Response.Write("<img id=""idLogo"" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
 }
 
 function WebMaster()
@@ -17,12 +17,12 @@ function WebMaster()
     Response.Write("Website managed by Kamurai.");
 }
 
-function NavBar(vLevel, vExtension)
+function NavBar(vLevel)
 {
-    Response.Write("<a class=\"navBar\" href='"+GetPath(vLevel)+"index"+GetExtension(vExtension)+"'>Home</a>");
-    Response.Write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/index"+GetExtension(vExtension)+"'>Web Programming</a>");
-    Response.Write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/index"+GetExtension(vExtension)+"'>Private Projects</a>");
-    Response.Write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/index"+GetExtension(vExtension)+"'>Downloadable Projects</a>");
+    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Index.asp'>Home</a>");
+    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section1/Index.asp'>Web Programming</a>");
+    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section2/Index.asp'>Private Projects</a>");
+    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section3/Index.asp'>Downloadable Projects</a>");
 }
 
 function GDR()
@@ -101,17 +101,17 @@ function GetInformation(vExtension)
     if(vExtension == 0)
     {
         //Basic HTML
-        Response.Write("This is written with basic HTML and javascript.");
+        Response.Write("This is written with basic HTML and VBScript.");
     }
     else if(vExtension == 1)
     {
         //ASP
-        Response.Write("This is written with classic ASP and javascript.");
+        Response.Write("This is written with classic ASP and VBScript.");
     }
     else if(vExtension == 2)
     {
         //ASP.NET
-        Response.Write("This is written with generic ASP.NET and javascript.");
+        Response.Write("This is written with generic ASP.NET and VBScript.");
     }
 }
 
