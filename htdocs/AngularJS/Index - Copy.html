@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script language="JavaScript" src="Universal.js" runat="server"></script>
+    <script language="JavaScript" src="Layout.js" runat="server"></script>
+    <script language="JavaScript" src="Custom.js" runat="server"></script>
+    <script>
+        var vPage  = 0;
+        var vLevel = 0;
+        document.write("<head>");
+            WriteHeader(vLevel);
+		document.write("</head>");
+        document.write("<body>");
+            WriteWebpage(vPage, vLevel);
+        document.write("</body>");
+    </script>
+</html>
