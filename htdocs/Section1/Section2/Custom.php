@@ -23,17 +23,21 @@
     function Navigation($Level)
     {
         $Result = $Result.'
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Project1.html\'>Basic HTML</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Project1.php\'>PHP</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Index.html\'>Basic HTML</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Index.php\'>PHP</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section2/Index.php\'>Java Script</a></br></br>
-                <a class=\'navlinkB\' href=\''.Path($Level).'Javascript/Section1/Section2/Project1.html\'>HTML Javascript</a></br></br>
-                <a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/Project2.asp\'>ASP Javascript</a></br></br>
-                <a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project3.aspx\'>ASP.NET Javascript</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Project3.shtml\'>Perl</a></br></br>
+                <a class=\'navlinkB\' href=\''.Path($Level).'Javascript/Section1/Section2/Index.html\'>HTML Javascript</a></br></br>
+                <a class=\'navlinkB\' href=\''.Path($Level).'JQuery/Section1/Section2/Index.html\'>JQuery</a></br></br>
+                <a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\'>ASP Javascript</a></br></br>
+                <a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\'>ASP.NET Javascript</a></br></br>
+                <a class=\'navlinkA\' href=\'http://htkb.dyndns.org:84/Section1/Index\'>Node JS</a></br></br>
+            <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Index.shtml\'>Perl</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section4/Index.php\'>Java</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section5/Index.php\'>ASP.Net</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section6/Index.php\'>Databases</a></br></br>
-            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org/SSI/Section1/index.html\'>Apache SSI</a></br></br>
+            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org/SSI/Section1/Index.html\'>Apache SSI</a></br></br>
+            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org:82/Section1/Index\'>Python Web.py</a></br></br>
+            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org:83/Section1/Index\'>Ruby on Rails</a></br></br>
         ';
         return $Result;
     }
@@ -76,17 +80,21 @@
     {
         $Result = '';
         $Default = '
-            <a href=\'http://htkb.dyndns.org/Section1/Section2/index.html\'>HTML</a><br>
-            <a href=\'http://htkb.dyndns.org/Javascript/Section1/Section2/index.html\'>HTML Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/index.asp\'>ASP Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Section2/index.aspx\'>ASP.NET Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org/Section1/Section2/index.shtml\'>Perl</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/index.jsp\'>JSP</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section1/Section2/index.xhtml\'>JSF</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebApplication/Section1/Section2/index.cshtml\'>ASP.NET Web App</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebForm/Section1/Section2/index.aspx\'>ASP.NET Webform</a><br>
-            <a href=\'http://htkb.dyndns.org:81/MVC/Section1/Section2/index\'>ASP.NET MVC App</a><br>
-            <a href=\'http://htkb.dyndns.org/SSI/Section1/Section2/index.html\'>Apache SSI</a><br>
+            <a href=\'http://htkb.dyndns.org/Section1/Section2/Index.html\'>HTML</a><br>
+            <a href=\'http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\'>HTML Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\'>JQuery</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\'>ASP Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\'>ASP.NET Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:84/Section1/Section2/Index\'>Node JS</a><br>
+            <a href=\'http://htkb.dyndns.org/Section1/Section2/Index.shtml\'>Perl</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Index.jsp\'>JSP</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section1/Section2/Index.xhtml\'>JSF</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebApplication/Section1/Section2/Index.cshtml\'>ASP.NET Web App</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebForm/Section1/Section2/Index.aspx\'>ASP.NET Webform</a><br>
+            <a href=\'http://htkb.dyndns.org:81/MVC/Section1/Section2/Index\'>ASP.NET MVC App</a><br>
+            <a href=\'http://htkb.dyndns.org/SSI/Section1/Section2/Index.html\'>Apache SSI</a><br>
+            <a href=\'http://htkb.dyndns.org:82/Section1/Section2/Index\'>Python Web.py</a><br>
+            <a href=\'http://htkb.dyndns.org:83/Section1/Section2/Index\'>Ruby on Rails</a><br>
         ';
         
         if($Page==0)
