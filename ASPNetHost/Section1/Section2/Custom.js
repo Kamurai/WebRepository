@@ -5,7 +5,7 @@ function Navigation(vLevel)
 	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.aspx\">Javascript</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br><br>");
-		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP Javascript</a><br><br>");
+		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP VBscript</a><br><br>");
 		Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\">ASP.NET Javascript</a><br><br>");
         Response.Write("<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:84/Section1/Index\">Node JS</a><br>");
     Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.shtml\">Perl</a><br><br>");
@@ -26,7 +26,7 @@ function Title(vPage)
 		}
 		else if(vPage == 2)
 		{
-			Response.Write("ASP Javascript");
+			Response.Write("ASP VBscript");
 		}
 		else if(vPage == 3)
 		{
@@ -44,7 +44,7 @@ function Header(vPage)
 		}
 		else if(vPage == 2)
 		{
-			Response.Write("ASP Javascript");
+			Response.Write("ASP VBscript");
 		}
 		else if(vPage == 3)
 		{
@@ -63,7 +63,7 @@ function Content(vPage)
 		}
 		else if(vPage == 2)
 		{
-			Response.Write("This section is dedicated to ASP Javascript based programming.");
+			Response.Write("This section is dedicated to ASP VBscript based programming.");
 		}
 		else if(vPage == 3)
 		{
@@ -72,7 +72,7 @@ function Content(vPage)
 	Response.Write("</p>");
 }
 
-function Versions(vPage, vExtension)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
 	if(vPage == 0)
@@ -81,15 +81,8 @@ function Versions(vPage, vExtension)
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Index.php\">PHP</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br>");
-		if(vExtension == 1)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\">ASP.NET Javascript</a><br>");
-		}
-		else if(vExtension == 2)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP Javascript</a><br>");
-        }
-		Response.Write("<a href=\"http://htkb.dyndns.org:84/Section1/Section2/Index\">Node JS</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP VBscript</a><br>");
+        Response.Write("<a href=\"http://htkb.dyndns.org:84/Section1/Section2/Index\">Node JS</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Index.shtml\">Perl</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Index.jsp\">JSP</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section2/Index.xhtml\">JSF</a><br>");
@@ -106,14 +99,7 @@ function Versions(vPage, vExtension)
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Project2.php\">PHP</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Project2.html\">HTML Javascript</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Project2.html\">JQuery</a><br>");
-		if(vExtension == 1)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project2.aspx\">ASP.NET Javascript</a><br>");
-		}
-		else if(vExtension == 2)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project2.asp\">ASP Javascript</a><br>");
-		}
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project2.asp\">ASP VBscript</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:84/Section1/Section2/Project2\">Node JS</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Project2.shtml\">Perl</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Project2.jsp\">JSP</a><br>");
@@ -131,14 +117,7 @@ function Versions(vPage, vExtension)
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Project3.php\">PHP</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Project3.html\">HTML Javascript</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Project3.html\">JQuery</a><br>");
-		if(vExtension == 1)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project3.aspx\">ASP.NET Javascript</a><br>");
-		}
-		else if(vExtension == 2)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project3.asp\">ASP Javascript</a><br>");
-		}
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project3.asp\">ASP VBscript</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:84/Section1/Section2/Project3\">Node JS</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Section2/Project3.shtml\">Perl</a><br>");
 		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Project3.jsp\">JSP</a><br>");

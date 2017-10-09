@@ -10,7 +10,7 @@ sub Navigation
 	print "<a class=\"navlinkA\" href='".$Path."Section1/Section2/Index.shtml'>Javascript</a><br><br>";
 		print "<a class=\"navlinkB\" href='".$Path."Javascript/Section1/Section2/Index.html'>HTML Javascript</a><br><br>";
 		print "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org/JQuery/Index.html\">JQuery</a><br>";
-        print "<a class=\"navlinkB\" href='http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp'>ASP Javascript</a><br><br>";
+        print "<a class=\"navlinkB\" href='http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp'>ASP VBscript</a><br><br>";
 		print "<a class=\"navlinkB\" href='http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx'>ASP.NET Javascript</a><br><br>";
         print "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>";
     print "<a class=\"navlinkA\" href='".$Path."Section1/Index.shtml'>Perl</a><br><br>";
@@ -26,10 +26,10 @@ sub Title
 {
 	##  Writes the Title of the webpage
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<title>";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "Javascript";
 		}
@@ -40,9 +40,9 @@ sub Header
 {
 	##  Writes the header of the webpage content
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
-	if($Page <= 0)
+	if($vPage <= 0)
 	{
 		print "<h2>";
 			print "Javascript";
@@ -53,10 +53,10 @@ sub Header
 sub Content
 {
 	##  Writes the content of the webpage
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<p id=\"idCenterContent\">";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "This section is dedicated to Javascript based programming.";
 		}
@@ -66,16 +66,16 @@ sub Content
 
 sub Versions
 {
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "Other versions of this page are here:<br>";
-	if($Page <= 0)
+	if($vPage <= 0)
 	{
 		print "<a href=\"http://htkb.dyndns.org/Section1/Section2/Index.html\">HTML</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Section1/Section2/Index.php\">PHP</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP VBscript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\">ASP.NET Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:84/Section1/Section2/Index\">Node JS</a><br>";
         print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Index.jsp\">JSP</a><br>";

@@ -15,22 +15,22 @@ sub Title
 {
 	##  Writes the Title of the webpage
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<title>";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "HTKB Home Page";
 		}
-		elsif($Page == 1)
+		elsif($vPage == 1)
 		{
 			print "About Us";
 		}
-		elsif($Page == 2)
+		elsif($vPage == 2)
 		{
 			print "Media";
 		}
-		elsif($Page == 3)
+		elsif($vPage == 3)
 		{
 			print "Minecraft!";
 		}
@@ -41,27 +41,27 @@ sub Header
 {
 	##  Writes the header of the webpage content
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
-	if($Page <= 0)
+	if($vPage <= 0)
 	{
 		print "<h2>";
 			print "Welcome to the House That Kamurai Built!";
 		print "</h2>";
 	}
-	elsif($Page == 1)
+	elsif($vPage == 1)
 	{
 		print "<h2>";
 			print "About Us";
 		print "</h2>";
 	}
-	elsif($Page == 2)
+	elsif($vPage == 2)
 	{
 		print "<h2>";
 			print "Media";
 		print "</h2>";
 	}
-	elsif($Page == 3)
+	elsif($vPage == 3)
 	{
 		print "<h2>";
 			print "Minecraft!";
@@ -73,23 +73,23 @@ sub Content
 {
 	##  Writes the content of the webpage
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<p id=\"idCenterContent\">";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "The House That Kamurai Built is an entertainment company with the primary focus ";
 			print "of increasing awesome by stimulating intelligent conversation and entertainment via discussion and ";
 			print "game design.<br>";
 			print "Increase the Awesome with us!<br>";
 		}
-		elsif($Page == 1)
+		elsif($vPage == 1)
 		{
 			print "We are working to build this into a better place.</br>";
 			print "If you found this, then you must be at least (Awesome/2).</br>";
 			print "Stay tuned, right now it's all about laying foundation for the future.</br>";
 		}
-		elsif($Page == 2)
+		elsif($vPage == 2)
 		{
 				print "You can find us at all these different places:</br>";
 			print "<br>";
@@ -136,7 +136,7 @@ sub Content
 				print "<a href='http://www.yoyogames.com/users/Kamurai'>Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>";
 			
 		}
-		elsif($Page == 3)
+		elsif($vPage == 3)
 		{
 				print "If you would like to play Minecraft with us, we have several different servers:</br>";
 				print "Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>";
@@ -184,16 +184,16 @@ sub Content
 
 sub Versions
 {
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 		print "Other versions of this page are here:<br>";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "<a href=\"http://htkb.dyndns.org/Index.html\">HTML</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Javascript/Index.html\">HTML Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/JQuery/Index.html\">JQuery</a><br>";
-			print "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>";
             print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>";
@@ -205,13 +205,13 @@ sub Versions
             print "<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>";
             print "<a href=\"http://htkb.dyndns.org:83/Index\">Ruby On Rails</a><br>";
         }
-		elsif($Page == 1)
+		elsif($vPage == 1)
 		{
 			print "<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/JQuery/AboutUs.html\">JQuery</a><br>";
-			print "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a><br>";
             print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>";
@@ -223,13 +223,13 @@ sub Versions
             print "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
             print "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby On Rails</a><br>";
         }
-		elsif($Page == 2)
+		elsif($vPage == 2)
 		{
 			print "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/JQuery/Media.html\">JQuery</a><br>";
-			print "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a><br>";
             print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>";
@@ -241,13 +241,13 @@ sub Versions
             print "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
             print "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby On Rails</a><br>";
         }
-		elsif($Page == 3)
+		elsif($vPage == 3)
 		{
 			print "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.html\">HTML Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/JQuery/Minecraft.html\">JQuery</a><br>";
-			print "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP VBscript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:84/Minecraft\">Node JS</a><br>";
             print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>";

@@ -4,7 +4,6 @@ function WriteHeader(vLevel, vCSS)
 	Response.Write("<link runat='server' rel='shortcut icon' href='"+GetPath(vLevel)+"favicon.ico')' type='image/x-icon' />");
 	Response.Write("<link runat='server' rel='icon' href='"+GetPath(vLevel)+"favicon.ico' type='image/ico' />");
 	Response.Write("<link href='"+GetPath(vLevel-1)+vCSS+"' rel='stylesheet' type='text/CSS'>");
-	Response.Write("<font color='white'>");
 }
 
 function TitlePicture(vLevel)
@@ -80,9 +79,4 @@ function GetPath(vLevel)
 function GetInformation(vExtension)
 {
     Response.Write("This is written with generic ASP.NET and javascript.");
-}
-
-function GetMonkeys()
-{
-	Response.Write("Monkeys");
 }

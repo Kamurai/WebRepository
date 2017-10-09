@@ -158,7 +158,7 @@ function Content(vPage)
     Response.Write("</p>");
 }
 
-function Versions(vPage, vExtension)
+function Versions(vPage)
 {
 	Response.Write("Other versions of this page are here:<br>");
 	if(vPage == 0)

@@ -184,7 +184,7 @@ function Versions(vPage)
     vDefault += "<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Index.html\">HTML Javascript</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>";
-    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP Javascript</a><br>";
+    vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Index.shtml\">Perl</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>";
@@ -207,7 +207,7 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>";
@@ -225,7 +225,7 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>";
@@ -243,7 +243,7 @@ function Versions(vPage)
         vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.html\">HTML Javascript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
-        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP VBscript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/Minecraft\">Node JS</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>";

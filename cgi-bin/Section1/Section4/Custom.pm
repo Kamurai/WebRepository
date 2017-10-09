@@ -23,18 +23,18 @@ sub Title
 {
 	##  Writes the Title of the webpage
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<title>";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "Java Programming";
 		}
-		if($Page == 1)
+		if($vPage == 1)
 		{
 			print "JSP Programming";
 		}
-		if($Page == 2)
+		if($vPage == 2)
 		{
 			print "JSF Programming";
 		}
@@ -45,9 +45,9 @@ sub Header
 {
 	##  Writes the header of the webpage content
 
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
-	if($Page <= 0)
+	if($vPage <= 0)
 	{
 		print "<h2>";
 			print "";
@@ -55,13 +55,13 @@ sub Header
 			print "";
 		print "</h2>";
 	}
-	elsif($Page == 1)
+	elsif($vPage == 1)
 	{
 		print "<h2>";
 			print "JSP Programming";
 		print "</h2>";
 	}
-	elsif($Page == 2)
+	elsif($vPage == 2)
 	{
 		print "<h2>";
 			print "JSF Programming";
@@ -72,18 +72,18 @@ sub Header
 sub Content
 {
 	##  Writes the content of the webpage
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "<p id=\"idCenterContent\">";
-		if($Page <= 0)
+		if($vPage <= 0)
 		{
 			print "This section is dedicated to Java based programming.";
 		}
-		elsif($Page == 1)
+		elsif($vPage == 1)
 		{
 			print "This section is dedicated to JSP based programming.";
 		}
-		elsif($Page == 2)
+		elsif($vPage == 2)
 		{
 			print "This section is dedicated to JSF based programming.";
 		}
@@ -93,16 +93,16 @@ sub Content
 
 sub Versions
 {
-	my $Page = $_[0];
+	my $vPage = $_[0];
 
 	print "Other versions of this page are here:<br>";
-	if($Page <= 0)
+	if($vPage <= 0)
 	{
 		print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Index.html\">HTML</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Index.php\">PHP</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section4/Index.html\">HTML Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section4/Index.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Index.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Index.asp\">ASP VBscript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section4/Index.aspx\">ASP.NET Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:84/Section1/Section4/Index\">Node JS</a><br>";
         print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Index.jsp\">JSP</a><br>";
@@ -114,13 +114,13 @@ sub Versions
         print "<a href=\"http://htkb.dyndns.org:82/Section1/Section4/Index\">Python Web.py</a><br>";
         print "<a href=\"http://htkb.dyndns.org:83/Section1/Section4/Index\">Ruby On Rails</a><br>";
 	}
-	elsif($Page == 1)
+	elsif($vPage == 1)
 	{
 		print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Project1.html\">HTML</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Project1.php\">PHP</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section4/Project1.html\">HTML Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section4/Project1.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Project1.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Project1.asp\">ASP VBscript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section4/Project1.aspx\">ASP.NET Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:84/Section1/Section4/Project1\">Node JS</a><br>";
         print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Project1.jsp\">JSP</a><br>";
@@ -132,13 +132,13 @@ sub Versions
         print "<a href=\"http://htkb.dyndns.org:82/Section1/Section4/Project1\">Python Web.py</a><br>";
         print "<a href=\"http://htkb.dyndns.org:83/Section1/Section4/Project1\">Ruby On Rails</a><br>";
 	}
-	elsif($Page == 2)
+	elsif($vPage == 2)
 	{
 		print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Project2.html\">HTML</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Section1/Section4/Project2.php\">PHP</a><br>";
         print "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section4/Project2.html\">HTML Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section4/Project2.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Project2.asp\">ASP Javascript</a><br>";
+        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section4/Project2.asp\">ASP VBscript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section4/Project2.aspx\">ASP.NET Javascript</a><br>";
         print "<a href=\"http://htkb.dyndns.org:84/Section1/Section4/Project2\">Node JS</a><br>";
         print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Project2.jsp\">JSP</a><br>";

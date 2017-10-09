@@ -101,10 +101,10 @@ exports.TitlePicture = function (vLevel)
 
 exports.NavBar = function (vLevel)
 {
-    var result = "<a class=\"navBar\" href='"+GetPath(vLevel)+"index'>Home</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/index'>Web Programming</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/index'>Private Projects</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/index'>Downloadable Projects</a>";
+    var result = "<a class=\"navBar\" href='"+GetPath(vLevel)+"Index'>Home</a>";
+    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index'>Web Programming</a>";
+    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index'>Private Projects</a>";
+    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index'>Downloadable Projects</a>";
     
     return result;
 }

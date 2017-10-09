@@ -54,7 +54,7 @@ function Versions(vPage)
 		document.write("<a href=\"http://htkb.dyndns.org/Section1/Section5/Index.php\">PHP</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section5/Index.php\">JQuery</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section5/Index.aspx\">ASP.NET Javascript</a><br>");
-		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section5/Index.asp\">ASP Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section5/Index.asp\">ASP VBscript</a><br>");
         document.write("<a href=\"http://htkb.dyndns.org:84/Section1/Section5/Index\">Node JS</a><br>");
         document.write("<a href=\"http://htkb.dyndns.org/Section1/Section5/Index.shtml\">Perl</a><br>");
 		document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section5/Index.jsp\">JSP</a><br>");

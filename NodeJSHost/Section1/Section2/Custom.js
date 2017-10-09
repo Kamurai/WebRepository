@@ -5,7 +5,7 @@ exports.Navigation = function (vLevel)
 	result += "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index\">Javascript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"href=\"http://hktb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"href=\"http://hktb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br><br>";
-		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP Javascript</a><br><br>";
+		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP VBscript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\">ASP.NET Javascript</a><br><br>";
 		result += "<a class=\"navlinkB\" href=\"http://htkb.dyndns.org:84/Section1/Section2/Index\">Node JS</a><br><br>";
 	result += "<a class=\"navlinkA\" href=\"href=\"http://hktb.dyndns.org/Section1/Index.shtml\">Perl</a><br><br>";
@@ -73,7 +73,7 @@ exports.Versions = function (vPage)
         result += "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Section2/Index.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/Index.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section2/Index.xhtml\">JSF</a><br>";
@@ -91,7 +91,7 @@ exports.Versions = function (vPage)
         result += "<a href=\"http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project2.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project3.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Section2/Project3.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section1/Project3.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Index.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section4/Index.xhtml\">JSF</a><br>";

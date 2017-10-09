@@ -19,7 +19,7 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Section1/Section2/Index\'>Java Script</a></br></br>'
 		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org/Javascript/Section1/Section2/Index.html\'>HTML Javascript</a></br></br>'
 		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org/JQuery/Section1/Section2/Index.html\'>JQuery</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\'>ASP Javascript</a></br></br>'
+		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASP/Section1/Section2/Index.asp\'>ASP VBscript</a></br></br>'
 		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Index.aspx\'>ASP.NET Javascript</a></br></br>'
 		vResult += '	<a class=\'navlinkB\' href=\'http://htkb.dyndns.org:84/Section1/Section2/Index\'>Node JS</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'http://htkb.dyndns.org/Section1/Index.shtml\'>Perl</a></br></br>'

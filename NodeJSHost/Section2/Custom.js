@@ -200,7 +200,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Index.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Index.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Index.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Index.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Index.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Index.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Index.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Index.xhtml\">JSF</a><br>";
@@ -218,7 +218,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project2.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project2.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project2.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project2.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project2.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project2.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project2.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project2.xhtml\">JSF</a><br>";
@@ -236,7 +236,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project3.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project3.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project3.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project3.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project3.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project3.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project3.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project3.xhtml\">JSF</a><br>";
@@ -254,7 +254,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project6.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project6.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project6.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project6.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project6.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project6.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project6.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project6.xhtml\">JSF</a><br>";
@@ -272,7 +272,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project7.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project7.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project7.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project7.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project7.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project7.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project7.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project7.xhtml\">JSF</a><br>";
@@ -290,7 +290,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project8.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project8.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project8.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project8.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project8.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project8.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project8.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project8.xhtml\">JSF</a><br>";
@@ -308,7 +308,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project9.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project9.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project9.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project9.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project9.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project9.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project9.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project9.xhtml\">JSF</a><br>";
@@ -326,7 +326,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project10.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project10.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project10.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project10.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project10.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project10.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project10.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project10.xhtml\">JSF</a><br>";
@@ -344,7 +344,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project11.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project11.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project11.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project11.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project11.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project11.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project11.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project11.xhtml\">JSF</a><br>";
@@ -362,7 +362,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project12.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project12.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project12.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project12.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project12.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project12.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project12.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project12.xhtml\">JSF</a><br>";
@@ -380,7 +380,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project13.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project13.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project13.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project13.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project13.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project13.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project13.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project13.xhtml\">JSF</a><br>";
@@ -398,7 +398,7 @@ exports.Versions = function (vPage)
 		result += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project14.html\">HTML Javascript</a><br>";
         result += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Project14.html\">JQuery</a><br>";
         result += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project14.aspx\">ASP.NET Javascript</a><br>";
-		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project14.asp\">ASP Javascript</a><br>";
+		result += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project14.asp\">ASP VBscript</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org/Section2/Project14.shtml\">Perl</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project14.jsp\">JSP</a><br>";
 		result += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project14.xhtml\">JSF</a><br>";
