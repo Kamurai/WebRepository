@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script language="JavaScript" src="./Universal.js" runat="server"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link href="./Main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body id="idBody" ng-app="vApp">
+		<table id="idTableMain">
+			<tr id="idHeaderRow">
+				<td id="idHeaderRowCenter" colspan="3">
+					<any ng-controller="UniversalController" ng-bind-html="TitlePicture(0)"/>
+				</td>
+			</tr>
+			<tr id="idNavigationRow">
+				<td id="idNavigationBar" colspan="3">
+					<any ng-controller="UniversalController" ng-bind-html="NavBar()"/>
+				</td>
+			</tr>
+			<tr id="idCenterRow">
+				<td id="idCenterRowLeft">
+					<any ng-controller="UniversalController" ng-bind-html="GetNavigationHeader()"></any>
+					<any ng-controller="CustomController" ng-bind-html="Navigation(0)"></any>
+				</td>
+				<td id="idCenterRowMain">
+				</td>
+				<td id="idCenterRowRight">
+					<any ng-controller="UniversalController" ng-bind-html="GetInformationHeader()"/>
+				</td>
+			</tr>
+			<tr id="idFooterRow">
+				<td id="idFooterMain" colspan="3">
+					<p id="idFooterContent">
+						<any  ng-controller="UniversalController" ng-bind-html="Footer()"/>
+					</p>
+					<p id="idFooterManagement">
+						<any  ng-controller="UniversalController" ng-bind-html="WebMaster()"/>
+					</p>
+				</td>
+			</tr>
+		</table>
+		
+		
+		
+	</body>
+</html>
