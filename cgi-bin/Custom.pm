@@ -2,12 +2,12 @@ sub Navigation
 {
 	##  Writes the navigation content of the webpage
 
-	my $Path = $_[0];
+	my $vPath = $_[0];
 	my $DownPath = $_[1];
 	
-	print "<a class=\"navlinkA\" href='".$Path.$DownPath."AboutUs.shtml'>About Us</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path.$DownPath."Media.shtml'>Media</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path.$DownPath."Minecraft.shtml'>Minecraft!</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath.$DownPath."AboutUs.shtml'>About Us</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath.$DownPath."Media.shtml'>Media</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath.$DownPath."Minecraft.shtml'>Minecraft!</a><br><br>";
 	
 }
 

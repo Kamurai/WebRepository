@@ -2,23 +2,23 @@ sub Navigation
 {
 	##  Writes the navigation content of the webpage
 
-	my $Path = $_[0];
+	my $vPath = $_[0];
 	my $DownPath = $_[1];
 	
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project2.shtml'>Assault</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project3.shtml'>Mars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section4/Index.shtml'>Renley</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project6.shtml'>Truth</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project7.shtml'>Kingdoms</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project8.shtml'>Terminal World</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project12.shtml'>The Way</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project14.shtml'>Conversion</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project2.shtml'>Assault</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project3.shtml'>Mars</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section4/Index.shtml'>Renley</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project6.shtml'>Truth</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project7.shtml'>Kingdoms</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project8.shtml'>Terminal World</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project12.shtml'>The Way</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project14.shtml'>Conversion</a><br><br>";
 
 }
 

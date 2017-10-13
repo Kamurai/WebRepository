@@ -3,8 +3,8 @@
 	
     $vPage = 0;
     $vLevel = 1;
-    $vSection = 3;
+    $vDivision = 3;
     #Overall body
-	WriteLayout($vPage, $vLevel, $vSection);
+	echo getLayout($vPage, $vLevel, $vDivision);
     
 ?>

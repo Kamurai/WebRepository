@@ -1,10 +1,9 @@
 <?php
 	include './Layout.php';
 	
-    $Page = 3;
-    $Level = 3;
-    $Section = 2;
+    $vPage = 3;
+    $vLevel = 3;
+    $vDivision = 2;
     #Overall body
-	WriteLayout($Page, $Level, $Section);
-    
+	WriteLayout($vPage, $vLevel, $vDivision);    
 ?>

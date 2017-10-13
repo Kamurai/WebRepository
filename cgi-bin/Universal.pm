@@ -1,17 +1,149 @@
-sub WriteHeader
+sub getHead
 {
-	##  Writes the header of the webpage
+	##  Gets the header of the webpage
 
-	my $Path = $_[0];
-	my $Style = $_[1];
+	my $vLevel = $_[0];
+	my $vDivision = $_[1];
+	my $vResult = "";
 
-	print "<head>";
-		print "<link href='".$Path."' rel='stylesheet' type='text/css'>";
-		print "<font color='white'>";
-	print "</head>";
+	$vResult += "<head>";
+		$vResult += "<meta http-equiv=\'Content-Type\' content=\'text/html; charset=ISO-8859-1\'>";
+		$vResult += getStyle($vLevel, $vDivision);
+	$vResult += "</head>";
+	
+	return $vResult;
 }
 
-sub Footer
+sub getStyle
+{
+	## Declare a link to the style sheet
+	
+	my $vLevel = $_[0];
+	my $vDivision = $_[1];
+	
+	return "<link href='"+getStyleFile($vDivision)+"' rel='stylesheet' type='text/css'>";
+}
+
+sub getStyleFile
+{
+	my $vDivision = $_[0];
+	
+	my $vResult = "";
+	my $vDefault = "Main.css";
+	
+	if($vDivision == 0)
+	{
+		$vResult = $vDefault;
+	}
+	elsif($vLevel == 1)
+	{
+		$vResult = "Division1.css";
+	}
+	elsif($vLevel == 2)
+	{
+		$vResult = "Division2.css";
+	}
+	elsif($vLevel == 3)
+	{
+		$vResult = "Division3.css";
+	}
+	else
+	{
+		$vResult = $vDefault;
+	}
+	
+	return $vResult;
+}
+
+sub getLogo
+{
+	##  Gets the title picture of the webpage
+
+	my $vPath = $_[0];
+	my $vResult = "";
+
+	$vResult += "<img id=\"idLogo\" src='".$vPath."/Pictures/logoHTKB.jpg'><br>";
+	
+	return $vResult;
+}
+
+sub getNavBar
+{
+	##  Writes the navigation bar of the webpage
+
+	my $vLevel = $_[0];
+	
+	my $vResult = "";
+
+	$vResult += "<a class=\"navBar\" href='".$vPath."Index.shtml'>Home</a>";
+	$vResult += "<a class=\"navBar\" href='".$vPath."Division1/Index.shtml'>Web Programming</a>";
+	$vResult += "<a class=\"navBar\" href='".$vPath."Division2/Index.shtml'>Private Projects</a>";
+	$vResult += "<a class=\"navBar\" href='".$vPath."Division3/Index.shtml'>Downloadable Projects</a>";
+	
+	return $vResult;
+}
+
+sub getNavigationHeader
+{
+	##  Gets the Navigaton Header
+
+	my $vResult = "";
+
+	$vResult += "<h4>";
+	$vResult += "Navigation";
+	$vResult += "</h4>";
+	
+	return $vResult;
+}
+
+sub getInformationHeader
+{
+	##  Gets the Information Header
+
+	my $vResult = "";
+
+	$vResult += "<h4>";
+	$vResult += "Information";
+	$vResult += "</h4>";
+	
+	return $vResult;
+}
+
+sub getInformation
+{
+	##  Gets the Information section of the webpage
+
+	my $vResult = "";
+
+	$vResult += "This page is written using Perl.";
+	$vResult += "Other versions can be found here:";
+	
+	return $vResult;
+}
+
+sub getGDR
+{
+	##  Writes the footer of the webpage
+	
+	my $vResult = "";
+
+	$vResult += "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	
+	return $vResult;
+}
+
+sub getWinRar
+{
+	##  Writes the footer of the webpage
+
+	my $vResult = "";
+
+	$vResult += "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+	
+	return $vResult;
+}
+
+sub getFooter
 {
 	##  Writes the footer of the webpage
 
@@ -21,36 +153,7 @@ sub Footer
 	print "</p>";
 }
 
-sub GDR
-{
-	##  Writes the footer of the webpage
-
-	print "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
-
-}
-
-sub NavBar
-{
-	##  Writes the navigation bar of the webpage
-
-	my $Path = $_[0];
-
-	print "<a class=\"navBar\" href='".$Path."Index.shtml'>Home</a>";
-	print "<a class=\"navBar\" href='".$Path."Section1/Index.shtml'>Web Programming</a>";
-	print "<a class=\"navBar\" href='".$Path."Section2/Index.shtml'>Private Projects</a>";
-	print "<a class=\"navBar\" href='".$Path."Section3/Index.shtml'>Downloadable Projects</a>";
-}
-
-sub TitlePicture
-{
-	##  Displays the title picture of the webpage
-
-	my $Path = $_[0];
-
-	print "<img id=\"idLogo\" src='".$Path."logo_HouseThatKamuraiBuilt_blueonblack.jpg'><br>";
-}
-
-sub WebMaster
+sub getWebMaster
 {
 	##  Writes the webmaster of the webpage
 								
@@ -59,67 +162,61 @@ sub WebMaster
 	print "</p>";
 }
 
-sub WinRAR
-{
-	##  Writes the footer of the webpage
-
-	print "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
-
-}
-
-sub Information
-{
-	##  Writes the Information section of the webpage
-
-	my $Page = $_[0];
-	
-	print "This page is written using Perl.";
-	Versions($Page);
-}
-
-sub GetPath
+sub getPath
 {
 	##  Gets the base path based on the level of the webpage
 
-	my $Level = $_[0];
+	my $vLevel = $_[0];
 
-	my $Result = "";
+	my $vResult = "";
 
 
-	if($Level <= 0)
+	if($vLevel <= 0)
 	{
-		$Result = "./";
+		$vResult = "./";
 	}
-	elsif($Level == 1)
+	elsif($vLevel == 1)
 	{
-		$Result = "../";
+		$vResult = "../";
 	}
-	elsif($Level == 2)
+	elsif($vLevel == 2)
 	{
-		$Result = "../../";
+		$vResult = "../../";
 	}
-	elsif($Level == 3)
+	elsif($vLevel == 3)
 	{
-		$Result = "../../../";
+		$vResult = "../../../";
 	}
-	elsif($Level == 4)
+	elsif($vLevel == 4)
 	{
-		$Result = "../../../../";
+		$vResult = "../../../../";
 	}
-	elsif($Level == 5)
+	elsif($vLevel == 5)
 	{
-		$Result = "../../../../../";
+		$vResult = "../../../../../";
 	}
-	elsif($Level == 6)
+	elsif($vLevel == 6)
 	{
-		$Result = "../../../../../../";
+		$vResult = "../../../../../../";
 	}
-	elsif($Level == 7)
+	elsif($vLevel == 7)
 	{
-		$Result = "../../../../../../../";
+		$vResult = "../../../../../../../";
+	}
+	elsif($vLevel == 8)
+	{
+		$vResult = "../../../../../../../../";
+	}
+	elsif($vLevel == 9)
+	{
+		$vResult = "../../../../../../../../../";
+	}
+	elsif($vLevel == 10)
+	{
+		$vResult = "../../../../../../../../../../";
 	}
 
-	return $Result;
+	return $vResult;
 }
 
 1;

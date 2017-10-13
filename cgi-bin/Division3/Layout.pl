@@ -9,8 +9,8 @@ print "Content-type: text/html\n\n";
 
 my $CGI            = CGI->new();
 my $CSS			   = $CGI->param('vCSS');
-my $Page           = $CGI->param('vPage');
-my $Path           = $CGI->param('vPath');
+my $vPage           = $CGI->param('vPage');
+my $vPath           = $CGI->param('vPath');
 my $DownPath       = $CGI->param('vDownPath');
 my $ScriptPath     = $CGI->param('vScriptPath');
 my $ScriptDownPath = $CGI->param('vScriptDownPath');
@@ -18,19 +18,19 @@ my $ScriptDownPath = $CGI->param('vScriptDownPath');
 require $ScriptPath."Universal.pm";
 require $ScriptPath.$ScriptDownPath."Custom.pm";
 
-WriteHeader($CSS);
+print getHead($vLevel, $vDivision)
 
 print "<table id=\"idTableMain\">";
     print "<tr id=\"idHeaderRow\">";
         print "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
             #Universal level
-            TitlePicture($Path);
+            TitlePicture($vPath);
 		print "</td>";
     print "</tr>";
     print "<tr id=\"idNavigationRow\">";
         print "<td id=\"idNavigationBar\" colspan=\"3\">";
             #Universal level
-            NavBar($Path);
+            NavBar($vPath);
         print "</td>";
     print "</tr>";
     print "<tr id=\"idCenterRow\">";
@@ -38,21 +38,21 @@ print "<table id=\"idTableMain\">";
             print "<h4>";
 				print "Navigation";
 			print "</h4>";
-			#Local level
-			Navigation($Path,$DownPath);
+			#from Custom
+			Navigation($vPath,$DownPath);
         print "</td>";
 		print "<td id=\"idCenterRowMain\">";
-            #Local level
-			Title($Page);
-			Header($Page);
-			Content($Page);
+            #from Custom
+			Title($vPage);
+			Header($vPage);
+			Content($vPage);
         print "</td>";
         print "<td id=\"idCenterRowRight\">";
             print "<h4>";
                 print "Information";
 			print "</h4>";
 			#Universal level
-			Information($Page);                    
+			Information($vPage);                    
         print "</td>";
     print "</tr>";
     print "<tr id=\"idFooterRow\">";

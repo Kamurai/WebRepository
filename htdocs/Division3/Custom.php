@@ -1,106 +1,94 @@
 <?php
     include './Universal.php';
 	
-    function Title($Page)
+    function getTitle($vPage)
     {
-        $Result = '<title>';
+        $vResult = '<title>';
         $Default = 'Downloadable Projects';
         
-        if($Page==0)
+        if($vPage==0)
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
-        else if($Page==1)
+        else if($vPage==1)
         {
-            $Result = $Result.'Online Experience Downloads';
+            $vResult = $vResult.'Online Experience Downloads';
         }
-        else if($Page==2)
+        else if($vPage==2)
         {
-            $Result = $Result.'Game Maker Downloads';
+            $vResult = $vResult.'Game Maker Downloads';
         }
-        else if($Page==3)
+        else if($vPage==3)
         {
-            $Result = $Result.'Java Downloads';
+            $vResult = $vResult.'Java Downloads';
         }
-        else if($Page==4)
+        else if($vPage==4)
         {
-            $Result = $Result.'C# Downloads';
+            $vResult = $vResult.'C# Downloads';
         }
-        else if($Page==5)
+        else if($vPage==5)
         {
-            $Result = $Result.'C++ Downloads';
+            $vResult = $vResult.'C++ Downloads';
         }
         else
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
         
-        $Result = $Result.'</title>';
+        $vResult = $vResult.'</title>';
         
-        return $Result;
+        return $vResult;
     }
 
-    function Navigation($Level)
+    function getContentHeader($vPage)
     {
-        $Result = '
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section3/Project1.php\'>Online Experience Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section3/Project2.php\'>Game Maker Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section3/Project3.php\'>Java Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section3/Project4.php\'>C# Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.Path($Level).'Section3/Project5.php\'>C++ Downloads</a></br></br>
-        ';
-        return $Result;
-    }
-    
-    function ContentHeader($Page)
-    {
-        $Result = '';
+        $vResult = '';
         $Default = 'Downloadable Projects';
         
-        if($Page==0)
+        if($vPage==0)
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
-        else if($Page==1)
+        else if($vPage==1)
         {
-            $Result = $Result.'Online Experience Downloads';
+            $vResult = $vResult.'Online Experience Downloads';
         }
-        else if($Page==2)
+        else if($vPage==2)
         {
-            $Result = $Result.'Game Maker Downloads';
+            $vResult = $vResult.'Game Maker Downloads';
         }
-        else if($Page==3)
+        else if($vPage==3)
         {
-            $Result = $Result.'Java Downloads';
+            $vResult = $vResult.'Java Downloads';
         }
-        else if($Page==4)
+        else if($vPage==4)
         {
-            $Result = $Result.'C# Downloads';
+            $vResult = $vResult.'C# Downloads';
         }
-        else if($Page==5)
+        else if($vPage==5)
         {
-            $Result = $Result.'C++ Downloads';
+            $vResult = $vResult.'C++ Downloads';
         }
         else
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
         
-        return $Result;
+        return $vResult;
     }
     
-    function Content($Page)
+    function getContent($vPage)
     {
-        $Result = '';
+        $vResult = '';
         $Default = 'This section is dedicated to downloadable projects.';
         
-        if($Page==0)
+        if($vPage==0)
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
-        else if($Page==1)
+        else if($vPage==1)
         {
-            $Result = $Result.'
+            $vResult = $vResult.'
                 Here are downloads to play Cube World with us:</br>
                 </br>
                 Cube World:<t><a href=\'./downloads/CubeSetup3.exe\'>Come play Cube World!</a></br>
@@ -110,9 +98,9 @@
                 </br>
             ';
         }
-        else if($Page==2)
+        else if($vPage==2)
         {
-            $Result = $Result.'
+            $vResult = $vResult.'
                 Here are Game Maker Projects to play:</br>
                 </br>
                 Gamebox Client: v6.0:<t><a href=\'./downloads/GameBox_Client_Installer_v6p0.exe\'>Play games from...well, anywhere.</a></br>
@@ -128,25 +116,25 @@
                 Skitzo Burrito (Alpha): <t><a href=\'./downloads/Emotive-Default-1.0.0.3.exe\'>An emotional platform survival game.</a></br>
             ';
         }
-        else if($Page==3)
+        else if($vPage==3)
         {
-            $Result = $Result.'
+            $vResult = $vResult.'
                 Here are Java Programs to download:</br>
                 </br>
                 Blood Bowl Manager:<t><a href=\'../downloads/pichaku.zip\'>This is currently not available.</a></br>
             ';
         }
-        else if($Page==4)
+        else if($vPage==4)
         {
-            $Result = $Result.'
+            $vResult = $vResult.'
                 Here are C# Programs to download:</br>
                 </br>
                 Chess Program:<t><a href=\'../downloads/pichaku.zip\'>This is currently not available.</a></br>
             ';
         }
-        else if($Page==5)
+        else if($vPage==5)
         {
-            $Result = $Result.'
+            $vResult = $vResult.'
                 Here are C++ Programs to download:</br>
                 </br>
                 HTKB Bar Code System:<t><a href=\'../downloads/pichaku.zip\'>This is currently not available.</a></br>
@@ -154,148 +142,155 @@
         }
         else
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
         
-        return $Result;
+        return $vResult;
     }
     
-    function Versions($Page)
+    function getVersions($vPage)
     {
-        $Result = '';
+        $vResult = '';
         $Default = '
-            <a href=\'http://htkb.dyndns.org/Section3/Index.html\'>HTML</a><br>
-            <a href=\'http://htkb.dyndns.org/Javascript/Section3/Index.html\'>HTML Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org/JQuery/Section3/Index.html\'>JQuery</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Index.asp\'>ASP Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Index.aspx\'>ASP.NET Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:84/Section3/Index\'>Node JS</a><br>
-            <a href=\'http://htkb.dyndns.org/Section3/Index.shtml\'>Perl</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Index.jsp\'>JSP</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Index.xhtml\'>JSF</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Index.cshtml\'>ASP.NET Web App</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Index.aspx\'>ASP.NET Webform</a><br>
-            <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Index\'>ASP.NET MVC App</a><br>
-            <a href=\'http://htkb.dyndns.org/SSI/Section3/Index.html\'>Apache SSI</a><br>
-            <a href=\'http://htkb.dyndns.org:82/Section3/Index\'>Python Web.py</a><br>
-            <a href=\'http://htkb.dyndns.org:83/Section3/Index\'>Ruby on Rails</a><br>
+            <a href=\'http://htkb.dyndns.org/Division3/Index.html\'>HTML</a><br>
+			<a href=\'http://htkb.dyndns.org/Division3/Index.shtml\'>Perl</a><br>
+			<a href=\'http://htkb.dyndns.org/SSI/Division3/Index.html\'>Apache SSI</a><br>
+			<a href=\'http://htkb.dyndns.org/Javascript/Division3/Index.html\'>HTML Javascript</a><br>
+			<a href=\'http://htkb.dyndns.org/JQuery/Division3/Index.html\'>JQuery</a><br>
+			<a href=\'http://htkb.dyndns.org/Angular/Division3/Index.html\'>Angular JS</a><br>
+			<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Index.xhtml\'>JSF</a><br>
+			<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Index.jsp\'>JSP</a><br>
+			<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Index.jsp\'>JSP Spring MVC</a><br>
+			<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Index.aspx\'>ASP.NET Javascript</a><br>
+			<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Index.asp\'>ASP VBscript</a><br>
+			<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Index.cshtml\'>ASP.NET Web App</a><br>
+			<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Index.aspx\'>ASP.NET Webform</a><br>
+			<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Index\'>ASP.NET MVC App</a><br>
+			<a href=\'http://htkb.dyndns.org:82/Division3/Index\'>Python Web.py</a><br>
+			<a href=\'http://htkb.dyndns.org:83/Division3/Index\'>Ruby on Rails</a><br>
+			<a href=\'http://htkb.dyndns.org:84/Division3/Index\'>Node JS</a><br>
         ';
         
-        if($Page==0)
+        if($vPage==0)
         {
-            $Result = $Result.$Default;
+            $vResult = $vResult.$Default;
         }
-        else if($Page==1)
+        else if($vPage==1)
         {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section3/Project1.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section3/Project1.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/JQuery/Section3/Project1.html\'>JQuery</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Project1.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Project1.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:84/Section3/Project1\'>Node JS</a><br>
-                <a href=\'http://htkb.dyndns.org/Section3/Project1.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Project1.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Project1.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Project1.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Project1.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Project1\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section3/Project1.html\'>Apache SSI</a><br>
-                <a href=\'http://htkb.dyndns.org:82/Section3/Project1\'>Python Web.py</a><br>
-                <a href=\'http://htkb.dyndns.org:83/Section3/Project1\'>Ruby on Rails</a><br>
-
+            $vResult = $vResult.'
+                <a href=\'http://htkb.dyndns.org/Division3/Project1.html\'>HTML</a><br>
+				<a href=\'http://htkb.dyndns.org/Division3/Project1.shtml\'>Perl</a><br>
+				<a href=\'http://htkb.dyndns.org/SSI/Division3/Project1.html\'>Apache SSI</a><br>
+				<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project1.html\'>HTML Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org/JQuery/Division3/Project1.html\'>JQuery</a><br>
+				<a href=\'http://htkb.dyndns.org/Angular/Division3/Project1.html\'>Angular JS</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Project1.xhtml\'>JSF</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Project1.jsp\'>JSP</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Project1.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Project1.aspx\'>ASP.NET Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Project1.asp\'>ASP VBscript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Project1.cshtml\'>ASP.NET Web App</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Project1.aspx\'>ASP.NET Webform</a><br>
+				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project1\'>ASP.NET MVC App</a><br>
+				<a href=\'http://htkb.dyndns.org:82/Division3/Project1\'>Python Web.py</a><br>
+				<a href=\'http://htkb.dyndns.org:83/Division3/Project1\'>Ruby on Rails</a><br>
+				<a href=\'http://htkb.dyndns.org:84/Division3/Project1\'>Node JS</a><br>
             ';
         }
-        else if($Page==2)
+        else if($vPage==2)
         {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section3/Project2.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section3/Project2.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/JQuery/Section3/Project2.html\'>JQuery</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Project2.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Project2.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:84/Section3/Project2\'>Node JS</a><br>
-                <a href=\'http://htkb.dyndns.org/Section3/Project2.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Project2.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Project2.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Project2.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Project2.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Project2\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section3/Project2.html\'>Apache SSI</a><br>
-                <a href=\'http://htkb.dyndns.org:82/Section3/Project2\'>Python Web.py</a><br>
-                <a href=\'http://htkb.dyndns.org:83/Section3/Project2\'>Ruby on Rails</a><br>
-
+            $vResult = $vResult.'
+                <a href=\'http://htkb.dyndns.org/Division3/Project2.html\'>HTML</a><br>
+				<a href=\'http://htkb.dyndns.org/Division3/Project2.shtml\'>Perl</a><br>
+				<a href=\'http://htkb.dyndns.org/SSI/Division3/Project2.html\'>Apache SSI</a><br>
+				<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project2.html\'>HTML Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org/JQuery/Division3/Project2.html\'>JQuery</a><br>
+				<a href=\'http://htkb.dyndns.org/Angular/Division3/Project2.html\'>Angular JS</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Project2.xhtml\'>JSF</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Project2.jsp\'>JSP</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Project2.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Project2.aspx\'>ASP.NET Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Project2.asp\'>ASP VBscript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Project2.cshtml\'>ASP.NET Web App</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Project2.aspx\'>ASP.NET Webform</a><br>
+				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project2\'>ASP.NET MVC App</a><br>
+				<a href=\'http://htkb.dyndns.org:82/Division3/Project2\'>Python Web.py</a><br>
+				<a href=\'http://htkb.dyndns.org:83/Division3/Project2\'>Ruby on Rails</a><br>
+				<a href=\'http://htkb.dyndns.org:84/Division3/Project2\'>Node JS</a><br>
             ';
         }
-        else if($Page==3)
+        else if($vPage==3)
         {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section3/Project3.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section3/Project3.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/JQuery/Section3/Project3.html\'>JQuery</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Project3.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Project3.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:84/Section3/Project3\'>Node JS</a><br>
-                <a href=\'http://htkb.dyndns.org/Section3/Project3.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Project3.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Project3.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Project3.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Project3.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Project3\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section3/Project3.html\'>Apache SSI</a><br>
-                <a href=\'http://htkb.dyndns.org:82/Section3/Project3\'>Python Web.py</a><br>
-                <a href=\'http://htkb.dyndns.org:83/Section3/Project3\'>Ruby on Rails</a><br>
-
+            $vResult = $vResult.'
+                <a href=\'http://htkb.dyndns.org/Division3/Project3.html\'>HTML</a><br>
+				<a href=\'http://htkb.dyndns.org/Division3/Project3.shtml\'>Perl</a><br>
+				<a href=\'http://htkb.dyndns.org/SSI/Division3/Project3.html\'>Apache SSI</a><br>
+				<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project3.html\'>HTML Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org/JQuery/Division3/Project3.html\'>JQuery</a><br>
+				<a href=\'http://htkb.dyndns.org/Angular/Division3/Project3.html\'>Angular JS</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Project3.xhtml\'>JSF</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Project3.jsp\'>JSP</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Project3.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Project3.aspx\'>ASP.NET Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Project3.asp\'>ASP VBscript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Project3.cshtml\'>ASP.NET Web App</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Project3.aspx\'>ASP.NET Webform</a><br>
+				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project3\'>ASP.NET MVC App</a><br>
+				<a href=\'http://htkb.dyndns.org:82/Division3/Project3\'>Python Web.py</a><br>
+				<a href=\'http://htkb.dyndns.org:83/Division3/Project3\'>Ruby on Rails</a><br>
+				<a href=\'http://htkb.dyndns.org:84/Division3/Project3\'>Node JS</a><br>
             ';
         }
-        else if($Page==4)
+        else if($vPage==4)
         {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section3/Project4.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section3/Project4.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/JQuery/Section3/Project4.html\'>JQuery</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Project4.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Project4.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:84/Section3/Project4\'>Node JS</a><br>
-                <a href=\'http://htkb.dyndns.org/Section3/Project4.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Project4.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Project4.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Project4.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Project4.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Project4\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section3/Project4.html\'>Apache SSI</a><br>
-                <a href=\'http://htkb.dyndns.org:82/Section3/Project4\'>Python Web.py</a><br>
-                <a href=\'http://htkb.dyndns.org:83/Section3/Project4\'>Ruby on Rails</a><br>
-
+            $vResult = $vResult.'
+                <a href=\'http://htkb.dyndns.org/Division3/Project4.html\'>HTML</a><br>
+				<a href=\'http://htkb.dyndns.org/Division3/Project4.shtml\'>Perl</a><br>
+				<a href=\'http://htkb.dyndns.org/SSI/Division3/Project4.html\'>Apache SSI</a><br>
+				<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project4.html\'>HTML Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org/JQuery/Division3/Project4.html\'>JQuery</a><br>
+				<a href=\'http://htkb.dyndns.org/Angular/Division3/Project4.html\'>Angular JS</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Project4.xhtml\'>JSF</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Project4.jsp\'>JSP</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Project4.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Project4.aspx\'>ASP.NET Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Project4.asp\'>ASP VBscript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Project4.cshtml\'>ASP.NET Web App</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Project4.aspx\'>ASP.NET Webform</a><br>
+				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project4\'>ASP.NET MVC App</a><br>
+				<a href=\'http://htkb.dyndns.org:82/Division3/Project4\'>Python Web.py</a><br>
+				<a href=\'http://htkb.dyndns.org:83/Division3/Project4\'>Ruby on Rails</a><br>
+				<a href=\'http://htkb.dyndns.org:84/Division3/Project4\'>Node JS</a><br>
             ';
         }
-        else if($Page==5)
+        else if($vPage==5)
         {
-            $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section3/Project5.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section3/Project5.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/JQuery/Section3/Project5.html\'>JQuery</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section3/Project5.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section3/Project5.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:84/Section3/Project5\'>Node JS</a><br>
-                <a href=\'http://htkb.dyndns.org/Section3/Project5.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section3/Project5.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section3/Project5.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section3/Project5.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section3/Project5.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Section3/Project5\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section3/Project5.html\'>Apache SSI</a><br>
-                <a href=\'http://htkb.dyndns.org:82/Section3/Project5\'>Python Web.py</a><br>
-                <a href=\'http://htkb.dyndns.org:83/Section3/Project5\'>Ruby on Rails</a><br>
-
+            $vResult = $vResult.'
+                <a href=\'http://htkb.dyndns.org/Division3/Project5.html\'>HTML</a><br>
+				<a href=\'http://htkb.dyndns.org/Division3/Project5.shtml\'>Perl</a><br>
+				<a href=\'http://htkb.dyndns.org/SSI/Division3/Project5.html\'>Apache SSI</a><br>
+				<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project5.html\'>HTML Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org/JQuery/Division3/Project5.html\'>JQuery</a><br>
+				<a href=\'http://htkb.dyndns.org/Angular/Division3/Project5.html\'>Angular JS</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division3/Project5.xhtml\'>JSF</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division3/Project5.jsp\'>JSP</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division3/Project5.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division3/Project5.aspx\'>ASP.NET Javascript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/ASP/Division3/Project5.asp\'>ASP VBscript</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division3/Project5.cshtml\'>ASP.NET Web App</a><br>
+				<a href=\'http://htkb.dyndns.org:81/WebForm/Division3/Project5.aspx\'>ASP.NET Webform</a><br>
+				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project5\'>ASP.NET MVC App</a><br>
+				<a href=\'http://htkb.dyndns.org:82/Division3/Project5\'>Python Web.py</a><br>
+				<a href=\'http://htkb.dyndns.org:83/Division3/Project5\'>Ruby on Rails</a><br>
+				<a href=\'http://htkb.dyndns.org:84/Division3/Project5\'>Node JS</a><br>
             ';
         }
         else
         {
-            $Result = $Default;
+            $vResult = $Default;
         }
         
-        return $Result;
+        return $vResult;
     }
 
 

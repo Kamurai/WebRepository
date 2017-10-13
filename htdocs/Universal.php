@@ -1,242 +1,187 @@
 <?php
 
-    function WriteHeader($Level, $Section)
+    function getHead($vLevel, $vDivision)
     {
-        $Result = '
+        $vResult = '
         <head>
             <meta http-equiv=\'Content-Type\' content=\'text/html; charset=ISO-8859-1\'>
-        '.CSS($Level, $Section).'
+        '.getStyle($vLevel, $vDivision).'
         </head>
         ';
         
-        return $Result;
+        return $vResult;
     }
 
-    function CSS($Level, $Section)
+    function getStyle($vLevel, $vDivision)
     {
-        $Result = '';
+        $vResult = '';
+		
+        $vResult = '<link href=\'';
+        $vResult = $vResult.getPath($vLevel).'Styles/';
+        $vResult = $vResult.getStyleFile($vDivision);
+		$vResult = $vResult.'\' rel=\'stylesheet\' type=\'text/css\'>';
         
-        if( $Section == 0 )
+        return $vResult;
+    }
+    
+    function getStyleFile($vDivision)
+    {
+        $vResult = '';
+		$vDefault = '';
+		
+		$vDefault = $vDefault.'Main.css';
+        
+        if($vDivision == 0)
         {
-            $Result = '<link href=\'';
-            $Result = $Result.Path($Level);
-            $Result = $Result.CSSFile($Section);
-            $Result = $Result.'\' rel=\'stylesheet\' type=\'text/css\'>';
+            $vResult = $vResult.$vDefault;
+        }
+        else if($vDivision == 1)
+        {
+            $vResult = 'Division1.css';
+        }
+        else if($vDivision == 2)
+        {
+            $vResult = 'Division2.css';
+        }
+        else if($vDivision == 3)
+        {
+            $vResult = 'Division3.css';
         }
         else
-        {
-            $Result = '<link href=\'';
-            $Result = $Result.StylePath($Level);
-            $Result = $Result.CSSFile($Section);
-            $Result = $Result.'\' rel=\'stylesheet\' type=\'text/css\'>';
-        }
-        
-        return $Result;
+		{
+			$vResult = $vResult.$vDefault;
+		}
+		
+        return $vResult;
     }
     
-    function CSSFile($Section)
+	function getLogo($vLevel)
     {
-        $Result = '';
+        $vResult = '<img id=\'idLogo\' src=\''.getPath($vLevel).'Pictures/logoHTKB.jpg\'>';
         
-        if($Section == 0)
-        {
-            $Result = 'Main.css';
-        }
-        else if($Section == 1)
-        {
-            $Result = 'Section1.css';
-        }
-        else if($Section == 2)
-        {
-            $Result = 'Section2.css';
-        }
-        else if($Section == 3)
-        {
-            $Result = 'Section3.css';
-        }
-        
-        return $Result;
-    }
-    
-    function Logo($Level)
-    {
-        $Result = '<img id=\'idLogo\' src=\''.Path($Level).'logo_HouseThatKamuraiBuilt_blueonblack.jpg\'>';
-        
-        return $Result;
+        return $vResult;
     }
 
-    function NavBar($Level)
+    function getNavBar($vLevel)
     {
-        $Result = '
-            <a class=\'navBar\' href=\''.Path($Level).'index.php\'>Home</a>
-            <a class=\'navBar\' href=\''.Path($Level).'Section1/index.php\'>Web Programming</a>
-            <a class=\'navBar\' href=\''.Path($Level).'Section2/index.php\'>Private Projects</a>
-            <a class=\'navBar\' href=\''.Path($Level).'Section3/index.php\'>Downloadable Projects</a>
+        $vResult = '
+            <a class=\'navBar\' href=\''.getPath($vLevel).'Index.php\'>Home</a>
+            <a class=\'navBar\' href=\''.getPath($vLevel).'Division1/Index.php\'>Web Programming</a>
+            <a class=\'navBar\' href=\''.getPath($vLevel).'Division2/Index.php\'>Private Projects</a>
+            <a class=\'navBar\' href=\''.getPath($vLevel).'Division3/Index.php\'>Downloadable Projects</a>
         ';
         
-        return $Result;
+        return $vResult;
     }
 
-    function GDR()
+    function getNavigationHeader()
     {
-        $Result = '<a href=\'../Downloads/GDR.zip\'>You can download my Games Development Report here.</a></br>';
-	    
-        return $Result;
-    }
-
-    function WinRar()
-    {
-        $Result = '<a href=\'../Downloads/wrar371.exe\'>You may need WinRar to open zip files from this site.</a></br>';
+        $vResult = '<h4>';
+        $vResult = $vResult.'Navigation';
+        $vResult = $vResult.'</h4>';
         
-        return $Result;
-    }
-
-    function Footer()
-    {
-        $Result  = '<p id=\'idFooterContent\'>';
-        $Result = $Result.'    © Copyright 2012 All rights reserved<br>';
-        $Result = $Result.'    House That Kamurai Built<br>';
-        $Result = $Result.'</p>';
-        
-        return $Result;
-    }
-
-    function Management()
-    {
-        $Result  = '<p id=\'idFooterManagement\'>';
-        $Result = $Result.'    Website managed by Kamurai.';
-        $Result = $Result.'</p>';
-        
-        return $Result;
+        return $vResult;
     }
     
-    function NavigationHeader()
+    function getInformationHeader()
     {
-        $Result = '<h4>';
-        $Result = $Result.'    Navigation';
-        $Result = $Result.'</h4>';
+        $vResult  = '<h4>';
+        $vResult = $vResult.'    Information';
+        $vResult = $vResult.'</h4>';
         
-        return $Result;
+        return $vResult;
     }
     
-    function InfoHeader()
+    function getInformation()
     {
-        $Result  = '<h4>';
-        $Result = $Result.'    Information';
-        $Result = $Result.'</h4>';
+        $vResult  = 'This is written with PHP.<br><br>';
+        $vResult = $vResult.'Other versions of this page are here:<br>';
         
-        return $Result;
-    }
-    
-    function InfoLanguage()
-    {
-        $Result  = 'This is written with PHP.<br><br>';
-        $Result = $Result.'Other versions of this page are here:<br>';
-        
-        return $Result;
+        return $vResult;
     }
 				
-    function Path($Level)
+    function getGDR()
     {
-        $Result = '';
-        
-        if($Level == 0)
-        {
-            $Result = './';
-        }
-        else if($Level == 1)
-        {
-            $Result = '../';
-        }
-        else if($Level == 2)
-        {
-            $Result = '../../';
-        }
-        else if($Level == 3)
-        {
-            $Result = '../../../';
-        }
-        else if($Level == 4)
-        {
-            $Result = '../../../../';
-        }
-        else if($Level == 5)
-        {
-            $Result = '../../../../../';
-        }
-        else if($Level == 6)
-        {
-            $Result = '../../../../../../';
-        }
-        else if($Level == 7)
-        {
-            $Result = '../../../../../../../';
-        }
-        else if($Level == 8)
-        {
-            $Result = '../../../../../../../../';
-        }
-        else if($Level == 9)
-        {
-            $Result = '../../../../../../../../../';
-        }
-        else if($Level == 10)
-        {
-            $Result = '../../../../../../../../../../';
-        }
-        
-        return $Result;
+        $vResult = '<a href=\'../Downloads/GDR.zip\'>You can download my Games Development Report here.</a></br>';
+	    
+        return $vResult;
     }
 
-    function StylePath($Level)
+    function getWinRar()
     {
-        $Result = '';
+        $vResult = '<a href=\'../Downloads/wrar371.exe\'>You may need WinRar to open zip files from this site.</a></br>';
         
-        if($Level == 0)
+        return $vResult;
+    }
+
+    function getFooter()
+    {
+        $vResult  = '<p id=\'idFooterContent\'>';
+        $vResult = $vResult.'    © Copyright 2012 All rights reserved<br>';
+        $vResult = $vResult.'    House That Kamurai Built<br>';
+        $vResult = $vResult.'</p>';
+        
+        return $vResult;
+    }
+
+    function getWebMaster()
+    {
+        $vResult  = '<p id=\'idFooterManagement\'>';
+        $vResult = $vResult.'    Website managed by Kamurai.';
+        $vResult = $vResult.'</p>';
+        
+        return $vResult;
+    }
+    
+    function getPath($vLevel)
+    {
+        $vResult = '';
+        
+        if($vLevel <= 0)
         {
-            $Result = './';
+            $vResult = './';
         }
-        else if($Level == 1)
+        else if($vLevel == 1)
         {
-            $Result = './';
+            $vResult = '../';
         }
-        else if($Level == 2)
+        else if($vLevel == 2)
         {
-            $Result = '../';
+            $vResult = '../../';
         }
-        else if($Level == 3)
+        else if($vLevel == 3)
         {
-            $Result = '../../';
+            $vResult = '../../../';
         }
-        else if($Level == 4)
+        else if($vLevel == 4)
         {
-            $Result = '../../../';
+            $vResult = '../../../../';
         }
-        else if($Level == 5)
+        else if($vLevel == 5)
         {
-            $Result = '../../../../';
+            $vResult = '../../../../../';
         }
-        else if($Level == 6)
+        else if($vLevel == 6)
         {
-            $Result = '../../../../../';
+            $vResult = '../../../../../../';
         }
-        else if($Level == 7)
+        else if($vLevel == 7)
         {
-            $Result = '../../../../../../';
+            $vResult = '../../../../../../../';
         }
-        else if($Level == 8)
+        else if($vLevel == 8)
         {
-            $Result = '../../../../../../../';
+            $vResult = '../../../../../../../../';
         }
-        else if($Level == 9)
+        else if($vLevel == 9)
         {
-            $Result = '../../../../../../../../';
+            $vResult = '../../../../../../../../../';
         }
-        else if($Level == 10)
+        else if($vLevel == 10)
         {
-            $Result = '../../../../../../../../../';
+            $vResult = '../../../../../../../../../../';
         }
         
-        return $Result;
+        return $vResult;
     }
 ?>

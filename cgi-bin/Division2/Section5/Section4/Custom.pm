@@ -1,54 +1,33 @@
-sub Navigation
-{
-	##  Writes the navigation content of the webpage
-
-	my $Path = $_[0];
-	my $DownPath = $_[1];
-	
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project2.shtml'>Assault</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project3.shtml'>Mars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section4/Index.shtml'>Renley</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$Path."Section2/Section5/Section1/Index.shtml'>Global</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$Path."Section2/Section5/Section2/Index.shtml'>Grendol</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$Path."Section2/Section5/Section3/Index.shtml'>Utopia</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$Path."Section2/Section5/Section4/Index.shtml'>Elvia</a><br><br>";
-			print "<a class=\"navlinkC\" href='".$Path."Section2/Section5/Section4/Project1.shtml'>Nine Card</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project6.shtml'>Truth</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project7.shtml'>Kingdoms</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project8.shtml'>Terminal World</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project12.shtml'>The Way</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$Path."Section2/Project14.shtml'>Conversion</a><br><br>";
-
-}
-
+##  Writes the Title of the webpage
 sub Title
 {
-	##  Writes the Title of the webpage
-
 	my $vPage = $_[0];
+	my $vResult = "";
+	my $vDefault = "";
+	
+	$vDefault += "Elvia";
 
-	print "<title>";
+	$vResult = "<title>";
 		if($vPage <= 0)
 		{
-			print "Elvia";
+			$vResult += $vDefault;
 		}
 		elsif($vPage == 1)
 		{
-			print "Nine Card";
+			$vResult += "Nine Card";
 		}
-	print "</title>";
+		else
+		{
+			$vResult += $vDefault;
+		}
+	$vResult = "</title>";
+	
+	return $vResult;
 }
 
+##  Writes the header of the webpage content
 sub Header
 {
-	##  Writes the header of the webpage content
-
 	my $vPage = $_[0];
 
 	if($vPage <= 0)

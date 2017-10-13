@@ -2,7 +2,7 @@
 	function SQLServerMethod($rowID, $col)
 	{
 		$sqlStatement = "Select ";
-		$result = "";
+		$vResult = "";
 		
 		if($col <= 0)
 		{
@@ -37,11 +37,11 @@
 			
 			if($col <= 0)
 			{
-				$result = $row["Index"];
+				$vResult = $row["Index"];
 			}
 			else
 			{
-				$result = $row["color"];
+				$vResult = $row["color"];
 			}
 			
 			sqlsrv_free_stmt($rs);
@@ -53,7 +53,7 @@
 			echo $sqlstatement;
 		}
 		
-		return $result;
+		return $vResult;
 	}
 
 	function openSQLServerConnection()
@@ -91,7 +91,7 @@
 	function SQLServerExpressMethod($rowID, $col)
 	{
 		$sqlStatement = "Select ";
-		$result = "";
+		$vResult = "";
 		
 		if($col <= 0)
 		{
@@ -125,11 +125,11 @@
 			
 			if($col <= 0)
 			{
-				$result = $row["Index"];
+				$vResult = $row["Index"];
 			}
 			else
 			{
-				$result = $row["color"];
+				$vResult = $row["color"];
 			}
 			
 			mssql_free_result($rs);
@@ -137,7 +137,7 @@
 			
 		}
 		
-		return $result;
+		return $vResult;
 	}
 
 	function openSQLServerExpressConnection()
@@ -162,7 +162,7 @@
 	function DerbyMethod($rowID, $col)
 	{
 		$sqlStatement = "Select ";
-		$result = "";
+		$vResult = "";
 		
 		if($col <= 0)
 		{
@@ -196,18 +196,18 @@
 			
 			if($col <= 0)
 			{
-				$result = $row["Index"];
+				$vResult = $row["Index"];
 			}
 			else
 			{
-				$result = $row["color"];
+				$vResult = $row["color"];
 			}
 			
 			$conObj->close();
 			
 		}
 		
-		return $result;
+		return $vResult;
 	}
 
 	function openDerbyConnection()
@@ -234,7 +234,7 @@
 	function MySQLMethod($rowID, $col)
 	{
 		$sqlStatement = "Select ";
-		$result = "";
+		$vResult = "";
 		
 		if($col <= 0)
 		{
@@ -268,18 +268,18 @@
 			
 			if($col <= 0)
 			{
-				$result = $row["Index"];
+				$vResult = $row["Index"];
 			}
 			else
 			{
-				$result = $row["color"];
+				$vResult = $row["color"];
 			}
 			
 			$conObj->close();
 			
 		}
 		
-		return $result;
+		return $vResult;
 	}
 
 	function openMySQLConnection()
@@ -308,7 +308,7 @@
 	function OracleMethod($rowID, $col)
 	{
 		$sqlStatement = "Select ";
-		$result = "";
+		$vResult = "";
 		
 		if($col <= 0)
 		{
@@ -342,17 +342,17 @@
 		
 		if($col <= 0)
 		{
-			$result = $row[0];
+			$vResult = $row[0];
 		}
 		else
 		{
-			$result = $row[0];
+			$vResult = $row[0];
 		}		
 		
 		oci_free_statement($stid);
 		oci_close($conObj);
 		
-		return $result;
+		return $vResult;
 	}
 	
 	function openOracleConnection()
