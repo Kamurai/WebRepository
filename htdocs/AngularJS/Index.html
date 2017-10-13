@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 		<script language="JavaScript" src="./Universal.js" runat="server"></script>
+		<script language="JavaScript" src="./Layout.js" runat="server"></script>
 		<script language="JavaScript" src="./Custom.js" runat="server"></script>
-		<link href="./Main.css" rel="stylesheet" type="text/css">
 	</head>
 	<script>
-		vApp.value("vLayout", "Layout.html");
+		vApp.value("vPage", "0");
+		vApp.value("vLevel", "0");
+		vApp.value("vDivision", "0");
+		vApp.value("vLayout", "./Layout.html");
 	</script>
-	<body id="idBody">
-		<div ng-include="vLayout">
-		</div>
+	<body ng-app="">
+		<any ng-controller="UniversalController" ng-bind-html="WriteHeader(vLevel,vDivision)"></any>
+	
+		<div ng-include="'./Layout.html'"></div>
+		<any ng-view ng-include="'./Layout.html'"></any>
 	</body>
 </html>

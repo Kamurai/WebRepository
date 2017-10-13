@@ -7,16 +7,41 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 	$scope.vDivision = vDivision;
 	$scope.vLayout = vLayout;
 	
-	$scope.WriteHeader = function()
+	$scope.WriteHeader = function(vLevel, vDivision)
 	{
 		$scope.vResult = "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-		$scope.vResult += "<link href='"+GetPath(vLevel-1)+"Main.css' rel='stylesheet' type='text/css'>";
+		
+		$scope.vResult += "<link href='"+GetPath(vLevel)+"Styles/";
+		
+		if(vDivision == 0)
+		{
+			$scope.vResult += "Main.css";
+		}
+		else if(vDivision == 1)
+		{
+			$scope.vResult += "Division1.css";
+		}
+		else if(vDivision == 2)
+		{
+			$scope.vResult += "Division2.css";
+		}
+		else if(vDivision == 3)
+		{
+			$scope.vResult += "Division3.css";
+		}
+		else
+		{
+			$scope.vResult += "Main.css";
+		}
+		
+		$scope.vResult += "rel='stylesheet' type='text/css'>";
+		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
 	$scope.TitlePicture = function(vLevel)
 	{
-		$scope.vResult = "<img src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' >";
+		$scope.vResult = "<img src='"+GetPath(vLevel)+"Pictures/logoHTKB.jpg' >";
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
