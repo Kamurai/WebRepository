@@ -12,57 +12,57 @@ urls = (
     '/AboutUs', 'AboutUs',
     '/Media', 'Media',
     '/Minecraft', 'Minecraft',
-    '/Section1/Index', 'Section1',
-    '/Section1/Project8', 'Section1P8',
-    '/Section1/Section2/Index', 'Section1_2',
-    '/Section1/Section4/Index', 'Section1_4',
-    '/Section1/Section5/Index', 'Section1_5',
-    '/Section1/Section6/Index', 'Section1_6',
-    '/Section1/Section6/Project1', 'Section1_6P1',
-    '/Section1/Section6/Project2', 'Section1_6P2',
-    '/Section1/Section6/Project3', 'Section1_6P3',
-    '/Section1/Section6/Project4', 'Section1_6P4',
-    '/Section1/Section6/Project5', 'Section1_6P5',
-    '/Section2/Index', 'Section2',
-    '/Section2/Project2', 'Section2P2',
-    '/Section2/Project3', 'Section2P3',
-    '/Section2/Project6', 'Section2P6',
-    '/Section2/Project7', 'Section2P7',
-    '/Section2/Project8', 'Section2P8',
-    '/Section2/Project9', 'Section2P9',
-    '/Section2/Project10', 'Section2P10',
-    '/Section2/Project11', 'Section2P11',
-    '/Section2/Project12', 'Section2P12',
-    '/Section2/Project13', 'Section2P13',
-    '/Section2/Project14', 'Section2P14',
-    '/Section2/Section1/Index', 'Section2_1',
-    '/Section2/Section1/Project1', 'Section2_1P1',
-    '/Section2/Section1/Project2', 'Section2_1P2',
-    '/Section2/Section1/Project3', 'Section2_1P3',
-    '/Section2/Section4/Index', 'Section2_4',
-    '/Section2/Section4/Project1', 'Section2_4P1',
-    '/Section2/Section4/Project2', 'Section2_4P2',
-    '/Section2/Section5/Index', 'Section2_5',
-    '/Section2/Section5/Section1/Index', 'Section2_5_1',
-    '/Section2/Section5/Section1/Project1', 'Section2_5_1P1',
-    '/Section2/Section5/Section1/Project2', 'Section2_5_1P2',
-    '/Section2/Section5/Section1/Project3', 'Section2_5_1P3',
-    '/Section2/Section5/Section1/Project4', 'Section2_5_1P4',
-    '/Section2/Section5/Section1/Project5', 'Section2_5_1P5',
-    '/Section2/Section5/Section1/Project6', 'Section2_5_1P6',
-    '/Section2/Section5/Section2/Index', 'Section2_5_2',
-    '/Section2/Section5/Section2/Project1', 'Section2_5_2P1',
-    '/Section2/Section5/Section2/Project2', 'Section2_5_2P2',
-    '/Section2/Section5/Section3/Index', 'Section2_5_3',
-    '/Section2/Section5/Section3/Project1', 'Section2_5_3P1',
-    '/Section2/Section5/Section4/Index', 'Section2_5_4',
-    '/Section2/Section5/Section4/Project1', 'Section2_5_4P1',
-    '/Section3/Index', 'Section3',
-    '/Section3/Project1', 'Section3_1',
-    '/Section3/Project2', 'Section3_2',
-    '/Section3/Project3', 'Section3_3',
-    '/Section3/Project4', 'Section3_4',
-    '/Section3/Project5', 'Section3_5'
+    '/Division1/Index', 'Division1',
+    '/Division1/Project8', 'Section1P8',
+    '/Division1/Section2/Index', 'Section1_2',
+    '/Division1/Section4/Index', 'Section1_4',
+    '/Division1/Section5/Index', 'Section1_5',
+    '/Division1/Section6/Index', 'Section1_6',
+    '/Division1/Section6/Project1', 'Section1_6P1',
+    '/Division1/Section6/Project2', 'Section1_6P2',
+    '/Division1/Section6/Project3', 'Section1_6P3',
+    '/Division1/Section6/Project4', 'Section1_6P4',
+    '/Division1/Section6/Project5', 'Section1_6P5',
+    '/Division2/Index', 'Division2',
+    '/Division2/Project2', 'Section2P2',
+    '/Division2/Project3', 'Section2P3',
+    '/Division2/Project6', 'Section2P6',
+    '/Division2/Project7', 'Section2P7',
+    '/Division2/Project8', 'Section2P8',
+    '/Division2/Project9', 'Section2P9',
+    '/Division2/Project10', 'Section2P10',
+    '/Division2/Project11', 'Section2P11',
+    '/Division2/Project12', 'Section2P12',
+    '/Division2/Project13', 'Section2P13',
+    '/Division2/Project14', 'Section2P14',
+    '/Division2/Section1/Index', 'Section2_1',
+    '/Division2/Section1/Project1', 'Section2_1P1',
+    '/Division2/Section1/Project2', 'Section2_1P2',
+    '/Division2/Section1/Project3', 'Section2_1P3',
+    '/Division2/Section4/Index', 'Section2_4',
+    '/Division2/Section4/Project1', 'Section2_4P1',
+    '/Division2/Section4/Project2', 'Section2_4P2',
+    '/Division2/Section5/Index', 'Section2_5',
+    '/Division2/Section5/Section1/Index', 'Section2_5_1',
+    '/Division2/Section5/Section1/Project1', 'Section2_5_1P1',
+    '/Division2/Section5/Section1/Project2', 'Section2_5_1P2',
+    '/Division2/Section5/Section1/Project3', 'Section2_5_1P3',
+    '/Division2/Section5/Section1/Project4', 'Section2_5_1P4',
+    '/Division2/Section5/Section1/Project5', 'Section2_5_1P5',
+    '/Division2/Section5/Section1/Project6', 'Section2_5_1P6',
+    '/Division2/Section5/Section2/Index', 'Section2_5_2',
+    '/Division2/Section5/Section2/Project1', 'Section2_5_2P1',
+    '/Division2/Section5/Section2/Project2', 'Section2_5_2P2',
+    '/Division2/Section5/Section3/Index', 'Section2_5_3',
+    '/Division2/Section5/Section3/Project1', 'Section2_5_3P1',
+    '/Division2/Section5/Section4/Index', 'Section2_5_4',
+    '/Division2/Section5/Section4/Project1', 'Section2_5_4P1',
+    '/Division3/Index', 'Division3',
+    '/Division3/Project1', 'Section3_1',
+    '/Division3/Project2', 'Section3_2',
+    '/Division3/Project3', 'Section3_3',
+    '/Division3/Project4', 'Section3_4',
+    '/Division3/Project5', 'Section3_5'
 )
 
 common_globals = {'getHead': Universal.getHead,
@@ -83,19 +83,19 @@ render = web.template.render('templates/')#, base='Layout')
 static = web.template.render('static/')
 
 Main = web.template.render('templates/', globals=common_globals)
-Section1 = web.template.render('templates/Section1/', globals=common_globals)
+Section1 = web.template.render('templates/Division1/', globals=common_globals)
 Section1_2 = web.template.render('templates/Section1/Section2/', globals=common_globals)
 Section1_4 = web.template.render('templates/Section1/Section4/', globals=common_globals)
 Section1_5 = web.template.render('templates/Section1/Section5/', globals=common_globals)
 Section1_6 = web.template.render('templates/Section1/Section6/', globals=common_globals)
-Section2 = web.template.render('templates/Section2/', globals=common_globals)
+Section2 = web.template.render('templates/Division2/', globals=common_globals)
 Section2_1 = web.template.render('templates/Section2/Section1/', globals=common_globals)
 Section2_4 = web.template.render('templates/Section2/Section4/', globals=common_globals)
 Section2_5 = web.template.render('templates/Section2/Section5/', globals=common_globals)
 Section2_5_2 = web.template.render('templates/Section2/Section5/Section2/', globals=common_globals)
 Section2_5_3 = web.template.render('templates/Section2/Section5/Section3/', globals=common_globals)
 Section2_5_4 = web.template.render('templates/Section2/Section5/Section4/', globals=common_globals)
-Section3 = web.template.render('templates/Section3/', globals=common_globals)
+Section3 = web.template.render('templates/Division3/', globals=common_globals)
 
 class static:
     def GET(self):
@@ -109,386 +109,386 @@ class Index:
     def GET(self):
         vPage = '0'
         vLevel = '0'
-        vSection = '0'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '0'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class AboutUs:
     def GET(self):
         vPage = '1'
         vLevel = '0'
-        vSection = '0'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '0'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Media:
     def GET(self):
         vPage = '2'
         vLevel = '0'
-        vSection = '0'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '0'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Minecraft:
     def GET(self):
         vPage = '3'
         vLevel = '0'
-        vSection = '0'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '0'
+        return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1:
+class Division1:
     def GET(self):
         vPage = '0'
         vLevel = '1'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1P8:
     def GET(self):
         vPage = '8'
         vLevel = '1'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_2:
     def GET(self):
         vPage = '0'
         vLevel = '1_2'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_4:
     def GET(self):
         vPage = '0'
         vLevel = '1_4'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_5:
     def GET(self):
         vPage = '0'
         vLevel = '1_5'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6:
     def GET(self):
         vPage = '0'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6P1:
     def GET(self):
         vPage = '1'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6P2:
     def GET(self):
         vPage = '2'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6P3:
     def GET(self):
         vPage = '3'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6P4:
     def GET(self):
         vPage = '4'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section1_6P5:
     def GET(self):
         vPage = '5'
         vLevel = '1_6'
-        vSection = '1'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '1'
+        return Main.Layout(vPage, vLevel, vDivision)
         
-class Section2:
+class Division2:
     def GET(self):
         vPage = '0'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P2:
     def GET(self):
         vPage = '2'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P3:
     def GET(self):
         vPage = '3'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P6:
     def GET(self):
         vPage = '6'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P7:
     def GET(self):
         vPage = '7'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P8:
     def GET(self):
         vPage = '8'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P9:
     def GET(self):
         vPage = '9'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P10:
     def GET(self):
         vPage = '10'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P11:
     def GET(self):
         vPage = '11'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P12:
     def GET(self):
         vPage = '12'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P13:
     def GET(self):
         vPage = '13'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2P14:
     def GET(self):
         vPage = '14'
         vLevel = '2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_1:
     def GET(self):
         vPage = '0'
         vLevel = '2_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_1P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_1P2:
     def GET(self):
         vPage = '2'
         vLevel = '2_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_1P3:
     def GET(self):
         vPage = '3'
         vLevel = '2_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_4:
     def GET(self):
         vPage = '0'
         vLevel = '2_4'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_4P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_4'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_4P2:
     def GET(self):
         vPage = '2'
         vLevel = '2_4'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5:
     def GET(self):
         vPage = '0'
         vLevel = '2_5'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1:
     def GET(self):
         vPage = '0'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P2:
     def GET(self):
         vPage = '2'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P3:
     def GET(self):
         vPage = '3'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P4:
     def GET(self):
         vPage = '4'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P5:
     def GET(self):
         vPage = '5'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_1P6:
     def GET(self):
         vPage = '6'
         vLevel = '2_5_1'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_2:
     def GET(self):
         vPage = '0'
         vLevel = '2_5_2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_2P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_5_2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_2P2:
     def GET(self):
         vPage = '2'
         vLevel = '2_5_2'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_3:
     def GET(self):
         vPage = '0'
         vLevel = '2_5_3'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_3P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_5_3'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_4:
     def GET(self):
         vPage = '0'
         vLevel = '2_5_4'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section2_5_4P1:
     def GET(self):
         vPage = '1'
         vLevel = '2_5_4'
-        vSection = '2'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '2'
+        return Main.Layout(vPage, vLevel, vDivision)
 
-class Section3:
+class Division3:
     def GET(self):
         vPage = '0'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section3_1:
     def GET(self):
         vPage = '1'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section3_2:
     def GET(self):
         vPage = '2'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section3_3:
     def GET(self):
         vPage = '3'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section3_4:
     def GET(self):
         vPage = '4'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 class Section3_5:
     def GET(self):
         vPage = '5'
         vLevel = '3'
-        vSection = '3'
-        return Main.Layout(vPage, vLevel, vSection)
+        vDivision = '3'
+        return Main.Layout(vPage, vLevel, vDivision)
         
 if __name__ == '__main__':
     app.run()

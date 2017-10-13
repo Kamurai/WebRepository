@@ -1,17 +1,19 @@
-def getHead(vSection):
+def getHead(vDivision):
 	vResult = '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
-	vResult += '<link href=' + getCSS(vSection) + ' rel=\"stylesheet\" type="text/css">'
+	vResult += '<link href=' + getCSS(vDivision) + ' rel=\"stylesheet\" type="text/css">'
 	return vResult
 	
-def getCSS(vSection):
-	if vSection == '1':
-		vResult = '/static/Section1/Section1.css'
-	elif vSection == '2':
-		vResult = '/static/Section2/Section2.css'
-	elif vSection == '3':
-		vResult = '/static/Section3/Section3.css'
+def getCSS(vDivision):
+	if vDivision == '0':
+		vResult = '/static/Styles/Main.css'
+	elif vDivision == '1':
+		vResult = '/static/Styles/Division1.css'
+	elif vDivision == '2':
+		vResult = '/static/Styles/Division2.css'
+	elif vDivision == '3':
+		vResult = '/static/Styles/Division3.css'
 	else:
-		vResult = '/static/Main.css'
+		vResult = '/static/Styles/Main.css'
 	return vResult
 
 def getHeader():
@@ -19,13 +21,13 @@ def getHeader():
 	return vResult
 
 def getLogo():
-	return "/static/logo_HouseThatKamuraiBuilt_blueonblack.jpg"
+	return "/static/Pictures/logoHTKB.jpg"
 
 def getNavBar():
 	vResult = '<a class=\'navBar\' href=\'/Index\'>Home</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section1/Index\'>Web Programming</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section2/Index\'>Private Projects</a>'
-	vResult += '<a class=\'navBar\' href=\'/Section3/Index\'>Downloadable Projects</a>'
+	vResult += '<a class=\'navBar\' href=\'/Division1/Index\'>Web Programming</a>'
+	vResult += '<a class=\'navBar\' href=\'/Division2/Index\'>Private Projects</a>'
+	vResult += '<a class=\'navBar\' href=\'/Division3/Index\'>Downloadable Projects</a>'
 	return vResult
 
 def getFooter():
