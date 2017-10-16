@@ -1,45 +1,56 @@
-function WriteWebpage(vPage, vLevel)
+function getNavigation(vLevel)
 {
-    Response.Write("<table id=\"idTableMain\">");
-		Response.Write("<tr id=\"idHeaderRow\">");
-            Response.Write("<td id=\"idHeaderRowCenter\" colspan=\"3\">");
-                TitlePicture(vLevel);
-			Response.Write("</td>");
-        Response.Write("</tr>");
-        Response.Write("<tr id=\"idNavigationRow\">");
-            Response.Write("<td id=\"idNavigationBar\" colspan=\"3\">");
-                NavBar(vLevel);
-            Response.Write("</td>");
-        Response.Write("</tr>");    
-        Response.Write("<tr id=\"idCenterRow\">");
-			Response.Write("<td id=\"idCenterRowLeft\">");
-				Response.Write("<h4>");
-					Response.Write("Navigation");
-				Response.Write("</h4>");
-				Navigation(vLevel);
-			Response.Write("</td>");
-			Response.Write("<td id=\"idCenterRowMain\">");
-				Title(vPage);
-				Header(vPage);
-				Content(vPage);
-			Response.Write("</td>");
-			Response.Write("<td id=\"idCenterRowRight\">");
-				Response.Write("<h4>");
-					Response.Write("Information");
-				Response.Write("</h4>");
-				GetInformation();
-				Versions(vPage);
-			Response.Write("</td>");
-		Response.Write("</tr>");
-        Response.Write("<tr id=\"idFooterRow\">");
-			Response.Write("<td id=\"idFooterMain\" colspan=\"3\">");
-				Response.Write("<p id=\"idFooterContent\">");
-					Footer();
-				Response.Write("</p>");
-				Response.Write("<p id=\"idFooterManagement\">");
-					WebMaster();
-				Response.Write("</p>");
-			Response.Write("</td>");
-		Response.Write("</tr>");
-    Response.Write("</table>");
+	vResult = "";
+	
+    vResult +="<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.aspx\">About Us</a><br/><br/>";
+    vResult +="<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media.aspx\">Media</a><br/><br/>";
+    vResult +="<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft.aspx\">Minecraft!</a><br/><br/>";
+}
+
+function getLayout(vPage, vLevel)
+{
+    vResult +="<body id=\"idBody\">";
+		vResult +="<table id=\"idTableMain\">";
+			vResult +="<tr id=\"idHeaderRow\">";
+				vResult +="<td id=\"idHeaderRowCenter\" colspan=\"3\">";
+					getLogo(vLevel);
+				vResult +="</td>";
+			vResult +="</tr>";
+			vResult +="<tr id=\"idNavigationRow\">";
+				vResult +="<td id=\"idNavigationBar\" colspan=\"3\">";
+					getNavBar(vLevel);
+				vResult +="</td>";
+			vResult +="</tr>";    
+			vResult +="<tr id=\"idCenterRow\">";
+				vResult +="<td id=\"idCenterRowLeft\">";
+					vResult +="<h4>";
+						vResult +="Navigation";
+					vResult +="</h4>";
+					getNavigation(vLevel);
+				vResult +="</td>";
+				vResult +="<td id=\"idCenterRowMain\">";
+					getTitle(vPage);
+					getHeader(vPage);
+					getContent(vPage);
+				vResult +="</td>";
+				vResult +="<td id=\"idCenterRowRight\">";
+					vResult +="<h4>";
+						vResult +="Information";
+					vResult +="</h4>";
+					getInformation();
+					getVersions(vPage);
+				vResult +="</td>";
+			vResult +="</tr>";
+			vResult +="<tr id=\"idFooterRow\">";
+				vResult +="<td id=\"idFooterMain\" colspan=\"3\">";
+					vResult +="<p id=\"idFooterContent\">";
+						getFooter();
+					vResult +="</p>";
+					vResult +="<p id=\"idFooterManagement\">";
+						getWebMaster();
+					vResult +="</p>";
+				vResult +="</td>";
+			vResult +="</tr>";
+		vResult +="</table>";
+	vResult +="</body>";
 }

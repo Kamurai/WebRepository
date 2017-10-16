@@ -1,67 +1,53 @@
-function Navigation(vLevel)
+function getTitle(vPage)
 {
-    Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.html\">Basic HTML</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.aspx\">Javascript</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Index.aspx\">Perl</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index.aspx\">Java</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index.aspx\">ASP.Net</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index.aspx\">Databases</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br><br>");
-    Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Section1/Index\">Python Web.py</a><br>");
-	Response.Write("<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Section1/Index\">Ruby On Rails</a><br>");
-}
-
-function Title(vPage)
-{
-	Response.Write("<title>");
+	vResult +="<title>";
 		if(vPage <= 0)
 		{
-			Response.Write("Web Programming");
+			vResult +="Web Programming";
 		}
-	Response.Write("</title>");
+	vResult +="</title>";
 }
 
-function Header(vPage)
+function getHeader(vPage)
 {
-	Response.Write("<h2>");
+	vResult +="<h2>";
 		if(vPage == 0)
 		{
-			Response.Write("Web Programming");
+			vResult +="Web Programming";
 		}
-	Response.Write("</h2>");
+	vResult +="</h2>";
 }
 
-function Content(vPage)
+function getContent(vPage)
 {
-	Response.Write("<p id=\"idCenterContent\">");
+	vResult +="<p id=\"idCenterContent\">";
     	if(vPage <= 0)
 		{
-			Response.Write("This section is dedicated to web-based programming.");
+			vResult +="This section is dedicated to web-based programming.";
 		}
-	Response.Write("</p>");
+	vResult +="</p>";
 }
 
-function Versions(vPage)
+function getVersions(vPage)
 {
-	Response.Write("Other versions of this page are here:<br>");
+	vResult +="Other versions of this page are here:<br>";
 	if(vPage == 0)
 	{
-		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Index.html\">HTML</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Section1/Project3.html\">HTML Javascript</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/JQuery/Section1/Project3.html\">JQuery</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Index.asp\">ASP VBscript</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:84/Section1/Project3\">Node JS</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/Section1/Index.shtml\">Perl</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Index.jsp\">JSP</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Index.xhtml\">JSF</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Index.cshtml\">ASP.NET Web App</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Index.aspx\">ASP.NET Webform</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Section1/Index\">ASP.NET MVC App</a><br>");
-		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br>");
-	    Response.Write("<a href=\"http://htkb.dyndns.org:82/Section1/Project3\">Python Web.py</a><br>");
-        Response.Write("<a href=\"http://htkb.dyndns.org:83/Section1/Project3\">Ruby On Rails</a><br>");
+		vResult +="<a href=\"http://htkb.dyndns.org/Section1/Index.html\">HTML</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org/Javascript/Section1/Project3.html\">HTML Javascript</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org/JQuery/Section1/Project3.html\">JQuery</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:81/ASP/Section1/Index.asp\">ASP VBscript</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:84/Section1/Project3\">Node JS</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org/Section1/Index.shtml\">Perl</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section1/Index.jsp\">JSP</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Index.xhtml\">JSF</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Index.cshtml\">ASP.NET Web App</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Index.aspx\">ASP.NET Webform</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org:81/MVC/Section1/Index\">ASP.NET MVC App</a><br>";
+		vResult +="<a href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br>";
+	    vResult +="<a href=\"http://htkb.dyndns.org:82/Section1/Project3\">Python Web.py</a><br>";
+        vResult +="<a href=\"http://htkb.dyndns.org:83/Section1/Project3\">Ruby On Rails</a><br>";
     }
     
 }

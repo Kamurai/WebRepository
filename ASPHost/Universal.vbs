@@ -1,120 +1,168 @@
-function WriteHeader(vLevel, vCSS)
+function getHead(vLevel, vDivision)
 {
-	Response.Write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-	Response.Write("<link runat='server' rel='shortcut icon' href='"+GetPath(vLevel)+"favicon.ico')' type='image/x-icon' />");
-	Response.Write("<link runat='server' rel='icon' href='"+GetPath(vLevel)+"favicon.ico' type='image/ico' />");
-	Response.Write("<link href='"+GetPath(vLevel-1)+vCSS+"' rel='stylesheet' type='text/CSS'>");
+	dim vResult = "";
+
+	vResult = "<head>";
+		vResult = "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
+		vResult += "<link runat='server' rel='shortcut icon' href='"+getPath(vLevel)+"/Pictures/favicon.ico')' type='image/x-icon' />";
+		vResult += "<link runat='server' rel='icon' href='"+getPath(vLevel)+"/Pictures/favicon.ico' type='image/ico' />";
+		
+		vResult += getStyle(vLevel, vDivision);
+	vResult += "</head>";
+	
+	return vResult;
 }
 
-function TitlePicture(vLevel)
+function getStyle(vDivision)
 {
-    Response.Write("<img id=""idLogo"" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
+	dim vResult = "";
+	
+	vResult += "<link href='";
+	vResult += getPath(vLevel)"'Styles/'";
+	vResult += getStyleFile(vDivision);
+	vResult += "' rel='stylesheet' type='text/CSS'>";
+
+	return vResult;
 }
 
-function WebMaster()
+function getStyleFile(vDivision)
 {
-    Response.Write("Website managed by Kamurai.");
+	dim vResult = "";
+	dim vDefault = "";
+	
+	vDefault = "Main.css";
+	
+	if(vDivision == 0)
+	{
+		vResult = vDefault;
+	}
+	else if(vDivision == 1)
+	{
+		vResult = "Division1.css";
+	}
+	else if(vDivision == 2)
+	{
+		vResult = "Division2.css";
+	}
+	else if(vDivision == 3)
+	{
+		vResult = "Division3.css";
+	}
+	else
+	{
+		vResult = vDefault;
+	}
+	
+	return vResult;
 }
 
-function NavBar(vLevel)
+function getLogo(vLevel)
 {
-    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Index.asp'>Home</a>");
-    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section1/Index.asp'>Web Programming</a>");
-    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section2/Index.asp'>Private Projects</a>");
-    Response.Write("<a class=""navBar"" href='"+GetPath(vLevel)+"Section3/Index.asp'>Downloadable Projects</a>");
+    dim vResult = "";
+	vResult += "<img id=""idLogo"" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
+	return vResult;
 }
 
-function GDR()
+function getWebMaster()
 {
-	Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+	dim vResult = "";
+	vResult += "Website managed by Kamurai.";
+	return vResult;
 }
 
-function WinRAR()
+function getNavBar(vLevel)
 {
-	Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+    dim vResult = "";
+	vResult += "<a class=""navBar"" href='"+getPath(vLevel)+"Index.asp'>Home</a>";
+	vResult += "<a class=""navBar"" href='"+getPath(vLevel)+"Section1/Index.asp'>Web Programming</a>";
+	vResult += "<a class=""navBar"" href='"+getPath(vLevel)+"Section2/Index.asp'>Private Projects</a>";
+	vResult += "<a class=""navBar"" href='"+getPath(vLevel)+"Section3/Index.asp'>Downloadable Projects</a>";
+	return vResult;
 }
 
-function Footer()
+function getNavigationHeader()
 {
-    Response.Write("© Copyright 2012 All rights reserved<br>");    
-    Response.Write("House That Kamurai Built<br>");    
+	dim vResult = "";
+	vResult += '<h4>';
+	vResult += 'Navigation';
+	vResult += '</h4>';        
+	return vResult;
 }
 
-function GetPath(vLevel)
+function getInformationHeader()
 {
+	dim vResult = "";
+	vResult += '<h4>';
+	vResult += 'Information';
+	vResult += '</h4>';	
+	return vResult;
+}
+
+function getInformation()
+{
+    dim vResult = "";
+	vResult += "This is written with classic ASP and VBScript.";
+	return vResult;
+}
+
+function getGDR()
+{
+	dim vResult = "";
+	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	return vResult;
+}
+
+function getWinRar()
+{
+	dim vResult = "";
+	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
+	return vResult;
+}
+
+function getFooter()
+{
+	dim vResult = "";
+	vResult += "© Copyright 2012 All rights reserved<br>";    
+	vResult += "House That Kamurai Built<br>";
+	return vResult;
+}
+
+function getPath(vLevel)
+{
+	dim vResult = "";
+	
     if(vLevel <= 0)
     {
-        return "./";
+        vResult += "./";
     }
     else if(vLevel == 1)
     {
-        return "../";
+        vResult += "../";
     }
     else if(vLevel == 2)
     {
-        return "../../";
+        vResult += "../../";
     }
     else if(vLevel == 3)
     {
-        return "../../../";
+        vResult += "../../../";
     }
     else if(vLevel == 4)
     {
-        return "../../../../";
+        vResult += "../../../../";
     }
     else if(vLevel == 5)
     {
-        return "../../../../../";
+        vResult += "../../../../../";
     }
     else if(vLevel == 6)
     {
-        return "../../../../../../";
+        vResult += "../../../../../../";
     }
     else if(vLevel == 7)
     {
-        return "../../../../../../../";
+        vResult += "../../../../../../../";
     }
-}
-
-function GetExtension(vExtension)
-{
-    if(vExtension == 0)
-    {
-        //Basic HTML
-        return ".html";
-    }
-    else if(vExtension == 1)
-    {
-        //ASP
-        return ".asp";
-    }
-    else if(vExtension == 2)
-    {
-        //ASP.NET
-        return ".aspx";
-    }
-}
-
-function GetInformation(vExtension)
-{
-    if(vExtension == 0)
-    {
-        //Basic HTML
-        Response.Write("This is written with basic HTML and VBScript.");
-    }
-    else if(vExtension == 1)
-    {
-        //ASP
-        Response.Write("This is written with classic ASP and VBScript.");
-    }
-    else if(vExtension == 2)
-    {
-        //ASP.NET
-        Response.Write("This is written with generic ASP.NET and VBScript.");
-    }
-}
-
-function GetMonkeys()
-{
-	Response.Write("Monkeys");
+	
+	return vResult;
 }
