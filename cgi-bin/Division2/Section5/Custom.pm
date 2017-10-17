@@ -1,134 +1,139 @@
-sub Navigation
+##  Gets the Title of the webpage
+sub getTitle
 {
-	##  Writes the navigation content of the webpage
-
-	my $vPath = $_[0];
-	my $DownPath = $_[1];
-	
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project2.shtml'>Assault</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project3.shtml'>Mars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section4/Index.shtml'>Renley</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section1/Index.shtml'>Global</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section2/Index.shtml'>Grendol</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section3/Index.shtml'>Utopia</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section4/Index.shtml'>Elvia</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project6.shtml'>Truth</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project7.shtml'>Kingdoms</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project8.shtml'>Terminal World</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project12.shtml'>The Way</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project14.shtml'>Conversion</a><br><br>";
-
-}
-
-sub Title
-{
-	##  Writes the Title of the webpage
-
 	my $vPage = $_[0];
+	my $vResult = "";
+	my $vDefault = "";
+	
+	$vDefault += "Antarrea Projects";
 
-	print "<title>";
+	$vResult += "<title>";
 		if($vPage <= 0)
 		{
-			print "Antarrea Projects";
+			$vResult += $vDefault;
 		}
-	print "</title>";
+		else
+		{
+			$vResult += $vDefault;
+		}
+	$vResult += "</title>";
+	
+	return $vResult;
 }
 
-sub Header
+##  Gets the header of the webpage content
+sub getContentHeader
 {
-	##  Writes the header of the webpage content
-
 	my $vPage = $_[0];
+	my $vResult = "";
+	my $vDefault = "";
+	
+	$vDefault += "Antarrea Projects";
 
-	if($vPage <= 0)
-	{
-		print "<h2>";
-			print "Antarrea Projects";
-		print "</h2>";
-	}
+	$vResult += "<h2>";
+		if($vPage <= 0)
+		{
+			$vResult += $vDefault;
+		}
+		else
+		{
+			$vResult += $vDefault;
+		}
+	$vResult += "</h2>";
+	
+	return $vResult;
 }
 
+##  Gets the content of the webpage
 sub Content
 {
-	##  Writes the content of the webpage
 	my $vPage = $_[0];
-
-	print "<p id=\"idCenterContent\">";
+	my $vResult = "";
+	my $vDefault = "";
+	
+	$vDefault += "Global:";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+		$vDefault += "Here are projects based in the Antarrea universe:</br>";
+		$vDefault += "</br>";
+		$vDefault += "Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>";
+		$vDefault += "Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>";
+		$vDefault += "Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>";
+		$vDefault += "Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>";
+		$vDefault += "Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>";
+		$vDefault += "Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+			$vDefault += "Grendol:";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+		$vDefault += "Here are projects based in the Grendol universe:</br>";
+		$vDefault += "</br>";
+		$vDefault += "Grendol: Land of the Orcish Empire: Age of Magic: CCG.</br>";
+		$vDefault += "Grendol: Coliseum: Arena:                         CCG.</br>";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+			$vDefault += "Utopia:";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+		$vDefault += "Here are projects based in the Utopia universe:</br>";
+		$vDefault += "</br>";
+		$vDefault += "Avia: Elemental Angels: Adventure game with RPG elements.</br>";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+			$vDefault += "Elvia:";
+	$vDefault += "<br>";
+	$vDefault += "<br>";
+		$vDefault += "Here are projects based in the Elvia universe:</br>";
+		$vDefault += "</br>";
+		$vDefault += "Nine Card: Tactical card game.</br>";
+		
+	$vResult += "<p id=\"idCenterContent\">";
 		if($vPage <= 0)
 		{
-					print "Global:";
-			print "<br>";
-			print "<br>";
-				print "Here are projects based in the Antarrea universe:</br>";
-				print "</br>";
-				print "Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>";
-				print "Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>";
-				print "Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>";
-				print "Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>";
-				print "Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>";
-				print "Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>";
-			print "<br>";
-			print "<br>";
-					print "Grendol:";
-			print "<br>";
-			print "<br>";
-				print "Here are projects based in the Grendol universe:</br>";
-				print "</br>";
-				print "Grendol: Land of the Orcish Empire: Age of Magic: CCG.</br>";
-				print "Grendol: Coliseum: Arena:                         CCG.</br>";
-			print "<br>";
-			print "<br>";
-					print "Utopia:";
-			print "<br>";
-			print "<br>";
-				print "Here are projects based in the Utopia universe:</br>";
-				print "</br>";
-				print "Avia: Elemental Angels: Adventure game with RPG elements.</br>";
-			print "<br>";
-			print "<br>";
-					print "Elvia:";
-			print "<br>";
-			print "<br>";
-				print "Here are projects based in the Elvia universe:</br>";
-				print "</br>";
-				print "Nine Card: Tactical card game.</br>";
-		
+			$vResult += $vDefault;
 		}
-	print "</p>";
+		else
+		{
+			$vResult += $vDefault;
+		}
+	$vResult += "</p>";
 
-
+	return $vResult;
 }
 
-sub Versions
+sub getVersions
 {
 	my $vPage = $_[0];
-
-	print "Other versions of this page are here:<br>";
+	my $vResult = "";
+	my $vDefault = "";
+	
+	$vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.html\">HTML</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.php\">PHP</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/Index.html\">HTML Javascript</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section5/Index.html\">JQuery</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/Index.asp\">ASP VBscript</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Index.aspx\">ASP.NET Javascript</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:84/Section2/Section5/Index\">Node JS</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Index.jsp\">JSP</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Index.xhtml\">JSF</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Index.cshtml\">ASP.NET Web App</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/Index.aspx\">ASP.NET Webform</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Index\">ASP.NET MVC App</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/Index.html\">Apache SSI</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:82/Section2/Section5/Index\">Python Web.py</a><br>";
+	$vDefault += "<a href=\"http://htkb.dyndns.org:83/Section2/Section5/Index\">Ruby On Rails</a><br>";
+	
 	if($vPage <= 0)
 	{
-		print "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.html\">HTML</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.php\">PHP</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/Index.html\">HTML Javascript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section5/Index.html\">JQuery</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/Index.asp\">ASP VBscript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Index.aspx\">ASP.NET Javascript</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:84/Section2/Section5/Index\">Node JS</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Index.jsp\">JSP</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Index.xhtml\">JSF</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Index.cshtml\">ASP.NET Web App</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/Index.aspx\">ASP.NET Webform</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Index\">ASP.NET MVC App</a><br>";
-        print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/Index.html\">Apache SSI</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:82/Section2/Section5/Index\">Python Web.py</a><br>";
-        print "<a href=\"http://htkb.dyndns.org:83/Section2/Section5/Index\">Ruby On Rails</a><br>";
+		$vResult += $vDefault;
 	}
-
+	else
+	{
+		$vResult += $vDefault;
+	}
+	
+	return $vResult;
 }
 
 1;

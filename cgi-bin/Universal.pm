@@ -1,7 +1,6 @@
+##  Gets the header of the webpage
 sub getHead
 {
-	##  Gets the header of the webpage
-
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
 	my $vResult = "";
@@ -14,10 +13,9 @@ sub getHead
 	return $vResult;
 }
 
+## Declare a link to the style sheet
 sub getStyle
 {
-	## Declare a link to the style sheet
-	
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
 	
@@ -59,26 +57,26 @@ sub getLogo
 {
 	##  Gets the title picture of the webpage
 
-	my $vPath = $_[0];
+	my $vLevel = $_[0];
 	my $vResult = "";
 
-	$vResult += "<img id=\"idLogo\" src='".$vPath."/Pictures/logoHTKB.jpg'><br>";
+	$vResult += "<img id=\"idLogo\" src='".getPath($vLevel)."/Pictures/logoHTKB.jpg'><br>";
 	
 	return $vResult;
 }
 
 sub getNavBar
 {
-	##  Writes the navigation bar of the webpage
+	##  Gets the navigation bar of the webpage
 
 	my $vLevel = $_[0];
 	
 	my $vResult = "";
 
-	$vResult += "<a class=\"navBar\" href='".$vPath."Index.shtml'>Home</a>";
-	$vResult += "<a class=\"navBar\" href='".$vPath."Division1/Index.shtml'>Web Programming</a>";
-	$vResult += "<a class=\"navBar\" href='".$vPath."Division2/Index.shtml'>Private Projects</a>";
-	$vResult += "<a class=\"navBar\" href='".$vPath."Division3/Index.shtml'>Downloadable Projects</a>";
+	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Index.shtml'>Home</a>";
+	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division1/Index.shtml'>Web Programming</a>";
+	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division2/Index.shtml'>Private Projects</a>";
+	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division3/Index.shtml'>Downloadable Projects</a>";
 	
 	return $vResult;
 }
@@ -116,14 +114,14 @@ sub getInformation
 	my $vResult = "";
 
 	$vResult += "This page is written using Perl.";
-	$vResult += "Other versions can be found here:";
-	
+	$vResult += "Other versions of this page are here:<br>";
+		
 	return $vResult;
 }
 
 sub getGDR
 {
-	##  Writes the footer of the webpage
+	##  Gets the footer of the webpage
 	
 	my $vResult = "";
 
@@ -134,7 +132,7 @@ sub getGDR
 
 sub getWinRar
 {
-	##  Writes the footer of the webpage
+	##  Gets the footer of the webpage
 
 	my $vResult = "";
 
@@ -145,7 +143,7 @@ sub getWinRar
 
 sub getFooter
 {
-	##  Writes the footer of the webpage
+	##  Gets the footer of the webpage
 
 	print "<p id=\"idFooterContent\">";
 		print "© Copyright 2012 All rights reserved<br>";
@@ -155,7 +153,7 @@ sub getFooter
 
 sub getWebMaster
 {
-	##  Writes the webmaster of the webpage
+	##  Gets the webmaster of the webpage
 								
 	print "<p id=\"idFooterManagement\">";
 		print "Website managed by Kamurai.";

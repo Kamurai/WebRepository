@@ -191,7 +191,7 @@
             <a href=\'http://htkb.dyndns.org/Angular/Index.html\'>Angular JS</a><br>
             <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\'>JSF</a><br>
             <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\'>JSP</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index.jsp\'>JSP Spring MVC</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index\'>JSP Spring MVC</a><br>
             <a href=\'http://htkb.dyndns.org:81/ASPNET/Index.aspx\'>ASP.NET Javascript</a><br>
             <a href=\'http://htkb.dyndns.org:81/ASP/Index.asp\'>ASP VBscript</a><br>
             <a href=\'http://htkb.dyndns.org:81/WebApplication/Index.cshtml\'>ASP.NET Web App</a><br>
@@ -217,7 +217,7 @@
 				<a href=\'http://htkb.dyndns.org/Angular/AboutUs.html\'>Angular JS</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/AboutUs.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/AboutUs\'>JSP Spring MVC</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\'>ASP.NET Javascript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASP/AboutUs.asp\'>ASP VBscript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\'>ASP.NET Web App</a><br>
@@ -239,7 +239,7 @@
 				<a href=\'http://htkb.dyndns.org/Angular/Media.html\'>Angular JS</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Media.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Media\'>JSP Spring MVC</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASPNET/Media.aspx\'>ASP.NET Javascript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASP/Media.asp\'>ASP VBscript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/WebApplication/Media.cshtml\'>ASP.NET Web App</a><br>
@@ -261,7 +261,7 @@
 				<a href=\'http://htkb.dyndns.org/Angular/Minecraft.html\'>Angular JS</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>
 				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Minecraft.jsp\'>JSP Spring MVC</a><br>
+				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Minecraft\'>JSP Spring MVC</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\'>ASP.NET Javascript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/ASP/Minecraft.asp\'>ASP VBscript</a><br>
 				<a href=\'http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\'>ASP.NET Web App</a><br>

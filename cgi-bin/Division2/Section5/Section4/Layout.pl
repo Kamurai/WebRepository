@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use CGI;
 
-##  Writes the structure of the webpage
+##  Gets the structure of the webpage
 
 print "Content-type: text/html\n\n"; 
 
@@ -23,29 +23,30 @@ print getLayout($vPage, $vLevel);
 ##  gets the navigation content of the webpage
 sub getNavigation
 {
-	my $vPath = $_[0];
-	
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project2.shtml'>Assault</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project3.shtml'>Mars</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section4/Index.shtml'>Renley</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section1/Index.shtml'>Global</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section2/Index.shtml'>Grendol</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section3/Index.shtml'>Utopia</a><br><br>";
-		print "<a class=\"navlinkB\" href='".$vPath."Section2/Section5/Section4/Index.shtml'>Elvia</a><br><br>";
-			print "<a class=\"navlinkC\" href='".$vPath."Section2/Section5/Section4/Project1.shtml'>Nine Card</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project6.shtml'>Truth</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project7.shtml'>Kingdoms</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project8.shtml'>Terminal World</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project12.shtml'>The Way</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
-	print "<a class=\"navlinkA\" href='".$vPath."Section2/Project14.shtml'>Conversion</a><br><br>";
+	my $vLevel = $_[0];
+	my $vResult = "";
 
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Section1/Index.shtml'>Gynowars</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project2.shtml'>Assault</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project3.shtml'>Mars</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Section4/Index.shtml'>Renley</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Section5/Index.shtml'>Antarrea</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".getPath($vLevel)."Section2/Section5/Section1/Index.shtml'>Global</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".getPath($vLevel)."Section2/Section5/Section2/Index.shtml'>Grendol</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".getPath($vLevel)."Section2/Section5/Section3/Index.shtml'>Utopia</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".getPath($vLevel)."Section2/Section5/Section4/Index.shtml'>Elvia</a><br><br>";
+			$vResult += "<a class=\"navlinkC\" href='".getPath($vLevel)."Section2/Section5/Section4/Project1.shtml'>Nine Card</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project6.shtml'>Truth</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project7.shtml'>Kingdoms</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project8.shtml'>Terminal World</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project9.shtml'>Monster Office Workplace</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project10.shtml'>Battle Princesses</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project11.shtml'>Sacred Offerings</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project12.shtml'>The Way</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project13.shtml'>Conspiratorium</a><br><br>";
+	$vResult += "<a class=\"navlinkA\" href='".getPath($vLevel)."Section2/Project14.shtml'>Conversion</a><br><br>";
 
+	return $vResult;
 }
 
 sub getLayout

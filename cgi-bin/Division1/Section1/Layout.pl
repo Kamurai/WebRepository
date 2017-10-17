@@ -3,64 +3,86 @@ use strict;
 use warnings;
 use CGI;
 
-##  Writes the structure of the webpage
+##  Gets the structure of the webpage
 
 print "Content-type: text/html\n\n"; 
 
 my $CGI            = CGI->new();
-my $CSS			   = $CGI->param('vCSS');
-my $vPage           = $CGI->param('vPage');
-my $vPath           = $CGI->param('vPath');
-my $DownPath       = $CGI->param('vDownPath');
-my $ScriptPath     = $CGI->param('vScriptPath');
-my $ScriptDownPath = $CGI->param('vScriptDownPath');
+my $vPage          = $CGI->param('vPage');
+my $vLevel         = $CGI->param('vLevel');
+my $vDivision	   = $CGI->param('vDivision');
 
-require $ScriptPath."Universal.pm";
-require $ScriptPath.$ScriptDownPath."Custom.pm";
+require "../../Universal.pm";
+require getPath($vLevel)."Custom.pm";
 
 print getHead($vLevel, $vDivision)
 
-print "<table id=\"idTableMain\">";
-    print "<tr id=\"idHeaderRow\">";
-        print "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
-            #Universal level
-            TitlePicture($vPath);
-		print "</td>";
-    print "</tr>";
-    print "<tr id=\"idNavigationRow\">";
-        print "<td id=\"idNavigationBar\" colspan=\"3\">";
-            #Universal level
-            NavBar($vPath);
-        print "</td>";
-    print "</tr>";
-    print "<tr id=\"idCenterRow\">";
-        print "<td id=\"idCenterRowLeft\">";
-            print "<h4>";
-				print "Navigation";
-			print "</h4>";
-			#from Custom
-			Navigation($vPath,$DownPath);
-        print "</td>";
-		print "<td id=\"idCenterRowMain\">";
-            #from Custom
-			Title($vPage);
-			Header($vPage);
-			Content($vPage);
-        print "</td>";
-        print "<td id=\"idCenterRowRight\">";
-            print "<h4>";
-                print "Information";
-			print "</h4>";
-			#Universal level
-			Information($vPage);                    
-        print "</td>";
-    print "</tr>";
-    print "<tr id=\"idFooterRow\">";
-		print "<td id=\"idFooterMain\" colspan=\"3\">";
-            #Universal level
-			Footer();
-			WebMaster();
-        print "</td>";
-    print "</tr>";
-print "</table>";
+print getLayout($vPage, $vLevel);
+
+##  Gets the navigation content of the webpage
+sub Navigation
+{
+	my $vLevel = $_[0];
+	my $vResult = "";
+
+	$vResult += "<a class=\"navlinkA\" href='".$Path."Division1/Section1/Index.shtml'>Databases</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".$Path."Division1/Section1/Project1.shtml'>Oracle</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".$Path."Division1/Section1/Project2.shtml'>Derby</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".$Path."Division1/Section1/Project3.shtml'>MySQL</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".$Path."Division1/Section1/Project4.shtml'>SQL Server</a><br><br>";
+		$vResult += "<a class=\"navlinkB\" href='".$Path."Division1/Section1/Project5.shtml'>Postgres</a><br><br>";
+	
+	return $vResult;
+}
+
+sub getLayout
+{
+	my $vPage = $_[0];
+	my $vLevel = $_[1];
+	my $vResult = "";
+
+	$vResult += "<table id=\"idTableMain\">";
+		$vResult += "<tr id=\"idHeaderRow\">";
+			$vResult += "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
+				#from Universal
+				$vResult += getLogo($vLevel);
+			$vResult += "</td>";
+		$vResult += "</tr>";
+		$vResult += "<tr id=\"idNavigationRow\">";
+			$vResult += "<td id=\"idNavigationBar\" colspan=\"3\">";
+				#from Universal
+				$vResult += getNavBar($vLevel);
+			$vResult += "</td>";
+		$vResult += "</tr>";
+		$vResult += "<tr id=\"idCenterRow\">";
+			$vResult += "<td id=\"idCenterRowLeft\">";
+				#from Universal
+				$vResult += getNavigationHeader();
+				#from Layout
+				$vResult += getNavigation($vLevel);
+			$vResult += "</td>";
+			$vResult += "<td id=\"idCenterRowMain\">";
+				#from Custom
+				$vResult += getTitle($vPage);
+				$vResult += getContentHeader($vPage);
+				$vResult += getContent($vPage);
+			$vResult += "</td>";
+			$vResult += "<td id=\"idCenterRowRight\">";
+				#from Universal
+				$vResult += getInformationHeader();
+				$vResult += getInformation($vPage);
+				$vResult += getVersions($vPage);
+			$vResult += "</td>";
+		$vResult += "</tr>";
+		$vResult += "<tr id=\"idFooterRow\">";
+			$vResult += "<td id=\"idFooterMain\" colspan=\"3\">";
+				#from Universal
+				$vResult += getFooter();
+				$vResult += getWebMaster();
+			$vResult += "</td>";
+		$vResult += "</tr>";
+	$vResult += "</table>";
+
+	return $vResult;
+}
 	
