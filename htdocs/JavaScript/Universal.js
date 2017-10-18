@@ -1,83 +1,188 @@
-function WriteHeader(vLevel, vCSS)
+function getHead(vLevel, vDivision)
 {
-	document.write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-	document.write("<link href='"+GetPath(vLevel)+vCSS+"' rel='stylesheet' type='text/CSS'>");
+	var vResult = "";
+	
+	vResult += "<head>";
+    vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
+	vResult += "<link href='"+getPath(vLevel)+vDivision+"' rel='stylesheet' type='text/CSS'>";
+	vResult += "</head>";
+    
+	return vResult;
 }
 
-function TitlePicture(vLevel)
+function getStyle(vLevel, vDivision)
 {
-    document.write("<img id=\"idLogo\" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
+	var vResult = "";
+	
+	vResult += "<link href=\"";
+	vResult += getPath(vLevel)+"Styles/";
+	vResult += getStyleFile(vDivision);
+	vResult += "\" rel=\"stylesheet\" type=\"text/css\">";
+    
+	return vResult;
 }
 
-function WebMaster()
+function getStyleFile(vDivision)
 {
-    document.write("Website managed by Kamurai.");    
+	var vResult = "";
+	var vDefault = "";
+	
+	vDefault = "Main.css";
+	
+	if(vDivision == 0)
+	{
+		vResult = vDefault;
+	}
+	else if(vDivision == 1)
+	{
+		vResult = "Division1.css";
+	}
+	else if(vDivision == 2)
+	{
+		vResult = "Division2.css";
+	}
+	else if(vDivision == 3)
+	{
+		vResult = "Division3.css";
+	}
+	else
+	{
+		vResult = vDefault;
+	}
+	
+	return vResult;
 }
 
-function NavBar(vLevel)
+function getLogo(vLevel)
 {
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Index.html'>Home</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index.html'>Web Programming</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index.html'>Private Projects</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index.html'>Downloadable Projects</a>");
+	vResult = "";
+	
+    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+	
+	return vResult;
 }
 
-function GDR()
+function getNavBar(vLevel)
 {
-	document.write("<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+	var vResult = "";
+	
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Index.html'>Home</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division1/Index.html'>Web Programming</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division2/Index.html'>Private Projects</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division3/Index.html'>Downloadable Projects</a>";
+	
+	return vResult;
 }
 
-function WinRAR()
+function getNavigationHeader()
 {
-	document.write("<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+    var vResult = "";
+	
+    vResult += "<h4>";
+	vResult += "Navigation";
+	vResult += "</h4>";
+	
+	return vResult;
 }
 
-function Footer()
+function getInformationHeader()
 {
-    document.write("© Copyright 2012 All rights reserved<br>");    
-    document.write("House That Kamurai Built<br>");    
+    var vResult = "";
+	
+    vResult += "<h4>";
+	vResult += "Information";
+	vResult += "</h4>";
+	
+	return vResult;
 }
 
-function GetPath(vLevel)
+function getInformation()
 {
+    var vResult = "";
+	
+    vResult += "This is written with basic HTML and javascript.";
+	vResult += "Other versions of this page are here:<br>";
+	
+	return vResult;
+}
+
+function getGDR()
+{
+	var vResult = "";
+	
+    vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	
+	return vResult;
+}
+
+function getWinRAR()
+{
+	var vResult = "";
+	
+    vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+	
+	return vResult;
+}
+
+function getFooter()
+{
+    var vResult = "";
+	
+    vResult += "© Copyright 2012 All rights reserved<br>";    
+    vResult += "House That Kamurai Built<br>";
+	
+	return vResult;   
+}
+
+function getWebMaster()
+{
+    var vResult = "";
+	
+    vResult += "Website managed by Kamurai.";
+	
+	return vResult;
+}
+
+function getPath(vLevel)
+{
+    var vResult = "";
+	
     if(vLevel <= 0)
     {
-        return "./";
+        vResult += "./";
     }
     else if(vLevel == 1)
     {
-        return "../";
+        vResult += "../";
     }
     else if(vLevel == 2)
     {
-        return "../../";
+        vResult += "../../";
     }
     else if(vLevel == 3)
     {
-        return "../../../";
+        vResult += "../../../";
     }
     else if(vLevel == 4)
     {
-        return "../../../../";
+        vResult += "../../../../";
     }
     else if(vLevel == 5)
     {
-        return "../../../../../";
+        vResult += "../../../../../";
     }
     else if(vLevel == 6)
     {
-        return "../../../../../../";
+        vResult += "../../../../../../";
     }
     else if(vLevel == 7)
     {
-        return "../../../../../../../";
+        vResult += "../../../../../../../";
     }
+	
+	return vResult;
 }
 
-function GetInformation()
-{
-    document.write("This is written with basic HTML and javascript.");
-	document.write("Other versions of this page are here:<br>");
-}
+
 
 

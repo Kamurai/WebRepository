@@ -1,10 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!DOCTYPE HTML>
 <html>
 
 <!--#set var="vUniversal" value="01"-->
 <!--#include virtual="./Universal.ssi"-->
-
-<font color='white'>
 	
 <body id="idBody">
  	<table id="idTableMain">

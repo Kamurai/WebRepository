@@ -1,45 +1,74 @@
-function WriteWebpage(vPage, vLevel)
+function getNavigation(vLevel)
 {
-    document.write("<table id=\"idTableMain\">");
-		document.write("<tr id=\"idHeaderRow\">");
-            document.write("<td id=\"idHeaderRowCenter\" colspan=\"3\">");
-                TitlePicture(vLevel);
-			document.write("</td>");
-        document.write("</tr>");
-        document.write("<tr id=\"idNavigationRow\">");
-            document.write("<td id=\"idNavigationBar\" colspan=\"3\">");
-                NavBar(vLevel);
-            document.write("</td>");
-        document.write("</tr>");    
-        document.write("<tr id=\"idCenterRow\">");
-			document.write("<td id=\"idCenterRowLeft\">");
-				document.write("<h4>");
-					document.write("Navigation");
-				document.write("</h4>");
-				Navigation(vLevel);
-			document.write("</td>");
-			document.write("<td id=\"idCenterRowMain\">");
-				Title(vPage);
-				Header(vPage);
-				Content(vPage);
-			document.write("</td>");
-			document.write("<td id=\"idCenterRowRight\">");
-				document.write("<h4>");
-					document.write("Information");
-				document.write("</h4>");
-				GetInformation();
-				Versions(vPage);
-			document.write("</td>");
-		document.write("</tr>");
-        document.write("<tr id=\"idFooterRow\">");
-			document.write("<td id=\"idFooterMain\" colspan=\"3\">");
-				document.write("<p id=\"idFooterContent\">");
-					Footer();
-				document.write("</p>");
-				document.write("<p id=\"idFooterManagement\">");
-					WebMaster();
-				document.write("</p>");
-			document.write("</td>");
-		document.write("</tr>");
-    document.write("</table>");
+	var vResult = "";
+	
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Index.html\">Global</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section2/Index.html\">Grendol</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section3/Index.html\">Utopia</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section4/Index.html\">Elvia</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section6/Index.html\">Editations</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.html\">Truth</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.html\">Kingdoms</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.html\">Terminal World</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10.html\">Monster Office Workplace</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11.html\">Battle Princesses</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12.html\">Sacred Offerings</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13.html\">The Way</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14.html\">Conspiratorium</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project15.html\">Conversion</a><br><br>";
+    
+	return vResult;
+}
+
+function getLayout(vPage, vLevel)
+{
+	var vResult = "";
+	
+	vResult += "<body id=\"idBody\">";
+		vResult += "<table id=\"idTableMain\">";
+			vResult += "<tr id=\"idHeaderRow\">";
+				vResult += "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
+					vResult += getLogo(vLevel);
+				vResult += "</td>";
+			vResult += "</tr>";
+			vResult += "<tr id=\"idNavigationRow\">";
+				vResult += "<td id=\"idNavigationBar\" colspan=\"3\">";
+					vResult += getNavBar(vLevel);
+				vResult += "</td>";
+			vResult += "</tr>";    
+			vResult += "<tr id=\"idCenterRow\">";
+				vResult += "<td id=\"idCenterRowLeft\">";
+					vResult += getNavigationHeader();
+					vResult += getNavigation(vLevel);
+				vResult += "</td>";
+				vResult += "<td id=\"idCenterRowMain\">";
+					vResult += getTitle(vPage);
+					vResult += getContentHeader(vPage);
+					vResult += getContent(vPage);
+				vResult += "</td>";
+				vResult += "<td id=\"idCenterRowRight\">";
+					vResult += getInformationHeader();
+					vResult += getInformation();
+					vResult += getVersions(vPage);
+				vResult += "</td>";
+			vResult += "</tr>";
+			vResult += "<tr id=\"idFooterRow\">";
+				vResult += "<td id=\"idFooterMain\" colspan=\"3\">";
+					vResult += "<p id=\"idFooterContent\">";
+						vResult += getFooter();
+					vResult += "</p>";
+					vResult += "<p id=\"idFooterManagement\">";
+						vResult += getWebMaster();
+					vResult += "</p>";
+				vResult += "</td>";
+			vResult += "</tr>";
+		vResult += "</table>";
+	vResult += "</body>";
+	
+	return vResult;
 }

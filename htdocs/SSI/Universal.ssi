@@ -1,42 +1,101 @@
-<!--#if expr="$vUniversal == 0" -->
+<!--#if expr="$vUniversal == getHead" -->
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
-		<link href="<!--#echo var="vStylePath"-->Main.css" rel="stylesheet" type="text/css">
+		<!--#set var="vUniversal" value="getStyle"-->
+		<!--#include virtual="./Universal.ssi"-->
 	</head>
-<!--#elif expr="$vUniversal == 01" -->
-	<head>
-		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
-		<link href="<!--#echo var="vStylePath"-->Section1.css" rel="stylesheet" type="text/css">
-	</head>
-<!--#elif expr="$vUniversal == 02" -->
-	<head>
-		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
-		<link href="<!--#echo var="vStylePath"-->Section2.css" rel="stylesheet" type="text/css">
-	</head>
-<!--#elif expr="$vUniversal == 03" -->
-	<head>
-		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
-		<link href="<!--#echo var="vStylePath"-->Section3.css" rel="stylesheet" type="text/css">
-	</head>
-<!--#elif expr="$vUniversal == 1" -->
-	<!--Primary Header: Main Splash / Logo-->
-	<img id="idLogo" src="<!--#echo var="vPath"-->logo_HouseThatKamuraiBuilt_blueonblack.jpg" width="100%" alt="" border="0" align="center" vspace="0" hspace="0"><br>
-<!--#elif expr="$vUniversal == 2" -->
-	<a class=\"navBar\" href="<!--#echo var="vPath"-->index.html">Home</a>
-	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section1/index.html">Web Programming</a>
-	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section2/index.html">Private Projects</a>
-	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section3/index.html">Downloadable Projects</a>
-<!--#elif expr="$vUniversal == 3" -->
+<!--#elif expr="$vUniversal == getStyle" -->
+	<link href="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	/Styles/"
+	<!--#set var="vUniversal" value="getStyleFile"-->
+	<!--#include virtual="./Universal.ssi"-->
+	" rel="stylesheet" type="text/css">
+<!--#elif expr="$vUniversal == getStyleFile" -->
+	<!--#if expr="$vDivision == 0" -->
+		Main.css
+	<!--#elif expr="$vDivision == 1" -->
+		Division1.css
+	<!--#elif expr="$vDivision == 2" -->
+		Division2.css
+	<!--#elif expr="$vDivision == 3" -->
+		Division3.css
+	<!--#else -->
+		Main.css
+<!--#elif expr="$vUniversal == getLogo" -->
+	<img id="idLogo" src="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	logoHTKB.jpg"><br>
+<!--#elif expr="$vUniversal == getNavBar" -->
+	<a class=\"navBar\" href="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	Index.html">Home</a>
+	<a class=\"navBar\" href="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	Division1/Index.html">Web Programming</a>
+	<a class=\"navBar\" href="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	Division2/Index.html">Private Projects</a>
+	<a class=\"navBar\" href="
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	Division3/Index.html">Downloadable Projects</a>
+<!--#elif expr="$vUniversal == getNavigationHeader" -->
+	<h4>
+		Navigation
+	</h4>
+<!--#elif expr="$vUniversal == getInformationHeader" -->
+	<h4>
+		Information
+	</h4>
+<!--#elif expr="$vUniversal == getInformation" -->
 	This is written with basic HTML and Server Side Integration.
-<!--#elif expr="$vUniversal == 4" -->
+<!--#elif expr="$vUniversal == getGDR" -->
+	<a href='
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	downloads/GDR.zip'>You can download my Games Development Report here.</a></br>
+<!--#elif expr="$vUniversal == getWinRar" -->
+	<a href='
+	<!--#set var="vUniversal" value="getPath"-->
+	<!--#include virtual="./Universal.ssi"-->
+	downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>
+<!--#elif expr="$vUniversal == getFooter" -->
 	© Copyright 2012 All rights reserved<br>
 	House That Kamurai Built<br>
-<!--#elif expr="$vUniversal == 5" -->
-	<a href='<!--#echo var="vTopPath"-->downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>
-<!--#elif expr="$vUniversal == 6" -->
-	<a href='<!--#echo var="vTopPath"-->downloads/GDR.zip'>You can download my Games Development Report here.</a></br>
-<!--#elif expr="$vUniversal == 7" -->
+<!--#elif expr="$vUniversal == getWebMaster" -->
 	Website managed by Kamurai.
+<!--#elif expr="$vUniversal == getPath" -->
+	<!--#if expr="$vLevel <= 0" -->
+		<!--#set var="vPath" value="./" -->
+	<!--#elif expr="$vLevel == 1" -->
+		<!--#set var="vPath" value="../" -->
+	<!--#elif expr="$vLevel == 2" -->
+		<!--#set var="vPath" value="../../" -->
+	<!--#elif expr="$vLevel == 3" -->
+		<!--#set var="vPath" value="../../../" -->
+	<!--#elif expr="$vLevel == 4" -->
+		<!--#set var="vPath" value="../../../../" -->
+	<!--#elif expr="$vLevel == 5" -->
+		<!--#set var="vPath" value="../../../../../" -->
+	<!--#elif expr="$vLevel == 6" -->
+		<!--#set var="vPath" value="../../../../../../" -->
+	<!--#elif expr="$vLevel == 7" -->
+		<!--#set var="vPath" value="../../../../../../../" -->
+	<!--#elif expr="$vLevel == 8" -->
+		<!--#set var="vPath" value="../../../../../../../../" -->
+	<!--#elif expr="$vLevel == 9" -->
+		<!--#set var="vPath" value="../../../../../../../../../" -->
+	<!--#elif expr="$vLevel == 10" -->
+		<!--#set var="vPath" value="../../../../../../../../../../" -->
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
 <!--#else -->
 	NOPE!
 <!--#endif -->

@@ -1,166 +1,196 @@
-GetPath = function (vLevel)
+getPath = function (vLevel)
 {
-    if(vLevel <= 0)
-    {
-        return "./";
-    }
-    else if(vLevel == 1)
-    {
-        return "../";
-    }
-    else if(vLevel == 2)
-    {
-        return "../../";
-    }
-    else if(vLevel == 3)
-    {
-        return "../../../";
-    }
-    else if(vLevel == 4)
-    {
-        return "../../../../";
-    }
-    else if(vLevel == 5)
-    {
-        return "../../../../../";
-    }
-    else if(vLevel == 6)
-    {
-        return "../../../../../../";
-    }
-    else if(vLevel == 7)
-    {
-        return "../../../../../../../";
-    }
-}
-
-exports.GetPath = function (vLevel)
-{
-    if(vLevel <= 0)
-    {
-        return "./";
-    }
-    else if(vLevel == 1)
-    {
-        return "../";
-    }
-    else if(vLevel == 2)
-    {
-        return "../../";
-    }
-    else if(vLevel == 3)
-    {
-        return "../../../";
-    }
-    else if(vLevel == 4)
-    {
-        return "../../../../";
-    }
-    else if(vLevel == 5)
-    {
-        return "../../../../../";
-    }
-    else if(vLevel == 6)
-    {
-        return "../../../../../../";
-    }
-    else if(vLevel == 7)
-    {
-        return "../../../../../../../";
-    }
-}
-
-exports.WriteHeader = function (vLevel, vCSS)
-{
-	var result = "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-	result += "<link href='"+vCSS+"' rel='stylesheet' type='text/CSS'>";
+	vResult = "";
 	
-    return result;
+    if(vLevel <= 0)
+    {
+        vResult = "./";
+    }
+    else if(vLevel == 1)
+    {
+        vResult = "../";
+    }
+    else if(vLevel == 2)
+    {
+        vResult = "../../";
+    }
+    else if(vLevel == 3)
+    {
+        vResult = "../../../";
+    }
+    else if(vLevel == 4)
+    {
+        vResult = "../../../../";
+    }
+    else if(vLevel == 5)
+    {
+        vResult = "../../../../../";
+    }
+    else if(vLevel == 6)
+    {
+        vResult = "../../../../../../";
+    }
+    else if(vLevel == 7)
+    {
+        vResult = "../../../../../../../";
+    }
+	
+	return vResult;
 }
 
-exports.WriteWebPage = function (vPage, vLevel, vSection, vCSS)
+exports.getPath = function (vLevel)
 {
-    var result = "<html>";
-    result += "<head>";
-    result +=     WriteHeader(vLevel, universal.GetPath(vLevel)+vCSS);
-    result += "</head>";
-    result += "<body id=\"idBody\">";
-    result +=     custom.WriteBody(vPage, vLevel);
-    result += "</body>";
-    result += "</html>";
-    
-    return result;
+	vResult = "";
+	
+    if(vLevel <= 0)
+    {
+        vResult = "./";
+    }
+    else if(vLevel == 1)
+    {
+        vResult = "../";
+    }
+    else if(vLevel == 2)
+    {
+        vResult = "../../";
+    }
+    else if(vLevel == 3)
+    {
+        vResult = "../../../";
+    }
+    else if(vLevel == 4)
+    {
+        vResult = "../../../../";
+    }
+    else if(vLevel == 5)
+    {
+        vResult = "../../../../../";
+    }
+    else if(vLevel == 6)
+    {
+        vResult = "../../../../../../";
+    }
+    else if(vLevel == 7)
+    {
+        vResult = "../../../../../../../";
+    }
+	
+	return vResult;
 }
 
-exports.TitlePicture = function (vLevel)
+exports.getHead = function (vLevel, vDivision)
 {
-    var result = "<img id=\"idLogo\" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>";
+	var vResult = "";
+	
+	vResult += "<head>";
+    vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
+	vResult += "<link href='"+vDivision+"' rel='stylesheet' type='text/CSS'>";
+	vResult += "</head>";
     
-    return result;
+    return vResult;
+}
+
+exports.getLayout = function (vPage, vLevel, vDivision)
+{
+    var vResult = "";
+	
+	vResult += "<html>";
+    vResult +=     getHead(vLevel, vDivision);
+    vResult += "<body id=\"idBody\">";
+    vResult +=     custom.WriteBody(vPage, vLevel);
+    vResult += "</body>";
+    vResult += "</html>";
+    
+    return vResult;
+}
+
+exports.getLogo = function (vLevel)
+{
+    var vResult = "";
+	
+	vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+    
+    return vResult;
 }
 
 exports.NavBar = function (vLevel)
 {
-    var result = "<a class=\"navBar\" href='"+GetPath(vLevel)+"Index'>Home</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index'>Web Programming</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index'>Private Projects</a>";
-    result += "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index'>Downloadable Projects</a>";
+    var vResult = "";
+	
+	vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Index'>Home</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division1/Index'>Web Programming</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division2/Index'>Private Projects</a>";
+    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division3/Index'>Downloadable Projects</a>";
     
-    return result;
+    return vResult;
 }
 
 exports.GetNavigationHeader = function ()
 {
-    var result = "<h4>";
-        result += "Navigation";
-    result += "</h4>";
+    var vResult = "";
+	
+	vResult += "<h4>";
+        vResult += "Navigation";
+    vResult += "</h4>";
     
-    return result;
+    return vResult;
 }
 
-exports.GetInformationHeader = function ()
+exports.getInformationHeader = function ()
 {
-    var result = "<h4>";
-        result += "Information";
-    result += "</h4>";
+    var vResult = "";
+	
+	vResult += "<h4>";
+        vResult += "Information";
+    vResult += "</h4>";
     
-    return result;
+    return vResult;
 }
 
-exports.GetInformation = function ()
+exports.getInformation = function ()
 {
-    var result = "This is written with NodeJS.";
-    result += "Other versions can be found here:";
+    var vResult = "";
+	
+	vResult += "This is written with NodeJS.";
+    vResult += "Other versions can be found here:";
     
-    return result;
+    return vResult;
 }
 
 exports.GDR = function ()
 {
-	var result = "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";	
+	var vResult = "";
+	
+	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";	
     
-    return result;
+    return vResult;
 }
 
 exports.WinRAR = function ()
 {
-	var result = "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
+	var vResult = "";
+	
+	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
     
-    return result;
+    return vResult;
 }
 
-exports.Footer = function ()
+exports.getFooter = function ()
 {
-    var result = "Copyright 2012 All rights reserved<br>";    
-    result += "House That Kamurai Built<br>";
+    var vResult = "";
+	
+	vResult += "Copyright 2012 All rights reserved<br>";    
+    vResult += "House That Kamurai Built<br>";
     
-    return result;
+    return vResult;
 }
 
-exports.WebMaster = function ()
+exports.getWebMaster = function ()
 {
-    var result = "Website managed by Kamurai.";
+    var vResult = "";
+	
+	vResult += "Website managed by Kamurai.";
 
-    return result;    
+    return vResult;    
 }
 
