@@ -5,7 +5,15 @@ function WriteWebpage(vPage, vLevel, vSection)
     FillLayout(vPage, vLevel, vSection);
 }
 
-function BuildLayout(vPage, vLevel)
+function fillLayout(vPage, vLevel, vSection)
+{
+    
+    FillHead(vLevel, vSection);
+    FillBody(vPage, vLevel);
+}
+
+
+function buildBody(vPage, vLevel)
 {
     var tableMain = document.createElement("table");
     tableMain.setAttribute("id", "idTableMain");
@@ -82,33 +90,22 @@ function BuildLayout(vPage, vLevel)
     //WebMaster();
 }
 
-function FillLayout(vPage, vLevel, vSection)
+function fillBody(vPage, vLevel)
 {
+    fillLogo(vLevel);
+    getNavBar(vLevel);
     
-    FillHead(vLevel, vSection);
-    FillBody(vPage, vLevel);
-}
-
-function FillHead(vLevel, vSection)
-{
-    WriteHeader(vLevel-1, vSection);
-}
-
-function FillBody(vPage, vLevel)
-{
-    TitlePicture(vLevel);
-    NavBar(vLevel);
-    
-    NavigationHeader();
+    fillNavigationHeader();
     Navigation(vLevel)
     
     Title(vPage);
     Header(vPage);
     Content(vPage);
     
-    InformationHeader();
+    fillInformationHeader();
+	fillInformation();
     Versions(vPage);
 
-    Footer();
-    WebMaster();
+    fillFooter();
+    fillWebMaster();
 }

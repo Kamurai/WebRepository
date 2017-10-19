@@ -1,22 +1,4 @@
-<!--#if expr="$vCustom == 0" -->
-	<link href="<!--#echo var="$vStylePath"-->Section2.css" rel="stylesheet" type="text/css"/>
-<!--#elif expr="$vCustom == 1" -->
-	<a class=\"navlinkA\" href="./Section1/index.html">Gynowars</a><br><br>
-	<a class=\"navlinkA\" href="./Project2.html">Assault</a><br><br>
-	<a class=\"navlinkA\" href="./Project3.html">Mars</a><br><br>
-	<a class=\"navlinkA\" href="./Section4/index.html">Renley</a><br><br>
-	<a class=\"navlinkA\" href="./Section5/index.html">Antarrea</a><br><br>
-	<a class=\"navlinkA\" href="./Section6/index.html">Editations</a><br><br>
-	<a class=\"navlinkA\" href="./Project7.html">Truth</a><br><br>
-	<a class=\"navlinkA\" href="./Project8.html">Kingdoms</a><br><br>
-	<a class=\"navlinkA\" href="./Project9.html">Terminal World</a><br><br>
-	<a class=\"navlinkA\" href="./Project10.html">Monster Office Workplace</a><br><br>
-	<a class=\"navlinkA\" href="./Project11.html">Battle Princesses</a><br><br>
-	<a class=\"navlinkA\" href="./Project12.html">Sacred Offerings</a><br><br>
-	<a class=\"navlinkA\" href="./Project13.html">The Way</a><br><br>
-	<a class=\"navlinkA\" href="./Project14.html">Conspiratorium</a><br><br>
-	<a class=\"navlinkA\" href="./Project15.html">Conversion</a><br><br>
-<!--#elif expr="$vCustom == 2" -->
+<!--#if expr="$vFunction == getTitle" -->
 	<title>
 		<!--#if expr="$vPage == 0" -->
 			Private Projects
@@ -46,7 +28,7 @@
 			NOPE!
 		<!--#endif -->
 	</title>
-<!--#elif expr="$vCustom == 3" -->
+<!--#elif expr="$vFunction == getContentHeader" -->
 	<h2>
 		<!--#if expr="$vPage == 0" -->
 			Private Projects
@@ -76,64 +58,62 @@
 			NOPE!
 		<!--#endif -->
 	</h2>
-<!--#elif expr="$vCustom == 4" -->
+<!--#elif expr="$vFunction == getContent" -->
+	<p id="idCenterContent">
+		<!--#if expr="$vPage == 0" -->
+			This section is dedicated to HTKB projects.
+		<!--#elif expr="$vPage == 2" -->
+			This section is dedicated CCG project "Assault".
+		<!--#elif expr="$vPage == 3" -->
+			This section is dedicated to the Mars centered project "Opposition".
+		<!--#elif expr="$vPage == 7" -->
+			This section is dedicated to the MMO RTS project "Truth".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
+		<!--#elif expr="$vPage == 8" -->
+			This section is dedicated to the digital board game project "Kingdoms".  Explore the world's Kingdoms, get rich, get strong and conquer.
+		<!--#elif expr="$vPage == 9" -->
+			This section is dedicated to the simulation MMO centered project "Terminal World".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
+			the zombies?  Can you survive?
+		<!--#elif expr="$vPage == 10" -->
+			This section is dedicated to the card and board game project "Monster Office Workplace".  These monsters mean serious business.
+			Can you earn the most credit and smooze your way into a promotion?
+		<!--#elif expr="$vPage == 11" -->
+			This section is dedicated to the card game project "Battle Princesses".  Ever wanted to see your favorite princess battle for the kingdom?
+			These princess aren't your helpless maidens, but valiant warriors themselves.
+		<!--#elif expr="$vPage == 12" -->
+			This section is dedicated to the board game project "Sacred Offerings".
+			Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.
+			Draw people to worship you, but be discerning about who is sacrificed.
+		<!--#elif expr="$vPage == 13" -->
+			This section is dedicated to the card game project "The Way".  You seek to find enlightment by contemplating the elements.
+			Escape the binds of the world and the board to reach enlightment and win.
+		<!--#elif expr="$vPage == 14" -->
+			This section is dedicated to the board game project "Conspiratorium".
+			A game of assassins and CIA, you must remember who is friend and who is not.
+		<!--#elif expr="$vPage == 15" -->
+			This section is dedicated to the board game project "Conversion".
+			Compete on the elemental market by processing elements and becoming the elemental kingpin.
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</p>
+<!--#elif expr="$vFunction == getVersions" -->
 	<!--#if expr="$vPage == 0" -->
-		This section is dedicated to HTKB projects.
-	<!--#elif expr="$vPage == 2" -->
-		This section is dedicated CCG project "Assault".
-	<!--#elif expr="$vPage == 3" -->
-		This section is dedicated to the Mars centered project "Opposition".
-	<!--#elif expr="$vPage == 7" -->
-		This section is dedicated to the MMO RTS project "Truth".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
-	<!--#elif expr="$vPage == 8" -->
-		This section is dedicated to the digital board game project "Kingdoms".  Explore the world's Kingdoms, get rich, get strong and conquer.
-	<!--#elif expr="$vPage == 9" -->
-		This section is dedicated to the simulation MMO centered project "Terminal World".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
-		the zombies?  Can you survive?
-	<!--#elif expr="$vPage == 10" -->
-		This section is dedicated to the card and board game project "Monster Office Workplace".  These monsters mean serious business.
-		Can you earn the most credit and smooze your way into a promotion?
-	<!--#elif expr="$vPage == 11" -->
-		This section is dedicated to the card game project "Battle Princesses".  Ever wanted to see your favorite princess battle for the kingdom?
-		These princess aren't your helpless maidens, but valiant warriors themselves.
-	<!--#elif expr="$vPage == 12" -->
-		This section is dedicated to the board game project "Sacred Offerings".
-		Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.
-		Draw people to worship you, but be discerning about who is sacrificed.
-	<!--#elif expr="$vPage == 13" -->
-		This section is dedicated to the card game project "The Way".  You seek to find enlightment by contemplating the elements.
-		Escape the binds of the world and the board to reach enlightment and win.
-	<!--#elif expr="$vPage == 14" -->
-		This section is dedicated to the board game project "Conspiratorium".
-		A game of assassins and CIA, you must remember who is friend and who is not.
-	<!--#elif expr="$vPage == 15" -->
-		This section is dedicated to the board game project "Conversion".
-		Compete on the elemental market by processing elements and becoming the elemental kingpin.
-	<!--#else -->
-		NOPE!
-	<!--#endif -->
-<!--#elif expr="$vCustom == 5" -->
-	This is written with basic HTML and Server Side Integration.
-	<br/>
-	<br/>
-	Other versions of this page are here:<br>
-	<!--#if expr="$vPage == 0" -->
-		<a href="http://htkb.dyndns.org/Section2/index.html">HTML</a><br>
-        <a href="http://htkb.dyndns.org/Section2/index.php">PHP</a><br>
-        <a href="http://htkb.dyndns.org/Javascript/Section2/index.html">HTML Javascript</a><br>
-        <a href="http://htkb.dyndns.org/JQuery/Section2/index.html">JQuery</a><br>
-        <a href="http://htkb.dyndns.org:81/ASP/Section2/index.asp">ASP Javascript</a><br>
-        <a href="http://htkb.dyndns.org:81/ASPNET/Section2/index.aspx">ASP.NET Javascript</a><br>
-        <a href="http://htkb.dyndns.org:82/ASPNET/Section2/index.aspx">ASP.NET Javascript</a><br>
-        <a href="http://htkb.dyndns.org:84/Section2/index">Node JS</a><br>
-        <a href="http://htkb.dyndns.org/Section2/index.shtml">Perl</a><br>
-        <a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/index.jsp">JSP</a><br>
-        <a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/index.xhtml">JSF</a><br>
-        <a href="http://htkb.dyndns.org:81/WebApplication/Section2/index.cshtml">ASP.NET Web App</a><br>
-        <a href="http://htkb.dyndns.org:81/WebForm/Section2/index.aspx">ASP.NET Webform</a><br>
-        <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/index">ASP.NET MVC App</a><br>
-        <a href="http://htkb.dyndns.org:82/Section2/index\">Python Web.py</a><br>
-        <a href="http://htkb.dyndns.org:83/Section2/index\">Ruby On Rails</a><br>  
+		<a href="http://htkb.dyndns.org/Section2/Index.html">HTML</a><br>
+        <a href="http://htkb.dyndns.org/Section2/Index.php">PHP</a><br>
+        <a href="http://htkb.dyndns.org/Javascript/Section2/Index.html">HTML Javascript</a><br>
+        <a href="http://htkb.dyndns.org/JQuery/Section2/Index.html">JQuery</a><br>
+        <a href="http://htkb.dyndns.org:81/ASP/Section2/Index.asp">ASP Javascript</a><br>
+        <a href="http://htkb.dyndns.org:81/ASPNET/Section2/Index.aspx">ASP.NET Javascript</a><br>
+        <a href="http://htkb.dyndns.org:82/ASPNET/Section2/Index.aspx">ASP.NET Javascript</a><br>
+        <a href="http://htkb.dyndns.org:84/Section2/Index">Node JS</a><br>
+        <a href="http://htkb.dyndns.org/Section2/Index.shtml">Perl</a><br>
+        <a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Index.jsp">JSP</a><br>
+        <a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Index.xhtml">JSF</a><br>
+        <a href="http://htkb.dyndns.org:81/WebApplication/Section2/Index.cshtml">ASP.NET Web App</a><br>
+        <a href="http://htkb.dyndns.org:81/WebForm/Section2/Index.aspx">ASP.NET Webform</a><br>
+        <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Index">ASP.NET MVC App</a><br>
+        <a href="http://htkb.dyndns.org:82/Section2/Index\">Python Web.py</a><br>
+        <a href="http://htkb.dyndns.org:83/Section2/Index\">Ruby On Rails</a><br>  
     <!--#if expr="$vPage == 2" -->
 		<a href="http://htkb.dyndns.org/Section2/Project2.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project2.php">PHP</a><br>

@@ -1,62 +1,79 @@
-<!DOCTYPE HTML>
-<html>
-
-<!--#set var="vUniversal" value="02"-->
-<!--#include virtual="./Universal.ssi"-->
-
-<body id="idBody">
- 	<table id="idTableMain">
-        <tr id="idHeaderRow">
-            <td id="idHeaderRowCenter" colspan="3">
-				<!--#set var="vUniversal" value="1"-->
-				<!--#include virtual="./Universal.ssi"-->
-			</td>
-		</tr>
-        <tr id="idNavigationRow">
-            <td id="idNavigationBar" colspan="3">
-				<!--#set var="vUniversal" value="2"-->
-				<!--#include virtual="./Universal.ssi"-->
-			</td>
-		</tr>				
-		<tr id="idCenterRow">
-            <td id="idCenterRowLeft">
-				<h4>
-					Navigation
-				</h4>
-				<!--#set var="vCustom" value="1"-->
-				<!--#include virtual="./Custom.ssi"-->
-			</td>
-			<td id="idCenterRowMain">
-				<!--#set var="vCustom" value="2"-->
-				<!--#include virtual="./Custom.ssi"-->
-				<!--#set var="vCustom" value="3"-->
-				<!--#include virtual="./Custom.ssi"-->
-				<p id="idCenterContent">
-					<!--#set var="vCustom" value="4"-->
+<!--#if expr="$vFunction == getNavigation" -->
+	<a class=\"navlinkA\" href="../../Section1/Index.html">Gynowars</a><br><br>
+	<a class=\"navlinkA\" href="../../Project2.html">Assault</a><br><br>
+	<a class=\"navlinkA\" href="../../Project3.html">Mars</a><br><br>
+	<a class=\"navlinkA\" href="../../Section4/Index.html">Renley</a><br><br>
+	<a class=\"navlinkA\" href="../Index.html">Antarrea</a><br><br>
+		<a class=\"navlinkB\" href="../Section1/Index.html">Global:</a><br><br>
+		<a class=\"navlinkB\" href="../Section2/Index.html">Grendol:</a><br><br>
+		<a class=\"navlinkB\" href="./Index.html">Utopia:</a><br><br>
+			<a class=\"navlinkC\" href="./Project1.html">Avia:Elemental Angels</a><br><br>
+		<a class=\"navlinkB\" href="../Section4/Index.html">Elvia:</a><br><br>
+	<a class=\"navlinkA\" href="../../Section6/Index.html">Editations</a><br><br>
+	<a class=\"navlinkA\" href="../../Project7.html">Truth</a><br><br>
+	<a class=\"navlinkA\" href="../../Project8.html">Kingdoms</a><br><br>
+	<a class=\"navlinkA\" href="../../Project9.html">Terminal World</a><br><br>
+	<a class=\"navlinkA\" href="../../Project10.html">Monster Office Workplace</a><br><br>
+	<a class=\"navlinkA\" href="../../Project11.html">Battle Princesses</a><br><br>
+	<a class=\"navlinkA\" href="../../Project12.html">Sacred Offerings</a><br><br>
+	<a class=\"navlinkA\" href="../../Project13.html">The Way</a><br><br>
+	<a class=\"navlinkA\" href="../../Project14.html">Conspiratorium</a><br><br>
+	<a class=\"navlinkA\" href="../../Project15.html">Conversion</a><br><br>
+<!--#elif expr="$vFunction == getBody" -->
+	<body id="idBody">
+		<table id="idTableMain">
+			<tr id="idHeaderRow">
+				<td id="idHeaderRowCenter" colspan="3">
+					<!--#set var="vFunction" value="getLogo"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+				</td>
+			</tr>
+			<tr id="idNavigationRow">
+				<td id="idNavigationBar" colspan="3">
+					<!--#set var="vFunction" value="getNavBar"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+				</td>
+			</tr>				
+			<tr id="idCenterRow">
+				<td id="idCenterRowLeft">
+					<!--#set var="vFunction" value="getNavigationHeader"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getNavigation"-->
+					<!--#include virtual="./Layout.ssi"-->
+				</td>
+				<td id="idCenterRowMain">
+					<!--#set var="vFunction" value="getTitle"-->
 					<!--#include virtual="./Custom.ssi"-->
-				</p>
-			</td>
-			<td id="idCenterRowRight">
-				<h4>
-					Information
-				</h4>
-				<!--#set var="vCustom" value="5"-->
-				<!--#include virtual="./Custom.ssi"-->
-			</td>
-		</tr>
-		<tr id="idFooterRow">
-            <td id="idFooterMain" colspan="3">
-                <p id="idFooterContent">
-					<!--#set var="vUniversal" value="4"-->
-					<!--#include virtual="./Universal.ssi"-->
-				</p>
-				<p id="idFooterManagement">
-					<!--#set var="vUniversal" value="7"-->
-					<!--#include virtual="./Universal.ssi"-->
-				</p>
-			</td>
-		</tr>
-	</table>
-</font>
-</body>
-</html>
+					
+					<!--#set var="vFunction" value="getContentHeader"-->
+					<!--#include virtual="./Custom.ssi"-->
+					
+					<!--#set var="vFunction" value="getContent"-->
+					<!--#include virtual="./Custom.ssi"-->
+				</td>
+				<td id="idCenterRowRight">
+					<!--#set var="vFunction" value="getInformationHeader"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getInformation"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getVersions"-->
+					<!--#include virtual="./Custom.ssi"-->
+				</td>
+			</tr>
+			<tr id="idFooterRow">
+				<td id="idFooterMain" colspan="3">
+					<!--#set var="vFunction" value="getFooter"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+			
+					<!--#set var="vFunction" value="getWebMaster"-->
+					<!--#include virtual="../../../Universal.ssi"-->
+				</td>
+			</tr>
+		</table>
+	</body>
+<!--#else -->
+	NOPE!
+<!--#endif -->

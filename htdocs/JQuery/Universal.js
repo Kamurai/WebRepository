@@ -36,15 +36,15 @@ function getStyleFile(vDivision)
     }
     else if( vDivision == 1 )
     {
-        vResult = "Division1";
+        vResult = "Division1.css";
     }
     else if( vDivision == 2 )
     {
-        vResult = "Division2";
+        vResult = "Division2.css";
     }
     else if( vDivision == 3 )
     {
-        vResult = "Division3";
+        vResult = "Division3.css";
     }
     else
     {

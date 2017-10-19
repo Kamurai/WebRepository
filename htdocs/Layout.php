@@ -36,10 +36,8 @@
 					.'</td>
                     <td id=\'idCenterRowMain\'>'.
 						getTitle($vPage).
-						'<h2>'.
-                            getContentHeader($vPage).
-						'</h2>
-                        <p id=\'idCenterContent\'>'.
+						getContentHeader($vPage).
+						'<p id=\'idCenterContent\'>'.
                             getContent($vPage).
 						'</p>
                     </td>

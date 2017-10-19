@@ -11,9 +11,13 @@
 			{
 				var vPage  = 1;
 				var vLevel = 0;
-				var vSection = 0;
+				var vDivision = 0;
 				
-				WriteWebpage(vPage, vLevel, vSection);
+				buildHead(vLevel, vDivision);
+				fillHead(vLevel, vDivision);
+				
+				buildBody(vPage, vLevel);
+				fillBody(vPage, vLevel);
 			}
 		);
 	</script>

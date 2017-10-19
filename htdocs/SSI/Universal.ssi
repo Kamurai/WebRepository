@@ -1,18 +1,18 @@
-<!--#if expr="$vUniversal == getHead" -->
+<!--#if expr="$vFunction == getHead" -->
 	<head>
 		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
-		<!--#set var="vUniversal" value="getStyle"-->
+		<!--#set var="vFunction" value="getStyle"-->
 		<!--#include virtual="./Universal.ssi"-->
 	</head>
-<!--#elif expr="$vUniversal == getStyle" -->
+<!--#elif expr="$vFunction == getStyle" -->
 	<link href="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	/Styles/"
-	<!--#set var="vUniversal" value="getStyleFile"-->
+	<!--#set var="vFunction" value="getStyleFile"-->
 	<!--#include virtual="./Universal.ssi"-->
 	" rel="stylesheet" type="text/css">
-<!--#elif expr="$vUniversal == getStyleFile" -->
+<!--#elif expr="$vFunction == getStyleFile" -->
 	<!--#if expr="$vDivision == 0" -->
 		Main.css
 	<!--#elif expr="$vDivision == 1" -->
@@ -23,54 +23,58 @@
 		Division3.css
 	<!--#else -->
 		Main.css
-<!--#elif expr="$vUniversal == getLogo" -->
+<!--#elif expr="$vFunction == getLogo" -->
 	<img id="idLogo" src="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	logoHTKB.jpg"><br>
-<!--#elif expr="$vUniversal == getNavBar" -->
+<!--#elif expr="$vFunction == getNavBar" -->
 	<a class=\"navBar\" href="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	Index.html">Home</a>
 	<a class=\"navBar\" href="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	Division1/Index.html">Web Programming</a>
 	<a class=\"navBar\" href="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	Division2/Index.html">Private Projects</a>
 	<a class=\"navBar\" href="
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	Division3/Index.html">Downloadable Projects</a>
-<!--#elif expr="$vUniversal == getNavigationHeader" -->
+<!--#elif expr="$vFunction == getNavigationHeader" -->
 	<h4>
 		Navigation
 	</h4>
-<!--#elif expr="$vUniversal == getInformationHeader" -->
+<!--#elif expr="$vFunction == getInformationHeader" -->
 	<h4>
 		Information
 	</h4>
-<!--#elif expr="$vUniversal == getInformation" -->
+<!--#elif expr="$vFunction == getInformation" -->
 	This is written with basic HTML and Server Side Integration.
-<!--#elif expr="$vUniversal == getGDR" -->
+<!--#elif expr="$vFunction == getGDR" -->
 	<a href='
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	downloads/GDR.zip'>You can download my Games Development Report here.</a></br>
-<!--#elif expr="$vUniversal == getWinRar" -->
+<!--#elif expr="$vFunction == getWinRar" -->
 	<a href='
-	<!--#set var="vUniversal" value="getPath"-->
+	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
 	downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>
-<!--#elif expr="$vUniversal == getFooter" -->
-	© Copyright 2012 All rights reserved<br>
-	House That Kamurai Built<br>
-<!--#elif expr="$vUniversal == getWebMaster" -->
-	Website managed by Kamurai.
-<!--#elif expr="$vUniversal == getPath" -->
+<!--#elif expr="$vFunction == getFooter" -->
+	<p id="idFooterContent">
+		© Copyright 2012 All rights reserved<br>
+		House That Kamurai Built<br>
+	</p>
+<!--#elif expr="$vFunction == getWebMaster" -->
+	<p id="idFooterManagement">
+		Website managed by Kamurai.
+	</p>
+<!--#elif expr="$vFunction == getPath" -->
 	<!--#if expr="$vLevel <= 0" -->
 		<!--#set var="vPath" value="./" -->
 	<!--#elif expr="$vLevel == 1" -->
