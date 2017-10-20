@@ -1,26 +1,18 @@
-function Navigation(vLevel)
+function fillNavigation(vLevel)
 {
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section1/Project1.html\">Basic HTML</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section3/Project1.php\">PHP</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.html\">Javascript</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section1/Project3.shtml\">Perl</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index.html\">Java</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index.html\">ASP.Net</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index.html\">Databases</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project1.html\">Oracle</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project2.html\">Derby</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project3.html\">MySQL</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project4.html\">SQL Server</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Section1/Section6/Project5.html\">Postgres</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br><br>");
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Section1/Index.html\">Python Web.py</a><br><br>");
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Section1/Index.html\">Ruby on Rails</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project1.html\">Oracle</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project2.html\">Derby</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project3.html\">MySQL</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project4.html\">SQL Server</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project5.html\">Postgres</a><br><br>");
 }
 
-function Title(vPage)
+function fillTitle(vPage)
 {
-	var vDefault = "HTKB Home Page"; 	var vResult = "";
-	if(vPage == 0)
+	var vResult = "";
+	var vDefault = "HTKB Home Page"; 
+		if(vPage == 0)
 	{
 		vResult += vDefault;
 	}
@@ -51,9 +43,10 @@ function Title(vPage)
     $(document).prop("title", vResult);
 }
 
-function Header(vPage)
+function fillHeader(vPage)
 {
-	var vDefault = "Database Programming";	var vResult = "";	var tableRowCenterMainHeader = document.createElement("h2");
+	var vResult = "";
+	var vDefault = "Database Programming";		var tableRowCenterMainHeader = document.createElement("h2");
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -85,9 +78,10 @@ function Header(vPage)
     tableRowCenterMainHeader.textContent = vResult;	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
 }
 
-function Content(vPage)
+function fillContent(vPage)
 {
-	var vDefault = "This section is dedicated to database based programming.";	var vResult = "";	var tableRowCenterMainContent = document.createElement("p");	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
+	var vResult = "";
+	var vDefault = "This section is dedicated to database based programming.";		var tableRowCenterMainContent = document.createElement("p");	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -119,8 +113,9 @@ function Content(vPage)
 	$( "#idCenterRowMain" ).append( tableRowCenterMainContent );	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage)
+function fillVersions(vPage)
 {
+	var vResult = "";
 	var vDefault = "";
     vDefault += "<a href=\"http://htkb.dyndns.org/Section1/Section6/Index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Section1/Section6/Index.php\">PHP</a><br>";
@@ -137,8 +132,7 @@ function Versions(vPage)
     vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Index.html\">Apache SSI</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:82/Section1/Section6/Index\">Python Web.py</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:83/Section1/Section6/Index\">Ruby on Rails</a><br>";
-    var vResult = "";
-	
+    
 	if(vPage == 0)
 	{
 		vResult += vDefault;

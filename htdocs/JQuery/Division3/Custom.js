@@ -1,16 +1,16 @@
-function Navigation(vLevel)
+function fillNavigation(vLevel)
 {
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project1.html\">Online Experience Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project2.html\">Game Maker Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project3.html\">Java Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project4.html\">C# Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section3/Project5.html\">C++ Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project1.html\">Online Experience Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project2.html\">Game Maker Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project3.html\">Java Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project4.html\">C# Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project5.html\">C++ Downloads</a><br><br>");
 }
 
-function Title(vPage)
+function fillTitle(vPage)
 {
-	var vDefault = "HTKB Home Page"; 
 	var vResult = "";
+	var vDefault = "HTKB Home Page"; 
 	
 	if(vPage == 0)
 	{
@@ -43,11 +43,11 @@ function Title(vPage)
     $(document).prop("title", vResult);
 }
 
-function Header(vPage)
+function fillHeader(vPage)
 {
-	var vDefault = "Downloadable Projects";
 	var vResult = "";
-
+	var vDefault = "Downloadable Projects";
+	
 	var tableRowCenterMainHeader = document.createElement("h2");
 
 	if(vPage == 0)
@@ -84,9 +84,9 @@ function Header(vPage)
 
 function Content(vPage, vLevel)
 {
-	var vDefault = "This section is dedicated to downloadable projects.";
 	var vResult = "";
-
+	var vDefault = "This section is dedicated to downloadable projects.";
+	
 	var tableRowCenterMainContent = document.createElement("p");
 	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
     	
@@ -147,9 +147,11 @@ function Content(vPage, vLevel)
 	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage)
+function fillVersions(vPage)
 {
-	var vDefault = "<a href=\"http://htkb.dyndns.org/Section3/Index.html\">HTML</a><br>";
+	var vResult = "";
+    var vDefault = "<a href=\"http://htkb.dyndns.org/Section3/Index.html\">HTML</a><br>";
+	
 	vDefault += "<a href=\"http://htkb.dyndns.org/Section3/Index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Section3/Index.php\">PHP</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Index.html\">HTML Javascript</a><br>";
@@ -165,7 +167,6 @@ function Versions(vPage)
     vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section3/Index.html\">Apache SSI</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:82/Section3/Index\">Python Web.py</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:83/Section3/Index\">Ruby on Rails</a><br>";
-    var vResult = "";
     
 	if(vPage == 0)
 	{

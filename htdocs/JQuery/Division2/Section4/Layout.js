@@ -1,11 +1,16 @@
-function WriteWebpage(vPage, vLevel, vSection)
+function buildLayout(vPage, vLevel, vDivision)
 {
-    BuildLayout(vPage, vLevel);
-    
-    FillLayout(vPage, vLevel, vSection);
+    buildHead(vLevel, vDivision);
+    buildBody(vPage, vLevel);
 }
 
-function BuildLayout(vPage, vLevel)
+function fillLayout(vPage, vLevel, vDivision)
+{
+    fillHead(vLevel, vDivision);
+    fillBody(vPage, vLevel);
+}
+
+function buildBody(vPage, vLevel)
 {
     var tableMain = document.createElement("table");
     tableMain.setAttribute("id", "idTableMain");
@@ -82,35 +87,22 @@ function BuildLayout(vPage, vLevel)
     //WebMaster();
 }
 
-function FillLayout(vPage, vLevel, vSection)
+function fillBody(vPage, vLevel)
 {
+    fillLogo(vLevel);
+    fillNavBar(vLevel);
     
-    FillHead(vLevel, vSection);
-    FillBody(vPage, vLevel);
-}
+    fillNavigationHeader();
+    fillNavigation(vLevel)
+    
+    fillTitle(vPage);
+    fillHeader(vPage);
+    fillContent(vPage);
+    
+    fillInformationHeader();
+	fillInformation();
+    fillVersions(vPage);
 
-function FillHead(vLevel, vSection)
-{
-    WriteHeader(vLevel-1, vSection);
-}
-
-function FillBody(vPage, vLevel)
-{
-    TitlePicture(vLevel);
-    NavBar(vLevel);
-    
-    NavigationHeader();
-    Navigation(vLevel)
-    
-    Title(vPage);
-    Header(vPage);
-    Content(vPage);
-    
-    InformationHeader();
-    Versions(vPage);
-
-	GDR();
-	WinRAR();
-    Footer();
-    WebMaster();
+    fillFooter();
+    fillWebMaster();
 }

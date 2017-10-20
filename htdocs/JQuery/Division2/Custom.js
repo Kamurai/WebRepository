@@ -1,27 +1,28 @@
-function Navigation(vLevel)
+function fillNavigation(vLevel)
 {
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section1/Index.html\">Gynowars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project2.html\">Assault</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project3.html\">Mars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section4/Index.html\">Renley</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section5/Index.html\">Antarrea</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Section6/Index.html\">Editations</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project7.html\">Truth</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project8.html\">Kingdoms</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project9.html\">Terminal World</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project10.html\">Monster Office Workplace</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project11.html\">Battle Princesses</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project12.html\">Sacred Offerings</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project13.html\">The Way</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project14.html\">Conspiratorium</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section2/Project15.html\">Conversion</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section6/Index.html\">Editations</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project7.html\">Truth</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project8.html\">Kingdoms</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project9.html\">Terminal World</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project10.html\">Monster Office Workplace</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project11.html\">Battle Princesses</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project12.html\">Sacred Offerings</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project13.html\">The Way</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project14.html\">Conspiratorium</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project15.html\">Conversion</a><br><br>");
 
 }
 
-function Title(vPage)
+function fillTitle(vPage)
 {
-	var vDefault = "HTKB Home Page"; 
 	var vResult = "";
+	var vDefault = "HTKB Home Page"; 
+	
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -34,39 +35,39 @@ function Title(vPage)
 	{
 		vResult += "Mars Projects";
 	}
-	else if(vPage == 7)
+	else if(vPage == 6)
 	{
 		vResult += "Truth";
 	}
-	else if(vPage == 8)
+	else if(vPage == 7)
 	{
 		vResult += "Kingdoms";
 	}
-	else if(vPage == 9)
+	else if(vPage == 8)
 	{
 		vResult += "Terminal World";
 	}
-	else if(vPage == 10)
+	else if(vPage == 9)
 	{
 		vResult += "Monster Office Workplace";
 	}
-	else if(vPage == 11)
+	else if(vPage == 10)
 	{
 		vResult += "Battle Princesses";
 	}
-	else if(vPage == 12)
+	else if(vPage == 11)
 	{
 		vResult += "Sacred Offerings";
 	}
-	else if(vPage == 13)
+	else if(vPage == 12)
 	{
 		vResult += "The Way";
 	}
-	else if(vPage == 14)
+	else if(vPage == 13)
 	{
 		vResult += "Conspiratorium";
 	}
-	else if(vPage == 15)
+	else if(vPage == 14)
 	{
 		vResult += "Conversion";
 	}
@@ -77,11 +78,11 @@ function Title(vPage)
     $(document).prop("title", vResult);
 }
 
-function Header(vPage)
+function fillHeader(vPage)
 {
-	var vDefault = "Private Projects";
 	var vResult = "";
-
+	var vDefault = "Private Projects";
+	
 	var tableRowCenterMainHeader = document.createElement("h2");
 
 	if(vPage == 0)
@@ -96,39 +97,39 @@ function Header(vPage)
 	{
 		vResult += "Mars Projects";
 	}
-	else if(vPage == 7)
+	else if(vPage == 6)
 	{
 		vResult += "Truth";
 	}
-	else if(vPage == 8)
+	else if(vPage == 7)
 	{
 		vResult += "Kingdoms";
 	}
-	else if(vPage == 9)
+	else if(vPage == 8)
 	{
 		vResult += "Terminal World";
 	}
-	else if(vPage == 10)
+	else if(vPage == 9)
 	{
 		vResult += "Monster Office Workplace";
 	}
-	else if(vPage == 11)
+	else if(vPage == 10)
 	{
 		vResult += "Battle Princesses";
 	}
-	else if(vPage == 12)
+	else if(vPage == 11)
 	{
 		vResult += "Sacred Offerings";
 	}
-	else if(vPage == 13)
+	else if(vPage == 12)
 	{
 		vResult += "The Way";
 	}
-	else if(vPage == 14)
+	else if(vPage == 13)
 	{
 		vResult += "Conspiratorium";
 	}		
-	else if(vPage == 15)
+	else if(vPage == 14)
 	{
 		vResult += "Conversion";
 	}
@@ -140,11 +141,11 @@ function Header(vPage)
 	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
 }
 
-function Content(vPage)
+function fillContent(vPage)
 {
-	var vDefault = "This section is dedicated to HTKB projects.";
 	var vResult = "";
-
+	var vDefault = "This section is dedicated to HTKB projects.";
+	
 	var tableRowCenterMainContent = document.createElement("p");
 	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
 	if(vPage == 0)
@@ -211,8 +212,9 @@ function Content(vPage)
 	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage)
+function fillVersions(vPage)
 {
+	var vResult = "";
 	var vDefault = "";
     vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Section2/Index.php\">PHP</a><br>";
@@ -229,8 +231,7 @@ function Versions(vPage)
     vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Index.html\">Apache SSI</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:82/Section2/Index\">Python Web.py</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:83/Section2/Index\">Ruby on Rails</a><br>";
-    var vResult = "";
-	
+    
 	if(vPage == 0)
 	{
 		vResult += vDefault;

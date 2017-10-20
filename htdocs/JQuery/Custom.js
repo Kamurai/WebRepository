@@ -1,14 +1,15 @@
-function Navigation(vLevel)
+function fillNavigation(vLevel)
 {
 	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
     $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media.html\">Media</a><br/><br/>"); //move to Custom
     $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>"); //move to Custom
 }
 
-function Title(vPage)
+function fillTitle(vPage)
 {
-    var vDefault = "HTKB Home Page";
     var vResult = "";
+    var vDefault = "HTKB Home Page";
+	
     if(vPage == 0)
     {
         vResult += vDefault;
@@ -32,10 +33,10 @@ function Title(vPage)
     $(document).prop("title", vResult);
 }
 
-function Header(vPage)
+function fillHeader(vPage)
 {
-    var vDefault = "Welcome to the House That Kamurai Built!";
     var vResult = "";
+    var vDefault = "Welcome to the House That Kamurai Built!";
     
     var tableRowCenterMainHeader = document.createElement("h2");
     
@@ -63,10 +64,10 @@ function Header(vPage)
     $( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
  }
 
-function Content(vPage)
+function fillContent(vPage)
 {
-    var vDefault = "The House That Kamurai Built is an entertainment company with the primary focus of increasing awesome by stimulating intelligent conversation and entertainment via discussion and game design.<br>Increase the Awesome with us!<br>";
     var vResult = "";
+    var vDefault = "The House That Kamurai Built is an entertainment company with the primary focus of increasing awesome by stimulating intelligent conversation and entertainment via discussion and game design.<br>Increase the Awesome with us!<br>";
     
     var tableRowCenterMainContent = document.createElement("p");
     tableRowCenterMainContent.setAttribute("id", "idCenterContent");
@@ -177,9 +178,11 @@ function Content(vPage)
 	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage)
+function fillVersions(vPage)
 {
+    var vResult = "";
     var vDefault = "";
+	
     vDefault += "<a href=\"http://htkb.dyndns.org/Index.html\">HTML</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Index.html\">HTML Javascript</a><br>";
@@ -195,7 +198,6 @@ function Versions(vPage)
     vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Index.html\">Apache SSI</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:83/Index.html\">Ruby on Rails</a><br>";
-    var vResult = "";
     
 	if(vPage == 0)
 	{

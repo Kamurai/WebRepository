@@ -1,21 +1,13 @@
-function Navigation(vLevel)
+function fillNavigation(vLevel)
 {
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section1/Project1.html\">Basic HTML</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section1/Project1.php\">PHP</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section2/Index.html\">Javascript</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel+1)+"Section1/Project3.shtml\">Perl</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section4/Index.html\">Java</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section5/Index.html\">ASP.Net</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Section1/Section6/Index.html\">Databases</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br><br>");
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:82/Section1/Index.html\">Python Web.py</a><br><br>");
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org:83/Section1/Index.html\">Ruby on Rails</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
 }
 
-function Title(vPage)
+function fillTitle(vPage)
 {
-	var vDefault = "HTKB Home Page"; 
 	var vResult = "";
+	var vDefault = "HTKB Home Page"; 
+	
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -43,11 +35,11 @@ function Title(vPage)
     $(document).prop("title", vResult);
 }
 
-function Header(vPage)
+function fillHeader(vPage)
 {
-	var vDefault = "Web Programming";
 	var vResult = "";
-
+	var vDefault = "Web Programming";
+	
 	var tableRowCenterMainHeader = document.createElement("h2");
 
 	if(vPage == 0)
@@ -79,11 +71,11 @@ function Header(vPage)
 	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
 }
 
-function Content(vPage)
+function fillContent(vPage)
 {
-	var vDefault = "";
 	var vResult = "";
-
+	var vDefault = "";
+	
 	var tableRowCenterMainContent = document.createElement("p");
 	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
 	
@@ -115,9 +107,11 @@ function Content(vPage)
 	$( "#idCenterContent" ).append( vResult );
 }
 
-function Versions(vPage)
+function fillVersions(vPage)
 {
-	var vDefault = "";
+	var vResult = "";
+    var vDefault = "";
+	
 	vDefault = "<a href=\"http://htkb.dyndns.org/Section1/Index.html\">HTML</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Section1/Index.php\">PHP</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Section1/Index.html\">HTML Javascript</a><br>";
@@ -133,7 +127,6 @@ function Versions(vPage)
 	vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Section1/Index.html\">Apache SSI</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:82/Section1/Index\">Python Web.py</a><br>";
     vDefault += "<a href=\"http://htkb.dyndns.org:83/Section1/Index\">Ruby on Rails</a><br>";
-    var vResult = "";
     
 	if(vPage == 0)
 	{

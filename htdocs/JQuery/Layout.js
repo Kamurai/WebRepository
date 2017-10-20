@@ -1,17 +1,14 @@
-function WriteWebpage(vPage, vLevel, vSection)
+function buildLayout(vPage, vLevel, vDivision)
 {
-    BuildLayout(vPage, vLevel);
-    
-    FillLayout(vPage, vLevel, vSection);
+    buildHead(vLevel, vDivision);
+    buildBody(vPage, vLevel);
 }
 
-function fillLayout(vPage, vLevel, vSection)
+function fillLayout(vPage, vLevel, vDivision)
 {
-    
-    FillHead(vLevel, vSection);
-    FillBody(vPage, vLevel);
+    fillHead(vLevel, vDivision);
+    fillBody(vPage, vLevel);
 }
-
 
 function buildBody(vPage, vLevel)
 {
@@ -93,18 +90,18 @@ function buildBody(vPage, vLevel)
 function fillBody(vPage, vLevel)
 {
     fillLogo(vLevel);
-    getNavBar(vLevel);
+    fillNavBar(vLevel);
     
     fillNavigationHeader();
-    Navigation(vLevel)
+    fillNavigation(vLevel)
     
-    Title(vPage);
-    Header(vPage);
-    Content(vPage);
+    fillTitle(vPage);
+    fillHeader(vPage);
+    fillContent(vPage);
     
     fillInformationHeader();
 	fillInformation();
-    Versions(vPage);
+    fillVersions(vPage);
 
     fillFooter();
     fillWebMaster();
