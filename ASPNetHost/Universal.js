@@ -1,4 +1,4 @@
-function getHead(vLevel, vCSS)
+function getHead(vLevel, vDivision)
 {
 	var vResult = "";
 	
@@ -6,7 +6,6 @@ function getHead(vLevel, vCSS)
 		vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
 		vResult += "<link runat='server' rel='shortcut icon' href='"+getPath(vLevel)+"favicon.ico')' type='image/x-icon' />";
 		vResult += "<link runat='server' rel='icon' href='"+getPath(vLevel)+"favicon.ico' type='image/ico' />";
-		
 		vResult += getStyle(vLevel, vDivision);
 	vResult += "</head>";
 }
@@ -102,7 +101,8 @@ function getInformation()
 	var vResult = "";
 	
     vResult += "This is written with generic ASP.NET and javascript.";
-	
+	vResult += "Other versions can be found here:";
+    
 	return vResult;
 }
 

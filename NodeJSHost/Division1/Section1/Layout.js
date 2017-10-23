@@ -5,25 +5,13 @@ exports.Navigation = function (vLevel)
 {
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index\">Gynowars</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2\">Assault</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3\">Mars</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index\">Renley</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index\">Antarrea</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Index\">Global</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section2/Index\">Grendol</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section3/Index\">Utopia</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section4/Index\">Elvia</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6\">Truth</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7\">Kingdoms</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8\">Terminal World</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9\">Monster Office Workplace</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10\">Battle Princesses</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11\">Sacred Offerings</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12\">The Way</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13\">Conspiratorium</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14\">Conversion</a><br><br>";
-    
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section6/Index\">Databases</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section6/Project1\">Oracle</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section6/Project2\">Derby</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section6/Project3\">MySQL</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section6/Project4\">SQL Server</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section6/Project5\">Postgres</a><br><br>";
+	
 	return vResult;
 }
 

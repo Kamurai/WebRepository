@@ -1,11 +1,29 @@
 def getHead(vDivision):
-	vResult = '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
-	vResult += '<link href=' + getCSS(vDivision) + ' rel=\"stylesheet\" type="text/css">'
+	vResult = ''
+	
+	vResult += '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
+	vResult += getStyle(vLevel, vDivsion)
+	
 	return vResult
 	
-def getCSS(vDivision):
+def getStyle(vDivision):
+	vResult = ''
+	
+	vResult += '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
+	vResult += '<link href=\"'
+	vResult += getStyleFile(vDivision)
+	vResult += '\" rel=\"stylesheet\" type="text/CSS">'
+	
+	return vResult
+	
+def getStyleFile(vDivision):
+	vResult = ''
+	vDefault = ''
+	
+	vDefault += '/static/Styles/Main.css'
+
 	if vDivision == '0':
-		vResult = '/static/Styles/Main.css'
+		vResult = vDefault
 	elif vDivision == '1':
 		vResult = '/static/Styles/Division1.css'
 	elif vDivision == '2':
@@ -13,30 +31,82 @@ def getCSS(vDivision):
 	elif vDivision == '3':
 		vResult = '/static/Styles/Division3.css'
 	else:
-		vResult = '/static/Styles/Main.css'
-	return vResult
-
-def getHeader():
-	vResult = '<img id=\"idLogo\" src=' + getLogo() + '>'
+		vResult = vDefault
+		
 	return vResult
 
 def getLogo():
-	return "/static/Pictures/logoHTKB.jpg"
+	vResult = ''
+	
+	vResult += '<img id=\"idLogo\" src=\"/static/Pictures/logoHTKB.jpg\">'
+	
+	return vResult
 
 def getNavBar():
-	vResult = '<a class=\'navBar\' href=\'/Index\'>Home</a>'
+	vResult = ''
+	
+	vResult += '<a class=\'navBar\' href=\'/Index\'>Home</a>'
 	vResult += '<a class=\'navBar\' href=\'/Division1/Index\'>Web Programming</a>'
 	vResult += '<a class=\'navBar\' href=\'/Division2/Index\'>Private Projects</a>'
 	vResult += '<a class=\'navBar\' href=\'/Division3/Index\'>Downloadable Projects</a>'
+	
 	return vResult
 
+def getNavigationHeader():
+	vResult = ''
+	
+	vResult += '<h4>'
+	vResult += 'Navigation'
+	vResult += '</h4>'
+	
+	return vResult
+	
+def getInformationHeader():
+	vResult = ''
+	
+	vResult += '<h4>'
+	vResult += 'Information'
+	vResult += '</h4>'
+	
+	return vResult
+	
+def getInformation():
+	vResult = ''
+	
+	vResult += 'This is written with generic ASP.NET and javascript.'
+	vResult += 'Other versions can be found here:'
+	
+	return vResult
+	
+def getGDR():
+	vResult = ''
+	
+	vResult += '<a href=\"http://htkb.dyndns.org/downloads/GDR.zip\">You can download my Games Development Report here.</a></br>'
+	
+	return vResult
+	
+def getWinRar():
+	vResult = ''
+	
+	vResult += '<a href=\"http://htkb.dyndns.org/downloads/wrar371.exe\">You may need WinRar to open zip files from this site.</a></br>'
+	
+	return vResult
+	
 def getFooter():
-	vResult = '<p id=\'idFooterContent\'>'
+	vResult += ''
+	
+	vResult += '<p id=\'idFooterContent\'>'
 	vResult += '	Copyright 2012 All rights reserved<br>'
 	vResult += '	House That Kamurai Built<br>'
 	vResult += '</p>'
+	
+	return vResult
+	
+def getWebMaster():
+	vResult += ''
+	
 	vResult += '<p id=\'idFooterManagement\'>'
 	vResult += '	Website managed by Kamurai.'
 	vResult += '</p>'
-	return vResult
 	
+	return vResult

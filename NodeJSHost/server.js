@@ -1,656 +1,784 @@
-var http = require('http');
-var fs = require('fs');
+var vHTTP = require('http');
+var vFS = require('fs');
 
-//var universal = require('./Universal');
+//var vUniversal = require('./Universal');
 
 //create a server object:
-http.createServer
+vHTTP.createServer
 (
-    function (req, res) 
+    function (vRequest, vResponse) 
     {
-        res.writeHead(200, {'Content-Type': 'text/html'});
+        vResponse.writeHead(200, {'Content-Type': 'text/html'});
         
-        if(req.url == '/' || req.url == '/Index')
+        if(vRequest.url == '/' || vRequest.url == '/Index')
         {
-            var layout = require('./Layout');
-            var custom = require('./Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Layout');
+            var vCustom = require('./Custom');
         
             var vPage  = 0;
             var vLevel = 0;
-            var vSection = 0;
-            var vCSS = "Main.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 0;
+			
+			vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/AboutUs')
+        else if(vRequest.url == '/AboutUs')
         {
-            var layout = require('./Layout');
-            var custom = require('./Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Layout');
+            var vCustom = require('./Custom');
         
             var vPage  = 1;
             var vLevel = 0;
-            var vSection = 0;
-            var vCSS = "Main.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 0;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Media')
+        else if(vRequest.url == '/Media')
         {
-            var layout = require('./Layout');
-            var custom = require('./Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Layout');
+            var vCustom = require('./Custom');
         
             var vPage  = 2;
             var vLevel = 0;
-            var vSection = 0;
-            var vCSS = "Main.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 0;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Minecraft')
+        else if(vRequest.url == '/Minecraft')
         {
-            var layout = require('./Layout');
-            var custom = require('./Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Layout');
+            var vCustom = require('./Custom');
         
             var vPage  = 3;
             var vLevel = 0;
-            var vSection = 0;
-            var vCSS = "Main.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 0;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }        
-        else if(req.url == '/Section1/Index')
+        else if(vRequest.url == '/Division1/Index')
         {
-            var layout = require('./Section1/Layout');
-            var custom = require('./Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Layout');
+            var vCustom = require('./Division1/Custom');
         
             var vPage  = 0;
             var vLevel = 1;
-            var vSection = 3;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section2/Index')
+        else if(vRequest.url == '/Division1/Section1/Index')
         {
-            var layout = require('./Section1/Section2/Layout');
-            var custom = require('./Section1/Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 0;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section2/Project4')
+        else if(vRequest.url == '/Division1/Section1/Project1')
         {
-            var layout = require('./Section1/Section2/Layout');
-            var custom = require('./Section1/Section2/Custom');
-        
-            var vPage  = 4;
-            var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
-        }
-        else if(req.url == '/Section1/Section4/Index')
-        {
-            var layout = require('./Section1/Section4/Layout');
-            var custom = require('./Section1/Section4/Custom');
-        
-            var vPage  = 0;
-            var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
-        }
-        else if(req.url == '/Section1/Section5/Index')
-        {
-            var layout = require('./Section1/Section5/Layout');
-            var custom = require('./Section1/Section5/Custom');
-        
-            var vPage  = 0;
-            var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
-        }
-        else if(req.url == '/Section1/Section6/Index')
-        {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
-        
-            var vPage  = 0;
-            var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
-        }
-        else if(req.url == '/Section1/Section6/Project1')
-        {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 1;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section6/Project2')
+        else if(vRequest.url == '/Division1/Section1/Project2')
         {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 2;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section6/Project3')
+        else if(vRequest.url == '/Division1/Section1/Project3')
         {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 3;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section6/Project4')
+        else if(vRequest.url == '/Division1/Section1/Project4')
         {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 4;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section1/Section6/Project5')
+        else if(vRequest.url == '/Division1/Section1/Project5')
         {
-            var layout = require('./Section1/Section6/Layout');
-            var custom = require('./Section1/Section6/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division1/Section1/Layout');
+            var vCustom = require('./Division1/Section1/Custom');
         
             var vPage  = 5;
             var vLevel = 2;
-            var vSection = 1;
-            var vCSS = "Section1.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 1;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Index')
+        else if(vRequest.url == '/Division2/Index')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 0;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project2')
+        else if(vRequest.url == '/Division2/Project2')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 2;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project3')
+        else if(vRequest.url == '/Division2/Project3')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 3;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project76')
+        else if(vRequest.url == '/Division2/Project76')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 6;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project7')
+        else if(vRequest.url == '/Division2/Project7')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 7;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project8')
+        else if(vRequest.url == '/Division2/Project8')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 8;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project9')
+        else if(vRequest.url == '/Division2/Project9')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 9;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project10')
+        else if(vRequest.url == '/Division2/Project10')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 10;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project11')
+        else if(vRequest.url == '/Division2/Project11')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 11;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project12')
+        else if(vRequest.url == '/Division2/Project12')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 12;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project13')
+        else if(vRequest.url == '/Division2/Project13')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 13;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Project14')
+        else if(vRequest.url == '/Division2/Project14')
         {
-            var layout = require('./Section2/Layout');
-            var custom = require('./Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Layout');
+            var vCustom = require('./Division2/Custom');
         
             var vPage  = 14;
             var vLevel = 1;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section1/Index')
+        else if(vRequest.url == '/Division2/Section1/Index')
         {
-            var layout = require('./Section2/Section1/Layout');
-            var custom = require('./Section2/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section1/Layout');
+            var vCustom = require('./Division2/Section1/Custom');
         
             var vPage  = 0;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section1/Project1')
+        else if(vRequest.url == '/Division2/Section1/Project1')
         {
-            var layout = require('./Section2/Section1/Layout');
-            var custom = require('./Section2/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section1/Layout');
+            var vCustom = require('./Division2/Section1/Custom');
         
             var vPage  = 1;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section1/Project2')
+        else if(vRequest.url == '/Division2/Section1/Project2')
         {
-            var layout = require('./Section2/Section1/Layout');
-            var custom = require('./Section2/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section1/Layout');
+            var vCustom = require('./Division2/Section1/Custom');
         
             var vPage  = 2;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section1/Project3')
+        else if(vRequest.url == '/Division2/Section1/Project3')
         {
-            var layout = require('./Section2/Section1/Layout');
-            var custom = require('./Section2/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section1/Layout');
+            var vCustom = require('./Division2/Section1/Custom');
         
             var vPage  = 3;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section4/Index')
+        else if(vRequest.url == '/Division2/Section4/Index')
         {
-            var layout = require('./Section2/Section4/Layout');
-            var custom = require('./Section2/Section4/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section4/Layout');
+            var vCustom = require('./Division2/Section4/Custom');
         
             var vPage  = 4;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section4/Project1')
+        else if(vRequest.url == '/Division2/Section4/Project1')
         {
-            var layout = require('./Section2/Section4/Layout');
-            var custom = require('./Section2/Section4/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section4/Layout');
+            var vCustom = require('./Division2/Section4/Custom');
         
             var vPage  = 1;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section4/Project2')
+        else if(vRequest.url == '/Division2/Section4/Project2')
         {
-            var layout = require('./Section2/Section4/Layout');
-            var custom = require('./Section2/Section4/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section4/Layout');
+            var vCustom = require('./Division2/Section4/Custom');
         
             var vPage  = 2;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( vLayout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
         }
-        else if(req.url == '/Section2/Section5/Index')
+        else if(vRequest.url == '/Division2/Section5/Index')
         {
-            var layout = require('./Section2/Section5/Layout');
-            var custom = require('./Section2/Section5/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Layout');
+            var vCustom = require('./Division2/Section5/Custom');
         
             var vPage  = 0;
             var vLevel = 2;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Index')
+        else if(vRequest.url == '/Division2/Section5/Section1/Index')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 0;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project1')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project1')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 1;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project2')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project2')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 2;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project3')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project3')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 3;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project4')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project4')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+			var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 4;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project5')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project5')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 5;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section1/Project6')
+        else if(vRequest.url == '/Division2/Section5/Section1/Project6')
         {
-            var layout = require('./Section2/Section5/Section1/Layout');
-            var custom = require('./Section2/Section5/Section1/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section1/Layout');
+            var vCustom = require('./Division2/Section5/Section1/Custom');
         
             var vPage  = 6;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section2/Index')
+        else if(vRequest.url == '/Division2/Section5/Section2/Index')
         {
-            var layout = require('./Section2/Section5/Section2/Layout');
-            var custom = require('./Section2/Section5/Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section2/Layout');
+            var vCustom = require('./Division2/Section5/Section2/Custom');
         
             var vPage  = 0;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section2/Project1')
+        else if(vRequest.url == '/Division2/Section5/Section2/Project1')
         {
-            var layout = require('./Section2/Section5/Section2/Layout');
-            var custom = require('./Section2/Section5/Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section2/Layout');
+            var vCustom = require('./Division2/Section5/Section2/Custom');
         
             var vPage  = 1;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section2/Project2')
+        else if(vRequest.url == '/Division2/Section5/Section2/Project2')
         {
-            var layout = require('./Section2/Section5/Section2/Layout');
-            var custom = require('./Section2/Section5/Section2/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section2/Layout');
+            var vCustom = require('./Division2/Section5/Section2/Custom');
         
             var vPage  = 2;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section3/Index')
+        else if(vRequest.url == '/Division2/Section5/Section3/Index')
         {
-            var layout = require('./Section2/Section5/Section3/Layout');
-            var custom = require('./Section2/Section5/Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section3/Layout');
+            var vCustom = require('./Division2/Section5/Section3/Custom');
         
             var vPage  = 0;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section3/Project1')
+        else if(vRequest.url == '/Division2/Section5/Section3/Project1')
         {
-            var layout = require('./Section2/Section5/Section3/Layout');
-            var custom = require('./Section2/Section5/Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section3/Layout');
+            var vCustom = require('./Division2/Section5/Section3/Custom');
         
             var vPage  = 1;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section4/Index')
+        else if(vRequest.url == '/Division2/Section5/Section4/Index')
         {
-            var layout = require('./Section2/Section5/Section4/Layout');
-            var custom = require('./Section2/Section5/Section4/Custom');
+            var vLayout = require('./Division2/Section5/Section4/Layout');
+            var vCustom = require('./Division2/Section5/Section4/Custom');
         
             var vPage  = 0;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section2/Section5/Section4/Project1')
+        else if(vRequest.url == '/Division2/Section5/Section4/Project1')
         {
-            var layout = require('./Section2/Section5/Section4/Layout');
-            var custom = require('./Section2/Section5/Section4/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division2/Section5/Section4/Layout');
+            var vCustom = require('./Division2/Section5/Section4/Custom');
         
             var vPage  = 1;
             var vLevel = 3;
-            var vSection = 2;
-            var vCSS = "Section2.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 2;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section3/Project2')
+        else if(vRequest.url == '/Division3/Index')
         {
-            var layout = require('./Section3/Layout');
-            var custom = require('./Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
+        
+            var vPage  = 0;
+            var vLevel = 1;
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
+        }
+        else if(vRequest.url == '/Division3/Project1')
+        {
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
+        
+            var vPage  = 1;
+            var vLevel = 1;
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
+        }
+        else if(vRequest.url == '/Division3/Project2')
+        {
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
         
             var vPage  = 2;
             var vLevel = 1;
-            var vSection = 3;
-            var vCSS = "Section3.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section3/Project3')
+        else if(vRequest.url == '/Division3/Project3')
         {
-            var layout = require('./Section3/Layout');
-            var custom = require('./Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
         
             var vPage  = 3;
             var vLevel = 1;
-            var vSection = 3;
-            var vCSS = "Section3.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section3/Project4')
+        else if(vRequest.url == '/Division3/Project4')
         {
-            var layout = require('./Section3/Layout');
-            var custom = require('./Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
         
             var vPage  = 4;
             var vLevel = 1;
-            var vSection = 3;
-            var vCSS = "Section3.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/Section3/Project5')
+        else if(vRequest.url == '/Division3/Project5')
         {
-            var layout = require('./Section3/Layout');
-            var custom = require('./Section3/Custom');
+            var vUniversal = require('./Universal');
+            var vLayout = require('./Division3/Layout');
+            var vCustom = require('./Division3/Custom');
         
             var vPage  = 5;
             var vLevel = 1;
-            var vSection = 3;
-            var vCSS = "Section3.css";
-            res.write( layout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            var vDivision = 3;
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel);
+			vResponse.write( "</HTML>" );
         }
-        else if(req.url == '/favicon.ico')
+        else if(vRequest.url == '/Pictures/favicon.ico')
         {
-            fs.readFile('favicon.ico', 
+            vFS.readFile('Pictures/favicon.ico', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'image/html'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'image/html'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
-        else if(req.url == '/logo_HouseThatKamuraiBuilt_blueonblack.jpg')
+        else if(vRequest.url == '/Pictures/logoHTKB.jpg')
         {
-            fs.readFile('logo_HouseThatKamuraiBuilt_blueonblack.jpg', 
+            vFS.readFile('Pictures/logoHTKB.jpg', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'image/html'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'image/html'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
-        else if(req.url == '/Main.css')
+        else if(vRequest.url == '/Styles/Main.css')
         {
-            fs.readFile('Main.css', 
+            vFS.readFile('Styles/Main.css', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'text/css'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'text/css'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
-        else if(req.url == '/Section1/Section1.css')
+        else if(vRequest.url == '/Styles/Division1.css')
         {
-            fs.readFile('Section1/Section1.css', 
+            vFS.readFile('Styles/Division1.css', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'text/css'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'text/css'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
-        else if(req.url == '/Section2/Section2.css')
+        else if(vRequest.url == '/Styles/Division2.css')
         {
-            fs.readFile('Section2/Section2.css', 
+            vFS.readFile('Styles/Division2.css', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'text/css'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'text/css'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
-        else if(req.url == '/Section3/Section3.css')
+        else if(vRequest.url == '/Styles/Division3.css')
         {
-            fs.readFile('Section3/Section3.css', 
+            vFS.readFile('Styles/Division3.css', 
                 function(err, data) 
                 {
-                    res.writeHead(200, {'Content-Type': 'text/css'});
-                    res.write(data);
-                    res.end();
+                    vResponse.writeHead(200, {'Content-Type': 'text/css'});
+                    vResponse.write(data);
+                    vResponse.end();
                 });
         }
         
@@ -659,11 +787,11 @@ http.createServer
         fs.readFile('Index.html', 
         function(err, data) 
         {
-            res.writeHead(200, {'Content-Type': 'text/html'});
+            vResponse.writeHead(200, {'Content-Type': 'text/html'});
             
             
-            res.write(data);
-            res.end();
+            vResponse.write(data);
+            vResponse.end();
         });
         */
     }

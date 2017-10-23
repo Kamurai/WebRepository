@@ -1,6 +1,8 @@
 import web
 import Universal
 import Navigation
+import Title
+import ContentHeader
 import Content
 import Versions
 
@@ -13,16 +15,12 @@ urls = (
     '/Media', 'Media',
     '/Minecraft', 'Minecraft',
     '/Division1/Index', 'Division1',
-    '/Division1/Project8', 'Section1P8',
-    '/Division1/Section2/Index', 'Section1_2',
-    '/Division1/Section4/Index', 'Section1_4',
-    '/Division1/Section5/Index', 'Section1_5',
-    '/Division1/Section6/Index', 'Section1_6',
-    '/Division1/Section6/Project1', 'Section1_6P1',
-    '/Division1/Section6/Project2', 'Section1_6P2',
-    '/Division1/Section6/Project3', 'Section1_6P3',
-    '/Division1/Section6/Project4', 'Section1_6P4',
-    '/Division1/Section6/Project5', 'Section1_6P5',
+    '/Division1/Section1/Index', 'Section1_1',
+    '/Division1/Section1/Project1', 'Section1_1P1',
+    '/Division1/Section1/Project2', 'Section1_1P2',
+    '/Division1/Section1/Project3', 'Section1_1P3',
+    '/Division1/Section1/Project4', 'Section1_1P4',
+    '/Division1/Section1/Project5', 'Section1_1P5',
     '/Division2/Index', 'Division2',
     '/Division2/Project2', 'Section2P2',
     '/Division2/Project3', 'Section2P3',
@@ -67,10 +65,15 @@ urls = (
 
 common_globals = {'getHead': Universal.getHead,
                     'getCSS': Universal.getCSS,
-                    'getHeader': Universal.getHeader,
                     'getLogo': Universal.getLogo,
                     'getNavBar': Universal.getNavBar,
+                    'getNavigationHeader': Universal.getNavigationHeader,
+                    'getInformationHeader': Universal.getInformationHeader,
+                    'getInformation': Universal.getInformation,
+                    'getGDR': Universal.getGDR,
+                    'getWinRar': Universal.getWinRar,
                     'getFooter': Universal.getFooter,
+                    'getWebMaster': Universal.getWebMaster,
                     'getNavigation': Navigation.getNavigation,
                     'getContent': Content.getContent,
                     'getVersions': Versions.getVersions
@@ -83,19 +86,16 @@ render = web.template.render('templates/')#, base='Layout')
 static = web.template.render('static/')
 
 Main = web.template.render('templates/', globals=common_globals)
-Section1 = web.template.render('templates/Division1/', globals=common_globals)
-Section1_2 = web.template.render('templates/Section1/Section2/', globals=common_globals)
-Section1_4 = web.template.render('templates/Section1/Section4/', globals=common_globals)
-Section1_5 = web.template.render('templates/Section1/Section5/', globals=common_globals)
-Section1_6 = web.template.render('templates/Section1/Section6/', globals=common_globals)
-Section2 = web.template.render('templates/Division2/', globals=common_globals)
+Division1 = web.template.render('templates/Division1/', globals=common_globals)
+Section1_1 = web.template.render('templates/Division1/Section1/', globals=common_globals)
+Division2 = web.template.render('templates/Division2/', globals=common_globals)
 Section2_1 = web.template.render('templates/Section2/Section1/', globals=common_globals)
 Section2_4 = web.template.render('templates/Section2/Section4/', globals=common_globals)
 Section2_5 = web.template.render('templates/Section2/Section5/', globals=common_globals)
 Section2_5_2 = web.template.render('templates/Section2/Section5/Section2/', globals=common_globals)
 Section2_5_3 = web.template.render('templates/Section2/Section5/Section3/', globals=common_globals)
 Section2_5_4 = web.template.render('templates/Section2/Section5/Section4/', globals=common_globals)
-Section3 = web.template.render('templates/Division3/', globals=common_globals)
+Division3 = web.template.render('templates/Division3/', globals=common_globals)
 
 class static:
     def GET(self):
@@ -139,74 +139,46 @@ class Division1:
         vLevel = '1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
-        
-class Section1P8:
-    def GET(self):
-        vPage = '8'
-        vLevel = '1'
-        vDivision = '1'
-        return Main.Layout(vPage, vLevel, vDivision)
-        
-class Section1_2:
+
+class Section1_1:
     def GET(self):
         vPage = '0'
-        vLevel = '1_2'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1_4:
-    def GET(self):
-        vPage = '0'
-        vLevel = '1_4'
-        vDivision = '1'
-        return Main.Layout(vPage, vLevel, vDivision)
-        
-class Section1_5:
-    def GET(self):
-        vPage = '0'
-        vLevel = '1_5'
-        vDivision = '1'
-        return Main.Layout(vPage, vLevel, vDivision)
-        
-class Section1_6:
-    def GET(self):
-        vPage = '0'
-        vLevel = '1_6'
-        vDivision = '1'
-        return Main.Layout(vPage, vLevel, vDivision)
-        
-class Section1_6P1:
+class Section1_1P1:
     def GET(self):
         vPage = '1'
-        vLevel = '1_6'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1_6P2:
+class Section1_1P2:
     def GET(self):
         vPage = '2'
-        vLevel = '1_6'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1_6P3:
+class Section1_1P3:
     def GET(self):
         vPage = '3'
-        vLevel = '1_6'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1_6P4:
+class Section1_1P4:
     def GET(self):
         vPage = '4'
-        vLevel = '1_6'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         
-class Section1_6P5:
+class Section1_1P5:
     def GET(self):
         vPage = '5'
-        vLevel = '1_6'
+        vLevel = '1_1'
         vDivision = '1'
         return Main.Layout(vPage, vLevel, vDivision)
         

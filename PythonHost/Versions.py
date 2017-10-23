@@ -1,6 +1,9 @@
-def getVersions(vKey):
+def getVersions(vPage, vLevel):
+	vKey = vLevel+'_'+vPage
+
 	vResult = ''
 	vDefault = ''
+	
 	vDefault += '<a href=\'http://htkb.dyndns.org/Index.html\'>HTML</a><br>'
 	vDefault += '<a href=\'http://htkb.dyndns.org/Index.php\'>PHP</a><br>'
 	vDefault += '<a href=\'http://htkb.dyndns.org/Javascript/Index.html\'>HTML Javascript</a><br>'
@@ -17,9 +20,9 @@ def getVersions(vKey):
 	vDefault += '<a href=\'http://htkb.dyndns.org/SSI/Index.html\'>Apache SSI</a><br>'
 	vDefault += '<a href=\'http://htkb.dyndns.org:83/Index\'>Ruby on Rails</a></br>'
 	
-	if vKey == '0':
-		vResult = vDefault
-	elif vKey == '0_1P':
+	if vKey == '0_0':
+		vResult += vDefault
+	elif vKey == '0_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/AboutUs.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/AboutUs.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/AboutUs.html\'>HTML Javascript</a><br>'
@@ -35,7 +38,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/AboutUs\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/AboutUs.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/AboutUs\'>Ruby on Rails</a></br>'
-	elif vKey == '0_2P':
+	elif vKey == '0_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Media.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Media.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Media.html\'>HTML Javascript</a><br>'
@@ -51,7 +54,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Media\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Media.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Media\'>Ruby on Rails</a></br>'
-	elif vKey == '0_3P':
+	elif vKey == '0_3':
 		vResult += '<a href=\'http://htkb.dyndns.org/Minecraft.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Minecraft.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Minecraft.html\'>HTML Javascript</a><br>'
@@ -67,7 +70,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Minecraft\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Minecraft\'>Ruby on Rails</a></br>'
-	elif vKey == '1':
+	elif vKey == '1_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Index.html\'>HTML Javascript</a><br>'
@@ -83,151 +86,103 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '1_2':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section2/Index.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section2/Index.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section2/Index.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section2/Index.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section2/Index.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section2/Index.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section2/Index\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section2/Index.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section2/Index.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section2/Index.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section2/Index.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section2/Index.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1/Section2/Index\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section2/Index.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section2/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '1_4':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section4/Index.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section4/Index.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section4/Index.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section4/Index.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section4/Index.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section4/Index.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section4/Index\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section4/Index.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section4/Index.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section4/Index.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section4/Index.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section4/Index.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1/Section4/Index\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section4/Index.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section4/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '1_5':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section5/Index.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section5/Index.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section5/Index.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section5/Index.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section5/Index.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section5/Index.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section5/Index\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section5/Index.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section5/Index.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section5/Index.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section5/Index.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section5/Index.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1/Section5/Index\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section5/Index.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section5/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Index.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Index.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Index.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Index.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Index.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Index.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Index\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Index.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Index.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Index.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Index.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Index.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_6/Index\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Index.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6_1P':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project1.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project1.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Project1.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Project1.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Project1.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Project1.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Project1\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project1.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Project1.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Project1.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Project1.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Project1.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_6/Project1\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Project1.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6_2P':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project2.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project2.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Project2.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Project2.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Project2.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Project2.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Project2\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project2.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Project2.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Project2.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Project2.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Project2.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_6/Project2\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Project2.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6_3P':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project3.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project3.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Project3.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Project3.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Project3.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Project3.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Project3\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project3.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Project3.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Project3.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Project3.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Project3.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_6/Project3\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Project3.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Project3\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6_4P':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Project4.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Project4.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Project4.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Project4.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Project4\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Project4.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Project4.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Project4.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Project4.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_6/Project4\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Project4.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Project4\'>Ruby on Rails</a></br>'
-	elif vKey == '1_6_5P':
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.html\'>HTML</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.php\'>PHP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section6/Project4.html\'>HTML Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section6/Project4.html\'>JQuery</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section6/Project4.asp\'>ASP VBscript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section6/Project4.aspx\'>ASP.NET Javascript</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section6/Project4\'>Node JS</a></br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section6/Project4.shtml\'>Perl</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section6/Project4.jsp\'>JSP</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section6/Project4.xhtml\'>JSF</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section6/Project4.cshtml\'>ASP.NET Web App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section6/Project4.aspx\'>ASP.NET Webform</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_6/Project4\'>ASP.NET MVC App</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section6/Project4.html\'>Apache SSI</a><br>'
-		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section6/Project4\'>Ruby on Rails</a></br>'
-	elif vKey == '2':
+	elif vKey == '1_1':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Index.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Index.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Index.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Index.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Index.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Index.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Index\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Index.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Index.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Index.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Index.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Index.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_1/Index\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Index.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Index\'>Ruby on Rails</a></br>'
+	elif vKey == '1_1_1':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project1.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project1.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Project1.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Project1.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project1.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project1.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Project1\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project1.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project1.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project1.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project1.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Project1.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_1/Project1\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Project1.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Project1\'>Ruby on Rails</a></br>'
+	elif vKey == '1_1_2':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project2.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project2.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Project2.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Project2.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project2.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project2.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Project2\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project2.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project2.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project2.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project2.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Project2.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_1/Project2\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Project2.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Project2\'>Ruby on Rails</a></br>'
+	elif vKey == '1_1_3':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project3.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project3.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Project3.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Project3.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project3.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project3.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Project3\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project3.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project3.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project3.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project3.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Project3.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division1_1/Project3\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Project3.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Project3\'>Ruby on Rails</a></br>'
+	elif vKey == '1_1_4':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Project4.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Project4.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project4.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project4.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Project4\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project4.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project4.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project4.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Project4.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_1/Project4\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Project4.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Project4\'>Ruby on Rails</a></br>'
+	elif vKey == '1_1_5':
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.html\'>HTML</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.php\'>PHP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division1/Section1/Project4.html\'>HTML Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/JQuery/Division1/Section1/Project4.html\'>JQuery</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project4.asp\'>ASP VBscript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project4.aspx\'>ASP.NET Javascript</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:84/Division1/Section1/Project4\'>Node JS</a></br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/Division1/Section1/Project4.shtml\'>Perl</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project4.jsp\'>JSP</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project4.xhtml\'>JSF</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project4.cshtml\'>ASP.NET Web App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Section1/Project4.aspx\'>ASP.NET Webform</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Division1_1/Project4\'>ASP.NET MVC App</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division1/Section1/Project4.html\'>Apache SSI</a><br>'
+		vResult += '<a href=\'http://htkb.dyndns.org:83/Division1/Section1/Project4\'>Ruby on Rails</a></br>'
+	elif vKey == '2_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Index.html\'>HTML Javascript</a><br>'
@@ -243,7 +198,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_2P':
+	elif vKey == '2_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project2.html\'>HTML Javascript</a><br>'
@@ -259,7 +214,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_3P':
+	elif vKey == '2_3':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project3.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project3.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project3.html\'>HTML Javascript</a><br>'
@@ -275,7 +230,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project3\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project3.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project3\'>Ruby on Rails</a></br>'
-	elif vKey == '2_6P':
+	elif vKey == '2_6':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project6.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project6.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project6.html\'>HTML Javascript</a><br>'
@@ -291,7 +246,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project6\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project6.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project6\'>Ruby on Rails</a></br>'
-	elif vKey == '2_7P':
+	elif vKey == '2_7':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project7.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project7.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project7.html\'>HTML Javascript</a><br>'
@@ -307,7 +262,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project7\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project7.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project7\'>Ruby on Rails</a></br>'
-	elif vKey == '2_8P':
+	elif vKey == '2_8':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project8.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project8.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project8.html\'>HTML Javascript</a><br>'
@@ -323,7 +278,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project8\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project8.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project8\'>Ruby on Rails</a></br>'
-	elif vKey == '2_9P':
+	elif vKey == '2_9':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project9.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project9.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project9.html\'>HTML Javascript</a><br>'
@@ -339,7 +294,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project9\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project9.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project9\'>Ruby on Rails</a></br>'
-	elif vKey == '2_10P':
+	elif vKey == '2_10':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project10.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project10.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project10.html\'>HTML Javascript</a><br>'
@@ -355,7 +310,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project10\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project10.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project10\'>Ruby on Rails</a></br>'
-	elif vKey == '2_11P':
+	elif vKey == '2_11':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project10.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project10.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project10.html\'>HTML Javascript</a><br>'
@@ -371,7 +326,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project10\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project10.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project10\'>Ruby on Rails</a></br>'
-	elif vKey == '2_12P':
+	elif vKey == '2_12':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project12.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project12.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project12.html\'>HTML Javascript</a><br>'
@@ -387,7 +342,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project12\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project12.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project12\'>Ruby on Rails</a></br>'
-	elif vKey == '2_13P':
+	elif vKey == '2_13':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project13.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project13.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project13.html\'>HTML Javascript</a><br>'
@@ -403,7 +358,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project13\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project13.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project13\'>Ruby on Rails</a></br>'
-	elif vKey == '2_14P':
+	elif vKey == '2_14':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project14.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Project14.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project14.html\'>HTML Javascript</a><br>'
@@ -419,7 +374,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project14\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Project14.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Project14\'>Ruby on Rails</a></br>'
-	elif vKey == '2_1':
+	elif vKey == '2_1_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section1/Project2.html\'>HTML Javascript</a><br>'
@@ -435,7 +390,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section1/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section1/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section1/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_1_1P':
+	elif vKey == '2_1_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Section1/Section6/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Section1/Section6/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Section1/Section6/Project1.html\'>HTML Javascript</a><br>'
@@ -451,7 +406,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Section1_6/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Section1/Section6/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Section1/Section6/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '2_1_2P':
+	elif vKey == '2_1_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section1/Project2.html\'>HTML Javascript</a><br>'
@@ -467,7 +422,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section1/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section1/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section1/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_1_3P':
+	elif vKey == '2_1_3':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project3.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section1/Project3.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section1/Project3.html\'>HTML Javascript</a><br>'
@@ -483,7 +438,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section1/Project3\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section1/Project3.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section1/Project3\'>Ruby on Rails</a></br>'
-	elif vKey == '2_4':
+	elif vKey == '2_4_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section4/Index.html\'>HTML Javascript</a><br>'
@@ -499,7 +454,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section4/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section4/Index.html\'>Apache SSI</a><br>'						  
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section4/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_4_1P':
+	elif vKey == '2_4_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section4/Project1.html\'>HTML Javascript</a><br>'
@@ -515,7 +470,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section4/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section4/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section4/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '2_4_2P':
+	elif vKey == '2_4_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section4/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section4/Project2.html\'>HTML Javascript</a><br>'
@@ -531,7 +486,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section4/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section4/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section4/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5':
+	elif vKey == '2_5_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Index.html\'>HTML Javascript</a><br>'
@@ -547,7 +502,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Index.html\'>Apache SSI</a><br>'	
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1':
+	elif vKey == '2_5_1_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Index.html\'>HTML Javascript</a><br>'
@@ -563,7 +518,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_1P':
+	elif vKey == '2_5_1_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project1.html\'>HTML Javascript</a><br>'
@@ -579,7 +534,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_2P':
+	elif vKey == '2_5_1_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project2.html\'>HTML Javascript</a><br>'
@@ -595,7 +550,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_3P':
+	elif vKey == '2_5_1_3':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project3.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project3.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project3.html\'>HTML Javascript</a><br>'
@@ -611,7 +566,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project3\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project3.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project3\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_4P':
+	elif vKey == '2_5_1_4':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project4.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project4.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project4.html\'>HTML Javascript</a><br>'
@@ -627,7 +582,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project4\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project4.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project4\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_5P':
+	elif vKey == '2_5_1_5':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project5.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project5.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project5.html\'>HTML Javascript</a><br>'
@@ -643,7 +598,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project5\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project5.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project5\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_1_6P':
+	elif vKey == '2_5_1_6':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project6.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section1/Project6.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section1/Project6.html\'>HTML Javascript</a><br>'
@@ -659,7 +614,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section1/Project6\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section1/Project6.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section1/Project6\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_2':
+	elif vKey == '2_5_2_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section2/Index.html\'>HTML Javascript</a><br>'
@@ -675,7 +630,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section2/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section2/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section2/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_2_1P':
+	elif vKey == '2_5_2_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section2/Project1.html\'>HTML Javascript</a><br>'
@@ -691,7 +646,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section2/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section2/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section2/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_2_2P':
+	elif vKey == '2_5_2_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section2/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section2/Project2.html\'>HTML Javascript</a><br>'
@@ -707,7 +662,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section2/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section2/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section2/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_3':
+	elif vKey == '2_5_3_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section3/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section3/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section3/Index.html\'>HTML Javascript</a><br>'
@@ -723,7 +678,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section3/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section3/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section3/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_3_1P':
+	elif vKey == '2_5_3_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Minecraft.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Minecraft.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Minecraft.html\'>HTML Javascript</a><br>'
@@ -739,7 +694,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Minecraft\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Minecraft\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_4':
+	elif vKey == '2_5_4_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section4/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section4/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section4/Index.html\'>HTML Javascript</a><br>'
@@ -755,7 +710,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section4/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section4/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section4/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '2_5_4_1P':
+	elif vKey == '2_5_4_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section4/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division2/Section5/Section4/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Section4/Project1.html\'>HTML Javascript</a><br>'
@@ -771,7 +726,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Section5/Section4/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Section4/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division2/Section5/Section4/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '3':
+	elif vKey == '3_0':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Index.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Index.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Index.html\'>HTML Javascript</a><br>'
@@ -787,7 +742,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Index\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division3/Index.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division3/Index\'>Ruby on Rails</a></br>'
-	elif vKey == '3_1P':
+	elif vKey == '3_1':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project1.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project1.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project1.html\'>HTML Javascript</a><br>'
@@ -803,7 +758,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project1\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division3/Project1.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division3/Project1\'>Ruby on Rails</a></br>'
-	elif vKey == '3_2P':
+	elif vKey == '3_2':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project2.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project2.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project2.html\'>HTML Javascript</a><br>'
@@ -819,7 +774,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project2\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division3/Project2.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division3/Project2\'>Ruby on Rails</a></br>'
-	elif vKey == '3_3P':
+	elif vKey == '3_3':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project3.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project3.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project3.html\'>HTML Javascript</a><br>'
@@ -835,7 +790,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project3\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division3/Project3.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division3/Project3\'>Ruby on Rails</a></br>'
-	elif vKey == '3_4P':
+	elif vKey == '3_4':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project4.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project4.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project4.html\'>HTML Javascript</a><br>'
@@ -851,7 +806,7 @@ def getVersions(vKey):
 		vResult += '<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division3/Project4\'>ASP.NET MVC App</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/SSI/Division3/Project4.html\'>Apache SSI</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org:83/Division3/Project4\'>Ruby on Rails</a></br>'
-	elif vKey == '3_5P':
+	elif vKey == '3_5':
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project5.html\'>HTML</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Division3/Project5.php\'>PHP</a><br>'
 		vResult += '<a href=\'http://htkb.dyndns.org/Javascript/Division3/Project5.html\'>HTML Javascript</a><br>'

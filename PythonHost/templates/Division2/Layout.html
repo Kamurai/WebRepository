@@ -8,7 +8,7 @@ $def with (vPage, vLevel, vDivision)
     <table id="idTableMain">
         <tr id="idHeaderRow">
             <td id="idHeaderRowCenter" colspan="3">
-				$:getHeader()
+				$:getLogo()
             </td>
         </tr>
         <tr id="idNavigationRow">
@@ -18,26 +18,24 @@ $def with (vPage, vLevel, vDivision)
         </tr>				
 		<tr id="idCenterRow">
             <td id="idCenterRowLeft">
-                <h4>
-                    Navigation
-                </h4>
+                $:getNavigationHeader()
 				$:getNavigation(vLevel)
   			</td>
             <td id="idCenterRowMain">
-                $:getContent(vLevel+'_'+vPage+'P')
+            	$:getTitle(vPage, vLevel);
+				$:getContentHeader(vPage, vLevel);
+			    $:getContent(vPage, vLevel)
             </td>
 			<td id="idCenterRowRight">
-                <h4>
-                    Information
-                </h4>
-				This was written with Python 2.7 and web.py.<br><br>
-                Other versions of this page are here:<br>
-            	$:getVersions(vLevel+'_'+vPage+'P')
+                $:getInformationHeader()
+				$:getInformation()
+            	$:getVersions(vPage, vLevel)
             </td>   
 		</tr>
         <tr id="idFooterRow">
             <td id="idFooterMain" colspan="3">
                 $:getFooter()
+            	$:getWebMaster()
             </td>
         </tr>
     </table>

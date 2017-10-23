@@ -83,25 +83,54 @@ exports.getHead = function (vLevel, vDivision)
 	var vResult = "";
 	
 	vResult += "<head>";
-    vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-	vResult += "<link href='"+vDivision+"' rel='stylesheet' type='text/CSS'>";
+		vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
+		vResult += getStyle(vLevel, vDivision);
 	vResult += "</head>";
     
     return vResult;
 }
 
-exports.getLayout = function (vPage, vLevel, vDivision)
+function getStyle(vDivision)
 {
-    var vResult = "";
+	var vResult = "";
 	
-	vResult += "<html>";
-    vResult +=     getHead(vLevel, vDivision);
-    vResult += "<body id=\"idBody\">";
-    vResult +=     custom.WriteBody(vPage, vLevel);
-    vResult += "</body>";
-    vResult += "</html>";
-    
-    return vResult;
+	vResult += "<link href='";
+	vResult += getPath(vLevel)"'Styles/'";
+	vResult += getStyleFile(vDivision);
+	vResult += "' rel='stylesheet' type='text/CSS'>";
+
+	return vResult;	
+}
+
+function getStyleFile(vDivision)
+{
+	var vResult = "";
+	var vDefault = "";
+	
+	vDefault = "Main.css";
+	
+	if(vDivision == 0)
+	{
+		vResult = vDefault;
+	}
+	else if(vDivision == 1)
+	{
+		vResult = "Division1.css";
+	}
+	else if(vDivision == 2)
+	{
+		vResult = "Division2.css";
+	}
+	else if(vDivision == 3)
+	{
+		vResult = "Division3.css";
+	}
+	else
+	{
+		vResult = vDefault;
+	}
+	
+	return vResult;
 }
 
 exports.getLogo = function (vLevel)
@@ -113,7 +142,7 @@ exports.getLogo = function (vLevel)
     return vResult;
 }
 
-exports.NavBar = function (vLevel)
+exports.getNavBar = function (vLevel)
 {
     var vResult = "";
 	
@@ -125,7 +154,7 @@ exports.NavBar = function (vLevel)
     return vResult;
 }
 
-exports.GetNavigationHeader = function ()
+exports.getNavigationHeader = function ()
 {
     var vResult = "";
 	
@@ -157,20 +186,20 @@ exports.getInformation = function ()
     return vResult;
 }
 
-exports.GDR = function ()
+exports.getGDR = function ()
 {
 	var vResult = "";
 	
-	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";	
+	vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";	
     
     return vResult;
 }
 
-exports.WinRAR = function ()
+exports.getWinRar = function ()
 {
 	var vResult = "";
 	
-	vResult += "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
+	vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
     
     return vResult;
 }
