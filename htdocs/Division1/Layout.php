@@ -9,7 +9,7 @@
         return $vResult;
     }
     
-    function getLayout($vPage, $vLevel, $vDivision)
+    function getBody($vPage, $vLevel);
     {
         $vResult = '
         <html>'.

@@ -1,9 +1,11 @@
 <?php
+	include '../Universal.php';
 	include './Layout.php';
+	include './Custom.php';
 	
     $vPage = 9;
     $vLevel = 1;
     $vDivision = 2;
-    #Overall body
-	WriteLayout($vPage, $vLevel, $vDivision);    
+    echo getHead($vLevel, $vDivision);
+	echo getBody($vPage, $vLevel);
 ?>

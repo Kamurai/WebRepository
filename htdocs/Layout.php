@@ -12,12 +12,10 @@
         return $vResult;
     }
     
-    function getLayout($vPage, $vLevel, $vDivision)
+    function getBody($vPage, $vLevel);
     {
         $vResult = '
-        <html>'.
-			getHeader($vLevel, $vDivision)
-        .'<body id=\'idBody\'>
+        <body id=\'idBody\'>
             <table id=\'idTableMain\'>
                 <tr id=\'idHeaderRow\'>
                     <td id=\'idHeaderRowCenter\' colspan=\'3\'>'.
@@ -55,8 +53,7 @@
                 </tr>
             </table>
         </body>
-        </html>
-		';
+        ';
 		
 		return $vResult;
     }
