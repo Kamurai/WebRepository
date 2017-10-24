@@ -3,62 +3,64 @@
 	
     function getTitle($vPage)
     {
-        $vResult = '<title>';
-        $Default = 'Private Projects';
+        $vResult = '';
+        $vDefault = '';
+		
+		$vDefault = $vDefault.'Private Projects';
         
-        if($vPage==0)
-        {
-            $vResult = $vResult.$Default;
-        }
-        else if($vPage==2)
-        {
-            $vResult = $vResult.'Assault CCG';
-        }
-        else if($vPage==3)
-        {
-            $vResult = $vResult.'Mars Projects';
-        }
-        else if($vPage==6)
-        {
-            $vResult = $vResult.'Truth';
-        }
-        else if($vPage==7)
-        {
-            $vResult = $vResult.'Kingdoms';
-        }
-        else if($vPage==8)
-        {
-            $vResult = $vResult.'Terminal World';
-        }
-        else if($vPage==9)
-        {
-            $vResult = $vResult.'Monster Office Workplace';
-        }
-        else if($vPage==10)
-        {
-            $vResult = $vResult.'Battle Princesses';
-        }
-        else if($vPage==11)
-        {
-            $vResult = $vResult.'Sacred Offerings';
-        }
-        else if($vPage==12)
-        {
-            $vResult = $vResult.'The Way';
-        }
-        else if($vPage==13)
-        {
-            $vResult = $vResult.'Conspiratorium';
-        }
-        else if($vPage==14)
-        {
-            $vResult = $vResult.'Conversion';
-        }
-        else
-        {
-            $vResult = $vResult.$Default;
-        }
-        
+        $vResult = $vResult.'<title>';
+			if($vPage==0)
+			{
+				$vResult = $vResult.$vDefault;
+			}
+			else if($vPage==2)
+			{
+				$vResult = $vResult.'Assault CCG';
+			}
+			else if($vPage==3)
+			{
+				$vResult = $vResult.'Mars Projects';
+			}
+			else if($vPage==6)
+			{
+				$vResult = $vResult.'Truth';
+			}
+			else if($vPage==7)
+			{
+				$vResult = $vResult.'Kingdoms';
+			}
+			else if($vPage==8)
+			{
+				$vResult = $vResult.'Terminal World';
+			}
+			else if($vPage==9)
+			{
+				$vResult = $vResult.'Monster Office Workplace';
+			}
+			else if($vPage==10)
+			{
+				$vResult = $vResult.'Battle Princesses';
+			}
+			else if($vPage==11)
+			{
+				$vResult = $vResult.'Sacred Offerings';
+			}
+			else if($vPage==12)
+			{
+				$vResult = $vResult.'The Way';
+			}
+			else if($vPage==13)
+			{
+				$vResult = $vResult.'Conspiratorium';
+			}
+			else if($vPage==14)
+			{
+				$vResult = $vResult.'Conversion';
+			}
+			else
+			{
+				$vResult = $vResult.$vDefault;
+			}
         $vResult = $vResult.'</title>';
         
         return $vResult;
@@ -67,181 +69,169 @@
     function getContentHeader($vPage)
     {
         $vResult = '';
-        $Default = 'Private Projects';
+        $vDefault = '';
         
-        if($vPage==0)
-        {
-            $vResult = $vResult.$Default;
-        }
-        else if($vPage==2)
-        {
-            $vResult = $vResult.'Assault CCG';
-        }
-        else if($vPage==3)
-        {
-            $vResult = $vResult.'Mars Projects';
-        }
-        else if($vPage==6)
-        {
-            $vResult = $vResult.'Truth';
-        }
-        else if($vPage==7)
-        {
-            $vResult = $vResult.'Kingdoms';
-        }
-        else if($vPage==8)
-        {
-            $vResult = $vResult.'Terminal World';
-        }
-        else if($vPage==9)
-        {
-            $vResult = $vResult.'Monster Office Workplace';
-        }
-        else if($vPage==10)
-        {
-            $vResult = $vResult.'Battle Princesses';
-        }
-        else if($vPage==11)
-        {
-            $vResult = $vResult.'Sacred Offerings';
-        }
-        else if($vPage==12)
-        {
-            $vResult = $vResult.'The Way';
-        }
-        else if($vPage==13)
-        {
-            $vResult = $vResult.'Conspiratorium';
-        }
-        else if($vPage==14)
-        {
-            $vResult = $vResult.'Conversion';
-        }
-        else
-        {
-            $vResult = $vResult.$Default;
-        }
+		$vDefault = $vDefault.'Private Projects';
         
+        $vResult = $vResult.'<h2>';
+			if($vPage==0)
+			{
+				$vResult = $vResult.$vDefault;
+			}
+			else if($vPage==2)
+			{
+				$vResult = $vResult.'Assault CCG';
+			}
+			else if($vPage==3)
+			{
+				$vResult = $vResult.'Mars Projects';
+			}
+			else if($vPage==6)
+			{
+				$vResult = $vResult.'Truth';
+			}
+			else if($vPage==7)
+			{
+				$vResult = $vResult.'Kingdoms';
+			}
+			else if($vPage==8)
+			{
+				$vResult = $vResult.'Terminal World';
+			}
+			else if($vPage==9)
+			{
+				$vResult = $vResult.'Monster Office Workplace';
+			}
+			else if($vPage==10)
+			{
+				$vResult = $vResult.'Battle Princesses';
+			}
+			else if($vPage==11)
+			{
+				$vResult = $vResult.'Sacred Offerings';
+			}
+			else if($vPage==12)
+			{
+				$vResult = $vResult.'The Way';
+			}
+			else if($vPage==13)
+			{
+				$vResult = $vResult.'Conspiratorium';
+			}
+			else if($vPage==14)
+			{
+				$vResult = $vResult.'Conversion';
+			}
+			else
+			{
+				$vResult = $vResult.$vDefault;
+			}
+        $vResult = $vResult.'</h2>';
+		
         return $vResult;
     }
     
     function getContent($vPage)
     {
         $vResult = '';
-        $Default = '
-            This section is dedicated to HTKB projects.
-        ';
+        $vDefault = '';
+		
+		$vDefault = $vDefault.'This section is dedicated to HTKB projects.';
         
         if($vPage==0)
         {
-            $vResult = $vResult.$Default;
+            $vResult = $vResult.$vDefault;
         }
         else if($vPage==2)
         {
-            $vResult = $vResult.'
-                This section is dedicated CCG project Assault.
-            ';
+            $vResult = $vResult.'This section is dedicated CCG project Assault.';
         }
         else if($vPage==3)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the Mars centered project Opposition.
-            ';
+            $vResult = $vResult.'This section is dedicated to the Mars centered project Opposition.';
         }
         else if($vPage==6)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the MMO RTS project Truth.  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
-            ';
+            $vResult = $vResult.'This section is dedicated to the MMO RTS project Truth.  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.';
         }
         else if($vPage==7)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the digital board game project Kingdoms.  Explore the world\'s Kingdoms, get rich, get strong and conquer.
-            ';
+            $vResult = $vResult.'This section is dedicated to the digital board game project Kingdoms.  Explore the world\'s Kingdoms, get rich, get strong and conquer.';
         }
         else if($vPage==8)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the simulation MMO centered project Terminal World.  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
-						the zombies?  Can you survive?
-            ';
+            $vResult = $vResult.'This section is dedicated to the simulation MMO centered project Terminal World.  This is a virtual environment where a zombie outbreak is about to happen.  Can you beatthe zombies?  Can you survive?';
         }
         else if($vPage==9)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the card and board game project \'Monster Office Workplace\'.  These monsters mean serious business.<br/>
-                        Can you earn the most credit and smooze your way into a promotion?<br/>
-                    </br>
-                    </br>
-                        You can download the Tabletop Simulator mod here:<br/>
-                        <a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\'>Steam Workshop</a><br/>
-                    </br>
-                    </br>
-                        Monster Office Ruleset v0.1<br/>
-                        <br/>
-                        1) Player resources:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Resource deck: Work (Resource) Cards<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Project Deck: Cards representing project tiles.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Player tokens<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) Credit tokens<br/>
-                        2) Setup:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Each player gets 3 resource cards, and 1 project card.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Before the game, each player plays their project card.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Going first:<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Each player plays 1 card face down and everyone reveals at once(do not discard).<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The highest non-common card (ties are eliminated), goes first.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) In the case that everyone ties, perform rounds until someone wins.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) If all cards are played, then 1 card is dealt to each player face up until a winner occurs.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) Each player keeps the cards he/she is dealt.<br/>
-                        3) Grid map to which project tiles are played.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1)  Player must place to a valid space, if available.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2)  If no space is available, then the player chooses how projects shift.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)  The player must shift the least amount of projects.<br/>
-                        4) Projects require different resources by type and number/quantity.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) When meeting project requirements, place a player token on the card stack<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Points of credit are earned upon project completion by project rewards (Listed on the project tile.).<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) There are 6 \'colors\' of resources with the following quantities:<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 1 card with quantity of 5.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 2 cards with quantity of 4.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 3 cards with quantity of 3.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) 4 cards with quantity of 2.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) 5 cards with quantity of 1.<br/>
-                        5) Actions:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Draw Project: only 1.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Play Project: only 1.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Draw Resources: 3 resources.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) Play Resources: As many as available.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Place a number of tokens equal to the number on the resource card on the project tile.<br/>
-                        6) Restrictions<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Hand Limit: each player has a hand limit of 6 cards.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Workhorse: the player with the lowest score has no hand limit.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Any player with a score of zero counts as a Workhorse.<br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) People tied for Workhorse are all Workhorses.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Workhorse is evaluated at each person\'s discard phase, i.e. a player only discards if they are NOT a workhorse
-                                at THEIR discard phase.<br/>
-                        7) Scoring:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) A player who completes the project collects the project.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) A player gets 1 point of credit for completing a project\'s color set (exactly) once the project has been completed.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) A player gets 1 point of credit for each player token on the project that has been completed.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) A player gets a number of points of credit equal to the number of color sets on the project tile,
-                                for being the one to complete a project.<br/>
-                        8) End Conditions:<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Game ends when 10 projects have been completed.<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Player with the most \'credit\' wins.<br/>	
-            ';
+            $vResult = $vResult.'This section is dedicated to the card and board game project \'Monster Office Workplace\'.  These monsters mean serious business.<br/>';
+                        $vResult = $vResult.'Can you earn the most credit and smooze your way into a promotion?<br/>';
+                    $vResult = $vResult.'</br>';
+                    $vResult = $vResult.'</br>';
+                        $vResult = $vResult.'You can download the Tabletop Simulator mod here:<br/>';
+                        $vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\'>Steam Workshop</a><br/>';
+                    $vResult = $vResult.'</br>';
+                    $vResult = $vResult.'</br>';
+                        $vResult = $vResult.'Monster Office Ruleset v0.1<br/>';
+                        $vResult = $vResult.'<br/>';
+                        1) Player resources:<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) Resource deck: Work (Resource) Cards<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Project Deck: Cards representing project tiles.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) Player tokens<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;4) Credit tokens<br/>';
+                        2) Setup:<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) Each player gets 3 resource cards, and 1 project card.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Before the game, each player plays their project card.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) Going first:<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Each player plays 1 card face down and everyone reveals at once(do not discard).<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The highest non-common card (ties are eliminated), goes first.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) In the case that everyone ties, perform rounds until someone wins.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) If all cards are played, then 1 card is dealt to each player face up until a winner occurs.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) Each player keeps the cards he/she is dealt.<br/>';
+                        3) Grid map to which project tiles are played.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1)  Player must place to a valid space, if available.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2)  If no space is available, then the player chooses how projects shift.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)  The player must shift the least amount of projects.<br/>';
+                        4) Projects require different resources by type and number/quantity.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) When meeting project requirements, place a player token on the card stack<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Points of credit are earned upon project completion by project rewards (Listed on the project tile.).<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) There are 6 \'colors\' of resources with the following quantities:<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 1 card with quantity of 5.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 2 cards with quantity of 4.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 3 cards with quantity of 3.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) 4 cards with quantity of 2.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) 5 cards with quantity of 1.<br/>';
+                        5) Actions:<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) Draw Project: only 1.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Play Project: only 1.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) Draw Resources: 3 resources.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;4) Play Resources: As many as available.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Place a number of tokens equal to the number on the resource card on the project tile.<br/>';
+                        6) Restrictions<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) Hand Limit: each player has a hand limit of 6 cards.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Workhorse: the player with the lowest score has no hand limit.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Any player with a score of zero counts as a Workhorse.<br/>';
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) People tied for Workhorse are all Workhorses.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) Workhorse is evaluated at each person\'s discard phase, i.e. a player only discards if they are NOT a workhorse';
+                                at THEIR discard phase.<br/>';
+                        7) Scoring:<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) A player who completes the project collects the project.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) A player gets 1 point of credit for completing a project\'s color set (exactly) once the project has been completed.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;3) A player gets 1 point of credit for each player token on the project that has been completed.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;4) A player gets a number of points of credit equal to the number of color sets on the project tile,';
+                                for being the one to complete a project.<br/>';
+                        8) End Conditions:<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;1) Game ends when 10 projects have been completed.<br/>';
+                            &nbsp;&nbsp;&nbsp;&nbsp;2) Player with the most \'credit\' wins.<br/>';
         }
         else if($vPage==10)
         {
-            $vResult = $vResult.'
-                This section is dedicated to the card game project \'Battle Princesses\'.  Ever wanted to see your favorite princess battle for the kingdom?
-                These princess aren\'t your helpless maidens, but valiant warriors themselves.
-            ';
+            $vResult = $vResult.'This section is dedicated to the card game project \'Battle Princesses\'.  Ever wanted to see your favorite princess battle for the kingdom?';
+            $vResult = $vResult.'These princess aren\'t your helpless maidens, but valiant warriors themselves.';
         }
         else if($vPage==11)
         {
-            $vResult = $vResult.'
-                	This section is dedicated to the board game project \'Sacred Offerings\'.<br/>
+            $vResult = $vResult.'This section is dedicated to the board game project \'Sacred Offerings\'.<br/>';
 							Being a god is hard, you have to eat, but
 							don\'t want to fall out favor with the people more than the other deities.
 							Draw people to worship you, but be discerning about who is sacrificed.
@@ -354,8 +344,7 @@
         }
         else if($vPage==12)
         {
-            $vResult = $vResult.'
-                	This section is dedicated to the card game project \'The Way\'.<br/>
+            $vResult = $vResult.'This section is dedicated to the card game project \'The Way\'.<br/>';
 							You seek to find enlightment by contemplating the elements.
 							Escape the binds of the world and the board to reach enlightment and win.
 						</br>
@@ -438,8 +427,7 @@
         }
         else if($vPage==13)
         {
-            $vResult = $vResult.'
-                	This section is dedicated to the board game project \'Conspiratorium\'.<br/>
+            $vResult = $vResult.'This section is dedicated to the board game project \'Conspiratorium\'.<br/>';
 							A game of assassins and CIA, you must remember who is friend and who is not.
 						</br>
 						</br>
@@ -493,8 +481,7 @@
         }
         else if($vPage==14)
         {
-            $vResult = $vResult.'
-                	This section is dedicated to the board game project \'Conversion\'.<br/>
+            $vResult = $vResult.'This section is dedicated to the board game project \'Conversion\'.<br/>';
 							Compete on the elemental market by processing elements and becoming the elemental kingpin.
 						</br>
 						</br>
@@ -597,7 +584,7 @@
         }
         else
         {
-            $vResult = $vResult.$Default;
+            $vResult = $vResult.$vDefault;
         }
         
         return $vResult;
@@ -606,275 +593,253 @@
     function getVersions($vPage)
     {
         $vResult = '';
-        $Default = '
-            <a href=\'http://htkb.dyndns.org/Division2/Index.html\'>HTML</a><br>
-			<a href=\'http://htkb.dyndns.org/Division2/Index.shtml\'>Perl</a><br>
-			<a href=\'http://htkb.dyndns.org/SSI/Division2/Index.html\'>Apache SSI</a><br>
-			<a href=\'http://htkb.dyndns.org/Javascript/Division2/Index.html\'>HTML Javascript</a><br>
-			<a href=\'http://htkb.dyndns.org/JQuery/Division2/Index.html\'>JQuery</a><br>
-			<a href=\'http://htkb.dyndns.org/Angular/Division2/Index.html\'>Angular JS</a><br>
-			<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Index.xhtml\'>JSF</a><br>
-			<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Index.jsp\'>JSP</a><br>
-			<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Index.jsp\'>JSP Spring MVC</a><br>
-			<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Index.aspx\'>ASP.NET Javascript</a><br>
-			<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Index.asp\'>ASP VBscript</a><br>
-			<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Index.cshtml\'>ASP.NET Web App</a><br>
-			<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Index.aspx\'>ASP.NET Webform</a><br>
-			<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Index\'>ASP.NET MVC App</a><br>
-			<a href=\'http://htkb.dyndns.org:82/Division2/Index\'>Python Web.py</a><br>
-			<a href=\'http://htkb.dyndns.org:83/Division2/Index\'>Ruby on Rails</a><br>
-			<a href=\'http://htkb.dyndns.org:84/Division2/Index\'>Node JS</a><br>
-        ';
+        $vDefault = '';
+		
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Division2/Index.html\'>HTML</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Division2/Index.shtml\'>Perl</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Index.html\'>Apache SSI</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Index.html\'>HTML Javascript</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Index.html\'>JQuery</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Index.html\'>Angular JS</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Index.xhtml\'>JSF</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Index.jsp\'>JSP</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Index.jsp\'>JSP Spring MVC</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Index.aspx\'>ASP.NET Javascript</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Index.asp\'>ASP VBscript</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Index.cshtml\'>ASP.NET Web App</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Index.aspx\'>ASP.NET Webform</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Index\'>ASP.NET MVC App</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:82/Division2/Index\'>Python Web.py</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:83/Division2/Index\'>Ruby on Rails</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:84/Division2/Index\'>Node JS</a><br>';
         
         if($vPage==0)
         {
-            $vResult = $vResult.$Default;
+            $vResult = $vResult.$vDefault;
         }
         else if($vPage==2)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project2.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project2.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project2.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project2.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project2.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project2.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project2.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project2.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project2.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project2.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project2.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project2.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project2.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project2\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project2\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project2\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project2\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project2.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project2.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project2.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project2.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project2.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project2.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project2.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project2.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project2.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project2.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project2.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project2.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project2.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project2\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project2\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project2\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project2\'>Node JS</a><br>';
         }
         else if($vPage==3)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project3.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project3.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project3.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project3.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project3.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project3.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project3.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project3.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project3.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project3.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project3.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project3.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project3.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project3\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project3\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project3\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project3\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project3.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project3.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project3.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project3.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project3.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project3.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project3.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project3.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project3.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project3.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project3.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project3.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project3.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project3\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project3\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project3\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project3\'>Node JS</a><br>';
         }
         else if($vPage==6)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project6.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project6.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project6.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project6.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project6.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project6.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project6.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project6.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project6.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project6.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project6.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project6.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project6.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project6\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project6\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project6\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project6\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project6.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project6.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project6.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project6.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project6.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project6.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project6.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project6.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project6.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project6.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project6.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project6.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project6.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project6\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project6\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project6\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project6\'>Node JS</a><br>';
         }
         else if($vPage==7)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project7.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project7.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project7.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project7.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project7.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project7.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project7.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project7.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project7.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project7.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project7.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project7.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project7.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project7\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project7\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project7\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project7\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project7.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project7.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project7.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project7.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project7.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project7.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project7.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project7.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project7.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project7.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project7.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project7.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project7.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project7\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project7\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project7\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project7\'>Node JS</a><br>';
         }
         else if($vPage==8)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project8.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project8.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project8.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project8.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project8.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project8.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project8.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project8.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project8.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project8.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project8.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project8.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project8.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project8\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project8\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project8\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project8\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project8.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project8.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project8.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project8.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project8.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project8.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project8.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project8.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project8.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project8.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project8.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project8.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project8.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project8\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project8\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project8\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project8\'>Node JS</a><br>';
         }
         else if($vPage==9)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project9.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project9.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project9.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project9.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project9.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project9.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project9.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project9.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project9.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project9.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project9.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project9.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project9.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project9\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project9\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project9\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project9\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project9.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project9.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project9.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project9.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project9.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project9.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project9.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project9.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project9.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project9.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project9.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project9.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project9.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project9\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project9\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project9\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project9\'>Node JS</a><br>';
         }
         else if($vPage==10)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project10.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project10.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project10.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project10.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project10.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project10.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project10.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project10.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project10.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project10.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project10.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project10.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project10.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project10\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project10\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project10\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project10\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project10.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project10.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project10.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project10.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project10.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project10.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project10.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project10.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project10.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project10.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project10.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project10.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project10.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project10\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project10\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project10\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project10\'>Node JS</a><br>';
         }
         else if($vPage==11)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project11.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project11.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project11.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project11.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project11.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project11.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project11.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project11.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project11.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project11.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project11.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project11.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project11.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project11\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project11\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project11\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project11\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project11.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project11.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project11.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project11.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project11.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project11.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project11.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project11.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project11.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project11.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project11.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project11.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project11.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project11\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project11\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project11\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project11\'>Node JS</a><br>';
         }
         else if($vPage==12)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project12.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project12.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project12.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project12.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project12.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project12.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project12.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project12.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project12.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project12.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project12.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project12.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project12.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project12\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project12\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project12\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project12\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project12.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project12.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project12.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project12.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project12.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project12.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project12.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project12.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project12.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project12.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project12.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project12.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project12.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project12\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project12\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project12\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project12\'>Node JS</a><br>';
         }
         else if($vPage==13)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project13.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project13.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project13.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project13.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project13.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project13.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project13.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project13.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project13.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project13.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project13.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project13.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project13.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project13\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project13\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project13\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project13\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project13.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project13.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project13.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project13.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project13.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project13.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project13.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project13.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project13.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project13.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project13.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project13.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project13.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project13\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project13\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project13\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project13\'>Node JS</a><br>';
         }
         else if($vPage==14)
         {
-            $vResult = $vResult.'
-                <a href=\'http://htkb.dyndns.org/Division2/Project14.html\'>HTML</a><br>
-				<a href=\'http://htkb.dyndns.org/Division2/Project14.shtml\'>Perl</a><br>
-				<a href=\'http://htkb.dyndns.org/SSI/Division2/Project14.html\'>Apache SSI</a><br>
-				<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project14.html\'>HTML Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project14.html\'>JQuery</a><br>
-				<a href=\'http://htkb.dyndns.org/Angular/Division2/Project14.html\'>Angular JS</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project14.xhtml\'>JSF</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project14.jsp\'>JSP</a><br>
-				<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project14.jsp\'>JSP Spring MVC</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project14.aspx\'>ASP.NET Javascript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project14.asp\'>ASP VBscript</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project14.cshtml\'>ASP.NET Web App</a><br>
-				<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project14.aspx\'>ASP.NET Webform</a><br>
-				<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project14\'>ASP.NET MVC App</a><br>
-				<a href=\'http://htkb.dyndns.org:82/Division2/Project14\'>Python Web.py</a><br>
-				<a href=\'http://htkb.dyndns.org:83/Division2/Project14\'>Ruby on Rails</a><br>
-				<a href=\'http://htkb.dyndns.org:84/Division2/Project14\'>Node JS</a><br>
-            ';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project14.html\'>HTML</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project14.shtml\'>Perl</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project14.html\'>Apache SSI</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project14.html\'>HTML Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project14.html\'>JQuery</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project14.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project14.xhtml\'>JSF</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project14.jsp\'>JSP</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project14.jsp\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Project14.aspx\'>ASP.NET Javascript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Project14.asp\'>ASP VBscript</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Project14.cshtml\'>ASP.NET Web App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebForm/Division2/Project14.aspx\'>ASP.NET Webform</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/MVC/Main/Division2/Project14\'>ASP.NET MVC App</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:82/Division2/Project14\'>Python Web.py</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Division2/Project14\'>Ruby on Rails</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Division2/Project14\'>Node JS</a><br>';
         }
         else
         {
-            $vResult = $Default;
+            $vResult = $vDefault;
         }
         
         return $vResult;

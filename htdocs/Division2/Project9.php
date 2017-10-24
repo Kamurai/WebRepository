@@ -6,6 +6,9 @@
     $vPage = 9;
     $vLevel = 1;
     $vDivision = 2;
-    echo getHead($vLevel, $vDivision);
-	echo getBody($vPage, $vLevel);
+	
+    echo '<html>';
+		echo getHead($vLevel, $vDivision);
+		echo getBody($vPage, $vLevel);
+	echo '</html>';
 ?>

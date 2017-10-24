@@ -3,61 +3,61 @@
 	
     function getNavigation($vLevel)
     {
-        $vResult = '
-            <a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project1.php\'>Online Experience Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project2.php\'>Game Maker Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project3.php\'>Java Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project4.php\'>C# Downloads</a></br></br>
-            <a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project5.php\'>C++ Downloads</a></br></br>
-        ';
-        return $vResult;
+        $vResult = '';
+		
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project1.php\'>Online Experience Downloads</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project2.php\'>Game Maker Downloads</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project3.php\'>Java Downloads</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project4.php\'>C# Downloads</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project5.php\'>C++ Downloads</a></br></br>';
+        
+		return $vResult;
     }
     
     function getBody($vPage, $vLevel);
     {
-        $vResult = '
-        <body id=\'idBody\'>
-            <table id=\'idTableMain\'>
-                <tr id=\'idHeaderRow\'>
-                    <td id=\'idHeaderRowCenter\' colspan=\'3\'>'.
-                        getLogo($vLevel)
-					.'</td>
-                </tr>
-                <tr id=\'idNavigationRow\'>
-                    <td id=\'idNavigationBar\' colspan=\'3\'>'.
-                        getNavBar($vLevel)
-					.'</td>
-                </tr>				
-                <tr id=\'idCenterRow\'>
-                    <td id=\'idCenterRowLeft\'>'.
-                        getNavigationHeader().
-                        getNavigation($vLevel)
-					.'</td>
-                    <td id=\'idCenterRowMain\'>'.
-						getTitle($vPage).
-						'<h2>'.
-                            getContentHeader($vPage).
-						'</h2>
-                        <p id=\'idCenterContent\'>'.
-                            getContent($vPage).
-						'</p>
-                    </td>
-                    <td id=\'idCenterRowRight\'>'.
-                        getInformationHeader().
-					    getInformation().
-                        getVersions($vPage)
-					.'</td>
-                </tr>
-                <tr id=\'idFooterRow\'>
-                    <td id=\'idFooterMain\' colspan=\'3\'>'.
-                        getWinRar().
-                        getFooter().
-                        getWebMaster().
-					'</td>
-                </tr>
-            </table>
-        </body>
-        ';
+        $vResult = '';
+		
+        $vResult = $vResult.'<body id=\'idBody\'>';
+            $vResult = $vResult.'<table id=\'idTableMain\'>';
+                $vResult = $vResult.'<tr id=\'idHeaderRow\'>';
+                    $vResult = $vResult.'<td id=\'idHeaderRowCenter\' colspan=\'3\'>';
+                        $vResult = $vResult.getLogo($vLevel);
+					$vResult = $vResult.'</td>';
+                $vResult = $vResult.'</tr>';
+                $vResult = $vResult.'<tr id=\'idNavigationRow\'>';
+                    $vResult = $vResult.'<td id=\'idNavigationBar\' colspan=\'3\'>';
+                        $vResult = $vResult.getNavBar($vLevel);
+					$vResult = $vResult.'</td>';
+                $vResult = $vResult.'</tr>';
+                $vResult = $vResult.'<tr id=\'idCenterRow\'>';
+                    $vResult = $vResult.'<td id=\'idCenterRowLeft\'>';
+                        $vResult = $vResult.getNavigationHeader();
+                        $vResult = $vResult.getNavigation($vLevel);
+					$vResult = $vResult.'</td>';
+                    $vResult = $vResult.'<td id=\'idCenterRowMain\'>';
+						$vResult = $vResult.getTitle($vPage);
+						$vResult = $vResult.'<h2>';
+                            $vResult = $vResult.getContentHeader($vPage);
+						$vResult = $vResult.'</h2>';
+                        $vResult = $vResult.'<p id=\'idCenterContent\'>';
+                            $vResult = $vResult.getContent($vPage);
+						$vResult = $vResult.'</p>';
+                    $vResult = $vResult.'</td>';
+                    $vResult = $vResult.'<td id=\'idCenterRowRight\'>';
+                        $vResult = $vResult.getInformationHeader();
+					    $vResult = $vResult.getInformation();
+                        $vResult = $vResult.getVersions($vPage);
+					$vResult = $vResult.'</td>';
+                $vResult = $vResult.'</tr>';
+                $vResult = $vResult.'<tr id=\'idFooterRow\'>';
+                    $vResult = $vResult.'<td id=\'idFooterMain\' colspan=\'3\'>';
+                        $vResult = $vResult.getFooter();
+                        $vResult = $vResult.getWebMaster();
+					$vResult = $vResult.'</td>';
+                $vResult = $vResult.'</tr>';
+            $vResult = $vResult.'</table>';
+        $vResult = $vResult.'</body>';
 		
 		return $vResult;
     }
