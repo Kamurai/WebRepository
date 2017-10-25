@@ -165,64 +165,90 @@
         else if($vPage==9)
         {
             $vResult = $vResult.'This section is dedicated to the card and board game project \'Monster Office Workplace\'.  These monsters mean serious business.<br/>';
-                        $vResult = $vResult.'Can you earn the most credit and smooze your way into a promotion?<br/>';
-                    $vResult = $vResult.'</br>';
-                    $vResult = $vResult.'</br>';
-                        $vResult = $vResult.'You can download the Tabletop Simulator mod here:<br/>';
-                        $vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\'>Steam Workshop</a><br/>';
-                    $vResult = $vResult.'</br>';
-                    $vResult = $vResult.'</br>';
-                        $vResult = $vResult.'Monster Office Ruleset v0.1<br/>';
-                        $vResult = $vResult.'<br/>';
-                        1) Player resources:<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Resource deck: Work (Resource) Cards<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Project Deck: Cards representing project tiles.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Player tokens<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) Credit tokens<br/>';
-                        2) Setup:<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Each player gets 3 resource cards, and 1 project card.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Before the game, each player plays their project card.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Going first:<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Each player plays 1 card face down and everyone reveals at once(do not discard).<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The highest non-common card (ties are eliminated), goes first.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) In the case that everyone ties, perform rounds until someone wins.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) If all cards are played, then 1 card is dealt to each player face up until a winner occurs.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) Each player keeps the cards he/she is dealt.<br/>';
-                        3) Grid map to which project tiles are played.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1)  Player must place to a valid space, if available.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2)  If no space is available, then the player chooses how projects shift.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)  The player must shift the least amount of projects.<br/>';
-                        4) Projects require different resources by type and number/quantity.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) When meeting project requirements, place a player token on the card stack<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Points of credit are earned upon project completion by project rewards (Listed on the project tile.).<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) There are 6 \'colors\' of resources with the following quantities:<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) 1 card with quantity of 5.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) 2 cards with quantity of 4.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 3 cards with quantity of 3.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) 4 cards with quantity of 2.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5) 5 cards with quantity of 1.<br/>';
-                        5) Actions:<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Draw Project: only 1.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Play Project: only 1.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Draw Resources: 3 resources.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) Play Resources: As many as available.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Place a number of tokens equal to the number on the resource card on the project tile.<br/>';
-                        6) Restrictions<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Hand Limit: each player has a hand limit of 6 cards.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Workhorse: the player with the lowest score has no hand limit.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Any player with a score of zero counts as a Workhorse.<br/>';
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) People tied for Workhorse are all Workhorses.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) Workhorse is evaluated at each person\'s discard phase, i.e. a player only discards if they are NOT a workhorse';
-                                at THEIR discard phase.<br/>';
-                        7) Scoring:<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) A player who completes the project collects the project.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) A player gets 1 point of credit for completing a project\'s color set (exactly) once the project has been completed.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;3) A player gets 1 point of credit for each player token on the project that has been completed.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;4) A player gets a number of points of credit equal to the number of color sets on the project tile,';
-                                for being the one to complete a project.<br/>';
-                        8) End Conditions:<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;1) Game ends when 10 projects have been completed.<br/>';
-                            &nbsp;&nbsp;&nbsp;&nbsp;2) Player with the most \'credit\' wins.<br/>';
+			$vResult = $vResult.'Can you earn the most credit and smooze your way into a promotion?<br/>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You can download the Tabletop Simulator mod here:<br/>';
+			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\'>Steam Workshop</a><br/>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Monster Office Ruleset v0.1<br/>';
+			$vResult = $vResult.'<br/>';
+			$vResult = $vResult.'<ol class=\'classFirstOrder\'>';
+				$vResult = $vResult.'<li>Player resources:</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Resource deck: Work (Resource) Cards</li>';
+					$vResult = $vResult.'<li>Project Deck: Cards representing project tiles.</li>';
+					$vResult = $vResult.'<li>Player tokens</li>';
+					$vResult = $vResult.'<li>Credit tokens</li>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>Setup:</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Each player gets 3 resource cards, and 1 project card.</li>';
+					$vResult = $vResult.'<li>Before the game, each player plays their project card.</li>';
+					$vResult = $vResult.'<li>Going first:</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Each player plays 1 card face down and everyone reveals at once(do not discard).</li>';
+						$vResult = $vResult.'<li>The highest non-common card (ties are eliminated), goes first.</li>';
+						$vResult = $vResult.'<li>In the case that everyone ties, perform rounds until someone wins.</li>';
+						$vResult = $vResult.'<li>If all cards are played, then 1 card is dealt to each player face up until a winner occurs.</li>';
+						$vResult = $vResult.'<li>Each player keeps the cards he/she is dealt.</li>';
+					$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>Grid map to which project tiles are played.</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Player must place to a valid space, if available.</li>';
+					$vResult = $vResult.'<li>If no space is available, then the player chooses how projects shift.</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>The player must shift the least amount of projects.</li>';
+					$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'</ol>';	
+				$vResult = $vResult.'<li>Projects require different resources by type and number/quantity.</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>When meeting project requirements, place a player token on the card stack</li>';
+					$vResult = $vResult.'<li>Points of credit are earned upon project completion by project rewards (Listed on the project tile.).</li>';
+					$vResult = $vResult.'<li>There are 6 \'colors\' of resources with the following quantities:</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>1 card with quantity of 5.</li>';
+						$vResult = $vResult.'<li>2 cards with quantity of 4.</li>';
+						$vResult = $vResult.'<li>3 cards with quantity of 3.</li>';
+						$vResult = $vResult.'<li>4 cards with quantity of 2.</li>';
+						$vResult = $vResult.'<li>5 cards with quantity of 1.</li>';
+					$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>Actions:</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Draw Project: only 1.</li>';
+					$vResult = $vResult.'<li>Play Project: only 1.</li>';
+					$vResult = $vResult.'<li>Draw Resources: 3 resources.</li>';
+					$vResult = $vResult.'<li>Play Resources: As many as available.</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Place a number of tokens equal to the number on the resource card on the project tile.</li>';
+					$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>Restrictions</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Hand Limit: each player has a hand limit of 6 cards.</li>';
+					$vResult = $vResult.'<li>Workhorse: the player with the lowest score has no hand limit.</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Any player with a score of zero counts as a Workhorse.</li>';
+						$vResult = $vResult.'<li>People tied for Workhorse are all Workhorses.</li>';
+					$vResult = $vResult.'</ol>';
+					$vResult = $vResult.'<li>Workhorse is evaluated at each person\'s discard phase, i.e. a player only discards if they are NOT a workhorse at THEIR discard phase.</li>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>Scoring:</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>A player who completes the project collects the project.</li>';
+					$vResult = $vResult.'<li>A player gets 1 point of credit for completing a project\'s color set (exactly) once the project has been completed.</li>';
+					$vResult = $vResult.'<li>A player gets 1 point of credit for each player token on the project that has been completed.</li>';
+					$vResult = $vResult.'<li>A player gets a number of points of credit equal to the number of color sets on the project tile, for being the one to complete a project.</li>';
+				$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'<li>End Conditions:</li>';
+				$vResult = $vResult.'<ol class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Game ends when 10 projects have been completed.</li>';
+					$vResult = $vResult.'<li>Player with the most \'credit\' wins.</li>';
+				$vResult = $vResult.'</ol>';
+			$vResult = $vResult.'</ol>';
         }
         else if($vPage==10)
         {
@@ -232,355 +258,273 @@
         else if($vPage==11)
         {
             $vResult = $vResult.'This section is dedicated to the board game project \'Sacred Offerings\'.<br/>';
-							Being a god is hard, you have to eat, but
-							don\'t want to fall out favor with the people more than the other deities.
-							Draw people to worship you, but be discerning about who is sacrificed.
-						</br>
-						</br>
-							You can download the Tabletop Simulator mod here:
-							<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652957007\'>Steam Workshop</a>
-						</br>
-						</br>
-								Sacred Offerings Ruleset v0.1<br/>
-						<br/>
-							Setup:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Select a board for the number of players (from 2 to 6):<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								The two player board is a square with two alters.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								The three player board is a triangle with an alter at its center.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								The four player board is a square with an alter at its center.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								The five player board is a pentagon with an alter at its center.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								The six player board is a hexagon with an alter at its center.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Set tokens on the board in the following manner for each player corner:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									2 players: <br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										1 4-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										3 3-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										5 2-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										7 1-point tokens<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									3 players:<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										8 1-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										6 2-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										4 3-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										2 4-point tokens<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									4 players:<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										7 1-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										5 2-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										3 3-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										1 4-point tokens<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									5 players:<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										8 1-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										6 2-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										4 3-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										2 4-point tokens<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									6 players:<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										8 1-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										6 2-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										4 3-point tokens<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										2 4-point tokens<br/>
-							<br/>	
-							Determine First player:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Decide amongst yourself through any method of yelling, rolling dice, pulling straws (not hair), etc.<br/>
-							<br/>
-							Player turn:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Each turn a player must move a character on the board.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Tokens move in one of two ways:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									One space in any direction. (Like a King in chess)<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Able to jump multiple pieces. (Like a King in checkers)<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								That character must end closer to the alter than they began.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								If a player CAN sacrifice a character, they must.<br/>
-							<br/>
-							Scoring:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								A player get +1 points equal to the value of the character sacrificed.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								A player gets -1 point on a turn they did not sacrifice a character.<br/>
-							<br/>
-							End condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								No characters are left on the board.<br/>
-							<br/>
-							Victory condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								The player with the lower points wins!<br/>
-            ';
+			$vResult = $vResult.'Being a god is hard, you have to eat, but';
+			$vResult = $vResult.'don\'t want to fall out favor with the people more than the other deities.';
+			$vResult = $vResult.'Draw people to worship you, but be discerning about who is sacrificed.';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
+			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652957007\'>Steam Workshop</a>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Sacred Offerings Ruleset v0.1<br/>';
+			$vResult = $vResult.'<ol class=\'classFirstOrder\'>';
+				$vResult = $vResult.'<li>Setup:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Select a board for the number of players (from 2 to 6):</li>';
+					$vResult = $vResult.'<li>The two player board is a square with two alters.</li>';
+					$vResult = $vResult.'<li>The three player board is a triangle with an alter at its center.</li>';
+					$vResult = $vResult.'<li>The four player board is a square with an alter at its center.</li>';
+					$vResult = $vResult.'<li>The five player board is a pentagon with an alter at its center.</li>';
+					$vResult = $vResult.'<li>The six player board is a hexagon with an alter at its center.</li>';
+					$vResult = $vResult.'<li>Set tokens on the board in the following manner for each player corner:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>2 players: </li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>1 4-point tokens</li>';
+							$vResult = $vResult.'<li>3 3-point tokens</li>';
+							$vResult = $vResult.'<li>5 2-point tokens</li>';
+							$vResult = $vResult.'<li>7 1-point tokens</li>';
+						$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'<li>3 players: </li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>8 1-point tokens</li>';
+							$vResult = $vResult.'<li>6 2-point tokens</li>';
+							$vResult = $vResult.'<li>4 3-point tokens</li>';
+							$vResult = $vResult.'<li>2 4-point tokens</li>';
+						$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'<li>4 players: </li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>7 1-point tokens</li>';
+							$vResult = $vResult.'<li>5 2-point tokens</li>';
+							$vResult = $vResult.'<li>3 3-point tokens</li>';
+							$vResult = $vResult.'<li>1 4-point tokens</li>';
+						$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'<li>5 players: </li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>8 1-point tokens</li>';
+							$vResult = $vResult.'<li>6 2-point tokens</li>';
+							$vResult = $vResult.'<li>4 3-point tokens</li>';
+							$vResult = $vResult.'<li>2 4-point tokens</li>';
+						$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'<li>6 players: </li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>8 1-point tokens</li>';
+							$vResult = $vResult.'<li>6 2-point tokens</li>';
+							$vResult = $vResult.'<li>4 3-point tokens</li>';
+							$vResult = $vResult.'<li>2 4-point tokens</li>';
+						$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Determine First player:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Decide amongst yourself through any method of yelling, rolling dice, pulling straws (not hair), etc.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Player turn:<br/>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Each turn a player must move a character on the board.</li>';
+					$vResult = $vResult.'<li>Tokens move in one of two ways:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>One space in any direction. (Like a King in chess)</li>';
+						$vResult = $vResult.'<li>Able to jump multiple pieces. (Like a King in checkers)</li>';
+					$vResult = $vResult.'</ul>';
+					$vResult = $vResult.'<li>That character must end closer to the alter than they began.</li>';
+					$vResult = $vResult.'<li>If a player CAN sacrifice a character, they must.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Scoring:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>A player get +1 points equal to the value of the character sacrificed.</li>';
+					$vResult = $vResult.'<li>A player gets -1 point on a turn they did not sacrifice a character.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>End condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'No characters are left on the board.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Victory condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'The player with the lower points wins!</li>';
+				$vResult = $vResult.'</ul>';
+			$vResult = $vResult.'</ol>';
         }
         else if($vPage==12)
         {
             $vResult = $vResult.'This section is dedicated to the card game project \'The Way\'.<br/>';
-							You seek to find enlightment by contemplating the elements.
-							Escape the binds of the world and the board to reach enlightment and win.
-						</br>
-						</br>
-							You can download the Tabletop Simulator mod here:
-							<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652925835\'>Steam Workshop</a>
-						</br>
-						</br>
-							
-								The Way Ruleset v0.1<br/>
-							
-							<br/>
-							Setup:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Board:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Place the board on the table.  Place one player piece for each player in the center of the board.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Deck:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Shuffle the card deck and deal 4 cards to each player.<br/>									
-							<br/>
-							Symbols:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								There are 4 basic symbols that represent directions on the board.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Air moves a player piece towards the yellow gate.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Earth moves a player piece towards the brown gate.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Fire moves a player piece towards the red gate.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Water moves a player piece towards the blue gate.<br/>
-							<br/>
-							Play:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								On each player\'s turn, they may do one of the following things:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									1)	Draw a card.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									2)	Play a card.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										a)	This can affect your piece.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										b)	This can affect pieces belonging to other players.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										c)	This cannot result in a player exiting the board through another player\'s side of the board.<br/>
-										<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Cards work by targeting 1, 2, or all player pieces.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										This is represented by the number of borders on the card, 1 set of borders, 2 sets of borders, or 4 sets of borders.<br/>
-										<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Cards with 1 set of borders will have 1 or 2 symbols, representing how far in the direction<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										of the symbol to move the player piece.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Cards with 2 sets of borders will have 1 symbol in each set of borders, representing<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										that the player may make two independent moves.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										This can be one target twice, or two targets once.<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Cards with 4 sets of borders will have 1 symbol, representing 1 movement for<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										ALL player pieces in the direction of the symbol.<br/>
-										<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									3)	Discard a card to draw two cards.<br/>
-							<br/>	
-							End Condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								A player is moved off of the board.<br/>								
-							<br/>	
-							Win Condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								The player moved off the board is the winner.<br/>
-            ';
+			$vResult = $vResult.'You seek to find enlightment by contemplating the elements.';
+			$vResult = $vResult.'Escape the binds of the world and the board to reach enlightment and win.';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
+			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652925835\'>Steam Workshop</a>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'The Way Ruleset v0.1<br/>';
+			$vResult = $vResult.'<br/>';
+			$vResult = $vResult.'<ol class=\'classFirstOrder\'>';
+				$vResult = $vResult.'<li>Setup:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+						$vResult = $vResult.'<li>Board:</li>';
+						$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+							$vResult = $vResult.'<li>Place the board on the table.  Place one player piece for each player in the center of the board.</li>';
+						$vResult = $vResult.'</ul>';	
+						$vResult = $vResult.'<li>Deck:</li>';
+						$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+							$vResult = $vResult.'<li>Shuffle the card deck and deal 4 cards to each player.</li>';
+						$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Symbols:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+						$vResult = $vResult.'<li>There are 4 basic symbols that represent directions on the board:</li>';
+						$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+							$vResult = $vResult.'<li>Air moves a player piece towards the yellow gate.</li>';
+							$vResult = $vResult.'<li>Earth moves a player piece towards the brown gate.</li>';
+							$vResult = $vResult.'<li>Fire moves a player piece towards the red gate.</li>';
+							$vResult = $vResult.'<li>Water moves a player piece towards the blue gate.</li>';
+						$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Play:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>On each player\'s turn, they may do one of the following things:</li>';
+					$vResult = $vResult.'<ol class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Draw a card.</li>';
+						$vResult = $vResult.'<li>Play a card:</li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<ol class=\'classFifthOrder\'>';
+								$vResult = $vResult.'<li>This can affect your piece.</li>';
+								$vResult = $vResult.'<li>This can affect pieces belonging to other players.</li>';
+								$vResult = $vResult.'<li>This cannot result in a player exiting the board through another player\'s side of the board.</li>';
+							$vResult = $vResult.'</ol>';
+							$vResult = $vResult.'<li>Cards work by targeting 1, 2, or all player pieces.</li>';
+							$vResult = $vResult.'<li>This is represented by the number of borders on the card, 1 set of borders, 2 sets of borders, or 4 sets of borders.</li>';
+							$vResult = $vResult.'<li>Cards with 1 set of borders will have 1 or 2 symbols, representing how far in the direction of the symbol to move the player piece.</li>';
+							$vResult = $vResult.'<li>Cards with 2 sets of borders will have 1 symbol in each set of borders, representing that the player may make two independent moves.</li>';
+							$vResult = $vResult.'<li>This can be one target twice, or two targets once.</li>';
+							$vResult = $vResult.'<li>Cards with 4 sets of borders will have 1 symbol, representing 1 movement for ALL player pieces in the direction of the symbol.</li>';
+						$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'<li>Discard a card to draw two cards.</li>';
+					$vResult = $vResult.'</ol>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>End Condition:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>A player is moved off of the board.</li>';
+					$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Win Condition:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>The player moved off the board is the winner.</li>';
+					$vResult = $vResult.'</ul>';
+			$vResult = $vResult.'</ol>';
         }
         else if($vPage==13)
         {
             $vResult = $vResult.'This section is dedicated to the board game project \'Conspiratorium\'.<br/>';
-							A game of assassins and CIA, you must remember who is friend and who is not.
-						</br>
-						</br>
-							You can download the Tabletop Simulator mod here:
-							<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=656617895\'>Steam Workshop</a>
-						</br>
-						</br>
-								Consipatorium Ruleset v0.1<br/>
-						<br/>
-							Setup:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Board<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Token Set: 100 tokens per player<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Divide tokens equally amongst players<br/>
-						<br/>	
-							Round:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Each player takes a turn performing one action.<br/>
-						<br/>	
-							Turn:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								On its turn, a player may do one of the following actions:<br/>
-									<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Recon:
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Look at a token affiliation.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Turn:
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Change the affiliation of a token.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Move Asset:
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Move a token to an adajecent space on the board.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Assasinate:
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Have a token on the board remove another adjacent token on the board.<br/>
-							<br/>		
-							End Condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								One token is left on the board.<br/>
-							<br/>	
-							Win Condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								The player matching the affiliation of the last remaining token on the board wins.<br/>
-            ';
+			$vResult = $vResult.'A game of assassins and CIA, you must remember who is friend and who is not.';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
+			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=656617895\'>Steam Workshop</a>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Consipatorium Ruleset v0.1<br/>';
+			$vResult = $vResult.'<br/>';
+			$vResult = $vResult.'<ol class=\'classFirstOrder\'>';
+				$vResult = $vResult.'<li>Setup:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Board</li>';
+					$vResult = $vResult.'<li>Token Set: 100 tokens per player</li>';
+					$vResult = $vResult.'<li>Divide tokens equally amongst players</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Round:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Each player takes a turn performing one action.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Turn:<br/>';
+					$vResult = $vResult.'<li>On its turn, a player may do one of the following actions:</li>';
+					$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+						$vResult = $vResult.'<li>Recon:  Look at a token affiliation.</li>';
+						$vResult = $vResult.'<li>Turn:  Change the affiliation of a token.</li>';
+						$vResult = $vResult.'<li>Move Asset:  Move a token to an adajecent space on the board.</li>';
+						$vResult = $vResult.'<li>Assasinate:  Have a token on the board remove another adjacent token on the board.</li>';
+					$vResult = $vResult.'</ul>';	
+				$vResult = $vResult.'<li>End Condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>One token is left on the board.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Win Condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>The player matching the affiliation of the last remaining token on the board wins.</li>';
+				$vResult = $vResult.'</ul>';
+			$vResult = $vResult.'</ol>';
         }
         else if($vPage==14)
         {
             $vResult = $vResult.'This section is dedicated to the board game project \'Conversion\'.<br/>';
-							Compete on the elemental market by processing elements and becoming the elemental kingpin.
-						</br>
-						</br>
-							You can download the Tabletop Simulator mod here:
-							<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=658966981\'>Steam Workshop</a>
-						</br>
-						</br>
-							
-								Conversion Ruleset v0.1<br/>
-							
-							<br/>
-							Setup:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Place board on table.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Place element tokens on the board, these are piece limited.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Place currency tokens to the side of the board.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Deal two objective cards to each player.<br/>
-							<br/>
-							Round:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								The round leader is the first player to go in a round.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								The round leader rotates clockwise each round.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Each player takes one action on their turn.<br/>
-							<br/>
-							Turn:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Go to Work:<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Generate an element.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Place elements in worker spots to do different conversions:<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Double an element<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Fire to Air<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Air to Water<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Water to Earth<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Earth to Fire<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Fire to Earth<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Earth to Water<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Water to Air<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Air to Fire<br/>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										Fair trade:<br/>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Put one element out for someone to trade with you.<br/>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											Trade with a presented element.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Turn in an objective.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Return the designated elements to their respective pools.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									Collect currency in the amount the highest element required, minus 1, times two. (n-1)*2<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Draw a new objective.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Buy elements, this can be from \'the bank\' or other players.<br/>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									When buying from other players, those players may set their own prices or refuse to sell.<br/>
-							<br/>
-							End condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Buy Out:
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								A player is out of objective cards, with at least 10 currency.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Retire:
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								A player is out of objective cards, has completed 5 objectives and is out of elements.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Shortage:
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								No elements can be collected.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Monopoly:
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								A player has all of one element.<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								Market Crash:
-								&nbsp;&nbsp;
-								No currency is available.<br/>
-							<br/>
-							Win condition:<br/>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								In the event of a tie, then the player that triggered the event wins.<br/>
-            ';
+			$vResult = $vResult.'Compete on the elemental market by processing elements and becoming the elemental kingpin.';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
+			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=658966981\'>Steam Workshop</a>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Conversion Ruleset v0.1<br/>';
+			$vResult = $vResult.'<br/>';
+			$vResult = $vResult.'<ol class=\'classFirstOrder\'>';
+				$vResult = $vResult.'<li>Setup:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Place board on table.</li>';
+					$vResult = $vResult.'<li>Place element tokens on the board, these are piece limited.</li>';
+					$vResult = $vResult.'<li>Place currency tokens to the side of the board.</li>';
+					$vResult = $vResult.'<li>Deal two objective cards to each player.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Round:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>The round leader is the first player to go in a round.</li>';
+					$vResult = $vResult.'<li>The round leader rotates clockwise each round.</li>';
+					$vResult = $vResult.'<li>Each player takes one action on their turn.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Turn:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Go to Work:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Generate an element.</li>';
+						$vResult = $vResult.'<li>Place elements in worker spots to do different conversions:</li>';
+						$vResult = $vResult.'<ul class=\'classFourthOrder\'>';
+							$vResult = $vResult.'<li>Double an element</li>';
+							$vResult = $vResult.'<li>Fire to Air</li>';
+							$vResult = $vResult.'<li>Air to Water</li>';
+							$vResult = $vResult.'<li>Water to Earth</li>';
+							$vResult = $vResult.'<li>Earth to Fire</li>';
+							$vResult = $vResult.'<li>Fire to Earth</li>';
+							$vResult = $vResult.'<li>Earth to Water</li>';
+							$vResult = $vResult.'<li>Water to Air</li>';
+							$vResult = $vResult.'<li>Air to Fire</li>';
+							$vResult = $vResult.'<li>Fair trade:</li>';
+							$vResult = $vResult.'<ul class=\'classFifthOrder\'>';
+								$vResult = $vResult.'<li>Put one element out for someone to trade with you.</li>';
+								$vResult = $vResult.'<li>Trade with a presented element.</li>';
+							$vResult = $vResult.'</ul>';
+						$vResult = $vResult.'</ul>';
+					$vResult = $vResult.'</ul>';
+					$vResult = $vResult.'<li>Turn in an objective.</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Return the designated elements to their respective pools.</li>';
+						$vResult = $vResult.'<li>Collect currency in the amount the highest element required, minus 1, times two. (n-1)*2</li>';
+					$vResult = $vResult.'</ul>';
+					$vResult = $vResult.'<li>Draw a new objective.</li>';
+					$vResult = $vResult.'<li>Buy elements: this can be from \'the bank\' or other players.</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>When buying from other players, those players may set their own prices or refuse to sell.</li>';
+					$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>End condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>Buy Out:  A player is out of objective cards, with at least 10 currency.</li>';
+					$vResult = $vResult.'<li>Retire:  A player is out of objective cards, has completed 5 objectives and is out of elements.</li>';
+					$vResult = $vResult.'<li>Shortage:  No elements can be collected.</li>';
+					$vResult = $vResult.'<li>Monopoly:  A player has all of one element.</li>';
+					$vResult = $vResult.'<li>Market Crash:  No currency is available.</li>';
+				$vResult = $vResult.'</ul>';
+				$vResult = $vResult.'<li>Win condition:</li>';
+				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
+					$vResult = $vResult.'<li>In the event of a tie, then the player that triggered the event wins.</li>';
+				$vResult = $vResult.'</ul>';
+			$vResult = $vResult.'</ol>';
         }
         else
         {
