@@ -9,7 +9,7 @@
         vLevel = 0
         vDivision = 0
 		
-		Response.Write(getHead(vLevel, vDivision))
-        Response.Write(getBody(vPage, vLevel))
+		Response.Write( getHead(vLevel, vDivision) )
+        Response.Write( getBody(vPage, vLevel) )
     %>
 </html>

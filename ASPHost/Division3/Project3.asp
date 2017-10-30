@@ -4,12 +4,12 @@
 	<script language="VBScript" src="./Layout.vbs" runat="server"></script>
 	<script language="VBScript" src="./Custom.vbs" runat="server"></script>
 	<%
-		dim vPage, vLevel, vDivision;
-		vPage = 3;
-		vLevel = 1;
-		vDivision = 3;
+		dim vPage, vLevel, vDivision
+		vPage = 3
+		vLevel = 1
+		vDivision = 3
 		
-		Response.Write(Call getHead(vLevel, vDivision));
-		Response.Write(Call getLayout(vPage, vLevel));		
+		Response.Write( getHead(vLevel, vDivision) )
+		Response.Write( getBody(vPage, vLevel) )		
 	%>
 </html>

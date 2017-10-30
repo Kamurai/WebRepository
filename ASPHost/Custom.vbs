@@ -1,8 +1,8 @@
-function getTitle(vPage)
+Function getTitle(vPage)
 	dim vResult
 	dim vDefault
 	
-	vDefault = "HTKB Home Page"
+	vDefault = vDefault + "HTKB Home Page"
 	
     vResult = vResult + "<title>"
         If vPage = 0 Then
@@ -13,19 +13,19 @@ function getTitle(vPage)
             vResult = vResult + "Media"
         ElseIf vPage = 3 Then
             vResult = vResult + "Minecraft!"
-        else
+        Else
 			vResult = vResult + vDefault
 		End If
 	vResult = vResult + "</title>"
 	
 	getTitle = vResult
-end function
+End Function
 
-function getContentHeader(vPage)
+Function getContentHeader(vPage)
 	dim vResult
 	dim vDefault
 	
-	vDefault = "Welcome to the House That Kamurai Built!"
+	vDefault = vDefault + "Welcome to the House That Kamurai Built!"
 	
     vResult = vResult + "<h2>"
 		If vPage = 0 Then
@@ -36,15 +36,15 @@ function getContentHeader(vPage)
             vResult = vResult + "Media"
         ElseIf vPage = 3 Then
             vResult = vResult + "Minecraft!"
-    	else
+    	Else
 			vResult = vResult + vDefault
 		End If
 	vResult = vResult + "</h2>"
 	
 	getContentHeader = vResult
-end function
+End Function
 
-function getContent(vPage)
+Function getContent(vPage)
 	dim vResult
 	dim vDefault
 	
@@ -100,7 +100,7 @@ function getContent(vPage)
 				vResult = vResult + "<a href=""http://Instagram.com/Kamurai25"">Kamurai""s Instagram.</a></br>"
 				vResult = vResult + "<a href=""./."">Kamurai""s Snapchat: Kamurai</a></br>"
 				vResult = vResult + "<a href=""http://www.facebook.com/cris.kamurai"">Kamurai""s Facebook.</a></br>"
-				vResult = vResult + "<a href=""https://www.gplus.com/Members/Cris-Kamurai"">Kamurai""s Google Plus.</a></br>"
+				vResult = vResult + "<a href=""https:'www.gplus.com/Members/Cris-Kamurai"">Kamurai""s Google Plus.</a></br>"
 				vResult = vResult + "<a href=""http://www.yoyogames.com/users/Kamurai"">Kamurai""s YoYo Games page:  See some of the games he""s posted.</a></br>"
 			vResult = vResult + "<br/>"
 	    ElseIf vPage = 3 Then
@@ -145,15 +145,15 @@ function getContent(vPage)
 					vResult = vResult + "12 Then Name the server something distinct and put ""htkb.dyndns.org:2556x"" in the address bar where ""x"" is the relevant port.</br>"
 					vResult = vResult + "13 Then Save the server entry.  You should see a connection to the server.  Double click to join.</br>"
 			vResult = vResult + "<br/>"
-		else
+		Else
 			vResult = vResult + vDefault
 		End If
 	vResult = vResult + "</p>"
 	
 	getContent = vResult
-end function
+End Function
 
-function getVersions(vPage)
+Function getVersions(vPage)
 	dim vResult
 	dim vDefault
 	
@@ -223,9 +223,9 @@ function getVersions(vPage)
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/SSI/Minecraft.html"">Apache SSI</a><br>"
 	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Minecraft"">Python Web.py</a><br>"
         vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Minecraft"">Ruby On Rails</a><br>"
-    else
+    Else
 		vResult = vResult + vDefault
 	End If
 	
 	getVersions = vResult
-end function
+End Function

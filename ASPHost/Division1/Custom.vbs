@@ -1,95 +1,79 @@
-function getTitle(vPage)
-{
-	dim vResult = "";
-	dim vDefault = "";
+Function getTitle(vPage)
+	dim vResult
+	dim vDefault
 	
-	vDefault = "Web Programming";
+	vDefault = vDefault + "Web Programming"
 	
-	vResult += "<title>";
-		if(vPage <= 0)
-		{
-			vResult += vDefault;
-		}
-		else
-		{
-			vResult += vDefault;
-		}
-	vResult += "</title>";
+	vResult = vResult + "<title>"
+		If vPage = 0 Then
+			vResult = vResult + vDefault
+		Else
+			vResult = vResult + vDefault
+		End If
+	vResult = vResult + "</title>"
 	
-	return vResult;
-}
+	getTitle = vResult
+End Function
 
-function getContentHeader(vPage)
-{
-	dim vResult = "";
-	dim vDefault = "";
+Function getContentHeader(vPage)
+	dim vResult
+	dim vDefault
 	
-	vDefault = "Web Programming";
+	vDefault = vDefault + "Web Programming"
 	
-	vResult += "<h2>";
-		if(vPage == 0)
-		{
-			vResult += vDefault;
-		}
-		else
-		{
-			vResult += vDefault;
-		}
-	vResult += "</h2>";
+	vResult = vResult + "<h2>"
+		If vPage = 0 Then
+			vResult = vResult + vDefault
+		Else
+			vResult = vResult + vDefault
+		End If
+	vResult = vResult + "</h2>"
 	
-	return vResult;
-}
+	getContentHeader = vResult
+End Function
 
-function getContent(vPage);
-{
-	dim vResult = "";
-	dim vDefault = "";
+Function getContent(vPage)
+	dim vResult
+	dim vDefault
 	
-	vDefault = "This section is dedicated to web-based programming.";
+	vDefault = vDefault + "This section is dedicated to web-based programming."
 	
-	vResult += "<p id=""idCenterContent"">";
-    	if(vPage <= 0)
-		{
-			vResult += vDefault;
-		}
-		else
-		{
-			vResult += vDefault;
-		}
-	vResult += "</p>";
+	vResult = vResult + "<p id=""idCenterContent"">"
+    	If vPage = 0 Then
+			vResult = vResult + vDefault
+		Else
+			vResult = vResult + vDefault
+		End If
+	vResult = vResult + "</p>"
 	
-	return vResult;
-}
+	getContent = vResult
+End Function
 
-function getVersions(vPage)
-{
-	dim vResult = "";
-	dim vDefault = "";
+Function getVersions(vPage)
+	dim vResult
+	dim vDefault
 	
-	vResult += "<a href=""http://htkb.dyndns.org/Section1/Index.html"">HTML</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org/Section1/Index.php"">PHP</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org/VBScript/Section1/Project3.html"">HTML VBScript</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org/JQuery/Section1/Project3.html"">JQuery</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:81/ASPNET/Section1/Index.aspx"">ASP.NET VBScript</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:84/Section1/Project3"">Node JS</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org/Section1/Index.shtml"">Perl</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Section1/Index.vbsp"">JSP</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:8080/JSFApplication/Section1/Index.xhtml"">JSF</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:81/WebApplication/Section1/Index.cshtml"">ASP.NET Web App</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:81/WebForm/Section1/Index.aspx"">ASP.NET Webform</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:81/MVC/Section1/Index"">ASP.NET MVC App</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org/SSI/Section1/Index.html"">Apache SSI</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:82/Section1/Project3"">Python Web.py</a><br>";
-	vResult += "<a href=""http://htkb.dyndns.org:83/Section1/Project3"">Ruby On Rails</a><br>";
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/Section1/Index.html"">HTML</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/Section1/Index.php"">PHP</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/VBScript/Section1/Project3.html"">HTML VBScript</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/JQuery/Section1/Project3.html"">JQuery</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:81/ASPNET/Section1/Index.aspx"">ASP.NET VBScript</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:84/Section1/Project3"">Node JS</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/Section1/Index.shtml"">Perl</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Section1/Index.vbsp"">JSP</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:8080/JSFApplication/Section1/Index.xhtml"">JSF</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:81/WebApplication/Section1/Index.cshtml"">ASP.NET Web App</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:81/WebForm/Section1/Index.aspx"">ASP.NET Webform</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:81/MVC/Section1/Index"">ASP.NET MVC App</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org/SSI/Section1/Index.html"">Apache SSI</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:82/Section1/Project3"">Python Web.py</a><br>"
+	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:83/Section1/Project3"">Ruby On Rails</a><br>"
 
-	if(vPage == 0)
-	{
-		vResult += vDefault;
-	}
-	else
-	{
-		vResult += vDefault;
-	}
+	If vPage = 0 Then
+		vResult = vResult + vDefault
+	Else
+		vResult = vResult + vDefault
+	End If
 	
-	return vResult;    
-}
+	getVersions = vResult    
+End If

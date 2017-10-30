@@ -1,90 +1,75 @@
 function OracleMethod(rowID, col)
-{
-	var sqlStatement = "Select ";
-	var result = "";
+	dim sqlStatement, vResult, rs, conObj
 	
-	var rs = new ActiveXObject("ADODB.Recordset");
-	var conObj = new ActiveXObject('ADODB.Connection');
+	rs = new ActiveXObject("ADODB.Recordset")
+	conObj = new ActiveXObject('ADODB.Connection')
+	sqlStatement = "Select "
 	
-	
-	if(col <= 0)
-	{
-		sqlStatement += "indext ";
-	}
+	if col <= 0 then
+		sqlStatement = sqlStatement + "indext "
 	else
-	{
-		sqlStatement += "color ";
-	}
+		sqlStatement = sqlStatement + "color "
+	end if
 
-	sqlStatement += "from test where ";        
+	sqlStatement = sqlStatement + "from test where "        
 	
-	if(col <= 0)
-	{
-		sqlStatement += "indext ";
-	}
+	if col <= 0 then 
+		sqlStatement = sqlStatement + "indext "
 	else
-	{
-		sqlStatement += "color ";
-	}
+		sqlStatement = sqlStatement + "color "
+	end if
 
-	sqlStatement += "= '" + rowID + "'";
+	sqlStatement = sqlStatement + "= '" + rowID + "'"
 	
-	openOracleConnection(conObj);
+	openOracleConnection(conObj)
 	
-	rs.Open(sqlStatement,conObj);
+	rs.Open(sqlStatement,conObj)
 	
-	Response.Write(rs(0));
+	vResult = rs(0)
 	
-	rs.close;
+	rs.close
 	
 	closeOracleConnection()
+	
+	OracleMethod=vResult
 }
 
 function openOracleConnection(conObj)
 {
-	var driver = "oracle.jdbc.driver.OracleDriver";
-	var url = "localhost:1521:xe";
-	//var url = "jdbc:oracle:thin:@htkb.dyndns.org:1521:xe";
-	var dbName = "Test";
-	var dbUsername = "kamurai";
-	var dbPassword = "bluezer0";
-    
-	
-	//var connectionstring="Driver="+driver+";Data Source="+url+";Initial Catalog="+dbName+";User ID="+dbUsername+";Password="+dbPassword+";";//Provider=SQLOLEDB";
-	var connectionstring="Driver="+driver+";Data Source="+url+";Initial Catalog="+dbName+";User ID="+dbUsername+";Password="+dbPassword;
+	dim driver, url, dbName, dbUsername, dbPassword, connectionstring
 
-	Set OraDatabase = Server.CreateObject("ADODB.Connection");
-	OraDatabase.Open "connectionstring"; //dsn=OracleDSN;uid=userid;pwd=password;";
-	
-	
-	//Response.Write("<%");
-	//Response.Write("Dim adoCon");
-	//Response.Write("Set adoCon = Server.CreateObject('ADODB.Connection')");
-	//Response.Write("adoCon.Open 'provider=oraoledb.oracle;data source="+dbName+";user id="+dbUsername+";password="+dbPassword+";plsqlrset=true");
-	//Response.Write("%>");
-	
-	conObj.Open(connectionstring);
+	dim driver = "oracle.jdbc.driver.OracleDriver"
+	dim url = "localhost:1521:xe"
+	dim dbName = "Test"
+	dim dbUsername = "kamurai"
+	dim dbPassword = "bluezer0"
+    dim connectionstring="Driver="+driver+"Data Source="+url+"Initial Catalog="+dbName+"User ID="+dbUsername+"Password="+dbPassword
+
+	Set OraDatabase = Server.CreateObject("ADODB.Connection")
+	OraDatabase.Open "connectionstring" //dsn=OracleDSNuid=useridpwd=password"
+
+	conObj.Open(connectionstring)
 }
 
 function openOracleConnectionBU2()
 {
-	var driver = "oracle.jdbc.driver.OracleDriver";
-	var url = "jdbc:oracle:thin:@localhost:1521:xe";
-	var dbName = "Test";
-	var dbUsername = "kamurai";
-	var dbPassword = "bluezer0";
+	dim driver = "oracle.jdbc.driver.OracleDriver"
+	dim url = "jdbc:oracle:thin:@localhost:1521:xe"
+	dim dbName = "Test"
+	dim dbUsername = "kamurai"
+	dim dbPassword = "bluezer0"
     
-	//var conObj = new OracleConnection(); //ActiveXObject('ADODB.Connection');
-	//var connectionString = "Provider="+driver+"URL="+url+";";
-	//var connectionstring="Driver="+driver+";Data Source="+url+";Initial Catalog="+dbName+";User ID="+dbUsername+";Password="+dbPassword+";";//Provider=SQLOLEDB";
+	//dim conObj = new OracleConnection() //ActiveXObject('ADODB.Connection')
+	//dim connectionString = "Provider="+driver+"URL="+url+""
+	//dim connectionstring="Driver="+driver+"Data Source="+url+"Initial Catalog="+dbName+"User ID="+dbUsername+"Password="+dbPassword+""//Provider=SQLOLEDB"
 
 	
-	//conObj.Open(connectionString, dbUsername, dbPassword);
-	//conObj.Open(connectionstring);
+	//conObj.Open(connectionString, dbUsername, dbPassword)
+	//conObj.Open(connectionstring)
 }
 
 function closeOracleConnection()
 {
-	//conObj.close;
+	//conObj.close
 }
 
