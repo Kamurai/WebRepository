@@ -4,18 +4,20 @@ function getHead(vLevel, vDivision)
 	
 	vResult += "<head>";
 		vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-		vResult += "<link runat='server' rel='shortcut icon' href='"+getPath(vLevel)+"favicon.ico')' type='image/x-icon' />";
-		vResult += "<link runat='server' rel='icon' href='"+getPath(vLevel)+"favicon.ico' type='image/ico' />";
+		vResult += "<link runat='server' rel='shortcut icon' href='"+getPath(vLevel)+"Pictures/favicon.ico')' type='image/x-icon' />";
+		vResult += "<link runat='server' rel='icon' href='"+getPath(vLevel)+"Pictures/favicon.ico' type='image/ico' />";
 		vResult += getStyle(vLevel, vDivision);
 	vResult += "</head>";
+
+	return vResult;
 }
 
-function getStyle(vDivision)
+function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
 	vResult += "<link href='";
-	vResult += getPath(vLevel)"'Styles/'";
+	vResult += getPath(vLevel)+"Styles/";
 	vResult += getStyleFile(vDivision);
 	vResult += "' rel='stylesheet' type='text/CSS'>";
 
@@ -31,23 +33,23 @@ function getStyleFile(vDivision)
 	
 	if(vDivision == 0)
 	{
-		vResult = vDefault;
+		vResult += vDefault;
 	}
 	else if(vDivision == 1)
 	{
-		vResult = "Division1.css";
+		vResult += "Division1.css";
 	}
 	else if(vDivision == 2)
 	{
-		vResult = "Division2.css";
+		vResult += "Division2.css";
 	}
 	else if(vDivision == 3)
 	{
-		vResult = "Division3.css";
+		vResult += "Division3.css";
 	}
 	else
 	{
-		vResult = vDefault;
+		vResult += vDefault;
 	}
 	
 	return vResult;
@@ -57,7 +59,7 @@ function getLogo(vLevel)
 {
 	var vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
 	
 	return vResult;
 }
@@ -149,35 +151,35 @@ function getPath(vLevel)
 	
     if(vLevel <= 0)
     {
-        vResult += ""./";
+        vResult += "./";
     }
     else if(vLevel == 1)
     {
-        vResult += ""../";
+        vResult += "../";
     }
     else if(vLevel == 2)
     {
-        vResult += ""../../";
+        vResult += "../../";
     }
     else if(vLevel == 3)
     {
-        vResult += ""../../../";
+        vResult += "../../../";
     }
     else if(vLevel == 4)
     {
-        vResult += ""../../../../";
+        vResult += "../../../../";
     }
     else if(vLevel == 5)
     {
-        vResult += ""../../../../../";
+        vResult += "../../../../../";
     }
     else if(vLevel == 6)
     {
-        vResult += ""../../../../../../";
+        vResult += "../../../../../../";
     }
     else if(vLevel == 7)
     {
-        vResult += ""../../../../../../../";
+        vResult += "../../../../../../../";
     }
 	
 	return vResult;

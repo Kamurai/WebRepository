@@ -1,6 +1,6 @@
 function buildLayout(vPage, vLevel, vDivision)
 {
-    buildHead(vLevel, vDivision);
+    //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
@@ -8,6 +8,15 @@ function fillLayout(vPage, vLevel, vDivision)
 {
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
+}
+
+function fillNavigation(vLevel)
+{
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project1.html\">Online Experience Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project2.html\">Game Maker Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project3.html\">Java Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project4.html\">C# Downloads</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project5.html\">C++ Downloads</a><br><br>");
 }
 
 function buildBody(vPage, vLevel)

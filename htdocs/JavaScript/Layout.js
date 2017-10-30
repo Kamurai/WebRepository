@@ -9,7 +9,7 @@ function getNavigation(vLevel)
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
+function getBody(vPage, vLevel)
 {
 	var vResult = "";
 	

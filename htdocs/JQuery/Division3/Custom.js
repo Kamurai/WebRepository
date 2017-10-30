@@ -1,12 +1,3 @@
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project1.html\">Online Experience Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project2.html\">Game Maker Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project3.html\">Java Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project4.html\">C# Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division3/Project5.html\">C++ Downloads</a><br><br>");
-}
-
 function fillTitle(vPage)
 {
 	var vResult = "";
@@ -82,7 +73,7 @@ function fillHeader(vPage)
 	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
 }
 
-function Content(vPage, vLevel)
+function fillContent(vPage, vLevel)
 {
 	var vResult = "";
 	var vDefault = "This section is dedicated to downloadable projects.";
@@ -98,45 +89,45 @@ function Content(vPage, vLevel)
 	{
 		vResult += "Here are downloads to play Cube World with us:</br>";
 		vResult += "</br>";
-		vResult += "Cube World:<t><a href=\""+GetPath(vLevel+1)+"/downloads/CubeSetup3.exe\">Come play Cube World!</a></br>";
+		vResult += "Cube World:<t><a href=\""+getPath(vLevel+1)+"/downloads/CubeSetup3.exe\">Come play Cube World!</a></br>";
 		vResult += "</br>";
-		vResult += "DirectX:<t><a href=\""+GetPath(vLevel+1)+"/downloads/directx_Jun2010_redist.exe\">Direct X Redistrutable</a></br>";
-		vResult += "DirectX \"Web\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/dxwebsetup.exe\">Direct X Redistrutable</a></br>";
+		vResult += "DirectX:<t><a href=\""+getPath(vLevel+1)+"/downloads/directx_Jun2010_redist.exe\">Direct X Redistrutable</a></br>";
+		vResult += "DirectX \"Web\":<t><a href=\""+getPath(vLevel+1)+"/downloads/dxwebsetup.exe\">Direct X Redistrutable</a></br>";
 		vResult += "</br>";
 	}
 	else if(vPage == 2)
 	{
 		vResult += "Here are Game Maker Projects to play:</br>";
 		vResult += "</br>";
-		vResult += "\"Gamebox Client: v6.0\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/GameBox_Client_Installer_v6p0.exe\">Play games from...well, anywhere.</a></br>";
-		vResult += "\"Gamebox Server: v6.0\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/GameBox_Server_Installer_v6p0.exe\">Host GameBox.</a></br>";
-		vResult += "\"39dll.dll: v2.5\":<t><a href=\""+GetPath(vLevel+1)+"downloads/39dll.dll\">You may need this in your \"user/AppData/Local/GameBox_Client\" folder.</a></br>";
-		vResult += "\"A Chess Server\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/Chess_Server.exe\">Host a Chess game.</a></br>";
-		vResult += "\"A Chess Client\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/Chess_Client.exe\">A game of Chess from anywhere.</a></br>";
-		vResult += "\"I Dunno\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/Idunno.exe\">I dunno, it\"s a fun puzzle game though.</a></br>";
-		vResult += "\"Purification\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/Zombies.exe\">Kill zombies...lots of zombies.</a></br>";
-		vResult += "\"Trail of the Undead: The Way Home\":<t><a href=\""+GetPath(vLevel+1)+"/downloads/TrailoftheUndead.exe\">An adventure of zombie killing goodness.</a></br>";
-		vResult += "\"Discovery\" (buggy Alpha):<t><a href=\""+GetPath(vLevel+1)+"/downloads/Discovery.exe\">Play a game of discovery and survival.</a></br>";
-		vResult += "\"Twisted Tactics: Version 0.1\" (buggy Alpha):<t><a href=\""+GetPath(vLevel+1)+"/downloads/Tactical.exe\">Scrapped two player tactical system.</a></br>";
-		vResult += "\"Skitzo Burrito (Alpha)\": <t><a href=\""+GetPath(vLevel+1)+"/downloads/Emotive-Default-1.0.0.3.exe\">An emotional platform survival game.</a></br>";
+		vResult += "\"Gamebox Client: v6.0\":<t><a href=\""+getPath(vLevel+1)+"/downloads/GameBox_Client_Installer_v6p0.exe\">Play games from...well, anywhere.</a></br>";
+		vResult += "\"Gamebox Server: v6.0\":<t><a href=\""+getPath(vLevel+1)+"/downloads/GameBox_Server_Installer_v6p0.exe\">Host GameBox.</a></br>";
+		vResult += "\"39dll.dll: v2.5\":<t><a href=\""+getPath(vLevel+1)+"downloads/39dll.dll\">You may need this in your \"user/AppData/Local/GameBox_Client\" folder.</a></br>";
+		vResult += "\"A Chess Server\":<t><a href=\""+getPath(vLevel+1)+"/downloads/Chess_Server.exe\">Host a Chess game.</a></br>";
+		vResult += "\"A Chess Client\":<t><a href=\""+getPath(vLevel+1)+"/downloads/Chess_Client.exe\">A game of Chess from anywhere.</a></br>";
+		vResult += "\"I Dunno\":<t><a href=\""+getPath(vLevel+1)+"/downloads/Idunno.exe\">I dunno, it\"s a fun puzzle game though.</a></br>";
+		vResult += "\"Purification\":<t><a href=\""+getPath(vLevel+1)+"/downloads/Zombies.exe\">Kill zombies...lots of zombies.</a></br>";
+		vResult += "\"Trail of the Undead: The Way Home\":<t><a href=\""+getPath(vLevel+1)+"/downloads/TrailoftheUndead.exe\">An adventure of zombie killing goodness.</a></br>";
+		vResult += "\"Discovery\" (buggy Alpha):<t><a href=\""+getPath(vLevel+1)+"/downloads/Discovery.exe\">Play a game of discovery and survival.</a></br>";
+		vResult += "\"Twisted Tactics: Version 0.1\" (buggy Alpha):<t><a href=\""+getPath(vLevel+1)+"/downloads/Tactical.exe\">Scrapped two player tactical system.</a></br>";
+		vResult += "\"Skitzo Burrito (Alpha)\": <t><a href=\""+getPath(vLevel+1)+"/downloads/Emotive-Default-1.0.0.3.exe\">An emotional platform survival game.</a></br>";
 	}
 	else if(vPage == 3)
 	{
 		vResult += "Here are Java Programs to download:</br>";
 		vResult += "</br>";
-		vResult += "\"Blood Bowl Manager\":<t><a href=\"."+GetPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
+		vResult += "\"Blood Bowl Manager\":<t><a href=\"."+getPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
 	}
 	else if(vPage == 4)
 	{
 		vResult += "Here are C# Programs to download:</br>";
 		vResult += "</br>";
-		vResult += "\"Chess Program\":<t><a href=\"."+GetPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
+		vResult += "\"Chess Program\":<t><a href=\"."+getPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
 	}
 	else if(vPage == 5)
 	{
 		vResult += "Here are C++ Programs to download:</br>";
 		vResult += "</br>";
-		vResult += "\"HTKB Bar Code System\":<t><a href=\"."+GetPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
+		vResult += "\"HTKB Bar Code System\":<t><a href=\"."+getPath(vLevel+1)+"/downloads/pichaku.zip\">This is currently not available.</a></br>";
 	}
 	else
     {

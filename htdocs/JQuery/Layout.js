@@ -1,6 +1,6 @@
 function buildLayout(vPage, vLevel, vDivision)
 {
-    buildHead(vLevel, vDivision);
+    //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
@@ -8,6 +8,13 @@ function fillLayout(vPage, vLevel, vDivision)
 {
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
+}
+
+function fillNavigation(vLevel)
+{
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
+    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Media.html\">Media</a><br/><br/>"); //move to Custom
+    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>"); //move to Custom
 }
 
 function buildBody(vPage, vLevel)

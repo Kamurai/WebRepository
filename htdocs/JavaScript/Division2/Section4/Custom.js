@@ -22,10 +22,6 @@ function getTitle(vPage)
 		{
 			vResult += vDefault;
 		}
-		else
-		{
-			vResult += vDefault;
-		}
 	vResult += "</title>";
 	
 	return vResult;

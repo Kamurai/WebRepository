@@ -4,7 +4,7 @@ function getHead(vLevel, vDivision)
 	
 	vResult += "<head>";
     vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-	vResult += "<link href='"+getPath(vLevel)+vDivision+"' rel='stylesheet' type='text/CSS'>";
+	vResult += getStyle(vLevel, vDivision);
 	vResult += "</head>";
     
 	return vResult;
@@ -31,23 +31,23 @@ function getStyleFile(vDivision)
 	
 	if(vDivision == 0)
 	{
-		vResult = vDefault;
+		vResult += vDefault;
 	}
 	else if(vDivision == 1)
 	{
-		vResult = "Division1.css";
+		vResult += "Division1.css";
 	}
 	else if(vDivision == 2)
 	{
-		vResult = "Division2.css";
+		vResult += "Division2.css";
 	}
 	else if(vDivision == 3)
 	{
-		vResult = "Division3.css";
+		vResult += "Division3.css";
 	}
 	else
 	{
-		vResult = vDefault;
+		vResult += vDefault;
 	}
 	
 	return vResult;
@@ -57,7 +57,7 @@ function getLogo(vLevel)
 {
 	vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
 	
 	return vResult;
 }
@@ -128,9 +128,11 @@ function getFooter()
 {
     var vResult = "";
 	
-    vResult += "© Copyright 2012 All rights reserved<br>";    
-    vResult += "House That Kamurai Built<br>";
-	
+    vResult += "<p id=\"idFooterContent\">";
+		vResult += "© Copyright 2012 All rights reserved<br>";    
+		vResult += "House That Kamurai Built<br>";
+	vResult += "</p>";
+
 	return vResult;   
 }
 
@@ -138,8 +140,10 @@ function getWebMaster()
 {
     var vResult = "";
 	
-    vResult += "Website managed by Kamurai.";
-	
+    vResult += "<p id=\"idFooterManagement\">";
+		vResult += "Website managed by Kamurai.";
+	vResult += "</p>";
+				
 	return vResult;
 }
 

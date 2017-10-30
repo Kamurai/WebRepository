@@ -1,8 +1,3 @@
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
-}
-
 function fillTitle(vPage)
 {
 	var vResult = "";

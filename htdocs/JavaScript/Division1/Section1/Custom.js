@@ -16,11 +16,19 @@ function getTitle(vPage)
 		}
 		else if(vPage == 2)
 		{
-			vResult += "MySQL Programming";
+			vResult += "Derby Programming";
 		}
 		else if(vPage == 3)
 		{
-			vResult += "Postgres Programming";
+			vResult += "MySQL Programming";
+		}
+		else if(vPage == 4)
+		{
+			vResult += "SQL Server Programming";
+		}
+		else if(vPage == 5)
+		{
+			vResult += "PostgreSQL Programming";
 		}
 		else
 		{
@@ -49,11 +57,19 @@ function getContentHeader(vPage)
 		}
 		else if(vPage == 2)
 		{
-			vResult += "MySQL Programming";
+			vResult += "Derby Programming";
 		}
 		else if(vPage == 3)
 		{
-			vResult += "Postgres Programming";
+			vResult += "MySQL Programming";
+		}
+		else if(vPage == 4)
+		{
+			vResult += "SQL Server Programming";
+		}
+		else if(vPage == 5)
+		{
+			vResult += "PostgreSQL Programming";
 		}
 		else
 		{
@@ -74,7 +90,7 @@ function getContent(vPage)
 	vResult += "<p id=\"idCenterContent\">";
     	if(vPage <= 0)
 		{
-			vResult += "vDefault";
+			vResult += vDefault;
 		}
 		else if(vPage == 1)
 		{
@@ -82,11 +98,19 @@ function getContent(vPage)
 		}
 		else if(vPage == 2)
 		{
-			vResult += "This section is dedicated to MySQL based programming.";
+			vResult += "This section is dedicated to Derby based programming.";
 		}
 		else if(vPage == 3)
 		{
-			vResult += "This section is dedicated to Postgres based programming.";
+			vResult += "This section is dedicated to MySQL based programming.";
+		}
+		else if(vPage == 4)
+		{
+			vResult += "This section is dedicated to SQL Server based programming.";
+		}
+		else if(vPage == 5)
+		{
+			vResult += "This section is dedicated to PostgreSQL based programming.";
 		}
 		else
 		{

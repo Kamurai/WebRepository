@@ -1,4 +1,4 @@
-function Navigation(vLevel)
+function getNavigation(vLevel)
 {
 	var vResult = "";
 	
@@ -7,12 +7,12 @@ function Navigation(vLevel)
 		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project2.html\">Derby</a><br><br>";
 		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project3.html\">MySQL</a><br><br>";
 		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project4.html\">SQL Server</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project5.html\">Postgres</a><br><br>";
+		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project5.html\">PostgreSQL</a><br><br>";
     
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
+function getBody(vPage, vLevel)
 {
 	var vResult = "";
 	
@@ -46,12 +46,8 @@ function getLayout(vPage, vLevel)
 			vResult += "</tr>";
 			vResult += "<tr id=\"idFooterRow\">";
 				vResult += "<td id=\"idFooterMain\" colspan=\"3\">";
-					vResult += "<p id=\"idFooterContent\">";
-						vResult += getFooter();
-					vResult += "</p>";
-					vResult += "<p id=\"idFooterManagement\">";
-						vResult += getWebMaster();
-					vResult += "</p>";
+					vResult += getFooter();
+					vResult += getWebMaster();
 				vResult += "</td>";
 			vResult += "</tr>";
 		vResult += "</table>";

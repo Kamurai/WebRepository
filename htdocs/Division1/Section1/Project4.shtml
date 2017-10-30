@@ -1,5 +1,3 @@
 <html>
-	<body id="idBody">
-        <!--#include virtual="/cgi-bin/Layout.pl?vPage=4&vLevel=2&vDivision=1" -->
-	</body>
+    <!--#include virtual="/cgi-bin/Division1/Section1/Layout.pl?vPage=4&vLevel=2&vDivision=1" -->
 </html>

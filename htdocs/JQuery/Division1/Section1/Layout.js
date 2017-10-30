@@ -1,6 +1,6 @@
 function buildLayout(vPage, vLevel, vDivision)
 {
-    buildHead(vLevel, vDivision);
+    //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
@@ -8,6 +8,16 @@ function fillLayout(vPage, vLevel, vDivision)
 {
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
+}
+
+function fillNavigation(vLevel)
+{
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project1.html\">Oracle</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project2.html\">Derby</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project3.html\">MySQL</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project4.html\">SQL Server</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project5.html\">PostgreSQL</a><br><br>");
 }
 
 function buildBody(vPage, vLevel)

@@ -1,23 +1,3 @@
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Section6/Index.html\">Editations</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project7.html\">Truth</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project8.html\">Kingdoms</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project9.html\">Terminal World</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project10.html\">Monster Office Workplace</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project11.html\">Battle Princesses</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project12.html\">Sacred Offerings</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project13.html\">The Way</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project14.html\">Conspiratorium</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division2/Project15.html\">Conversion</a><br><br>");
-
-}
-
 function fillTitle(vPage)
 {
 	var vResult = "";
@@ -160,46 +140,46 @@ function fillContent(vPage)
 	{
 		vResult += "This section is dedicated to the Mars centered project \"Opposition\".";
 	}
-	else if(vPage == 7)
+	else if(vPage == 6)
 	{
 		vResult += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
 	}
-	else if(vPage == 8)
+	else if(vPage == 7)
 	{
 		vResult += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.";
 	}
-	else if(vPage == 9)
+	else if(vPage == 8)
 	{
 		vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
 		vResult += "the zombies?  Can you survive?";
 	}
-	else if(vPage == 10)
+	else if(vPage == 9)
 	{
 		vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
 		vResult += "Can you earn the most credit and smooze your way into a promotion?";
 	}
-	else if(vPage == 11)
+	else if(vPage == 10)
 	{
 		vResult += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
 		vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.";
 	}
-	else if(vPage == 12)
+	else if(vPage == 11)
 	{
 		vResult += "This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but";
 		vResult += "don\"t want to fall out favor with the people more than the other deities.";
 		vResult += "Draw people to worship you, but be discerning about who is sacrificed.";
 	}
-	else if(vPage == 13)
+	else if(vPage == 12)
 	{
 		vResult += "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
 		vResult += "Escape the binds of the world and the board to reach enlightment and win.";
 	}
-	else if(vPage == 14)
+	else if(vPage == 13)
 	{
 		vResult += "This section is dedicated to the board game project \"Conspiratorium\".";
 		vResult += "A game of assassins and CIA, you must remember who is friend and who is not.";
 	}
-	else if(vPage == 15)
+	else if(vPage == 14)
 	{
 		vResult += "This section is dedicated to the board game project \"Conversion\".";
 		vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";

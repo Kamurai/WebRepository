@@ -1,6 +1,6 @@
 function buildLayout(vPage, vLevel, vDivision)
 {
-    buildHead(vLevel, vDivision);
+    //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
@@ -8,6 +8,34 @@ function fillLayout(vPage, vLevel, vDivision)
 {
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
+}
+
+function fillNavigation(vLevel)
+{
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Index.html\">Global</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project1.html\">Team Tactial: Crash Ball</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project2.html\">Wars of Antarrea</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project3.html\">Revolutions: Invading Nations</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project4.html\">Revolutions: Rebellion Against the Fist</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project5.html\">Revolutions: Return to Arms</a><br><br>");
+			$( "#idCenterRowLeft" ).append( "<a class=\"navlinkC\" href=\""+getPath(vLevel)+"Division2/Section5/Section1/Project6.html\">Revolutions: Post Wars</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section2/Index.html\">Grendol</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section3/Index.html\">Utopia</a><br><br>");
+		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section5/Section4/Index.html\">Elvia</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6.html\">Truth</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.html\">Kingdoms</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.html\">Terminal World</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.html\">Monster Office Workplace</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10.html\">Battle Princesses</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11.html\">Sacred Offerings</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12.html\">The Way</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13.html\">Conspiratorium</a><br><br>");
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14.html\">Conversion</a><br><br>");
 }
 
 function buildBody(vPage, vLevel)

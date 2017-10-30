@@ -27,7 +27,7 @@
 	<img id="idLogo" src="
 	<!--#set var="vFunction" value="getPath"-->
 	<!--#include virtual="./Universal.ssi"-->
-	logoHTKB.jpg"><br>
+	logoHTKB.jpg"/><br>
 <!--#elif expr="$vFunction == getNavBar" -->
 	<a class=\"navBar\" href="
 	<!--#set var="vFunction" value="getPath"-->

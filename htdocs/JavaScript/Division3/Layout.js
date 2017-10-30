@@ -11,7 +11,7 @@ function getNavigation(vLevel)
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
+function getBody(vPage, vLevel)
 {
     var vResult = "";
 	
@@ -45,12 +45,8 @@ function getLayout(vPage, vLevel)
 			vResult += "</tr>";
 			vResult += "<tr id=\"idFooterRow\">";
 				vResult += "<td id=\"idFooterMain\" colspan=\"3\">";
-					vResult += "<p id=\"idFooterContent\">";
-						vResult += getFooter();
-					vResult += "</p>";
-					vResult += "<p id=\"idFooterManagement\">";
-						vResult += getWebMaster();
-					vResult += "</p>";
+					vResult += getFooter();
+					vResult += getWebMaster();
 				vResult += "</td>";
 			vResult += "</tr>";
 		vResult += "</table>";

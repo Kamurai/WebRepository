@@ -4,11 +4,11 @@ sub getHead
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
 	my $vResult = "";
-
-	$vResult += "<head>";
-		$vResult += "<meta http-equiv=\'Content-Type\' content=\'text/html; charset=ISO-8859-1\'>";
-		$vResult += getStyle($vLevel, $vDivision);
-	$vResult += "</head>";
+	
+	$vResult .= "<head>";
+		$vResult .= "<meta http-equiv=\'Content-Type\' content=\'text/html; charset=ISO-8859-1\'>";
+		$vResult .= getStyle($vLevel, $vDivision);
+	$vResult .= "</head>";
 	
 	return $vResult;
 }
@@ -18,8 +18,11 @@ sub getStyle
 {
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
+	my $vResult = "";
+
+	$vResult .= "<link href='".getPath($vLevel)."Styles/".getStyleFile($vDivision)."' rel='stylesheet' type='text/css'>";
 	
-	return "<link href='"+getStyleFile($vDivision)+"' rel='stylesheet' type='text/css'>";
+	return $vResult;
 }
 
 sub getStyleFile
@@ -31,23 +34,23 @@ sub getStyleFile
 	
 	if($vDivision == 0)
 	{
-		$vResult = $vDefault;
+		$vResult .= $vDefault;
 	}
-	elsif($vLevel == 1)
+	elsif($vDivision == 1)
 	{
-		$vResult = "Division1.css";
+		$vResult .= "Division1.css";
 	}
-	elsif($vLevel == 2)
+	elsif($vDivision == 2)
 	{
-		$vResult = "Division2.css";
+		$vResult .= "Division2.css";
 	}
-	elsif($vLevel == 3)
+	elsif($vDivision == 3)
 	{
-		$vResult = "Division3.css";
+		$vResult .= "Division3.css";
 	}
 	else
 	{
-		$vResult = $vDefault;
+		$vResult .= $vDefault;
 	}
 	
 	return $vResult;
@@ -60,7 +63,7 @@ sub getLogo
 	my $vLevel = $_[0];
 	my $vResult = "";
 
-	$vResult += "<img id=\"idLogo\" src='".getPath($vLevel)."/Pictures/logoHTKB.jpg'><br>";
+	$vResult .= "<img id=\"idLogo\" src='".getPath($vLevel)."/Pictures/logoHTKB.jpg'><br>";
 	
 	return $vResult;
 }
@@ -73,10 +76,10 @@ sub getNavBar
 	
 	my $vResult = "";
 
-	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Index.shtml'>Home</a>";
-	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division1/Index.shtml'>Web Programming</a>";
-	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division2/Index.shtml'>Private Projects</a>";
-	$vResult += "<a class=\"navBar\" href='".getPath($vLevel)."Division3/Index.shtml'>Downloadable Projects</a>";
+	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Index.shtml'>Home</a>";
+	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division1/Index.shtml'>Web Programming</a>";
+	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division2/Index.shtml'>Private Projects</a>";
+	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division3/Index.shtml'>Downloadable Projects</a>";
 	
 	return $vResult;
 }
@@ -87,9 +90,9 @@ sub getNavigationHeader
 
 	my $vResult = "";
 
-	$vResult += "<h4>";
-	$vResult += "Navigation";
-	$vResult += "</h4>";
+	$vResult .= "<h4>";
+	$vResult .= "Navigation";
+	$vResult .= "</h4>";
 	
 	return $vResult;
 }
@@ -100,9 +103,9 @@ sub getInformationHeader
 
 	my $vResult = "";
 
-	$vResult += "<h4>";
-	$vResult += "Information";
-	$vResult += "</h4>";
+	$vResult .= "<h4>";
+	$vResult .= "Information";
+	$vResult .= "</h4>";
 	
 	return $vResult;
 }
@@ -113,8 +116,8 @@ sub getInformation
 
 	my $vResult = "";
 
-	$vResult += "This page is written using Perl.";
-	$vResult += "Other versions of this page are here:<br>";
+	$vResult .= "This page is written using Perl.<br>";
+	$vResult .= "Other versions of this page are here:<br>";
 		
 	return $vResult;
 }
@@ -125,7 +128,7 @@ sub getGDR
 	
 	my $vResult = "";
 
-	$vResult += "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	$vResult .= "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
 	
 	return $vResult;
 }
@@ -136,7 +139,7 @@ sub getWinRar
 
 	my $vResult = "";
 
-	$vResult += "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+	$vResult .= "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
 	
 	return $vResult;
 }
@@ -145,19 +148,27 @@ sub getFooter
 {
 	##  Gets the footer of the webpage
 
-	print "<p id=\"idFooterContent\">";
-		print "© Copyright 2012 All rights reserved<br>";
-		print "House That Kamurai Built<br>";
-	print "</p>";
+	my $vResult = "";
+	
+	$vResult .= "<p id=\"idFooterContent\">";
+		$vResult .= "© Copyright 2012 All rights reserved<br>";
+		$vResult .= "House That Kamurai Built<br>";
+	$vResult .= "</p>";
+	
+	return $vResult;
 }
 
 sub getWebMaster
 {
 	##  Gets the webmaster of the webpage
 								
-	print "<p id=\"idFooterManagement\">";
-		print "Website managed by Kamurai.";
-	print "</p>";
+	my $vResult = "";
+	
+	$vResult .= "<p id=\"idFooterManagement\">";
+		$vResult .= "Website managed by Kamurai.";
+	$vResult .= "</p>";
+	
+	return $vResult;
 }
 
 sub getPath
@@ -171,47 +182,47 @@ sub getPath
 
 	if($vLevel <= 0)
 	{
-		$vResult = "./";
+		$vResult .= "./";
 	}
 	elsif($vLevel == 1)
 	{
-		$vResult = "../";
+		$vResult .= "../";
 	}
 	elsif($vLevel == 2)
 	{
-		$vResult = "../../";
+		$vResult .= "../../";
 	}
 	elsif($vLevel == 3)
 	{
-		$vResult = "../../../";
+		$vResult .= "../../../";
 	}
 	elsif($vLevel == 4)
 	{
-		$vResult = "../../../../";
+		$vResult .= "../../../../";
 	}
 	elsif($vLevel == 5)
 	{
-		$vResult = "../../../../../";
+		$vResult .= "../../../../../";
 	}
 	elsif($vLevel == 6)
 	{
-		$vResult = "../../../../../../";
+		$vResult .= "../../../../../../";
 	}
 	elsif($vLevel == 7)
 	{
-		$vResult = "../../../../../../../";
+		$vResult .= "../../../../../../../";
 	}
 	elsif($vLevel == 8)
 	{
-		$vResult = "../../../../../../../../";
+		$vResult .= "../../../../../../../../";
 	}
 	elsif($vLevel == 9)
 	{
-		$vResult = "../../../../../../../../../";
+		$vResult .= "../../../../../../../../../";
 	}
 	elsif($vLevel == 10)
 	{
-		$vResult = "../../../../../../../../../../";
+		$vResult .= "../../../../../../../../../../";
 	}
 
 	return $vResult;

@@ -9,7 +9,6 @@ function getNavigation(vLevel)
 		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section4/Project1.html\">Warring Nations</a><br><br>";
 		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section4/Project2.html\">Psychodom: The One Empire</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section6/Index.html\">Editations</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.html\">Truth</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.html\">Kingdoms</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.html\">Terminal World</a><br><br>";
@@ -23,7 +22,7 @@ function getNavigation(vLevel)
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
+function getBody(vPage, vLevel)
 {
 	var vResult = "";
 	
@@ -57,12 +56,8 @@ function getLayout(vPage, vLevel)
 			vResult += "</tr>";
 			vResult += "<tr id=\"idFooterRow\">";
 				vResult += "<td id=\"idFooterMain\" colspan=\"3\">";
-					vResult += "<p id=\"idFooterContent\">";
-						vResult += getFooter();
-					vResult += "</p>";
-					vResult += "<p id=\"idFooterManagement\">";
-						vResult += getWebMaster();
-					vResult += "</p>";
+					vResult += getFooter();
+					vResult += getWebMaster();
 				vResult += "</td>";
 			vResult += "</tr>";
 		vResult += "</table>";

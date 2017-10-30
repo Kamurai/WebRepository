@@ -1,13 +1,3 @@
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project1.html\">Oracle</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project2.html\">Derby</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project3.html\">MySQL</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project4.html\">SQL Server</a><br><br>");
-		$( "#idCenterRowLeft" ).append( "<a class=\"navlinkB\" href=\""+GetPath(vLevel)+"Division1/Section6/Project5.html\">Postgres</a><br><br>");
-}
-
 function fillTitle(vPage)
 {
 	var vResult = "";

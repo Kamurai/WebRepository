@@ -1,6 +1,6 @@
 function buildLayout(vPage, vLevel, vDivision)
 {
-    buildHead(vLevel, vDivision);
+    //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
@@ -8,6 +8,11 @@ function fillLayout(vPage, vLevel, vDivision)
 {
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
+}
+
+function fillNavigation(vLevel)
+{
+	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section1/Index.html\">Databases</a><br><br>");
 }
 
 function buildBody(vPage, vLevel)

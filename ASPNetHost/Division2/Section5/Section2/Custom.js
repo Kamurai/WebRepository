@@ -86,6 +86,8 @@ function getContent(vPage)
 			vResult += vDefault;
 		}
 	vResult += "</p>";
+	
+	return vResult;
 }
 
 function getVersions(vPage)

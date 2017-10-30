@@ -80,7 +80,7 @@ function getContentHeader(vPage)
 	return vResult;
 }
 
-function Content(vPage, vLevel)
+function getContent(vPage, vLevel)
 {
 	var vResult = "";
 	var vDefault = "";

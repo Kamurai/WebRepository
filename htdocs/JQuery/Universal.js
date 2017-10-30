@@ -1,3 +1,8 @@
+function fillHead(vLevel, vDivision)
+{
+    $( "head" ).append( getHead(vLevel, vDivision) );
+}
+
 function getHead(vLevel, vDivision)
 {
 	var vResult = "";
@@ -8,17 +13,11 @@ function getHead(vLevel, vDivision)
 	return vResult;
 }
 
-function fillHead(vLevel, vDivision)
-{
-    $( "head" ).append( getHead(vLevel, vDivision) );
-}
-
 function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
 	vResult += "<link href=\"";
-
 	vResult += getPath(vLevel) + "Styles/";
 	vResult += getStyleFile(vDivision) + "\" rel=\"stylesheet\" type=\"text/css\">";
 	
@@ -32,40 +31,45 @@ function getStyleFile(vDivision)
     
     if( vDivision == 0 )
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     else if( vDivision == 1 )
     {
-        vResult = "Division1.css";
+        vResult += "Division1.css";
     }
     else if( vDivision == 2 )
     {
-        vResult = "Division2.css";
+        vResult += "Division2.css";
     }
     else if( vDivision == 3 )
     {
-        vResult = "Division3.css";
+        vResult += "Division3.css";
     }
     else
     {
-        vResult = vDefault;
+        vResult += vDefault;
     }
     
     return vResult;
 }
 
+function fillLogo(vLevel)
+{
+    $( "#idHeaderRowCenter" ).append( getLogo(vLevel) );
+}
+
 function getLogo(vLevel)
 {
-	vResult = "";
+	var vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
 	
 	return vResult;
 }
 
-function fillLogo(vLevel)
+function fillNavBar(vLevel)
 {
-    $( "#idHeaderRowCenter" ).append( getLogo(vLevel) );
+    $( "#idNavigationBar" ).append( getNavBar(vLevel) );
 }
 
 function getNavBar(vLevel)
@@ -80,9 +84,11 @@ function getNavBar(vLevel)
 	return vResult;
 }
 
-function fillNavBar(vLevel)
+function fillNavigationHeader()
 {
-    $( "#idNavigationBar" ).append( getNavBar(vLevel) );
+    var tableRowCenterLeftHeader = document.createElement("h4");
+    tableRowCenterLeftHeader.textContent = getNavigationHeader();
+    $( "#idCenterRowLeft" ).append( tableRowCenterLeftHeader );
 }
 
 function getNavigationHeader()
@@ -94,12 +100,13 @@ function getNavigationHeader()
 	return vResult;
 }
 
-function fillNavigationHeader()
+function fillInformationHeader()
 {
-    var tableRowCenterLeftHeader = document.createElement("h4");
-    tableRowCenterLeftHeader.textContent = getNavigationHeader();
-    $( "#idCenterRowLeft" ).append( tableRowCenterLeftHeader );
+    var tableRowCenterRightHeader = document.createElement("h4");
+    tableRowCenterRightHeader.textContent = getInformationHeader();
+    $( "#idCenterRowRight" ).append( tableRowCenterRightHeader );
 }
+
 function getInformationHeader()
 {
     var vResult = "";
@@ -109,33 +116,17 @@ function getInformationHeader()
 	return vResult;
 }
 
-function fillInformationHeader()
+function fillInformation()
 {
-    var tableRowCenterRightHeader = document.createElement("h4");
-    tableRowCenterRightHeader.textContent = getInformationHeader();
-    $( "#idCenterRowRight" ).append( tableRowCenterRightHeader );
+    $( "#idCenterRowRight" ).append( getInformation() );
 }
 
 function getInformation()
 {
     var vResult = "";
 	
-    vResult += "This is written with basic HTML and javascript.");
-	vResult += "Other versions of this page are here:<br>");
-	
-	return vResult;
-}
-
-function fillInformation()
-{
-    $( "#idCenterRowRight" ).append( getInformation() );
-}
-
-function getGDR()
-{
-	var vResult = "";
-	
-    vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");
+    vResult += "This is written with basic HTML and javascript.";
+	vResult += "Other versions of this page are here:<br>";
 	
 	return vResult;
 }
@@ -145,28 +136,27 @@ function fillGDR()
     $( "#idFooterContent" ).append( getGDR );
 }
 
-function getWinRAR()
+function getGDR()
 {
 	var vResult = "";
 	
-    vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");
+    vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
 	
 	return vResult;
 }
 
-function fillWinRAR()
+function fillWinRar()
 {
-    $( "#idFooterContent" ).append( getWinRAR() );
+    $( "#idFooterContent" ).append( getWinRar() );
 }
 
-function getFooter()
+function getWinRar()
 {
-    var vResult = "";
+	var vResult = "";
 	
-    vResult += "© Copyright 2012 All rights reserved<br>");    
-    vResult += "House That Kamurai Built<br>");
+    vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
 	
-	return vResult;   
+	return vResult;
 }
 
 function fillFooter()
@@ -174,18 +164,28 @@ function fillFooter()
     $( "#idFooterContent" ).append( getFooter() );
 }
 
-function getWebMaster()
+function getFooter()
 {
     var vResult = "";
 	
-    vResult += "Website managed by Kamurai.");
+    vResult += "© Copyright 2012 All rights reserved<br>";    
+    vResult += "House That Kamurai Built<br>";
 	
-	return vResult;
+	return vResult;   
 }
 
 function fillWebMaster()
 {
     $( "#idFooterManagement" ).append( getWebMaster() );
+}
+
+function getWebMaster()
+{
+    var vResult = "";
+	
+    vResult += "Website managed by Kamurai.";
+	
+	return vResult;
 }
 
 function getPath(vLevel)

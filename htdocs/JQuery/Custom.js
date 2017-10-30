@@ -1,10 +1,3 @@
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Media.html\">Media</a><br/><br/>"); //move to Custom
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+GetPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>"); //move to Custom
-}
-
 function fillTitle(vPage)
 {
     var vResult = "";
