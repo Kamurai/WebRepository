@@ -143,7 +143,7 @@ Function getVersions(vPage)
 	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:82/Section2/Index"">Python Web.py</a><br>"
 	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:83/Section2/Index"">Ruby On Rails</a><br>"
 	
-	ElseIf vPage = 0 Then
+	If vPage = 0 Then
 		vResult = vResult + vDefault
 	ElseIf vPage = 2 Then
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/Section2/Project2.html"">HTML</a><br>"
@@ -326,4 +326,4 @@ Function getVersions(vPage)
 	End If
 	
 	getVersions = vResult	    
-End If
+End Function

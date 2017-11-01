@@ -1,4 +1,4 @@
-function getHead(vLevel, vDivision)
+Function getHead(vLevel, vDivision)
 	dim vResult
 
 	vResult = "<head>"
@@ -10,9 +10,9 @@ function getHead(vLevel, vDivision)
 	vResult = vResult +  "</head>"
 	
 	getHead = vResult
-end function
+end Function
 
-function getStyle(vLevel, vDivision)
+Function getStyle(vLevel, vDivision)
 	dim vResult
 	
 	vResult = vResult + "<link href='"
@@ -21,9 +21,9 @@ function getStyle(vLevel, vDivision)
 	vResult = vResult + "' rel='stylesheet' type='text/CSS'>"
 
 	getStyle = vResult
-end function
+end Function
 
-function getStyleFile(vDivision)
+Function getStyleFile(vDivision)
 	dim vResult
 	dim vDefault
 	
@@ -42,71 +42,71 @@ function getStyleFile(vDivision)
 	End If
 	
 	getStyleFile = vResult
-end function
+end Function
 
-function getLogo(vLevel)
+Function getLogo(vLevel)
     dim vResult
 	vResult = vResult + "<img id=""idLogo"" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>"
 	getLogo = vResult
-end function
+end Function
 
-function getWebMaster()
+Function getWebMaster()
 	dim vResult
 	vResult = vResult + "Website managed by Kamurai."
 	getWebMaster = vResult
-end function
+end Function
 
-function getNavBar(vLevel)
+Function getNavBar(vLevel)
     dim vResult
 	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Index.asp'>Home</a>"
-	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Section1/Index.asp'>Web Programming</a>"
-	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Section2/Index.asp'>Private Projects</a>"
-	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Section3/Index.asp'>Downloadable Projects</a>"
+	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Division1/Index.asp'>Web Programming</a>"
+	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Division2/Index.asp'>Private Projects</a>"
+	vResult = vResult + "<a class=""navBar"" href='"+getPath(vLevel)+"Division3/Index.asp'>Downloadable Projects</a>"
 	getNavBar = vResult
-end function
+end Function
 
-function getNavigationHeader()
+Function getNavigationHeader()
 	dim vResult
 	vResult = vResult + "<h4>"
 	vResult = vResult + "Navigation"
 	vResult = vResult + "</h4>"        
 	getNavigationHeader = vResult
-end function
+end Function
 
-function getInformationHeader()
+Function getInformationHeader()
 	dim vResult
 	vResult = vResult + "<h4>"
 	vResult = vResult + "Information"
 	vResult = vResult + "</h4>"	
 	getInformationHeader = vResult
-end function
+end Function
 
-function getInformation()
+Function getInformation()
     dim vResult
 	vResult = vResult + "This is written with classic ASP and VBScript."
 	getInformation = vResult
-end function
+end Function
 
-function getGDR()
+Function getGDR()
 	dim vResult
 	vResult = vResult + "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>"
 	getGDR = vResult
-end function
+end Function
 
-function getWinRar()
+Function getWinRar()
 	dim vResult
 	vResult = vResult + "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>"	
 	getWinRar = vResult
-end function
+end Function
 
-function getFooter()
+Function getFooter()
 	dim vResult
 	vResult = vResult + "© Copyright 2012 All rights reserved<br>"    
 	vResult = vResult + "House That Kamurai Built<br>"
 	getFooter = vResult
-end function
+end Function
 
-function getPath(vLevel)
+Function getPath(vLevel)
 	dim vResult
 	
     If vLevel <= 0 Then
@@ -128,4 +128,4 @@ function getPath(vLevel)
     End If
 	
 	getPath = vResult
-end function
+end Function

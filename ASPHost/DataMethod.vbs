@@ -1,4 +1,4 @@
-function OracleMethod(rowID, col)
+Function OracleMethod(rowID, col)
 	dim sqlStatement, vResult, rs, conObj
 	
 	rs = new ActiveXObject("ADODB.Recordset")
@@ -32,10 +32,9 @@ function OracleMethod(rowID, col)
 	closeOracleConnection()
 	
 	OracleMethod=vResult
-}
+End Function
 
-function openOracleConnection(conObj)
-{
+Function openOracleConnection(conObj)
 	dim driver, url, dbName, dbUsername, dbPassword, connectionstring
 
 	dim driver = "oracle.jdbc.driver.OracleDriver"
@@ -49,10 +48,9 @@ function openOracleConnection(conObj)
 	OraDatabase.Open "connectionstring" //dsn=OracleDSNuid=useridpwd=password"
 
 	conObj.Open(connectionstring)
-}
+End Function
 
-function openOracleConnectionBU2()
-{
+Function openOracleConnectionBU2()
 	dim driver = "oracle.jdbc.driver.OracleDriver"
 	dim url = "jdbc:oracle:thin:@localhost:1521:xe"
 	dim dbName = "Test"
@@ -66,10 +64,9 @@ function openOracleConnectionBU2()
 	
 	//conObj.Open(connectionString, dbUsername, dbPassword)
 	//conObj.Open(connectionstring)
-}
+End Function
 
-function closeOracleConnection()
-{
+Function closeOracleConnection()
 	//conObj.close
-}
+End Function
 

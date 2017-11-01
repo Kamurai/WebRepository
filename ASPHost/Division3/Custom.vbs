@@ -60,7 +60,7 @@ Function getContent(vPage)
 	
 	vResult = vResult + "<p id=""idCenterContent"">"
     	If vPage = 0 Then
-			vResult = vResult + vResult = vResult + vDefault
+			vResult = vResult + vDefault
 		ElseIf vPage = 1 Then
 			vResult = vResult + "Here are downloads to play Cube World with us:</br>"
 			vResult = vResult + "</br>"
@@ -72,29 +72,29 @@ Function getContent(vPage)
 		ElseIf vPage = 2 Then
 			vResult = vResult + "Here are Game Maker Projects to play:</br>"
 			vResult = vResult + "</br>"
-			vResult = vResult + ""Gamebox Client: v6.0"":<t><a href=""http://htkb.dyndns.org/Downloads/GameBox_Client_Installer_v6p0.exe"">Play games from...well, anywhere.</a></br>"
-			vResult = vResult + ""Gamebox Server: v6.0"":<t><a href=""http://htkb.dyndns.org/Downloads/GameBox_Server_Installer_v6p0.exe"">Host GameBox.</a></br>"
-			vResult = vResult + ""39dll.dll: v2.5"":<t><a href=""http://htkb.dyndns.org/Downloads/39dll.dll"">You may need this in your ""user/AppData/Local/GameBox_Client"" folder.</a></br>"
-			vResult = vResult + ""A Chess Server"":<t><a href=""http://htkb.dyndns.org/Downloads/Chess_Server.exe"">Host a Chess game.</a></br>"
-			vResult = vResult + ""A Chess Client"":<t><a href=""http://htkb.dyndns.org/Downloads/Chess_Client.exe"">A game of Chess from anywhere.</a></br>"
-			vResult = vResult + ""I Dunno"":<t><a href=""http://htkb.dyndns.org/Downloads/Idunno.exe"">I dunno, it""s a fun puzzle game though.</a></br>"
-			vResult = vResult + ""Purification"":<t><a href=""http://htkb.dyndns.org/Downloads/Zombies.exe"">Kill zombies...lots of zombies.</a></br>"
-			vResult = vResult + ""Trail of the Undead: The Way Home"":<t><a href=""http://htkb.dyndns.org/Downloads/TrailoftheUndead.exe"">An adventure of zombie killing goodness.</a></br>"
-			vResult = vResult + ""Discovery"" (buggy Alpha):<t><a href=""http://htkb.dyndns.org/Downloads/Discovery.exe"">Play a game of discovery and survival.</a></br>"
-			vResult = vResult + ""Twisted Tactics: Version 0.1"" (buggy Alpha):<t><a href=""http://htkb.dyndns.org/Downloads/Tactical.exe"">Scrapped two player tactical system.</a></br>"
-			vResult = vResult + ""Skitzo Burrito (Alpha)"": <t><a href=""http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe"">An emotional platform survival game.</a></br>"
+			vResult = vResult + """Gamebox Client: v6.0"":<t><a href=""http://htkb.dyndns.org/Downloads/GameBox_Client_Installer_v6p0.exe"">Play games from...well, anywhere.</a></br>"
+			vResult = vResult + """Gamebox Server: v6.0"":<t><a href=""http://htkb.dyndns.org/Downloads/GameBox_Server_Installer_v6p0.exe"">Host GameBox.</a></br>"
+			vResult = vResult + """39dll.dll: v2.5"":<t><a href=""http://htkb.dyndns.org/Downloads/39dll.dll"">You may need this in your ""user/AppData/Local/GameBox_Client"" folder.</a></br>"
+			vResult = vResult + """A Chess Server"":<t><a href=""http://htkb.dyndns.org/Downloads/Chess_Server.exe"">Host a Chess game.</a></br>"
+			vResult = vResult + """A Chess Client"":<t><a href=""http://htkb.dyndns.org/Downloads/Chess_Client.exe"">A game of Chess from anywhere.</a></br>"
+			vResult = vResult + """I Dunno"":<t><a href=""http://htkb.dyndns.org/Downloads/Idunno.exe"">I dunno, it""s a fun puzzle game though.</a></br>"
+			vResult = vResult + """Purification"":<t><a href=""http://htkb.dyndns.org/Downloads/Zombies.exe"">Kill zombies...lots of zombies.</a></br>"
+			vResult = vResult + """Trail of the Undead: The Way Home"":<t><a href=""http://htkb.dyndns.org/Downloads/TrailoftheUndead.exe"">An adventure of zombie killing goodness.</a></br>"
+			vResult = vResult + """Discovery"" (buggy Alpha):<t><a href=""http://htkb.dyndns.org/Downloads/Discovery.exe"">Play a game of discovery and survival.</a></br>"
+			vResult = vResult + """Twisted Tactics: Version 0.1"" (buggy Alpha):<t><a href=""http://htkb.dyndns.org/Downloads/Tactical.exe"">Scrapped two player tactical system.</a></br>"
+			vResult = vResult + """Skitzo Burrito (Alpha)"": <t><a href=""http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe"">An emotional platform survival game.</a></br>"
 		ElseIf vPage = 3 Then
 			vResult = vResult + "Here are Java Programs to download:</br>"
 			vResult = vResult + "</br>"
-			vResult = vResult + ""Blood Bowl Manager"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
+			vResult = vResult + """Blood Bowl Manager"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
 		ElseIf vPage = 4 Then
 			vResult = vResult + "Here are C# Programs to download:</br>"
 			vResult = vResult + "</br>"
-			vResult = vResult + ""Chess Program"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
+			vResult = vResult + """Chess Program"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
 		ElseIf vPage = 5 Then
 			vResult = vResult + "Here are C++ Programs to download:</br>"
 			vResult = vResult + "</br>"
-			vResult = vResult + ""HTKB Bar Code System"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
+			vResult = vResult + """HTKB Bar Code System"":<t><a href=""http://htkb.dyndns.org/Downloads/pichaku.zip"">This is currently not available.</a></br>"
 		Else
 			vResult = vResult + vDefault
 		End If
@@ -123,7 +123,7 @@ Function getVersions(vPage)
 	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:82/Section3/Index"">Python Web.py</a><br>"
 	vDefault = vDefault + "<a href=""http://htkb.dyndns.org:83/Section3/Index"">Ruby On Rails</a><br>"
 	
-	ElseIf vPage = 0 Then
+	If vPage = 0 Then
 		vResult = vResult + vDefault
 	ElseIf vPage = 1 Then
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/Section3/Project1.html"">HTML</a><br>"

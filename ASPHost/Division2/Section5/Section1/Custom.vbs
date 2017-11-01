@@ -178,7 +178,7 @@ Function getVersions(vPage)
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/SSI/Section2/Section5/Section1/Project4.html"">Apache SSI</a><br>"
 	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Section2/Section5/Section1/Project4"">Python Web.py</a><br>"
         vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Section2/Section5/Section1/Project4"">Ruby On Rails</a><br>"
-    Else if(vPage == 5)
+    ElseIf vPage = 5 Then
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/Section2/Section5/Section1/Project5.html"">HTML</a><br>"
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/Section2/Section5/Section1/Project5.php"">PHP</a><br>"
 		vResult = vResult + "<a href=""http://htkb.dyndns.org/VBScript/Section2/Section5/Section1/Project5.html"">HTML VBScript</a><br>"
@@ -215,4 +215,4 @@ Function getVersions(vPage)
 	End If
 	
 	getVersions = vResult    
-End If
+End Function

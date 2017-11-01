@@ -1,15 +1,14 @@
-def getHead(vDivision):
+def getHead(vLevel, vDivision):
 	vResult = ''
 	
 	vResult += '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
-	vResult += getStyle(vLevel, vDivsion)
+	vResult += getStyle(vDivision)
 	
 	return vResult
 	
 def getStyle(vDivision):
 	vResult = ''
 	
-	vResult += '<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">'
 	vResult += '<link href=\"'
 	vResult += getStyleFile(vDivision)
 	vResult += '\" rel=\"stylesheet\" type="text/CSS">'
@@ -93,7 +92,7 @@ def getWinRar():
 	return vResult
 	
 def getFooter():
-	vResult += ''
+	vResult = ''
 	
 	vResult += '<p id=\'idFooterContent\'>'
 	vResult += '	Copyright 2012 All rights reserved<br>'
@@ -103,7 +102,7 @@ def getFooter():
 	return vResult
 	
 def getWebMaster():
-	vResult += ''
+	vResult = ''
 	
 	vResult += '<p id=\'idFooterManagement\'>'
 	vResult += '	Website managed by Kamurai.'

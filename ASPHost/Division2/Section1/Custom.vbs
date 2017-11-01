@@ -147,4 +147,4 @@ Function getVersions(vPage)
 	End If
 	
 	getVersions = vResult    
-End If
+End Function

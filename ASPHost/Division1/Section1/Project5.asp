@@ -7,7 +7,7 @@
 		dim vPage, vLevel, vDivision
 		vPage = 5
 		vLevel = 2
-		vDivision = 2
+		vDivision = 1
 		
 		Response.Write( getHead(vLevel, vDivision) )
 		Response.Write( getBody(vPage, vLevel) )		

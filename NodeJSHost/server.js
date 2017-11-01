@@ -22,7 +22,7 @@ vHTTP.createServer
 			
 			vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/AboutUs')
@@ -36,7 +36,7 @@ vHTTP.createServer
             var vDivision = 0;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Media')
@@ -50,7 +50,7 @@ vHTTP.createServer
             var vDivision = 0;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Minecraft')
@@ -64,7 +64,7 @@ vHTTP.createServer
             var vDivision = 0;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }        
         else if(vRequest.url == '/Division1/Index')
@@ -78,7 +78,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Index')
@@ -92,7 +92,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Project1')
@@ -106,7 +106,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Project2')
@@ -120,7 +120,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Project3')
@@ -134,7 +134,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Project4')
@@ -148,7 +148,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division1/Section1/Project5')
@@ -162,7 +162,7 @@ vHTTP.createServer
             var vDivision = 1;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Index')
@@ -176,7 +176,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project2')
@@ -190,7 +190,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project3')
@@ -204,7 +204,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project76')
@@ -218,7 +218,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project7')
@@ -232,7 +232,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project8')
@@ -246,7 +246,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project9')
@@ -260,7 +260,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project10')
@@ -274,7 +274,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project11')
@@ -288,7 +288,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project12')
@@ -302,7 +302,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project13')
@@ -316,7 +316,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Project14')
@@ -330,7 +330,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section1/Index')
@@ -344,7 +344,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section1/Project1')
@@ -358,7 +358,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section1/Project2')
@@ -372,7 +372,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section1/Project3')
@@ -386,7 +386,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section4/Index')
@@ -400,7 +400,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section4/Project1')
@@ -414,7 +414,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section4/Project2')
@@ -426,7 +426,10 @@ vHTTP.createServer
             var vPage  = 2;
             var vLevel = 2;
             var vDivision = 2;
-            vResponse.write( vLayout.WriteWebPage(vPage, vLevel, vSection, vCSS) );
+            vResponse.write( "<HTML>" );
+				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
+			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Index')
         {
@@ -439,7 +442,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Index')
@@ -453,7 +456,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project1')
@@ -467,7 +470,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project2')
@@ -481,7 +484,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project3')
@@ -495,7 +498,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project4')
@@ -509,7 +512,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project5')
@@ -523,7 +526,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section1/Project6')
@@ -537,7 +540,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section2/Index')
@@ -551,7 +554,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section2/Project1')
@@ -565,7 +568,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section2/Project2')
@@ -579,7 +582,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section3/Index')
@@ -593,7 +596,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section3/Project1')
@@ -607,11 +610,12 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section4/Index')
         {
+            var vUniversal = require('./Universal');
             var vLayout = require('./Division2/Section5/Section4/Layout');
             var vCustom = require('./Division2/Section5/Section4/Custom');
         
@@ -620,7 +624,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division2/Section5/Section4/Project1')
@@ -634,7 +638,7 @@ vHTTP.createServer
             var vDivision = 2;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Index')
@@ -648,7 +652,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Project1')
@@ -662,7 +666,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Project2')
@@ -676,7 +680,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Project3')
@@ -690,7 +694,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Project4')
@@ -704,7 +708,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Division3/Project5')
@@ -718,7 +722,7 @@ vHTTP.createServer
             var vDivision = 3;
             vResponse.write( "<HTML>" );
 				vResponse.write( vUniversal.getHead(vLevel, vDivision) );
-				vResponse.write( vLayout.getBody(vPage, vLevel);
+				vResponse.write( vLayout.getBody(vPage, vLevel) );
 			vResponse.write( "</HTML>" );
         }
         else if(vRequest.url == '/Pictures/favicon.ico')

@@ -184,7 +184,7 @@ exports.getContent = function (vPage)
 exports.getVersions = function (vPage)
 {
 	var vResult = "";
-    var vDefault += "";
+    var vDefault = "";
 	
 	vDefault += "<a href=\"http://htkb.dyndns.org/Index.html\">HTML</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>";

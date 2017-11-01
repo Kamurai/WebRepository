@@ -1,11 +1,11 @@
 var vUniversal = require('../Universal');
 var vCustom = require('./Custom');
 
-exports.Navigation = function (vLevel)
+getNavigation = function (vLevel)
 {
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section6/Index\">Databases</a><br><br>";
+	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section1/Index\">Databases</a><br><br>";
 	
 	return vResult;
 }

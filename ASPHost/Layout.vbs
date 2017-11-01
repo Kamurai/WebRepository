@@ -1,14 +1,14 @@
-function getNavigation(vLevel)
+Function getNavigation(vLevel)
 	dim vResult
 	
-    vResult = vResult + "<a class=""navlinkA"" href="+getPath(vLevel)+"AboutUs.asp"">About Us</a><br/><br/>"
-    vResult = vResult + "<a class=""navlinkA"" href="+getPath(vLevel)+"Media.asp"">Media</a><br/><br/>"
-    vResult = vResult + "<a class=""navlinkA"" href="+getPath(vLevel)+"Minecraft.asp"">Minecraft!</a><br/><br/>"
+    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"AboutUs.asp"">About Us</a><br/><br/>"
+    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Media.asp"">Media</a><br/><br/>"
+    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Minecraft.asp"">Minecraft!</a><br/><br/>"
 	
 	getNavigation = vResult
-end function
+end Function
 
-function getBody(vPage, vLevel)
+Function getBody(vPage, vLevel)
 	dim vResult
 	
 	vResult = vResult + "<body id=""idBody"">"
@@ -53,4 +53,4 @@ function getBody(vPage, vLevel)
 	vResult = vResult + "</body>"
 	
 	getBody = vResult
-end function
+end Function

@@ -90,12 +90,12 @@ exports.getHead = function (vLevel, vDivision)
     return vResult;
 }
 
-function getStyle(vDivision)
+function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
 	vResult += "<link href='";
-	vResult += getPath(vLevel)"'Styles/'";
+	vResult += getPath(vLevel)+"Styles/";
 	vResult += getStyleFile(vDivision);
 	vResult += "' rel='stylesheet' type='text/CSS'>";
 
@@ -137,7 +137,7 @@ exports.getLogo = function (vLevel)
 {
     var vResult = "";
 	
-	vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"logoHTKB.jpg'><br>";
+	vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
     
     return vResult;
 }
@@ -180,8 +180,8 @@ exports.getInformation = function ()
 {
     var vResult = "";
 	
-	vResult += "This is written with NodeJS.";
-    vResult += "Other versions can be found here:";
+	vResult += "This is written with NodeJS.</br>";
+    vResult += "Other versions can be found here:</br>";
     
     return vResult;
 }
