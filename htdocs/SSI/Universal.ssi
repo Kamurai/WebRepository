@@ -5,13 +5,7 @@
 		<!--#include virtual="./Universal.ssi"-->
 	</head>
 <!--#elif expr="$vFunction == getStyle" -->
-	<link href="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	/Styles/"
-	<!--#set var="vFunction" value="getStyleFile"-->
-	<!--#include virtual="./Universal.ssi"-->
-	" rel="stylesheet" type="text/css">
+	<link href="<!--#set var="vFunction" value="getPath"--><!--#include virtual="./Universal.ssi"-->/Styles/<!--#set var="vFunction" value="getStyleFile"--><!--#include virtual="./Universal.ssi"-->" rel="stylesheet" type="text/css">
 <!--#elif expr="$vFunction == getStyleFile" -->
 	<!--#if expr="$vDivision == 0" -->
 		Main.css
@@ -23,11 +17,9 @@
 		Division3.css
 	<!--#else -->
 		Main.css
+	<!--#endif -->
 <!--#elif expr="$vFunction == getLogo" -->
-	<img id="idLogo" src="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	logoHTKB.jpg"/><br>
+	<img id="idLogo" src="<!--#set var="vFunction" value="getPath"--><!--#include virtual="./Universal.ssi"-->Pictures/logoHTKB.jpg"/><br>
 <!--#elif expr="$vFunction == getNavBar" -->
 	<a class=\"navBar\" href="
 	<!--#set var="vFunction" value="getPath"-->
@@ -54,7 +46,8 @@
 		Information
 	</h4>
 <!--#elif expr="$vFunction == getInformation" -->
-	This is written with basic HTML and Server Side Integration.
+	This is written with basic HTML and Server Side Integration.</br>
+	Other versions can be found here:</br>
 <!--#elif expr="$vFunction == getGDR" -->
 	<a href='
 	<!--#set var="vFunction" value="getPath"-->
@@ -76,27 +69,27 @@
 	</p>
 <!--#elif expr="$vFunction == getPath" -->
 	<!--#if expr="$vLevel <= 0" -->
-		<!--#set var="vPath" value="./" -->
+		./
 	<!--#elif expr="$vLevel == 1" -->
-		<!--#set var="vPath" value="../" -->
+		../
 	<!--#elif expr="$vLevel == 2" -->
-		<!--#set var="vPath" value="../../" -->
+		../../
 	<!--#elif expr="$vLevel == 3" -->
-		<!--#set var="vPath" value="../../../" -->
+		../../../
 	<!--#elif expr="$vLevel == 4" -->
-		<!--#set var="vPath" value="../../../../" -->
+		../../../../
 	<!--#elif expr="$vLevel == 5" -->
-		<!--#set var="vPath" value="../../../../../" -->
+		../../../../../
 	<!--#elif expr="$vLevel == 6" -->
-		<!--#set var="vPath" value="../../../../../../" -->
+		../../../../../../
 	<!--#elif expr="$vLevel == 7" -->
-		<!--#set var="vPath" value="../../../../../../../" -->
+		../../../../../../../
 	<!--#elif expr="$vLevel == 8" -->
-		<!--#set var="vPath" value="../../../../../../../../" -->
+		../../../../../../../../
 	<!--#elif expr="$vLevel == 9" -->
-		<!--#set var="vPath" value="../../../../../../../../../" -->
+		../../../../../../../../../
 	<!--#elif expr="$vLevel == 10" -->
-		<!--#set var="vPath" value="../../../../../../../../../../" -->
+		../../../../../../../../../../
 	<!--#else -->
 		NOPE!
 	<!--#endif -->

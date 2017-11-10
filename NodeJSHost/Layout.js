@@ -1,7 +1,7 @@
 var vUniversal = require('./Universal');
 var vCustom = require('./Custom');
 
-getgetNavigation = function (vLevel)
+getNavigation = function (vLevel)
 {
     var vResult = "";
 	

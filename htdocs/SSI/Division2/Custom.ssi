@@ -6,23 +6,23 @@
 			Assault CCG
 		<!--#elif expr="$vPage == 3" -->
 			Mars Projects
-		<!--#elif expr="$vPage == 7" -->
+		<!--#elif expr="$vPage == 6" -->
 			Truth
-		<!--#elif expr="$vPage == 8" -->
+		<!--#elif expr="$vPage == 7" -->
 			Kingdoms
-		<!--#elif expr="$vPage == 9" -->
+		<!--#elif expr="$vPage == 8" -->
 			Terminal World
-		<!--#elif expr="$vPage == 10" -->
+		<!--#elif expr="$vPage == 9" -->
 			Monster Office Workplace
-		<!--#elif expr="$vPage == 11" -->
+		<!--#elif expr="$vPage == 10" -->
 			Battle Princesses
-		<!--#elif expr="$vPage == 12" -->
+		<!--#elif expr="$vPage == 11" -->
 			Sacred Offerings
-		<!--#elif expr="$vPage == 13" -->
+		<!--#elif expr="$vPage == 12" -->
 			The Way
-		<!--#elif expr="$vPage == 14" -->
+		<!--#elif expr="$vPage == 13" -->
 			Conspiratorium
-		<!--#elif expr="$vPage == 15" -->
+		<!--#elif expr="$vPage == 14" -->
 			Conversion
 		<!--#else -->
 			NOPE!
@@ -36,23 +36,23 @@
 			Assault CCG
 		<!--#elif expr="$vPage == 3" -->
 			Mars Projects
-		<!--#elif expr="$vPage == 7" -->
+		<!--#elif expr="$vPage == 6" -->
 			Truth
-		<!--#elif expr="$vPage == 8" -->
+		<!--#elif expr="$vPage == 7" -->
 			Kingdoms
-		<!--#elif expr="$vPage == 9" -->
+		<!--#elif expr="$vPage == 8" -->
 			Terminal World
-		<!--#elif expr="$vPage == 10" -->
+		<!--#elif expr="$vPage == 9" -->
 			Monster Office Workplace
-		<!--#elif expr="$vPage == 11" -->
+		<!--#elif expr="$vPage == 10" -->
 			Battle Princesses
-		<!--#elif expr="$vPage == 12" -->
+		<!--#elif expr="$vPage == 11" -->
 			Sacred Offerings
-		<!--#elif expr="$vPage == 13" -->
+		<!--#elif expr="$vPage == 12" -->
 			The Way
-		<!--#elif expr="$vPage == 14" -->
+		<!--#elif expr="$vPage == 13" -->
 			Conspiratorium
-		<!--#elif expr="$vPage == 15" -->
+		<!--#elif expr="$vPage == 14" -->
 			Conversion
 		<!--#else -->
 			NOPE!
@@ -66,30 +66,30 @@
 			This section is dedicated CCG project "Assault".
 		<!--#elif expr="$vPage == 3" -->
 			This section is dedicated to the Mars centered project "Opposition".
-		<!--#elif expr="$vPage == 7" -->
+		<!--#elif expr="$vPage == 6" -->
 			This section is dedicated to the MMO RTS project "Truth".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
-		<!--#elif expr="$vPage == 8" -->
+		<!--#elif expr="$vPage == 7" -->
 			This section is dedicated to the digital board game project "Kingdoms".  Explore the world's Kingdoms, get rich, get strong and conquer.
-		<!--#elif expr="$vPage == 9" -->
+		<!--#elif expr="$vPage == 8" -->
 			This section is dedicated to the simulation MMO centered project "Terminal World".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
 			the zombies?  Can you survive?
-		<!--#elif expr="$vPage == 10" -->
+		<!--#elif expr="$vPage == 9" -->
 			This section is dedicated to the card and board game project "Monster Office Workplace".  These monsters mean serious business.
 			Can you earn the most credit and smooze your way into a promotion?
-		<!--#elif expr="$vPage == 11" -->
+		<!--#elif expr="$vPage == 10" -->
 			This section is dedicated to the card game project "Battle Princesses".  Ever wanted to see your favorite princess battle for the kingdom?
 			These princess aren't your helpless maidens, but valiant warriors themselves.
-		<!--#elif expr="$vPage == 12" -->
+		<!--#elif expr="$vPage == 11" -->
 			This section is dedicated to the board game project "Sacred Offerings".
 			Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.
 			Draw people to worship you, but be discerning about who is sacrificed.
-		<!--#elif expr="$vPage == 13" -->
+		<!--#elif expr="$vPage == 12" -->
 			This section is dedicated to the card game project "The Way".  You seek to find enlightment by contemplating the elements.
 			Escape the binds of the world and the board to reach enlightment and win.
-		<!--#elif expr="$vPage == 14" -->
+		<!--#elif expr="$vPage == 13" -->
 			This section is dedicated to the board game project "Conspiratorium".
 			A game of assassins and CIA, you must remember who is friend and who is not.
-		<!--#elif expr="$vPage == 15" -->
+		<!--#elif expr="$vPage == 14" -->
 			This section is dedicated to the board game project "Conversion".
 			Compete on the elemental market by processing elements and becoming the elemental kingpin.
 		<!--#else -->
@@ -148,7 +148,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project3">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project3\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project3\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 7" -->
+    <!--#if expr="$vPage == 6" -->
 		<a href="http://htkb.dyndns.org/Section2/Project7.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project7.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project7.html">HTML Javascript</a><br>
@@ -165,7 +165,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project7">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project7\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project7\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 8" -->
+    <!--#if expr="$vPage == 7" -->
 		<a href="http://htkb.dyndns.org/Section2/Project8.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project8.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project8.html">HTML Javascript</a><br>
@@ -182,7 +182,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project8">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project8\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project8\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 9" -->
+    <!--#if expr="$vPage == 8" -->
 		<a href="http://htkb.dyndns.org/Section2/Project9.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project9.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project9.html">HTML Javascript</a><br>
@@ -199,7 +199,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project9">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project9\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project9\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 10" -->
+    <!--#if expr="$vPage == 9" -->
 		<a href="http://htkb.dyndns.org/Section2/Project10.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project10.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project10.html">HTML Javascript</a><br>
@@ -216,7 +216,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project10">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project10\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project10\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 11" -->
+    <!--#if expr="$vPage == 10" -->
 		<a href="http://htkb.dyndns.org/Section2/Project11.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project11.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project11.html">HTML Javascript</a><br>
@@ -233,7 +233,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project11">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project11\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project11\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 12" -->
+    <!--#if expr="$vPage == 11" -->
 		<a href="http://htkb.dyndns.org/Section2/Project12.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project12.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project12.html">HTML Javascript</a><br>
@@ -250,7 +250,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project12">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project12\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project12\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 13" -->
+    <!--#if expr="$vPage == 12" -->
 		<a href="http://htkb.dyndns.org/Section2/Project13.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project13.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project13.html">HTML Javascript</a><br>
@@ -267,7 +267,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project13">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project13\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project13\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 14" -->
+    <!--#if expr="$vPage == 13" -->
 		<a href="http://htkb.dyndns.org/Section2/Project14.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project14.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project14.html">HTML Javascript</a><br>
@@ -284,7 +284,7 @@
         <a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Project14">ASP.NET MVC App</a><br>
         <a href="http://htkb.dyndns.org:82/Section2/Project14\">Python Web.py</a><br>
         <a href="http://htkb.dyndns.org:83/Section2/Project14\">Ruby On Rails</a><br>  
-    <!--#if expr="$vPage == 15" -->
+    <!--#if expr="$vPage == 14" -->
 		<a href="http://htkb.dyndns.org/Section2/Project15.html">HTML</a><br>
         <a href="http://htkb.dyndns.org/Section2/Project15.php">PHP</a><br>
         <a href="http://htkb.dyndns.org/Javascript/Section2/Project15.html">HTML Javascript</a><br>

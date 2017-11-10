@@ -1,6 +1,4 @@
 <?php
-    include './Universal.php';
-	
     function getTitle($vPage)
     {
         $vResult = '';

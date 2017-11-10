@@ -1,6 +1,4 @@
 <?php
-    include './Universal.php';
-	
     function getTitle($vPage)
     {
         $vResult = '';
@@ -293,7 +291,7 @@
 					$vResult = $vResult.'</td>';
 				$vResult = $vResult.'</tr>';
 				$vResult = $vResult.'<tr>';
-					$vResult = $vResult.'$vResult = $vResult.'<td>';
+					$vResult = $vResult.'<td>';
 						$vResult = $vResult.'MySQLMethod(\'6\',\'0\')';
 					$vResult = $vResult.'</td>';
 					$vResult = $vResult.'<td>';

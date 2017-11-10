@@ -3,8 +3,8 @@
 	include './Layout.php';
 	include './Custom.php';
 	
-    $vPage = 0;
-    $vLevel = 14;
+    $vPage = 14;
+    $vLevel = 1;
     $vDivision = 2;
 	
     echo '<html>';

@@ -1,8 +1,8 @@
 class Division3Controller < ApplicationController
-    layout 'Division3/Layout'
+	layout 'division3/Layout'
     def Index
-    end
-    def Project1
+	end
+	def Project1
     end
     def Project2
     end

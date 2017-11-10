@@ -1,21 +1,19 @@
 <?php
-	include './Custom.php';
-	
-    function getNavigation($vLevel)
+	function getNavigation($vLevel)
     {
         $vResult = '';
 		
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division/Section1/Index.php\'>Databases</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division/Section1/Project1.php\'>Oracle</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division/Section1/Project2.php\'>Derby</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division/Section1/Project3.php\'>MySQL</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division/Section1/Project4.php\'>SQL Server</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division/Section1/Project5.php\'>Postgres</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division1/Section1/Project1.php\'>Oracle</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division1/Section1/Project2.php\'>Derby</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division1/Section1/Project3.php\'>MySQL</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division1/Section1/Project4.php\'>SQL Server</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division1/Section1/Project5.php\'>Postgres</a></br></br>';
 			
         return $vResult;
     }
     
-    function getBody($vPage, $vLevel);
+    function getBody($vPage, $vLevel)
     {
         $vResult = '';
 		

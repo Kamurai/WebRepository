@@ -1,5 +1,5 @@
 class Section24Controller < ApplicationController
-    layout 'Section24/Layout'
+    layout 'section24/Layout'
     def Index
     end
     def Project1

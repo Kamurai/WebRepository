@@ -3,7 +3,7 @@
 	include './Layout.php';
 	include './Custom.php';
 	
-    $vPage =6;
+    $vPage = 6;
     $vLevel = 1;
     $vDivision = 2;
 	

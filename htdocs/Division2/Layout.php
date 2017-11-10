@@ -1,7 +1,5 @@
 <?php
-	include './Custom.php';
-	
-    function getNavigation($vLevel)
+	function getNavigation($vLevel)
     {
         $vResult = '';
 		
@@ -23,7 +21,7 @@
 		return $vResult;
     }
     
-    function getBody($vPage, $vLevel);
+    function getBody($vPage, $vLevel)
     {
         $vResult = '';
 		

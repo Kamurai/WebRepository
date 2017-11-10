@@ -7,7 +7,7 @@
 		$vResult = $vResult.'<head>';
             $vResult = $vResult.'<meta http-equiv=\'Content-Type\' content=\'text/html\' charset=ISO-8859-1\'>';
 			$vResult = $vResult.getStyle($vLevel, $vDivision);
-        $vResult += '</head>';
+        $vResult = $vResult.'</head>';
         
         return $vResult;
     }

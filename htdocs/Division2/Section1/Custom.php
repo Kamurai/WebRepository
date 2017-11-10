@@ -1,6 +1,4 @@
 <?php
-    include './Universal.php';
-	
     function getTitle($vPage)
     {
         $vResult = '';
@@ -91,7 +89,7 @@
         }
         else if($vPage==3)
         {
-            $vResult = $vResult.'Gynowars: Crash Ball is a turn based strategy board game.  Basically it\'s gridiron with Gynos..';
+            $vResult = $vResult.'Gynowars: Crash Ball is a turn based strategy board game.  Basically it\'s gridiron with Gynos.';
         }
         else
         {
