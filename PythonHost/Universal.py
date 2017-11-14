@@ -9,7 +9,7 @@ def getHead(vLevel, vDivision):
 def getStyle(vDivision):
 	vResult = ''
 	
-	vResult += '<link href=\"'
+	vResult += '<link href=\"http://htkb.dyndns.org/'
 	vResult += getStyleFile(vDivision)
 	vResult += '\" rel=\"stylesheet\" type="text/CSS">'
 	
@@ -19,16 +19,16 @@ def getStyleFile(vDivision):
 	vResult = ''
 	vDefault = ''
 	
-	vDefault += '/static/Styles/Main.css'
+	vDefault += 'Main.css'
 
 	if vDivision == '0':
 		vResult = vDefault
 	elif vDivision == '1':
-		vResult = '/static/Styles/Division1.css'
+		vResult = 'Division1.css'
 	elif vDivision == '2':
-		vResult = '/static/Styles/Division2.css'
+		vResult = 'Division2.css'
 	elif vDivision == '3':
-		vResult = '/static/Styles/Division3.css'
+		vResult = 'Division3.css'
 	else:
 		vResult = vDefault
 		
@@ -37,7 +37,7 @@ def getStyleFile(vDivision):
 def getLogo():
 	vResult = ''
 	
-	vResult += '<img id=\"idLogo\" src=\"/static/Pictures/logoHTKB.jpg\">'
+	vResult += '<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\">'
 	
 	return vResult
 

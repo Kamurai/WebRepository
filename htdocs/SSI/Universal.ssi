@@ -5,7 +5,7 @@
 		<!--#include virtual="./Universal.ssi"-->
 	</head>
 <!--#elif expr="$vFunction == getStyle" -->
-	<link href="<!--#set var="vFunction" value="getPath"--><!--#include virtual="./Universal.ssi"-->/Styles/<!--#set var="vFunction" value="getStyleFile"--><!--#include virtual="./Universal.ssi"-->" rel="stylesheet" type="text/css">
+	<link href="http://htkb.dyndns.org/Styles/<!--#set var="vFunction" value="getStyleFile"--><!--#include virtual="./Universal.ssi"-->" rel="stylesheet" type="text/css">
 <!--#elif expr="$vFunction == getStyleFile" -->
 	<!--#if expr="$vDivision == 0" -->
 		Main.css
@@ -19,7 +19,7 @@
 		Main.css
 	<!--#endif -->
 <!--#elif expr="$vFunction == getLogo" -->
-	<img id="idLogo" src="<!--#set var="vFunction" value="getPath"--><!--#include virtual="./Universal.ssi"-->Pictures/logoHTKB.jpg"/><br>
+	<img id="idLogo" src="http://htkb.dyndns.org/Pictures/logoHTKB.jpg"/><br>
 <!--#elif expr="$vFunction == getNavBar" -->
 	<a class=\"navBar\" href="
 	<!--#set var="vFunction" value="getPath"-->

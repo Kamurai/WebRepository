@@ -15,8 +15,7 @@ end Function
 Function getStyle(vLevel, vDivision)
 	dim vResult
 	
-	vResult = vResult + "<link href='"
-	vResult = vResult + getPath(vLevel)+"Styles/"
+	vResult = vResult + "<link href='http://htkb.dyndns.org/Styles/"
 	vResult = vResult + getStyleFile(vDivision)
 	vResult = vResult + "' rel='stylesheet' type='text/CSS'>"
 
@@ -46,7 +45,7 @@ end Function
 
 Function getLogo(vLevel)
     dim vResult
-	vResult = vResult + "<img id=""idLogo"" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>"
+	vResult = vResult + "<img id=""idLogo"" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>"
 	getLogo = vResult
 end Function
 

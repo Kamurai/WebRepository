@@ -17,8 +17,7 @@ function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
-	vResult += "<link href=\"";
-	vResult += getPath(vLevel) + "Styles/";
+	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
 	vResult += getStyleFile(vDivision) + "\" rel=\"stylesheet\" type=\"text/css\">";
 	
 	return vResult;
@@ -62,7 +61,7 @@ function getLogo(vLevel)
 {
 	var vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
 	
 	return vResult;
 }

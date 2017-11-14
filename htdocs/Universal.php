@@ -16,8 +16,7 @@
     {
         $vResult = '';
 		
-        $vResult = '<link href=\'';
-        $vResult = $vResult.getPath($vLevel).'Styles/';
+        $vResult = '<link href=\'http://htkb.dyndns.org/Styles/';
         $vResult = $vResult.getStyleFile($vDivision);
 		$vResult = $vResult.'\' rel=\'stylesheet\' type=\'text/css\'>';
         
@@ -59,7 +58,7 @@
     {
         $vResult = '';
 		
-		$vResult = $vResult.'<img id=\'idLogo\' src=\''.getPath($vLevel).'Pictures/logoHTKB.jpg\'>';
+		$vResult = $vResult.'<img id=\'idLogo\' src=\'http://htkb.dyndns.org/Pictures/logoHTKB.jpg\'>';
         
         return $vResult;
     }

@@ -23,7 +23,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 	{
 		$scope.vResult = "";
 		
-		$scope.vResult += "<img src='"+getPath(vLevel)+"Pictures/logoHTKB.jpg' >";
+		$scope.vResult += "<img src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg' >";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
@@ -115,8 +115,7 @@ function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
-	vResult += "<link href='";
-	vResult += getPath(vLevel)+"Styles/";
+	vResult += "<link href='http://htkb.dyndns.org/Styles/";
 	vResult += getStyleFile(vDivision);
 	vResult += "\" rel=\"stylesheet\" type =\"text/css\">";
 	

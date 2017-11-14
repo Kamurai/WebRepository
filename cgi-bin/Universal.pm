@@ -20,7 +20,7 @@ sub getStyle
 	my $vDivision = $_[1];
 	my $vResult = "";
 
-	$vResult .= "<link href='".getPath($vLevel)."Styles/".getStyleFile($vDivision)."' rel='stylesheet' type='text/css'>";
+	$vResult .= "<link href='http://htkb.dyndns.org/Styles/".getStyleFile($vDivision)."' rel='stylesheet' type='text/css'>";
 	
 	return $vResult;
 }
@@ -63,7 +63,7 @@ sub getLogo
 	my $vLevel = $_[0];
 	my $vResult = "";
 
-	$vResult .= "<img id=\"idLogo\" src='".getPath($vLevel)."/Pictures/logoHTKB.jpg'><br>";
+	$vResult .= "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
 	
 	return $vResult;
 }
