@@ -426,7 +426,13 @@
 				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
 					$vResult = $vResult.'<li>Board</li>';
 					$vResult = $vResult.'<li>Token Set: 100 tokens per player</li>';
-					$vResult = $vResult.'<li>Divide tokens equally amongst players</li>';
+					$vResult = $vResult.'<li>Divide tokens equally amongst players, e.g. For two players, each gets 50 tokens of each players\' type.</li>';
+					$vResult = $vResult.'<li>Each player places x number of tokens on the board:</li>';
+					$vResult = $vResult.'<ul class=\'classThirdOrder\'>';
+						$vResult = $vResult.'<li>Short game: 10 tokens.</li>';
+						$vResult = $vResult.'<li>Medium game: 24 tokens.</li>';
+						$vResult = $vResult.'<li>Long game: 48 tokens.</li>';
+					$vResult = $vResult.'</ul>';
 				$vResult = $vResult.'</ul>';
 				$vResult = $vResult.'<li>Round:</li>';
 				$vResult = $vResult.'<ul class=\'classSecondOrder\'>';
