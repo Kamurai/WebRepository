@@ -12,6 +12,8 @@
 */
 
 root { 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #ffffff;
     display: block;
 }
 
@@ -246,6 +248,30 @@ navlink a:hover
 	border: 0px solid #FE0101;
 	
 }
+
+.classFirstOrder
+{
+	font-family: Verdana, Geneva, sans-serif;
+	color: #aaaaaa;
+    
+}
+
+.classSecondOrder
+{
+}
+
+.classThirdOrder
+{
+}
+
+.classFourthOrder
+{
+}
+
+.classFifthOrder
+{
+}
+
 
 /* IDs */
 #idBody
