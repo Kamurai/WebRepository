@@ -23,6 +23,10 @@
 			{
 				$vResult = $vResult.'Minecraft!';
 			}
+			else if($vPage==4)
+			{
+				$vResult = $vResult.'The Show';
+			}
 			else
 			{
 				$vResult = $vResult.$vDefault;
@@ -55,6 +59,10 @@
 			else if($vPage==3)
 			{
 				$vResult = 'Minecraft!';
+			}
+			else if($vPage==4)
+			{
+				$vResult = 'The Show';
 			}
 			else
 			{
@@ -169,7 +177,13 @@
 					$vResult = $vResult.'12) Name the server something distinct and put \'htkb.dyndns.org:2556x\' in the address bar where \'x\' is the relevant port.</br>';
 					$vResult = $vResult.'13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>';
         }
-        else
+        else if($vPage==4)
+        {
+			$vResult = $vResult.'<video width="400" controls>';
+				$vResult = $vResult.'<source src="./Show/Show.mp4" type="video/mp4">';
+			$vResult = $vResult.'</video>';
+		}
+		else
         {
             $vResult = $vResult.$vDefault;
         }
@@ -264,7 +278,11 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Minecraft\'>Ruby on Rails</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Minecraft\'>Node JS</a><br>';
         }
-        else
+        else if($vPage==4)
+        {
+			$vResult = $vResult.'Welcome to the Show!';
+		}
+		else
         {
             $vResult = $vResult.$vDefault;
         }
