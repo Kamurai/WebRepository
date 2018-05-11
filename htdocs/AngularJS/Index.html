@@ -2,23 +2,17 @@
 <html>
 	<head>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script language="JavaScript" src="./App.js" runat="server"></script>
 		<script language="JavaScript" src="./Universal.js" runat="server"></script>
 		<script language="JavaScript" src="./Layout.js" runat="server"></script>
 		<script language="JavaScript" src="./Custom.js" runat="server"></script>
 	</head>
-	<body id="idBody">
-		<div ng-view ng-include="'./Layout.html'">
-		</div>
-	<script>
-		vApp.value("vPage", "0");
-		vApp.value("vLevel", "0");
-		vApp.value("vDivision", "0");
-		vApp.value("vLayout", "./Layout.html");
-	</script>
-	<body ng-app="">
-		<any ng-controller="UniversalController" ng-bind-html="WriteHeader(vLevel,vDivision)"></any>
-	
-		<div ng-include="'./Layout.html'"></div>
-		<any ng-view ng-include="'./Layout.html'"></any>
+	<body id="idBody" ng-app="vApp">
+		start body
+		<div ng-include="'Layout.html'"></div>
+		<any ng-include="'Layout.html'"></any>
+		<ng-include="'Layout.html'"></ng-include>
+		<ng-include="'C:\...\...\...\..\WebRepository\htdocs\AngularJS\Layout.html'"></ng-include>
+		end body
 	</body>
 </html>
