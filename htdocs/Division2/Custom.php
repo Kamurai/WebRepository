@@ -629,7 +629,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Index.html\'>Apache SSI</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Index.html\'>HTML Javascript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Index.html\'>JQuery</a><br>';
-		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Index.html\'>Angular JS</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Index.html\'>Angular JS</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Index.xhtml\'>JSF</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Index.jsp\'>JSP</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Index.jsp\'>JSP Spring MVC</a><br>';
@@ -653,7 +653,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project2.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project2.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project2.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project2.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project2.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project2.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project2.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project2.jsp\'>JSP Spring MVC</a><br>';
@@ -673,7 +673,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project3.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project3.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project3.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project3.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project3.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project3.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project3.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project3.jsp\'>JSP Spring MVC</a><br>';
@@ -693,7 +693,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project6.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project6.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project6.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project6.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project6.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project6.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project6.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project6.jsp\'>JSP Spring MVC</a><br>';
@@ -713,7 +713,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project7.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project7.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project7.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project7.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project7.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project7.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project7.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project7.jsp\'>JSP Spring MVC</a><br>';
@@ -733,7 +733,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project8.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project8.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project8.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project8.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project8.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project8.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project8.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project8.jsp\'>JSP Spring MVC</a><br>';
@@ -753,7 +753,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project9.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project9.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project9.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project9.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project9.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project9.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project9.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project9.jsp\'>JSP Spring MVC</a><br>';
@@ -773,7 +773,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project10.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project10.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project10.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project10.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project10.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project10.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project10.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project10.jsp\'>JSP Spring MVC</a><br>';
@@ -793,7 +793,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project11.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project11.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project11.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project11.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project11.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project11.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project11.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project11.jsp\'>JSP Spring MVC</a><br>';
@@ -813,7 +813,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project12.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project12.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project12.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project12.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project12.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project12.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project12.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project12.jsp\'>JSP Spring MVC</a><br>';
@@ -833,7 +833,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project13.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project13.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project13.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project13.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project13.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project13.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project13.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project13.jsp\'>JSP Spring MVC</a><br>';
@@ -853,7 +853,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Project14.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Project14.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Project14.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Project14.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Project14.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Project14.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Project14.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Project14.jsp\'>JSP Spring MVC</a><br>';

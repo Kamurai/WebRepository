@@ -23,6 +23,10 @@
 			{
 				$vResult = $vResult.'Minecraft!';
 			}
+			else if($vPage==4)
+			{
+				$vResult = $vResult.'The Show';
+			}
 			else
 			{
 				$vResult = $vResult.$vDefault;
@@ -55,6 +59,10 @@
 			else if($vPage==3)
 			{
 				$vResult = 'Minecraft!';
+			}
+			else if($vPage==4)
+			{
+				$vResult = 'The Show';
 			}
 			else
 			{
@@ -169,7 +177,13 @@
 					$vResult = $vResult.'12) Name the server something distinct and put \'htkb.dyndns.org:2556x\' in the address bar where \'x\' is the relevant port.</br>';
 					$vResult = $vResult.'13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>';
         }
-        else
+        else if($vPage==4)
+        {
+			$vResult = $vResult.'<video width="400" controls>';
+				$vResult = $vResult.'<source src="./Show/Show.mp4" type="video/mp4">';
+			$vResult = $vResult.'</video>';
+		}
+		else
         {
             $vResult = $vResult.$vDefault;
         }
@@ -187,7 +201,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/SSI/Index.html\'>Apache SSI</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Javascript/Index.html\'>HTML Javascript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/JQuery/Index.html\'>JQuery</a><br>';
-		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Angular/Index.html\'>Angular JS</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/AngularJS/Index.html\'>Angular JS</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\'>JSF</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\'>JSP</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index.jsp\'>JSP Spring MVC</a><br>';
@@ -211,7 +225,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/AboutUs.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/AboutUs.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/AboutUs.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/AboutUs.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/AboutUs.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/AboutUs.jsp\'>JSP Spring MVC</a><br>';
@@ -231,7 +245,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Media.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Media.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Media.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Media.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Media.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Media.jsp\'>JSP Spring MVC</a><br>';
@@ -251,7 +265,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Javascript/Minecraft.html\'>HTML Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/JQuery/Minecraft.html\'>JQuery</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Angular/Minecraft.html\'>Angular JS</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Minecraft.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\'>JSP</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Minecraft.jsp\'>JSP Spring MVC</a><br>';
@@ -264,7 +278,11 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:83/Minecraft\'>Ruby on Rails</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:84/Minecraft\'>Node JS</a><br>';
         }
-        else
+        else if($vPage==4)
+        {
+			$vResult = $vResult.'Welcome to the Show!';
+		}
+		else
         {
             $vResult = $vResult.$vDefault;
         }

@@ -107,7 +107,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/SSI/Division2/Section5/Index.html\'>Apache SSI</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Javascript/Division2/Section5/Index.html\'>HTML Javascript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/JQuery/Division2/Section5/Index.html\'>JQuery</a><br>';
-		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/Angular/Division2/Section5/Index.html\'>Angular JS</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Section5/Index.html\'>Angular JS</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Index.xhtml\'>JSF</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Index.jsp\'>JSP</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Section5/Index.jsp\'>JSP Spring MVC</a><br>';

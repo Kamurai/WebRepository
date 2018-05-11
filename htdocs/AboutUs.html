@@ -4,42 +4,46 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link href="./Styles/Main.css" rel="stylesheet" type="text/css">
 </head>
-<body id="idBody">
-    <table id="idTableMain">
-        <tr id="idHeaderRow">
-            <td id="idHeaderRowCenter" colspan="3">
-                 <object class="classObject" data="./Logo.html">Warning: foo.html could not be included!</object>   
-            </td>
-        </tr>
-        <tr id="idNavigationRow">
-            <td id="idNavigationBar" colspan="3">
-                <object class="classObject" data="./Navbar.html">Warning: foo.html could not be included!</object>   
-            </td>
-        </tr>				
-        <tr id="idCenterRow">
-            <td id="idCenterRowLeft">
-                <h4>
-                    Navigation
-                </h4>
-                <object class="classObject" data="./Navigation.html">Warning: foo.html could not be included!</object>
-            </td>
-            <td id="idCenterRowMain">
-                <object class="classObject" data="./Content/Content_AboutUs.html">Warning: foo.html could not be included!</object>
-            </td>
-            <td id="idCenterRowRight">
-                <h4>
-                    Information
-                </h4>
-				This was written in basic HTML.<br><br>
-				Other versions of this page are here:<br>
-				<object class="classObject" data="./Content/Versions_AboutUs.html">Warning: foo.html could not be included!</object>
-            </td>
-        </tr>
-        <tr id="idFooterRow">
-            <td id="idFooterMain" colspan="3">
-                <object class="classObject" data="./Footer.html">Warning: foo.html could not be included!</object>
-            </td>
-        </tr>
-    </table>
+<body>
+    <div id="idGeneralLayout">
+		<header id="idHeaderRow">
+			<object id="idHeaderObject" data="./Universal/Logo.html">
+				Warning: Header could not be included!
+			</object>
+		</header>
+		<nav id="idNavigationBar">
+			<object id="idOuterNavigationBar" data="./Universal/Navbar.html">
+				Warning: Navigation Bar could not be included!
+			</object>
+		</nav>
+		<div id="idCenterRow">
+			<div id="idCenterRowLeft">
+				<object id="idOuterNavigationHeader" data="./Universal/NavigationHeader.html">
+					Warning: Navigation Header could not be included!
+				</object>
+				<object id="idOuterNavigation" data="./Navigation.html">
+					Warning: Navigation could not be included!
+				</object>
+			</div>
+			<div id="idCenterRowMain">
+				<object id="idOuterContent" data="./Content/Content_AboutUs.html">
+					Warning: Content could not be included!
+				</object>
+			</div>
+			<div id="idCenterRowRight">
+				<object id="idOuterInformationHeader" data="./Universal/InformationHeader.html">
+					Warning: Information Header could not be included!
+				</object>
+				<object id="idOuterVersions" data="./Content/Versions_AboutUs.html">
+					Warning: Versions could not be included!
+				</object>
+			</div>   
+		</div>
+		<footer id="idFooterRow">
+			<object id="idOuterFooter" data="./Universal/Footer.html">
+				Warning: Footer could not be included!
+			</object>
+		</footer>
+	</div>
 </body>
 </html>

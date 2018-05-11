@@ -8,6 +8,7 @@ body
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
+<<<<<<< HEAD
 	
 	padding: 0px;
 	margin: 0px;
@@ -18,6 +19,14 @@ body
 	background-color: #aaaaaa;
 	
 	
+=======
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: 25px;
+	background-color: #aaaaaa;
+	padding: 0;
+	margin: 0;
+>>>>>>> branch 'master' of https://github.com/Kamurai/WebRepository
 }
 
 a {
@@ -280,7 +289,19 @@ navlink a:hover
 		
 }
 
-#idTableMain
+#idGeneralLayout
+{
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-color: #000000;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+	
+}
+
+#idTableMain /*decomission*/
 {
     width: 100%;
 	max-width: 100%;
@@ -298,14 +319,6 @@ navlink a:hover
 	max-width: 100%;
 	color: #000000;
     border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idHeaderRowCenter
-{
-	width: 100%;
-	max-width: 100%;
-	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -337,32 +350,12 @@ navlink a:hover
     vertical-align: top;
 }
 
-#idNavigationRow
-{
-	width: 100%;
-	max-width: 100%;
-	height: 10%;
-	max-height: 10%;
-	border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
 #idNavigationBar
 {
 	width: 100%;
 	max-width: 100%;
 	height: 10%;
 	max-height: 10%;
-	border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idOuterNavigationBar
-{
-	width: 100%;
-	max-width: 100%;
-	height: 35%;
-	max-height: 35%;
 	border: 0px solid #FE0101;
     vertical-align: top;
 }
@@ -415,7 +408,27 @@ navlink a:hover
 }
 
 
-#idOuterNavigation
+#idNavigationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerNavigationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idNavigation
 {
 	width: 100%;
 	max-width: 100%;
@@ -439,8 +452,13 @@ navlink a:hover
 
 #idCenterRowMain
 {
+<<<<<<< HEAD
 	width: 58%;
 	max-width: 58%;
+=======
+	width: 69%;
+	max-width: 69%;
+>>>>>>> branch 'master' of https://github.com/Kamurai/WebRepository
 	height: 100%;
 	
 	margin: 0px;
@@ -451,22 +469,29 @@ navlink a:hover
 	/*vertical-align: top;*/
 	
 	overflow: visible;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> branch 'master' of https://github.com/Kamurai/WebRepository
 	display: inline-block;
 }
 
-#idCenterContent
+#idCenterContent /*Decommission*/
 {
     width: 100%;
 	max-width: 100%;
 	height: 100%;
+<<<<<<< HEAD
 	max-height: 100%;
 	
+=======
+>>>>>>> branch 'master' of https://github.com/Kamurai/WebRepository
 	color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idOuterContent
+#idContent
 {
     width: 100%;
 	max-width: 100%;
@@ -501,6 +526,7 @@ navlink a:hover
     vertical-align: top;
 	
 	display: inline-block;
+<<<<<<< HEAD
 }
 
 #idOuterInformationHeader
@@ -515,9 +541,11 @@ navlink a:hover
 	color: #aaaaaa;
 	border: 0px solid #FE0101;
     vertical-align: top;
+=======
+>>>>>>> branch 'master' of https://github.com/Kamurai/WebRepository
 }
 
-#idOuterVersions
+#idVersions
 {
 	width: 100%;
 	max-width: 100%;
@@ -549,15 +577,7 @@ navlink a:hover
     vertical-align: top;
 }
 
-#idFooterMain
-{
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	text-align: center;
-}
-
-#idOuterFooter
+#idFooter
 {
 	width: 100%;
 	max-width: 100%;
