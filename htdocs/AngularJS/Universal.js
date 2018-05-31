@@ -1,11 +1,8 @@
-var vApp = angular.module("vApp", []);
-
-vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce, vLayout)
+vApp.controller("UniversalController", ['$scope', '$sce', '$rootScope', function ($scope, $sce, $rootScope, vPage, vLevel, vDivision)
 {
 	$scope.vPage = vPage;
 	$scope.vLevel = vLevel;
 	$scope.vDivision = vDivision;
-	$scope.vLayout = vLayout;
 	
 	$scope.getHead = function(vLevel, vDivision)
 	{
@@ -115,7 +112,7 @@ function getStyle(vLevel, vDivision)
 {
 	var vResult = "";
 	
-	vResult += "<link href='http://htkb.dyndns.org/Styles/";
+	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
 	vResult += getStyleFile(vDivision);
 	vResult += "\" rel=\"stylesheet\" type =\"text/css\">";
 	

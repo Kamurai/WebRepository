@@ -1,4 +1,4 @@
-vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
+vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce, vPage)
 {
 	$scope.Navigation = function(vLevel)
 	{
