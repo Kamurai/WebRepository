@@ -130,10 +130,10 @@
 		<!--#if expr="$vPage == 0" -->
 			<a href="http://htkb.dyndns.org/Index.html">HTML</a><br>
             <a href="http://htkb.dyndns.org/Index.php">PHP</a><br>
+            <a href="http://htkb.dyndns.org/Index.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org/Javascript/Index.html">HTML Javascript</a><br>
             <a href="http://htkb.dyndns.org/JQuery/Index.html">JQuery</a><br>
             <a href="http://htkb.dyndns.org/AngularJS/Index.html">Angular JS</a><br>
-            <a href="http://htkb.dyndns.org/Index.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml">JSF</a><br>
             <a href="http://htkb.dyndns.org:8080/JSPApplication/Index.jsp">JSP</a><br>
             <a href="http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index">JSP Spring MVC</a><br>
@@ -148,10 +148,10 @@
         <!--#elif expr="$vPage == 1" -->
 			<a href="http://htkb.dyndns.org/AboutUs.html">HTML</a><br>
             <a href="http://htkb.dyndns.org/AboutUs.php">PHP</a><br>
+            <a href="http://htkb.dyndns.org/AboutUs.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org/Javascript/AboutUs.html">HTML Javascript</a><br>
             <a href="http://htkb.dyndns.org/JQuery/AboutUs.html">JQuery</a><br>
             <a href="http://htkb.dyndns.org/AngularJS/AboutUs.html">Angular JS</a><br>
-            <a href="http://htkb.dyndns.org/AboutUs.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml">JSF</a><br>
             <a href="http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp">JSP</a><br>
             <a href="http://htkb.dyndns.org:8080/ProjectSpringTestSite/AboutUs">JSP Spring MVC</a><br>
@@ -166,10 +166,10 @@
         <!--#elif expr="$vPage == 2" -->
 			<a href="http://htkb.dyndns.org/Media.html">HTML</a><br>
             <a href="http://htkb.dyndns.org/Media.php">PHP</a><br>
+            <a href="http://htkb.dyndns.org/Media.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org/Javascript/Media.html">HTML Javascript</a><br>
             <a href="http://htkb.dyndns.org/JQuery/Media.html">JQuery</a><br>
             <a href="http://htkb.dyndns.org/AngularJS/Media.html">Angular JS</a><br>
-            <a href="http://htkb.dyndns.org/Media.shtml">Perl</a><br>
             <a href="http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml">JSF</a><br>
             <a href="http://htkb.dyndns.org:8080/JSPApplication/Media.jsp">JSP</a><br>
             <a href="http://htkb.dyndns.org:8080/ProjectSpringTestSite/Media">JSP Spring MVC</a><br>
