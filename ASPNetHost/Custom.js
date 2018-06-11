@@ -200,7 +200,7 @@ function getVersions(vPage)
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/WebForm/Index.aspx\">ASP.NET Webform</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Index\">ASP.NET MVC App</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Index\">ASP.NET MVC App</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Index.html\">Apache SSI</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:83/Index\">Ruby On Rails</a><br>";
@@ -222,7 +222,7 @@ function getVersions(vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/AboutUs\">ASP.NET MVC App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>";
 	    vResult += "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby On Rails</a><br>";
@@ -240,7 +240,7 @@ function getVersions(vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Media\">ASP.NET MVC App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>";
 	    vResult += "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby On Rails</a><br>";
@@ -258,7 +258,7 @@ function getVersions(vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Minecraft\">ASP.NET MVC App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>";
 	    vResult += "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby On Rails</a><br>";

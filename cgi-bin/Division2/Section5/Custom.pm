@@ -108,21 +108,21 @@ sub getVersions
 	my $vResult = "";
 	my $vDefault = "";
 	
-	$vDefault .= "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.html\">HTML</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org/Section2/Section5/Index.php\">PHP</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/Index.html\">HTML Javascript</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org/JQuery/Section2/Section5/Index.html\">JQuery</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/Index.asp\">ASP VBscript</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Index.aspx\">ASP.NET Javascript</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:84/Section2/Section5/Index\">Node JS</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Index.jsp\">JSP</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Index.xhtml\">JSF</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Index.cshtml\">ASP.NET Web App</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/Index.aspx\">ASP.NET Webform</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Index\">ASP.NET MVC App</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/Index.html\">Apache SSI</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:82/Section2/Section5/Index\">Python Web.py</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:83/Section2/Section5/Index\">Ruby On Rails</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org/Division2/Section5/Index.html\">HTML</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org/Division2/Section5/Index.php\">PHP</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org/Javascript/Division2/Section5/Index.html\">HTML Javascript</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Index.html\">JQuery</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Index.asp\">ASP VBscript</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Index.aspx\">ASP.NET Javascript</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Index\">Node JS</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Index.jsp\">JSP</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Index.xhtml\">JSF</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Division2/Section5/Index.cshtml\">ASP.NET Web App</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Division2/Section5/Index.aspx\">ASP.NET Webform</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/MVC/Division2/Section5/Index\">ASP.NET MVC App</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org/SSI/Division2/Section5/Index.html\">Apache SSI</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:82/Division2/Section5/Index\">Python Web.py</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:83/Division2/Section5/Index\">Ruby On Rails</a><br>";
 	
 	if($vPage <= 0)
 	{

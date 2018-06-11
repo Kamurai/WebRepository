@@ -202,7 +202,7 @@
             <a href=\'http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\'>JSF</a><br>
             <a href=\'http://htkb.dyndns.org:81/WebApplication/index.cshtml\'>ASP.NET Web App</a><br>
             <a href=\'http://htkb.dyndns.org:81/WebForm/index.aspx\'>ASP.NET Webform</a><br>
-            <a href=\'http://htkb.dyndns.org:81/MVC/Main/index\'>ASP.NET MVC App</a><br>
+            <a href=\'http://htkb.dyndns.org:81/MVC/index\'>ASP.NET MVC App</a><br>
             <a href=\'http://htkb.dyndns.org/SSI/index.html\'>Apache SSI</a><br>
         ';
         
@@ -222,7 +222,7 @@
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\'>ASP.NET Web App</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/AboutUs\'>ASP.NET MVC App</a><br>
+                <a href=\'http://htkb.dyndns.org:81/MVC/AboutUs\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/AboutUs.html\'>Apache SSI</a><br>
             ';
         }
@@ -238,7 +238,7 @@
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebApplication/Media.cshtml\'>ASP.NET Web App</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebForm/Media.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Media\'>ASP.NET MVC App</a><br>
+                <a href=\'http://htkb.dyndns.org:81/MVC/Media\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/Media.html\'>Apache SSI</a><br>
             ';
         }
@@ -254,7 +254,7 @@
                 <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\'>ASP.NET Web App</a><br>
                 <a href=\'http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Main/Minecraft\'>ASP.NET MVC App</a><br>
+                <a href=\'http://htkb.dyndns.org:81/MVC/Minecraft\'>ASP.NET MVC App</a><br>
                 <a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>
             ';
         }

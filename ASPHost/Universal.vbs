@@ -88,13 +88,13 @@ end Function
 
 Function getGDR()
 	dim vResult
-	vResult = vResult + "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>"
+	vResult = vResult + "<a href='http://htkb.dyndns.org/Division3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>"
 	getGDR = vResult
 end Function
 
 Function getWinRar()
 	dim vResult
-	vResult = vResult + "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>"	
+	vResult = vResult + "<a href='http://htkb.dyndns.org/Division3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>"	
 	getWinRar = vResult
 end Function
 

@@ -47,13 +47,13 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		
 		$scope.GDR = function()
 		{
-			$scope.vResult = "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+			$scope.vResult = "<a href='http://htkb.dyndns.org/Division3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
 			return $sce.trustAsHtml($scope.vResult);
 		};
 		
 		$scope.WinRAR = function()
 		{
-			$scope.vResult = "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+			$scope.vResult = "<a href='http://htkb.dyndns.org/Division3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
 			return $sce.trustAsHtml($scope.vResult);
 		};
 		

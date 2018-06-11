@@ -24,13 +24,13 @@ function Navigation(level)
 		document.write("<a href='"+GetPath(vLevel)+"Section1/Section5/Index"+GetExtension(extension)+"'>ASP.NET</a>");
 			document.write("<h5>");
 				document.write("<span class='navlink'>");
-					document.write("<a href='http://htkb.dyndns.org:81/WebApplication/Section1/Section5/Project1.cshtml'>Webpage Application</a>");
+					document.write("<a href='http://htkb.dyndns.org:81/WebApplication/Division1/Section5/Project1.cshtml'>Webpage Application</a>");
 				document.write("</span>");
 				document.write("<span class='navlink'>");
-					document.write("<a href='http://htkb.dyndns.org:81/WebForm/Section1/Section5/Project2.aspx'>Webform Application</a>");
+					document.write("<a href='http://htkb.dyndns.org:81/WebForm/Division1/Section5/Project2.aspx'>Webform Application</a>");
 				document.write("</span>");
 				document.write("<span class='navlink'>");
-					document.write("<a href='http://htkb.dyndns.org:81/MVC/Section1_5/Project3'>MVC Application</a>");
+					document.write("<a href='http://htkb.dyndns.org:81/MVC/Division1_5/Project3'>MVC Application</a>");
 				document.write("</span>");
 			document.write("</h5>");
 	document.write("</span>");

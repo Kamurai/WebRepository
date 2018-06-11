@@ -34,7 +34,7 @@
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section4/Index.php\'>Java</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section5/Index.php\'>ASP.Net</a></br></br>
             <a class=\'navlinkA\' href=\''.Path($Level).'Section1/Section6/Index.php\'>Databases</a></br></br>
-            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org/SSI/Section1/index.html\'>Apache SSI</a></br></br>
+            <a class=\'navlinkA\' href=\'http://htkb.dyndns.org/SSI/Division1/index.html\'>Apache SSI</a></br></br>
         ';
         return $Result;
     }
@@ -89,17 +89,17 @@
         $Default = '
             This is written with PHP.<br><br>
             Other versions of this page are here:<br>
-            <a href=\'http://htkb.dyndns.org/Section1/index.html\'>HTML</a><br>
-            <a href=\'http://htkb.dyndns.org/Javascript/Section1/index.html\'>HTML Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASP/Section1/index.asp\'>ASP Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org:81/ASPNET/Section1/index.aspx\'>ASP.NET Javascript</a><br>
-            <a href=\'http://htkb.dyndns.org/Section1/index.shtml\'>Perl</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section1/index.jsp\'>JSP</a><br>
-            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section1/index.xhtml\'>JSF</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebApplication/Section1/index.cshtml\'>ASP.NET Web App</a><br>
-            <a href=\'http://htkb.dyndns.org:81/WebForm/Section1/index.aspx\'>ASP.NET Webform</a><br>
-            <a href=\'http://htkb.dyndns.org:81/MVC/Section1/index\'>ASP.NET MVC App</a><br>
-            <a href=\'http://htkb.dyndns.org/SSI/Section1/index.html\'>Apache SSI</a><br>
+            <a href=\'http://htkb.dyndns.org/Division1/index.html\'>HTML</a><br>
+            <a href=\'http://htkb.dyndns.org/Javascript/Division1/index.html\'>HTML Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASP/Division1/index.asp\'>ASP Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/index.aspx\'>ASP.NET Javascript</a><br>
+            <a href=\'http://htkb.dyndns.org/Division1/index.shtml\'>Perl</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/index.jsp\'>JSP</a><br>
+            <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/index.xhtml\'>JSF</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/index.cshtml\'>ASP.NET Web App</a><br>
+            <a href=\'http://htkb.dyndns.org:81/WebForm/Division1/index.aspx\'>ASP.NET Webform</a><br>
+            <a href=\'http://htkb.dyndns.org:81/MVC/Division1/index\'>ASP.NET MVC App</a><br>
+            <a href=\'http://htkb.dyndns.org/SSI/Division1/index.html\'>Apache SSI</a><br>
         ';
         
         if($Page==0)
@@ -109,17 +109,17 @@
         else if($Page==1)
         {
             $Result = $Result.'
-                <a href=\'http://htkb.dyndns.org/Section1/Project1.html\'>HTML</a><br>
-                <a href=\'http://htkb.dyndns.org/Javascript/Section1/Project1.html\'>HTML Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASP/Section1/Project1.asp\'>ASP Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org:81/ASPNET/Section1/Project1.aspx\'>ASP.NET Javascript</a><br>
-                <a href=\'http://htkb.dyndns.org/Section1/Project1.shtml\'>Perl</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Section1/Project1.jsp\'>JSP</a><br>
-                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Section1/Project1.xhtml\'>JSF</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebApplication/Section1/Project1.cshtml\'>ASP.NET Web App</a><br>
-                <a href=\'http://htkb.dyndns.org:81/WebForm/Section1/Project1.aspx\'>ASP.NET Webform</a><br>
-                <a href=\'http://htkb.dyndns.org:81/MVC/Section1/Project1\'>ASP.NET MVC App</a><br>
-                <a href=\'http://htkb.dyndns.org/SSI/Section1/Project1.html\'>Apache SSI</a><br>
+                <a href=\'http://htkb.dyndns.org/Division1/Project1.html\'>HTML</a><br>
+                <a href=\'http://htkb.dyndns.org/Javascript/Division1/Project1.html\'>HTML Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:81/ASP/Division1/Project1.asp\'>ASP Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Project1.aspx\'>ASP.NET Javascript</a><br>
+                <a href=\'http://htkb.dyndns.org/Division1/Project1.shtml\'>Perl</a><br>
+                <a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Project1.jsp\'>JSP</a><br>
+                <a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Project1.xhtml\'>JSF</a><br>
+                <a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Project1.cshtml\'>ASP.NET Web App</a><br>
+                <a href=\'http://htkb.dyndns.org:81/WebForm/Division1/Project1.aspx\'>ASP.NET Webform</a><br>
+                <a href=\'http://htkb.dyndns.org:81/MVC/Division1/Project1\'>ASP.NET MVC App</a><br>
+                <a href=\'http://htkb.dyndns.org/SSI/Division1/Project1.html\'>Apache SSI</a><br>
             ';
         }
         else

@@ -18,39 +18,39 @@ function getTitle(vPage)
 		{
 			vResult += "Mars Projects";
 		}
-		else if(vPage == 7)
+		else if(vPage == 6)
 		{
 			vResult += "Truth";
 		}
-		else if(vPage == 8)
+		else if(vPage == 7)
 		{
 			vResult += "Kingdoms";
 		}
-		else if(vPage == 9)
+		else if(vPage == 8)
 		{
 			vResult += "Terminal World";
 		}
-		else if(vPage == 10)
+		else if(vPage == 9)
 		{
 			vResult += "Monster Office Workplace";
 		}
-		else if(vPage == 11)
+		else if(vPage == 10)
 		{
 			vResult += "Battle Princesses";
 		}
-		else if(vPage == 12)
+		else if(vPage == 11)
 		{
 			vResult += "Sacred Offerings";
 		}
-		else if(vPage == 13)
+		else if(vPage == 12)
 		{
 			vResult += "The Way";
 		}
-		else if(vPage == 14)
+		else if(vPage == 13)
 		{
 			vResult += "Conspiratorium";
 		}
-		else if(vPage == 15)
+		else if(vPage == 14)
 		{
 			vResult += "Conversion";
 		}

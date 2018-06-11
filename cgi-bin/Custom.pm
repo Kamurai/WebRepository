@@ -208,7 +208,7 @@ sub getVersions
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Index.aspx\">ASP.NET Webform</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Index\">ASP.NET MVC App</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/MVC/Index\">ASP.NET MVC App</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:83/Index\">Ruby On Rails</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>";
@@ -232,7 +232,7 @@ sub getVersions
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>";
-		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>";
+		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/AboutUs\">ASP.NET MVC App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby On Rails</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a><br>";
@@ -252,7 +252,7 @@ sub getVersions
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>";
-		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>";
+		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Media\">ASP.NET MVC App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby On Rails</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a><br>";
@@ -272,7 +272,7 @@ sub getVersions
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP VBscript</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>";
-		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>";
+		$vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Minecraft\">ASP.NET MVC App</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby On Rails</a><br>";
 		$vResult .= "<a href=\"http://htkb.dyndns.org:84/Minecraft\">Node JS</a><br>";
