@@ -82,7 +82,8 @@ end Function
 
 Function getInformation()
     dim vResult
-	vResult = vResult + "This is written with classic ASP and VBScript."
+	vResult = vResult + "This is written with classic ASP and VBScript.<br><br>"
+	vResult = vResult + "Other versions can be found here:<br>"
 	getInformation = vResult
 end Function
 

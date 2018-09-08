@@ -102,7 +102,7 @@ function getVersions(vPage)
 	
 	vDefault += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Index.html\">HTML</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Index.php\">PHP</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Index.php\">JQuery</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Index.html\">JQuery</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Index.aspx\">ASP.NET Javascript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Index.asp\">ASP VBscript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Index\">Node JS</a><br>";

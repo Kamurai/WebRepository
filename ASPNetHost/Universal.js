@@ -101,8 +101,8 @@ function getInformation()
 {
 	var vResult = "";
 	
-    vResult += "This is written with generic ASP.NET and javascript.";
-	vResult += "Other versions can be found here:";
+    vResult += "This is written with generic ASP.NET and javascript.<br><br>";
+	vResult += "Other versions can be found here:<br>";
     
 	return vResult;
 }

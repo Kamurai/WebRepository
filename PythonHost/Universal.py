@@ -9,7 +9,7 @@ def getHead(vLevel, vDivision):
 def getStyle(vDivision):
 	vResult = ''
 	
-	vResult += '<link href=\"http://htkb.dyndns.org/'
+	vResult += '<link href=\"http://htkb.dyndns.org/Styles/'
 	vResult += getStyleFile(vDivision)
 	vResult += '\" rel=\"stylesheet\" type="text/CSS">'
 	

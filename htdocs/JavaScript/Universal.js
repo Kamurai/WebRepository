@@ -99,7 +99,7 @@ function getInformation()
 {
     var vResult = "";
 	
-    vResult += "This is written with basic HTML and javascript.";
+    vResult += "This is written with basic HTML and javascript.<br><br>";
 	vResult += "Other versions of this page are here:<br>";
 	
 	return vResult;

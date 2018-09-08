@@ -83,7 +83,7 @@ function getVersions(vPage)
 	
 	vDefault += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section3/Index.html\">HTML</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section3/Index.php\">PHP</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Section3/Index.php\">JQuery</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Section3/Index.html\">JQuery</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section3/Index.aspx\">ASP.NET Javascript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section3/Index.asp\">ASP VBscript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Section3/Index\">Node JS</a><br>";
@@ -105,7 +105,7 @@ function getVersions(vPage)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section3/Project1.html\">HTML</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section3/Project1.php\">PHP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Section3/Project1.php\">JQuery</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Section3/Project1.html\">JQuery</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section3/Project1.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section3/Project1.asp\">ASP VBscript</a><br>";
         vResult += "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Section3/Project1\">Node JS</a><br>";
