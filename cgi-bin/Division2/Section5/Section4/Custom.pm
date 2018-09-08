@@ -95,7 +95,7 @@ sub getVersions
 	$vDefault .= "<a href=\"http://htkb.dyndns.org/AngularJS/Index.html\">Angular JS</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>";
-	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index\">JSP</a><br>";$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>";
+	$vDefault .= "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index\">JSP Spring MVC</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a><br>";
 	$vDefault .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a><br>";
@@ -113,20 +113,22 @@ sub getVersions
 	{
 		$vResult .= "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section4/Project1.html\">HTML</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org/Division2/Section5/Section4/Project1.php\">PHP</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org/SSI/Division2/Section5/Section4/Project1.html\">Apache SSI</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org/Javascript/Division2/Section5/Section4/Project1.html\">HTML Javascript</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org/JQuery/Division2/Section5/Section4/Project1.html\">JQuery</a><br>";
-        $vResult .= "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section4/Project1.asp\">ASP VBscript</a><br>";
-        $vResult .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section4/Project1.aspx\">ASP.NET Javascript</a><br>";
-        $vResult .= "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Section4/Project1\">Node JS</a><br>";
-        $vResult .= "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Section4/Project1.jsp\">JSP</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org/AngularJS/Division2/Section5/Section4/Project1.html\">Angular JS</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Section4/Project1.xhtml\">JSF</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Section4/Project1.jsp\">JSP</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Section5/Section4/Project1.jsp\">JSP Spring MVC</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section4/Project1.aspx\">ASP.NET Javascript</a><br>";
+        $vResult .= "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section4/Project1.asp\">ASP VBscript</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:81/WebApplication/Division2/Section5/Section4/Project1.cshtml\">ASP.NET Web App</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:81/WebForm/Division2/Section5/Section4/Project1.aspx\">ASP.NET Webform</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:81/MVC/Division2/Section5/Section4/Project1\">ASP.NET MVC App</a><br>";
-        $vResult .= "<a href=\"http://htkb.dyndns.org/SSI/Division2/Section5/Section4/Project1.html\">Apache SSI</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:82/Division2/Section5/Section4/Project1\">Python Web.py</a><br>";
         $vResult .= "<a href=\"http://htkb.dyndns.org:83/Division2/Section5/Section4/Project1\">Ruby On Rails</a><br>";
-	}
+	    $vResult .= "<a href=\"http://htkb.dyndns.org:84/Division2/Section5/Section4/Project1\">Node JS</a><br>";
+    }
 	else
 	{
 		$vResult .= $vDefault;
