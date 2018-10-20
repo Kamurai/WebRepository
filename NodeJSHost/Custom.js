@@ -195,7 +195,7 @@ exports.getVersions = function (vPage)
 	vDefault += "<a href=\"http://htkb.dyndns.org/AngularJS/Index.php\">Angular JS</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Index.jsp\">JSP Spring MVC</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Index.jsp\">JSP Spring MVC</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a><br>";
@@ -219,7 +219,7 @@ exports.getVersions = function (vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/AboutUs.php\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/AboutUs.jsp\">JSP Spring MVC</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/AboutUs.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>";
@@ -239,7 +239,7 @@ exports.getVersions = function (vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Media.php\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Media.jsp\">JSP Spring MVC</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Media.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>";
@@ -259,7 +259,7 @@ exports.getVersions = function (vPage)
 		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Minecraft.php\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:8080/ProjectSpringTestSite/Minecraft.jsp\">JSP Spring MVC</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Minecraft.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP VBscript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>";

@@ -110,7 +110,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/AngularJS/Division2/Section5/Index.html\'>Angular JS</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Index.xhtml\'>JSF</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Index.jsp\'>JSP</a><br>';
-		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division2/Section5/Index\'>JSP Spring MVC</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division2/Section5/Index\'>JSP Spring MVC</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Index.aspx\'>ASP.NET Javascript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASP/Division2/Section5/Index.asp\'>ASP VBscript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division2/Section5/Index.cshtml\'>ASP.NET Web App</a><br>';

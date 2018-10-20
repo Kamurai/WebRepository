@@ -483,7 +483,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Index.html\'>Angular JS</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Index.xhtml\'>JSF</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Index.jsp\'>JSP</a><br>';
-		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Index\'>JSP Spring MVC</a><br>';
+		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Index\'>JSP Spring MVC</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Index.aspx\'>ASP.NET Javascript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Index.asp\'>ASP VBscript</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Index.cshtml\'>ASP.NET Web App</a><br>';
@@ -507,7 +507,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Project1.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project1.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project1.jsp\'>JSP</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Project1\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Project1\'>JSP Spring MVC</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project1.aspx\'>ASP.NET Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project1.asp\'>ASP VBscript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project1.cshtml\'>ASP.NET Web App</a><br>';
@@ -527,7 +527,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Project2.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project2.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project2.jsp\'>JSP</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Project2\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Project2\'>JSP Spring MVC</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project2.aspx\'>ASP.NET Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project2.asp\'>ASP VBscript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project2.cshtml\'>ASP.NET Web App</a><br>';
@@ -547,7 +547,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Project3.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project3.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project3.jsp\'>JSP</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Project3\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Project3\'>JSP Spring MVC</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project3.aspx\'>ASP.NET Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project3.asp\'>ASP VBscript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project3.cshtml\'>ASP.NET Web App</a><br>';
@@ -567,7 +567,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Project4.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project4.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project4.jsp\'>JSP</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Project4\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Project4\'>JSP Spring MVC</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project4.aspx\'>ASP.NET Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project4.asp\'>ASP VBscript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project4.cshtml\'>ASP.NET Web App</a><br>';
@@ -587,7 +587,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/AngularJS/Division1/Section1/Project5.html\'>Angular JS</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Division1/Section1/Project5.xhtml\'>JSF</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Division1/Section1/Project5.jsp\'>JSP</a><br>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/ProjectSpringTestSite/Division1/Section1/Project5\'>JSP Spring MVC</a><br>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Division1/Section1/Project5\'>JSP Spring MVC</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASPNET/Division1/Section1/Project5.aspx\'>ASP.NET Javascript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/ASP/Division1/Section1/Project5.asp\'>ASP VBscript</a><br>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org:81/WebApplication/Division1/Section1/Project5.cshtml\'>ASP.NET Web App</a><br>';
