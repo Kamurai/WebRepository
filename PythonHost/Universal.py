@@ -73,7 +73,7 @@ def getInformation():
 	vResult = ''
 	
 	vResult += 'This is written with generic ASP.NET and javascript.'
-	vResult += 'Other versions can be found here:'
+	vResult += 'Other versions can be found here:<br>'
 	
 	return vResult
 	
