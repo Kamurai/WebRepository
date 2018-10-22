@@ -184,15 +184,14 @@ exports.getContent = function (vPage)
 exports.getVersions = function (vPage)
 {
 	var vResult = "";
-    var vDefault = "";
+	var vDefault = "";
 	
 	vDefault += "<a href=\"http://htkb.dyndns.org/Index.html\">HTML</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Index.php\">PHP</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/Index.shtml\">Perl</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org/SSI/Index.html\">Apache SSI</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org/Javascript/Index.php\">HTML Javascript</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Index.php\">JQuery</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org/AngularJS/Index.php\">Angular JS</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org/JQuery/Index.html\">JQuery</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org/AngularJS/Index.html\">Angular JS</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Index.jsp\">JSP Spring MVC</a><br>";
@@ -202,72 +201,73 @@ exports.getVersions = function (vPage)
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/WebForm/Index.aspx\">ASP.NET Webform</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:81/MVC/Index\">ASP.NET MVC App</a><br>";
 	vDefault += "<a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a><br>";
-	vDefault += "<a href=\"http://htkb.dyndns.org:83/Index\">Ruby On Rails</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org:83/Index\">Ruby on Rails</a><br>";
+	vDefault += "<a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a><br>";
 	
 	if(vPage == 0)
 	{
 		vResult += vDefault;
-	}
+    }
 	else if(vPage == 1)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>";
+	    vResult += "<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.php\">HTML Javascript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/JQuery/AboutUs.php\">JQuery</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/AboutUs.php\">Angular JS</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org/JQuery/AboutUs.html\">JQuery</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/AboutUs.html\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/AboutUs.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/AboutUs\">ASP.NET MVC App</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby On Rails</a><br>";
-	}
+	    vResult += "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby on Rails</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a><br>";
+    }
 	else if(vPage == 2)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>";
+	    vResult += "<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Media.php\">HTML Javascript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Media.php\">JQuery</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Media.php\">Angular JS</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Media.html\">JQuery</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Media.html\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Media.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Media\">ASP.NET MVC App</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby On Rails</a><br>";
-	}
+	    vResult += "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/Media\">Ruby on Rails</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a><br>";
+    }
 	else if(vPage == 3)
 	{
 		vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>";
+	    vResult += "<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.php\">HTML Javascript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Minecraft.php\">JQuery</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Minecraft.php\">Angular JS</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org/JQuery/Minecraft.html\">JQuery</a><br>";
+		vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Minecraft.html\">Angular JS</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\">JSF</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Minecraft.jsp\">JSP Spring MVC</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP VBscript</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>";
+    	vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>";
 		vResult += "<a href=\"http://htkb.dyndns.org:81/MVC/Minecraft\">ASP.NET MVC App</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
-		vResult += "<a href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby On Rails</a><br>";
-	}
+	    vResult += "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:83/Minecraft\">Ruby on Rails</a><br>";
+        vResult += "<a href=\"http://htkb.dyndns.org:84/Minecraft\">Node JS</a><br>";
+    }
 	else
 	{
 		vResult += vDefault;
