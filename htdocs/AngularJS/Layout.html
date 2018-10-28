@@ -17,7 +17,7 @@
 		<td id="idCenterRowMain">
 			<any ng-controller="CustomController" ng-bind-html="getTitle($rootScope.vPage)"></any>
 			<any ng-controller="CustomController" ng-bind-html="getContentHeader($rootScope.vPage)"></any>
-			<any ng-controller="CustomController" ng-bind-html="getContent($rootScope.vPage)"></any>
+			<any ng-controller="CustomController" ng-bind-html="getContent(vPage)"></any>
 		</td>
 		<td id="idCenterRowRight">
 			<any ng-controller="UniversalController" ng-bind-html="getInformationHeader()"></any>
