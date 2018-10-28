@@ -12,8 +12,8 @@
 		<script language="JavaScript" src="./Layout.js" runat="server"></script>
 		<script language="JavaScript" src="./Custom.js" runat="server"></script>
 		
-		<script ng-controller="UniversalController" ng-bind-html="getHead(vLevel,vDivision)"></script>
 		<any ng-controller="UniversalController" ng-bind-html="getHead(vLevel,vDivision)"></any>
+		<div ng-app="vApp" ng-init="vPage='0';vLevel='0';vDivision='0';vLayout='./Layout.html'">
 		
 	</head>
 	<body id="idBody" ng-app="vApp">
