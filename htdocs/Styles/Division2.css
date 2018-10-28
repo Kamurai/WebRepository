@@ -1,23 +1,22 @@
- /* 
-    Document   : moo
-    Created on : Nov 24, 2010, 2:32:30 PM
-    Author     : Kamurai
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
-
 root { 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #ffffff;
     display: block;
 }
 
 /* Elements */
+body
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: 25px;
+	background-color: #aaaaaa;
+}
+
 a {
 	font-family: Verdana, Geneva, sans-serif;
 	color: #ffffff;
@@ -123,7 +122,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -149,7 +148,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -176,7 +175,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -203,7 +202,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -230,7 +229,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #0000ff;
+	color: #ffffff;
 	border: transparent;
 	margin: 0px;
 }
@@ -242,71 +241,52 @@ navlink a:hover
 
 .classObject
 {
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	overflow: visible;
 	border: 0px solid #FE0101;
 	
 }
 
-.classFirstOrder
-{
-	font-family: Verdana, Geneva, sans-serif;
-	color: #aaaaaa;
-    
-}
-
-.classSecondOrder
-{
-}
-
-.classThirdOrder
-{
-}
-
-.classFourthOrder
-{
-}
-
-.classFifthOrder
-{
-}
-
-
 /* IDs */
-#idBody
-{
-    height: 100%;
-    font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	line-height: 25px;
-	width: 100%;
-	max-width: 100%;
-	background-color: #aaaaaa;
-	padding: 0;
-	margin: 0;
-}
-
 #idInnerBody
 {
-    height: 100%;
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
 	line-height: 25px;
-	width: 100%;
-	max-width: 100%;
 	background-color: #000000;
 	padding: 0;
 	margin: 0;
+	color: #aaaaaa;
 }
 
-#idTableMain
+#idGeneralLayout
 {
-    background-color: #000000;
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	
+	background-color: #000000;
     border: 0px solid #FE0101;
     vertical-align: top;
-	width: 100%;
+	
+    
+}
+
+#idTableMain /*decomission*/
+{
+    width: 100%;
 	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-color: #000000;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+	
 }
 
 #idHeaderRow
@@ -318,28 +298,31 @@ navlink a:hover
     vertical-align: top;
 }
 
-#idHeaderRowCenter
-{
-	width: 100%;
-	max-width: 100%;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
 #idLogo
 {
-    height: 25%;
     width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	height: 50%;
+	
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idNavigationRow
+#idHeaderObject
 {
+    height: 50%;
 	width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerLogo
+{
+    height: 100%;
+	width: 100%;
+	max-width: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -347,7 +330,19 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	height: 10%;
+	max-height: 10%;
+	border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerNavigationBar
+{
+	width: 100%;
+	max-width: 100%;
+    height: 100%;
+	max-height: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -355,7 +350,8 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	height: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -363,6 +359,68 @@ navlink a:hover
 {
 	width: 15%;
 	max-width: 15%;
+	height: 100%;
+	max-height: 100%;
+	
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+	
+	display: inline-block;
+}
+
+#idOuterNavigationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 50%;
+	max-height: 50%;
+	
+	margin: 0px;
+	padding: 0px;
+    
+	border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+
+#idNavigationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerNavigationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idNavigation
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerNavigation
+{
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -370,29 +428,100 @@ navlink a:hover
 
 #idCenterRowMain
 {
-	vertical-align:text-top;
-	width: 70%;
-	max-width: 70%;
+	width: 69%;
+	max-width: 69%;
+	height: 100%;
+	
+	margin: 0px;
 	padding: 0px;
-    border: 0px solid #FE0101;
-    vertical-align: top;
+    
+	border: 0px solid #FE0101;
+    vertical-align:text-top;
+	/*vertical-align: top;*/
+	
 	overflow: visible;
+	display: inline-block;
 }
 
-#idCenterContent
+#idCenterContent /*Decommission*/
 {
 	width: 100%;
 	max-width: 100%;
-    color: #aaaaaa;
+	height: 100%;
+	color: #aaaaaa;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idContent
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	
+	color: #aaaaaa;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerContent
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	
+	color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
 }
 
 #idCenterRowRight
 {
+	width: 15%;
+	max-width: 15%;
+	height: 100%;
 	color: #aaaaaa;
-    width: 15%;
-    max-width: 15%;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+	
+	display: inline-block;
+}
+
+#idOuterInformationHeader
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	
+	margin: 0px;
+	padding: 0px;
+    
+	color: #aaaaaa;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+
+}
+
+#idVersions
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+    color: #aaaaaa;
+	padding: 0px;
+    border: 0px solid #FE0101;
+    vertical-align: top;
+}
+
+#idInnerVersions
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	color: #aaaaaa;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -402,15 +531,25 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
+	height: 100%;
 	color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idFooterMain
+#idFooter
 {
 	width: 100%;
 	max-width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#idInnerFooter
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
 	text-align: center;
 }
 
