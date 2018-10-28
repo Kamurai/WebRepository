@@ -67,17 +67,17 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 		$scope.vDefault += "Increase the Awesome with us!<br>";
 	
 		$scope.vResult += "<p id='idCenterContent'>";
-			if(vPage == 0)
+			if($rootScope.vPage == 0)
 			{
 				$scope.vResult += $scope.vDefault;
 			}
-			else if(vPage == 1)
+			else if($rootScope.vPage == 1)
 			{
 				$scope.vResult += "We are working to build this into a better place.</br>";
 				$scope.vResult += "If you found this, then you must be at least (Awesome/2).</br>";
 				$scope.vResult += "Stay tuned, right now it's all about laying foundation for the future.</br>";
 			}
-			else if(vPage == 2)
+			else if($rootScope.vPage == 2)
 			{
 					$scope.vResult += "You can find us at all these different places:</br>";
 				$scope.vResult += "<br/>";
@@ -121,7 +121,7 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 					$scope.vResult += "<a href='https://www.gplus.com/Members/Cris-Kamurai'>Kamurai's Google Plus.</a></br>";
 					$scope.vResult += "<a href='http://www.yoyogames.com/users/Kamurai'>Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>";
 			}
-			else if(vPage == 3)
+			else if($rootScope.vPage == 3)
 			{
 				$scope.vResult += "<p align='left'>";
 					$scope.vResult += "If you would like to play Minecraft with us, then you're welcome to join us here:</br>";
