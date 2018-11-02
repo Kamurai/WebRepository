@@ -2,6 +2,11 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 {
 	$scope.getTitle = function()
 	{
+		$scope.vResult = "";
+		$scope.vDefault = "";
+		
+		$scope.vDefault += "Database Programming";
+	
 		$scope.vResult += "<title>";
 			if(vPage <= 0)
 			{
@@ -33,11 +38,14 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			}
 		$scope.vResult += "</title>";
 		
-		return $sce.trustAsHtml($scope.vResult);
+			return $sce.trustAsHtml($scope.vResult);
 	}
 
 	$scope.getContentHeader = function()
 	{
+		$scope.vResult = "";
+		$scope.vDefault = "";
+		
 		$scope.vDefault += "Database Programming";
 	
 		$scope.vResult += "<h2>";
@@ -71,11 +79,14 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			}
 		$scope.vResult += "</h2>";
 		
-		return $sce.trustAsHtml($scope.vResult);
+			return $sce.trustAsHtml($scope.vResult);
 	}
 
 	$scope.getContent = function()
 	{
+		$scope.vResult = "";
+		$scope.vDefault = "";
+		
 		$scope.vDefault += "This section is dedicated to database based programming.";
 	
 		$scope.vResult += "<p id=\"idCenterContent\">";
@@ -109,7 +120,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			}
 		$scope.vResult += "</p>";
 		
-		return $sce.trustAsHtml($scope.vResult);
+			return $sce.trustAsHtml($scope.vResult);
 	}
 	
 	$scope.getVersions = function()
@@ -220,6 +231,6 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += $scope.vDefault;
 		}
 			
-		return $sce.trustAsHtml($scope.vResult);
+			return $sce.trustAsHtml($scope.vResult);
 	};
 }]);
