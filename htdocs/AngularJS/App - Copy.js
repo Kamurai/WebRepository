@@ -1,1 +1,0 @@
-var vApp = angular.module("vApp", []);

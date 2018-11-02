@@ -1,6 +1,6 @@
-vApp.controller("LayoutController", ['$scope', '$sce', '$rootScope', function ($scope, $sce, $rootScope, vLevel)
+vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce)
 {
-	$scope.getNavigation = function(vLevel)
+	$scope.getNavigation = function()
 	{
 		$scope.vResult = "";
 		

@@ -3,20 +3,17 @@
 	<head>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 		<script language="JavaScript" src="./App.js" runat="server"></script>
-		<script>
-			vApp.value("vPage", "3");
-			vApp.value("vLevel", "0");
-			vApp.value("vDivision", "0");
-			vApp.value("vLayout", "./Layout.html");
-		</script>
 		<script language="JavaScript" src="./Universal.js" runat="server"></script>
 		<script language="JavaScript" src="./Layout.js" runat="server"></script>
 		<script language="JavaScript" src="./Custom.js" runat="server"></script>
-		
-		<any ng-controller="UniversalController" ng-bind-html="getHead(vLevel,vDivision)"></any>
-		
+		<script language="JavaScript" runat="server">
+			{{vPage = 3;""}}
+			{{vLevel = 0;""}}
+			{{vDivision = 0;""}}
+		</script>
+		<any ng-controller="UniversalController" ng-bind-html="getHead()"></any>
 	</head>
 	<body id="idBody" ng-app="vApp">
-		<any ng-include src="'Layout.html'"></any>
+		<any ng-include src="'./Layout.html'"></any>
 	</body>
 </html>

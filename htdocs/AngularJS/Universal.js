@@ -1,22 +1,23 @@
-vApp.controller("UniversalController", ['$scope', '$sce', '$rootScope', function ($scope, $sce, $rootScope, vPage, vLevel, vDivision)
+vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce)
 {
-	$scope.vPage = vPage;
-	$scope.vLevel = vLevel;
-	$scope.vDivision = vDivision;
-	
-	$scope.getHead = function(vLevel, vDivision)
+	var vPage = '-1';
+	var vLevel = '-1';
+	var vDivision = '-1';
+	var vLayout = './Layout.html';
+
+	$scope.getHead = function()
 	{
 		$scope.vResult = "";
 		
 		$scope.vResult += "<head>";
 		$scope.vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-		$scope.vResult += getStyle(vLevel, vDivision);
+		$scope.vResult += getStyle();
 		$scope.vResult += "</head>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getLogo = function(vLevel)
+	$scope.getLogo = function()
 	{
 		$scope.vResult = "";
 		
@@ -108,18 +109,18 @@ vApp.controller("UniversalController", ['$scope', '$sce', '$rootScope', function
 	
 }]);
 
-function getStyle(vLevel, vDivision)
+function getStyle()
 {
 	var vResult = "";
 	
 	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
-	vResult += getStyleFile(vDivision);
+	vResult += getStyleFile();
 	vResult += "\" rel=\"stylesheet\" type =\"text/css\">";
 	
 	return vResult;
 }
 	
-function getStyleFile(vDivision)
+function getStyleFile()
 {
 	var vResult = "";
 	var vDefault = "";
@@ -150,7 +151,7 @@ function getStyleFile(vDivision)
 	return vResult;
 }	
 
-function getPath(vLevel)
+function getPath()
 {
 	var vResult = "";
 	

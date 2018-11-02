@@ -1,7 +1,7 @@
 <table id="idTableMain">
 	<tr id="idHeaderRow">
 		<td id="idHeaderRowCenter" colspan="3">
-			<any ng-controller="UniversalController" ng-bind-html="getLogo(vLevel)"></any>
+			<any ng-controller="UniversalController" ng-bind-html="getLogo()"></any>
 		</td>
 	</tr>
 	<tr id="idNavigationRow">
@@ -12,17 +12,17 @@
 	<tr id="idCenterRow">
 		<td id="idCenterRowLeft">
 			<any ng-controller="UniversalController" ng-bind-html="getNavigationHeader()"></any>
-			<any ng-controller="LayoutController" ng-bind-html="getNavigation(vLevel)"></any>
+			<any ng-controller="LayoutController" ng-bind-html="getNavigation()"></any>
 		</td>
 		<td id="idCenterRowMain">
-			<any ng-controller="CustomController" ng-bind-html="getTitle($rootScope.vPage)"></any>
-			<any ng-controller="CustomController" ng-bind-html="getContentHeader($rootScope.vPage)"></any>
-			<any ng-controller="CustomController" ng-bind-html="getContent(vPage)"></any>
+			<any ng-controller="CustomController" ng-bind-html="getTitle()"></any>
+			<any ng-controller="CustomController" ng-bind-html="getContentHeader()"></any>
+			<any ng-controller="CustomController" ng-bind-html="getContent()"></any>
 		</td>
 		<td id="idCenterRowRight">
 			<any ng-controller="UniversalController" ng-bind-html="getInformationHeader()"></any>
 			<any ng-controller="UniversalController" ng-bind-html="getInformation()"></any>
-			<any ng-controller="CustomController" ng-bind-html="getVersions($vPage)"></any>
+			<any ng-controller="CustomController" ng-bind-html="getVersions()"></any>
 		</td>
 	</tr>
 	<tr id="idFooterRow">

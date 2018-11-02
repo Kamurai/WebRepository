@@ -1,6 +1,6 @@
-vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($scope, $sce, $rootScope, vPage)
+vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 {
-	$scope.getTitle = function(vPage)
+	$scope.getTitle = function()
 	{
 		$scope.vResult = "<title>";
 		$scope.vDefault = "HTKB Home Page";
@@ -30,7 +30,7 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getContentHeader = function(vPage)
+	$scope.getContentHeader = function()
 	{
 		$scope.vResult = "<h2>";
 		$scope.vDefault = "Welcome to the House That Kamurai Built!";
@@ -41,22 +41,26 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 		}
 		else if(vPage == 1)
 		{
-			$scope.vDefault = "About Us";
+			$scope.vResult += "About Us";
 		}
 		else if(vPage == 2)
 		{
-			$scope.vDefault = "Media";
+			$scope.vResult += "Media";
 		}
 		else if(vPage == 3)
 		{
-			$scope.vDefault = "Minecraft!";
+			$scope.vResult += "Minecraft!";
+		}
+		else
+		{
+			$scope.vResult += $scope.vDefault;
 		}
 		$scope.vResult += "</h2>";
 			
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getContent = function(vPage)
+	$scope.getContent = function()
 	{
 		$scope.vResult = "";
 		$scope.vDefault = "";
@@ -66,18 +70,18 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 		$scope.vDefault += "game design.<br>";
 		$scope.vDefault += "Increase the Awesome with us!<br>";
 	
-		$scope.vResult += "<p id='idCenterContent'>";
-			if($rootScope.vPage == 0)
+		$scope.vResult += "<div id='idCenterContent'>";
+			if(vPage == 0)
 			{
 				$scope.vResult += $scope.vDefault;
 			}
-			else if($rootScope.vPage == 1)
+			else if(vPage == 1)
 			{
 				$scope.vResult += "We are working to build this into a better place.</br>";
 				$scope.vResult += "If you found this, then you must be at least (Awesome/2).</br>";
 				$scope.vResult += "Stay tuned, right now it's all about laying foundation for the future.</br>";
 			}
-			else if($rootScope.vPage == 2)
+			else if(vPage == 2)
 			{
 					$scope.vResult += "You can find us at all these different places:</br>";
 				$scope.vResult += "<br/>";
@@ -121,9 +125,9 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 					$scope.vResult += "<a href='https://www.gplus.com/Members/Cris-Kamurai'>Kamurai's Google Plus.</a></br>";
 					$scope.vResult += "<a href='http://www.yoyogames.com/users/Kamurai'>Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>";
 			}
-			else if($rootScope.vPage == 3)
+			else if(vPage == 3)
 			{
-				$scope.vResult += "<p align='left'>";
+				$scope.vResult += "<div align='left'>";
 					$scope.vResult += "If you would like to play Minecraft with us, then you're welcome to join us here:</br>";
 					$scope.vResult += "htkb.dyndns.org:25565</br>";
 					$scope.vResult += "The server is running Minecraft version 1.7.10.</br>";
@@ -139,8 +143,8 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/MoarOres-2.4.5.jar'>Moar Ores</a></br>";
 					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/BiblioCraft[v1.10.4][MC1.7.10].jar'>Biblio Craft</a></br>";
 					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>";
-				$scope.vResult += "</p>";
-				$scope.vResult += "<p align='left'>";
+				$scope.vResult += "</div>";
+				$scope.vResult += "<div align='left'>";
 					$scope.vResult += "For first time setups, please follow these steps to make your client compatible with the server:</br>";
 					$scope.vResult += " 0) If you don't have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>";
 					$scope.vResult += " 1) From the launcher create a new profile and change its version to 1.7.10.</br>";
@@ -156,19 +160,19 @@ vApp.controller("CustomController", ['$scope', '$sce', '$rootScope', function ($
 					$scope.vResult += " 9) Go to multiplayer and click add server.</br>";
 					$scope.vResult += "10) Name the server something distinct and put 'htkb.dyndns.org' or 'htkb.dyndns.org:25565' in the address bar.</br>";
 					$scope.vResult += "11) Save the server entry.  You should see a connection to the server.  Double click to join.</br>";
-				$scope.vResult += "</p>";
+				$scope.vResult += "</div>";
 			}
 			else
 			{
 				$scope.vResult += $scope.vDefault;
 			}
 			
-		$scope.vResult += "</p>";
+		$scope.vResult += "</div>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getVersions = function(vPage)
+	$scope.getVersions = function()
 	{
 		$scope.vResult = "";
 		$scope.vDefault = "";
