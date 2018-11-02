@@ -4,19 +4,10 @@ vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce)
 	{
 		$scope.vResult = "";
 		
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"AboutUs.html'>About Us</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"Media.html'>Media</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"Minecraft.html'>Minecraft!</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Media.html\">Media</a><br/><br/>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>";
+	
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	

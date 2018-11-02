@@ -1,22 +1,15 @@
-vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce, vLevel)
+vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce)
 {
-	$scope.Navigation = function(vLevel)
+	$scope.getNavigation = function()
 	{
 		$scope.vResult = "";
 		
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"AboutUs.html'>About Us</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"Media.html'>Media</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		$scope.vResult += "<span class='navlink'>";
-			$scope.vResult += "<a href='"+getPath(vLevel)+"Minecraft.html'>Minecraft!</a>";
-		$scope.vResult += "</span>";
-		$scope.vResult += "<br>";
-		
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project1.html\">Online Experience Downloads</a><br><br>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project2.html\">Game Maker Downloads</a><br><br>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project3.html\">Java Downloads</a><br><br>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project4.html\">C# Downloads</a><br><br>";
+		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project5.html\">C++ Downloads</a><br><br>";
+    
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	

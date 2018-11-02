@@ -2,9 +2,9 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 {
 	$scope.getTitle = function()
 	{
-		$scope.vResult = "<title>";
 		$scope.vDefault = "HTKB Home Page";
 		
+		$scope.vResult = "<title>";
 			if(vPage <= 0)
 			{
 				$scope.vResult += $scope.vDefault;
@@ -32,29 +32,29 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 	
 	$scope.getContentHeader = function()
 	{
-		$scope.vResult = "<h2>";
 		$scope.vDefault = "Welcome to the House That Kamurai Built!";
 			
-		if(vPage == 0)
-		{
-			$scope.vResult += $scope.vDefault;
-		}
-		else if(vPage == 1)
-		{
-			$scope.vResult += "About Us";
-		}
-		else if(vPage == 2)
-		{
-			$scope.vResult += "Media";
-		}
-		else if(vPage == 3)
-		{
-			$scope.vResult += "Minecraft!";
-		}
-		else
-		{
-			$scope.vResult += $scope.vDefault;
-		}
+		$scope.vResult = "<h2>";
+			if(vPage == 0)
+			{
+				$scope.vResult += $scope.vDefault;
+			}
+			else if(vPage == 1)
+			{
+				$scope.vResult += "About Us";
+			}
+			else if(vPage == 2)
+			{
+				$scope.vResult += "Media";
+			}
+			else if(vPage == 3)
+			{
+				$scope.vResult += "Minecraft!";
+			}
+			else
+			{
+				$scope.vResult += $scope.vDefault;
+			}
 		$scope.vResult += "</h2>";
 			
 		return $sce.trustAsHtml($scope.vResult);
