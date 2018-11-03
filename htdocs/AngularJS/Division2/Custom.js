@@ -85,39 +85,39 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			{
 				$scope.vResult += "Mars Projects";
 			}
-			else if(vPage == 7)
+			else if(vPage == 6)
 			{
 				$scope.vResult += "Truth";
 			}
-			else if(vPage == 8)
+			else if(vPage == 7)
 			{
 				$scope.vResult += "Kingdoms";
 			}
-			else if(vPage == 9)
+			else if(vPage == 8)
 			{
 				$scope.vResult += "Terminal World";
 			}
-			else if(vPage == 10)
+			else if(vPage == 9)
 			{
 				$scope.vResult += "Monster Office Workplace";
 			}
-			else if(vPage == 11)
+			else if(vPage == 10)
 			{
 				$scope.vResult += "Battle Princesses";
 			}
-			else if(vPage == 12)
+			else if(vPage == 11)
 			{
 				$scope.vResult += "Sacred Offerings";
 			}
-			else if(vPage == 13)
+			else if(vPage == 12)
 			{
 				$scope.vResult += "The Way";
 			}
-			else if(vPage == 14)
+			else if(vPage == 13)
 			{
 				$scope.vResult += "Conspiratorium";
-			}		
-			else if(vPage == 15)
+			}
+			else if(vPage == 14)
 			{
 				$scope.vResult += "Conversion";
 			}
@@ -150,46 +150,46 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			{
 				$scope.vResult += "This section is dedicated to the Mars centered project \"Opposition\".";
 			}
-			else if(vPage == 7)
+			else if(vPage == 6)
 			{
 				$scope.vResult += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
 			}
-			else if(vPage == 8)
+			else if(vPage == 7)
 			{
 				$scope.vResult += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.";
 			}
-			else if(vPage == 9)
+			else if(vPage == 8)
 			{
 				$scope.vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
 				$scope.vResult += "the zombies?  Can you survive?";
 			}
-			else if(vPage == 10)
+			else if(vPage == 9)
 			{
 				$scope.vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
 				$scope.vResult += "Can you earn the most credit and smooze your way into a promotion?";
 			}
-			else if(vPage == 11)
+			else if(vPage == 10)
 			{
 				$scope.vResult += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
 				$scope.vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.";
 			}
-			else if(vPage == 12)
+			else if(vPage == 11)
 			{
 				$scope.vResult += "This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but";
 				$scope.vResult += "don\"t want to fall out favor with the people more than the other deities.";
 				$scope.vResult += "Draw people to worship you, but be discerning about who is sacrificed.";
 			}
-			else if(vPage == 13)
+			else if(vPage == 12)
 			{
 				$scope.vResult += "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
 				$scope.vResult += "Escape the binds of the world and the board to reach enlightment and win.";
 			}
-			else if(vPage == 14)
+			else if(vPage == 13)
 			{
 				$scope.vResult += "This section is dedicated to the board game project \"Conspiratorium\".";
 				$scope.vResult += "A game of assassins and CIA, you must remember who is friend and who is not.";
 			}
-			else if(vPage == 15)
+			else if(vPage == 14)
 			{
 				$scope.vResult += "This section is dedicated to the board game project \"Conversion\".";
 				$scope.vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";

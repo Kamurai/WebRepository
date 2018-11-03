@@ -26,7 +26,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			}
 		$scope.vResult += "</title>";
 		
-		return $scope.vResult;
+		return $sce.trustAsHtml($scope.vResult);
 	}
 
 	$scope.getContentHeader = function()
@@ -55,7 +55,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			}
 		$scope.vResult += "</h2>";
 		
-		return $scope.vResult;
+		return $sce.trustAsHtml($scope.vResult);
 	}
 
 	$scope.getContent = function()
@@ -65,7 +65,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 		
 		$scope.vDefault += "This section is dedicated to projects centered in the Renley universe.";
 		
-		$scope.vResult += "<p id=\"idCenterContent\">";
+		$scope.vResult += "<div id=\"idCenterContent\">";
 			if(vPage == 0)
 			{
 				$scope.vResult += $scope.vDefault;
@@ -85,9 +85,9 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			{
 				$scope.vResult += $scope.vDefault;
 			}
-		$scope.vResult += "</p>";
+		$scope.vResult += "</div>";
 		
-		return $scope.vResult;
+		return $sce.trustAsHtml($scope.vResult);
 	}
 	
 	$scope.getVersions = function()
@@ -178,6 +178,6 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += $scope.vDefault;
 		}
 		
-		return $scope.vResult;
+		return $sce.trustAsHtml($scope.vResult);
 	};
 }]);

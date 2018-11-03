@@ -55,11 +55,11 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 		$scope.vResult = "";
 		$scope.vDefault = "";
 		
-		$scope.vResult += "Here are projects based in the Elvia Empire:</br>";
-		$scope.vResult += "</br>";
-		$scope.vResult += "Nine Card: a Tactical card game played through the Elvia Empire.</br>";
+		$scope.vDefault += "Here are projects based in the Elvia Empire:</br>";
+		$scope.vDefault += "</br>";
+		$scope.vDefault += "Nine Card: a Tactical card game played through the Elvia Empire.</br>";
 		
-		$scope.vResult += "<p id=\"idCenterContent\">";
+		$scope.vResult += "<div id=\"idCenterContent\">";
 			if(vPage == 0)
 			{
 				$scope.vResult += $scope.vDefault;
@@ -72,7 +72,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			{
 				$scope.vResult += $scope.vDefault;
 			}
-		$scope.vResult += "</p>";
+		$scope.vResult += "</div>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	}
