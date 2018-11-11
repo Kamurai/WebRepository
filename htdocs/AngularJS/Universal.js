@@ -92,8 +92,10 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 	{
 		$scope.vResult = "";
 		
-		$scope.vResult += "© Copyright 2012 All rights reserved<br>";    
-		$scope.vResult += "House That Kamurai Built";
+		$scope.vResult += "<div id=\"idFooterContent\">";
+			$scope.vResult += "© Copyright 2012 All rights reserved<br>";    
+			$scope.vResult += "House That Kamurai Built";
+		$scope.vResult += "</div>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
@@ -102,7 +104,9 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 	{
 		$scope.vResult = "";
 		
-		$scope.vResult += "Website managed by Kamurai.";
+		$scope.vResult += "<div id=\"idFooterContent\">";
+			$scope.vResult += "Website managed by Kamurai.";
+		$scope.vResult += "</div>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};

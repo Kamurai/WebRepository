@@ -48,48 +48,48 @@ sub getBody
 	my $vLevel = $_[1];
 	my $vResult = "";
 
-	$vResult .= "<body id=\"idBody\">";
-		$vResult .= "<table id=\"idTableMain\">";
-			$vResult .= "<tr id=\"idHeaderRow\">";
-				$vResult .= "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
+	$vResult .= "<body>";
+		$vResult .= "<div id=\"idGeneralLayout\">";
+			$vResult .= "<Header id=\"idHeaderRow\">";
+				$vResult .= "<div id=\"idHeaderRowCenter\">";
 					#from Universal
 					$vResult .= getLogo($vLevel);
-				$vResult .= "</td>";
-			$vResult .= "</tr>";
-			$vResult .= "<tr id=\"idNavigationRow\">";
-				$vResult .= "<td id=\"idNavigationBar\" colspan=\"3\">";
+				$vResult .= "</div>";
+			$vResult .= "</Header>";
+			$vResult .= "<Nav id=\"idNavigationRow\">";
+				$vResult .= "<div id=\"idNavigationBar\">";
 					#from Universal
 					$vResult .= getNavBar($vLevel);
-				$vResult .= "</td>";
-			$vResult .= "</tr>";
-			$vResult .= "<tr id=\"idCenterRow\">";
-				$vResult .= "<td id=\"idCenterRowLeft\">";
+				$vResult .= "</div>";
+			$vResult .= "</Nav>";
+			$vResult .= "<div id=\"idCenterRow\">";
+				$vResult .= "<div id=\"idCenterRowLeft\">";
 					#from Universal
 					$vResult .= getNavigationHeader();
 					#from Layout
 					$vResult .= getNavigation($vLevel);
-				$vResult .= "</td>";
-				$vResult .= "<td id=\"idCenterRowMain\">";
+				$vResult .= "</div>";
+				$vResult .= "<div id=\"idCenterRowMain\">";
 					#from Custom
 					$vResult .= getTitle($vPage);
 					$vResult .= getContentHeader($vPage);
 					$vResult .= getContent($vPage);
-				$vResult .= "</td>";
-				$vResult .= "<td id=\"idCenterRowRight\">";
+				$vResult .= "</div>";
+				$vResult .= "<div id=\"idCenterRowRight\">";
 					#from Universal
 					$vResult .= getInformationHeader();
 					$vResult .= getInformation($vPage);
 					$vResult .= getVersions($vPage);
-				$vResult .= "</td>";
-			$vResult .= "</tr>";
-			$vResult .= "<tr id=\"idFooterRow\">";
-				$vResult .= "<td id=\"idFooterMain\" colspan=\"3\">";
+				$vResult .= "</div>";
+			$vResult .= "</div>";
+			$vResult .= "<Footer id=\"idFooterRow\">";
+				$vResult .= "<div id=\"idFooterMain\">";
 					#from Universal
 					$vResult .= getFooter();
 					$vResult .= getWebMaster();
-				$vResult .= "</td>";
-			$vResult .= "</tr>";
-		$vResult .= "</table>";
+				$vResult .= "</div>";
+			$vResult .= "</Footer>";
+		$vResult .= "</div>";
 	$vResult .= "</body>";
 	
 	return $vResult;

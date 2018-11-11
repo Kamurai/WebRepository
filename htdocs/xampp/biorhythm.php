@@ -12,13 +12,13 @@
 	{
 	    global $TEXT;
 
-	    print("<html><head>");
+	    print("<html xmlns="http://www.w3.org/1999/xhtml"><head>");
 	    print("<title>Biorhythm with PHP</title>");
 	    print('<link href="xampp.css" rel="stylesheet" type="text/css">');
 	    print("</head><body>");
 		
-	    print("&nbsp;<p><h1>".$TEXT['bio-head']."</h1>");
-	    print($TEXT['bio-by']." Till Gerken<br><a class=black href=http://www.zend.com/zend/tut/dynamic.php>http://www.zend.com/zend/tut/dynamic.php</a><p>");
+	    print("&nbsp;<div><h1>".$TEXT['bio-head']."</h1>");
+	    print($TEXT['bio-by']." Till Gerken<br><a class=black href=http://www.zend.com/zend/tut/dynamic.phdiv>http://www.zend.com/zend/tut/dynamic.php</a><div>");
 
 	}
 
@@ -85,7 +85,7 @@
 	     <!-- Please enter your birthday: -->
 	     <?php print $TEXT['bio-ask']; ?>:
 		<br>
-	     <input type="text" name="birthdate" value="MM/DD/YYYY"><p>
+	     <input type="text" name="birthdate" value="MM/DD/YYYY"><div>
 	     <input type=submit value="<?php print $TEXT['bio-ok']; ?>">
 	     <input type="hidden" name="showpng" value=1>
 	     </form>

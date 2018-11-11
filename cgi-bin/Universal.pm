@@ -150,10 +150,10 @@ sub getFooter
 
 	my $vResult = "";
 	
-	$vResult .= "<p id=\"idFooterContent\">";
+	$vResult .= "<div id=\"idFooterContent\">";
 		$vResult .= "© Copyright 2012 All rights reserved<br>";
 		$vResult .= "House That Kamurai Built<br>";
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 	
 	return $vResult;
 }
@@ -164,9 +164,9 @@ sub getWebMaster
 								
 	my $vResult = "";
 	
-	$vResult .= "<p id=\"idFooterManagement\">";
+	$vResult .= "<div id=\"idFooterManagement\">";
 		$vResult .= "Website managed by Kamurai.";
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 	
 	return $vResult;
 }

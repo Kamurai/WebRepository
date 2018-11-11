@@ -5,7 +5,7 @@
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta name="author" content="Kai Oswald Seidler, Kay Vogelgesang, Carsten Wiedmann">
 		<link href="xampp.css" rel="stylesheet" type="text/css">
@@ -13,10 +13,10 @@
 	</head>
 
 	<body>
-		&nbsp;<p>
+		&nbsp;<div>
 		<h1><?php echo $TEXT['ADOdb-head']; ?></h1>
-		<?php echo $TEXT['ADOdb-text']; ?><p>
-		<?php echo $TEXT['ADOdb-example']; ?><p>
+		<?php echo $TEXT['ADOdb-text']; ?><div>
+		<?php echo $TEXT['ADOdb-example']; ?><div>
 
 		<?php
 		
@@ -57,11 +57,11 @@
 					include_once 'adodb/tohtml.inc.php';
 					$db = ADONewConnection($_POST['dbserver']);
 					@$db->Connect($_POST['database'], '0666');
-					echo "<p><b>DBServer: $_POST[dbserver]</b><p>";
+					echo "<div><b>DBServer: $_POST[dbserver]</b><div>";
 					$result = $db->Execute("SELECT * FROM $_POST[table]");
 					if (!is_object($result)) {
 				        $e = ADODB_Pear_Error();
-				        echo '<p><b>'.$e->message.'</b>'; 
+				        echo '<div><b>'.$e->message.'</b>'; 
 					} else {
 						while (!$result->EOF) {
 							for ($i = 0, $max = $result->FieldCount(); $i < $max; $i++) {
@@ -78,11 +78,11 @@
 						include_once 'adodb/tohtml.inc.php';
 						$db = ADONewConnection($_POST['dbserver']);
 						@$db->Connect($_POST['host'], $_POST['user'], $_POST['password'], $_POST['database']);
-						echo "<p><b>DBServer: $_POST[dbserver]</b><p>";
+						echo "<div><b>DBServer: $_POST[dbserver]</b><div>";
 						$result = $db->Execute("SELECT * FROM $_POST[table]");
 						if (!is_object($result)) {
 					        $e = ADODB_Pear_Error();
-					        echo '<p><b>'.$e->message.'</b>'; 
+					        echo '<div><b>'.$e->message.'</b>'; 
 						} else {
 							while (!$result->EOF) {
 								for ($i = 0, $max = $result->FieldCount(); $i < $max; $i++) {
@@ -101,7 +101,7 @@
 		?>
 
 		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-			<table width="720" cellpadding="0" cellspacing="0" border="0">
+			<div width="720" cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td align="left" width="10">&nbsp;</td>
 					<td align="left" width="350"><?php echo $TEXT['ADOdb-dbserver']; ?></td>
@@ -163,10 +163,10 @@
 					<td align="left" width="10">&nbsp;</td>
 					<td align="left" width="350">&nbsp;</td>
 				</tr>
-			</table>
+			</div>
 		</form>
 
-		<p>
+		<div>
 	    <?php include("showcode.php"); ?>
 	</body>
 </html>

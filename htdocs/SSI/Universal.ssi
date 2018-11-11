@@ -59,14 +59,14 @@
 	<!--#include virtual="./Universal.ssi"-->
 	downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>
 <!--#elif expr="$vFunction == getFooter" -->
-	<p id="idFooterContent">
+	<div id="idFooterContent">
 		© Copyright 2012 All rights reserved<br>
 		House That Kamurai Built<br>
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getWebMaster" -->
-	<p id="idFooterManagement">
+	<div id="idFooterManagement">
 		Website managed by Kamurai.
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getPath" -->
 	<!--#if expr="$vLevel <= 0" -->
 		./

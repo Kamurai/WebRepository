@@ -1,38 +1,34 @@
-<table id="idTableMain">
-	<tr id="idHeaderRow">
-		<td id="idHeaderRowCenter" colspan="3">
-			<any ng-controller="UniversalController" ng-bind-html="getLogo()"></any>
-		</td>
-	</tr>
-	<tr id="idNavigationRow">
-		<td id="idNavigationBar" colspan="3">
-			<any ng-controller="UniversalController" ng-bind-html="getNavBar()"></any>
-		</td>
-	</tr>
-	<tr id="idCenterRow">
-		<td id="idCenterRowLeft">
-			<any ng-controller="UniversalController" ng-bind-html="getNavigationHeader()"></any>
-			<any ng-controller="LayoutController" ng-bind-html="getNavigation()"></any>
-		</td>
-		<td id="idCenterRowMain">
-			<any ng-controller="CustomController" ng-bind-html="getTitle()"></any>
-			<any ng-controller="CustomController" ng-bind-html="getContentHeader()"></any>
-			<any ng-controller="CustomController" ng-bind-html="getContent()"></any>
-		</td>
-		<td id="idCenterRowRight">
-			<any ng-controller="UniversalController" ng-bind-html="getInformationHeader()"></any>
-			<any ng-controller="UniversalController" ng-bind-html="getInformation()"></any>
-			<any ng-controller="CustomController" ng-bind-html="getVersions()"></any>
-		</td>
-	</tr>
-	<tr id="idFooterRow">
-		<td id="idFooterMain" colspan="3">
-			<p id="idFooterContent">
-				<any ng-controller="UniversalController" ng-bind-html="getFooter()"></any>
-			</p>
-			<p id="idFooterManagement">
-				<any ng-controller="UniversalController" ng-bind-html="getWebMaster()"></any>
-			</p>
-		</td>
-	</tr>
-</table>
+<div id="idGeneralLayout">
+	<Header id="idGeneralLayout">
+		<div id="idHeaderRowCenter">
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getLogo()"></any>
+		</div>
+	</Header>
+	<nav id="idNavigationRow">
+		<div id="idNavigationBar">
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getNavBar()"></any>
+		</div>
+	</nav>
+	<div id="idCenterRow">
+		<div id="idCenterRowLeft">
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getNavigationHeader()"></any>
+			<any ng-condivoller="LayoutCondivoller" ng-bind-html="getNavigation()"></any>
+		</div>
+		<div id="idCenterRowMain">
+			<any ng-condivoller="CustomCondivoller" ng-bind-html="getTitle()"></any>
+			<any ng-condivoller="CustomCondivoller" ng-bind-html="getContentHeader()"></any>
+			<any ng-condivoller="CustomCondivoller" ng-bind-html="getContent()"></any>
+		</div>
+		<div id="idCenterRowRight">
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getInformationHeader()"></any>
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getInformation()"></any>
+			<any ng-condivoller="CustomCondivoller" ng-bind-html="getVersions()"></any>
+		</div>
+	</div>
+	<Footer id="idFooterRow">
+		<div id="idFooterMain">
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getFooter()"></any>
+			<any ng-condivoller="UniversalCondivoller" ng-bind-html="getWebMaster()"></any>
+		</div>
+	</Footer>
+</div>

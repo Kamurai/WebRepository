@@ -97,7 +97,7 @@
 			$vResult = $vResult.'This section is dedicated to Oracle based programming.';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
-			$vResult = $vResult.'<table>';
+			$vResult = $vResult.'<div>';
 				$vResult = $vResult.'<tr>';
 					$vResult = $vResult.'<td>';
 						$vResult = $vResult.'Index';
@@ -162,14 +162,14 @@
 						$vResult = $vResult.'OracleMethod(\'Violet\',\'1\')';
 					$vResult = $vResult.'</td>';
 				$vResult = $vResult.'</tr>';
-			$vResult = $vResult.'</table>';
+			$vResult = $vResult.'</div>';
         }
         else if($vPage==2)
         {
 			$vResult = $vResult.'This section is dedicated to Derby based programming.';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
-			$vResult = $vResult.'<table>';
+			$vResult = $vResult.'<div>';
 				$vResult = $vResult.'<tr>';
 					$vResult = $vResult.'<td>';
 						$vResult = $vResult.'Index';
@@ -234,14 +234,14 @@
 						$vResult = $vResult.'DerbyMethod(\'Violet\',\'1\')';
 					$vResult = $vResult.'</td>';
 				$vResult = $vResult.'</tr>';
-			$vResult = $vResult.'</table>';
+			$vResult = $vResult.'</div>';
         }
         else if($vPage==3)
         {
 			$vResult = $vResult.'This section is dedicated to MySQL based programming.';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
-			$vResult = $vResult.'<table>';
+			$vResult = $vResult.'<div>';
 				$vResult = $vResult.'<tr>';
 					$vResult = $vResult.'<td>';
 						$vResult = $vResult.'Index';
@@ -306,14 +306,14 @@
 						$vResult = $vResult.'MySQLMethod(\'Violet\',\'1\')';
 					$vResult = $vResult.'</td>';
 				$vResult = $vResult.'</tr>';
-			$vResult = $vResult.'</table>';
+			$vResult = $vResult.'</div>';
         }
         else if($vPage==4)
         {
 			$vResult = $vResult.'This section is dedicated to SQL Server based programming.';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
-			$vResult = $vResult.'<table>';
+			$vResult = $vResult.'<div>';
 				$vResult = $vResult.'<tr>';
 					$vResult = $vResult.'<td>';
 					  $vResult = $vResult.'SQL Server Instance';
@@ -456,7 +456,7 @@
 						$vResult = $vResult.'SQLServerExpressMethod(\'Violet\',\'1\')';
 					$vResult = $vResult.'</td>';
 				$vResult = $vResult.'</tr>';
-			$vResult = $vResult.'</table>';
+			$vResult = $vResult.'</div>';
         }
         else if($vPage==5)
         {

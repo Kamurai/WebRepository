@@ -47,7 +47,7 @@ exports.getContent = function (vPage)
 	
 	vDefault = "";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage <= 0)
 		{
 			vResult += "This section is dedicated to web-based programming.";
@@ -56,7 +56,7 @@ exports.getContent = function (vPage)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
     return vResult;
 }

@@ -129,10 +129,10 @@
     {
         $vResult = '';
 
-		$vResult = $vResult.'<p id=\'idFooterContent\'>';
+		$vResult = $vResult.'<div id=\'idFooterContent\'>';
         $vResult = $vResult.'© Copyright 2012 All rights reserved<br>';
         $vResult = $vResult.'House That Kamurai Built<br>';
-        $vResult = $vResult.'</p>';
+        $vResult = $vResult.'</div>';
         
         return $vResult;
     }
@@ -141,9 +141,9 @@
     {
         $vResult = '';
 
-		$vResult = $vResult.'<p id=\'idFooterManagement\'>';
+		$vResult = $vResult.'<div id=\'idFooterManagement\'>';
         $vResult = $vResult.'Website managed by Kamurai.';
-        $vResult = $vResult.'</p>';
+        $vResult = $vResult.'</div>';
         
         return $vResult;
     }

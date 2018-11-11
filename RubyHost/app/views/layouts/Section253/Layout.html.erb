@@ -1,40 +1,38 @@
 <!DOCTYPE html>
-
 <html xmlns = "http://www.w3.org/1999/xhtml">
-<html>
-<%= render "/division2/Header" %>
-<body id="idBody">
-    <table id="idTableMain">
-        <tr id="idHeaderRow">
-            <td id="idHeaderRowCenter" colspan="3">
-                <%= render "/Universal/Logo" %>
-            </td>
-        </tr>
-        <tr id="idNavigationRow">
-            <td id="idNavigationBar" colspan="3">
-                <%= render "/Universal/NavBar" %>
-            </td>
-        </tr>				
-        <tr id="idCenterRow">
-            <td id="idCenterRowLeft">
-                <%= render "/Universal/NavigationHeader" %>
-                <%= render "/section253/Navigation" %>
-            </td>
-            <td id="idCenterRowMain">
-                <%= yield %>
-            </td>
-            <td id="idCenterRowRight">
-                <%= render "/Universal/InfoHeader" %>
-                <%= render "/Universal/InfoLanguage" %>
-                <%= yield :versions %>
-            </td>
-        </tr>
-        <tr id="idFooterRow">
-            <td id="idFooterMain" colspan="3">
-                <%= render "/Universal/Footer" %>
-                <%= render "/Universal/Management" %>
-            </td>
-        </tr>
-    </table>
-</body>
+	<%= render "/division2/Header" %>
+	<body id="idBody">
+		<div id="idGeneralLayout">
+			<Header id="idHeaderRow">
+				<div id="idHeaderRowCenter">
+					<%= render "/Universal/Logo" %>
+				</div>
+			</Header>
+			<Nav id="idNavigationRow">
+				<div id="idNavigationBar">
+					<%= render "/Universal/NavBar" %>
+				</div>
+			</div>				
+			<div id="idCenterRow">
+				<div id="idCenterRowLeft">
+					<%= render "/Universal/NavigationHeader" %>
+					<%= render "/section253/Navigation" %>
+				</div>
+				<div id="idCenterRowMain">
+					<%= yield %>
+				</div>
+				<div id="idCenterRowRight">
+					<%= render "/Universal/InfoHeader" %>
+					<%= render "/Universal/InfoLanguage" %>
+					<%= yield :versions %>
+				</div>
+			</div>
+			<Footer id="idFooterRow">
+				<div id="idFooterMain">
+					<%= render "/Universal/Footer" %>
+					<%= render "/Universal/Management" %>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -44,7 +44,7 @@ Function getContent(vPage)
 	vDefault = vDefault + "</br>"
 	vDefault = vDefault + "Elemental Angels: An adventure game with RPG elements based in the Avia Nation.</br>"
 	
-	vResult = vResult + "<p id=""idCenterContent"">"
+	vResult = vResult + "<div id=""idCenterContent"">"
     	If vPage = 0 Then
 			vResult = vResult + vDefault
 		ElseIf vPage = 1 Then
@@ -52,7 +52,7 @@ Function getContent(vPage)
 		Else
 			vResult = vResult + vDefault
 		End If
-	vResult = vResult + "</p>"
+	vResult = vResult + "</div>"
 	
 	getContent = vResult
 End Function

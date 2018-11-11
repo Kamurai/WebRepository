@@ -15,7 +15,7 @@
 		<!--#endif -->
 	</h2>
 <!--#elif expr="$vFunction == getContent" -->
-	<p id="idCenterContent">
+	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
 			Global:
 		<br/>
@@ -56,7 +56,7 @@
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getVersions" -->
 	This is written with basic HTML and Server Side Integration.
 	<br/>

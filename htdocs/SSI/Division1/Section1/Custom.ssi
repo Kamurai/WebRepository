@@ -35,7 +35,7 @@
 		<!--#endif -->
 	</h2>
 <!--#elif expr="$vFunction == getContent" -->
-	<p id="idCenterContent">
+	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
 			This section is dedicated to database based programming.
 		<!--#elif expr="$vPage == 1" -->
@@ -51,7 +51,7 @@
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getVersions" -->
 	<!--#if expr="$vPage == 0" -->
 		<a href="http://htkb.dyndns.org/Division1/Section1/Index.html">HTML</a><br>

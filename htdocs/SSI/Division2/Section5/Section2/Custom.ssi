@@ -25,28 +25,28 @@
 		</u>
 	</h2>
 <!--#elif expr="$vFunction == getContent" -->
-	<p id="idCenterContent">
+	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
-			<p align="left">
+			<div align="left">
 				Here are projects based in the Grendol Empire:</br>
 				</br>
 				Land of the Orcish Empire: Age of Magic: a CCG based on the different factions that 
 				comprise the Grendol Empire.</br>
 				Coliseum: Arena: a CCG representing the gladitorial arenas of Grendol.</br>
-			</p>
+			</div>
 		<!--#elif expr="$vPage == 1" -->
-			<p align="left">
+			<div align="left">
 				Land of the Orcish Empire: Age of Magic: is a CCG based on the different factions that 
 				comprise the Grendol Empire.
-			</p>
+			</div>
 		<!--#elif expr="$vPage == 2" -->
-			<p align="left">
+			<div align="left">
 				Coliseum: Arena is a CCG representing the gladitorial arenas of Grendol.
-			</p>
+			</div>
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getVersions" -->
 	<!--#if expr="$vPage == 0" -->
 		<a href="http://htkb.dyndns.org/Division2/Section5/Section2/Index.html">HTML</a><br>

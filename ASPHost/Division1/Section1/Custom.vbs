@@ -62,12 +62,12 @@ Function getContent(vPage)
 	
 	vDefault = vDefault + "This section is dedicated to database based programming."
 	
-	vResult = vResult + "<p id=""idCenterContent"">"
+	vResult = vResult + "<div id=""idCenterContent"">"
     	If vPage = 0 Then
 			vResult = vResult + vDefault
 		ElseIf vPage = 1 Then
 			vResult = vResult + "This section is dedicated to Oracle based programming."
-			vResult = vResult + "<table>"
+			vResult = vResult + "<div>"
 				vResult = vResult + "<tr>"
 					vResult = vResult + "<td>"
 						vResult = vResult + "Index"
@@ -84,7 +84,7 @@ Function getContent(vPage)
 						'OracleMethod("Red",0)
 					vResult = vResult + "</td>"
 				vResult = vResult + "</tr>"
-			vResult = vResult + "</table>"
+			vResult = vResult + "</div>"
 			
 		ElseIf vPage = 2 Then
 			vResult = vResult + "This section is dedicated to Derby based programming."
@@ -94,7 +94,7 @@ Function getContent(vPage)
 			'SQLServerDataList()
 		
 			vResult = vResult + "This section is dedicated to SQL Server based programming."
-			vResult = vResult + "<table>"
+			vResult = vResult + "<div>"
 				vResult = vResult + "<tr>"
 					vResult = vResult + "<td>"
 						vResult = vResult + "Index"
@@ -111,7 +111,7 @@ Function getContent(vPage)
 						'/vResult = vResult + "<%#Container.DataItem(""Color"")%>"
 					vResult = vResult + "</td>"
 				vResult = vResult + "</tr>"
-			vResult = vResult + "</table>"
+			vResult = vResult + "</div>"
 		ElseIf vPage = 5 Then
 			vResult = vResult + "This section is dedicated to Postgres based programming."
 		ElseIf vPage = 6 Then
@@ -119,7 +119,7 @@ Function getContent(vPage)
 		Else
 			vResult = vResult + vDefault
 		End If
-	vResult = vResult + "</p>"
+	vResult = vResult + "</div>"
 	
 	getContent = vResult
 End Function

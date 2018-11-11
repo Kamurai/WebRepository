@@ -67,7 +67,7 @@ function getContent(vPage)
 	vDefault += "comprise the Grendol Empire.</br>";
 	vDefault += "Coliseum: Arena: a CCG representing the gladitorial arenas of Grendol.</br>";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage == 0)
 		{
 			vResult += vDefault;
@@ -85,7 +85,7 @@ function getContent(vPage)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
 	return vResult;
 }

@@ -43,7 +43,7 @@ function fillHeader(vPage)
 	var vResult = "";
 	var vDefault = "Global Antarrea";
 	
-	var tableRowCenterMainHeader = document.createElement("h2");
+	var vCenterRowMainHeader = document.createElement("h2");
 
 	if(vPage == 0)
 	{
@@ -77,8 +77,8 @@ function fillHeader(vPage)
     {
         vResult += vDefault;
     }
-    tableRowCenterMainHeader.textContent = vResult;
-	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
+    vCenterRowMainHeader.textContent = vResult;
+	$( "#idCenterRowMain" ).append( vCenterRowMainHeader );
 }
 
 function fillContent(vPage)
@@ -86,8 +86,8 @@ function fillContent(vPage)
 	var vResult = "";
 	var vDefault = "";
 	
-	var tableRowCenterMainContent = document.createElement("p");
-	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
+	var vCenterContent = document.createElement("div");
+	vCenterContent.setAttribute("id", "idCenterContent");
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -128,7 +128,7 @@ function fillContent(vPage)
     {
 		vResult += vDefault;
 	}
-	$( "#idCenterRowMain" ).append( tableRowCenterMainContent );
+	$( "#idCenterRowMain" ).append( vCenterContent );
 	$( "#idCenterContent" ).append( vResult );
 }
 

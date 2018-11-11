@@ -58,7 +58,7 @@ function getContent(vPage)
 	vDefault += "</br>";
 	vDefault += "Elemental Angels: An adventure game with RPG elements based in the Avia Nation.</br>";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage == 0)
 		{
 			vResult += vDefault;
@@ -71,7 +71,7 @@ function getContent(vPage)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
 	return vResult;
 }

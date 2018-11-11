@@ -53,7 +53,7 @@ sub getContent
 	
 	$vDefault .= "This section is dedicated to web-based programming.";
 	
-	$vResult .= "<p id=\"idCenterContent\">";
+	$vResult .= "<div id=\"idCenterContent\">";
 		if($vPage <= 0)
 		{
 			$vResult .= $vDefault; 
@@ -74,7 +74,7 @@ sub getContent
 		{
 			$vResult .= $vDefault;
 		}
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 
 	return $vResult;
 }

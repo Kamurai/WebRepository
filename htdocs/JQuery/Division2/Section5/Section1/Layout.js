@@ -40,76 +40,73 @@ function fillNavigation(vLevel)
 
 function buildBody(vPage, vLevel)
 {
-    var tableMain = document.createElement("table");
-    tableMain.setAttribute("id", "idTableMain");
-    $( "body" ).append( tableMain );
+    var vGeneralLayout = document.createElement("div");
+    vGeneralLayout.setAttribute("id", "idGeneralLayout");
+    $( "body" ).append( vGeneralLayout );
     
-    var tableRowHeader = document.createElement("tr");
-    tableRowHeader.setAttribute("id", "idHeaderRow");
-    $( "#idTableMain" ).append( tableRowHeader );
+    var vHeaderRow = document.createElement("Header");
+    vHeaderRow.setAttribute("id", "idHeaderRow");
+    $( "#idGeneralLayout" ).append( vHeaderRow );
     
-    var tableRowHeaderCenter = document.createElement("td");
-    tableRowHeaderCenter.setAttribute("id", "idHeaderRowCenter");
-    tableRowHeaderCenter.setAttribute("colSpan", 3);
-    $( "#idHeaderRow" ).append( tableRowHeaderCenter );
+    var vHeaderRowCenter = document.createElement("div");
+    vHeaderRowCenter.setAttribute("id", "idHeaderRowCenter");
+    $( "#idHeaderRow" ).append( vHeaderRowCenter );
     
     //TitlePicture(vLevel);
     
-    var tableRowNavigation = document.createElement("tr");
-    tableRowNavigation.setAttribute("id", "idNavigationRow");
-    $( "#idTableMain" ).append( tableRowNavigation );
+    var vNavigationRow = document.createElement("nav");
+    vNavigationRow.setAttribute("id", "idNavigationRow");
+    $( "#idGeneralLayout" ).append( vNavigationRow );
     
-    var tableRowNavigationCenter = document.createElement("td");
-    tableRowNavigationCenter.setAttribute("id", "idNavigationBar");
-    tableRowNavigationCenter.setAttribute("colSpan", 3);
-    $( "#idNavigationRow" ).append( tableRowNavigationCenter );
+    var vNavigationBar = document.createElement("div");
+    vNavigationBar.setAttribute("id", "idNavigationBar");
+    $( "#idNavigationRow" ).append( vNavigationBar );
     
     //NavBar(vLevel);
     
-    var tableRowCenter = document.createElement("tr");
-    tableRowCenter.setAttribute("id", "idCenterRow");
-    $( "#idTableMain" ).append( tableRowCenter );
+    var vCenterRow = document.createElement("div");
+    vCenterRow.setAttribute("id", "idCenterRow");
+    $( "#idGeneralLayout" ).append( vCenterRow );
     
-    var tableRowCenterLeft = document.createElement("td");
-    tableRowCenterLeft.setAttribute("id", "idCenterRowLeft");
-    $( "#idCenterRow" ).append( tableRowCenterLeft );
+    var vCenterRowLeft = document.createElement("div");
+    vCenterRowLeft.setAttribute("id", "idCenterRowLeft");
+    $( "#idCenterRow" ).append( vCenterRowLeft );
     
-    //NavigationHeader(tableRowCenterLeft);
+    //NavigationHeader(vCenterRowLeft);
     
     //Navigation(vLevel)
     
 
-    var tableRowCenterMain = document.createElement("td");
-    tableRowCenterMain.setAttribute("id", "idCenterRowMain");
-    $( "#idCenterRow" ).append( tableRowCenterMain );
+    var vCenterRowMain = document.createElement("div");
+    vCenterRowMain.setAttribute("id", "idCenterRowMain");
+    $( "#idCenterRow" ).append( vCenterRowMain );
     
     //Title(vPage);
-    //Header(vPage, tableRowCenterMain);
-    //Content(vPage, tableRowCenterMain);
+    //Header(vPage, vCenterRowMain);
+    //Content(vPage, vCenterRowMain);
     
-    var tableRowCenterRight = document.createElement("td");
-    tableRowCenterRight.setAttribute("id", "idCenterRowRight");
-    $( "#idCenterRow" ).append( tableRowCenterRight );
+    var vCenterRowRight = document.createElement("div");
+    vCenterRowRight.setAttribute("id", "idCenterRowRight");
+    $( "#idCenterRow" ).append( vCenterRowRight );
 
-    //InformationHeader(tableRowCenterRight);
-    //Versions(vPage, tableRowCenterRight);
+    //InformationHeader(vCenterRowRight);
+    //Versions(vPage, vCenterRowRight);
 
-    var tableRowFooter = document.createElement("tr");
-    tableRowFooter.setAttribute("id", "idFooterRow");
-    $( "#idTableMain" ).append( tableRowFooter );
+    var vFooterRow = document.createElement("Footer");
+    vFooterRow.setAttribute("id", "idFooterRow");
+    $( "#idGeneralLayout" ).append( vFooterRow );
     
-    var tableFooterMain = document.createElement("td");
-    tableFooterMain.setAttribute("id", "idFooterRowMain");
-    tableFooterMain.setAttribute("colSpan", 3);
-    $( "#idFooterRow" ).append( tableFooterMain );
+    var vFooterRowMain = document.createElement("div");
+    vFooterRowMain.setAttribute("id", "idFooterRowMain");
+    $( "#idFooterRow" ).append( vFooterRowMain );
     
-    var tableFooterMainContent = document.createElement("p");
-    tableFooterMainContent.setAttribute("id", "idFooterContent");
-    $( "#idFooterRowMain" ).append( tableFooterMainContent );
+    var vFooterContent = document.createElement("div");
+    vFooterContent.setAttribute("id", "idFooterContent");
+    $( "#idFooterRowMain" ).append( vFooterContent );
         
-    var tableFooterMainManagement = document.createElement("p");
-    tableFooterMainManagement.setAttribute("id", "idFooterManagement");
-    $( "#idFooterRowMain" ).append( tableFooterMainManagement );
+    var vFooterManagement = document.createElement("div");
+    vFooterManagement.setAttribute("id", "idFooterManagement");
+    $( "#idFooterRowMain" ).append( vFooterManagement );
         
     //Footer();
     //WebMaster();

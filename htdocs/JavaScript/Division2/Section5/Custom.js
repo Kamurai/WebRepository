@@ -82,7 +82,7 @@ function getContent(vPage)
 		vDefault += "</br>";
 		vDefault += "Nine Card: Tactical card game.</br>";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
 	if(vPage == 0)
 	{
 		vResult += vDefault;

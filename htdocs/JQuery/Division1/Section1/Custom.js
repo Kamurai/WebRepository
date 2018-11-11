@@ -36,7 +36,7 @@ function fillTitle(vPage)
 function fillHeader(vPage)
 {
 	var vResult = "";
-	var vDefault = "Database Programming";		var tableRowCenterMainHeader = document.createElement("h2");
+	var vDefault = "Database Programming";		var vCenterRowMainHeader = document.createElement("h2");
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -65,13 +65,13 @@ function fillHeader(vPage)
     {
         vResult += vDefault;
     }
-    tableRowCenterMainHeader.textContent = vResult;	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
+    vCenterRowMainHeader.textContent = vResult;	$( "#idCenterRowMain" ).append( vCenterRowMainHeader );
 }
 
 function fillContent(vPage)
 {
 	var vResult = "";
-	var vDefault = "This section is dedicated to database based programming.";		var tableRowCenterMainContent = document.createElement("p");	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
+	var vDefault = "This section is dedicated to database based programming.";		var vCenterContent = document.createElement("div");	vCenterContent.setAttribute("id", "idCenterContent");
 	if(vPage == 0)
 	{
 		vResult += vDefault;
@@ -100,7 +100,7 @@ function fillContent(vPage)
     {
 		vResult += vDefault;
 	}
-	$( "#idCenterRowMain" ).append( tableRowCenterMainContent );	$( "#idCenterContent" ).append( vResult );
+	$( "#idCenterRowMain" ).append( vCenterContent );	$( "#idCenterContent" ).append( vResult );
 }
 
 function fillVersions(vPage)

@@ -27,7 +27,7 @@
 		<!--#endif -->
 	</h2>
 <!--#elif expr="$vFunction == getContent" -->
-	<p id="idCenterContent">
+	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
 			This section is dedicated to projects centered in the Gynowars universe.
 		<!--#elif expr="$vPage == 1" -->
@@ -43,7 +43,7 @@
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getVersions" -->
 	<!--#if expr="$vPage == 0" -->
 		<a href="http://htkb.dyndns.org/Division2/Section1/Index.html">HTML</a><br>

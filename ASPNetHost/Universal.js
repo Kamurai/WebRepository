@@ -129,8 +129,10 @@ function getFooter()
 {
 	var vResult = "";
 	
-    vResult += "© Copyright 2012 All rights reserved<br>";    
-    vResult += "House That Kamurai Built<br>";
+	vResult += "<div id=\"idFooterContent\">";
+		vResult += "© Copyright 2012 All rights reserved<br>";    
+		vResult += "House That Kamurai Built<br>";
+	vResult += "</div>";
 	
 	return vResult;
 }
@@ -139,7 +141,9 @@ function getWebMaster()
 {
 	var vResult = "";
 	
-    vResult += "Website managed by Kamurai.";
+    vResult += "<div id=\"idFooterManagement\">";
+		vResult += "Website managed by Kamurai.";
+	vResult += "</div>";
 	
 	return vResult;
 }

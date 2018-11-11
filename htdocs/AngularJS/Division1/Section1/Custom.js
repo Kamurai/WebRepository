@@ -89,7 +89,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 		
 		$scope.vDefault += "This section is dedicated to database based programming.";
 	
-		$scope.vResult += "<p id=\"idCenterContent\">";
+		$scope.vResult += "<div id=\"idCenterContent\">";
 			if(vPage <= 0)
 			{
 				$scope.vResult += $scope.vDefault;
@@ -118,7 +118,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			{
 				$scope.vResult += $scope.vDefault;
 			}
-		$scope.vResult += "</p>";
+		$scope.vResult += "</div>";
 		
 			return $sce.trustAsHtml($scope.vResult);
 	}

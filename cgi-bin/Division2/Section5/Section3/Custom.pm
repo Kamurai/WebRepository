@@ -63,7 +63,7 @@ sub getContent
 	$vDefault .= "</br>";
 	$vDefault .= "Elemental Angels: An adventure game with RPG elements based in the Avia Nation.</br>";
 			
-	$vResult .= "<p id=\"idCenterContent\">";
+	$vResult .= "<div id=\"idCenterContent\">";
 		if($vPage <= 0)
 		{
 			$vResult .= $vDefault;
@@ -76,7 +76,7 @@ sub getContent
 		{
 			$vResult .= $vDefault;
 		}
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 
 	return $vResult;
 }

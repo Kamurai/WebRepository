@@ -80,7 +80,7 @@ sub getContent
 	$vDefault .= "game design.<br>";
 	$vDefault .= "Increase the Awesome with us!<br>";
 	
-	$vResult .= "<p id=\"idCenterContent\">";
+	$vResult .= "<div id=\"idCenterContent\">";
 		if($vPage <= 0)
 		{
 			$vResult .= $vDefault;
@@ -125,9 +125,9 @@ sub getContent
 				$vResult .= "Here are some of our member's pages:</br>";
 			$vResult .= "<br>";
 			$vResult .= "<br>";
-				$vResult .= "<p align='left'>";
+				$vResult .= "<div align='left'>";
 					$vResult .= "Kamurai:";
-				$vResult .= "</p>";
+				$vResult .= "</div>";
 			$vResult .= "<br>";
 			$vResult .= "<br>";
 				$vResult .= "<a href='http://twitter.com/#!/Kamurai25'>Kamurai's Twitter.</a></br>";
@@ -184,7 +184,7 @@ sub getContent
 		{
 			$vResult .= $vDefault;
 		}
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 	
 	return $vResult;
 }

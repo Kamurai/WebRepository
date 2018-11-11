@@ -108,7 +108,7 @@ sub getContent
 	$vDefault .= "Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>";
 	$vDefault .= "Revoultions: Post Wars:    Tactical RPG, 4th story arc.</br>";
 	
-	$vResult .= "<p id=\"idCenterContent\">";
+	$vResult .= "<div id=\"idCenterContent\">";
 		if($vPage <= 0)
 		{
 			 $vResult .= $vDefault;         
@@ -141,7 +141,7 @@ sub getContent
 		{
 			$vResult .= $vDefault;
 		}
-	$vResult .= "</p>";
+	$vResult .= "</div>";
 
 	return $vResult;
 }

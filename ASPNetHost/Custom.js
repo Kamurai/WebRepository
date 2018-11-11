@@ -74,7 +74,7 @@ function getContent(vPage)
 	vDefault += "game design.<br>";
 	vDefault += "Increase the Awesome with us!<br>";
 			
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
         if(vPage == 0)
         {
             vResult += vDefault;
@@ -179,7 +179,7 @@ function getContent(vPage)
 		{
 			vResult += vDefault;
 		}
-    vResult += "</p>";
+    vResult += "</div>";
 	
 	return vResult;
 }

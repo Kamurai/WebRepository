@@ -73,13 +73,13 @@ Function getContent(vPage)
 		vDefault = vDefault + "</br>"
 		vDefault = vDefault + "Nine Card: Tactical card game.</br>"
 	
-	vResult = vResult + "<p id=""idCenterContent"">"
+	vResult = vResult + "<div id=""idCenterContent"">"
     	If vPage = 0 Then
 			vResult = vResult + vDefault
 		Else
 			vResult = vResult + vDefault
 		End If
-	vResult = vResult + "</p>"
+	vResult = vResult + "</div>"
 	
 	getContent = vResult
 End Function

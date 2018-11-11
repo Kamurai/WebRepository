@@ -95,7 +95,7 @@ function getContent(vPage)
 	
 	vDefault += "This section is dedicated to database based programming.";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage == 0)
 		{
 			vResult += vDefault;
@@ -103,7 +103,7 @@ function getContent(vPage)
 		else if(vPage == 1)
 		{
 			vResult += "This section is dedicated to Oracle based programming.";
-			vResult += "<table>";
+			vResult += "<div>";
 				vResult += "<tr>";
 					vResult += "<td>";
 						vResult += "Index";
@@ -120,7 +120,7 @@ function getContent(vPage)
 						//OracleMethod("Red",0);
 					vResult += "</td>";
 				vResult += "</tr>";
-			vResult += "</table>";
+			vResult += "</div>";
 			
 		}
 		else if(vPage == 2)
@@ -136,7 +136,7 @@ function getContent(vPage)
 			//SQLServerDataList();
 		
 			vResult += "This section is dedicated to SQL Server based programming.";
-			vResult += "<table>";
+			vResult += "<div>";
 				vResult += "<tr>";
 					vResult += "<td>";
 						vResult += "Index";
@@ -153,7 +153,7 @@ function getContent(vPage)
 						//vResult += "<%#Container.DataItem(\"Color\")%>";
 					vResult += "</td>";
 				vResult += "</tr>";
-			vResult += "</table>";
+			vResult += "</div>";
 			
 		}
 		else if(vPage == 5)
@@ -168,7 +168,7 @@ function getContent(vPage)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
 	return vResult;
 }

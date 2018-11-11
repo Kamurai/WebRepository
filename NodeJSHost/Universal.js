@@ -207,9 +207,11 @@ exports.getFooter = function ()
 {
     var vResult = "";
 	
-	vResult += "Copyright 2012 All rights reserved<br>";    
-    vResult += "House That Kamurai Built<br>";
-    
+	vResult += "<div id=\"idFooterContent\">";
+		vResult += "Copyright 2012 All rights reserved<br>";    
+		vResult += "House That Kamurai Built<br>";
+    vResult += "</div>";
+	
     return vResult;
 }
 
@@ -217,8 +219,10 @@ exports.getWebMaster = function ()
 {
     var vResult = "";
 	
-	vResult += "Website managed by Kamurai.";
-
+	vResult += "<div id=\"idFooterManagement\">";
+        vResult += "Website managed by Kamurai.";
+	vResult += "</div>";
+	
     return vResult;    
 }
 

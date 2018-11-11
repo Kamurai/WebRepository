@@ -95,14 +95,18 @@ end Function
 
 Function getWinRar()
 	dim vResult
-	vResult = vResult + "<a href='http://htkb.dyndns.org/Division3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>"	
+	vResult = vResult + "<div id=""idFooterContent"">"
+		vResult = vResult + "<a href='http://htkb.dyndns.org/Division3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>"	
+	vResult = vResult + "</div>"
 	getWinRar = vResult
 end Function
 
 Function getFooter()
 	dim vResult
-	vResult = vResult + "© Copyright 2012 All rights reserved<br>"    
-	vResult = vResult + "House That Kamurai Built<br>"
+	vResult = vResult + "<div id=""idFooterManagement"">"
+		vResult = vResult + "© Copyright 2012 All rights reserved<br>"    
+		vResult = vResult + "House That Kamurai Built<br>"
+	vResult = vResult + "</div>"
 	getFooter = vResult
 end Function
 

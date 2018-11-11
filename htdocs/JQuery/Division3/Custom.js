@@ -39,7 +39,7 @@ function fillHeader(vPage)
 	var vResult = "";
 	var vDefault = "Downloadable Projects";
 	
-	var tableRowCenterMainHeader = document.createElement("h2");
+	var vCenterRowMainHeader = document.createElement("h2");
 
 	if(vPage == 0)
 	{
@@ -69,8 +69,8 @@ function fillHeader(vPage)
     {
         vResult += vDefault;
     }
-    tableRowCenterMainHeader.textContent = vResult;
-	$( "#idCenterRowMain" ).append( tableRowCenterMainHeader );
+    vCenterRowMainHeader.textContent = vResult;
+	$( "#idCenterRowMain" ).append( vCenterRowMainHeader );
 }
 
 function fillContent(vPage, vLevel)
@@ -78,8 +78,8 @@ function fillContent(vPage, vLevel)
 	var vResult = "";
 	var vDefault = "This section is dedicated to downloadable projects.";
 	
-	var tableRowCenterMainContent = document.createElement("p");
-	tableRowCenterMainContent.setAttribute("id", "idCenterContent");
+	var vCenterContent = document.createElement("div");
+	vCenterContent.setAttribute("id", "idCenterContent");
     	
 	if(vPage == 0)
 	{
@@ -134,7 +134,7 @@ function fillContent(vPage, vLevel)
         vResult += vDefault;
     }
 	
-    $( "#idCenterRowMain" ).append( tableRowCenterMainContent );
+    $( "#idCenterRowMain" ).append( vCenterContent );
 	$( "#idCenterContent" ).append( vResult );
 }
 

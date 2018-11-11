@@ -27,7 +27,7 @@
 		<!--#endif -->
 	</h2>
 <!--#elif expr="$vFunction == getContent" -->
-	<p id="idCenterContent">
+	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
 			The House That Kamurai Built is an 
 			entertainment company with the primary 
@@ -125,7 +125,7 @@
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
+	</div>
 <!--#elif expr="$vFunction == getVersions" -->
 		<!--#if expr="$vPage == 0" -->
 			<a href="http://htkb.dyndns.org/Index.html">HTML</a><br>

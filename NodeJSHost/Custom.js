@@ -74,7 +74,7 @@ exports.getContent = function (vPage)
 	vDefault += "game design.<br>";
 	vDefault += "Increase the Awesome with us!<br>";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
         if(vPage == 0)
         {
             vResult += vDefault;
@@ -176,7 +176,7 @@ exports.getContent = function (vPage)
 		{
 			vResult += vDefault;
 		}
-    vResult += "</p>";
+    vResult += "</div>";
     
     return vResult;
 }

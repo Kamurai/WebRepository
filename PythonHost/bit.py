@@ -6,20 +6,20 @@ urls = (
 	"/Media", "Media",
 	"/Minecraft", "Minecraft",
 	
-	"/Section1/index", "Section1",
-	"/Section2/index", "Section2",
-	"/Section3/index", "Section3",
-	"/Section3/Project1", "Section3_1",
-	"/Section3/Project2", "Section3_2",
-	"/Section3/Project3", "Section3_3"
+	"/Division1/index", "Division1",
+	"/Division2/index", "Division2",
+	"/Division3/index", "Division3",
+	"/Division3/Project1", "Division3_1",
+	"/Division3/Project2", "Division3_2",
+	"/Division3/Project3", "Division3_3"
 )
 
 Main = web.template.render('/')
 Universal = web.template.render('/Universal')
 MainContent = web.template.render('Content/')
-Section1 = web.template.render('Section1/')
-Section2 = web.template.render('Section2/')
-Section3 = web.template.render('Section3/')
+Division1 = web.template.render('Division1/')
+Division2 = web.template.render('Division2/')
+Division3 = web.template.render('Division3/')
 
 class icon:
     def GET(self):
@@ -41,29 +41,29 @@ class Minecraft:
     def GET(self):
         return Main.Layout(3, 0, "Main.css")
 
-class Section1:
+class Division1:
     def GET(self):
-        return Section1.Layout(0, 1, "Section1.css")
+        return Division1.Layout(0, 1, "Division1.css")
 
-class Section2:
+class Division2:
     def GET(self):
-        return Section2.Layout(0, 1, "Section2.css")
+        return Division2.Layout(0, 1, "Division2.css")
 
-class Section3:
+class Division3:
     def GET(self):
-        return Section3.Layout(0, 1, "Section3.css")
+        return Division3.Layout(0, 1, "Division3.css")
 
-class Section3_1
+class Division3_1
     def GET(self):
-        return Section3.Layout(1, 1, "Section3.css")
+        return Division3.Layout(1, 1, "Division3.css")
 
-class Section3_2:
+class Division3_2:
     def GET(self):
-        return Section3.Layout(2, 1, "Section3.css")
+        return Division3.Layout(2, 1, "Division3.css")
 
-class Section3_3:
+class Division3_3:
     def GET(self):
-        return Section3.Layout(3, 1, "Section3.css")
+        return Division3.Layout(3, 1, "Division3.css")
 
 		
 		

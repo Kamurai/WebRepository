@@ -87,7 +87,7 @@ exports.getContent = function (vPage)
 	
 	vDefault += "This section is dedicated to downloadable projects.";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage == 0)
 		{
 			vResult += vDefault;
@@ -140,7 +140,7 @@ exports.getContent = function (vPage)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
     return vResult;
 }

@@ -69,7 +69,7 @@ Function getContent(vPage)
 	vDefault = vDefault + "Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>"
 	vDefault = vDefault + "Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>"
 	
-	vResult = vResult + "<p id=""idCenterContent"">"
+	vResult = vResult + "<div id=""idCenterContent"">"
     	If vPage = 0 Then
 			vResult = vResult + vDefault
 		ElseIf vPage = 1 Then
@@ -87,7 +87,7 @@ Function getContent(vPage)
 		Else
 			vResult = vResult + vDefault
 		End If
-	vResult = vResult + "</p>"
+	vResult = vResult + "</div>"
 	
 	getContent = vResult
 End Function

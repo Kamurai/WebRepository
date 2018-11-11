@@ -87,7 +87,7 @@ function getContent(vPage, vLevel)
 	
 	vDefault += "This section is dedicated to downloadable projects.";
 	
-	vResult += "<p id=\"idCenterContent\">";
+	vResult += "<div id=\"idCenterContent\">";
     	if(vPage == 0)
 		{
 			vResult += vDefault;
@@ -140,7 +140,7 @@ function getContent(vPage, vLevel)
 		{
 			vResult += vDefault;
 		}
-	vResult += "</p>";
+	vResult += "</div>";
 	
 	return vResult;
 }

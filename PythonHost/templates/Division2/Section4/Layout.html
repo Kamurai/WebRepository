@@ -1,43 +1,44 @@
 $def with (vPage, vLevel, vDivision)
 
-<html>
-<head>
-	$:getHead(vDivision)
-</head>
-<body id="idBody">
-    <table id="idTableMain">
-        <tr id="idHeaderRow">
-            <td id="idHeaderRowCenter" colspan="3">
-				$:getLogo()
-            </td>
-        </tr>
-        <tr id="idNavigationRow">
-            <td id="idNavigationBar" colspan="3">
-                $:getNavBar()
-            </td>
-        </tr>				
-		<tr id="idCenterRow">
-            <td id="idCenterRowLeft">
-                $:getNavigationHeader()
-				$:getNavigation(vLevel)
-  			</td>
-            <td id="idCenterRowMain">
-            	$:getTitle(vPage, vLevel)
-				$:getContentHeader(vPage, vLevel)
-			    $:getContent(vPage, vLevel)
-            </td>
-			<td id="idCenterRowRight">
-                $:getInformationHeader()
-				$:getInformation()
-            	$:getVersions(vPage, vLevel)
-            </td>   
-		</tr>
-        <tr id="idFooterRow">
-            <td id="idFooterMain" colspan="3">
-                $:getFooter()
-            	$:getWebMaster()
-            </td>
-        </tr>
-    </table>
-</body>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		$:getHead(vDivision)
+	</head>
+	<body>
+		<div id="idGeneralLayout">
+			<Header id="idHeaderRow">
+				<div id="idHeaderRowCenter">
+					$:getLogo()
+				</div>
+			</Header>
+			<Nav id="idNavigationRow">
+				<div id="idNavigationBar">
+					$:getNavBar()
+				</div>
+			</Nav>				
+			<div id="idCenterRow">
+				<div id="idCenterRowLeft">
+					$:getNavigationHeader()
+					$:getNavigation(vLevel)
+				</div>
+				<div id="idCenterRowMain">
+					$:getTitle(vPage, vLevel)
+					$:getContentHeader(vPage, vLevel)
+					$:getContent(vPage, vLevel)
+				</div>
+				<div id="idCenterRowRight">
+					$:getInformationHeader()
+					$:getInformation()
+					$:getVersions(vPage, vLevel)
+				</div>   
+			</div>
+			<Footer id="idFooterRow">
+				<div id="idFooterMain">
+					$:getFooter()
+					$:getWebMaster()
+				</div>
+			</Footer>
+		</div>
+	</body>
 </html>

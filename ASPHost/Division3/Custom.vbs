@@ -58,7 +58,7 @@ Function getContent(vPage)
 	
 	vDefault = vDefault + "This section is dedicated to downloadable projects."
 	
-	vResult = vResult + "<p id=""idCenterContent"">"
+	vResult = vResult + "<div id=""idCenterContent"">"
     	If vPage = 0 Then
 			vResult = vResult + vDefault
 		ElseIf vPage = 1 Then
@@ -98,7 +98,7 @@ Function getContent(vPage)
 		Else
 			vResult = vResult + vDefault
 		End If
-	vResult = vResult + "</p>"
+	vResult = vResult + "</div>"
 	
 	getContent = vResult
 End Function
