@@ -191,7 +191,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
         $scope.vDefault += "<a href=\'http://htkb.dyndns.org/JQuery/Index.html\'>JQuery</a><br>";
         $scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\'>JSF</a><br>";
 		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\'>JSP</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Index.jsp\'>JSP Spring MVC</a><br>";
+		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Index\'>JSP Spring MVC</a><br>";
 		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Index.aspx\'>ASP.NET Javascript</a><br>";
 		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/ASP/Index.asp\'>ASP VBscript</a><br>";
 		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Index.cshtml\'>ASP.NET Web App</a><br>";
@@ -215,7 +215,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/AboutUs.html\'>JQuery</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/AboutUs.jsp\'>JSP Spring MVC</a><br>";
+			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/AboutUs\'>JSP Spring MVC</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\'>ASP.NET Javascript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/AboutUs.asp\'>ASP VBscript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\'>ASP.NET Web App</a><br>";
@@ -235,7 +235,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/Media.html\'>JQuery</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Media.jsp\'>JSP Spring MVC</a><br>";
+			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Media\'>JSP Spring MVC</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Media.aspx\'>ASP.NET Javascript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/Media.asp\'>ASP VBscript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Media.cshtml\'>ASP.NET Web App</a><br>";
@@ -255,7 +255,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/Minecraft.html\'>JQuery</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Minecraft.jsp\'>JSP Spring MVC</a><br>";
+			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Minecraft\'>JSP Spring MVC</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\'>ASP.NET Javascript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/Minecraft.asp\'>ASP VBscript</a><br>";
 			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\'>ASP.NET Web App</a><br>";

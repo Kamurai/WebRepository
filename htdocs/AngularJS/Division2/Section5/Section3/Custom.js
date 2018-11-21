@@ -90,7 +90,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org/AngularJS/Division2/Section5/Section3/Index.html\">Angular JS</a><br>";
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Section3/Index.xhtml\">JSF</a><br>";
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Section3/Index.jsp\">JSP</a><br>";
-		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Division2/Section5/Section3/Index.jsp\">JSP Spring MVC</a><br>";
+		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Division2/Section5/Section3/Index\">JSP Spring MVC</a><br>";
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section3/Index.aspx\">ASP.NET Javascript</a><br>";
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section3/Index.asp\">ASP VBscript</a><br>";
 		$scope.vDefault += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Division2/Section5/Section3/Index.cshtml\">ASP.NET Web App</a><br>";
@@ -114,7 +114,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org/AngularJS/Division2/Section5/Section3/Project1.html\">Angular JS</a><br>";
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Division2/Section5/Section3/Project1.xhtml\">JSF</a><br>";
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Division2/Section5/Section3/Project1.jsp\">JSP</a><br>";
-			$scope.vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Division2/Section5/Section3/Project1.jsp\">JSP Spring MVC</a><br>";
+			$scope.vResult += "<a href=\"http://htkb.dyndns.org:8080/SpringMVC/Division2/Section5/Section3/Project1\">JSP Spring MVC</a><br>";
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org:81/ASPNET/Division2/Section5/Section3/Project1.aspx\">ASP.NET Javascript</a><br>";
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org:81/ASP/Division2/Section5/Section3/Project1.asp\">ASP VBscript</a><br>";
 			$scope.vResult += "<a href=\"http://htkb.dyndns.org:81/WebApplication/Division2/Section5/Section3/Project1.cshtml\">ASP.NET Web App</a><br>";

@@ -14,12 +14,14 @@ body
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
 	line-height: 25px;
-	background-color: #aaaaaa;
+	
+	color: #aaaaaa;
+    background-color: #aaaaaa;
 }
 
 a {
 	font-family: Verdana, Geneva, sans-serif;
-	color: #0000ff;
+	color: #00ff00;
 }
 
 a:hover {
@@ -30,14 +32,14 @@ a:hover {
 h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 175%;
-	color: #0000ff;
+	color: #00ff00;
     
 }
 
 h2 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 150%;
-	color: #0000ff;
+	color: #00ff00;
     text-align: center;
     text-decoration: underline;
 }
@@ -45,7 +47,7 @@ h2 {
 h3 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 130%;
-	color: #00FF00;
+	color: #00ff00;
 	text-align: center;
 }
 
@@ -58,7 +60,7 @@ h4 {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-    background-color: #00FF00;
+    background-color: #00ff00;
     width: 100%;
 	max-width: 100%;
 }
@@ -66,7 +68,7 @@ h4 {
 h5{
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 80%;
-	color: #00FF00;
+	color: #00ff00;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -74,7 +76,7 @@ h5{
 h6{
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 70%;
-	color: #00FF00;
+	color: #00ff00;
 	text-align: left;
 	padding-left: 20px;
 }
@@ -95,7 +97,7 @@ navlink a
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -103,6 +105,17 @@ navlink a
 navlink a:hover
 {
     color: #00aa00;
+}
+
+object
+{
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
+	
+	border: 0px solid #FE0101;
+    vertical-align: top;
 }
 
 /* Classes */
@@ -122,7 +135,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -148,7 +161,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -175,7 +188,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -202,7 +215,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -229,7 +242,7 @@ navlink a:hover
     padding: 0px;
 	text-decoration: underline;
 	display: block;
-	color: #00FF00;
+	color: #00ff00;
 	border: transparent;
 	margin: 0px;
 }
@@ -238,34 +251,32 @@ navlink a:hover
 {
     color: #00aa00;
 }
-
+/*
 .classObject
 {
 	width: 100%;
 	height: 100%;
 	overflow: visible;
 	border: 0px solid #FE0101;
-	
+}
+*/
+
+.classSectionHeader
+{
+	height: 15%;
+	max-height: 15%;
+}
+
+.classSectionContent
+{
+	height: 85%;
+	max-height: 85%;
 }
 
 /* IDs */
-#idInnerBody
-{
-    width: 100%;
-	max-width: 100%;
-    height: 100%;
-    font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	line-height: 25px;
-	background-color: #000000;
-	padding: 0;
-	margin: 0;
-	color: #aaaaaa;
-}
-
 #idGeneralLayout
 {
-	width: 100%;
+    width: 100%;
 	max-width: 100%;
 	height: 100%;
 	max-height: 100%;
@@ -273,8 +284,18 @@ navlink a:hover
 	background-color: #000000;
     border: 0px solid #FE0101;
     vertical-align: top;
+}
+
+#idInnerLayout
+{
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
 	
-		
+	background-color: #000000;
+    border: 0px solid #FE0101;
+    vertical-align: top;
 }
 
 #idTableMain /*decomission*/
@@ -283,7 +304,7 @@ navlink a:hover
 	max-width: 100%;
 	height: 100%;
 	max-height: 100%;
-    background-color: #000000;
+	background-color: #000000;
     border: 0px solid #FE0101;
     vertical-align: top;
 	
@@ -293,56 +314,51 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	color: #000000;
-    border: 0px solid #FE0101;
+	height: 44%;
+	max-height: 44%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
+/*
+#idHeaderObject
+{
+    width: 100%;
+	max-width: 100%;
+	height: 100%;
+	border: 0px solid #FE0101;
+    vertical-align: top;
+}
+*/
+
 #idLogo
 {
-	width: 100%;
+    width: 100%;
 	max-width: 100%;
 	height: 50%;
+	max-height: 50%;
 	
 	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idHeaderObject
-{
-    height: 50%;
-    width: 100%;
-	max-width: 100%;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idInnerLogo
-{
-    height: 100%;
-	width: 100%;
-	max-width: 100%;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idNavigationBar
+#idNavigationBar /*Decommisioned*/
 {
 	width: 100%;
 	max-width: 100%;
-	height: 10%;
-	max-height: 10%;
+	height: 3%;
+	max-height: 3%;
 	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idInnerNavigationBar
+#idNavigationRow
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
-	max-height: 100%;
-    border: 0px solid #FE0101;
+	height: 3%;
+	max-height: 3%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -350,8 +366,9 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
-    border: 0px solid #FE0101;
+	height: 40%;
+	max-height: 40%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -369,36 +386,11 @@ navlink a:hover
 	display: inline-block;
 }
 
-#idOuterNavigationHeader
-{
-	width: 100%;
-	max-width: 100%;
-	height: 50%;
-	max-height: 50%;
-	
-	margin: 0px;
-	padding: 0px;
-    
-	border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-
 #idNavigationHeader
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
-	padding: 0px;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idInnerNavigationHeader
-{
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
+	height: 10%;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -408,19 +400,9 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
+	height: 90%;
 	max-height: 100%;
 	
-	padding: 0px;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idInnerNavigation
-{
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -436,73 +418,45 @@ navlink a:hover
 	padding: 0px;
     
 	border: 0px solid #FE0101;
-	vertical-align:text-top;
+    vertical-align:text-top;
 	/*vertical-align: top;*/
 	
 	overflow: visible;
 	display: inline-block;
 }
 
-#idCenterContent /*Decommission*/
-{
-    width: 100%;
-	max-width: 100%;
-	height: 100%;
-	color: #aaaaaa;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idContent
+#idCenterContent
 {
     width: 100%;
 	max-width: 100%;
 	height: 100%;
 	max-height: 100%;
 	
-	color: #aaaaaa;
-    border: 0px solid #FE0101;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idInnerContent
+#idContent /*Decommission*/
 {
-	width: 100%;
+    width: 100%;
 	max-width: 100%;
 	height: 100%;
 	max-height: 100%;
 	
-    color: #aaaaaa;
-    border: 0px solid #FE0101;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
 #idCenterRowRight
 {
-    width: 15%;
-    max-width: 15%;
+	width: 15%;
+	max-width: 15%;
 	height: 100%;
-	color: #aaaaaa;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
 	
 	display: inline-block;
-}
-
-#idOuterInformationHeader
-{
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	
-	margin: 0px;
-	padding: 0px;
-    
-	color: #aaaaaa;
-	border: 0px solid #FE0101;
-    vertical-align: top;
-
 }
 
 #idVersions
@@ -510,18 +464,6 @@ navlink a:hover
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
-	color: #aaaaaa;
-	padding: 0px;
-    border: 0px solid #FE0101;
-    vertical-align: top;
-}
-
-#idInnerVersions
-{
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
-	color: #aaaaaa;
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
@@ -531,37 +473,56 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
-	color: #aaaaaa;
-    border: 0px solid #FE0101;
+	height: 10%;
+	max-height: 10%;
+	
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
-#idFooter
+#idFooter /*Decommission*/
 {
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
-	text-align: center;
+	max-height: 100%;
+		
+	border: 0px solid #FE0101;
+    vertical-align: top;
+    text-align: center;
 }
 
-#idInnerFooter
+#idFooterMain
 {
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
-	text-align: center;
+	max-height: 100%;
+		
+	border: 0px solid #FE0101;
+    vertical-align: top;
+    text-align: center;
 }
 
 #idFooterContent
 {
-    border: 0px solid #FE0101;
+	width: 100%;
+	max-width: 100%;
+	height: 90%;
+	max-height: 90%;
+		
+	border: 0px solid #FE0101;
     vertical-align: top;
     text-align: center;
 }
 
 #idFooterManagement
 {
+	width: 100%;
+	max-width: 100%;
+	height: 10%;
+	max-height: 10%;
+		
     border: 0px solid #FE0101;
     vertical-align: top;
     text-align: left;
