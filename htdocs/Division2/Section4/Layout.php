@@ -10,7 +10,7 @@
 			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section4/Project1.php\'>Warring Nations</a></br></br>';
 			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section4/Project2.php\'>Psychodom: The One Empire</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section5/Index.php\'>Antarrea</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project6.php\'>divuth</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project6.php\'>Truth</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project7.php\'>Kingdoms</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project8.php\'>Terminal World</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project9.php\'>Monster Office Workplace</a></br></br>';
