@@ -259,7 +259,7 @@
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'Battle Princesses Ruleset v0.1<br/>';
-			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Battle_Princesses_Game_Ruleset.pdf'>Download here.</a>';
+			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Battle_Princesses_Game_Ruleset.pdf\'>Download here.</a>';
         }
         else if($vPage==11)
         {
