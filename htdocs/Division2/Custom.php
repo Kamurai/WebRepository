@@ -225,7 +225,7 @@
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=656617895\'>Steam Workshop</a>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
-			$vResult = $vResult.'Consipatorium Ruleset v0.1<br/>';
+			$vResult = $vResult.'Conspiratorium Ruleset v0.1<br/>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Conspiratorium_Game_Ruleset.pdf\'>Download here.</a>';
         }
         else if($vPage==14)
