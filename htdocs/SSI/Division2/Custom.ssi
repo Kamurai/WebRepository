@@ -24,6 +24,12 @@
 			Conspiratorium
 		<!--#elif expr="$vPage == 14" -->
 			Conversion
+		<!--#elif expr="$vPage == 15" -->
+			Conquer
+		<!--#elif expr="$vPage == 16" -->
+			Armor Up!
+		<!--#elif expr="$vPage == 17" -->
+			Goblins and Guardians
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
@@ -54,6 +60,12 @@
 			Conspiratorium
 		<!--#elif expr="$vPage == 14" -->
 			Conversion
+		<!--#elif expr="$vPage == 15" -->
+			Conquer
+		<!--#elif expr="$vPage == 16" -->
+			Armor Up!
+		<!--#elif expr="$vPage == 17" -->
+			Goblins and Guardians
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
@@ -92,6 +104,15 @@
 		<!--#elif expr="$vPage == 14" -->
 			This section is dedicated to the board game project "Conversion".
 			Compete on the elemental market by processing elements and becoming the elemental kingpin.
+		<!--#elif expr="$vPage == 15" -->
+			This section is dedicated to the board game project "Conquer".
+			Battle other Kaiju for the right to rule over the ruins of a kingdom.
+		<!--#elif expr="$vPage == 16" -->
+			This section is dedicated to the board game project "Armor Up!".
+			Armor up your princess to battle the other princesses for the throne.
+		<!--#elif expr="$vPage == 17" -->
+			This section is dedicated to the board game project "Goblins and Guardians".
+			Goblins and Guardians battle it out in a labrynth of a building.
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
@@ -331,6 +352,42 @@
 		<a href="http://htkb.dyndns.org:82/Division2/Project15">Python Web.py</a><br>
 		<a href="http://htkb.dyndns.org:83/Division2/Project15">Ruby On Rails</a><br>  
 		<a href="http://htkb.dyndns.org:84/Division2/Project15">Node JS</a><br>
+    <!--#if expr="$vPage == 16" -->
+		<a href="http://htkb.dyndns.org/Division2/Project16.html">HTML</a><br>
+		<a href="http://htkb.dyndns.org/Division2/Project16.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Division2/Project16.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Division2/Project16.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org/JQuery/Division2/Project16.html">JQuery</a><br>
+		<a href="http://htkb.dyndns.org/AngularJS/Division2/Project16.html">Angular JS</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Division2/Project16.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Division2/Project16.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/SpringMVC/Division2/Project16">JSP Spring MVC</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Division2/Project16.asp">ASP VBscript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Division2/Project16.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Division2/Project16.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Division2/Project16.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Division2/Project16">ASP.NET MVC App</a><br>
+		<a href="http://htkb.dyndns.org:82/Division2/Project16">Python Web.py</a><br>
+		<a href="http://htkb.dyndns.org:83/Division2/Project16">Ruby On Rails</a><br>  
+		<a href="http://htkb.dyndns.org:84/Division2/Project16">Node JS</a><br>
+    <!--#if expr="$vPage == 17" -->
+		<a href="http://htkb.dyndns.org/Division2/Project17.html">HTML</a><br>
+		<a href="http://htkb.dyndns.org/Division2/Project17.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Division2/Project17.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Division2/Project17.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org/JQuery/Division2/Project17.html">JQuery</a><br>
+		<a href="http://htkb.dyndns.org/AngularJS/Division2/Project17.html">Angular JS</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Division2/Project17.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Division2/Project17.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/SpringMVC/Division2/Project17">JSP Spring MVC</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Division2/Project17.asp">ASP VBscript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Division2/Project17.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Division2/Project17.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Division2/Project17.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Division2/Project17">ASP.NET MVC App</a><br>
+		<a href="http://htkb.dyndns.org:82/Division2/Project17">Python Web.py</a><br>
+		<a href="http://htkb.dyndns.org:83/Division2/Project17">Ruby On Rails</a><br>  
+		<a href="http://htkb.dyndns.org:84/Division2/Project17">Node JS</a><br>
     <!--#else -->
 		NOPE!
 	<!--#endif -->
