@@ -32,6 +32,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_1':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section1/Project1\'>Gynowars RPG</a></br></br>'
@@ -50,6 +53,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_4':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -67,6 +73,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_5':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -86,6 +95,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_5_1':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -111,6 +123,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_5_2':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -132,6 +147,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_5_3':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -152,6 +170,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '2_5_4':
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
@@ -172,6 +193,9 @@ def getNavigation(vKey):
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
+		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
 	elif vKey == '3':
 		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project1\'>Online Experience Downloads</a></br></br>'
 		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project2\'>Game Maker Downloads</a></br></br>'

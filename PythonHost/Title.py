@@ -51,6 +51,12 @@ def getTitle(vPage, vLevel):
 		vResult += 'Conspiratorium'
 	elif vKey == '2_14':
 		vResult += 'Conversion'
+	elif vKey == '2_15':
+		vResult += 'Conquer'
+	elif vKey == '2_16':
+		vResult += 'Armor Up!'
+	elif vKey == '2_17':
+		vResult += 'Goblins and Guardians'
 	elif vKey == '2_1_0':
 		vResult += 'Gynowars'
 	elif vKey == '2_1_1':

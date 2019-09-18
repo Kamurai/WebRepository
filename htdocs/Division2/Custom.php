@@ -190,7 +190,7 @@
 			$vResult = $vResult.'Conquer Ruleset v0.1<br/>';
 		}else if($vPage==16){
             $vResult = $vResult.'This section is dedicated to the board game project \'Armor Up!\'.<br/>';
-			$vResult = $vResult.'Armor Up your princess to battle the other princesses for the throne.';
+			$vResult = $vResult.'Armor up your princess to battle the other princesses for the throne.';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
@@ -238,8 +238,7 @@
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:83/Division2/Index\'>Ruby on Rails</a><br>';
 		$vDefault = $vDefault.'<a href=\'http://htkb.dyndns.org:84/Division2/Index\'>Node JS</a><br>';
         
-        if($vPage==0)
-        {
+        if($vPage==0){
             $vResult = $vResult.$vDefault;
         }else if($vPage==2){
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Division2/Project2.html\'>HTML</a><br>';

@@ -29,6 +29,12 @@ Function getTitle(vPage)
 			vResult = vResult + "Conspiratorium"
 		ElseIf vPage = 14 Then
 			vResult = vResult + "Conversion"
+		ElseIf vPage = 15 Then
+			vResult = vResult + "Conquer"
+		ElseIf vPage = 16 Then
+			vResult = vResult + "Armor Up!"
+		ElseIf vPage = 17 Then
+			vResult = vResult + "Goblins and Guardians"
 		Else
 			vResult = vResult + vDefault
 		End If
@@ -68,6 +74,12 @@ Function getContentHeader(vPage)
 			vResult = vResult + "Conspiratorium"
 		ElseIf vPage = 14 Then
 			vResult = vResult + "Conversion"
+		ElseIf vPage = 15 Then
+			vResult = vResult + "Conquer"
+		ElseIf vPage = 16 Then
+			vResult = vResult + "Armor Up!"
+		ElseIf vPage = 17 Then
+			vResult = vResult + "Goblins and Guardians"
 		Else
 			vResult = vResult + vDefault
 		End If
@@ -115,6 +127,15 @@ Function getContent(vPage)
 		ElseIf vPage = 14 Then
 			vResult = vResult + "This section is dedicated to the board game project ""Conversion""."
 			vResult = vResult + "Compete on the elemental market by processing elements and becoming the elemental kingpin."
+		ElseIf vPage = 15 Then
+			vResult = vResult + "This section is dedicated to the board game project ""Conquer""."
+			vResult = vResult + "Battle other Kaiju for the right to rule over the ruins of a kingdom."
+		ElseIf vPage = 16 Then
+			vResult = vResult + "This section is dedicated to the board game project ""Armor Up!""."
+			vResult = vResult + "Armor up your princess to battle the other princesses for the throne."
+		ElseIf vPage = 17 Then
+			vResult = vResult + "This section is dedicated to the board game project ""Goblins and Guardians""."
+			vResult = vResult + "Goblins and guardians battle it out in a labrynth of a building."
 		Else
 			vResult = vResult + vDefault
 		End If
@@ -345,6 +366,60 @@ Function getVersions(vPage)
 	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Division2/Project14"">Python Web.py</a><br>"
         vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Division2/Project14"">Ruby On Rails</a><br>"
 		vResult = vResult + "<a href=""http://htkb.dyndns.org:84/Division2/Project14"">Node JS</a><br>"
+	ElseIf vPage = 15 Then
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project15.html"">HTML</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project15.php"">PHP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project15.shtml"">Perl</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/SSI/Division2/Project15.html"">Apache SSI</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Javascript/Division2/Project15.html"">HTML Javascript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/JQuery/Division2/Project15.html"">JQuery</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/AngularJS/Division2/Project15.html"">Angular JS</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSFApplication/Division2/Project15.xhtml"">JSF</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project15.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project15.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/ASPNET/Division2/Project15.aspx"">ASP.NET JavaScript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebApplication/Division2/Project15.cshtml"">ASP.NET Web App</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebForm/Division2/Project15.aspx"">ASP.NET Webform</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/MVC/Division2/Project15"">ASP.NET MVC App</a><br>"
+	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Division2/Project15"">Python Web.py</a><br>"
+        vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Division2/Project15"">Ruby On Rails</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:84/Division2/Project15"">Node JS</a><br>"
+	ElseIf vPage = 16 Then
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project16.html"">HTML</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project16.php"">PHP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project16.shtml"">Perl</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/SSI/Division2/Project16.html"">Apache SSI</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Javascript/Division2/Project16.html"">HTML Javascript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/JQuery/Division2/Project16.html"">JQuery</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/AngularJS/Division2/Project16.html"">Angular JS</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSFApplication/Division2/Project16.xhtml"">JSF</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project16.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project16.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/ASPNET/Division2/Project16.aspx"">ASP.NET JavaScript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebApplication/Division2/Project16.cshtml"">ASP.NET Web App</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebForm/Division2/Project16.aspx"">ASP.NET Webform</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/MVC/Division2/Project16"">ASP.NET MVC App</a><br>"
+	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Division2/Project16"">Python Web.py</a><br>"
+        vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Division2/Project16"">Ruby On Rails</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:84/Division2/Project16"">Node JS</a><br>"
+	ElseIf vPage = 17 Then
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project17.html"">HTML</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project17.php"">PHP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Division2/Project17.shtml"">Perl</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/SSI/Division2/Project17.html"">Apache SSI</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/Javascript/Division2/Project17.html"">HTML Javascript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/JQuery/Division2/Project17.html"">JQuery</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org/AngularJS/Division2/Project17.html"">Angular JS</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSFApplication/Division2/Project17.xhtml"">JSF</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project17.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:8080/JSPApplication/Division2/Project17.jsp"">JSP</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/ASPNET/Division2/Project17.aspx"">ASP.NET JavaScript</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebApplication/Division2/Project17.cshtml"">ASP.NET Web App</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/WebForm/Division2/Project17.aspx"">ASP.NET Webform</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:81/MVC/Division2/Project17"">ASP.NET MVC App</a><br>"
+	    vResult = vResult + "<a href=""http://htkb.dyndns.org:82/Division2/Project17"">Python Web.py</a><br>"
+        vResult = vResult + "<a href=""http://htkb.dyndns.org:83/Division2/Project17"">Ruby On Rails</a><br>"
+		vResult = vResult + "<a href=""http://htkb.dyndns.org:84/Division2/Project17"">Node JS</a><br>"
 	Else
 		vResult = vResult + vDefault
 	End If
