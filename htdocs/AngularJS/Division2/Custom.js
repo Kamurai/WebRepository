@@ -136,7 +136,7 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce){
 				$scope.vResult += "Armor up your princess to battle the other princesses for the throne.";
 			}else if(vPage == 17){
 				$scope.vResult += "This section is dedicated to the board game project \"Goblins and Guardians\".";
-				$scope.vResult += "Goblins and Guardians battle it out in a labrynth of a building.";
+				$scope.vResult += "Goblins and guardians battle it out in a labrynth of a building.";
 			}else{
 				$scope.vResult += $scope.vDefault;
 			}
