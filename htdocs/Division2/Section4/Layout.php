@@ -19,6 +19,9 @@
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project12.php\'>The Way</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project13.php\'>Conspiratorium</a></br></br>';
 		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project14.php\'>Conversion</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project15.php\'>Conquer</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project16.php\'>Armor Up!</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project17.php\'>Goblins and Guardians</a></br></br>';
         
 		return $vResult;
     }

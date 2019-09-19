@@ -83,7 +83,7 @@
 				$vResult = $vResult.'Armor Up!';
 			}else if($vPage==17){
 				$vResult = $vResult.'Goblins and GoPros';
-			}}else{
+			}else{
 				$vResult = $vResult.$vDefault;
 			}
         $vResult = $vResult.'</h2>';

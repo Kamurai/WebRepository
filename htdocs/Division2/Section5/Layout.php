@@ -3,24 +3,27 @@
     {
         $vResult = '';
 		
-		    $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section1/Index.php\'>Gynowars</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project2.php\'>Assault</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project3.php\'>Mars</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section4/Index.php\'>Renley</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section5/Index.php\'>Antarrea</a></br></br>';
-                $vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section1/Index.php\'>Global</a></br></br>';
-                $vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section2/Index.php\'>Grendol</a></br></br>';
-                $vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section3/Index.php\'>Utopia</a></br></br>';
-                $vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section4/Index.php\'>Elvia</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project6.php\'>Truth</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project7.php\'>Kingdoms</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project8.php\'>Terminal World</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project9.php\'>Monster Office Workplace</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project10.php\'>Battle Princesses</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project11.php\'>Sacred Offerings</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project12.php\'>The Way</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project13.php\'>Conspiratorium</a></br></br>';
-            $vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project14.php\'>Conversion</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section1/Index.php\'>Gynowars</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project2.php\'>Assault</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project3.php\'>Mars</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section4/Index.php\'>Renley</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section5/Index.php\'>Antarrea</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section1/Index.php\'>Global</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section2/Index.php\'>Grendol</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section3/Index.php\'>Utopia</a></br></br>';
+			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section5/Section4/Index.php\'>Elvia</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project6.php\'>Truth</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project7.php\'>Kingdoms</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project8.php\'>Terminal World</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project9.php\'>Monster Office Workplace</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project10.php\'>Battle Princesses</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project11.php\'>Sacred Offerings</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project12.php\'>The Way</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project13.php\'>Conspiratorium</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project14.php\'>Conversion</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project15.php\'>Conquer</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project16.php\'>Armor Up!</a></br></br>';
+		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project17.php\'>Goblins and Guardians</a></br></br>';
 
 			return $vResult;
     }
