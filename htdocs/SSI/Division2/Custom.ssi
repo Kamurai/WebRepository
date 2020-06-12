@@ -73,46 +73,52 @@
 <!--#elif expr="$vFunction == getContent" -->
 	<div id="idCenterContent">
 		<!--#if expr="$vPage == 0" -->
-			This section is dedicated to HTKB projects.
+			This section is dedicated to HTKB projects.<br>
 		<!--#elif expr="$vPage == 2" -->
-			This section is dedicated CCG project "Assault".
+			This section is dedicated CCG project "Assault".<br>
 		<!--#elif expr="$vPage == 3" -->
-			This section is dedicated to the Mars centered project "Opposition".
+			This section is dedicated to the Mars centered project "Opposition".<br>
 		<!--#elif expr="$vPage == 6" -->
-			This section is dedicated to the MMO RTS project "Truth".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
+			This section is dedicated to the MMO RTS project "Truth".<br>
+			Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>
 		<!--#elif expr="$vPage == 7" -->
-			This section is dedicated to the digital board game project "Kingdoms".  Explore the world's Kingdoms, get rich, get strong and conquer.
+			This section is dedicated to the digital board game project "Kingdoms".<br>
+			Explore the world's Kingdoms, get rich, get strong and conquer.<br>
 		<!--#elif expr="$vPage == 8" -->
-			This section is dedicated to the simulation MMO centered project "Terminal World".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat
-			the zombies?  Can you survive?
+			This section is dedicated to the simulation MMO centered project "Terminal World".<br>
+			This is a virtual environment where a zombie outbreak is about to happen.<br>
+			Can you beat the zombies?  Can you survive?
 		<!--#elif expr="$vPage == 9" -->
-			This section is dedicated to the card and board game project "Monster Office Workplace".  These monsters mean serious business.
-			Can you earn the most credit and smooze your way into a promotion?
+			This section is dedicated to the card and board game project "Monster Office Workplace".<br>
+			These monsters mean serious business.<br>
+			Can you earn the most credit and smooze your way into a promotion?<br>
 		<!--#elif expr="$vPage == 10" -->
-			This section is dedicated to the card game project "Battle Princesses".  Ever wanted to see your favorite princess battle for the kingdom?
-			These princess aren't your helpless maidens, but valiant warriors themselves.
+			This section is dedicated to the card game project "Battle Princesses".<br>
+			Ever wanted to see your favorite princess battle for the kingdom?<br>
+			These princess aren't your helpless maidens, but valiant warriors themselves.<br>
 		<!--#elif expr="$vPage == 11" -->
-			This section is dedicated to the board game project "Sacred Offerings".
-			Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.
-			Draw people to worship you, but be discerning about who is sacrificed.
+			This section is dedicated to the board game project "Sacred Offerings".<br>
+			Being a god is hard, you have to eat, but don't want to fall out favor with the people more than the other deities.<br>
+			Draw people to worship you, but be discerning about who is sacrificed.<br>
 		<!--#elif expr="$vPage == 12" -->
-			This section is dedicated to the card game project "The Way".  You seek to find enlightment by contemplating the elements.
-			Escape the binds of the world and the board to reach enlightment and win.
+			This section is dedicated to the card game project "The Way".<br>
+			You seek to find enlightment by contemplating the elements.<br>
+			Escape the binds of the world and the board to reach enlightment and win.<br>
 		<!--#elif expr="$vPage == 13" -->
-			This section is dedicated to the board game project "Conspiratorium".
-			A game of assassins and CIA, you must remember who is friend and who is not.
+			This section is dedicated to the board game project "Conspiratorium".<br>
+			A game of assassins and CIA, you must remember who is friend and who is not.<br>
 		<!--#elif expr="$vPage == 14" -->
-			This section is dedicated to the board game project "Conversion".
-			Compete on the elemental market by processing elements and becoming the elemental kingpin.
+			This section is dedicated to the board game project "Conversion".<br>
+			Compete on the elemental market by processing elements and becoming the elemental kingpin.<br>
 		<!--#elif expr="$vPage == 15" -->
-			This section is dedicated to the board game project "Conquer".
-			Battle other Kaiju for the right to rule over the ruins of a kingdom.
+			This section is dedicated to the board game project "Conquer".<br>
+			Battle other Kaiju for the right to rule over the ruins of a kingdom.<br>
 		<!--#elif expr="$vPage == 16" -->
-			This section is dedicated to the board game project "Armor Up!".
-			Armor up your princess to battle the other princesses for the throne.
+			This section is dedicated to the board game project "Armor Up!".<br>
+			Armor up your princess to battle the other princesses for the throne.<br>
 		<!--#elif expr="$vPage == 17" -->
-			This section is dedicated to the board game project "Goblins and Guardians".
-			Goblins and Guardians battle it out in a labrynth of a building.
+			This section is dedicated to the board game project "Goblins and Guardians".<br>
+			Goblins and Guardians battle it out in a labrynth of a building.<br>
 		<!--#else -->
 			NOPE!
 		<!--#endif -->

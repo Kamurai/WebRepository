@@ -94,44 +94,50 @@ function fillContent(vPage)
 	if(vPage == 0){
 		vResult += vDefault;
 	}else if(vPage == 2){
-		vResult += "This section is dedicated CCG project \"Assault\".";
+		vResult += "This section is dedicated CCG project \"Assault\".<br>";
 	}else if(vPage == 3){
-		vResult += "This section is dedicated to the Mars centered project \"Opposition\".";
+		vResult += "This section is dedicated to the Mars centered project \"Opposition\".<br>";
 	}else if(vPage == 6){
-		vResult += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
+		vResult += "This section is dedicated to the MMO RTS project \"Truth\".<br>";
+		vResult += "Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>";
 	}else if(vPage == 7){
-		vResult += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.";
+		vResult += "This section is dedicated to the digital board game project \"Kingdoms\".<br>";
+		vResult += "Explore the world\"s Kingdoms, get rich, get strong and conquer.<br>";
 	}else if(vPage == 8){
-		vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
-		vResult += "the zombies?  Can you survive?";
+		vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".<br>";
+		vResult += "This is a virtual environment where a zombie outbreak is about to happen.<br>";
+		vResult += "Can you beat the zombies?  Can you survive?";
 	}else if(vPage == 9){
-		vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
-		vResult += "Can you earn the most credit and smooze your way into a promotion?";
+		vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".<br>";
+		vResult += "These monsters mean serious business.<br>";
+		vResult += "Can you earn the most credit and smooze your way into a promotion?<br>";
 	}else if(vPage == 10){
-		vResult += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
-		vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.";
+		vResult += "This section is dedicated to the card game project \"Battle Princesses\".<br>";
+		vResult += "Ever wanted to see your favorite princess battle for the kingdom?<br>";
+		vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.<br>";
 	}else if(vPage == 11){
-		vResult += "This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but";
-		vResult += "don\"t want to fall out favor with the people more than the other deities.";
-		vResult += "Draw people to worship you, but be discerning about who is sacrificed.";
+		vResult += "This section is dedicated to the board game project \"Sacred Offerings\".<br>";		
+		vResult += "Being a god is hard, you have to eat, but don\'t want to fall out favor with the people more than the other deities.<br>";
+		vResult += "Draw people to worship you, but be discerning about who is sacrificed.<br>";
 	}else if(vPage == 12){
-		vResult += "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
-		vResult += "Escape the binds of the world and the board to reach enlightment and win.";
+		vResult += "This section is dedicated to the card game project \"The Way\".<br>";
+		vResult += "You seek to find enlightment by contemplating the elements.<br>";
+		vResult += "Escape the binds of the world and the board to reach enlightment and win.<br>";
 	}else if(vPage == 13){
-		vResult += "This section is dedicated to the board game project \"Conspiratorium\".";
-		vResult += "A game of assassins and CIA, you must remember who is friend and who is not.";
+		vResult += "This section is dedicated to the board game project \"Conspiratorium\".<br>";
+		vResult += "A game of assassins and CIA, you must remember who is friend and who is not.<br>";
 	}else if(vPage == 14){
-		vResult += "This section is dedicated to the board game project \"Conversion\".";
-		vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";
+		vResult += "This section is dedicated to the board game project \"Conversion\".<br>";
+		vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.<br>";
 	}else if(vPage == 15){
-		vResult += "This section is dedicated to the board game project \"Conquer\".";
-		vResult += "Battle other Kaiju for the right to rule over the ruins of a kingdom.";
+		vResult += "This section is dedicated to the board game project \"Conquer\".<br>";
+		vResult += "Battle other Kaiju for the right to rule over the ruins of a kingdom.<br>";
 	}else if(vPage == 16){
-		vResult += "This section is dedicated to the board game project \"Armor Up!\".";
-		vResult += "Armor up your princess to battle the other princesses for the throne.";
+		vResult += "This section is dedicated to the board game project \"Armor Up!\".<br>";
+		vResult += "Armor up your princess to battle the other princesses for the throne.<br>";
 	}else if(vPage == 17){
-		vResult += "This section is dedicated to the board game project \"Goblins and Guardians\".";
-		vResult += "Goblins and Guardians battle it out in a labrynth of a building.";
+		vResult += "This section is dedicated to the board game project \"Goblins and Guardians\".<br>";
+		vResult += "Goblins and Guardians battle it out in a labrynth of a building.<br>";
 	}else{
 		vResult += vDefault;
 	}

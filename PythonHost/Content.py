@@ -4,12 +4,12 @@ def getContent(vPage, vLevel):
 	vResult = ''
 	vDefault = ''
 	
-	vDefault += 'The House That Kamurai Built is an '
-	vDefault += 'entertainment company with the primary '
-	vDefault += 'focus of increasing awesome by stimulating '
-	vDefault += 'intelligent conversation and entertainment '
-	vDefault += 'via discussion and game design. <br>'
-	vDefault += 'Increase the Awesome with us!<br>'
+	vDefault += 'The House That Kamurai Built is an <br/>'
+	vDefault += 'entertainment company with the primary <br/>'
+	vDefault += 'focus of increasing awesome by stimulating <br/>'
+	vDefault += 'intelligent conversation and entertainment <br/>'
+	vDefault += 'via discussion and game design. <br/>'
+	vDefault += 'Increase the Awesome with us!<br/>'
 
 	vResult += '<div id=\'idCenterContent\'>'
 	if vKey == '0_0':
@@ -114,49 +114,53 @@ def getContent(vPage, vLevel):
 	elif vKey == '1_1_5':
 		vResult += 'This section is dedicated to Postgres programming.'
 	elif vKey == '2_0':
-		vResult += 'This section is dedicated to HTKB projects.'
+		vResult += 'This section is dedicated to HTKB projects.<br/>'
 	elif vKey == '2_2':
-		vResult += 'This section is dedicated CCG project \'Assault\'.'
+		vResult += 'This section is dedicated CCG project \'Assault\'.<br/>'
 	elif vKey == '2_3':
-		vResult += 'This section is dedicated to the Mars centered project \'Opposition\'.'
+		vResult += 'This section is dedicated to the Mars centered project \'Opposition\'.<br/>'
 	elif vKey == '2_6':
 		vResult += 'This section is dedicated to the MMO RTS project \'Truth\'.<br/>'
-		vResult += 'Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.'
+		vResult += 'Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br/>'
 	elif vKey == '2_7':
 		vResult += 'This section is dedicated to the digital board game project \'Kingdoms\'.<br/>'
-		vResult += 'Explore the world\'s Kingdoms, get rich, get strong and conquer.'
+		vResult += 'Explore the world\'s Kingdoms, get rich, get strong and conquer.<br/>'
 	elif vKey == '2_8':
 		vResult += 'This section is dedicated to the simulation MMO centered project \'Terminal World\'.<br/>'
-		vResult += 'This is a virtual environment where a zombie outbreak is about to happen.  Can you beat the zombies?  Can you survive?'
+		vResult += 'This is a virtual environment where a zombie outbreak is about to happen.<br/>'
+		vResult += 'Can you beat the zombies?  Can you survive?<br/>'
 	elif vKey == '2_9':
 		vResult += 'This section is dedicated to the card and board game project \'Monster Office Workplace\'.<br/>'
-		vResult += 'These monsters mean serious business.  Can you earn the most credit and smooze your way into a promotion?'
+		vResult += 'These monsters mean serious business.  Can you earn the most credit and smooze your way into a promotion?<br/>'
 	elif vKey == '2_10':
 		vResult += 'This section is dedicated to the card game project \'Battle Princesses\'.<br/>'
-		vResult += 'Ever wanted to see your favorite princess battle for the kingdom?  These princess aren\'t your helpless maidens, but valiant warriors themselves.'
+		vResult += 'Ever wanted to see your favorite princess battle for the kingdom?<br/>'
+		vResult += 'These princess aren\'t your helpless maidens, but valiant warriors themselves.<br/>'
 	elif vKey == '2_11':
 		vResult += 'This section is dedicated to the board game project \'Sacred Offerings\'.<br/>'
-		vResult += 'Being a god is hard, you have to eat, but don\'t want to fall out favor with the people more than the other deities.  Draw people to worship you, but be discerning about who is sacrificed.'
+		vResult += 'Being a god is hard, you have to eat, but don\'t want to fall out favor with the people more than the other deities.<br/>'
+		vResult += 'Draw people to worship you, but be discerning about who is sacrificed.<br/>'
 	elif vKey == '2_12':
 		vResult += 'This section is dedicated to the card game project \'The Way\'.<br/>'
-		vResult += 'You seek to find enlightment by contemplating the elements.  Escape the binds of the world and the board to reach enlightment and win.'
+		vResult += 'You seek to find enlightment by contemplating the elements.<br/>'
+		vResult += 'Escape the binds of the world and the board to reach enlightment and win.<br/>'
 	elif vKey == '2_13':
 		vResult += 'This section is dedicated to the board game project \'Conspiratorium\'.<br/>'
-		vResult += 'A game of assassins and CIA, you must remember who is friend and who is not.'
+		vResult += 'A game of assassins and CIA, you must remember who is friend and who is not.<br/>'
 	elif vKey == '2_14':
 		vResult += 'This section is dedicated to the board game project \'Conversion\'.<br/>'
-		vResult += 'Compete on the elemental market by processing elements and becoming the elemental kingpin.'
+		vResult += 'Compete on the elemental market by processing elements and becoming the elemental kingpin.<br/>'
 	elif vKey == '2_15':
 		vResult += 'This section is dedicated to the board game project \'Conquer\'.<br/>'
-		vResult += 'Battle other Kaiju for the right to rule over the ruins of a kingdom.'
+		vResult += 'Battle other Kaiju for the right to rule over the ruins of a kingdom.<br/>'
 	elif vKey == '2_16':
 		vResult += 'This section is dedicated to the board game project \'Armor Up!\'.<br/>'
-		vResult += 'Armor up your princess to battle the other princesses for the throne.'
+		vResult += 'Armor up your princess to battle the other princesses for the throne.<br/>'
 	elif vKey == '2_17':
 		vResult += 'This section is dedicated to the board game project \'Goblins and Guardians\'.<br/>'
-		vResult += 'Goblins and Guardians battle it out in a labrynth of a building.'
+		vResult += 'Goblins and Guardians battle it out in a labrynth of a building.<br/>'
 	elif vKey == '2_1_0':
-		vResult += 'This section is dedicated to projects centered in the Gynowars universe.'
+		vResult += 'This section is dedicated to projects centered in the Gynowars universe.<br/>'
 	elif vKey == '2_1_1':
 		vResult += 'The Gynowars RPG is a \'pokemon-like\' tactical RPG.  The protagonist uses creatures to fight battles against other creatures to progress through the storyline.'
 	elif vKey == '2_1_2':

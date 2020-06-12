@@ -33,6 +33,9 @@ urls = (
 	'/Division2/Project12', 'Division2P12',
 	'/Division2/Project13', 'Division2P13',
 	'/Division2/Project14', 'Division2P14',
+	'/Division2/Project15', 'Division2P15',
+	'/Division2/Project16', 'Division2P16',
+	'/Division2/Project17', 'Division2P17',
 	'/Division2/Section1/Index', 'Division2_1',
 	'/Division2/Section1/Project1', 'Division2_1P1',
 	'/Division2/Section1/Project2', 'Division2_1P2',
@@ -263,6 +266,27 @@ class Division2P13:
 class Division2P14:
 	def GET(self):
 		vPage = '14'
+		vLevel = '2'
+		vDivision = '2'
+		return Main.Layout(vPage, vLevel, vDivision)
+		
+class Division2P15:
+	def GET(self):
+		vPage = '15'
+		vLevel = '2'
+		vDivision = '2'
+		return Main.Layout(vPage, vLevel, vDivision)
+		
+class Division2P16:
+	def GET(self):
+		vPage = '16'
+		vLevel = '2'
+		vDivision = '2'
+		return Main.Layout(vPage, vLevel, vDivision)
+		
+class Division2P17:
+	def GET(self):
+		vPage = '17'
 		vLevel = '2'
 		vDivision = '2'
 		return Main.Layout(vPage, vLevel, vDivision)

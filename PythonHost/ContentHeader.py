@@ -6,7 +6,7 @@ def getContentHeader(vPage, vLevel):
 	
 	vDefault += 'Welcome to the House That Kamurai Built!'
 	
-	vResult += '<h4>'
+	vResult += '<h2>'
 	if vKey == '0_0':
 		vResult += vDefault
 	elif vKey == '0_1':
@@ -117,6 +117,6 @@ def getContentHeader(vPage, vLevel):
 		vResult += 'C++ Downloads'
 	else:
 		vResult += vDefault
-	vResult += '</h4>'
+	vResult += '</h2>'
 	
 	return vResult

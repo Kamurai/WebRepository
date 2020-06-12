@@ -101,19 +101,23 @@
         if($vPage==0){
             $vResult = $vResult.$vDefault;
         }else if($vPage==2){
-            $vResult = $vResult.'This section is dedicated CCG project Assault.';
+            $vResult = $vResult.'This section is dedicated CCG project Assault.<br>';
         }else if($vPage==3){
-            $vResult = $vResult.'This section is dedicated to the Mars centered project Opposition.';
+            $vResult = $vResult.'This section is dedicated to the Mars centered project Opposition.<br>';
         }else if($vPage==6){
-            $vResult = $vResult.'This section is dedicated to the MMO RTS project Truth.  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.';
+            $vResult = $vResult.'This section is dedicated to the MMO RTS project Truth.<br>';
+			$vResult = $vResult.'Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>';
         }else if($vPage==7){
-            $vResult = $vResult.'This section is dedicated to the digital board game project Kingdoms.  Explore the world\'s Kingdoms, get rich, get strong and conquer.';
+            $vResult = $vResult.'This section is dedicated to the digital board game project Kingdoms.<br>';
+			$vResult = $vResult.'Explore the world\'s Kingdoms, get rich, get strong and conquer.<br>';
         }else if($vPage==8){
-            $vResult = $vResult.'This section is dedicated to the simulation MMO centered project Terminal World.  This is a virtual environment where a zombie outbreak is about to happen.  Can you beatthe zombies?  Can you survive?';
+            $vResult = $vResult.'This section is dedicated to the simulation MMO centered project Terminal World.<br>';
+			$vResult = $vResult.'This is a virtual environment where a zombie outbreak is about to happen.<br>';
+			$vResult = $vResult.'Can you beat the zombies?  Can you survive?<br>';
         }else if($vPage==9){
-            $vResult = $vResult.'This section is dedicated to the card and board game project \'Monster Office Workplace\'.  These monsters mean serious business.<br/>';
+            $vResult = $vResult.'This section is dedicated to the card and board game project \'Monster Office Workplace\'.<br>';
+			$vResult = $vResult.'These monsters mean serious business.<br/>';
 			$vResult = $vResult.'Can you earn the most credit and smooze your way into a promotion?<br/>';
-			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:<br/>';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\'>Steam Workshop</a><br/>';
@@ -122,9 +126,9 @@
 			$vResult = $vResult.'Monster Office Ruleset v0.1<br/>';
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Monster_Office_Workplace_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==10){
-            $vResult = $vResult.'This section is dedicated to the card game project \'Battle Princesses\'.  Ever wanted to see your favorite princess battle for the kingdom?';
-            $vResult = $vResult.'These princess aren\'t your helpless maidens, but valiant warriors themselves.';
-			$vResult = $vResult.'</br>';
+            $vResult = $vResult.'This section is dedicated to the card game project \'Battle Princesses\'.<br>';
+			$vResult = $vResult.'Ever wanted to see your favorite princess battle for the kingdom?<br>';
+            $vResult = $vResult.'These princess aren\'t your helpless maidens, but valiant warriors themselves.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=1206167982\'>Steam Workshop</a>';
@@ -134,10 +138,8 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Battle_Princesses_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==11){
             $vResult = $vResult.'This section is dedicated to the board game project \'Sacred Offerings\'.<br/>';
-			$vResult = $vResult.'Being a god is hard, you have to eat, but';
-			$vResult = $vResult.'don\'t want to fall out favor with the people more than the other deities.';
-			$vResult = $vResult.'Draw people to worship you, but be discerning about who is sacrificed.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Being a god is hard, you have to eat, but don\'t want to fall out favor with the people more than the other deities.<br>';
+			$vResult = $vResult.'Draw people to worship you, but be discerning about who is sacrificed.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652957007\'>Steam Workshop</a>';
@@ -147,9 +149,8 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Sacred_Offerings_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==12){
             $vResult = $vResult.'This section is dedicated to the card game project \'The Way\'.<br/>';
-			$vResult = $vResult.'You seek to find enlightment by contemplating the elements.';
-			$vResult = $vResult.'Escape the binds of the world and the board to reach enlightment and win.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'You seek to find enlightment by contemplating the elements.<br>';
+			$vResult = $vResult.'Escape the binds of the world and the board to reach enlightment and win.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=652925835\'>Steam Workshop</a>';
@@ -159,8 +160,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/The_Way_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==13){
             $vResult = $vResult.'This section is dedicated to the board game project \'Conspiratorium\'.<br/>';
-			$vResult = $vResult.'A game of assassins and CIA, you must remember who is friend and who is not.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'A game of assassins and CIA, you must remember who is friend and who is not.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=656617895\'>Steam Workshop</a>';
@@ -170,8 +170,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Conspiratorium_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==14){
             $vResult = $vResult.'This section is dedicated to the board game project \'Conversion\'.<br/>';
-			$vResult = $vResult.'Compete on the elemental market by processing elements and becoming the elemental kingpin.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Compete on the elemental market by processing elements and becoming the elemental kingpin.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'<a href=\'http://steamcommunity.com/sharedfiles/filedetails/?id=658966981\'>Steam Workshop</a>';
@@ -181,8 +180,7 @@
 			$vResult = $vResult.'<a href=\'http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Conversion_Game_Ruleset.pdf\'>Download here.</a>';
         }else if($vPage==15){
             $vResult = $vResult.'This section is dedicated to the board game project \'Conquer\'.<br/>';
-			$vResult = $vResult.'Battle other Kaiju for the right to rule over the ruins of a kingdom.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Battle other Kaiju for the right to rule over the ruins of a kingdom.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'</br>';
@@ -190,8 +188,7 @@
 			$vResult = $vResult.'Conquer Ruleset v0.1<br/>';
 		}else if($vPage==16){
             $vResult = $vResult.'This section is dedicated to the board game project \'Armor Up!\'.<br/>';
-			$vResult = $vResult.'Armor up your princess to battle the other princesses for the throne.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Armor up your princess to battle the other princesses for the throne.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'</br>';
@@ -199,8 +196,7 @@
 			$vResult = $vResult.'Armor Up! Ruleset v0.1<br/>';
 		}else if($vPage==17){
             $vResult = $vResult.'This section is dedicated to the board game project \'Goblins and Guardians\'.<br/>';
-			$vResult = $vResult.'Goblins and Guardians battle it out in a labrynth of a building.';
-			$vResult = $vResult.'</br>';
+			$vResult = $vResult.'Goblins and Guardians battle it out in a labrynth of a building.<br>';
 			$vResult = $vResult.'</br>';
 			$vResult = $vResult.'You can download the Tabletop Simulator mod here:';
 			$vResult = $vResult.'</br>';

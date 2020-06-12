@@ -99,44 +99,50 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce){
 			if(vPage == 0){
 				$scope.vResult += $scope.vDefault;
 			}else if(vPage == 2){
-				$scope.vResult += "This section is dedicated CCG project \"Assault\".";
+				$scope.vResult += "This section is dedicated CCG project \"Assault\".<br>";
 			}else if(vPage == 3){
-				$scope.vResult += "This section is dedicated to the Mars centered project \"Opposition\".";
+				$scope.vResult += "This section is dedicated to the Mars centered project \"Opposition\".<br>";
 			}else if(vPage == 6){
-				$scope.vResult += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
+				$scope.vResult += "This section is dedicated to the MMO RTS project \"Truth\".<br>";
+				$scope.vResult += "Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>";
 			}else if(vPage == 7){
-				$scope.vResult += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world\"s Kingdoms, get rich, get strong and conquer.";
+				$scope.vResult += "This section is dedicated to the digital board game project \"Kingdoms\".<br>";
+				$scope.vResult += "Explore the world\"s Kingdoms, get rich, get strong and conquer.<br>";
 			}else if(vPage == 8){
-				$scope.vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
-				$scope.vResult += "the zombies?  Can you survive?";
+				$scope.vResult += "This section is dedicated to the simulation MMO centered project \"Terminal World\".<br>";
+				$scope.vResult += "This is a virtual environment where a zombie outbreak is about to happen.<br>";
+				$scope.vResult += "Can you beat the zombies?  Can you survive?";
 			}else if(vPage == 9){
-				$scope.vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
-				$scope.vResult += "Can you earn the most credit and smooze your way into a promotion?";
+				$scope.vResult += "This section is dedicated to the card and board game project \"Monster Office Workplace\".<br>";
+				$scope.vResult += "These monsters mean serious business.<br>";
+				$scope.vResult += "Can you earn the most credit and smooze your way into a promotion?<br>";
 			}else if(vPage == 10){
-				$scope.vResult += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
-				$scope.vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.";
+				$scope.vResult += "This section is dedicated to the card game project \"Battle Princesses\".<br>";
+				$scope.vResult += "Ever wanted to see your favorite princess battle for the kingdom?<br>";
+				$scope.vResult += "These princess aren\"t your helpless maidens, but valiant warriors themselves.<br>";
 			}else if(vPage == 11){
-				$scope.vResult += "This section is dedicated to the board game project \"Sacred Offerings\".  Being a god is hard, you have to eat, but";
-				$scope.vResult += "don\"t want to fall out favor with the people more than the other deities.";
-				$scope.vResult += "Draw people to worship you, but be discerning about who is sacrificed.";
+				$scope.vResult += "This section is dedicated to the board game project \"Sacred Offerings\".<br>";
+				$scope.vResult += "Being a god is hard, you have to eat, but don\'t want to fall out favor with the people more than the other deities.<br>";
+				$scope.vResult += "Draw people to worship you, but be discerning about who is sacrificed.<br>";
 			}else if(vPage == 12){
-				$scope.vResult += "This section is dedicated to the card game project \"The Way\".  You seek to find enlightment by contemplating the elements.";
-				$scope.vResult += "Escape the binds of the world and the board to reach enlightment and win.";
+				$scope.vResult += "This section is dedicated to the card game project \"The Way\".<br>";
+				$scope.vResult += "You seek to find enlightment by contemplating the elements.<br>";
+				$scope.vResult += "Escape the binds of the world and the board to reach enlightment and win.<br>";
 			}else if(vPage == 13){
-				$scope.vResult += "This section is dedicated to the board game project \"Conspiratorium\".";
-				$scope.vResult += "A game of assassins and CIA, you must remember who is friend and who is not.";
+				$scope.vResult += "This section is dedicated to the board game project \"Conspiratorium\".<br>";
+				$scope.vResult += "A game of assassins and CIA, you must remember who is friend and who is not.<br>";
 			}else if(vPage == 14){
-				$scope.vResult += "This section is dedicated to the board game project \"Conversion\".";
-				$scope.vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";
+				$scope.vResult += "This section is dedicated to the board game project \"Conversion\".<br>";
+				$scope.vResult += "Compete on the elemental market by processing elements and becoming the elemental kingpin.<br>";
 			}else if(vPage == 15){
-				$scope.vResult += "This section is dedicated to the board game project \"Conquer\".";
-				$scope.vResult += "Battle other Kaiju for the right to rule over the ruins of a kingdom.";
+				$scope.vResult += "This section is dedicated to the board game project \"Conquer\".<br>";
+				$scope.vResult += "Battle other Kaiju for the right to rule over the ruins of a kingdom.<br>";
 			}else if(vPage == 16){
-				$scope.vResult += "This section is dedicated to the board game project \"Armor Up!\".";
-				$scope.vResult += "Armor up your princess to battle the other princesses for the throne.";
+				$scope.vResult += "This section is dedicated to the board game project \"Armor Up!\".<br>";
+				$scope.vResult += "Armor up your princess to battle the other princesses for the throne.<br>";
 			}else if(vPage == 17){
-				$scope.vResult += "This section is dedicated to the board game project \"Goblins and Guardians\".";
-				$scope.vResult += "Goblins and guardians battle it out in a labrynth of a building.";
+				$scope.vResult += "This section is dedicated to the board game project \"Goblins and Guardians\".<br>";
+				$scope.vResult += "Goblins and guardians battle it out in a labrynth of a building.<br>";
 			}else{
 				$scope.vResult += $scope.vDefault;
 			}

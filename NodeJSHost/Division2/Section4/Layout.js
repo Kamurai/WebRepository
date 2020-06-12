@@ -21,6 +21,9 @@ getNavigation = function (vLevel)
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12\">The Way</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13\">Conspiratorium</a><br><br>";
 	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14\">Conversion</a><br><br>";
+    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project15\">Conquer</a><br><br>";
+    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project16\">Armor Up!</a><br><br>";
+    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project17\">Goblins and Guardians</a><br><br>";
     
 	return vResult;
 }

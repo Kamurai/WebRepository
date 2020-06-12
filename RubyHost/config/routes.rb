@@ -39,6 +39,9 @@ Rails.application.routes.draw do
 	get '/Division2/Project12', to: 'division2#Project12'
 	get '/Division2/Project13', to: 'division2#Project13'
 	get '/Division2/Project14', to: 'division2#Project14'
+	get '/Division2/Project15', to: 'division2#Project15'
+	get '/Division2/Project16', to: 'division2#Project16'
+	get '/Division2/Project17', to: 'division2#Project17'
 	
 	get '/Division2/Section1/Index', to: 'section21#Index'
 	get '/Division2/Section1/Project1', to: 'section21#Project1'
