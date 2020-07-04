@@ -1,3 +1,7 @@
+function testCustom(){
+	return "Custom works<br>";
+}
+
 function fillTitle(vPage)
 {
     var vResult = "";

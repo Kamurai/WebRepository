@@ -1,3 +1,7 @@
+function testLayout(){
+	return "Layout works<br>";
+}
+
 function buildLayout(vPage, vLevel, vDivision){
     buildBody(vPage, vLevel);
 }

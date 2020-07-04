@@ -1,35 +1,31 @@
-function startHead(){
-	vResult = "";
-	
-	vResult += "<head>";
-	vResult += "</head>";
-	
-	return vResult;
+function testUniversal(){
+	return "Universal works<br>";
 }
-
-function startBody(){
-	vResult = "";
-	
-	vResult += "<body>";
-	vResult += "</body>";
-	
-	return vResult;
-}
-
+/*
 function fillHead(vLevel, vDivision){
-	ReactDOM.render(
-		getHead(vLevel, vDivision),
-		document.getElementById('root')
-	);
+
+	document.write( "fillHead Start<br>" );
+	
+	document.write( "fillHead End<br>" );
+
 }
 
 function getHead(vLevel, vDivision){
-	const cHead = "";
-    
-	cHead += <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">;
-    cHead += getStyle(vLevel, vDivision);
-	
-	return cHead;
+	const temp = getStyle(vLevel, vDivision);
+
+	return(
+		"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">"
+		{temp}
+	)
+}
+*/
+
+function App(){
+	return(
+		<div>
+			Ducks!
+		</div>
+	)
 }
 
 function getStyle(vLevel, vDivision){
