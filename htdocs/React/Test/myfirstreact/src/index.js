@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//import './Universal.js';
+
+var vPage  = 0;
+var vLevel = 0;
+var vDivision = 0;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App() />
   </React.StrictMode>,
   document.getElementById('root')
 );

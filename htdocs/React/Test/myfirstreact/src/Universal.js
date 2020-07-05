@@ -74,13 +74,10 @@ function fillLogo(vLevel)
     $( "#idHeaderRowCenter" ).append( getLogo(vLevel) );
 }
 
-function getLogo(vLevel)
-{
-	var vResult = "";
-	
-    vResult += "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
-	
-	return vResult;
+function getLogo(vLevel){
+	return(
+		<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\"><br>
+	)
 }
 
 function fillNavBar(vLevel)
