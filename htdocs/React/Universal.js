@@ -1,6 +1,24 @@
-export function testUniversal(){
+/*
+function testUniversal(){
 	return "Universal works<br>";
 }
+*/
+
+function JSXUniversal(){
+	const myelement = <div>JSX works</div>;
+	
+	return myelement;
+}
+
+
+var App = function() {
+        return(
+            <div>JSX works</div>
+        )
+    }
+;
+
+ReactDOM.render(<App />, document.getElementById('root'));
 /*
 function fillHead(vLevel, vDivision){
 
