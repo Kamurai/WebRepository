@@ -1,8 +1,4 @@
-<script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
-<script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
-<script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-
-function testUniversal(){
+export function testUniversal(){
 	return "Universal works<br>";
 }
 /*
@@ -22,9 +18,9 @@ function getHead(vLevel, vDivision){
 		{temp}
 	)
 }
-*/
 
-function App(){
+
+export function App(){
 	return(
 		<div>
 			Ducks!
@@ -243,3 +239,4 @@ function getPath(vLevel)
 	
 	return vResult;
 }
+*/
