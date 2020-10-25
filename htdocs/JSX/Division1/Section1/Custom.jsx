@@ -62,7 +62,7 @@ function GetContent({vPage, vLevel}) {
 	
 	vDefault = (
 		<div id="idCenterContent">
-			This section is dedicated to web-based programming.
+			This section is dedicated to database programming.
 		</div>
 	);
 	

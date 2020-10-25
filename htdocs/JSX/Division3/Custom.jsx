@@ -216,6 +216,50 @@ function GetVersions({vPage}) {
 				<a href="http://htkb.dyndns.org:84/Project3">Node JS</a><br />
 			</div>
 		);
+    }else if(vPage == 4){
+		vResult = (
+			<div>
+				<a href="http://htkb.dyndns.org/Project4.html">HTML</a><br />
+				<a href="http://htkb.dyndns.org/Project4.php">PHP</a><br />
+				<a href="http://htkb.dyndns.org/Project4.shtml">Perl</a><br />
+				<a href="http://htkb.dyndns.org/SSI/Project4.html">Apache SSI</a><br />
+				<a href="http://htkb.dyndns.org/JQuery/Project4.html">JQuery</a><br />
+				<a href="http://htkb.dyndns.org/AngularJS/Project4.html">Angular JS</a><br />
+				<a href="http://htkb.dyndns.org:8080/JSFApplication/Project4.xhtml">JSF</a><br />
+				<a href="http://htkb.dyndns.org:8080/JSPApplication/Project4.jsp">JSP</a><br />
+				<a href="http://htkb.dyndns.org:8080/SpringMVC/Project4.jsp">JSP Spring MVC</a><br />
+				<a href="http://htkb.dyndns.org:81/ASPNET/Project4.aspx">ASP.NET Javascript</a><br />
+				<a href="http://htkb.dyndns.org:81/ASP/Project4.asp">ASP VBscript</a><br />
+				<a href="http://htkb.dyndns.org:81/WebApplication/Project4.cshtml">ASP.NET Web App</a><br />
+				<a href="http://htkb.dyndns.org:81/WebForm/Project4.aspx">ASP.NET Webform</a><br />
+				<a href="http://htkb.dyndns.org:81/MVC/Project4">ASP.NET MVC App</a><br />
+				<a href="http://htkb.dyndns.org:82/Project4">Python Web.py</a><br />
+				<a href="http://htkb.dyndns.org:83/Project4">Ruby on Rails</a><br />
+				<a href="http://htkb.dyndns.org:84/Project4">Node JS</a><br />
+			</div>
+		);
+    }else if(vPage == 5){
+		vResult = (
+			<div>
+				<a href="http://htkb.dyndns.org/Project5.html">HTML</a><br />
+				<a href="http://htkb.dyndns.org/Project5.php">PHP</a><br />
+				<a href="http://htkb.dyndns.org/Project5.shtml">Perl</a><br />
+				<a href="http://htkb.dyndns.org/SSI/Project5.html">Apache SSI</a><br />
+				<a href="http://htkb.dyndns.org/JQuery/Project5.html">JQuery</a><br />
+				<a href="http://htkb.dyndns.org/AngularJS/Project5.html">Angular JS</a><br />
+				<a href="http://htkb.dyndns.org:8080/JSFApplication/Project5.xhtml">JSF</a><br />
+				<a href="http://htkb.dyndns.org:8080/JSPApplication/Project5.jsp">JSP</a><br />
+				<a href="http://htkb.dyndns.org:8080/SpringMVC/Project5.jsp">JSP Spring MVC</a><br />
+				<a href="http://htkb.dyndns.org:81/ASPNET/Project5.aspx">ASP.NET Javascript</a><br />
+				<a href="http://htkb.dyndns.org:81/ASP/Project5.asp">ASP VBscript</a><br />
+				<a href="http://htkb.dyndns.org:81/WebApplication/Project5.cshtml">ASP.NET Web App</a><br />
+				<a href="http://htkb.dyndns.org:81/WebForm/Project5.aspx">ASP.NET Webform</a><br />
+				<a href="http://htkb.dyndns.org:81/MVC/Project5">ASP.NET MVC App</a><br />
+				<a href="http://htkb.dyndns.org:82/Project5">Python Web.py</a><br />
+				<a href="http://htkb.dyndns.org:83/Project5">Ruby on Rails</a><br />
+				<a href="http://htkb.dyndns.org:84/Project5">Node JS</a><br />
+			</div>
+		);
     }else{
 		vResult = vDefault;
 	}

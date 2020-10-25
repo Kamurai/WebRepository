@@ -2,7 +2,7 @@ function GetTitle({vPage}) {
 	var vResult = "";
 	var vDefault = "";
 	
-	vDefault += "Private Projects";
+	vDefault += "Antarrea Projects";
 	
 	if(vPage <= 0){
 		vResult += vDefault;
@@ -33,7 +33,7 @@ function GetContentHeader({vPage}) {
     var vResult = "";
     var vDefault = "";
 	
-	vDefault += "Private Projects";
+	vDefault += "Antarrea Projects";
 	
 	if(vPage <= 0){
 		vResult += vDefault;
