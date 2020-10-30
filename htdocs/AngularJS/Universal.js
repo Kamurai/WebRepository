@@ -1,12 +1,10 @@
-vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce)
-{
+vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce){
 	var vPage = '-1';
 	var vLevel = '-1';
 	var vDivision = '-1';
 	var vLayout = './Layout.html';
 
-	$scope.getHead = function()
-	{
+	$scope.getHead = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "<head>";
@@ -17,51 +15,52 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getLogo = function()
-	{
+	$scope.getLogo = function(){
 		$scope.vResult = "";
 		
-		$scope.vResult += "<img src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg' >";
+		$scope.vResult += "<img src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\">";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getNavBar = function()
-	{
+	$scope.getNavBar = function(){
 		$scope.vResult = "";
 		
-		$scope.vResult += "<a href='"+getPath(vLevel)+"Index.html'>Home</a>";
-		$scope.vResult += "<a href='"+getPath(vLevel)+"Division1/Index.html'>Web Programming</a>";
-		$scope.vResult += "<a href='"+getPath(vLevel)+"Division2/Index.html'>Private Projects</a>";
-		$scope.vResult += "<a href='"+getPath(vLevel)+"Division3/Index.html'>Downloadable Projects</a>";
+		$scope.vResult += `
+			<ul class=\"navBarUl\">
+				<li><a class=\"navBar\" href=\"/AngularJS/Index.html\">Home</a></li>
+				<li><a class=\"navBar\" href=\"/AngularJS/Division1/Index.html\">Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/AngularJS/Division2/Index.html\">Digital Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/AngularJS/Division3/Index.html\">Video Games</a></li>
+				<li><a class=\"navBar\" href=\"/AngularJS/Division4/Index.html\">Downloadables</a></li>
+				<li><a class=\"navBar\" href=\"/AngularJS/Division5/Index.html\">Database Work</a></li>
+			</ul>
+		`;
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getNavigationHeader = function()
-	{
+	$scope.getNavigationHeader = function(){
 		$scope.vResult = "";
 		
-		$scope.vResult += "<h4>";
+		$scope.vResult += "<h4 class=\"headerColorBlack\">";
 		$scope.vResult += "Navigation";
 		$scope.vResult += "</h4>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getInformationHeader = function()
-	{
+	$scope.getInformationHeader = function(){
 		$scope.vResult = "";
 		
-		$scope.vResult += "<h4>";
+		$scope.vResult += "<h4 class=\"headerColorBlack\">";
 		$scope.vResult += "Information";
 		$scope.vResult += "</h4>";
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getInformation = function()
-	{
+	$scope.getInformation = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "This was written in AngularJS.<br><br>";
@@ -70,8 +69,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getGDR = function()
-	{
+	$scope.getGDR = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "<a href='http://htkb.dyndns.org/Division3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
@@ -79,8 +77,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getWinRAR = function()
-	{
+	$scope.getWinRAR = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "<a href='http://htkb.dyndns.org/Division3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
@@ -88,8 +85,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getFooter = function()
-	{
+	$scope.getFooter = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "<div id=\"idFooterContent\">";
@@ -100,8 +96,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 		return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getWebMaster = function()
-	{
+	$scope.getWebMaster = function(){
 		$scope.vResult = "";
 		
 		$scope.vResult += "<div id=\"idFooterContent\">";
@@ -113,8 +108,7 @@ vApp.controller("UniversalController", ['$scope', '$sce', function ($scope, $sce
 	
 }]);
 
-function getStyle()
-{
+function getStyle(){
 	var vResult = "";
 	
 	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
@@ -124,39 +118,36 @@ function getStyle()
 	return vResult;
 }
 	
-function getStyleFile()
-{
+function getStyleFile(){
 	var vResult = "";
 	var vDefault = "";
 	
 	vDefault = "Main.css";
 	
-	if(vDivision == 0)
-	{
+	if(vDivision == 0){
 		vResult += vDefault;
-	}
-	else if(vDivision == 1)
-	{
+	}else if(vDivision == 1){
 		vResult += "Division1.css";
-	}
-	else if(vDivision == 2)
-	{
+	}else if(vDivision == 2){
 		vResult += "Division2.css";
-	}
-	else if(vDivision == 3)
-	{
+	}else if(vDivision == 3){
 		vResult += "Division3.css";
-	}
-	else
-	{
+	}else if(vDivision == 4){
+		vResult += "Division4.css";
+	}else if(vDivision == 5){
+		vResult += "Division5.css";
+	}else if(vDivision == 6){
+		vResult += "Division6.css";
+	}else if(vDivision == 7){
+		vResult += "Division7.css";
+	}else{
 		vResult += vDefault;
 	}
 	
 	return vResult;
 }	
 
-function getPath()
-{
+function getPath(){
 	var vResult = "";
 	
 	if(vLevel <= 0)

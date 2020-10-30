@@ -7,11 +7,12 @@
 		<xsl:param name = "vLevel"/>
 		<xsl:variable name="vPath"><xsl:call-template name="GetPath"><xsl:with-param name="vLevel"><xsl:value-of select="$vLevel"/></xsl:with-param></xsl:call-template></xsl:variable>
 		
-		<div>
-			<a className="navlinkA" href="{$vPath}AboutUs.xml">About Us</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Media.xml">Media</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Minecraft.xml">Minecraft!</a><br /><br />
-		</div>
+		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./AboutUs.xml">About Us</a></li>
+			<li><a class="navlinkA" href="./Media.xml">Media</a></li>
+			<li><a class="navlinkA" href="./GitHubs.xml">Git Hubs</a></li>
+			<li><a class="navlinkA" href="./WebApps.xml">Web Apps</a></li>
+		</ul>
 	</xsl:template>
 	
 	<xsl:template match="/">

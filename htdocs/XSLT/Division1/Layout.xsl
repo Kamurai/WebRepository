@@ -7,9 +7,26 @@
 		<xsl:param name = "vLevel"/>
 		<xsl:variable name="vPath"><xsl:call-template name="GetPath"><xsl:with-param name="vLevel"><xsl:value-of select="$vLevel"/></xsl:with-param></xsl:call-template></xsl:variable>
 		
-		<div>
-			<a className="navlinkA" href="{$vPath}Division1/Section1/Index.xml">Databases</a><br /><br />
-		</div>
+		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Project1.xml">The Way</a></li>
+			<li><a class="navlinkA" href="./Project2.xml">Sacred Offerings</a></li>
+			<li><a class="navlinkA" href="./Project3.xml">Conversion</a></li>
+			<li><a class="navlinkA" href="./Project4.xml">Conspiratorium</a></li>
+			<li><a class="navlinkA" href="./Project5.xml">Monster Office Workplace</a></li>
+			<li><a class="navlinkA" href="./Project6.xml">MacCreedy's Mansion</a></li>
+			<li><a class="navlinkA" href="./Project7.xml">Dundered Acre Wood</a></li>
+			<li><a class="navlinkA" href="./Project8.xml">Conquer</a></li>
+			<li><a class="navlinkA" href="./Project9.xml">Assault</a></li>
+			<li><a class="navlinkA" href="./Project10.xml">Battle Princesses</a></li>
+			<li><a class="navlinkA" href="./Project11.xml">Armor Up</a></li>
+			<li><a class="navlinkA" href="./Project12.xml">Gynowars: Battle Arena</a></li>
+			<li><a class="navlinkA" href="./Project13.xml">Land of the Orcish Empire: Age of Magic</a></li>
+			<li><a class="navlinkA" href="./Project14.xml">Coliseum: Arena</a></li>
+			<li><a class="navlinkA" href="./Project15.xml">Nine Card</a></li>
+			<li><a class="navlinkA" href="./Project16.xml">Wars of Antarrea</a></li>
+			<li><a class="navlinkA" href="./Project17.xml">Antarrea RPG</a></li>
+			<li><a class="navlinkA" href="./Project18.xml">Super Dungeon Adventure</a></li>
+		</ul>
 	</xsl:template>
 	
 	<xsl:template match="/">
@@ -69,6 +86,9 @@
 								<xsl:with-param name="vPage">
 									<xsl:value-of select="$vPage"/>
 								</xsl:with-param>
+								<xsl:with-param name="vLevel">
+									<xsl:value-of select="$vLevel"/>
+								</xsl:with-param>
 							</xsl:call-template>
 						</div>	
 						<div id="idCenterRowRight" >
@@ -84,6 +104,8 @@
 					<div id="idFooterRow">
 						<div id="idFooterMain" >
 							<div id="idFooterContent" >
+								<xsl:call-template name="GetWinRar" />
+								<xsl:call-template name="GetGDR" />
 								<xsl:call-template name="GetFooter" />
 							</div>
 							<div id="idFooterManagement" >

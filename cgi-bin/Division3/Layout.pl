@@ -2,7 +2,6 @@
 use strict;
 use warnings;
 use CGI;
-
 ##  Gets the structure of the webpage
 
 print "Content-type: text/html\n\n"; 
@@ -19,23 +18,27 @@ print getHead($vLevel, $vDivision);
 print getBody($vPage, $vLevel);
 
 
-##  Gets the navigation content of the webpage
-sub getNavigation
-{
+##  gets the navigation content of the webpage
+sub getNavigation{
 	my $vLevel = $_[0];
 	my $vResult = "";
-
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division3/Project1.shtml'>Online Experience Downloads</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division3/Project2.shtml'>Game Maker Downloads</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division3/Project3.shtml'>Java Downloads</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division3/Project4.shtml'>C# Downloads</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division3/Project5.shtml'>C++ Downloads</a><br><br>";
+	
+	$vResult .= "
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Project1.shtml\">Truth</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.shtml\">The Wrong Ninja</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.shtml\">Gynowars</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4.shtml\">Terminal World</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5.shtml\">Mars: Opposition</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section1/Index.shtml\">Antarrea</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section2/Index.shtml\">Renley</a></li>
+		</ul>
+	";
 
 	return $vResult;
 }
 
-sub getBody
-{
+sub getBody{
 	my $vPage = $_[0];
 	my $vLevel = $_[1];
 	my $vResult = "";
@@ -86,4 +89,3 @@ sub getBody
 	
 	return $vResult;
 }
-	

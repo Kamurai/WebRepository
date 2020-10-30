@@ -1,4 +1,4 @@
-function GetHead({vDivision}) {
+function GetHead({vDivision}){
 	var styleFile = getStyleFile(vDivision);
 	
 	return (
@@ -23,6 +23,14 @@ function getStyleFile(vDivision){
 		vResult = "Division2.css";
 	}else if(vDivision == 3){
 		vResult = "Division3.css";
+	}else if(vDivision == 4){
+		vResult = "Division4.css";
+	}else if(vDivision == 5){
+		vResult = "Division5.css";
+	}else if(vDivision == 6){
+		vResult = "Division6.css";
+	}else if(vDivision == 7){
+		vResult = "Division7.css";
 	}else{
 		vResult = vDefault;
 	}
@@ -34,16 +42,18 @@ function GetNavBar({vLevel}) {
 	var vPath = getPath(vLevel);
 
 	return (
-		<div>
-			<a className='navBar' href={vPath+"Index.html"}>Home</a>
-			<a className='navBar' href={vPath+"Division1/Index.html"}>Web Programming</a>
-			<a className='navBar' href={vPath+"Division2/Index.html"}>Private Projects</a>
-			<a className='navBar' href={vPath+"Division3/Index.html"}>Downloadable Projects</a>
-		</div>
+		<ul className="navBarUl">
+			<li><a className="navBar" href="/JSX/Index.html">Home</a></li>
+			<li><a className="navBar" href="/JSX/Division1/Index.html">Board Games</a></li>
+			<li><a className="navBar" href="/JSX/Division2/Index.html">Digital Board Games</a></li>
+			<li><a className="navBar" href="/JSX/Division3/Index.html">Video Games</a></li>
+			<li><a className="navBar" href="/JSX/Division4/Index.html">Downloadables</a></li>
+			<li><a className="navBar" href="/JSX/Division5/Index.html">Database Work</a></li>
+		</ul>
 	)
 }
 
-var GetLogo = function() {
+var GetLogo = function(){
 	return (
 		<div>
 			<img id="idLogo" src="http://htkb.dyndns.org/Pictures/logoHTKB.jpg"/>
@@ -51,23 +61,23 @@ var GetLogo = function() {
 	);
 }
 
-function GetNavigationHeader() {
+function GetNavigationHeader(){
 	return (
-		<h4>
+		<h4 className="headerColorBlack">
 			Navigation
 		</h4>
 	);
 }
 
-function GetInformationHeader() {
+function GetInformationHeader(){
 	return (
-		<h4>
+		<h4 className="headerColorBlack">
 			Information
 		</h4>
 	);
 }
 
-function GetInformation() {
+function GetInformation(){
 	return (
 		<div>
 			This is written with JSX.<br />
@@ -76,7 +86,7 @@ function GetInformation() {
 	);
 }
 
-function GetGDR() {
+function GetGDR(){
 	return (
 		<div>
 			<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a><br />
@@ -84,7 +94,7 @@ function GetGDR() {
 	);
 }
 
-function GetWinRar() {
+function GetWinRar(){
 	return (
 		<div>
 			<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a><br />
@@ -92,7 +102,7 @@ function GetWinRar() {
 	);
 }
 
-function GetFooter() {
+function GetFooter(){
   return (
     <div id='idFooterContent'>
 		Copyright 2012 All rights reserved<br />   
@@ -101,7 +111,7 @@ function GetFooter() {
   );
 }
 
-function GetWebMaster() {
+function GetWebMaster(){
   return (
     <div id='idFooterManagement'>
         Website managed by Kamurai.
@@ -109,7 +119,7 @@ function GetWebMaster() {
   );
 }
 
-function getPath(vLevel) {
+function getPath(vLevel){
 	var vResult = "";
 	
     if(vLevel <= 0)

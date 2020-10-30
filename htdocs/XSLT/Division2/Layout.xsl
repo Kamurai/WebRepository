@@ -7,27 +7,12 @@
 		<xsl:param name = "vLevel"/>
 		<xsl:variable name="vPath"><xsl:call-template name="GetPath"><xsl:with-param name="vLevel"><xsl:value-of select="$vLevel"/></xsl:with-param></xsl:call-template></xsl:variable>
 		
-		<div>
-			<a className="navlinkA" href="{$vPath}Division2/Section1/Index.xml">Gynowars</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project2.xml">Assault</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project3.xml">Mars</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Section4/Index.xml">Renley</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Section5/Index.xml">Antarrea</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project6.xml">Truth</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project7.xml">Kingdoms</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project8.xml">Terminal World</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project9.xml">Monster Office Workplace</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project10.xml">Battle Princesses</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project11.xml">Sacred Offerings</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project12.xml">The Way</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project13.xml">Conspiratorium</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project14.xml">Conversion</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project15.xml">Conquer</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project16.xml">Armor Up!</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project17.xml">Goblins and Guardians</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project18.xml">MacCreedy's Mansion</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division2/Project19.xml">Dundered Acre Wood</a><br /><br />
-    	</div>
+		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Project1.xml">Kingdoms</a></li>
+			<li><a class="navlinkA" href="./Project2.xml">Goblins and Guardians</a></li>
+			<li><a class="navlinkA" href="./Project3.xml">Mega Fleets</a></li>
+			<li><a class="navlinkA" href="./Section1/Index.xml">Crash Ball</a></li>
+		</ul>
 	</xsl:template>
 	
 	<xsl:template match="/">

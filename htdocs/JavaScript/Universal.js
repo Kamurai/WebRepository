@@ -1,5 +1,4 @@
-function getHead(vLevel, vDivision)
-{
+function getHead(vLevel, vDivision){
 	var vResult = "";
 	
 	vResult += "<head>";
@@ -10,8 +9,7 @@ function getHead(vLevel, vDivision)
 	return vResult;
 }
 
-function getStyle(vLevel, vDivision)
-{
+function getStyle(vLevel, vDivision){
 	var vResult = "";
 	
 	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
@@ -21,82 +19,81 @@ function getStyle(vLevel, vDivision)
 	return vResult;
 }
 
-function getStyleFile(vDivision)
-{
+function getStyleFile(vDivision){
 	var vResult = "";
 	var vDefault = "";
 	
 	vDefault = "Main.css";
 	
-	if(vDivision == 0)
-	{
+	if(vDivision == 0){
 		vResult += vDefault;
-	}
-	else if(vDivision == 1)
-	{
+	}else if(vDivision == 1){
 		vResult += "Division1.css";
-	}
-	else if(vDivision == 2)
-	{
+	}else if(vDivision == 2){
 		vResult += "Division2.css";
-	}
-	else if(vDivision == 3)
-	{
+	}else if(vDivision == 3){
 		vResult += "Division3.css";
-	}
-	else
-	{
+	}else if(vDivision == 4){
+		vResult += "Division4.css";
+	}else if(vDivision == 5){
+		vResult += "Division5.css";
+	}else if(vDivision == 6){
+		vResult += "Division6.css";
+	}else if(vDivision == 7){
+		vResult += "Division7.css";
+	}else{
 		vResult += vDefault;
 	}
 	
 	return vResult;
 }
 
-function getLogo(vLevel)
-{
+function getLogo(vLevel){
 	vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\"><br>";
 	
 	return vResult;
 }
 
-function getNavBar(vLevel)
-{
+function getNavBar(vLevel){
 	var vResult = "";
 	
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Index.html'>Home</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division1/Index.html'>Web Programming</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division2/Index.html'>Private Projects</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division3/Index.html'>Downloadable Projects</a>";
+    vResult += `
+			<ul class=\"navBarUl\">
+				<li><a class=\"navBar\" href=\"/Javascript/Index.html\">Home</a></li>
+				<li><a class=\"navBar\" href=\"/Javascript/Division1/Index.html\">Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/Javascript/Division2/Index.html\">Digital Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/Javascript/Division3/Index.html\">Video Games</a></li>
+				<li><a class=\"navBar\" href=\"/Javascript/Division4/Index.html\">Downloadables</a></li>
+				<li><a class=\"navBar\" href=\"/Javascript/Division5/Index.html\">Database Work</a></li>
+			</ul>
+		`;
 	
 	return vResult;
 }
 
-function getNavigationHeader()
-{
+function getNavigationHeader(){
     var vResult = "";
 	
-    vResult += "<h4>";
+    vResult += "<h4 class=\"headerColorBlack\">";
 	vResult += "Navigation";
 	vResult += "</h4>";
 	
 	return vResult;
 }
 
-function getInformationHeader()
-{
+function getInformationHeader(){
     var vResult = "";
 	
-    vResult += "<h4>";
+    vResult += "<h4 class=\"headerColorBlack\">";
 	vResult += "Information";
 	vResult += "</h4>";
 	
 	return vResult;
 }
 
-function getInformation()
-{
+function getInformation(){
     var vResult = "";
 	
     vResult += "This is written with basic HTML and javascript.<br><br>";
@@ -105,8 +102,7 @@ function getInformation()
 	return vResult;
 }
 
-function getGDR()
-{
+function getGDR(){
 	var vResult = "";
 	
     vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
@@ -114,8 +110,7 @@ function getGDR()
 	return vResult;
 }
 
-function getWinRAR()
-{
+function getWinRAR(){
 	var vResult = "";
 	
     vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
@@ -123,8 +118,7 @@ function getWinRAR()
 	return vResult;
 }
 
-function getFooter()
-{
+function getFooter(){
     var vResult = "";
 	
     vResult += "<div id=\"idFooterContent\">";
@@ -135,8 +129,7 @@ function getFooter()
 	return vResult;   
 }
 
-function getWebMaster()
-{
+function getWebMaster(){
     var vResult = "";
 	
     vResult += "<div id=\"idFooterManagement\">";
@@ -146,8 +139,7 @@ function getWebMaster()
 	return vResult;
 }
 
-function getPath(vLevel)
-{
+function getPath(vLevel){
     var vResult = "";
 	
     if(vLevel <= 0)

@@ -1,26 +1,19 @@
-vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce)
-{
-	$scope.getNavigation = function()
-	{
+vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce){
+	$scope.getNavigation = function(){
 		$scope.vResult = "";
 		
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project1.html\">Gynowars RPG</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project2.html\">Gynowars: Battle Arena CCG</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project3.html\">Gynowars: Crash Ball</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6.html\">Truth</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.html\">Kingdoms</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.html\">Terminal World</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.html\">Monster Office Workplace</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10.html\">Battle Princesses</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11.html\">Sacred Offerings</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12.html\">The Way</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13.html\">Conspiratorium</a><br><br>";
-		$scope.vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14.html\">Conversion</a><br><br>";
+		$scope.vResult += `
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"../Project1.html\">Kingdoms</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project2.html\">Goblins and Guardians</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project3.html\">Mega Fleets</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section1/Index.html\">Crash Ball</a></li>
+				<ul class=\"navigationUl\">
+					<li><a class=\"navlinkB\" href=\"./Project1.html\">Antarrea: Crash Ball</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project2.html\">Gynowars: Crash Ball</a></li>
+				</ul>
+			</ul>
+		`;
 		
 		return $sce.trustAsHtml($scope.vResult);
 	};

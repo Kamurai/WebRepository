@@ -1,7 +1,10 @@
 <!--#if expr="$vFunction == getNavigation" -->
-	<a class="navlinkA" href="./AboutUs.html">About Us</a><br/><br/>
-	<a class="navlinkA" href="./Media.html">Media</a><br/><br/>
-	<a class="navlinkA" href="./Minecraft.html">Minecraft!</a><br/><br/>
+	<ul class="navigationUl">
+		<li><a class="navlinkA" href="./AboutUs.html">About Us</a></li>
+		<li><a class="navlinkA" href="./Media.html">Media</a></li>
+		<li><a class="navlinkA" href="./GitHubs.html">Git Hubs</a></li>
+		<li><a class="navlinkA" href="./WebApps.html">Web Apps</a></li>
+	</ul>
 <!--#elif expr="$vFunction == getBody" -->
 	<body>
 		<div id="idGeneralLayout">

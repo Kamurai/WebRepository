@@ -1,10 +1,8 @@
-function fillHead(vLevel, vDivision)
-{
+function fillHead(vLevel, vDivision){
     $( "head" ).append( getHead(vLevel, vDivision) );
 }
 
-function getHead(vLevel, vDivision)
-{
+function getHead(vLevel, vDivision){
 	var vResult = "";
     
 	vResult += "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">";
@@ -13,8 +11,7 @@ function getHead(vLevel, vDivision)
 	return vResult;
 }
 
-function getStyle(vLevel, vDivision)
-{
+function getStyle(vLevel, vDivision){
 	var vResult = "";
 	
 	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
@@ -23,75 +20,74 @@ function getStyle(vLevel, vDivision)
 	return vResult;
 }
 
-function getStyleFile(vDivision)
-{
+function getStyleFile(vDivision){
     var vResult = "";
     var vDefault = "Main.css";
     
-    if( vDivision == 0 )
-    {
+    if( vDivision == 0 ){
         vResult += vDefault;
-    }
-    else if( vDivision == 1 )
-    {
+    }else if( vDivision == 1 ){
         vResult += "Division1.css";
-    }
-    else if( vDivision == 2 )
-    {
+    }else if( vDivision == 2 ){
         vResult += "Division2.css";
-    }
-    else if( vDivision == 3 )
-    {
+    }else if( vDivision == 3 ){
         vResult += "Division3.css";
-    }
-    else
-    {
+    }else if( vDivision == 4 ){
+        vResult += "Division4.css";
+    }else if( vDivision == 5 ){
+        vResult += "Division5.css";
+    }else if( vDivision == 6 ){
+        vResult += "Division6.css";
+    }else if( vDivision == 7 ){
+        vResult += "Division7.css";
+    }else{
         vResult += vDefault;
     }
     
     return vResult;
 }
 
-function fillLogo(vLevel)
-{
+function fillLogo(vLevel){
     $( "#idHeaderRowCenter" ).append( getLogo(vLevel) );
 }
 
-function getLogo(vLevel)
-{
+function getLogo(vLevel){
 	var vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\"><br>";
 	
 	return vResult;
 }
 
-function fillNavBar(vLevel)
-{
+function fillNavBar(vLevel){
     $( "#idNavigationBar" ).append( getNavBar(vLevel) );
 }
 
-function getNavBar(vLevel)
-{
+function getNavBar(vLevel){
 	var vResult = "";
 	
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Index.html'>Home</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division1/Index.html'>Web Programming</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division2/Index.html'>Private Projects</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division3/Index.html'>Downloadable Projects</a>";
+    vResult += `
+			<ul class=\"navBarUl\">
+				<li><a class=\"navBar\" href=\"/JQuery/Index.html\">Home</a></li>
+				<li><a class=\"navBar\" href=\"/JQuery/Division1/Index.html\">Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/JQuery/Division2/Index.html\">Digital Board Games</a></li>
+				<li><a class=\"navBar\" href=\"/JQuery/Division3/Index.html\">Video Games</a></li>
+				<li><a class=\"navBar\" href=\"/JQuery/Division4/Index.html\">Downloadables</a></li>
+				<li><a class=\"navBar\" href=\"/JQuery/Division5/Index.html\">Database Work</a></li>
+			</ul>
+		`;
 	
 	return vResult;
 }
 
-function fillNavigationHeader()
-{
+function fillNavigationHeader(){
     var tableRowCenterLeftHeader = document.createElement("h4");
+    tableRowCenterLeftHeader.setAttribute("class", "headerColorBlack");
     tableRowCenterLeftHeader.textContent = getNavigationHeader();
     $( "#idCenterRowLeft" ).append( tableRowCenterLeftHeader );
 }
 
-function getNavigationHeader()
-{
+function getNavigationHeader(){
     var vResult = "";
 	
     vResult += "Navigation";
@@ -99,15 +95,14 @@ function getNavigationHeader()
 	return vResult;
 }
 
-function fillInformationHeader()
-{
+function fillInformationHeader(){
     var tableRowCenterRightHeader = document.createElement("h4");
+    tableRowCenterRightHeader.setAttribute("class", "headerColorBlack");
     tableRowCenterRightHeader.textContent = getInformationHeader();
     $( "#idCenterRowRight" ).append( tableRowCenterRightHeader );
 }
 
-function getInformationHeader()
-{
+function getInformationHeader(){
     var vResult = "";
 	
     vResult += "Information";
@@ -115,13 +110,11 @@ function getInformationHeader()
 	return vResult;
 }
 
-function fillInformation()
-{
+function fillInformation(){
     $( "#idCenterRowRight" ).append( getInformation() );
 }
 
-function getInformation()
-{
+function getInformation(){
     var vResult = "";
 	
     vResult += "This is written with basic HTML and javascript.<br><br>";
@@ -130,13 +123,11 @@ function getInformation()
 	return vResult;
 }
 
-function fillGDR()
-{
+function fillGDR(){
     $( "#idFooterContent" ).append( getGDR );
 }
 
-function getGDR()
-{
+function getGDR(){
 	var vResult = "";
 	
     vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
@@ -144,13 +135,11 @@ function getGDR()
 	return vResult;
 }
 
-function fillWinRar()
-{
+function fillWinRar(){
     $( "#idFooterContent" ).append( getWinRar() );
 }
 
-function getWinRar()
-{
+function getWinRar(){
 	var vResult = "";
 	
     vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
@@ -158,13 +147,11 @@ function getWinRar()
 	return vResult;
 }
 
-function fillFooter()
-{
+function fillFooter(){
     $( "#idFooterContent" ).append( getFooter() );
 }
 
-function getFooter()
-{
+function getFooter(){
     var vResult = "";
 	
     vResult += "© Copyright 2012 All rights reserved<br>";    
@@ -173,13 +160,11 @@ function getFooter()
 	return vResult;   
 }
 
-function fillWebMaster()
-{
+function fillWebMaster(){
     $( "#idFooterManagement" ).append( getWebMaster() );
 }
 
-function getWebMaster()
-{
+function getWebMaster(){
     var vResult = "";
 	
     vResult += "Website managed by Kamurai.";
@@ -187,8 +172,7 @@ function getWebMaster()
 	return vResult;
 }
 
-function getPath(vLevel)
-{
+function getPath(vLevel){
 	var vResult = "";
 	
     if(vLevel <= 0)

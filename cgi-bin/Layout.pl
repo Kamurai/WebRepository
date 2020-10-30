@@ -19,20 +19,23 @@ print getBody($vPage, $vLevel);
 
 
 ##  Gets the navigation content of the webpage
-sub getNavigation
-{
+sub getNavigation{
 	my $vLevel = $_[0];
 	my $vResult = "";
 
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."AboutUs.shtml'>About Us</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Media.shtml'>Media</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Minecraft.shtml'>Minecraft!</a><br><br>";
+	$vResult .= "
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./AboutUs.shtml\">About Us</a></li>
+				<li><a class=\"navlinkA\" href=\"./Media.shtml\">Media</a></li>
+				<li><a class=\"navlinkA\" href=\"./GitHubs.shtml\">Git Hubs</a></li>
+				<li><a class=\"navlinkA\" href=\"./WebApps.shtml\">Web Apps</a></li>
+			</ul>
+		";
 	
 	return $vResult;
 }
 
-sub getBody
-{
+sub getBody{
 	my $vPage = $_[0];
 	my $vLevel = $_[1];
 	my $vResult = "";

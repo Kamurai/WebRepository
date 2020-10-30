@@ -1,75 +1,64 @@
 <?php
-	function getNavigation($vLevel)
-    {
-        $vResult = '';
-		
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section1/Index.php\'>Gynowars</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section1/Project1.php\'>Gynowars RPG</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section1/Project2.php\'>Gynowars: Battle Arena CCG</a></br></br>';
-			$vResult = $vResult.'<a class=\'navlinkB\' href=\''.getPath($vLevel).'Division2/Section1/Project3.php\'>Gynowars: Crash Ball</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project2.php\'>Assault</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project3.php\'>Mars</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section4/Index.php\'>Renley</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Section5/Index.php\'>Antarrea</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project6.php\'>Truth</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project7.php\'>Kingdoms</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project8.php\'>Terminal World</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project9.php\'>Monster Office Workplace</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project10.php\'>Battle Princesses</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project11.php\'>Sacred Offerings</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project12.php\'>The Way</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project13.php\'>Conspiratorium</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project14.php\'>Conversion</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project15.php\'>Conquer</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project16.php\'>Armor Up!</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division2/Project17.php\'>Goblins and Guardians</a></br></br>';
-        return $vResult;
+	function getNavigation($vLevel){
+        $vResult = "
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"../Project1.php\">Kingdoms</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project2.php\">Goblins and Guardians</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project3.php\">Mega Fleets</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section1/Index.php\">Crash Ball</a></li>
+				<ul class=\"navigationUl\">
+					<li><a class=\"navlinkB\" href=\"./Project1.php\">Antarrea: Crash Ball</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project2.php\">Gynowars: Crash Ball</a></li>
+				</ul>
+			</ul>
+		";
+
+		return $vResult;
     }
     
-    function getBody($vPage, $vLevel)
-    {
-        $vResult = '';
+    function getBody($vPage, $vLevel){
+        $vResult = "";
 		
-        $vResult = $vResult.'<body>';
-            $vResult = $vResult.'<div id=\'idGeneralLayout\'>';
-                $vResult = $vResult.'<header id=\'idHeaderRow\'>';
-                    $vResult = $vResult.'<div id=\'idHeaderRowCenter\'>';
+        $vResult = $vResult."<body>";
+            $vResult = $vResult."<div id=\"idGeneralLayout\">";
+                $vResult = $vResult."<header id=\"idHeaderRow\">";
+                    $vResult = $vResult."<div id=\"idHeaderRowCenter\">";
                         $vResult = $vResult.getLogo($vLevel);
-					$vResult = $vResult.'</div>';
-                $vResult = $vResult.'</header>';
-                $vResult = $vResult.'<nav id=\'idNavigationRow\'>';
-                    $vResult = $vResult.'<div id=\'idNavigationBar\'>';
+					$vResult = $vResult."</div>";
+                $vResult = $vResult."</header>";
+                $vResult = $vResult."<nav id=\"idNavigationRow\">";
+                    $vResult = $vResult."<div id=\"idNavigationBar\">";
                         $vResult = $vResult.getNavBar($vLevel);
-					$vResult = $vResult.'</div>';
-                $vResult = $vResult.'</nav>';
-                $vResult = $vResult.'<div id=\'idCenterRow\'>';
-                    $vResult = $vResult.'<div id=\'idCenterRowLeft\'>';
+					$vResult = $vResult."</div>";
+                $vResult = $vResult."</nav>";
+                $vResult = $vResult."<div id=\"idCenterRow\">";
+                    $vResult = $vResult."<div id=\"idCenterRowLeft\">";
                         $vResult = $vResult.getNavigationHeader();
                         $vResult = $vResult.getNavigation($vLevel);
-					$vResult = $vResult.'</div>';
-                    $vResult = $vResult.'<div id=\'idCenterRowMain\'>';
+					$vResult = $vResult."</div>";
+                    $vResult = $vResult."<div id=\"idCenterRowMain\">";
 						$vResult = $vResult.getTitle($vPage);
-						$vResult = $vResult.'<h2>';
+						$vResult = $vResult."<h2>";
                             $vResult = $vResult.getContentHeader($vPage);
-						$vResult = $vResult.'</h2>';
-                        $vResult = $vResult.'<div id=\'idCenterContent\'>';
+						$vResult = $vResult."</h2>";
+                        $vResult = $vResult."<div id=\"idCenterContent\">";
                             $vResult = $vResult.getContent($vPage);
-						$vResult = $vResult.'</div>';
-                    $vResult = $vResult.'</div>';
-                    $vResult = $vResult.'<div id=\'idCenterRowRight\'>';
+						$vResult = $vResult."</div>";
+                    $vResult = $vResult."</div>";
+                    $vResult = $vResult."<div id=\"idCenterRowRight\">";
                         $vResult = $vResult.getInformationHeader();
 					    $vResult = $vResult.getInformation();
                         $vResult = $vResult.getVersions($vPage);
-					$vResult = $vResult.'</div>';
-                $vResult = $vResult.'</div>';
-                $vResult = $vResult.'<Footer id=\'idFooterRow\'>';
-                    $vResult = $vResult.'<div id=\'idFooterMain\'>';
+					$vResult = $vResult."</div>";
+                $vResult = $vResult."</div>";
+                $vResult = $vResult."<Footer id=\"idFooterRow\">";
+                    $vResult = $vResult."<div id=\"idFooterMain\">";
                         $vResult = $vResult.getFooter();
                         $vResult = $vResult.getWebMaster();
-					$vResult = $vResult.'</div>';
-                $vResult = $vResult.'</Footer>';
-            $vResult = $vResult.'</div>';
-        $vResult = $vResult.'</body>';
+					$vResult = $vResult."</div>";
+                $vResult = $vResult."</Footer>";
+            $vResult = $vResult."</div>";
+        $vResult = $vResult."</body>";
 		
 		return $vResult;
     }

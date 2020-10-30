@@ -5,13 +5,11 @@
 	<script language="JavaScript" src="./Layout.js" runat="server"></script>
     <script language="JavaScript" src="./Custom.js" runat="server"></script>
     <script>
-		$(document).ready
-		(
-			function()
-			{
+		$(document).ready(
+			function(){
 				var vPage  = 0;
 				var vLevel = 2;
-				var vDivision = 2;
+				var vDivision = 1;
 				
 				buildLayout(vPage, vLevel, vDivision);
 				fillLayout(vPage, vLevel, vDivision);

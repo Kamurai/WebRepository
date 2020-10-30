@@ -1,26 +1,29 @@
-function buildLayout(vPage, vLevel, vDivision)
-{
+function buildLayout(vPage, vLevel, vDivision){
     //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
-function fillLayout(vPage, vLevel, vDivision)
-{
+function fillLayout(vPage, vLevel, vDivision){
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
 }
 
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project1.html\">Online Experience Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project2.html\">Game Maker Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project3.html\">Java Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project4.html\">C# Downloads</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project5.html\">C++ Downloads</a><br><br>");
+function fillNavigation(vLevel){
+	$( "#idCenterRowLeft" ).append( `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Project1.html\">Truth</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.html\">The Wrong Ninja</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.html\">Gynowars</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4.html\">Terminal World</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5.html\">Mars: Opposition</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section1/Index.html\">Antarrea</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section2/Index.html\">Renley</a></li>
+		</ul>
+	`);
+
 }
 
-function buildBody(vPage, vLevel)
-{
+function buildBody(vPage, vLevel){
     var vGeneralLayout = document.createElement("div");
     vGeneralLayout.setAttribute("id", "idGeneralLayout");
     $( "body" ).append( vGeneralLayout );
@@ -93,8 +96,7 @@ function buildBody(vPage, vLevel)
     //WebMaster();
 }
 
-function fillBody(vPage, vLevel)
-{
+function fillBody(vPage, vLevel){
     fillLogo(vLevel);
     fillNavBar(vLevel);
     

@@ -1,19 +1,21 @@
 <?php
-	function getNavigation($vLevel)
-    {
-        $vResult = '';
-		
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project1.php\'>Online Experience Downloads</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project2.php\'>Game Maker Downloads</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project3.php\'>Java Downloads</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project4.php\'>C# Downloads</a></br></br>';
-		$vResult = $vResult.'<a class=\'navlinkA\' href=\''.getPath($vLevel).'Division3/Project5.php\'>C++ Downloads</a></br></br>';
-        
+	function getNavigation($vLevel){
+        $vResult = "
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Project1.php\">Truth</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2.php\">The Wrong Ninja</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3.php\">Gynowars</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4.php\">Terminal World</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5.php\">Mars: Opposition</a></li>
+				<li><a class=\"navlinkA\" href=\"./Section1/Index.php\">Antarrea</a></li>
+				<li><a class=\"navlinkA\" href=\"./Section2/Index.php\">Renley</a></li>
+			</ul>
+		";
+
 		return $vResult;
     }
     
-    function getBody($vPage, $vLevel)
-    {
+    function getBody($vPage, $vLevel){
         $vResult = '';
 		
         $vResult = $vResult.'<body>';

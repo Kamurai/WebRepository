@@ -21,6 +21,10 @@
 			<xsl:when test="$vDivision = 1">Division1.css</xsl:when>
 			<xsl:when test="$vDivision = 2">Division2.css</xsl:when>
 			<xsl:when test="$vDivision = 3">Division3.css</xsl:when>
+			<xsl:when test="$vDivision = 4">Division4.css</xsl:when>
+			<xsl:when test="$vDivision = 5">Division5.css</xsl:when>
+			<xsl:when test="$vDivision = 6">Division6.css</xsl:when>
+			<xsl:when test="$vDivision = 7">Division7.css</xsl:when>
 			<xsl:otherwise><xsl:value-of select="$vDefault"/></xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -41,22 +45,24 @@
 			</xsl:call-template>
 		</xsl:variable>
 		
-		<div>
-			<a className='navBar' href="{$vPath}Index.xml">Home</a>
-			<a className='navBar' href="{$vPath}Division1/Index.xml">Web Programming</a>
-			<a className='navBar' href="{$vPath}Division2/Index.xml">Private Projects</a>
-			<a className='navBar' href="{$vPath}Division3/Index.xml">Downloadable Projects</a>
-		</div>
+		<ul class="navBarUl">
+			<li><a class="navBar" href="/XSLT/Index.xml">Home</a></li>
+			<li><a class="navBar" href="/XSLT/Division1/Index.xml">Board Games</a></li>
+			<li><a class="navBar" href="/XSLT/Division2/Index.xml">Digital Board Games</a></li>
+			<li><a class="navBar" href="/XSLT/Division3/Index.xml">Video Games</a></li>
+			<li><a class="navBar" href="/XSLT/Division4/Index.xml">Downloadables</a></li>
+			<li><a class="navBar" href="/XSLT/Division5/Index.xml">Database Work</a></li>
+		</ul>
 	</xsl:template>
 	
 	<xsl:template name="GetNavigationHeader">
-		<h4>
+		<h4 class="headerColorBlack">
 			Navigation
 		</h4>
 	</xsl:template>
 	
 	<xsl:template name="GetInformationHeader">
-		<h4>
+		<h4 class="headerColorBlack">
 			Information
 		</h4>
 	</xsl:template>
@@ -91,13 +97,6 @@
 		<div id='idFooterManagement'>
 			Website managed by Kamurai.
 		</div>
-	</xsl:template>
-	
-	
-	
-	<xsl:template name="Quesodilla">
-		<param name="vLevel"/>
-			Quesodillas!
 	</xsl:template>
 	
 	<xsl:template name="GetPath">

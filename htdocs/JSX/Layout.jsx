@@ -1,10 +1,11 @@
 function GetNavigation({vLevel}){
 	return (
-		<div>
-			<a className="navlinkA" href={getPath(vLevel)+"AboutUs.html"}>About Us</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Media.html"}>Media</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Minecraft.html"}>Minecraft!</a><br /><br />
-		</div>
+		<ul className="navigationUl">
+			<li><a className="navlinkA" href="./AboutUs.html">About Us</a></li>
+			<li><a className="navlinkA" href="./Media.html">Media</a></li>
+			<li><a className="navlinkA" href="./GitHubs.html">Git Hubs</a></li>
+			<li><a className="navlinkA" href="./WebApps.html">Web Apps</a></li>
+		</ul>
 	);
 }
 

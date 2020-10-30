@@ -15,34 +15,34 @@
 		Division2.css
 	<!--#elif expr="$vDivision == 3" -->
 		Division3.css
+	<!--#elif expr="$vDivision == 4" -->
+		Division4.css
+	<!--#elif expr="$vDivision == 5" -->
+		Division5.css
+	<!--#elif expr="$vDivision == 6" -->
+		Division6.css
+	<!--#elif expr="$vDivision == 7" -->
+		Division7.css
 	<!--#else -->
 		Main.css
 	<!--#endif -->
 <!--#elif expr="$vFunction == getLogo" -->
 	<img id="idLogo" src="http://htkb.dyndns.org/Pictures/logoHTKB.jpg"/><br>
 <!--#elif expr="$vFunction == getNavBar" -->
-	<a class=\"navBar\" href="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	Index.html">Home</a>
-	<a class=\"navBar\" href="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	Division1/Index.html">Web Programming</a>
-	<a class=\"navBar\" href="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	Division2/Index.html">Private Projects</a>
-	<a class=\"navBar\" href="
-	<!--#set var="vFunction" value="getPath"-->
-	<!--#include virtual="./Universal.ssi"-->
-	Division3/Index.html">Downloadable Projects</a>
+	<ul class="navBarUl">
+		<li><a class="navBar" href="/SSI/Index.html">Home</a></li>
+		<li><a class="navBar" href="/SSI/Division1/Index.html">Board Games</a></li>
+		<li><a class="navBar" href="/SSI/Division2/Index.html">Digital Board Games</a></li>
+		<li><a class="navBar" href="/SSI/Division3/Index.html">Video Games</a></li>
+		<li><a class="navBar" href="/SSI/Division4/Index.html">Downloadables</a></li>
+		<li><a class="navBar" href="/SSI/Division5/Index.html">Database Work</a></li>
+	</ul>
 <!--#elif expr="$vFunction == getNavigationHeader" -->
-	<h4>
+	<h4 class="headerColorBlack">
 		Navigation
 	</h4>
 <!--#elif expr="$vFunction == getInformationHeader" -->
-	<h4>
+	<h4 class="headerColorBlack">
 		Information
 	</h4>
 <!--#elif expr="$vFunction == getInformation" -->

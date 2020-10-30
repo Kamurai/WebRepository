@@ -19,31 +19,23 @@ print getBody($vPage, $vLevel);
 
 
 ##  gets the navigation content of the webpage
-sub getNavigation
-{
+sub getNavigation{
 	my $vLevel = $_[0];
 	my $vResult = "";
 	
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Section1/Index.shtml'>Gynowars</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project2.shtml'>Assault</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project3.shtml'>Mars</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Section4/Index.shtml'>Renley</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Section5/Index.shtml'>Antarrea</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project6.shtml'>Truth</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project7.shtml'>Kingdoms</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project8.shtml'>Terminal World</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project9.shtml'>Monster Office Workplace</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project10.shtml'>Battle Princesses</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project11.shtml'>Sacred Offerings</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project12.shtml'>The Way</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project13.shtml'>Conspiratorium</a><br><br>";
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division2/Project14.shtml'>Conversion</a><br><br>";
+	$vResult .= "
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Project1.shtml\">Kingdoms</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.shtml\">Goblins and Guardians</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.shtml\">Mega Fleets</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section1/Index.shtml\">Crash Ball</a></li>
+		</ul>
+	";
 
 	return $vResult;
 }
 
-sub getBody
-{
+sub getBody{
 	my $vPage = $_[0];
 	my $vLevel = $_[1];
 	my $vResult = "";

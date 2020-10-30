@@ -1,12 +1,14 @@
 function GetNavigation({vLevel}){
 	return (
-		<div>
-			<a className="navlinkA" href={getPath(vLevel)+"Division3/Project1.html"}>Online Experience Downloads</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Division3/Project2.html"}>Game Maker Downloads</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Division3/Project3.html"}>Java Downloads</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Division3/Project4.html"}>C# Downloads</a><br /><br />
-			<a className="navlinkA" href={getPath(vLevel)+"Division3/Project5.html"}>C++ Downloads</a><br /><br />
-		</div>
+		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Project1.html">Truth</a></li>
+			<li><a class="navlinkA" href="./Project2.html">The Wrong Ninja</a></li>
+			<li><a class="navlinkA" href="./Project3.html">Gynowars</a></li>
+			<li><a class="navlinkA" href="./Project4.html">Terminal World</a></li>
+			<li><a class="navlinkA" href="./Project5.html">Mars: Opposition</a></li>
+			<li><a class="navlinkA" href="./Section1/Index.html">Antarrea</a></li>
+			<li><a class="navlinkA" href="./Section2/Index.html">Renley</a></li>
+		</ul>
 	);
 }
 
@@ -42,6 +44,7 @@ function Layout({vPage, vLevel, vDivision}){
 			<div id="idFooterRow">
 				<div id="idFooterMain" >
 					<div id="idFooterContent" >
+						<GetGDR />
 						<GetWinRar />
 						<GetFooter />
 					</div>

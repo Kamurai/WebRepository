@@ -1,36 +1,26 @@
-function buildLayout(vPage, vLevel, vDivision)
-{
+function buildLayout(vPage, vLevel, vDivision){
     //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
-function fillLayout(vPage, vLevel, vDivision)
-{
+function fillLayout(vPage, vLevel, vDivision){
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
 }
 
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index.html\">Gynowars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2.html\">Assault</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3.html\">Mars</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index.html\">Renley</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.html\">Antarrea</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6.html\">Truth</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.html\">Kingdoms</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.html\">Terminal World</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.html\">Monster Office Workplace</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10.html\">Battle Princesses</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11.html\">Sacred Offerings</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12.html\">The Way</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13.html\">Conspiratorium</a><br><br>");
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14.html\">Conversion</a><br><br>");
+function fillNavigation(vLevel){
+	$( "#idCenterRowLeft" ).append(`
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Project1.html\">Kingdoms</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.html\">Goblins and Guardians</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.html\">Mega Fleets</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section1/Index.html\">Crash Ball</a></li>
+		</ul>
+	`);
 
 }
 
-function buildBody(vPage, vLevel)
-{
+function buildBody(vPage, vLevel){
     var vGeneralLayout = document.createElement("div");
     vGeneralLayout.setAttribute("id", "idGeneralLayout");
     $( "body" ).append( vGeneralLayout );
@@ -103,8 +93,7 @@ function buildBody(vPage, vLevel)
     //WebMaster();
 }
 
-function fillBody(vPage, vLevel)
-{
+function fillBody(vPage, vLevel){
     fillLogo(vLevel);
     fillNavBar(vLevel);
     

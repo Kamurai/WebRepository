@@ -1,31 +1,23 @@
 vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 {
-	$scope.getTitle = function()
-	{
+	$scope.getTitle = function(){
 		$scope.vResult = "";
 		$scope.vDefault = "";
 		
 		$scope.vDefault += "HTKB Home Page";
 		
 		$scope.vResult += "<title>";
-			if(vPage <= 0)
-			{
+			if(vPage <= 0){
 				$scope.vResult += $scope.vDefault;
-			}
-			else if(vPage == 1)
-			{
+			}else if(vPage == 1){
 				$scope.vResult += "About Us";
-			}
-			else if(vPage == 2)
-			{
+			}else if(vPage == 2){
 				$scope.vResult += "Media";
-			}
-			else if(vPage == 3)
-			{
-				$scope.vResult += "Minecraft!";
-			}
-			else
-			{
+			}else if(vPage == 3){
+				$scope.vResult += "Git Hubs";
+			}else if(vPage == 4){
+				$scope.vResult += "Web Apps";
+			}else{
 				$scope.vResult += $scope.vDefault;
 			}
 		$scope.vResult += "</title>";
@@ -33,32 +25,24 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getContentHeader = function()
-	{
+	$scope.getContentHeader = function(){
 		$scope.vResult = "";
 		$scope.vDefault = "";
 		
 		$scope.vDefault += "Welcome to the House That Kamurai Built!";
 			
 		$scope.vResult += "<h2>";
-			if(vPage == 0)
-			{
+			if(vPage <= 0){
 				$scope.vResult += $scope.vDefault;
-			}
-			else if(vPage == 1)
-			{
+			}else if(vPage == 1){
 				$scope.vResult += "About Us";
-			}
-			else if(vPage == 2)
-			{
+			}else if(vPage == 2){
 				$scope.vResult += "Media";
-			}
-			else if(vPage == 3)
-			{
-				$scope.vResult += "Minecraft!";
-			}
-			else
-			{
+			}else if(vPage == 3){
+				$scope.vResult += "Git Hubs";
+			}else if(vPage == 4){
+				$scope.vResult += "Web Apps";
+			}else{
 				$scope.vResult += $scope.vDefault;
 			}
 		$scope.vResult += "</h2>";
@@ -77,18 +61,13 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 		$scope.vDefault += "Increase the Awesome with us!<br>";
 	
 		$scope.vResult += "<div id='idCenterContent'>";
-			if(vPage == 0)
-			{
+			if(vPage == 0){
 				$scope.vResult += $scope.vDefault;
-			}
-			else if(vPage == 1)
-			{
+			}else if(vPage == 1)	{
 				$scope.vResult += "We are working to build this into a better place.</br>";
 				$scope.vResult += "If you found this, then you must be at least (Awesome/2).</br>";
 				$scope.vResult += "Stay tuned, right now it's all about laying foundation for the future.</br>";
-			}
-			else if(vPage == 2)
-			{
+			}else if(vPage == 2)	{
 					$scope.vResult += "You can find us at all these different places:</br>";
 				$scope.vResult += "<br/>";
 				$scope.vResult += "<br/>";
@@ -130,46 +109,11 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 					$scope.vResult += "<a href='http://www.facebook.com/cris.kamurai'>Kamurai's Facebook.</a></br>";
 					$scope.vResult += "<a href='https://www.gplus.com/Members/Cris-Kamurai'>Kamurai's Google Plus.</a></br>";
 					$scope.vResult += "<a href='http://www.yoyogames.com/users/Kamurai'>Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>";
-			}
-			else if(vPage == 3)
-			{
-				$scope.vResult += "<div align='left'>";
-					$scope.vResult += "If you would like to play Minecraft with us, then you're welcome to join us here:</br>";
-					$scope.vResult += "htkb.dyndns.org:25565</br>";
-					$scope.vResult += "The server is running Minecraft version 1.7.10.</br>";
-					$scope.vResult += "This is a list of mods that we are using on the server, compatible with 1.7.10.</br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/forge-1.7.10-10.13.2.1236-installer.jar'>Forge</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/DrZharks MoCreatures Mod v6.3.1.zip'>Dr Zhark's Mo Creatures</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/CustomMobSpawner 3.3.0.zip'>Custom Mob Spawner</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/Reis-Minimap-Mod-1.7.10.jar'>Rei's Minimap</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/[1.7.10]Gender-1.0.2.jar'>iPixeli's Gender Mod</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/BspkrsCore-1.7.10.jar'>Bspkrs Core</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/[1.7.10]Treecapitator-universal-2.0.4.jar'>Tree Capitator</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/MoarFood-5.8.0.jar'>Moar Food</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/MoarOres-2.4.5.jar'>Moar Ores</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/BiblioCraft[v1.10.4][MC1.7.10].jar'>Biblio Craft</a></br>";
-					$scope.vResult += "<a href='../Section3/Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>";
-				$scope.vResult += "</div>";
-				$scope.vResult += "<div align='left'>";
-					$scope.vResult += "For first time setups, please follow these steps to make your client compatible with the server:</br>";
-					$scope.vResult += " 0) If you don't have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>";
-					$scope.vResult += " 1) From the launcher create a new profile and change its version to 1.7.10.</br>";
-					$scope.vResult += " 2) Save the Profile, select the new profile and click play.</br>";
-					$scope.vResult += " 3) Exit the program.</br>";
-					$scope.vResult += " 4) Install Forge.  If it is not automatically selected, then browse to your .minecraft folder.</br>";
-					$scope.vResult += "	Windows: It is in a hidden folder: c:\Users\*Username*\Appdata\Roaming\.minecraft</br>";
-					$scope.vResult += "	Mac: 'Go to' ~/Library/Application Support/minecraft</br>";
-					$scope.vResult += " 5) Place the Mo Creatures, Custom Mob Spawner, iPixeli's Gender Mod, Bspkers Core, Tree Capitator, Moar Food, Moar Ores, Biblio Craft and Rei's Minimap files into .minecraft/mods.  You may have to make the mods folder.</br>";
-					$scope.vResult += " 6) Open the Minecraft Launcher, edit your 1.7.10 profile to use the forge version of 1.7.10.</br>";
-					$scope.vResult += " 7) Save the Profile, select the new profile and click play.</br>";
-					$scope.vResult += " 8) You should see the mods listed on the side of the Minecraft window.</br>";
-					$scope.vResult += " 9) Go to multiplayer and click add server.</br>";
-					$scope.vResult += "10) Name the server something distinct and put 'htkb.dyndns.org' or 'htkb.dyndns.org:25565' in the address bar.</br>";
-					$scope.vResult += "11) Save the server entry.  You should see a connection to the server.  Double click to join.</br>";
-				$scope.vResult += "</div>";
-			}
-			else
-			{
+			}else if(vPage == 3){
+				$scope.vResult += "Here are some GitHub Repositories related to this site:";
+			}else if(vPage == 4){
+				$scope.vResult += "Here are some related Web Applications:";
+			}else{
 				$scope.vResult += $scope.vDefault;
 			}
 			
@@ -178,99 +122,145 @@ vApp.controller("CustomController", ['$scope', '$sce', function ($scope, $sce)
 			return $sce.trustAsHtml($scope.vResult);
 	};
 	
-	$scope.getVersions = function()
-	{
+	$scope.getVersions = function(){
 		$scope.vResult = "";
 		$scope.vDefault = "";
 		
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org/Index.html\'>HTML</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org/Index.php\'>PHP</a><br>";
-        $scope.vDefault += "<a href=\'http://htkb.dyndns.org/Index.shtml\'>Perl</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org/SSI/Index.html\'>Apache SSI</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org/Javascript/Index.html\'>HTML Javascript</a><br>";
-        $scope.vDefault += "<a href=\'http://htkb.dyndns.org/JQuery/Index.html\'>JQuery</a><br>";
-        $scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\'>JSF</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\'>JSP</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Index\'>JSP Spring MVC</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Index.aspx\'>ASP.NET Javascript</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/ASP/Index.asp\'>ASP VBscript</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Index.cshtml\'>ASP.NET Web App</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/WebForm/Index.aspx\'>ASP.NET Webform</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:81/MVC/Index\'>ASP.NET MVC App</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:82/Index\'>Python Web.py</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:83/Index\'>Ruby on Rails</a><br>";
-		$scope.vDefault += "<a href=\'http://htkb.dyndns.org:84/Index\'>Node JS</a><br>";
+		$scope.vDefault += `
+			<li><a href=\"http://htkb.dyndns.org/Index.html\">HTML</a></li>
+			<li><a href=\"http://htkb.dyndns.org/Index.shtml\">Perl</a></li>
+			<li><a href=\"http://htkb.dyndns.org/SSI/Index.html\">Apache SSI</a></li>
+			<li><a href=\"http://htkb.dyndns.org/Javascript/Index.html\">HTML Javascript</a></li>
+			<li><a href=\"http://htkb.dyndns.org/JQuery/Index.html\">JQuery</a></li>
+			<li><a href=\"http://htkb.dyndns.org/AngularJS/Index.html\">Angular JS</a></li>
+			<li><a href=\"http://htkb.dyndns.org/JSX/Index.html\">JSX</a></li>
+			<li><a href=\"http://htkb.dyndns.org/XLST/Index.html\">XSLT</a></li>
+			<li><a href=\"http://htkb.dyndns.org:8080/JSFApplication/Index.xhtml\">JSF</a></li>
+			<li><a href=\"http://htkb.dyndns.org:8080/JSPApplication/Index.jsp\">JSP</a></li>
+			<li><a href=\"http://htkb.dyndns.org:8080/SpringMVC/Index\">JSP Spring MVC</a></li>
+			<li><a href=\"http://htkb.dyndns.org:81/ASPNET/Index.aspx\">ASP.NET Javascript</a></li>
+			<li><a href=\"http://htkb.dyndns.org:81/ASP/Index.asp\">ASP VBscript</a></li>
+			<li><a href=\"http://htkb.dyndns.org:81/WebApplication/Index.cshtml\">ASP.NET Web App</a></li>
+			<li><a href=\"http://htkb.dyndns.org:81/WebForm/Index.aspx\">ASP.NET Webform</a></li>
+			<li><a href=\"http://htkb.dyndns.org:81/MVC/Index\">ASP.NET MVC App</a></li>
+			<li><a href=\"http://htkb.dyndns.org:82/Index\">Python Web.py</a></li>
+			<li><a href=\"http://htkb.dyndns.org:83/Index\">Ruby on Rails</a></li>
+			<li><a href=\"http://htkb.dyndns.org:84/Index\">Node JS</a></li>
+			<li><a href=\"http://htkb.dyndns.org:85/Index\">Angular 2+</a></li>
+			<li><a href=\"http://htkb.dyndns.org:86/Index\">ReactJS</a></li>
+		`;
 		
-		if(vPage == 0)
-		{
+		$scope.vResult += "<ul class=\"versionsUl\">";
+		
+		if(vPage == 0){
+			$scope.vResult += $scope.vDefault;
+		}else if(vPage == 1){
+			$scope.vResult += `
+				<li><a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a></li>
+				<li><a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JQuery/AboutUs.html\">JQuery</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AngularJS/AboutUs.html\">Angular JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JSX/AboutUs.html\">JSX</a></li>
+				<li><a href=\"http://htkb.dyndns.org/XLST/AboutUs.html\">XSLT</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/SpringMVC/AboutUs\">JSP Spring MVC</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP VBscript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/MVC/AboutUs\">ASP.NET MVC App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a></li>
+				<li><a href=\"http://htkb.dyndns.org:83/AboutUs\">Ruby on Rails</a></li>
+				<li><a href=\"http://htkb.dyndns.org:84/AboutUs\">Node JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org:85/AboutUs\">Angular 2+</a></li>
+				<li><a href=\"http://htkb.dyndns.org:86/AboutUs\">ReactJS</a></li>
+			`;
+		}else if(vPage == 2){
+			$scope.vResult += `
+				<li><a href=\"http://htkb.dyndns.org/Media.html\">HTML</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Media.php\">PHP</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a></li>
+				<li><a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JQuery/Media.html\">JQuery</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AngularJS/Media.html\">Angular JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JSX/Media.html\">JSX</a></li>
+				<li><a href=\"http://htkb.dyndns.org/XLST/Media.xml\">XLST</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/SpringMVC/Media\">JSP Spring MVC</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP VBscript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/MVC/Media\">ASP.NET MVC App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a></li>
+				<li><a href=\"http://htkb.dyndns.org:83/Media\">Ruby on Rails</a></li>
+				<li><a href=\"http://htkb.dyndns.org:84/Media\">Node JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org:85/Media\">Angular 2+</a></li>
+				<li><a href=\"http://htkb.dyndns.org:86/Media\">ReactJS</a></li>
+			`;
+		}else if(vPage == 3){
+			$scope.vResult += `
+				<li><a href=\"http://htkb.dyndns.org/GitHubs.html\">HTML</a></li>
+				<li><a href=\"http://htkb.dyndns.org/GitHubs.php\">PHP</a></li>
+				<li><a href=\"http://htkb.dyndns.org/GitHubs.shtml\">Perl</a></li>
+				<li><a href=\"http://htkb.dyndns.org/SSI/GitHubs.html\">Apache SSI</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Javascript/GitHubs.html\">HTML Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JQuery/GitHubs.html\">JQuery</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AngularJS/GitHubs.html\">Angular JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JSX/GitHubs.html\">JSX</a></li>
+				<li><a href=\"http://htkb.dyndns.org/XLST/GitHubs.xml\">XLST</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSFApplication/GitHubs.xhtml\">JSF</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSPApplication/GitHubs.jsp\">JSP</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/SpringMVC/GitHubs\">JSP Spring MVC</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASPNET/GitHubs.aspx\">ASP.NET Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASP/GitHubs.asp\">ASP VBscript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebApplication/GitHubs.cshtml\">ASP.NET Web App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebForm/GitHubs.aspx\">ASP.NET Webform</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/MVC/GitHubs\">ASP.NET MVC App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:82/GitHubs\">Python Web.py</a></li>
+				<li><a href=\"http://htkb.dyndns.org:83/GitHubs\">Ruby on Rails</a></li>
+				<li><a href=\"http://htkb.dyndns.org:84/GitHubs\">Node JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org:85/GitHubs\">Angular 2+</a></li>
+				<li><a href=\"http://htkb.dyndns.org:86/GitHubs\">ReactJS</a></li>
+			`;
+		}else if(vPage == 4){
+			$scope.vResult += `
+				<li><a href=\"http://htkb.dyndns.org/WebApps.html\">HTML</a></li>
+				<li><a href=\"http://htkb.dyndns.org/WebApps.php\">PHP</a></li>
+				<li><a href=\"http://htkb.dyndns.org/WebApps.shtml\">Perl</a></li>
+				<li><a href=\"http://htkb.dyndns.org/SSI/WebApps.html\">Apache SSI</a></li>
+				<li><a href=\"http://htkb.dyndns.org/Javascript/WebApps.html\">HTML Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JQuery/WebApps.html\">JQuery</a></li>
+				<li><a href=\"http://htkb.dyndns.org/AngularJS/WebApps.html\">Angular JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org/JSX/WebApps.html\">JSX</a></li>
+				<li><a href=\"http://htkb.dyndns.org/XLST/WebApps.xml\">XLST</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSFApplication/WebApps.xhtml\">JSF</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/JSPApplication/WebApps.jsp\">JSP</a></li>
+				<li><a href=\"http://htkb.dyndns.org:8080/SpringMVC/WebApps\">JSP Spring MVC</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASPNET/WebApps.aspx\">ASP.NET Javascript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/ASP/WebApps.asp\">ASP VBscript</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebApplication/WebApps.cshtml\">ASP.NET Web App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/WebForm/WebApps.aspx\">ASP.NET Webform</a></li>
+				<li><a href=\"http://htkb.dyndns.org:81/MVC/WebApps\">ASP.NET MVC App</a></li>
+				<li><a href=\"http://htkb.dyndns.org:82/WebApps\">Python Web.py</a></li>
+				<li><a href=\"http://htkb.dyndns.org:83/WebApps\">Ruby on Rails</a></li>
+				<li><a href=\"http://htkb.dyndns.org:84/WebApps\">Node JS</a></li>
+				<li><a href=\"http://htkb.dyndns.org:85/WebApps\">Angular 2+</a></li>
+				<li><a href=\"http://htkb.dyndns.org:86/WebApps\">ReactJS</a></li>
+			`;
+		}else{
 			$scope.vResult += $scope.vDefault;
 		}
-		else if(vPage == 1)
-		{
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/AboutUs.html\'>HTML</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/AboutUs.php\'>PHP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/AboutUs.shtml\'>Perl</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/SSI/AboutUs.html\'>Apache SSI</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Javascript/AboutUs.html\'>HTML Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/AboutUs.html\'>JQuery</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\'>JSF</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/AboutUs\'>JSP Spring MVC</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\'>ASP.NET Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/AboutUs.asp\'>ASP VBscript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\'>ASP.NET Web App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\'>ASP.NET Webform</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/MVC/AboutUs\'>ASP.NET MVC App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:82/AboutUs\'>Python Web.py</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:83/AboutUs\'>Ruby on Rails</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:84/AboutUs\'>Node JS</a><br>";
-		}
-		else if(vPage == 2)
-		{
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Media.html\'>HTML</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Media.php\'>PHP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Media.shtml\'>Perl</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/SSI/Media.html\'>Apache SSI</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Javascript/Media.html\'>HTML Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/Media.html\'>JQuery</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\'>JSF</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Media\'>JSP Spring MVC</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Media.aspx\'>ASP.NET Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/Media.asp\'>ASP VBscript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Media.cshtml\'>ASP.NET Web App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebForm/Media.aspx\'>ASP.NET Webform</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/MVC/Media\'>ASP.NET MVC App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:82/Media\'>Python Web.py</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:83/Media\'>Ruby on Rails</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:84/Media\'>Node JS</a><br>";
-		}
-		else if(vPage == 3)
-		{
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Minecraft.html\'>HTML</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Minecraft.php\'>PHP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Minecraft.shtml\'>Perl</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/SSI/Minecraft.html\'>Apache SSI</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/Javascript/Minecraft.html\'>HTML Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org/JQuery/Minecraft.html\'>JQuery</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\'>JSF</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\'>JSP</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:8080/SpringMVC/Minecraft\'>JSP Spring MVC</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\'>ASP.NET Javascript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/ASP/Minecraft.asp\'>ASP VBscript</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\'>ASP.NET Web App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\'>ASP.NET Webform</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:81/MVC/Minecraft\'>ASP.NET MVC App</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:82/Minecraft\'>Python Web.py</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:83/Minecraft\'>Ruby on Rails</a><br>";
-			$scope.vResult += "<a href=\'http://htkb.dyndns.org:84/Minecraft\'>Node JS</a><br>";
-		}
-		else
-		{
-			$scope.vResult += $scope.vDefault;
-		}
+		
+		$scope.vResult += "</ul>";
 			
-			return $sce.trustAsHtml($scope.vResult);
+		return $sce.trustAsHtml($scope.vResult);
 	};
 	
 }]);

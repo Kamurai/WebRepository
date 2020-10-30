@@ -1,12 +1,11 @@
 ##  Gets the header of the webpage
-sub getHead
-{
+sub getHead{
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
 	my $vResult = "";
 	
 	$vResult .= "<head>";
-		$vResult .= "<meta http-equiv=\'Content-Type\' content=\'text/html; charset=ISO-8859-1\'>";
+		$vResult .= "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">";
 		$vResult .= getStyle($vLevel, $vDivision);
 	$vResult .= "</head>";
 	
@@ -14,8 +13,7 @@ sub getHead
 }
 
 ## Declare a link to the style sheet
-sub getStyle
-{
+sub getStyle{
 	my $vLevel = $_[0];
 	my $vDivision = $_[1];
 	my $vResult = "";
@@ -25,93 +23,92 @@ sub getStyle
 	return $vResult;
 }
 
-sub getStyleFile
-{
+sub getStyleFile{
 	my $vDivision = $_[0];
 	
 	my $vResult = "";
 	my $vDefault = "Main.css";
 	
-	if($vDivision == 0)
-	{
+	if($vDivision == 0){
 		$vResult .= $vDefault;
-	}
-	elsif($vDivision == 1)
-	{
+	}elsif($vDivision == 1){
 		$vResult .= "Division1.css";
-	}
-	elsif($vDivision == 2)
-	{
+	}elsif($vDivision == 2){
 		$vResult .= "Division2.css";
-	}
-	elsif($vDivision == 3)
-	{
+	}elsif($vDivision == 3){
 		$vResult .= "Division3.css";
-	}
-	else
-	{
+	}elsif($vDivision == 4){
+		$vResult .= "Division4.css";
+	}elsif($vDivision == 5){
+		$vResult .= "Division5.css";
+	}elsif($vDivision == 6){
+		$vResult .= "Division6.css";
+	}elsif($vDivision == 7){
+		$vResult .= "Division7.css";
+	}else{
 		$vResult .= $vDefault;
 	}
 	
 	return $vResult;
 }
 
-sub getLogo
-{
+sub getLogo{
 	##  Gets the title picture of the webpage
 
 	my $vLevel = $_[0];
 	my $vResult = "";
 
-	$vResult .= "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
+	$vResult .= "<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\"><br>";
 	
 	return $vResult;
 }
 
-sub getNavBar
-{
+sub getNavBar{
 	##  Gets the navigation bar of the webpage
 
 	my $vLevel = $_[0];
 	
 	my $vResult = "";
 
-	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Index.shtml'>Home</a>";
-	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division1/Index.shtml'>Web Programming</a>";
-	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division2/Index.shtml'>Private Projects</a>";
-	$vResult .= "<a class=\"navBar\" href='".getPath($vLevel)."Division3/Index.shtml'>Downloadable Projects</a>";
+	$vResult .= "
+		<ul class=\"navBarUl\">
+			<li><a class=\"navBar\" href=\"/Index.shtml\">Home</a></li>
+			<li><a class=\"navBar\" href=\"/Division1/Index.shtml\">Board Games</a></li>
+			<li><a class=\"navBar\" href=\"/Division2/Index.shtml\">Digital Board Games</a></li>
+			<li><a class=\"navBar\" href=\"/Division3/Index.shtml\">Video Games</a></li>
+			<li><a class=\"navBar\" href=\"/Division4/Index.shtml\">Downloadables</a></li>
+			<li><a class=\"navBar\" href=\"/Division5/Index.shtml\">Database Work</a></li>
+		</ul>
+	";
 	
 	return $vResult;
 }
 
-sub getNavigationHeader
-{
+sub getNavigationHeader{
 	##  Gets the Navigaton Header
 
 	my $vResult = "";
 
-	$vResult .= "<h4>";
+	$vResult .= "<h4 class=\"headerColorBlack\">";
 	$vResult .= "Navigation";
 	$vResult .= "</h4>";
 	
 	return $vResult;
 }
 
-sub getInformationHeader
-{
+sub getInformationHeader{
 	##  Gets the Information Header
 
 	my $vResult = "";
 
-	$vResult .= "<h4>";
+	$vResult .= "<h4 class=\"headerColorBlack\">";
 	$vResult .= "Information";
 	$vResult .= "</h4>";
 	
 	return $vResult;
 }
 
-sub getInformation
-{
+sub getInformation{
 	##  Gets the Information section of the webpage
 
 	my $vResult = "";
@@ -122,8 +119,7 @@ sub getInformation
 	return $vResult;
 }
 
-sub getGDR
-{
+sub getGDR{
 	##  Gets the footer of the webpage
 	
 	my $vResult = "";
@@ -133,8 +129,7 @@ sub getGDR
 	return $vResult;
 }
 
-sub getWinRar
-{
+sub getWinRar{
 	##  Gets the footer of the webpage
 
 	my $vResult = "";
@@ -144,8 +139,7 @@ sub getWinRar
 	return $vResult;
 }
 
-sub getFooter
-{
+sub getFooter{
 	##  Gets the footer of the webpage
 
 	my $vResult = "";
@@ -158,8 +152,7 @@ sub getFooter
 	return $vResult;
 }
 
-sub getWebMaster
-{
+sub getWebMaster{
 	##  Gets the webmaster of the webpage
 								
 	my $vResult = "";
@@ -171,8 +164,7 @@ sub getWebMaster
 	return $vResult;
 }
 
-sub getPath
-{
+sub getPath{
 	##  Gets the base path based on the level of the webpage
 
 	my $vLevel = $_[0];

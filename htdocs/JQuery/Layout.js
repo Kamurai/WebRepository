@@ -1,24 +1,25 @@
-function buildLayout(vPage, vLevel, vDivision)
-{
+function buildLayout(vPage, vLevel, vDivision){
     //buildHead(vLevel, vDivision);
     buildBody(vPage, vLevel);
 }
 
-function fillLayout(vPage, vLevel, vDivision)
-{
+function fillLayout(vPage, vLevel, vDivision){
     fillHead(vLevel, vDivision);
     fillBody(vPage, vLevel);
 }
 
-function fillNavigation(vLevel)
-{
-	$( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"AboutUs.html\">About Us</a><br/><br/>"); //move to Custom
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Media.html\">Media</a><br/><br/>"); //move to Custom
-    $( "#idCenterRowLeft" ).append( "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Minecraft.html\">Minecraft!</a><br/><br/>"); //move to Custom
+function fillNavigation(vLevel){
+	$( "#idCenterRowLeft" ).append( `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./AboutUs.html\">About Us</a></li>
+			<li><a class=\"navlinkA\" href=\"./Media.html\">Media</a></li>
+			<li><a class=\"navlinkA\" href=\"./GitHubs.html\">Git Hubs</a></li>
+			<li><a class=\"navlinkA\" href=\"./WebApps.html\">Web Apps</a></li>
+		</ul>
+	`); //move to Custom
 }
 
-function buildBody(vPage, vLevel)
-{
+function buildBody(vPage, vLevel){
     var vGeneralLayout = document.createElement("div");
     vGeneralLayout.setAttribute("id", "idGeneralLayout");
     $( "body" ).append( vGeneralLayout );
@@ -91,8 +92,7 @@ function buildBody(vPage, vLevel)
     //WebMaster();
 }
 
-function fillBody(vPage, vLevel)
-{
+function fillBody(vPage, vLevel){
     fillLogo(vLevel);
     fillNavBar(vLevel);
     

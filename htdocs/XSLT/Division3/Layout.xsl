@@ -7,13 +7,15 @@
 		<xsl:param name = "vLevel"/>
 		<xsl:variable name="vPath"><xsl:call-template name="GetPath"><xsl:with-param name="vLevel"><xsl:value-of select="$vLevel"/></xsl:with-param></xsl:call-template></xsl:variable>
 		
-		<div>
-			<a className="navlinkA" href="{$vPath}Division3/Project1.xml">Online Experience Downloads</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division3/Project2.xml">Game Maker Downloads</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division3/Project3.xml">Java Downloads</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division3/Project4.xml">C# Downloads</a><br /><br />
-			<a className="navlinkA" href="{$vPath}Division3/Project5.xml">C++ Downloads</a><br /><br />
-		</div>
+		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Project1.xml">Truth</a></li>
+			<li><a class="navlinkA" href="./Project2.xml">The Wrong Ninja</a></li>
+			<li><a class="navlinkA" href="./Project3.xml">Gynowars</a></li>
+			<li><a class="navlinkA" href="./Project4.xml">Terminal World</a></li>
+			<li><a class="navlinkA" href="./Project5.xml">Mars: Opposition</a></li>
+			<li><a class="navlinkA" href="./Section1/Index.xml">Antarrea</a></li>
+			<li><a class="navlinkA" href="./Section2/Index.xml">Renley</a></li>
+		</ul>
 	</xsl:template>
 	
 	<xsl:template match="/">
@@ -92,6 +94,7 @@
 						<div id="idFooterMain" >
 							<div id="idFooterContent" >
 								<xsl:call-template name="GetWinRar" />
+								<xsl:call-template name="GetGDR" />
 								<xsl:call-template name="GetFooter" />
 							</div>
 							<div id="idFooterManagement" >

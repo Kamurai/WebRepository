@@ -17,18 +17,39 @@ require "./Custom.pm";
 print getHead($vLevel, $vDivision);
 print getBody($vPage, $vLevel);
 
-##  Gets the navigation content of the webpage
-sub getNavigation
-{
+
+##  gets the navigation content of the webpage
+sub getNavigation{
 	my $vLevel = $_[0];
 	my $vResult = "";
+	
+	$vResult .= "
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Project1.shtml\">The Way</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.shtml\">Sacred Offerings</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.shtml\">Conversion</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4.shtml\">Conspiratorium</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5.shtml\">Monster Office Workplace</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project6.shtml\">MacCreedy's Mansion</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project7.shtml\">Dundered Acre Wood</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project8.shtml\">Conquer</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project9.shtml\">Assault</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project10.shtml\">Battle Princesses</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project11.shtml\">Armor Up</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project12.shtml\">Gynowars: Battle Arena</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project13.shtml\">Land of the Orcish Empire: Age of Magic</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project14.shtml\">Coliseum: Arena</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project15.shtml\">Nine Card</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project16.shtml\">Wars of Antarrea</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project17.shtml\">Antarrea RPG</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project18.shtml\">Super Dungeon Adventure</a></li>
+		</ul>
+	";
 
-	$vResult .= "<a class=\"navlinkA\" href='".getPath($vLevel)."Division1/Section1/Index.shtml'>Databases</a><br><br>";
 	return $vResult;
 }
 
-sub getBody
-{
+sub getBody{
 	my $vPage = $_[0];
 	my $vLevel = $_[1];
 	my $vResult = "";

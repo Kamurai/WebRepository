@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script language="JavaScript" src="../App.js" runat="server"></script>
+		<script language="JavaScript" src="../Universal.js" runat="server"></script>
+		<script language="JavaScript" src="./Layout.js" runat="server"></script>
+		<script language="JavaScript" src="./Custom.js" runat="server"></script>
+		<script language="JavaScript" runat="server">
+			{{vPage = 18;""}}
+			{{vLevel = 1;""}}
+			{{vDivision = 1;""}}
+		</script>
+		<any ng-controller="UniversalController" ng-bind-html="getHead()"></any>
+	</head>
+	<body ng-app="vApp">
+		<any ng-include src="'./Layout.html'"></any>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!--#if expr="$vFunction == getNavigation" -->
+	<ul class="navigationUl">
+		<li><a class="navlinkA" href="../Project1.html">Truth</a></li>
+		<li><a class="navlinkA" href="../Project2.html">The Wrong Ninja</a></li>
+		<li><a class="navlinkA" href="../Project3.html">Gynowars</a></li>
+		<li><a class="navlinkA" href="../Project4.html">Terminal World</a></li>
+		<li><a class="navlinkA" href="../Project5.html">Mars: Opposition</a></li>
+		<li><a class="navlinkA" href="../Section1/Index.html">Antarrea</a></li>
+		<li><a class="navlinkA" href="../Section2/Index.html">Renley</a></li>
+		<ul class="navigationUl">
+			<li><a class="navlinkB" href="./Project1.html">Warring Nations</a></li>
+			<li><a class="navlinkB" href="./Project2.html">Psychodom: The One Empire</a></li>
+		</ul>
+	</ul>
+<!--#elif expr="$vFunction == getBody" -->
+	<body>
+		<div id="idGeneralLayout">
+			<Header id="idHeaderRow">
+				<div id="idHeaderRowCenter" colspan="3">
+					<!--#set var="vFunction" value="getLogo"-->
+					<!--#include virtual="../../Universal.ssi"-->
+				</div>
+			</Header>
+			<nav id="idNavigationRow">
+				<div id="idNavigationBar" colspan="3">
+					<!--#set var="vFunction" value="getNavBar"-->
+					<!--#include virtual="../../Universal.ssi"-->
+				</div>
+			</nav>				
+			<div id="idCenterRow">
+				<div id="idCenterRowLeft">
+					<!--#set var="vFunction" value="getNavigationHeader"-->
+					<!--#include virtual="../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getNavigation"-->
+					<!--#include virtual="./Layout.ssi"-->
+				</div>
+				<div id="idCenterRowMain">
+					<!--#set var="vFunction" value="getTitle"-->
+					<!--#include virtual="./Custom.ssi"-->
+					
+					<!--#set var="vFunction" value="getContentHeader"-->
+					<!--#include virtual="./Custom.ssi"-->
+					
+					<!--#set var="vFunction" value="getContent"-->
+					<!--#include virtual="./Custom.ssi"-->
+				</div>
+				<div id="idCenterRowRight">
+					<!--#set var="vFunction" value="getInformationHeader"-->
+					<!--#include virtual="../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getInformation"-->
+					<!--#include virtual="../../Universal.ssi"-->
+					
+					<!--#set var="vFunction" value="getVersions"-->
+					<!--#include virtual="./Custom.ssi"-->
+				</div>
+			</div>
+			<Footer id="idFooterRow">
+				<div id="idFooterMain" colspan="3">
+					<!--#set var="vFunction" value="getFooter"-->
+					<!--#include virtual="../../Universal.ssi"-->
+			
+					<!--#set var="vFunction" value="getWebMaster"-->
+					<!--#include virtual="../../Universal.ssi"-->
+				</div>
+			</Footer>
+		</div>
+	</body>
+<!--#else -->
+	NOPE!
+<!--#endif -->

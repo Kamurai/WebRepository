@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="./Layout.xsl"?>
 
 <page>
-	<vDivision>2</vDivision>
-	<vLevel>2</vLevel>
 	<vPage>2</vPage>
+	<vLevel>2</vLevel>
+	<vDivision>1</vDivision>
 </page>
