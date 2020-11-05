@@ -1,27 +1,18 @@
-function getNavigation(vLevel)
-{
+function getNavigation(vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index.aspx\">Gynowars</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2.aspx\">Assault</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3.aspx\">Mars</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index.aspx\">Renley</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index.aspx\">Antarrea</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6.aspx\">Truth</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7.aspx\">Kingdoms</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8.aspx\">Terminal World</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9.aspx\">Monster Office Workplace</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10.aspx\">Battle Princesses</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11.aspx\">Sacred Offerings</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12.aspx\">The Way</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13.aspx\">Conspiratorium</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14.aspx\">Conversion</a><br><br>";
+	vResult += "<ul class=\"navigationUl\">";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Index.aspx\">Digital Board Games</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project1.aspx\">Kingdoms</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project2.aspx\">Goblins and Guardians</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project3.aspx\">Mega Fleets</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Section1/Index.aspx\">Crash Ball</a></li>";
+	vResult += "</ul>";
 	
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
-{
+function getLayout(vPage, vLevel){
     var vResult = "";
 
     vResult += "<body>";

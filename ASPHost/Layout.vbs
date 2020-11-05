@@ -1,9 +1,12 @@
 Function getNavigation(vLevel)
 	dim vResult
 	
-    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"AboutUs.asp"">About Us</a><br/><br/>"
-    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Media.asp"">Media</a><br/><br/>"
-    vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Minecraft.asp"">Minecraft!</a><br/><br/>"
+    vResult = vResult + "<ul class=""navigationUl"">"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./AboutUs.asp"">About Us</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Media.asp"">Media</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./GitHubs.asp"">Git Hubs</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./WebApps.asp"">Web Apps</a></li>"
+	vResult = vResult + "</ul>"
 	
 	getNavigation = vResult
 end Function

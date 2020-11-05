@@ -24,11 +24,12 @@ sub getNavigation{
 
 	$vResult .= "
 		<ul class=\"navigationUl\">
-			<li><a class=\"navlinkB\" href=\"./Project1.shtml\">Oracle</a></li>
-			<li><a class=\"navlinkB\" href=\"./Project2.shtml\">Derby</a></li>
-			<li><a class=\"navlinkB\" href=\"./Project3.shtml\">MySQL</a></li>
-			<li><a class=\"navlinkB\" href=\"./Project4.shtml\">SQL Server</a></li>
-			<li><a class=\"navlinkB\" href=\"./Project5.shtml\">Postgres</a></li>
+			<li><a class=\"navlinkA\" href=\"./Index.shtml\">Database Work</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project1.shtml\">Oracle</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2.shtml\">Derby</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3.shtml\">MySQL</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4.shtml\">SQL Server</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5.shtml\">Postgres</a></li>
 		</ul>
 	";
 	

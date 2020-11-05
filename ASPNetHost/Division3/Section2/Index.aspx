@@ -1,0 +1,16 @@
+<%@ Page Language="Javascript" AutoEventWireup="true" %>
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<script language="JavaScript" src="../../Universal.js" runat="server"></script>
+	<script language="JavaScript" src="./Layout.js" runat="server"></script>
+	<script language="JavaScript" src="./Custom.js" runat="server"></script>
+	<%	
+		var vPage  = 0;
+		var vLevel = 2;
+		var vDivision = 3;
+		
+		Response.Write(getHead(vLevel, vDivision));
+		Response.Write(getLayout(vPage, vLevel));
+	%>
+</html>

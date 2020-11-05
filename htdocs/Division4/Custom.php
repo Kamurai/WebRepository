@@ -68,8 +68,7 @@
 				Cube World:<t><a href=\"http://htkb.dyndns.org/Downloads/CubeSetup3.exe\">Come play Cube World!</a></br>
 				</br>
 				DirectX:<t><a href=\"http://htkb.dyndns.org/Downloads/directx_Jun2010_redist.exe\">Direct X Redistrutable</a></br>
-				DirectX \"Web\":<t><a href=\"http://htkb.dyndns.org/Downloads//dxwebsetup.exe\">Direct X Redistrutable</a></br>
-				</br>
+				DirectX \"Web\":<t><a href=\"http://htkb.dyndns.org/Downloads//dxwebsetup.exe\">Direct X Redistrutable</a>
 			";
         }else if($vPage==2){
 			$vResult = $vResult."
@@ -112,7 +111,7 @@
 					10) You should see the mods listed on the side of the Minecraft window.</br>
 					11) Go to multiplayer and click add server.</br>
 					12) Name the server something distinct and put \"htkb.dyndns.org:2556x\" in the address bar where \"x\" is the relevant port.</br>
-					13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>
+					13) Save the server entry.  You should see a connection to the server.  Double click to join.
 			";
         }else if($vPage==3){
 			$vResult = $vResult."
@@ -128,19 +127,19 @@
 				Trail of the Undead: The Way Home:<t><a href=\"http://htkb.dyndns.org/Downloads/TrailoftheUndead.exe\">An adventure of zombie killing goodness.</a></br>
 				Discovery (buggy Alpha):<t><a href=\"http://htkb.dyndns.org/Downloads/Discovery.exe\">Play a game of discovery and survival.</a></br>
 				Twisted Tactics: Version 0.1 (buggy Alpha):<t><a href=\"http://htkb.dyndns.org/Downloads/Tactical.exe\">Scrapped two player tactical system.</a></br>
-				Skitzo Burrito (Alpha): <t><a href=\"http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe\">An emotional platform survival game.</a></br>
+				Skitzo Burrito (Alpha): <t><a href=\"http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe\">An emotional platform survival game.</a>
 			";
         }else if($vPage==4){
 			$vResult = $vResult."
 				Here are Java Programs to download:</br>
 				</br>
-				Blood Bowl Manager:<t><a href=\".http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a></br>
+				Blood Bowl Manager:<t><a href=\".http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a>
 			";
         }else if($vPage==5){
             $vResult = $vResult."
 				Here are C# Programs to download:</br>
 				</br>
-				Chess Program:<t><a href=\".http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a></br>
+				Chess Program:<t><a href=\".http://htkb.dyndns.org/Downloads/pichaku.zip\">This is currently not available.</a>
 			";
         }else{
             $vResult = $vResult.$vDefault;

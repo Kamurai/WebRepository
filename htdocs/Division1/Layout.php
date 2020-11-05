@@ -2,6 +2,7 @@
 	function getNavigation($vLevel){
         $vResult = "
 			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index.php\">Board Games</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project1.php\">The Way</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project2.php\">Sacred Offerings</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project3.php\">Conversion</a></li>

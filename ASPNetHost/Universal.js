@@ -1,104 +1,99 @@
-function getHead(vLevel, vDivision)
-{
+function getHead(vLevel, vDivision){
 	var vResult = "";
 	
 	vResult += "<head>";
-		vResult += "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>";
-		vResult += "<link runat='server' rel='shortcut icon' href='"+getPath(vLevel)+"Pictures/favicon.ico')' type='image/x-icon' />";
-		vResult += "<link runat='server' rel='icon' href='"+getPath(vLevel)+"Pictures/favicon.ico' type='image/ico' />";
+		vResult += "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">";
+		vResult += "<link runat=\"server\" rel=\"shortcut icon\" href=\"/Pictures/favicon.ico\")\" type=\"image/x-icon\" />";
+		vResult += "<link runat=\"server\" rel=\"icon\" href=\"/Pictures/favicon.ico\" type=\"image/ico\" />";
 		vResult += getStyle(vLevel, vDivision);
 	vResult += "</head>";
 
 	return vResult;
 }
 
-function getStyle(vLevel, vDivision)
-{
+function getStyle(vLevel, vDivision){
 	var vResult = "";
 	
-	vResult += "<link href='http://htkb.dyndns.org/Styles/";
+	vResult += "<link href=\"http://htkb.dyndns.org/Styles/";
 	vResult += getStyleFile(vDivision);
-	vResult += "' rel='stylesheet' type='text/CSS'>";
+	vResult += "\" rel=\"stylesheet\" type=\"text/CSS\">";
 
 	return vResult;
 }
 
-function getStyleFile(vDivision)
-{
+function getStyleFile(vDivision){
 	var vResult = "";
 	var vDefault = "";
 	
 	vDefault = "Main.css";
 	
-	if(vDivision == 0)
-	{
+	if(vDivision == 0){
 		vResult += vDefault;
-	}
-	else if(vDivision == 1)
-	{
+	}else if(vDivision == 1){
 		vResult += "Division1.css";
-	}
-	else if(vDivision == 2)
-	{
+	}else if(vDivision == 2){
 		vResult += "Division2.css";
-	}
-	else if(vDivision == 3)
-	{
+	}else if(vDivision == 3){
 		vResult += "Division3.css";
-	}
-	else
-	{
+	}else if(vDivision == 4){
+		vResult += "Division4.css";
+	}else if(vDivision == 5){
+		vResult += "Division5.css";
+	}else if(vDivision == 6){
+		vResult += "Division6.css";
+	}else if(vDivision == 7){
+		vResult += "Division7.css";
+	}else{
 		vResult += vDefault;
 	}
 	
 	return vResult;
 }
 
-function getLogo(vLevel)
-{
+function getLogo(vLevel){
 	var vResult = "";
 	
-    vResult += "<img id=\"idLogo\" src='http://htkb.dyndns.org/Pictures/logoHTKB.jpg'><br>";
+    vResult += "<img id=\"idLogo\" src=\"http://htkb.dyndns.org/Pictures/logoHTKB.jpg\"><br>";
 	
 	return vResult;
 }
 
-function getNavBar(vLevel)
-{
+function getNavBar(vLevel){
 	var vResult = "";
 	
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Index.aspx'>Home</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division1/Index.aspx'>Web Programming</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division2/Index.aspx'>Private Projects</a>";
-    vResult += "<a class=\"navBar\" href='"+getPath(vLevel)+"Division3/Index.aspx'>Downloadable Projects</a>";
+    vResult += "<ul class=\"navBarUl\">";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Index.aspx\">Home</a></li>";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Division1/Index.aspx\">Board Games</a></li>";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Division2/Index.aspx\">Digital Board Games</a></li>";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Division3/Index.aspx\">Video Games</a></li>";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Division4/Index.aspx\">Downloadables</a></li>";
+		vResult += "<li><a class=\"navBar\" href=\"/ASPNET/Division5/Index.aspx\">Database Work</a></li>";
+	vResult += "</ul>";
 		
 	return vResult;
 }
 
-function getNavigationHeader()
-{
+function getNavigationHeader(){
 	var vResult = "";
 	
-    vResult += "<h4>";
+    vResult += "<h4 class=\"headerColorBlack\">";
 		vResult += "Navigation";
 	vResult += "</h4>";
 	
 	return vResult;
 }
 
-function getInformationHeader()
-{
+function getInformationHeader(){
 	var vResult = "";
 	
-    vResult += "<h4>";
+    vResult += "<h4 class=\"headerColorBlack\">";
 		vResult += "Information";
 	vResult += "</h4>";
 	
 	return vResult;
 }
 
-function getInformation()
-{
+function getInformation(){
 	var vResult = "";
 	
     vResult += "This is written with generic ASP.NET and javascript.<br><br>";
@@ -107,26 +102,23 @@ function getInformation()
 	return vResult;
 }
 
-function getGDR()
-{
+function getGDR(){
 	var vResult = "";
 	
-	vResult += "<a href='http://htkb.dyndns.org/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	vResult += "<a href=\"http://htkb.dyndns.org/downloads/GDR.zip\">You can download my Games Development Report here.</a></br>";
 	
 	return vResult;
 }
 
-function getWinRar()
-{
+function getWinRar(){
 	var vResult = "";
 	
-	vResult += "<a href='http://htkb.dyndns.org/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";	
+	vResult += "<a href=\"http://htkb.dyndns.org/downloads/wrar371.exe\">You may need WinRar to open zip files from this site.</a></br>";	
 	
 	return vResult;
 }
 
-function getFooter()
-{
+function getFooter(){
 	var vResult = "";
 	
 	vResult += "<div id=\"idFooterContent\">";
@@ -137,8 +129,7 @@ function getFooter()
 	return vResult;
 }
 
-function getWebMaster()
-{
+function getWebMaster(){
 	var vResult = "";
 	
     vResult += "<div id=\"idFooterManagement\">";
@@ -148,8 +139,7 @@ function getWebMaster()
 	return vResult;
 }
 
-function getPath(vLevel)
-{
+function getPath(vLevel){
 	var vResult = "";
 	
     if(vLevel <= 0)

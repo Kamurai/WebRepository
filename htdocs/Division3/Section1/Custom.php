@@ -62,7 +62,7 @@
 			Revolutions:  Rebellion Against the Fist 	Tactical RPG, 2nd story arc.</br>
 			Revolutions:  Return to Arms:            	Tactical RPG, 3rd story arc.</br>
 			Revoultions:  Post Wars:                  	Tactical RPG, 4th story arc.</br>
-			Avia:  Elemental Angel                       Avia: Elemental Angels: Adventure game with RPG elements.</br>
+			Avia:  Elemental Angel                       Avia: Elemental Angels: Adventure game with RPG elements.
 		";
 		
         if($vPage==0){

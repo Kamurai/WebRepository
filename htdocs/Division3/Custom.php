@@ -57,33 +57,35 @@
         $vResult = "";
         $vDefault = "";
 		
-		$vDefault = $vDefault."This section is dedicated to video game projects.";
+		$vDefault = $vDefault."
+			This section is dedicated to video game projects.
+		";
         
         if($vPage==0){
             $vResult = $vResult.$vDefault;
         }else if($vPage==1){
             $vResult = $vResult."
 				This section is dedicated to the MMO RTS project \"Truth\".<br>
-				Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>
+				Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.
 			";
         }else if($vPage==2){
             $vResult = $vResult."
-				This section is dedicated to the 2D platformer project \"The Wrong Ninja\".<br>
-				Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.<br>
+				This section is dedicated to the 2D platformer project \"The Wrong Ninja\".
 			";
         }else if($vPage==3){
             $vResult = $vResult."
-				The Gynowars RPG is a \"pokemon-like\" tactical RPG.
+				The Gynowars RPG is a \"pokemon-like\" tactical RPG.<br>
 				The protagonist uses creatures to fight battles against other creatures to progress through the storyline.
 			";
         }else if($vPage==4){
-            $vResult = $vResult."This section is dedicated to the simulation MMO centered project \"Terminal World\".<br>
-				This is a virtual environment where a zombie outbreak is about to happen.<br>
-				Can you beat the zombies?  Can you survive?<br>
+            $vResult = $vResult."
+				This section is dedicated to the simulation MMO centered project \"Terminal World\".<br>
+				This is a virtual environment where a zombie outbreak is about to happen.
+				Can you beat the zombies?  Can you survive?
 			";
         }else if($vPage==5){
             $vResult = $vResult."
-				This section is dedicated to the Mars centered project \"Opposition\".<br>
+				This section is dedicated to the Mars centered project \"Opposition\".
 			";
         }else{
             $vResult = $vResult.$vDefault;

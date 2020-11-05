@@ -2,11 +2,12 @@
 	function getNavigation($vLevel){
         $vResult = "
 			<ul class=\"navigationUl\">
-				<li><a class=\"navlinkB\" href=\"./Project1.php\">Oracle</a></li>
-				<li><a class=\"navlinkB\" href=\"./Project2.php\">Derby</a></li>
-				<li><a class=\"navlinkB\" href=\"./Project3.php\">MySQL</a></li>
-				<li><a class=\"navlinkB\" href=\"./Project4.php\">SQL Server</a></li>
-				<li><a class=\"navlinkB\" href=\"./Project5.php\">Postgres</a></li>
+				<li><a class=\"navlinkA\" href=\"./Index.php\">Database Work</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1.php\">Oracle</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2.php\">Derby</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3.php\">MySQL</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4.php\">SQL Server</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5.php\">Postgres</a></li>
 			</ul>
 		";	
         return $vResult;

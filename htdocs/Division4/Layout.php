@@ -4,6 +4,7 @@
 		
 		$vResult = "
 			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index.php\">Downloadables</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project1.php\">Cube World</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project2.php\">Minecraft</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project3.php\">Game Maker</a></li>

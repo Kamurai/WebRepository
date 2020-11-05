@@ -30,7 +30,7 @@
         $vResult = "";
         $vDefault = "";
         
-		$vDefault = $vDefault."Web Programming";
+		$vDefault = $vDefault."Database Programming";
         
         $vResult = $vResult."<h2>";
 			if($vPage==0){
@@ -57,7 +57,7 @@
         $vResult = "";
         $vDefault = "";
 		
-		$vDefault = $vDefault."This section is dedicated to Database based programming.";
+		$vDefault = $vDefault."This section is dedicated to database based programming.";
         
         if($vPage==0){
             $vResult = $vResult.$vDefault;

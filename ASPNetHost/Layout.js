@@ -1,16 +1,17 @@
-function getNavigation(vLevel)
-{
+function getNavigation(vLevel){
 	var vResult = "";
 	
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"AboutUs.aspx\">About Us</a><br/><br/>";
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Media.aspx\">Media</a><br/><br/>";
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Minecraft.aspx\">Minecraft!</a><br/><br/>";
+    vResult += "<ul class=\"navigationUl\">";
+		vResult += "<li><a class=\"navlinkA\" href=\"./AboutUs.aspx\">About Us</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Media.aspx\">Media</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./GitHubs.aspx\">Git Hubs</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./WebApps.aspx\">Web Apps</a></li>";
+	vResult += "</ul>";
 	
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
-{
+function getLayout(vPage, vLevel){
     var vResult = "";
 
     vResult += "<body>";

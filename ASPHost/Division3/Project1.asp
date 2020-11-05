@@ -10,6 +10,6 @@
 		vDivision = 3
 		
 		Response.Write( getHead(vLevel, vDivision) )
-		Response.Write( getBody(vPage, vLevel) )			
+		Response.Write( getBody(vPage, vLevel) )		
 	%>
 </html>

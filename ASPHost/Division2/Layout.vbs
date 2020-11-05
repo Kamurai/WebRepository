@@ -2,20 +2,13 @@ function getNavigation(vLevel)
 
 	dim vResult
 	
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Section1/Index.asp"">Gynowars</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project2.asp"">Assault</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project3.asp"">Mars</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Section4/Index.asp"">Renley</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Section5/Index.asp"">Antarrea</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project6.asp"">Truth</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project7.asp"">Kingdoms</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project8.asp"">Terminal World</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project9.asp"">Monster Office Workplace</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project10.asp"">Battle Princesses</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project11.asp"">Sacred Offerings</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project12.asp"">The Way</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project13.asp"">Conspiratorium</a><br><br>"
-	vResult = vResult + "<a class=""navlinkA"" href="""+getPath(vLevel)+"Division2/Project14.asp"">Conversion</a><br><br>"
+	vResult = vResult + "<ul class=""navigationUl"">"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Index.asp"">Digital Board Games</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Project1.asp"">Kingdoms</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Project2.asp"">Goblins and Guardians</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Project3.asp"">Mega Fleets</a></li>"
+		vResult = vResult + "<li><a class=""navlinkA"" href=""./Section1/Index.asp"">Crash Ball</a></li>"
+	vResult = vResult + "</ul>"
 	
 	getNavigation = vResult
 end function

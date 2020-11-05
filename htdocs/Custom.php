@@ -53,61 +53,71 @@
         $vResult = "";
         $vDefault = "";
 		
-		$vDefault = $vDefault."The House That Kamurai Built is an entertainment company with the primary focus ";
-		$vDefault = $vDefault."of increasing awesome by stimulating intelligent conversation and entertainment via discussion and ";
-		$vDefault = $vDefault."game design.<br>";
-		$vDefault = $vDefault."Increase the Awesome with us!<br>";
+		$vDefault = $vDefault."
+			The House That Kamurai Built is an entertainment company with the primary focus 
+			of increasing awesome by stimulating intelligent conversation and entertainment via discussion and 
+			game design.<br>
+			Increase the Awesome with us!<br>
+		";
 	
         if($vPage==0){
             $vResult = $vResult.$vDefault;
         }else if($vPage==1){
-            $vResult = $vResult."We are working to build this into a better place.</br>";
-            $vResult = $vResult."If you found this, then you must be at least (Awesome/2).</br>";
-            $vResult = $vResult."Stay tuned, right now it\"s all about laying foundation for the future.</br>";
+            $vResult = $vResult."
+				We are working to build this into a better place.</br>
+				If you found this, then you must be at least (Awesome/2).</br>
+				Stay tuned, right now it\"s all about laying foundation for the future.</br>
+			";
         }else if($vPage==2){
-            $vResult = $vResult."You can find us at all these different places:</br>";
-				$vResult = $vResult."<br/>";
-				$vResult = $vResult."<br/>";
-					$vResult = $vResult."#WeAreMovieClub:";
-				$vResult = $vResult."<br/>";
-				$vResult = $vResult."<br/>";
-					$vResult = $vResult."<a href=\"http://www.youtube.com/WeAreMovieClub\">Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>";
-					$vResult = $vResult."<a href=\"http://WeAreMovieClub.tumblr.com\">WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.twitter.com/WeAreMovieClub\">@WeAreMovieClub on Twitter: Let us know about your movie thoughts.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.facebook.com/WeAreMovieClub\">facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>";
-                $vResult = $vResult."<br/>";
-                $vResult = $vResult."<br/>";
-                    $vResult = $vResult."HTKB Productions";
-                $vResult = $vResult."<br/>";
-                $vResult = $vResult."<br/>";
-                    $vResult = $vResult."<a href=\"http://www.youtube.com/GamingDivision528\">Gaming Division:  A Youtube Channel for game stuff.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.youtube.com/JamOnToast528\">Jam On Toast:  A Youtube Channel for media stuff.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.ustream.tv/channel/Kamurai\">UStream:  Streams show up here too.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.firetalk.com/HTKB\">FireTalk:  Streams show up here too.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.younow.com/HTKB\">YouNow:  Streams show up here too.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.soundcloud.com/HTKB\">Sound Cloud:  Listen to our podcasts.</a></br>";
-                    $vResult = $vResult."<a href=\"http://HTKB.podbean.com/\">Pod Bean:  Listen to our podcasts.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.youtube.com/HTKB\">Youtube:  Thoughts and life discussions.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.patreon.com/HTKBProductions\">Patreon:  You can help make our dreams reality.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.facebook.com/HouseThatKamuraiBuilt\">Facebook: Talk about movie with us.</a></br>";
-                    $vResult = $vResult."<a href=\"http://HouseThatKamuraiBuilt.tumblr.com\">HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>";
-                    $vResult = $vResult."<a href=\"http://myspace.com/HouseThatKamuraiBuilt\">Myspace: Wow, there\"s even a MySpace!</a></br>";
-                $vResult = $vResult."<br/>";
-                    $vResult = $vResult."Here are some of our member\"s pages:</br>";
-                $vResult = $vResult."<br/>";
-                        $vResult = $vResult."Kamurai:";
-                $vResult = $vResult."<br/>";
-                $vResult = $vResult."<br/>";
-                    $vResult = $vResult."<a href=\"http://twitter.com/#!/Kamurai25\">Kamurai\"s Twitter.</a></br>";
-                    $vResult = $vResult."<a href=\"http://Instagram.com/Kamurai25\">Kamurai\"s Instagram.</a></br>";
-                    $vResult = $vResult."<a href=\"./.\">Kamurai\"s Snapchat: Kamurai</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.facebook.com/cris.kamurai\">Kamurai\"s Facebook.</a></br>";
-                    $vResult = $vResult."<a href=\"https://www.gplus.com/Members/Cris-Kamurai\">Kamurai\"s Google Plus.</a></br>";
-                    $vResult = $vResult."<a href=\"http://www.yoyogames.com/users/Kamurai\">Kamurai\"s YoYo Games page:  See some of the games he\"s posted.</a></br>";
+            $vResult = $vResult."
+				You can find us at all these different places:</br>
+				<br/>
+				<br/>
+					#WeAreMovieClub:
+				<br/>
+				<br/>
+					<a href=\"http://www.youtube.com/WeAreMovieClub\">Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>
+					<a href=\"http://WeAreMovieClub.tumblr.com\">WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>
+                    <a href=\"http://www.twitter.com/WeAreMovieClub\">@WeAreMovieClub on Twitter: Let us know about your movie thoughts.</a></br>
+                    <a href=\"http://www.facebook.com/WeAreMovieClub\">facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>
+                <br/>
+                <br/>
+                    HTKB Productions
+                <br/>
+                <br/>
+                    <a href=\"http://www.youtube.com/GamingDivision528\">Gaming Division:  A Youtube Channel for game stuff.</a></br>
+                    <a href=\"http://www.youtube.com/JamOnToast528\">Jam On Toast:  A Youtube Channel for media stuff.</a></br>
+                    <a href=\"http://www.ustream.tv/channel/Kamurai\">UStream:  Streams show up here too.</a></br>
+                    <a href=\"http://www.firetalk.com/HTKB\">FireTalk:  Streams show up here too.</a></br>
+                    <a href=\"http://www.younow.com/HTKB\">YouNow:  Streams show up here too.</a></br>
+                    <a href=\"http://www.soundcloud.com/HTKB\">Sound Cloud:  Listen to our podcasts.</a></br>
+                    <a href=\"http://HTKB.podbean.com/\">Pod Bean:  Listen to our podcasts.</a></br>
+                    <a href=\"http://www.youtube.com/HTKB\">Youtube:  Thoughts and life discussions.</a></br>
+                    <a href=\"http://www.patreon.com/HTKBProductions\">Patreon:  You can help make our dreams reality.</a></br>
+                    <a href=\"http://www.facebook.com/HouseThatKamuraiBuilt\">Facebook: Talk about movie with us.</a></br>
+                    <a href=\"http://HouseThatKamuraiBuilt.tumblr.com\">HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>
+                    <a href=\"http://myspace.com/HouseThatKamuraiBuilt\">Myspace: Wow, there\"s even a MySpace!</a></br>
+                <br/>
+                    Here are some of our member\"s pages:</br>
+                <br/>
+                        Kamurai:
+                <br/>
+                <br/>
+                    <a href=\"http://twitter.com/#!/Kamurai25\">Kamurai\"s Twitter.</a></br>
+                    <a href=\"http://Instagram.com/Kamurai25\">Kamurai\"s Instagram.</a></br>
+                    <a href=\"./.\">Kamurai\"s Snapchat: Kamurai</a></br>
+                    <a href=\"http://www.facebook.com/cris.kamurai\">Kamurai\"s Facebook.</a></br>
+                    <a href=\"https://www.gplus.com/Members/Cris-Kamurai\">Kamurai\"s Google Plus.</a></br>
+                    <a href=\"http://www.yoyogames.com/users/Kamurai\">Kamurai\"s YoYo Games page:  See some of the games he\"s posted.</a></br>
+			";
         }else if($vPage==3){
-			$vResult = $vResult."Here are some GitHub Repositories related to this site:";
+			$vResult = $vResult."
+				Here are some GitHub Repositories related to this site:
+			";
         }else if($vPage==4){
-			$vResult = $vResult."Here are some related Web Applications:";
+			$vResult = $vResult."
+				Here are some related Web Applications:
+			";
         }else{
             $vResult = $vResult.$vDefault;
         }

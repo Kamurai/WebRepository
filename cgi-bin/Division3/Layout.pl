@@ -25,6 +25,7 @@ sub getNavigation{
 	
 	$vResult .= "
 		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Index.shtml\">Video Games</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project1.shtml\">Truth</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project2.shtml\">The Wrong Ninja</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project3.shtml\">Gynowars</a></li>

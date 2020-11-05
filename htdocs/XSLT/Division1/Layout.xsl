@@ -8,6 +8,7 @@
 		<xsl:variable name="vPath"><xsl:call-template name="GetPath"><xsl:with-param name="vLevel"><xsl:value-of select="$vLevel"/></xsl:with-param></xsl:call-template></xsl:variable>
 		
 		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Index.xml">Board Games</a></li>
 			<li><a class="navlinkA" href="./Project1.xml">The Way</a></li>
 			<li><a class="navlinkA" href="./Project2.xml">Sacred Offerings</a></li>
 			<li><a class="navlinkA" href="./Project3.xml">Conversion</a></li>

@@ -3,6 +3,7 @@ function getNavigation(vLevel){
 	
 	vResult += `
 		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Index.html\">Video Games</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project1.html\">Truth</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project2.html\">The Wrong Ninja</a></li>
 			<li><a class=\"navlinkA\" href=\"./Project3.html\">Gynowars</a></li>

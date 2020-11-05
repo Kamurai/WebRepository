@@ -13,7 +13,7 @@
 			}else if($vPage==2){
 				$vResult = $vResult."Goblins and Guardians";
 			}else if($vPage==3){
-				$vResult = $vResult."MegaFleets";
+				$vResult = $vResult."Mega Fleets";
 			}else{
 				$vResult = $vResult.$vDefault;
 			}
@@ -36,7 +36,7 @@
 			}else if($vPage==2){
 				$vResult = $vResult."Goblins and Guardians";
 			}else if($vPage==3){
-				$vResult = $vResult."MegaFleets";
+				$vResult = $vResult."Mega Fleets";
 			}else{
 				$vResult = $vResult.$vDefault;
 			}
@@ -58,12 +58,12 @@
         }else if($vPage==1){
             $vResult = $vResult."
 				This section is dedicated to the digital board game project Kingdoms.<br>
-				Explore the world\"s Kingdoms, get rich, get strong and conquer.<br>
+				Explore the world's Kingdoms, get rich, get strong and conquer.
 			";
         }else if($vPage==2){
             $vResult = $vResult."
 				This section is dedicated to the board game project \"Goblins and Guardians\".<br/>
-				Goblins and Guardians battle it out in a labrynth of a building.<br>
+				Goblins and Guardians battle it out in a labrynth of a building.
 			";
 		}else if($vPage==3){
             $vResult = $vResult."

@@ -1,6 +1,7 @@
 function GetNavigation({vLevel}){
 	return (
 		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Index.html">Downloadables</a></li>
 			<li><a class="navlinkA" href="./Project1.html">Cube World</a></li>
 			<li><a class="navlinkA" href="./Project2.html">Minecraft</a></li>
 			<li><a class="navlinkA" href="./Project3.html">Game Maker</a></li>

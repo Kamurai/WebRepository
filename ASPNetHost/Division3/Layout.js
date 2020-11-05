@@ -1,18 +1,21 @@
-function getNavigation(vLevel)
-{
+function getNavigation(vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project1.aspx\">Online Experience Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project2.aspx\">Game Maker Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project3.aspx\">Java Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project4.aspx\">C# Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project5.aspx\">C++ Downloads</a><br><br>";
+	vResult += "<ul class=\"navigationUl\">";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Index.aspx\">Video Games</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project1.aspx\">Truth</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project2.aspx\">The Wrong Ninja</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project3.aspx\">Gynowars</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project4.aspx\">Terminal World</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Project5.aspx\">Mars: Opposition</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Section1/Index.aspx\">Antarrea</a></li>";
+		vResult += "<li><a class=\"navlinkA\" href=\"./Section2/Index.aspx\">Renley</a></li>";
+	vResult += "</ul>";
 	
 	return vResult;
 }
 
-function getLayout(vPage, vLevel)
-{
+function getLayout(vPage, vLevel){
     var vResult = "";
 
     vResult += "<body>";

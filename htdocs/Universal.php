@@ -134,9 +134,11 @@
     function getWebMaster(){
         $vResult = "";
 
-		$vResult = $vResult."<div id=\"idFooterManagement\">";
-        $vResult = $vResult."Website managed by Kamurai.";
-        $vResult = $vResult."</div>";
+		$vResult = $vResult."
+			<div id=\"idFooterManagement\">
+				Website managed by Kamurai.
+			</div>
+		";
         
         return $vResult;
     }

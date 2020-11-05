@@ -1,6 +1,7 @@
 function GetNavigation({vLevel}){
 	return (
 		<ul class="navigationUl">
+			<li><a class="navlinkA" href="./Index.html">Digital Board Games</a></li>
 			<li><a class="navlinkA" href="./Project1.html">Kingdoms</a></li>
 			<li><a class="navlinkA" href="./Project2.html">Goblins and Guardians</a></li>
 			<li><a class="navlinkA" href="./Project3.html">Mega Fleets</a></li>

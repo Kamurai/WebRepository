@@ -109,82 +109,84 @@
         $vResult = "";
         $vDefault = "";
 		
-		$vDefault = $vDefault."This section is dedicated to board game projects.";
+		$vDefault = $vDefault."
+			This section is dedicated to board game projects.
+		";
         
         if($vPage==0){
             $vResult = $vResult.$vDefault;
         }else if($vPage==1){
 			$vResult = $vResult."
 				This section is dedicated to the card game project \"The Way\".<br/>
-				You seek to find enlightment by contemplating the elements.<br>
-				Escape the binds of the world and the board to reach enlightment and win.<br>
-				</br>
+				You seek to find enlightment by contemplating the elements.<br/>
+				Escape the binds of the world and the board to reach enlightment and win.<br/>
+				<br/>
 				You can download the Tabletop Simulator mod here:
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=652925835\">Steam Workshop</a>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				The Way Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/The_Way_Game_Ruleset.pdf\">Download here.</a>
 			";
         }else if($vPage==2){
             $vResult = $vResult."
 				This section is dedicated to the board game project \"Sacred Offerings\".<br/>
-				Being a god is hard, you have to eat, but don\"t want to fall out favor with the people more than the other deities.<br>
-				Draw people to worship you, but be discerning about who is sacrificed.<br>
-				</br>
+				Being a god is hard, you have to eat, but don\"t want to fall out favor with the people more than the other deities.<br/>
+				Draw people to worship you, but be discerning about who is sacrificed.<br/>
+				<br/>
 				You can download the Tabletop Simulator mod here:
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=652957007\">Steam Workshop</a>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				Sacred Offerings Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Sacred_Offerings_Game_Ruleset.pdf\">Download here.</a>
 			";
         }else if($vPage==3){
             $vResult = $vResult."
 				This section is dedicated to the board game project \"Conversion\".<br/>
-				Compete on the elemental market by processing elements and becoming the elemental kingpin.<br>
-				</br>
+				Compete on the elemental market by processing elements and becoming the elemental kingpin.<br/>
+				<br/>
 				You can download the Tabletop Simulator mod here:
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=658966981\">Steam Workshop</a>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				Conversion Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Conversion_Game_Ruleset.pdf\">Download here.</a>
 			";
         }else if($vPage==4){
             $vResult = $vResult."
 				This section is dedicated to the board game project \"Conspiratorium\".<br/>
-				A game of assassins and CIA, you must remember who is friend and who is not.<br>
-				</br>
+				A game of assassins and CIA, you must remember who is friend and who is not.<br/>
+				<br/>
 				You can download the Tabletop Simulator mod here:
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=656617895\">Steam Workshop</a>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				Conspiratorium Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Conspiratorium_Game_Ruleset.pdf\">Download here.</a>
 			";
         }else if($vPage==5){
         	$vResult = $vResult."
-				This section is dedicated to the card and board game project \"Monster Office Workplace\".<br>
+				This section is dedicated to the card and board game project \"Monster Office Workplace\".<br/>
 				These monsters mean serious business.<br/>
 				Can you earn the most credit and smooze your way into a promotion?<br/>
-				</br>
+				<br/>
 				You can download the Tabletop Simulator mod here:<br/>
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=691344800\">Steam Workshop</a><br/>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				Monster Office Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Monster_Office_Workplace_Game_Ruleset.pdf\">Download here.</a>
 			";
         }else if($vPage==6){
         	$vResult = $vResult."
 				This section is dedicated to the board game project \"MacCreedy's Mansion\".<br />
-				Players compete in this worker placement to restore the great MacCreedy Mansion.<br />
+				Players compete in this worker placement to restore the great MacCreedy Mansion.
 			";
 		}else if($vPage==7){
         	$vResult = $vResult."
 				This section is dedicated to the board game project \"Dundered Acre Woods\".<br />
-				Animals prepare for the next Winter despite distractions in this dice draft and placement game.<br />
+				Animals prepare for the next Winter despite distractions in this dice draft and placement game.
 			";
 		}else if($vPage==8){
             $vResult = $vResult."
@@ -197,14 +199,14 @@
 			";
         }else if($vPage==10){
             $vResult = $vResult."
-				This section is dedicated to the card game project \"Battle Princesses\".<br>
-				Ever wanted to see your favorite princess battle for the kingdom?<br>
-				These princess aren\"t your helpless maidens, but valiant warriors themselves.<br>
-				</br>
+				This section is dedicated to the card game project \"Battle Princesses\".<br/>
+				Ever wanted to see your favorite princess battle for the kingdom?<br/>
+				These princess aren\"t your helpless maidens, but valiant warriors themselves.<br/>
+				<br/>
 				You can download the Tabletop Simulator mod here:
 				<a href=\"http://steamcommunity.com/sharedfiles/filedetails/?id=1206167982\">Steam Workshop</a>
-				</br>
-				</br>
+				<br/>
+				<br/>
 				Battle Princesses Ruleset v0.1<br/>
 				<a href=\"http://htkb.dyndns.org/Downloads/Game_Rules/HTKB_SGS/Battle_Princesses_Game_Ruleset.pdf\">Download here.</a>
 			";
@@ -222,7 +224,7 @@
 		}else if($vPage==13){
         	$vResult = $vResult."
 				\"Land of the Orcish Empire: Age of Magic\" is a CCG based on the different factions that 
-				comprise the Grendol Empire.<br />
+				comprise the Grendol Empire.
 			";
 		}else if($vPage==14){
         	$vResult = $vResult."

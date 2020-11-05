@@ -4,6 +4,7 @@ vApp.controller("LayoutController", ['$scope', '$sce', function ($scope, $sce){
 		
 		$scope.vResult += `
 			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index.html\">Board Games</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project1.html\">The Way</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project2.html\">Sacred Offerings</a></li>
 				<li><a class=\"navlinkA\" href=\"./Project3.html\">Conversion</a></li>
