@@ -53,6 +53,7 @@
                 $vResult = $vResult."</div>";
                 $vResult = $vResult."<Footer id=\"idFooterRow\">";
                     $vResult = $vResult."<div id=\"idFooterMain\">";
+                        $vResult = $vResult.getWinRAR();
                         $vResult = $vResult.getFooter();
                         $vResult = $vResult.getWebMaster();
 					$vResult = $vResult."</div>";

@@ -460,7 +460,7 @@
 		$vResult = $vResult."<ul class=\"versionsUl\">";
 		
         if($vPage==0){
-            $vResult = $vDefault;
+            $vResult = $vResult.$vDefault;
         }else if($vPage==1){
 			$vResult = $vResult."
 				<li><a href=\"http://htkb.dyndns.org/Division5/Project1.html\">HTML</a></li>

@@ -78,9 +78,11 @@
     function getNavigationHeader(){
         $vResult = "";
 
-		$vResult = $vResult."<h4 class=\"headerColorBlack\">";
-        $vResult = $vResult."Navigation";
-        $vResult = $vResult."</h4>";
+		$vResult = $vResult."
+			<h4 class=\"headerColorBlack\">
+				Navigation
+			</h4>
+		";
         
         return $vResult;
     }
@@ -88,9 +90,11 @@
     function getInformationHeader(){
         $vResult = "";
 
-		$vResult = $vResult."<h4 class=\"headerColorBlack\">";
-        $vResult = $vResult."Information";
-        $vResult = $vResult."</h4>";
+		$vResult = $vResult."
+			<h4 class=\"headerColorBlack\">
+				Information
+			</h4>
+		";
         
         return $vResult;
     }
@@ -115,7 +119,7 @@
     function getWinRar(){
         $vResult = "";
 
-		$vResult = $vResult."<a href=\"../Downloads/wrar371.exe\">You may need WinRar to open zip files from this site.</a></br>";
+		$vResult = $vResult."<a href=\"../Downloads/WinRAR.exe\">You may need WinRar to open zip files from this site.</a></br>";
         
         return $vResult;
     }
