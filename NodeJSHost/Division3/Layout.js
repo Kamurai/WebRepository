@@ -1,21 +1,26 @@
 var vUniversal = require('../Universal');
 var vCustom = require('./Custom');
 
-getNavigation = function (vLevel)
-{
+getNavigation = function (vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project1\">Online Experience Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project2\">Game Maker Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project3\">Java Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project4\">C# Downloads</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division3/Project5\">C++ Downloads</a><br><br>";
+	vResult += `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Index\">Video Games</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project1\">Truth</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2\">The Wrong Ninja</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3\">Gynowars</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4\">Terminal World</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5\">Mars: Opposition</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section1/Index\">Antarrea</a></li>
+			<li><a class=\"navlinkA\" href=\"./Section2/Index\">Renley</a></li>
+		</ul>
+	`;
     
 	return vResult;
 }
 
-exports.getBody = function (vPage, vLevel)
-{
+exports.getBody = function (vPage, vLevel){
     var vResult = "";
         
         vResult += "<body>";
@@ -48,6 +53,12 @@ exports.getBody = function (vPage, vLevel)
 				vResult += "</div>";
 				vResult += "<Footer id=\"idFooterRow\">";
 					vResult += "<div id=\"idFooterMain\" colspan=\"3\">";
+						vResult += "<div>";
+							vResult += vUniversal.getGDR();
+						vResult += "</div>";
+						vResult += "<div>";
+							vResult += vUniversal.getWinRAR();
+						vResult += "</div>";
 						vResult += vUniversal.getFooter();
 						vResult += vUniversal.getWebMaster();
 					vResult += "</div>";
@@ -57,4 +68,3 @@ exports.getBody = function (vPage, vLevel)
     
 	return vResult;
 }
-

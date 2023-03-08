@@ -1,22 +1,24 @@
-var vUniversal = require('../../Universal');
+var vUniversal = require('../Universal');
 var vCustom = require('./Custom');
 
-getNavigation = function (vLevel)
-{
+getNavigation = function (vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section1/Index\">Databases</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project1\">Oracle</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project2\">Derby</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project3\">MySQL</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project4\">SQL Server</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division1/Section1/Project5\">Postgres</a><br><br>";
+	vResult += `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Index\">Database Work</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project1\">Oracle</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2\">Derby</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3\">MySQL</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4\">SQL Server</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5\">Postgres</a></li>
+		</ul>
+	`;
 	
 	return vResult;
 }
 
-exports.getBody = function (vPage, vLevel)
-{
+exports.getBody = function (vPage, vLevel){
     var vResult = "";
         
         vResult += "<body>";

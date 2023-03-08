@@ -1,17 +1,37 @@
 var vUniversal = require('../Universal');
 var vCustom = require('./Custom');
 
-getNavigation = function (vLevel)
-{
+getNavigation = function (vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division1/Section1/Index\">Databases</a><br><br>";
-	
+	vResult += `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./Index\">Board Games</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project1\">The Way</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2\">Sacred Offerings</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3\">Conversion</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4\">Conspiratorium</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5\">Monster Office Workplace</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project6\">MacCreedy's Mansion</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project7\">Dundered Acre Wood</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project8\">Conquer</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project9\">Assault</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project10\">Battle Princesses</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project11\">Armor Up</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project12\">Gynowars: Battle Arena</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project13\">Land of the Orcish Empire: Age of Magic</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project14\">Coliseum: Arena</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project15\">Nine Card</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project16\">Wars of Antarrea</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project17\">Antarrea RPG</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project18\">Super Dungeon Adventure</a></li>
+		</ul>
+	`;
+    
 	return vResult;
 }
 
-exports.getBody = function (vPage, vLevel)
-{
+exports.getBody = function (vPage, vLevel){
     var vResult = "";
         
         vResult += "<body>";
@@ -44,6 +64,12 @@ exports.getBody = function (vPage, vLevel)
 				vResult += "</div>";
 				vResult += "<Footer id=\"idFooterRow\">";
 					vResult += "<div id=\"idFooterMain\" colspan=\"3\">";
+						vResult += "<div>";
+							vResult += vUniversal.getGDR();
+						vResult += "</div>";
+						vResult += "<div>";
+							vResult += vUniversal.getWinRAR();
+						vResult += "</div>";
 						vResult += vUniversal.getFooter();
 						vResult += vUniversal.getWebMaster();
 					vResult += "</div>";
@@ -53,4 +79,3 @@ exports.getBody = function (vPage, vLevel)
     
 	return vResult;
 }
-

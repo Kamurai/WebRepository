@@ -1,18 +1,29 @@
-var vUniversal = require('./Universal');
+var vUniversal = require('../../Universal');
 var vCustom = require('./Custom');
 
 getNavigation = function (vLevel){
-    var vResult = "";
+	var vResult = "";
 	
 	vResult += `
 		<ul class=\"navigationUl\">
-			<li><a class=\"navlinkA\" href=\"./AboutUs\">About Us</a></li>
-			<li><a class=\"navlinkA\" href=\"./Media\">Media</a></li>
-			<li><a class=\"navlinkA\" href=\"./GitHubs\">Git Hubs</a></li>
-			<li><a class=\"navlinkA\" href=\"./WebApps\">Web Apps</a></li>
+			<li><a class=\"navlinkA\" href=\"../Index\">Video Games</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project1\">Truth</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project2\">The Wrong Ninja</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project3\">Gynowars</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project4\">Terminal World</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project5\">Mars: Opposition</a></li>
+			<li><a class=\"navlinkA\" href=\"../Section1/Index\">Antarrea</a></li>
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkB\" href=\"./Project1\">Revolutions: Invading Nations</a></li>
+				<li><a class=\"navlinkB\" href=\"./Project2\">Revolutions: Rebellion Against the Fist</a></li>
+				<li><a class=\"navlinkB\" href=\"./Project3\">Revolutions: Return to Arms</a></li>
+				<li><a class=\"navlinkB\" href=\"./Project4\">Revolutions: Post Wars</a></li>
+				<li><a class=\"navlinkB\" href=\"./Project5\">Avia:Elemental Angels</a></li>
+			</ul>
+			<li><a class=\"navlinkA\" href=\"../Section2/Index\">Renley</a></li>
 		</ul>
 	`;
-
+	
     return vResult;
 }
 
@@ -49,6 +60,12 @@ exports.getBody = function (vPage, vLevel){
 				vResult += "</div>";
 				vResult += "<Footer id=\"idFooterRow\">";
 					vResult += "<div id=\"idFooterMain\" colspan=\"3\">";
+						vResult += "<div>";
+							vResult += vUniversal.getGDR();
+						vResult += "</div>";
+						vResult += "<div>";
+							vResult += vUniversal.getWinRAR();
+						vResult += "</div>";
 						vResult += vUniversal.getFooter();
 						vResult += vUniversal.getWebMaster();
 					vResult += "</div>";

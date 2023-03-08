@@ -1,36 +1,27 @@
 var vUniversal = require('../../Universal');
 var vCustom = require('./Custom');
 
-getNavigation = function (vLevel)
-{
+getNavigation = function (vLevel){
 	var vResult = "";
 	
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section1/Index\">Gynowars</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project1\">Gynowars RPG</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project2\">Gynowars: Battle Arena CCG</a><br><br>";
-		vResult += "<a class=\"navlinkB\" href=\""+getPath(vLevel)+"Division2/Section1/Project3\">Gynowars: Crash Ball</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project2\">Assault</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project3\">Mars</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section4/Index\">Renley</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Section5/Index\">Antarrea</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project6\">Truth</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project7\">Kingdoms</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project8\">Terminal World</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project9\">Monster Office Workplace</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project10\">Battle Princesses</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project11\">Sacred Offerings</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project12\">The Way</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project13\">Conspiratorium</a><br><br>";
-	vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project14\">Conversion</a><br><br>";
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project15\">Conquer</a><br><br>";
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project16\">Armor Up!</a><br><br>";
-    vResult += "<a class=\"navlinkA\" href=\""+getPath(vLevel)+"Division2/Project17\">Goblins and Guardians</a><br><br>";
+	vResult += `
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"../Index\">Digital Board Games</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project1\">Kingdoms</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project2\">Goblins and Guardians</a></li>
+			<li><a class=\"navlinkA\" href=\"../Project3\">Mega Fleets</a></li>
+			<li><a class=\"navlinkA\" href=\"../Section1/Index\">Crash Ball</a></li>
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkB\" href=\"./Project1\">Antarrea: Crash Ball</a></li>
+				<li><a class=\"navlinkB\" href=\"./Project2\">Gynowars: Crash Ball</a></li>
+			</ul>
+		</ul>
+	`;
 	
     return vResult;
 }
 
-exports.getBody = function (vPage, vLevel)
-{
+exports.getBody = function (vPage, vLevel){
     var vResult = "";
         
         vResult += "<body>";
@@ -63,6 +54,12 @@ exports.getBody = function (vPage, vLevel)
 				vResult += "</div>";
 				vResult += "<Footer id=\"idFooterRow\">";
 					vResult += "<div id=\"idFooterMain\" colspan=\"3\">";
+						vResult += "<div>";
+							vResult += vUniversal.getGDR();
+						vResult += "</div>";
+						vResult += "<div>";
+							vResult += vUniversal.getWinRAR();
+						vResult += "</div>";
 						vResult += vUniversal.getFooter();
 						vResult += vUniversal.getWebMaster();
 					vResult += "</div>";

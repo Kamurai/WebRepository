@@ -1,19 +1,21 @@
-var vUniversal = require('./Universal');
+var vUniversal = require('../Universal');
 var vCustom = require('./Custom');
 
 getNavigation = function (vLevel){
-    var vResult = "";
+	var vResult = "";
 	
 	vResult += `
 		<ul class=\"navigationUl\">
-			<li><a class=\"navlinkA\" href=\"./AboutUs\">About Us</a></li>
-			<li><a class=\"navlinkA\" href=\"./Media\">Media</a></li>
-			<li><a class=\"navlinkA\" href=\"./GitHubs\">Git Hubs</a></li>
-			<li><a class=\"navlinkA\" href=\"./WebApps\">Web Apps</a></li>
+			<li><a class=\"navlinkA\" href=\"./Index\">Downloadables</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project1\">Cube World</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project2\">Minecraft</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project3\">Game Maker</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project4\">Java</a></li>
+			<li><a class=\"navlinkA\" href=\"./Project5\">C#</a></li>
 		</ul>
 	`;
-
-    return vResult;
+    
+	return vResult;
 }
 
 exports.getBody = function (vPage, vLevel){
@@ -49,6 +51,9 @@ exports.getBody = function (vPage, vLevel){
 				vResult += "</div>";
 				vResult += "<Footer id=\"idFooterRow\">";
 					vResult += "<div id=\"idFooterMain\" colspan=\"3\">";
+						vResult += "<div>";
+							vResult += vUniversal.getWinRAR();
+						vResult += "</div>";
 						vResult += vUniversal.getFooter();
 						vResult += vUniversal.getWebMaster();
 					vResult += "</div>";
@@ -58,3 +63,4 @@ exports.getBody = function (vPage, vLevel){
     
 	return vResult;
 }
+
