@@ -1,207 +1,138 @@
 def getNavigation(vKey):
-	vResult = ''
-	vDefault = ''
+	vResult = ""
+	vDefault = ""
 	
-	vDefault += '<a class=\'navlinkA\' href=\'/AboutUs\'>About Us</a></br></br>'
-	vDefault += '<a class=\'navlinkA\' href=\'/Media\'>Media</a></br></br>'
-	vDefault += '<a class=\'navlinkA\' href=\'/Minecraft\'>Minecraft!</a></br></br>'
+	vDefault += """
+		<ul class=\"navigationUl\">
+			<li><a class=\"navlinkA\" href=\"./AboutUs\">About Us</a></li>
+			<li><a class=\"navlinkA\" href=\"./Media\">Media</a></li>
+			<li><a class=\"navlinkA\" href=\"./GitHubs\">Git Hubs</a></li>
+			<li><a class=\"navlinkA\" href=\"./WebApps\">Web Apps</a></li>
+		</ul>
+	"""
 		
-	if vKey == '0':
+	if vKey == "0":
 		vResult += vDefault
-	elif vKey == '1':
-		vResult += '<a class=\'navlinkA\' href=\'/Division1/Section1/Index\'>Databases</a></br></br>'
-	elif vKey == '1_1':
-		vResult += '<a class=\'navlinkA\' href=\'/Division1/Section1/Index\'>Databases</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division1/Section1/Project1\'>Oracle</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division1/Section1/Project2\'>Derby</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division1/Section1/Project3\'>MySQL</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division1/Section1/Project4\'>SQL Server</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division1/Section1/Project5\'>Postgres</a></br></br>'
-	elif vKey == '2':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_1':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section1/Project1\'>Gynowars RPG</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section1/Project2\'>Gynowars: Battle Arena CCG</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section1/Project3\'>Gynowars: Crash Ball</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_4':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section4/Project1\'>Warring Nations</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section4/Project2\'>Psychodom: The One Empire</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_5':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section1/Index\'>Global</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section2/Index\'>Grendol</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section3/Index\'>Utopia</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section4/Index\'>Elvia</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_5_1':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section1/Index\'>Global</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project1\'>Team Tactial: Crash Ball</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project2\'>Wars of Antarrea</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project3\'>Revolutions: Invading Nations:</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project4\'>Revolutions: Rebellion Against the Fist</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project5\'>Revolutions: Return to Arms</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section1/Project6\'>Revolutions: Post Wars</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section2/Index\'>Grendol</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section3/Index\'>Utopia</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section4/Index\'>Elvia</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_5_2':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section1/Index\'>Global</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section2/Index\'>Grendol</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section2/Project1\'>Land of the Orcish Empire: Age of Magic</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section2/Project2\'>Coliseum: Arena</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section3/Index\'>Utopia</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section4/Index\'>Elvia</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_5_3':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section1/Index\'>Global</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section2/Index\'>Grendol</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section3/Index\'>Utopia</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section3/Project1\'>Avia:Elemental Angels</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section4/Index\'>Elvia</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '2_5_4':
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section1/Index\'>Gynowars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project2\'>Assault</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project3\'>Mars</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section4/Index\'>Renley</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Section5/Index\'>Antarrea</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section1/Index\'>Global</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section2/Index\'>Grendol</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section3/Index\'>Utopia</a></br></br>'
-		vResult += '	<a class=\'navlinkB\' href=\'/Division2/Section5/Section4/Index\'>Elvia</a></br></br>'
-		vResult += '		<a class=\'navlinkC\' href=\'/Division2/Section5/Section4/Project1\'>Nine Card</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project6\'>Truth</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project7\'>Kingdoms</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project8\'>Terminal World</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project9\'>Monster Office Workplace</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project10\'>Battle Princesses</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project11\'>Sacred Offerings</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project12\'>The Way</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project13\'>Conspiratorium</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project14\'>Conversion</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project15\'>Conquer</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project16\'>Armor Up!</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division2/Project17\'>Goblins and Guardians</a></br></br>'
-	elif vKey == '3':
-		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project1\'>Online Experience Downloads</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project2\'>Game Maker Downloads</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project3\'>Java Downloads</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project4\'>C# Downloads</a></br></br>'
-		vResult += '<a class=\'navlinkA\' href=\'/Division3/Project5\'>C++ Downloads</a></br></br>'
+	elif vKey == "1":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index\">Board Games</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1\">The Way</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2\">Sacred Offerings</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3\">Conversion</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4\">Conspiratorium</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5\">Monster Office Workplace</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project6\">MacCreedy's Mansion</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project7\">Dundered Acre Wood</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project8\">Conquer</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project9\">Assault</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project10\">Battle Princesses</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project11\">Armor Up</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project12\">Gynowars: Battle Arena</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project13\">Land of the Orcish Empire: Age of Magic</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project14\">Coliseum: Arena</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project15\">Nine Card</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project16\">Wars of Antarrea</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project17\">Antarrea RPG</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project18\">Super Dungeon Adventure</a></li>
+			</ul>
+		"""
+	elif vKey == "2":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index\">Digital Board Games</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1\">Kingdoms</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2\">Goblins and Guardians</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3\">Mega Fleets</a></li>
+				<li><a class=\"navlinkA\" href=\"./Section1/Index\">Crash Ball</a></li>
+			</ul>
+		"""
+	elif vKey == "2_1":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"../Index\">Digital Board Games</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project1\">Kingdoms</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project2\">Goblins and Guardians</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project3\">Mega Fleets</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section1/Index\">Crash Ball</a></li>
+				<ul class=\"navigationUl\">
+					<li><a class=\"navlinkB\" href=\"./Project1\">Antarrea: Crash Ball</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project2\">Gynowars: Crash Ball</a></li>
+				</ul>
+			</ul>
+		"""
+	elif vKey == "3":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index\">Video Games</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1\">Truth</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2\">The Wrong Ninja</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3\">Gynowars</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4\">Terminal World</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5\">Mars: Opposition</a></li>
+				<li><a class=\"navlinkA\" href=\"./Section1/Index\">Antarrea</a></li>
+				<li><a class=\"navlinkA\" href=\"./Section2/Index\">Renley</a></li>
+			</ul>
+		"""
+	elif vKey == "3_1":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"../Index\">Video Games</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project1\">Truth</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project2\">The Wrong Ninja</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project3\">Gynowars</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project4\">Terminal World</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project5\">Mars: Opposition</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section1/Index\">Antarrea</a></li>
+				<ul class=\"navigationUl\">
+					<li><a class=\"navlinkB\" href=\"./Project1\">Revolutions: Invading Nations</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project2\">Revolutions: Rebellion Against the Fist</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project3\">Revolutions: Return to Arms</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project4\">Revolutions: Post Wars</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project5\">Avia:Elemental Angels</a></li>
+				</ul>
+				<li><a class=\"navlinkA\" href=\"../Section2/Index\">Renley</a></li>
+			</ul>
+		"""
+	elif vKey == "3_2":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"../Indx\">Video Games</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project1\">Truth</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project2\">The Wrong Ninja</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project3\">Gynowars</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project4\">Terminal World</a></li>
+				<li><a class=\"navlinkA\" href=\"../Project5\">Mars: Opposition</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section1/Index\">Antarrea</a></li>
+				<li><a class=\"navlinkA\" href=\"../Section2/Index\">Renley</a></li>
+				<ul class=\"navigationUl\">
+					<li><a class=\"navlinkB\" href=\"./Project1\">Warring Nations</a></li>
+					<li><a class=\"navlinkB\" href=\"./Project2\">Psychodom: The One Empire</a></li>
+				</ul>
+			</ul>
+		"""
+	elif vKey == "4":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index\">Downloadables</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1\">Cube World</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2\">Minecraft</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3\">Game Maker</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4\">Java</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5\">C#</a></li>
+			</ul>
+		"""
+	elif vKey == "5":
+		vResult += """
+			<ul class=\"navigationUl\">
+				<li><a class=\"navlinkA\" href=\"./Index\">Database Work</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project1\">Oracle</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project2\">Derby</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project3\">MySQL</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project4\">SQL Server</a></li>
+				<li><a class=\"navlinkA\" href=\"./Project5\">Postgres</a></li>
+			</ul>
+		"""
 	else:
 		vResult = vDefault
 	return vResult

@@ -1,17 +1,17 @@
 urls = (
-	"/favicon.ico", "icon",
+	"/static/favicon.ico", "icon",
 	"/", "index",
 	"/index", "index",
 	"/AboutUs", "AboutUs",
 	"/Media", "Media",
-	"/Minecraft", "Minecraft",
+	"/GitHubs", "GitHubs",
+	"/WebApps", "WebApps",
 	
 	"/Division1/index", "Division1",
 	"/Division2/index", "Division2",
 	"/Division3/index", "Division3",
-	"/Division3/Project1", "Division3_1",
-	"/Division3/Project2", "Division3_2",
-	"/Division3/Project3", "Division3_3"
+	"/Division4/index", "Division4",
+	"/Division5/index", "Division5"
 )
 
 Main = web.template.render('/')
@@ -20,6 +20,8 @@ MainContent = web.template.render('Content/')
 Division1 = web.template.render('Division1/')
 Division2 = web.template.render('Division2/')
 Division3 = web.template.render('Division3/')
+Division4 = web.template.render('Division4/')
+Division5 = web.template.render('Division5/')
 
 class icon:
     def GET(self):
@@ -37,9 +39,13 @@ class Media:
     def GET(self):
         return Main.Layout(2, 0, "Main.css")
 
-class Minecraft:
+class GitHubs:
     def GET(self):
         return Main.Layout(3, 0, "Main.css")
+
+class WebApps:
+    def GET(self):
+        return Main.Layout(4, 0, "Main.css")
 
 class Division1:
     def GET(self):
@@ -53,22 +59,10 @@ class Division3:
     def GET(self):
         return Division3.Layout(0, 1, "Division3.css")
 
-class Division3_1
+class Division4:
     def GET(self):
-        return Division3.Layout(1, 1, "Division3.css")
+        return Division4.Layout(0, 1, "Division4.css")
 
-class Division3_2:
+class Division5:
     def GET(self):
-        return Division3.Layout(2, 1, "Division3.css")
-
-class Division3_3:
-    def GET(self):
-        return Division3.Layout(3, 1, "Division3.css")
-
-		
-		
-		
-		
-		
-		
-		
+        return Division5.Layout(0, 1, "Division5.css")		
